@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parts of an Experiment - Mr. Hewitt's IB Psychology Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .part-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:1rem;overflow:hidden;}
+    .part-card-header{padding:1rem 1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:background .2s;}
+    .part-card-header:hover{background:var(--bg-secondary);}
+    .part-card-header h3{margin:0;font-size:1.1rem;color:var(--text);}
+    .part-card-icon{font-size:1.2rem;transition:transform .3s;color:var(--text-muted);}
+    .part-card.open .part-card-icon{transform:rotate(45deg);}
+    .part-card-body{display:none;padding:0 1.25rem 1.25rem;}
+    .part-card.open .part-card-body{display:block;}
+    .part-section{margin-bottom:1rem;}
+    .part-section:last-child{margin-bottom:0;}
+    .part-section h4{font-size:.85rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.4rem;}
+    .part-section p,.part-section ul{font-size:.92rem;color:var(--text-secondary);margin:0;}
+    .part-section ul{padding-left:1.2rem;}
+    .part-section li{margin-bottom:.3rem;}
+    .diagram-box{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin:1.5rem 0;}
+    .diagram-box h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.75rem;text-align:center;}
+    .diagram-row{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:.75rem;}
+    .diagram-item{background:var(--bg-card);border:2px solid var(--primary);border-radius:var(--radius);padding:.6rem 1rem;text-align:center;font-size:.85rem;font-weight:600;color:var(--primary);min-width:120px;}
+    .diagram-arrow{display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--text-muted);min-width:40px;}
+    .diagram-label{font-size:.75rem;color:var(--text-muted);text-align:center;margin-top:.2rem;}
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html" class="active">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="../ia/index.html">IA</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../units.html">Units</a> <span>/</span> Parts of an Experiment</div>
+    <a href="research-methods-index.html" class="back-to-index">&larr; Back to Index</a>
+
+    <header class="unit-header">
+      <h1>Parts of an Experiment</h1>
+      <p class="unit-subtitle">Every experiment has key components. Understanding each part is essential for designing, evaluating, and critiquing research.</p>
+    </header>
+
+    <section class="unit-content">
+
+      <!-- DIAGRAM -->
+      <div class="diagram-box">
+        <h3>Anatomy of an Experiment</h3>
+        <div class="diagram-row">
+          <div>
+            <div class="diagram-item">Researcher</div>
+            <div class="diagram-label">Designs &amp; runs study</div>
+          </div>
+          <div class="diagram-arrow">&rarr;</div>
+          <div>
+            <div class="diagram-item">IV</div>
+            <div class="diagram-label">Manipulated</div>
+          </div>
+          <div class="diagram-arrow">&rarr;</div>
+          <div>
+            <div class="diagram-item">Participants</div>
+            <div class="diagram-label">Assigned to groups</div>
+          </div>
+          <div class="diagram-arrow">&rarr;</div>
+          <div>
+            <div class="diagram-item">DV</div>
+            <div class="diagram-label">Measured</div>
+          </div>
+        </div>
+        <div class="diagram-row">
+          <div>
+            <div class="diagram-item">Control Group</div>
+            <div class="diagram-label">Baseline comparison</div>
+          </div>
+          <div class="diagram-arrow">&harr;</div>
+          <div>
+            <div class="diagram-item">Experimental Group</div>
+            <div class="diagram-label">Receives manipulation</div>
+          </div>
+        </div>
+      </div>
+
+      <p>Click each component below to learn what it is, why it matters, and see a real example.</p>
+
+      <!-- INDEPENDENT VARIABLE -->
+      <div class="part-card" id="iv">
+        <div class="part-card-header" onclick="togglePart('iv')">
+          <h3>Independent Variable (IV)</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What It Is</h4>
+            <p>The variable that the researcher <strong>deliberately manipulates or changes</strong>. It is the presumed cause. The IV is what differs between the experimental and control groups.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why It Matters</h4>
+            <p>Without an IV, there is no experiment. The IV is what the researcher controls to see whether it produces an effect on the DV.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Asch (1951):</strong> The IV was whether confederates gave correct or incorrect answers. Asch manipulated this to see if it influenced participants&#8217; conformity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEPENDENT VARIABLE -->
+      <div class="part-card" id="dv">
+        <div class="part-card-header" onclick="togglePart('dv')">
+          <h3>Dependent Variable (DV)</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What It Is</h4>
+            <p>The variable that is <strong>measured or observed</strong>. It is the presumed effect. The DV is expected to change depending on what happens to the IV.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why It Matters</h4>
+            <p>The DV is how the researcher determines whether the IV had an effect. It must be clearly operationalised (defined in measurable terms) so the study can be replicated.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Asch (1951):</strong> The DV was the number of times the participant conformed to the group&#8217;s incorrect answer. This was clearly countable and measurable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIMENTAL GROUP -->
+      <div class="part-card" id="exp-group">
+        <div class="part-card-header" onclick="togglePart('exp-group')">
+          <h3>Experimental Group</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What It Is</h4>
+            <p>The group that <strong>receives the manipulation</strong> of the independent variable. This is the group where the researcher expects to see an effect.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why It Matters</h4>
+            <p>The experimental group shows what happens when the IV is present. Its results are compared with the control group to determine whether the IV had an effect.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Drug trial:</strong> The experimental group receives the actual medication. Researchers compare their outcomes with the control group (who receive a placebo) to determine whether the drug works.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROL GROUP -->
+      <div class="part-card" id="control-group">
+        <div class="part-card-header" onclick="togglePart('control-group')">
+          <h3>Control Group</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What It Is</h4>
+            <p>The group that does <strong>not receive the manipulation</strong>. It serves as a <strong>baseline for comparison</strong>. The control group tells you what happens when the IV is absent.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why It Matters</h4>
+            <p>Without a control group, you cannot know whether the IV actually caused any change. The control group shows what would have happened without the intervention.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>CBT therapy trial:</strong> The control group remains on a waiting list and receives no therapy. After 12 weeks, their anxiety levels are compared with the group that received CBT. If the CBT group improved more, the therapy likely caused the improvement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RANDOM ASSIGNMENT -->
+      <div class="part-card" id="random-assign">
+        <div class="part-card-header" onclick="togglePart('random-assign')">
+          <h3>Random Assignment</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What It Is</h4>
+            <p>Participants are allocated to the experimental or control group <strong>by chance</strong> (e.g., coin flip, random number generator). Every participant has an equal chance of being in any condition.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why It Matters</h4>
+            <p>Random assignment ensures that any differences between groups at the start of the study are due to <strong>chance, not systematic bias</strong>. This means that if a significant effect is found at the end, it can be confidently attributed to the IV, not pre-existing differences between groups.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Clinical trial for CBT:</strong> 100 patients with anxiety are randomly assigned to either the therapy group or the waiting list group. Because assignment is random, both groups should be equivalent in terms of age, gender, severity of anxiety, and other factors at the start of the study.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXTRANEOUS VARIABLES -->
+      <div class="part-card" id="extraneous">
+        <div class="part-card-header" onclick="togglePart('extraneous')">
+          <h3>Extraneous Variables</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What They Are</h4>
+            <p>Any variable <strong>other than the IV</strong> that could potentially influence the DV. If not controlled, they can introduce noise or alternative explanations into the results.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why They Matter</h4>
+            <p>Extraneous variables reduce the clarity of results. If they are not controlled, you cannot be sure whether the IV or something else caused the effect. When an extraneous variable <strong>systematically varies with the IV</strong>, it becomes a <strong>confounding variable</strong> &#8212; a serious threat to internal validity.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Asch (1951):</strong> Noise in the room, time of day, and the physical attractiveness of confederates were all extraneous variables. Asch controlled these by running the study in a quiet room, at consistent times, and with standardised confederates.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPERATIONALISED DEFINITIONS -->
+      <div class="part-card" id="operational">
+        <div class="part-card-header" onclick="togglePart('operational')">
+          <h3>Operationalised Definitions</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What They Are</h4>
+            <p>Defining variables in <strong>specific, measurable terms</strong> so the study can be replicated. The researcher specifies exactly how the IV will be manipulated and how the DV will be measured.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why They Matter</h4>
+            <p>Without operationalisation, research cannot be replicated and findings are ambiguous. Other researchers need to know exactly what was done to repeat the study and verify the results.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Operationalising &#8220;aggression&#8221;:</strong> Instead of vaguely studying aggression, a researcher defines it as &#8220;the number of times a child hits, kicks, or pushes another child during a 20-minute observation period.&#8221; This is specific, measurable, and replicable.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STANDARDISED PROCEDURES -->
+      <div class="part-card" id="standardised">
+        <div class="part-card-header" onclick="togglePart('standardised')">
+          <h3>Standardised Procedures</h3>
+          <span class="part-card-icon">+</span>
+        </div>
+        <div class="part-card-body">
+          <div class="part-section">
+            <h4>What They Are</h4>
+            <p>Using the <strong>same instructions, conditions, and measures</strong> for all participants. Every participant experiences the study in the same way, except for the manipulation of the IV.</p>
+          </div>
+          <div class="part-section">
+            <h4>Why They Matter</h4>
+            <p>Standardisation ensures that any differences between groups are due to the IV and not to differences in how the study was conducted. It increases <strong>reliability</strong> &#8212; the study should produce consistent results if repeated.</p>
+          </div>
+          <div class="part-section">
+            <h4>Real Example</h4>
+            <p><strong>Asch (1951):</strong> All participants received the same instructions, saw the same line comparisons, and were seated in the same room with the same number of confederates. The only thing that changed was whether confederates gave correct or incorrect answers (the IV).</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="unit-nav">
+      <a href="types-of-experiments.html" class="prev-unit">&larr; Types of Experiments</a>
+      <a href="research-methods.html" class="next-unit">Research Methods &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &#8212; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+function togglePart(id){{
+  var card = document.getElementById(id);
+  if(card){{
+    card.classList.toggle('open');
+  }}
+}}
+</script>
+</body>
+</html>

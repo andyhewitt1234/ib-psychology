@@ -1,0 +1,1264 @@
+/* ============================================
+   IA — Internal Assessment section
+   Scoped to the IA pages only.
+   ============================================ */
+
+/* ===== IA INDEX: header ===== */
+.ia-eyebrow {
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--primary);
+  margin-bottom: .25rem;
+}
+.ia-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: .15rem;
+}
+
+/* ===== OVERVIEW FACT CARDS ===== */
+.ia-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .75rem;
+  margin: 1rem 0 1.25rem;
+}
+.ia-fact-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: .85rem .95rem;
+}
+.ia-fact-label {
+  display: block;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .25rem;
+}
+.ia-fact-value {
+  font-size: .95rem;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.45;
+}
+.ia-fact-note {
+  font-size: .78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: .2rem;
+}
+
+/* ===== MODULE CHIPS ===== */
+.ia-method-row,
+.ia-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .6rem 0 .15rem;
+}
+.ia-chip {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .25rem .7rem;
+}
+
+/* ===== CRITERION CARDS (overview grid) ===== */
+.ia-crit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .75rem;
+  margin: .75rem 0 1.25rem;
+}
+.ia-crit-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+}
+.ia-crit-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  color: inherit;
+}
+.ia-crit-let {
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ia-crit-name {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+}
+.ia-crit-marks {
+  align-self: flex-start;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 999px;
+  padding: .18rem .6rem;
+}
+
+/* ===== ROADMAP ===== */
+.ia-roadmap {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.25rem 1rem;
+  margin: 1rem 0;
+}
+.ia-roadmap-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .25rem;
+  color: var(--text);
+}
+.ia-roadmap-sub {
+  font-size: .84rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.ia-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .35rem;
+}
+.ia-flow-step {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .8rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all .15s;
+}
+.ia-flow-step:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+  color: inherit;
+}
+.ia-flow-start {
+  background: var(--bg-tertiary);
+  border-color: var(--border);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.ia-flow-crit {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ia-flow-name {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.ia-flow-marks {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .15rem .6rem;
+  margin-top: .3rem;
+}
+.ia-flow-final {
+  border-color: var(--accent);
+}
+.ia-flow-final .ia-flow-crit {
+  color: var(--accent);
+}
+.ia-flow-arrow {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.ia-flow-total {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: .25rem;
+}
+
+/* ===== REPORT STRUCTURE ===== */
+.ia-report {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.1rem;
+  margin: 1rem 0;
+}
+.ia-report-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .6rem 0 .5rem;
+}
+.ia-report-item {
+  flex: 1 1 150px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .5rem .75rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.ia-report-assessed {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+/* ===== NOTICE / PLACEHOLDER ===== */
+.ia-notice {
+  background: var(--warning-light);
+  border: 1.5px solid var(--warning);
+  color: #92400e;
+  border-radius: var(--radius);
+  padding: .75rem .95rem;
+  font-size: .9rem;
+  line-height: 1.55;
+  margin: .75rem 0;
+}
+.ia-coming {
+  background: var(--bg-tertiary);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.25rem;
+  margin: .75rem 0;
+  color: var(--text-secondary);
+  font-size: .92rem;
+  line-height: 1.6;
+}
+.ia-coming h3 {
+  font-size: .95rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: .35rem;
+}
+
+/* ===== CRITERION PAGE: header ===== */
+.ia-criterion-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .6rem;
+  margin-bottom: .35rem;
+}
+.ia-criterion-badge {
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+  border-radius: 999px;
+  padding: .22rem .7rem;
+}
+.ia-criterion-purpose {
+  font-size: .98rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 620px;
+  margin-bottom: .4rem;
+}
+
+/* ===== FINAL CHECK placeholders ===== */
+.ia-check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .75rem;
+  margin: .75rem 0;
+}
+.ia-check-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .85rem 1rem;
+}
+.ia-check-title {
+  font-size: .82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--primary);
+  margin-bottom: .3rem;
+}
+.ia-check-desc {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ============================================
+   PLAN YOUR IA — preparation stage
+   ============================================ */
+
+/* Preparation badge (not an assessed criterion) */
+.ia-prep-badge {
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: var(--warning-light);
+  border: 1px solid var(--warning);
+  border-radius: 999px;
+  padding: .22rem .7rem;
+}
+
+/* Plan section card */
+.ia-pl-section {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.25rem;
+  margin: 1.1rem 0;
+}
+.ia-pl-head {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .5rem;
+}
+.ia-pl-num {
+  flex: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: .85rem;
+  font-weight: 800;
+}
+.ia-pl-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.ia-pl-section h3 {
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: .9rem 0 .4rem;
+}
+.ia-pl-section p {
+  font-size: .93rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: .35rem 0;
+}
+.ia-pl-section p:last-child { margin-bottom: 0; }
+.ia-pl-section ul {
+  font-size: .92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  padding-left: 1.25rem;
+  margin: .4rem 0;
+}
+.ia-pl-section li { margin-bottom: .2rem; }
+.ia-pl-section strong { color: var(--text); font-weight: 700; }
+
+/* Plan flow (big-picture workflow) */
+.ia-pl-flow { margin: .9rem 0; }
+.ia-pl-flow-step {
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .7rem 1rem;
+}
+.ia-pl-flow-crit {
+  display: block;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ia-pl-flow-name {
+  display: block;
+  font-size: .98rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: .15rem;
+}
+.ia-pl-flow-prep .ia-pl-flow-crit,
+.ia-flow-prep .ia-flow-crit { color: #92400e; }
+.ia-pl-flow-prep {
+  border-color: var(--warning);
+  background: var(--warning-light);
+}
+.ia-flow-prep {
+  border-color: var(--warning);
+  background: var(--warning-light);
+}
+.ia-flow-prep .ia-flow-marks {
+  color: #92400e;
+  background: #fff;
+  border-color: var(--warning);
+}
+
+/* Note / warn / stop / example boxes */
+.ia-note {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: .7rem .9rem;
+  margin: .7rem 0;
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+.ia-warn {
+  background: var(--warning-light);
+  border: 1.5px solid var(--warning);
+  color: #92400e;
+  border-radius: var(--radius);
+  padding: .7rem .9rem;
+  font-size: .9rem;
+  line-height: 1.55;
+  margin: .7rem 0;
+}
+.ia-warn strong { color: #92400e; }
+.ia-stop {
+  background: var(--danger-light);
+  border: 2px solid var(--danger);
+  color: #b91c1c;
+  border-radius: var(--radius-lg);
+  padding: .9rem 1.1rem;
+  margin: .7rem 0;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+.ia-stop strong { color: #b91c1c; }
+.ia-example {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: .75rem .95rem;
+  margin: .7rem 0;
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.ia-example-label {
+  display: block;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .3rem;
+}
+
+/* Planning notes (students record in their own document) */
+.ia-notes {
+  background: var(--bg-secondary);
+  border: 1.5px dashed var(--primary);
+  border-radius: var(--radius-lg);
+  padding: .9rem 1.05rem;
+  margin: .8rem 0;
+}
+.ia-notes-head {
+  display: block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .4rem;
+}
+.ia-notes ol {
+  font-size: .88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-left: 1.2rem;
+  margin: .3rem 0 0;
+}
+.ia-notes li { margin-bottom: .25rem; }
+.ia-notes strong { color: var(--text); font-weight: 700; }
+
+/* Classify activity */
+.ia-classify { margin: .75rem 0; }
+.ia-classify-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .7rem .85rem;
+  margin-bottom: .6rem;
+  transition: border-color .15s;
+}
+.ia-classify-q { font-size: .92rem; font-weight: 600; color: var(--text); margin-bottom: .5rem; }
+.ia-classify-opts { display: flex; gap: .5rem; flex-wrap: wrap; }
+.ia-classify-opt {
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all .15s;
+}
+.ia-classify-opt:hover { border-color: var(--text-muted); }
+.ia-classify-opt.opt-app { border-color: var(--accent); color: var(--accent); }
+.ia-classify-opt.opt-not { border-color: var(--danger); color: var(--danger); }
+.ia-classify-fb {
+  display: none;
+  margin-top: .6rem;
+  padding: .6rem .75rem;
+  border-radius: var(--radius);
+  font-size: .87rem;
+  line-height: 1.55;
+}
+.ia-classify-opt.chosen { color: #fff; }
+.ia-classify-item.good { border-color: var(--accent); background: var(--accent-light); }
+.ia-classify-item.good .ia-classify-fb { display: block; background: var(--accent-light); color: #0f766e; }
+.ia-classify-item.good .ia-classify-opt.chosen { background: var(--accent); border-color: var(--accent); }
+.ia-classify-item.bad { border-color: var(--danger); background: var(--danger-light); }
+.ia-classify-item.bad .ia-classify-fb { display: block; background: var(--danger-light); color: #b91c1c; }
+.ia-classify-item.bad .ia-classify-opt.chosen { background: var(--danger); border-color: var(--danger); }
+.ia-verd { font-weight: 800; }
+
+/* Checklist */
+.ia-checklist { margin: .6rem 0; }
+.ia-check-status {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-light);
+  border-radius: 999px;
+  padding: .2rem .7rem;
+  margin-bottom: .4rem;
+}
+.ia-check {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  padding: .42rem .6rem;
+  border-radius: var(--radius);
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  cursor: pointer;
+}
+.ia-check:hover { background: var(--bg-tertiary); }
+.ia-check input {
+  margin-top: .22rem;
+  accent-color: var(--primary);
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  cursor: pointer;
+}
+.ia-check.checked { color: var(--text); }
+.ia-checklist[data-done="1"] .ia-check-status { background: var(--accent); color: #fff; }
+.ia-check-reset {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: .5rem;
+  text-decoration: underline;
+}
+.ia-check-reset:hover { color: var(--primary); }
+
+/* Selectable cards */
+.ia-select-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .7rem;
+  margin: .7rem 0;
+}
+.ia-select-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .9rem 1rem;
+  cursor: pointer;
+  transition: all .15s;
+  text-align: left;
+}
+.ia-select-card h4 { font-size: .95rem; font-weight: 700; margin: 0 0 .25rem; }
+.ia-select-card p { font-size: .84rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+.ia-select-card:hover { border-color: var(--primary); }
+.ia-select-card.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  box-shadow: var(--shadow-sm);
+}
+.ia-select-card.selected h4 { color: var(--primary-dark); }
+.ia-select-card.selected h4::after { content: ' ✓'; color: var(--primary); }
+.ia-select-card.selected p { color: var(--text-secondary); }
+
+/* Method-fit widget: 4 methods, BEST FIT + WHY revealed */
+.ia-method { margin: .75rem 0; }
+.ia-method-grid { display: grid; gap: .6rem; }
+.ia-method-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .7rem .85rem;
+  transition: border-color .15s;
+}
+.ia-method-q { font-size: .92rem; font-weight: 600; color: var(--text); margin-bottom: .5rem; }
+.ia-method-opts { display: flex; gap: .5rem; flex-wrap: wrap; }
+.ia-method-opt {
+  font-size: .85rem;
+  font-weight: 600;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all .15s;
+}
+.ia-method-opt:hover { border-color: var(--primary); }
+.ia-method-opt.chosen { color: #fff; background: var(--primary); border-color: var(--primary); }
+.ia-method-fb {
+  display: none;
+  margin-top: .6rem;
+  padding: .6rem .75rem;
+  border-radius: var(--radius);
+  font-size: .87rem;
+  line-height: 1.55;
+}
+.ia-method-item.open .ia-method-fb { display: block; }
+.ia-method-item.open.good .ia-method-fb { background: var(--accent-light); color: #0f766e; }
+.ia-method-item.open.good .ia-method-opt.best { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ia-method-item.open.notbest { border-color: var(--danger); background: var(--danger-light); }
+.ia-method-item.open.notbest .ia-method-fb { background: var(--danger-light); color: #b91c1c; }
+.ia-method-item.open.notbest .ia-method-opt.best { border-color: var(--danger); color: var(--danger); }
+
+/* Troubleshooter accordion cards */
+.ia-trouble-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: .7rem;
+  margin: .75rem 0;
+}
+.ia-trouble {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .8rem 1rem;
+  cursor: pointer;
+  transition: all .15s;
+}
+.ia-trouble:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); }
+.ia-trouble.open { border-color: var(--primary); background: var(--primary-light); }
+.ia-trouble-label {
+  display: block;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .2rem;
+}
+.ia-trouble-title { font-size: .92rem; font-weight: 700; color: var(--text); }
+.ia-trouble-detail {
+  display: none;
+  margin-top: .5rem;
+  font-size: .86rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.ia-trouble.open .ia-trouble-detail { display: block; }
+
+/* Readiness check */
+.ia-ready-summary {
+  margin-top: .6rem;
+  padding: .8rem .95rem;
+  border-radius: var(--radius-lg);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+.ia-ready-summary.ready {
+  background: var(--accent-light);
+  border: 1.5px solid var(--accent);
+  color: #0f766e;
+}
+.ia-ready-summary.pending {
+  background: var(--warning-light);
+  border: 1.5px solid var(--warning);
+  color: #92400e;
+}
+.ia-btn {
+  display: inline-block;
+  margin-top: .7rem;
+  padding: .55rem 1.05rem;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .15s;
+}
+.ia-btn:hover { background: var(--primary-dark); color: #fff; box-shadow: var(--shadow-md); }
+
+/* ============================================
+   IA JOURNEY — overview top cards
+   ============================================ */
+.ia-journey-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 .25rem;
+  color: var(--text);
+}
+.ia-journey-sub {
+  font-size: .92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.ia-journey {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .35rem;
+  margin: 1rem 0 1.5rem;
+}
+.ia-journey-card {
+  flex: 0 1 auto;
+  min-width: 120px;
+  text-align: center;
+  background: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .85rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  transition: all .2s;
+}
+.ia-journey-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+  color: inherit;
+}
+.ia-journey-label {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ia-journey-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+}
+.ia-journey-marks {
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .18rem .6rem;
+}
+.ia-journey-card.ia-journey-prep {
+  border-color: var(--warning);
+  background: var(--warning-light);
+}
+.ia-journey-prep .ia-journey-label { color: #92400e; }
+.ia-journey-prep .ia-journey-marks {
+  color: #92400e;
+  background: #fff;
+  border-color: var(--warning);
+}
+.ia-journey-arrow {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1;
+  text-align: center;
+  transform: rotate(90deg);
+}
+@media (min-width: 860px) {
+  .ia-journey {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: .6rem;
+  }
+  .ia-journey-card { flex: 1 1 120px; }
+  .ia-journey-arrow {
+    align-self: center;
+    transform: none;
+    flex: none;
+  }
+}
+
+/* ============================================
+   CRITERION A — Introduction teaching page
+   ============================================ */
+
+/* Hero: What IB requires */
+.ia-require {
+  background: var(--bg);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem 1.25rem;
+  margin: 1.15rem 0;
+}
+.ia-require-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .6rem;
+}
+.ia-require-num {
+  flex: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: .85rem;
+  font-weight: 800;
+}
+.ia-require-eyebrow {
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.ia-require-marks {
+  font-size: .72rem;
+  font-weight: 800;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 999px;
+  padding: .2rem .65rem;
+}
+.ia-require p {
+  font-size: .93rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: .35rem 0;
+}
+.ia-require ul {
+  font-size: .92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  padding-left: 1.25rem;
+  margin: .4rem 0;
+}
+.ia-require li { margin-bottom: .25rem; }
+
+/* Progression chips: STATE / DESCRIBE / EXPLAIN / LINK */
+.ia-delta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: .7rem 0;
+}
+.ia-delta-chip {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: .22rem .7rem;
+}
+.ia-delta-chip.describe { border-color: var(--warning); color: #92400e; }
+.ia-delta-chip.explain { border-color: var(--primary); color: var(--primary); }
+.ia-delta-chip.link { border-color: var(--accent); color: #0f766e; }
+
+/* Marks ladder 1-2 / 3-4 / 5-6 */
+.ia-ladder {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin: .85rem 0;
+}
+.ia-ladder-step {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .8rem 1rem;
+}
+.ia-ladder-band {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: .15rem;
+}
+.ia-ladder-level {
+  display: block;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: .35rem;
+}
+.ia-ladder-step.mid { border-color: var(--warning); background: var(--warning-light); }
+.ia-ladder-step.mid .ia-ladder-level { color: #92400e; }
+.ia-ladder-step.high { border-color: var(--accent); background: var(--accent-light); }
+.ia-ladder-step.high .ia-ladder-level { color: #0f766e; }
+.ia-ladder-step.high .ia-ladder-band { color: #0f766e; }
+.ia-ladder-step ul {
+  font-size: .88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-left: 1.2rem;
+  margin: .2rem 0 0;
+}
+.ia-ladder-step li { margin-bottom: .2rem; }
+
+/* Unlike-cards: PROBLEM != IMPACT / Topic vs problem */
+.ia-neq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: .6rem;
+  margin: .8rem 0;
+}
+.ia-neq-card {
+  flex: 1 1 220px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .8rem 1rem;
+}
+.ia-neq-card h4 { font-size: .9rem; font-weight: 700; margin: 0 0 .3rem; }
+.ia-neq-card p { font-size: .86rem; color: var(--text-secondary); line-height: 1.55; margin: 0; }
+.ia-neq-card.pop { border-color: var(--primary); background: var(--primary-light); }
+.ia-neq-card.pop h4 { color: var(--primary-dark); }
+.ia-neq-symbol {
+  align-self: center;
+  flex: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+/* Examiner boxes: lessons from assessed examples */
+.ia-examiner {
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--primary);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: .9rem 1.05rem;
+  margin: .8rem 0;
+}
+.ia-examiner-head {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .35rem;
+}
+.ia-examiner p {
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+.ia-examiner-lesson {
+  display: inline-block;
+  margin-top: .4rem;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  padding: .3rem .75rem;
+}
+
+/* Second-research trap comparison */
+.ia-trap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .7rem;
+  margin: .6rem 0;
+}
+.ia-trap-col {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: .7rem .85rem;
+}
+.ia-trap-col h4 { font-size: .95rem; font-weight: 700; margin: 0 0 .35rem; }
+.ia-trap-col.warn { border-color: var(--warning); background: var(--warning-light); }
+.ia-trap-item {
+  display: block;
+  font-size: .84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: .18rem 0;
+}
+.ia-trap-item.ok::before { content: '\2713 '; color: var(--accent); font-weight: 800; }
+.ia-trap-item.missing::before { content: '? '; font-weight: 800; color: #92400e; }
+@media (max-width: 560px) {
+  .ia-trap-grid { grid-template-columns: 1fr; }
+}
+
+/* Final checklist completion message */
+.ia-checklist .ia-check-done {
+  display: none;
+  margin-top: .6rem;
+  padding: .7rem .85rem;
+  border-radius: var(--radius);
+  font-size: .9rem;
+  line-height: 1.55;
+  background: var(--accent-light);
+  border: 1.5px solid var(--accent);
+  color: #0f766e;
+}
+.ia-checklist[data-done="1"] .ia-check-done { display: block; }
+
+/* IA Overview note box */
+.ia-overview-note {
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: .8rem 1rem;
+  margin: .7rem 0;
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.ia-overview-note-head {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--primary-light);
+  border-radius: 999px;
+  padding: .22rem .7rem;
+  margin-bottom: .45rem;
+}
+.ia-overview-note p { margin: .3rem 0 .4rem; }
+
+/* ============================================
+   CRITERIA B/C/D PAGE SHELL
+   These shell classes were originally served by a
+   stylesheet (main.css) that did not exist, so the
+   pages loaded no base design. The necessary styles
+   are provided here using the shared style.css tokens.
+   ============================================ */
+
+/* Top navigation */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; gap: .25rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-height);
+  padding: 0 1.5rem;
+}
+.site-nav__home {
+  font-size: 1.05rem; font-weight: 700; color: var(--text);
+  margin-right: auto; text-decoration: none; white-space: nowrap;
+}
+.site-nav__link {
+  font-size: .875rem; font-weight: 500; color: var(--text-secondary);
+  padding: .4rem .75rem; border-radius: 6px; text-decoration: none;
+  transition: all .15s;
+}
+.site-nav__link:hover { color: var(--text); background: var(--bg-tertiary); }
+.site-nav__link--active { color: var(--primary); background: var(--primary-light); }
+
+/* Page container */
+.ia-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 1.25rem) 1.5rem 2.5rem;
+}
+
+/* Hero header */
+.ia-hero {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .35rem;
+  padding: 1.5rem 0 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+.ia-hero__icon { margin-bottom: .15rem; }
+.ia-hero h1 { font-size: 2rem; font-weight: 800; margin: 0; }
+.ia-hero__tag { font-size: 1rem; font-weight: 500; color: var(--text-secondary); }
+
+/* Section menu */
+.ia-pl-progress { margin: 1rem 0; }
+.ia-pl-toc-btn {
+  background: var(--primary-light); color: var(--primary);
+  border: 1px solid var(--primary); border-radius: var(--radius);
+  font-size: .85rem; font-weight: 700; padding: .5rem 1.05rem; cursor: pointer;
+  transition: all .15s;
+}
+.ia-pl-toc-btn:hover { background: var(--primary); color: #fff; }
+.ia-pl-toc {
+  display: none; list-style: none;
+  margin: .6rem 0 0; padding: .6rem .8rem;
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.ia-pl-toc.ia-pl-toc--open {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .15rem;
+}
+.ia-pl-toc a {
+  display: block; font-size: .85rem; padding: .32rem .55rem;
+  border-radius: 6px; color: var(--text-secondary); text-decoration: none;
+}
+.ia-pl-toc a:hover { color: var(--primary); background: var(--bg-tertiary); }
+
+/* Footer */
+.site-footer {
+  text-align: center; padding: 1.75rem 1.5rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.site-footer p { font-size: .8rem; color: var(--text-muted); margin: 0; }
+
+/* ============================================
+   B/C/D COMPONENT STYLES MISSING FROM ia.css
+   ============================================ */
+
+/* Checklist items (B/C/D use .ia-check-item; shared .ia-check is used by Plan Your IA) */
+.ia-check-item {
+  display: flex; align-items: flex-start; gap: .55rem;
+  padding: .42rem .6rem; border-radius: var(--radius);
+  font-size: .9rem; color: var(--text-secondary); line-height: 1.5;
+}
+.ia-check-item:hover { background: var(--bg-tertiary); }
+.ia-check-item input[type="checkbox"] {
+  margin-top: .22rem; accent-color: var(--primary);
+  width: 1rem; height: 1rem; flex: none; cursor: pointer;
+}
+.ia-check-item label { color: inherit; cursor: pointer; }
+.ia-check-item.ia-check-done { color: var(--text); }
+.ia-check-item.ia-check-done label strong { color: var(--primary); }
+
+/* Checklist completion message (visibility toggled by inline script) */
+.ia-done-msg {
+  margin-top: .6rem; padding: .7rem .85rem;
+  background: var(--accent-light); border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+}
+.ia-done-msg h4 { font-size: .9rem; font-weight: 800; color: #0f766e; margin: 0 0 .2rem; }
+.ia-done-msg p { font-size: .88rem; line-height: 1.55; color: #0f766e; margin: 0; }
+
+/* "What IB requires" bordered cards (used by C/D) */
+.ia-require-card {
+  background: var(--bg); border: 2px solid var(--primary);
+  border-radius: var(--radius-lg); padding: 1.15rem 1.25rem;
+  margin: 1.15rem 0;
+}
+.ia-require-card-head {
+  font-size: .72rem; font-weight: 800; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--primary); margin-bottom: .4rem;
+}
+.ia-require-card p {
+  font-size: .93rem; color: var(--text-secondary); line-height: 1.65; margin: .35rem 0;
+}
+.ia-require-card ul {
+  font-size: .92rem; color: var(--text-secondary); line-height: 1.65;
+  padding-left: 1.25rem; margin: .4rem 0;
+}
+.ia-require-card li { margin-bottom: .2rem; }
+
+/* Trap cards inside .ia-trap-grid (used by B/C) */
+.ia-trap {
+  background: var(--bg); border: 1.5px solid var(--border);
+  border-radius: var(--radius); padding: .7rem .85rem;
+}
+.ia-trap h4 { font-size: .9rem; font-weight: 700; margin: 0 0 .3rem; }
+.ia-trap p { font-size: .84rem; color: var(--text-secondary); line-height: 1.5; margin: 0; }
+
+/* Back to top (used by B) */
+.back-to-top {
+  display: block; text-align: center;
+  font-size: .85rem; font-weight: 600; color: var(--text-muted);
+  margin: 1.5rem 0 .25rem; text-decoration: none;
+}
+.back-to-top:hover { color: var(--primary); }
+
+/* Classify feedback states (B/C/D mark correct/wrong via --correct/--wrong classes;
+   these rules were served by the missing main.css). Mirrors the .good/.bad pattern. */
+.ia-classify-item.ia-classify-correct { border-color: var(--accent); background: var(--accent-light); }
+.ia-classify-item.ia-classify-correct .ia-classify-fb { display: block; background: var(--accent-light); color: #0f766e; }
+.ia-classify-item.ia-classify-correct .ia-classify-opt--correct { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ia-classify-item.ia-classify-wrong { border-color: var(--danger); background: var(--danger-light); }
+.ia-classify-item.ia-classify-wrong .ia-classify-fb { display: block; background: var(--danger-light); color: #b91c1c; }
+.ia-classify-item.ia-classify-wrong .ia-classify-opt--wrong { background: var(--danger); border-color: var(--danger); color: #fff; }
+.ia-classify-item.ia-classify-wrong .ia-classify-opt--correct { border-color: var(--danger); color: var(--danger); background: var(--bg); }
+.ia-classify-fb--show { display: block; }
+
+/* Responsive */
+@media (max-width: 720px) {
+  .site-nav__link { display: none; }
+  .ia-hero h1 { font-size: 1.5rem; }
+  .ia-main { padding: calc(var(--nav-height) + 1rem) 1rem 2rem; }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of Experiments - Mr. Hewitt's IB Psychology Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius);margin-bottom:1.5rem;}
+    .video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+    .exp-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:1rem;overflow:hidden;}
+    .exp-card-header{padding:1rem 1.25rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:background .2s;}
+    .exp-card-header:hover{background:var(--bg-secondary);}
+    .exp-card-header h3{margin:0;font-size:1.1rem;color:var(--text);}
+    .exp-card-icon{font-size:1.2rem;transition:transform .3s;color:var(--text-muted);}
+    .exp-card.open .exp-card-icon{transform:rotate(45deg);}
+    .exp-card-body{display:none;padding:0 1.25rem 1.25rem;}
+    .exp-card.open .exp-card-body{display:block;}
+    .exp-section{margin-bottom:1rem;}
+    .exp-section:last-child{margin-bottom:0;}
+    .exp-section h4{font-size:.85rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.04em;margin-bottom:.4rem;}
+    .exp-section p,.exp-section ul{font-size:.92rem;color:var(--text-secondary);margin:0;}
+    .exp-section ul{padding-left:1.2rem;}
+    .exp-section li{margin-bottom:.3rem;}
+    .pro-con{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.5rem;}
+    .pro-con > div{background:var(--bg-secondary);border-radius:var(--radius);padding:.75rem 1rem;}
+    .pro-con h4{font-size:.8rem;font-weight:700;margin-bottom:.3rem;}
+    .pro-con .pro h4{color:#16a34a;}
+    .pro-con .con h4{color:#dc2626;}
+    @media(max-width:600px){.pro-con{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html" class="active">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="../ia/index.html">IA</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../units.html">Units</a> <span>/</span> Types of Experiments</div>
+    <a href="research-methods-index.html" class="back-to-index">&larr; Back to Index</a>
+
+    <header class="unit-header">
+      <h1>Types of Experiments</h1>
+      <p class="unit-subtitle">Why psychologists conduct experiments in different ways, and what they gain or sacrifice by choosing each one.</p>
+    </header>
+
+    <section class="unit-content">
+
+      <!-- SECTION 1: VIDEO ACTIVITY -->
+      <h2>Watch &amp; Think</h2>
+      <p>Watch this trailer from <em>The Stanford Prison Experiment: Unlocking The Truth</em>. As you watch, think about <strong>why</strong> Zimbardo designed the study the way he did, and what happened because of those choices.</p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/igUQwX6vZRU" title="The Stanford Prison Experiment: Unlocking The Truth" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="collapsible">
+        <button class="collapsible-trigger">Thinking Questions</button>
+        <div class="collapsible-body">
+          <ol>
+            <li>Zimbardo randomly assigned participants to be prisoners or guards. <strong>Why</strong> do you think he used random assignment instead of letting people choose their role?</li>
+            <li>The guards were told only to &#8220;maintain law and order.&#8221; Why do you think Zimbardo gave such <strong>vague instructions</strong> rather than a detailed rulebook?</li>
+            <li>The study escalated quickly and became disturbing. What does this suggest about the power of <strong>situations</strong> versus <strong>individual personality</strong>?</li>
+            <li>Some people argue the study was unethical and the results cannot be trusted. Others say the findings are too important to ignore. <strong>Where do you stand?</strong></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- SECTION 2: TYPES OF EXPERIMENTS -->
+      <h2>Types of Experiments</h2>
+      <p>Click each experiment type to learn what it is, how it works, and see a real example from psychology research.</p>
+
+      <!-- LABORATORY EXPERIMENT -->
+      <div class="exp-card" id="lab-exp">
+        <div class="exp-card-header" onclick="toggleExp('lab-exp')">
+          <h3>Laboratory Experiment</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>A highly controlled experiment conducted in a <strong>laboratory or artificial setting</strong>. The researcher manipulates the independent variable (IV) and measures the dependent variable (DV) while controlling all other factors.</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>Conducted in a controlled environment (lab, classroom, research room).</li>
+              <li>The researcher <strong>manipulates the IV</strong> and randomly assigns participants to conditions.</li>
+              <li>Standardised procedures ensure consistency across all participants.</li>
+              <li> extraneous variables are tightly controlled.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Asch (1951) &#8212; Conformity Experiment.</strong> Participants were placed in a room with confederates and asked to match line lengths. The researcher manipulated whether confederates gave correct or incorrect answers. The controlled lab setting ensured that the only variable influencing participants was the confederates&#8217; responses.</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>High control over extraneous variables.</li>
+                <li>High internal validity &#8212; can confidently establish cause-and-effect.</li>
+                <li>Replicable due to standardised procedures.</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Low ecological validity &#8212; artificial setting may not reflect real life.</li>
+                <li>Demand characteristics &#8212; participants may guess the aim.</li>
+                <li>Low external validity &#8212; findings may not generalise to real-world situations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIELD EXPERIMENT -->
+      <div class="exp-card" id="field-exp">
+        <div class="exp-card-header" onclick="toggleExp('field-exp')">
+          <h3>Field Experiment</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>An experiment conducted in a <strong>natural, real-world setting</strong> (not a lab). The researcher still manipulates the IV, but the study takes place in the environment where the behaviour naturally occurs.</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>Conducted in a real-world setting (school, workplace, public space).</li>
+              <li>The researcher <strong>manipulates the IV</strong> but has less control over extraneous variables.</li>
+              <li>Participants are often unaware they are in a study.</li>
+              <li>Higher ecological validity than lab experiments.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Zimbardo (1971) &#8212; Stanford Prison Experiment.</strong> Zimbardo converted a basement into a mock prison and randomly assigned participants to be guards or prisoners. The study took place in a realistic (though constructed) environment. The guards&#8217; behaviour escalated quickly, demonstrating how situations can override individual personality &#8212; something difficult to replicate in a sterile lab.</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>High ecological validity &#8212; reflects real-world conditions.</li>
+                <li>Higher external validity &#8212; findings more likely to generalise.</li>
+                <li>Reduced demand characteristics &#8212; participants may not know they are being studied.</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Less control over extraneous variables.</li>
+                <li>Lower internal validity &#8212; harder to establish cause-and-effect.</li>
+                <li>Ethical challenges &#8212; difficult to get informed consent when studying natural behaviour.</li>
+                <li>Replication can be difficult.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRUE EXPERIMENT / RCT -->
+      <div class="exp-card" id="true-exp">
+        <div class="exp-card-header" onclick="toggleExp('true-exp')">
+          <h3>True Experiment (RCT)</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>The <strong>gold standard</strong> for establishing cause-and-effect. A true experiment requires three key features: <strong>manipulation of the IV</strong>, <strong>random assignment</strong> to conditions, and a <strong>control group</strong> for comparison. When used in clinical or medical research, it is called a <strong>Randomised Controlled Trial (RCT)</strong>.</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>The researcher <strong>manipulates the IV</strong> (e.g., therapy vs. no therapy).</li>
+              <li>Participants are <strong>randomly assigned</strong> to experimental or control groups.</li>
+              <li>A <strong>control group</strong> receives no treatment or a placebo for comparison.</li>
+              <li>All other variables are held constant.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Clinical trials for CBT (Cognitive Behavioural Therapy).</strong> Researchers randomly assign patients with anxiety to either receive CBT or remain on a waiting list (control group). After 12 weeks, anxiety levels are compared. Because participants were randomly assigned, any difference in outcomes can be attributed to the therapy, not pre-existing differences.</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Highest internal validity &#8212; strongest evidence for cause-and-effect.</li>
+                <li>Random assignment eliminates selection bias.</li>
+                <li>Control group provides a baseline for comparison.</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Artificial conditions may reduce ecological validity.</li>
+                <li>Expensive and time-consuming.</li>
+                <li>Ethical issues &#8212; withholding treatment from control group may be harmful.</li>
+                <li>Not always practical for studying social behaviour.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUASI-EXPERIMENT -->
+      <div class="exp-card" id="quasi-exp">
+        <div class="exp-card-header" onclick="toggleExp('quasi-exp')">
+          <h3>Quasi-Experiment</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>An experiment where the researcher <strong>does not randomly assign</strong> participants to conditions. Instead, the study uses <strong>pre-existing groups</strong> (e.g., males vs. females, smokers vs. non-smokers) or <strong>naturally occurring events</strong> (e.g., natural disasters, policy changes).</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>The IV is <strong>not manipulated</strong> &#8212; it is a pre-existing characteristic or event.</li>
+              <li>Participants are <strong>not randomly assigned</strong> to conditions.</li>
+              <li>The researcher compares outcomes between groups that already exist.</li>
+              <li>Also called a <strong>natural experiment</strong> when a naturally occurring event creates the conditions.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Ripley (2012) &#8212; Bilingual Advantage.</strong> Ripley compared cognitive performance between bilingual and monolingual children. The IV (bilingualism) was not manipulated &#8212; children were already bilingual or monolingual based on their language environment. Because there was no random assignment, the study is a quasi-experiment. Differences in performance could be due to other factors (e.g., socioeconomic status, education quality).</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Higher ecological validity &#8212; uses real groups and natural conditions.</li>
+                <li>Ethical &#8212; no manipulation or deception required.</li>
+                <li>Practical &#8212; can study variables that cannot be randomly assigned (e.g., gender, culture, disorder).</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Lower internal validity &#8212; cannot confidently establish cause-and-effect.</li>
+                <li>Selection bias &#8212; pre-existing groups may differ in important ways.</li>
+                <li>Confounding variables are harder to control.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SINGLE-BLIND -->
+      <div class="exp-card" id="single-blind">
+        <div class="exp-card-header" onclick="toggleExp('single-blind')">
+          <h3>Single-Blind Experiment</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>An experiment where the <strong>participants do not know</strong> which condition they are in (experimental or control). The researcher knows, but the participants are &#8220;blind&#8221; to their assignment.</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>Participants are not told whether they received the real treatment or a placebo.</li>
+              <li>Prevents <strong>participant bias</strong> &#8212; participants cannot adjust their behaviour based on expectations.</li>
+              <li>The researcher still knows the condition, which could introduce <strong>researcher bias</strong>.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Drug trials with placebo.</strong> In a study testing a new anti-anxiety medication, half the participants receive the real drug and half receive a placebo (sugar pill). Participants do not know which they received. This prevents them from reporting improvement simply because they believe they took real medication.</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Reduces participant bias and demand characteristics.</li>
+                <li>More internally valid than an open experiment.</li>
+                <li>Relatively easy to implement.</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Researcher bias &#8212; the researcher knows the condition and may influence results.</li>
+                <li>Participants may figure out their condition (breaking the blind).</li>
+                <li>Not suitable for all types of research.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOUBLE-BLIND -->
+      <div class="exp-card" id="double-blind">
+        <div class="exp-card-header" onclick="toggleExp('double-blind')">
+          <h3>Double-Blind Experiment</h3>
+          <span class="exp-card-icon">+</span>
+        </div>
+        <div class="exp-card-body">
+          <div class="exp-section">
+            <h4>What It Is</h4>
+            <p>An experiment where <strong>neither the participants nor the researchers</strong> interacting with them know which condition each participant is in. A third party holds the code and only reveals it after data collection is complete.</p>
+          </div>
+          <div class="exp-section">
+            <h4>How It Works</h4>
+            <ul>
+              <li>Participants do not know their condition (single-blind).</li>
+              <li>Researchers who interact with participants also do not know the condition.</li>
+              <li>A <strong>third party</strong> (e.g., a nurse or computer) assigns conditions using a code.</li>
+              <li>The code is broken only after all data has been collected.</li>
+            </ul>
+          </div>
+          <div class="exp-section">
+            <h4>Real Example</h4>
+            <p><strong>Rosenthal &amp; Jacobson (1968) &#8212; Pygmalion Effect.</strong> Teachers were told that certain students (randomly selected) were &#8220;intellectual bloomers&#8221; who would show rapid academic growth. Neither the students nor the teachers who interacted with them daily knew the selection was random. At the end of the year, the &#8220;bloomers&#8221; showed significantly greater IQ gains. The double-blind design prevented both student expectations and teacher bias from explaining the results.</p>
+          </div>
+          <div class="exp-section pro-con">
+            <div class="pro">
+              <h4>Advantages</h4>
+              <ul>
+                <li>Eliminates both participant bias AND researcher bias.</li>
+                <li>Highest internal validity of all blind designs.</li>
+                <li>Results are more trustworthy and replicable.</li>
+              </ul>
+            </div>
+            <div class="con">
+              <h4>Disadvantages</h4>
+              <ul>
+                <li>Complex and expensive to set up.</li>
+                <li>Requires a third party to manage the code.</li>
+                <li>Not always practical or possible in psychological research.</li>
+                <li>Participants or researchers may still guess the condition.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="unit-nav">
+      <a href="research-methods.html" class="prev-unit">&larr; Research Methods</a>
+      <a href="parts-of-an-experiment.html" class="next-unit">Parts of an Experiment &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &#8212; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+function toggleExp(id){{
+  var card = document.getElementById(id);
+  if(card){{
+    card.classList.toggle('open');
+  }}
+}}
+</script>
+</body>
+</html>

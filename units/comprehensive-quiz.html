@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Quiz - Health &amp; Well-being - Mr. Hewitt's IB Psychology Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html" class="active">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="../ia/index.html">IA</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../units.html">Units</a> <span>/</span> Comprehensive Quiz</div>
+    <a href="health-wellbeing-index.html" class="back-to-index">&larr; Back to Index</a>
+
+    <header class="unit-header">
+      <h1>Comprehensive Quiz</h1>
+      <p class="unit-subtitle">20 questions on the 10 key Health &amp; Well-being studies. Test whether you can recall names, procedures, findings, and applications from memory.</p>
+    </header>
+
+    <section class="unit-content">
+
+      <div class="quiz-container" id="comprehensive-quiz">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="comprehensive-quiz-progress-fill"></div></div>
+        <div class="quiz-progress-text" id="comprehensive-quiz-progress-text">Question 1 of 20</div>
+        <div class="quiz-score-text" id="comprehensive-quiz-score-text">0 / 20</div>
+        <div class="quiz-question-area" id="comprehensive-quiz-question"></div>
+        <div class="quiz-result" id="comprehensive-quiz-result"></div>
+      </div>
+
+    </section>
+
+    <div style="text-align:center;margin:1.5rem 0 1rem;">
+      <a href="hw-studies-quiz.html" style="display:inline-block;font-size:.9rem;color:var(--text-muted);text-decoration:none;border-bottom:1px dashed var(--text-muted);transition:color .15s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Want more practice? Try the full 42-question Studies Quiz &rarr;</a>
+    </div>
+
+    <div class="unit-nav">
+      <a href="studies.html" class="prev-unit">&larr; Studies</a>
+      <a href="human-development.html" class="next-unit">Human Development &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &#8212; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+(function(){
+  var QUESTIONS = [
+    { type:'mc', prompt:"A researcher investigates whether people with a specific gene variant are more likely to develop depression after experiencing childhood trauma. Which study used this approach?", options:["Beck (1967)","Caspi et al. (2003)","Lazarus and Folkman (1984)","Elkin et al. (1989)"], correct:1, feedback:{ correct:"Caspi et al. (2003) examined the interaction between the 5-HTTLPR gene and stressful life events in predicting depression.", incorrect:"This describes Caspi et al. (2003), who studied gene-environment interaction in depression." } },
+    { type:'mc', prompt:"Which study proposed that depression is maintained by three patterns of negative thinking about oneself, the world, and the future?", options:["Kirsch (2008)","Chiao and Blizinsky (2010)","Beck (1967)","Bandura et al. (1961)"], correct:2, feedback:{ correct:"Beck (1967) identified the cognitive triad: negative views of self, world, and future.", incorrect:"Beck's cognitive triad describes negative thinking about self, world, and future." } },
+    { type:'mc', prompt:"In which study were pseudopatients sent to psychiatric hospitals to test whether staff could distinguish sane from insane people? Wait — which study below actually tested whether cultures with higher rates of collectivism had a different prevalence of a specific gene variant?", options:["Caspi et al. (2003)","Andreassen et al. (2012)","Chiao and Blizinsky (2010)","Kurapov et al. (2023)"], correct:2, feedback:{ correct:"Chiao and Blizinsky (2010) found collectivist cultures had higher prevalence of the short 5-HTTLPR allele.", incorrect:"Chiao and Blizinsky studied the link between collectivist cultures and the short 5-HTTLPR allele." } },
+    { type:'mc', prompt:"A researcher gives one group of children a video showing an adult behaving aggressively toward an inflated clown. Another group watches a non-aggressive adult. What did the original study find about children's subsequent behaviour?", options:["Children never imitated aggression regardless of the model","Children who saw the aggressive model displayed more imitative aggression","Only boys imitated the aggressive model","Aggressive models made children less aggressive"], correct:1, feedback:{ correct:"Bandura et al. (1961) found children who observed an aggressive model were significantly more likely to imitate that aggression.", incorrect:"Bandura's Bobo doll study showed children imitated aggressive behaviour they observed in adults." } },
+    { type:'mc', prompt:"Which researcher conducted a meta-analysis showing that most improvement in antidepressant trials was due to placebo, not the drug itself?", options:["Elkin et al. (1989)","Lazarus and Folkman (1984)","Kirsch (2008)","Beck (1967)"], correct:2, feedback:{ correct:"Kirsch (2008) found that placebo effects accounted for most antidepressant improvement, with drug-placebo differences being small.", incorrect:"Kirsch's meta-analysis showed antidepressant effectiveness is largely explained by placebo." } },
+    { type:'mc', prompt:"In a clinical trial, patients with moderate depression were randomly assigned to receive CBT, interpersonal therapy, imipramine, or placebo. Which study found that all active treatments were roughly equally effective?", options:["Kirsch (2008)","Elkin et al. (1989)","Caspi et al. (2003)","Hunt et al. (2018)"], correct:1, feedback:{ correct:"Elkin et al. (1989) found CBT, interpersonal therapy, and imipramine were comparably effective for moderate depression.", incorrect:"Elkin's NIMH study compared multiple treatments and found similar effectiveness." } },
+    { type:'mc', prompt:"Which model states that stress depends on how a person evaluates both the threat level and their own ability to cope?", options:["Beck's cognitive triad","The diathesis-stress model","Lazarus and Folkman's transactional model","Bandura's social learning theory"], correct:2, feedback:{ correct:"Lazarus and Folkman (1984) proposed primary appraisal (threat evaluation) and secondary appraisal (coping evaluation).", incorrect:"Lazarus and Folkman's model distinguishes between primary and secondary appraisal of stressors." } },
+    { type:'mc', prompt:"Researchers studied mental health outcomes in populations displaced by war. They found significantly elevated rates of depression, anxiety, and PTSD. Which study is this?", options:["Chiao and Blizinsky (2010)","Kurapov et al. (2023)","Andreassen et al. (2012)","Bandura et al. (1961)"], correct:1, feedback:{ correct:"Kurapov et al. (2023) examined the psychological impact of war, displacement, and trauma on mental health.", incorrect:"Kurapov studied displaced populations and found elevated depression, anxiety, and PTSD." } },
+    { type:'mc', prompt:"A cross-sectional survey found that narcissism and low self-esteem predicted problematic social media use. Which research team conducted this study?", options:["Hunt et al. (2018)","Andreassen et al. (2012)","Elkin et al. (1989)","Kirsch (2008)"], correct:1, feedback:{ correct:"Andreassen et al. (2012) used a cross-sectional survey to link personality traits to social media addiction.", incorrect:"Andreassen found narcissism and low self-esteem predicted social media addiction." } },
+    { type:'mc', prompt:"In a randomised controlled trial, participants who limited social media to 30 minutes per day showed reduced loneliness and depression compared to a control group. Who conducted this study?", options:["Andreassen et al. (2012)","Caspi et al. (2003)","Hunt et al. (2018)","Lazarus and Folkman (1984)"], correct:2, feedback:{ correct:"Hunt et al. (2018) used an RCT design and found limiting social media improved well-being.", incorrect:"Hunt used a randomised controlled trial to show limiting social media reduces loneliness and depression." } },
+    { type:'mc', prompt:"Caspi et al. (2003) found that the short allele of 5-HTTLPR was associated with higher depression risk specifically when:", options:["Participants had low income","Participants experienced stressful life events","Participants lived in urban areas","Participants had no family history of depression"], correct:1, feedback:{ correct:"The short allele increased depression risk only after stressful life events — a gene-environment interaction.", incorrect:"Caspi found the short allele was a risk factor specifically in the context of stressful life events." } },
+    { type:'mc', prompt:"Beck's cognitive triad includes negative beliefs about three things. Which set is correct?", options:["Past, present, future","Self, world, family","Self, world, future","Genes, environment, behaviour"], correct:2, feedback:{ correct:"The cognitive triad: negative views of self ('I'm worthless'), world ('the world is unfair'), and future ('things will never improve').", incorrect:"Beck's triad covers self, world, and future — not past/present/future or other combinations." } },
+    { type:'mc', prompt:"Chiao and Blizinsky (2010) proposed that collectivist cultural practices might:", options:["Increase the frequency of the short allele","Buffer against the genetic risk associated with the short allele","Eliminate genetic variation entirely","Have no relationship to mental health"], correct:1, feedback:{ correct:"They proposed collectivist norms (family support, community) may protect against the depression risk carried by the short allele.", incorrect:"Chiao suggested collectivist cultural practices buffer against the genetic risk." } },
+    { type:'mc', prompt:"In Bandura's study, what was measured to determine whether children learned aggressive behaviour?", options:["Blood pressure and heart rate","The frequency and type of aggressive acts displayed by children","Children's self-reported emotions","Teachers' ratings of classroom behaviour"], correct:1, feedback:{ correct:"Bandura measured how often and in what ways children displayed aggressive behaviours after exposure to the model.", incorrect:"The dependent variable was the frequency and type of aggressive acts children performed." } },
+    { type:'mc', prompt:"According to Kirsch (2008), antidepressants showed the greatest benefit for patients with:", options:["Mild depression","Moderate depression","Severe depression","All levels equally"], correct:2, feedback:{ correct:"Kirsch found drug-placebo differences were largest for severe depression, not mild or moderate cases.", incorrect:"Antidepressants were most effective for severe depression in Kirsch's analysis." } },
+    { type:'mc', prompt:"Elkin et al. (1989) is considered important evidence for CBT because it showed:", options:["CBT was superior to all other treatments","CBT was ineffective compared to medication","CBT was roughly as effective as other active treatments for moderate depression","CBT only worked for severe cases"], correct:2, feedback:{ correct:"CBT performed comparably to interpersonal therapy and imipramine, supporting its use as a treatment option.", incorrect:"Elkin found CBT was comparably effective to other active treatments." } },
+    { type:'mc', prompt:"In Lazarus and Folkman's model, what is 'primary appraisal'?", options:["Evaluating your coping resources","Judging whether a situation is threatening or harmful","Rating the effectiveness of treatment","Assessing a patient's diagnosis"], correct:1, feedback:{ correct:"Primary appraisal is the initial evaluation of whether a situation poses a threat, challenge, or harm.", incorrect:"Primary appraisal = judging whether the situation is threatening. Secondary appraisal = evaluating coping resources." } },
+    { type:'mc', prompt:"Kurapov et al. (2023) studied populations who had experienced:", options:["Academic stress and exam pressure","War, displacement, and trauma","Social media addiction","Childhood bullying"], correct:1, feedback:{ correct:"They examined war-displaced populations and found elevated rates of depression, anxiety, and PTSD.", incorrect:"Kurapov studied people displaced by war and their mental health outcomes." } },
+    { type:'mc', prompt:"Andreassen et al. (2012) used which research design to study social media addiction?", options:["Longitudinal study","Randomised controlled trial","Cross-sectional survey","Case study"], correct:2, feedback:{ correct:"Andreassen used a cross-sectional survey to examine personality and social media use at one point in time.", incorrect:"Andreassen used a cross-sectional survey design." } },
+    { type:'mc', prompt:"Hunt et al. (2018) randomly assigned participants to either limit social media to 30 minutes/day or continue using it normally. This design is called:", options:["Naturalistic observation","Correlational study","Longitudinal design","Randomised controlled trial"], correct:3, feedback:{ correct:"Random assignment to conditions with a control group is the hallmark of an RCT — the strongest design for establishing causation.", incorrect:"Hunt used an RCT: random assignment to limited vs. normal social media use." } }
+  ];
+
+  if(typeof initQuiz==='function'){
+    initQuiz('comprehensive-quiz', QUESTIONS, true);
+  } else {
+    var id='comprehensive-quiz';
+    var btn=setInterval(function(){
+      if(typeof initQuiz==='function'){
+        clearInterval(btn);
+        initQuiz(id, QUESTIONS, true);
+      }
+    },100);
+  }
+})();
+</script>
+</body>
+</html>

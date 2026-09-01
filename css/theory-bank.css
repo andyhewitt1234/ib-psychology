@@ -1,0 +1,174 @@
+/* ===== THEORY & MODEL BANK ===== */
+/* Narrower reading width for theory pages */
+.theory-hero, .theory-section, .mechanism-box, .research-card,
+.strengths-limitations, .mistakes-box, .essentials-box, .scenario-box,
+.theory-nav, .theory-used-in, .theory-primary-home, .context-also-used,
+.context-cross-ref, .act-container {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.theory-hero h1 { max-width: 780px; }
+.theory-hero .theory-subtitle { max-width: 780px; }
+@media (max-width: 860px) {
+  .theory-hero, .theory-section, .mechanism-box, .research-card,
+  .strengths-limitations, .mistakes-box, .essentials-box, .scenario-box,
+  .theory-nav, .theory-used-in, .theory-primary-home, .context-also-used,
+  .context-cross-ref, .act-container {
+    max-width: 100%;
+  }
+}
+.theory-status {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  padding: .2rem .55rem;
+  border-radius: 4px;
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+.theory-status.ib-required { background: var(--warning-light); color: var(--warning); }
+.theory-status.chosen-model { background: var(--accent-light); color: var(--accent); }
+.theory-status.hl { background: #ede9fe; color: #7c3aed; }
+
+.theory-hero {
+  padding: 2rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.theory-hero h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: .3rem; }
+.theory-hero .theory-subtitle { font-size: 1rem; color: var(--text-secondary); max-width: 700px; line-height: 1.6; }
+.theory-hero .one-sentence { font-size: 1.05rem; font-weight: 600; color: var(--primary); margin-top: .75rem; padding: .75rem 1rem; background: var(--primary-light); border-radius: var(--radius); border-left: 4px solid var(--primary); line-height: 1.5; }
+
+.theory-section { margin-bottom: 2rem; }
+.theory-section h2 {
+  font-size: 1.2rem; font-weight: 700; margin-bottom: .6rem;
+  padding-bottom: .35rem; border-bottom: 2px solid var(--primary-light);
+}
+.theory-section h3 { font-size: 1rem; font-weight: 600; margin: .75rem 0 .35rem; }
+.theory-section p { font-size: .92rem; line-height: 1.7; margin-bottom: .6rem; }
+
+.mechanism-box {
+  background: var(--bg-secondary); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem 1.25rem; margin: .75rem 0;
+  font-size: .92rem; line-height: 1.6;
+}
+.mechanism-box .mechanism-flow {
+  font-weight: 600; color: var(--primary); font-size: .95rem; margin-top: .5rem;
+  overflow-wrap: break-word; word-break: break-word;
+}
+
+.research-card {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem 1.25rem; margin: .75rem 0;
+}
+.research-card h4 { font-size: .95rem; font-weight: 700; margin-bottom: .4rem; color: var(--text); }
+.research-card .rc-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; color: var(--primary); margin-bottom: .2rem; }
+.research-card p { font-size: .88rem; line-height: 1.6; }
+.research-card .rc-connection { background: var(--accent-light); border-left: 3px solid var(--accent); padding: .5rem .75rem; border-radius: 0 var(--radius) var(--radius) 0; margin-top: .5rem; font-size: .88rem; }
+
+.strengths-limitations { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: .75rem 0; }
+.sl-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.sl-card.strengths { border-top: 3px solid var(--accent); }
+.sl-card.limitations { border-top: 3px solid var(--danger); }
+.sl-card h4 { font-size: .9rem; font-weight: 700; margin-bottom: .5rem; }
+.sl-card ul { padding-left: 1.2rem; }
+.sl-card li { font-size: .88rem; line-height: 1.6; margin-bottom: .4rem; color: var(--text-secondary); }
+.sl-card li strong { color: var(--text); }
+
+.mistakes-box { background: var(--danger-light); border: 1px solid #fca5a5; border-radius: var(--radius); padding: 1rem 1.25rem; margin: .75rem 0; }
+.mistakes-box h3 { color: var(--danger); font-size: .95rem; margin-bottom: .4rem; }
+.mistakes-box li { font-size: .88rem; line-height: 1.6; margin-bottom: .3rem; color: var(--text-secondary); }
+
+.concept-btns { display: flex; flex-wrap: wrap; gap: .5rem; margin: .5rem 0; }
+.concept-btn { background: var(--bg-tertiary); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .75rem; font-size: .82rem; font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: all .15s; }
+.concept-btn:hover { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
+.concept-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.concept-detail { display: none; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .75rem 1rem; margin-top: .5rem; font-size: .88rem; line-height: 1.6; color: var(--text-secondary); }
+
+.where-use-list { list-style: none; padding: 0; margin: .5rem 0; }
+.where-use-list li { padding: .5rem .75rem; background: var(--bg-secondary); border-radius: var(--radius); margin-bottom: .35rem; font-size: .88rem; }
+.where-use-list li strong { color: var(--text); }
+.where-use-list li span { color: var(--text-muted); font-size: .82rem; }
+
+.essentials-box { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; margin: .75rem 0; }
+.essentials-box ol { padding-left: 1.4rem; }
+.essentials-box li { font-size: .9rem; line-height: 1.6; margin-bottom: .35rem; color: var(--text-secondary); }
+.essentials-box li strong { color: var(--text); }
+
+.scenario-box { background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius); padding: 1rem 1.25rem; margin: .75rem 0; }
+.scenario-box h3 { color: var(--primary); font-size: .95rem; margin-bottom: .4rem; }
+.scenario-box p { font-size: .9rem; line-height: 1.6; }
+
+.theory-nav { display: flex; justify-content: space-between; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.theory-nav a { font-size: .88rem; font-weight: 500; }
+
+.theory-used-in { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin-top: .75rem; }
+.theory-used-in .label { font-size: .78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; margin-right: .2rem; }
+.theory-used-in a { display: inline-block; padding: .2rem .6rem; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; font-size: .78rem; font-weight: 500; color: var(--text-secondary); text-decoration: none; transition: all .15s; }
+.theory-used-in a:hover { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
+
+.theory-primary-home { font-size: .78rem; color: var(--text-muted); margin-top: .4rem; }
+.theory-primary-home strong { color: var(--text-secondary); }
+
+.context-also-used { margin-top: 1rem; padding: .75rem 1rem; background: var(--bg-secondary); border-radius: var(--radius); border-left: 3px solid var(--border); }
+.context-also-used .label { font-size: .78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .03em; margin-bottom: .35rem; }
+.context-also-used a { font-size: .85rem; font-weight: 500; color: var(--primary); text-decoration: none; }
+.context-also-used a:hover { text-decoration: underline; }
+
+.context-cross-ref { margin-top: .5rem; }
+.context-cross-ref .ref-list { list-style: none; padding: 0; margin: .35rem 0 0; }
+.context-cross-ref .ref-list li { padding: .35rem 0; font-size: .88rem; }
+.context-cross-ref .ref-list a { color: var(--primary); font-weight: 500; text-decoration: none; }
+.context-cross-ref .ref-list a:hover { text-decoration: underline; }
+
+/* ===== CONSISTENT SPACING ===== */
+/* Section-to-activity: reduce gap */
+.theory-section + .act-container { margin-top: 1.25rem !important; }
+/* Activity-to-reveal: keep tight */
+.act-container + .reveal { margin-top: .5rem !important; margin-bottom: .5rem !important; }
+/* Reveal-to-next-section: moderate gap */
+.reveal + .theory-section { margin-top: .75rem !important; }
+/* Activity-to-activity: if two activities back to back */
+.act-container + .act-container { margin-top: 1.5rem !important; }
+/* Section-to-section: keep current but cap excessive space */
+.theory-section + .theory-section { margin-top: 0 !important; }
+
+/* Activity containers: consistent vertical rhythm */
+.theory-page .act-container,
+.container > .act-container {
+  margin-top: 1rem !important;
+  margin-bottom: .75rem !important;
+}
+
+/* Reveal boxes: consistent inline spacing (override inline styles) */
+.theory-page .reveal,
+.container > .reveal,
+.page-wrapper .reveal {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+/* Paragraph spacing: ensure readable gaps between text blocks */
+.theory-section p + p { margin-top: .5rem; }
+.theory-section p:last-child { margin-bottom: 0; }
+.theory-section h2 + p { margin-top: .35rem; }
+
+/* Activity buttons: sit naturally below activity content */
+.page-wrapper .act-actions,
+.container .act-actions { margin-top: 0 !important; }
+.page-wrapper .act-feedback.visible,
+.container .act-feedback.visible { margin-bottom: 0 !important; }
+
+/* Scenario/prompt text: tighter spacing inside activities */
+.act-scenario + .act-body,
+.act-prompt + .act-body { margin-top: 0; }
+
+/* Hint buttons: compact */
+.act-hint-area { margin-top: .5rem; }
+
+@media (max-width: 700px) {
+  .strengths-limitations { grid-template-columns: 1fr; }
+}

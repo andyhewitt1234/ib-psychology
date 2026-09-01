@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Studies Exam - Health &amp; Well-being - Mr. Hewitt's IB Psychology Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html" class="active">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="../ia/index.html">IA</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../units.html">Units</a> <span>/</span> Key Studies Exam</div>
+    <a href="health-wellbeing-index.html" class="back-to-index">&larr; Back to Index</a>
+
+    <header class="unit-header">
+      <h1>Key Studies Exam</h1>
+      <p class="unit-subtitle">20 questions on the 10 key Health &amp; Well-being studies. Test your knowledge of who did what, why, and what they found.</p>
+    </header>
+
+    <section class="unit-content">
+
+      <div class="quiz-container" id="key-studies-exam">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="key-studies-exam-progress-fill"></div></div>
+        <div class="quiz-progress-text" id="key-studies-exam-progress-text">Question 1 of 20</div>
+        <div class="quiz-score-text" id="key-studies-exam-score-text">0 / 20</div>
+        <div class="quiz-question-area" id="key-studies-exam-question"></div>
+        <div class="quiz-result" id="key-studies-exam-result"></div>
+      </div>
+
+    </section>
+
+    <div style="text-align:center;margin:1.5rem 0 1rem;">
+      <a href="hw-studies-quiz.html" style="display:inline-block;font-size:.9rem;color:var(--text-muted);text-decoration:none;border-bottom:1px dashed var(--text-muted);transition:color .15s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Want more practice? Try the full 42-question Studies Quiz &rarr;</a>
+    </div>
+
+    <div class="unit-nav">
+      <a href="studies.html" class="prev-unit">&larr; Studies</a>
+      <a href="human-development.html" class="next-unit">Human Development &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &#8212; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+(function(){
+  var QUESTIONS = [
+    { type:'mc', prompt:"Caspi et al. (2003) studied the interaction between:", options:["IQ and education","5-HTTLPR gene and stressful life events","Diet and exercise","Sleep and memory"], correct:1, feedback:{ correct:"Caspi found that people with the short allele of 5-HTTLPR were more likely to develop depression after stressful life events — a gene-environment interaction.", incorrect:"Caspi studied how the 5-HTTLPR gene interacts with stress to predict depression." } },
+    { type:'mc', prompt:"In Caspi et al. (2003), which allele of 5-HTTLPR was linked to higher depression risk after stress?", options:["The long allele","The short allele","Both alleles equally","Neither allele"], correct:1, feedback:{ correct:"The short allele of 5-HTTLPR was associated with increased depression risk following stressful life events.", incorrect:"The short allele was the risk allele in Caspi's gene-environment interaction findings." } },
+    { type:'mc', prompt:"Beck (1967) proposed that depression is maintained by:", options:["Low serotonin only","Negative automatic thoughts and the cognitive triad","Lack of social support","Genetic inheritance"], correct:1, feedback:{ correct:"Beck identified three patterns of negative thinking (self, world, future) that maintain depression — the cognitive triad.", incorrect:"Beck's cognitive model states depression is maintained by negative automatic thoughts and the cognitive triad." } },
+    { type:'mc', prompt:"What are the three components of Beck's cognitive triad?", options:["Id, ego, superego","Negative views of self, world, and future","Anxiety, depression, anger","Memory, attention, perception"], correct:1, feedback:{ correct:"The cognitive triad consists of negative beliefs about oneself, the world, and the future.", incorrect:"Beck's cognitive triad: negative views of self, world, and future." } },
+    { type:'mc', prompt:"Chiao and Blizinsky (2010) found that collectivist cultures had:", options:["Lower depression rates","Higher prevalence of the short 5-HTTLPR allele","No genetic variation","Lower rates of all mental illness"], correct:1, feedback:{ correct:"Collectivist cultures showed higher frequency of the short allele, suggesting cultural practices may buffer genetic risk for depression.", incorrect:"Chiao found collectivist cultures had higher prevalence of the risk allele." } },
+    { type:'mc', prompt:"What did Chiao and Blizinsky suggest about collectivist cultures and the short 5-HTTLPR allele?", options:["They cause depression","Cultural norms may protect against the genetic risk","The allele has no effect","Collectivism increases depression"], correct:1, feedback:{ correct:"They suggested collectivist cultural practices may buffer against the genetic risk associated with the short allele.", incorrect:"Collectivist cultural norms were proposed as protective against the genetic risk." } },
+    { type:'mc', prompt:"Bandura et al. (1961) found that children:", options:["Never imitated aggression","Imitated aggressive behaviour observed in adult models","Only imitated same-gender models","Could not learn from observation"], correct:1, feedback:{ correct:"Children who watched an aggressive model were significantly more likely to imitate that aggressive behaviour.", incorrect:"Bandura found children copied aggressive behaviour they observed in adults." } },
+    { type:'mc', prompt:"What was the dependent variable in Bandura's Bobo doll experiment?", options:["The children's IQ","The amount of aggressive behaviour displayed by children","The children's age","The colour of the Bobo doll"], correct:1, feedback:{ correct:"Bandura measured the frequency and type of aggressive behaviours children displayed after observing the model.", incorrect:"The dependent variable was the amount of aggressive behaviour children displayed." } },
+    { type:'mc', prompt:"Kirsch (2008) found that antidepressant effectiveness:", options:["Was much greater than placebo","Was largely explained by the placebo effect","Had no effect at all","Was the same for all patients"], correct:1, feedback:{ correct:"Kirsch's meta-analysis showed that most improvement was due to placebo, with drug-placebo differences being small.", incorrect:"Kirsch found placebo effects account for a large part of antidepressant improvement." } },
+    { type:'mc', prompt:"According to Kirsch (2008), for which group were antidepressants most effective?", options:["Mild depression","Moderate depression","Severe depression","All groups equally"], correct:2, feedback:{ correct:"Antidepressants showed the greatest benefit for patients with severe depression, not mild or moderate cases.", incorrect:"Kirsch found antidepressants were most effective for severe depression cases." } },
+    { type:'mc', prompt:"Elkin et al. (1989) compared CBT with:", options:["No treatment","Other therapies including interpersonal therapy and drug treatment","Surgery","Hypnosis"], correct:1, feedback:{ correct:"The NIMH study compared CBT, interpersonal therapy, imipramine, and placebo for depression.", incorrect:"Elkin compared CBT with other active treatments including interpersonal therapy." } },
+    { type:'mc', prompt:"What was a key finding from Elkin et al. (1989) about CBT for depression?", options:["CBT was the only effective treatment","CBT was equally effective as other active treatments","CBT was ineffective","CBT only worked for mild cases"], correct:1, feedback:{ correct:"CBT was found to be roughly equally effective as interpersonal therapy and drug treatment for moderate depression.", incorrect:"Elkin found CBT was comparably effective to other active treatments." } },
+    { type:'mc', prompt:"Lazarus and Folkman (1984) proposed that stress depends on:", options:["Only the stressor itself","How the person appraises the stressor and their coping resources","Genetics alone","Age only"], correct:1, feedback:{ correct:"Their transactional model states stress depends on primary appraisal (threat) and secondary appraisal (coping ability).", incorrect:"Lazarus and Folkman proposed stress depends on how a person appraises both the threat and their ability to cope." } },
+    { type:'mc', prompt:"In Lazarus and Folkman's model, what is 'secondary appraisal'?", options:["Judging whether a situation is threatening","Evaluating one's ability to cope with the stressor","Rating the stressor after the event","Second opinions from doctors"], correct:1, feedback:{ correct:"Secondary appraisal is the evaluation of one's own resources and ability to cope with the perceived threat.", incorrect:"Secondary appraisal = evaluating your own coping resources and ability." } },
+    { type:'mc', prompt:"Kurapov et al. (2023) studied the mental health effects of:", options:["University exams","War and displacement","Social media use","Exercise"], correct:1, feedback:{ correct:"They examined the psychological impact of war, displacement, and trauma on mental health outcomes.", incorrect:"Kurapov studied the effects of war, displacement, and trauma on mental health." } },
+    { type:'mc', prompt:"What type of mental health outcomes did Kurapov et al. (2023) find in displaced populations?", options:["Only physical symptoms","Increased rates of depression, anxiety, and PTSD","No significant effects","Improved well-being"], correct:1, feedback:{ correct:"Displaced populations showed significantly higher rates of depression, anxiety, and PTSD symptoms.", incorrect:"Kurapov found elevated depression, anxiety, and PTSD in displaced populations." } },
+    { type:'mc', prompt:"Andreassen et al. (2012) found that social media addiction was linked to:", options:["Higher self-esteem","Personality traits like narcissism and lower self-esteem","Better sleep","Improved relationships"], correct:1, feedback:{ correct:"Narcissism and lower self-esteem predicted greater susceptibility to problematic social media use.", incorrect:"Andreassen found narcissism and low self-esteem predicted social media addiction." } },
+    { type:'mc', prompt:"What type of study did Andreassen et al. (2012) use to investigate social media addiction?", options:["Experiment","Longitudinal study","Cross-sectional survey","Case study"], correct:2, feedback:{ correct:"Andreassen used a cross-sectional survey design to examine the relationship between personality and social media use.", incorrect:"Andreassen used a cross-sectional survey design." } },
+    { type:'mc', prompt:"Hunt et al. (2018) found that limiting social media to 30 minutes/day:", options:["Had no effect","Improved well-being by reducing loneliness and depression","Increased anxiety","Decreased self-esteem"], correct:1, feedback:{ correct:"The limited-use group showed significant reductions in loneliness and depression.", incorrect:"Hunt found limiting social media led to meaningful improvements in well-being." } },
+    { type:'mc', prompt:"What research method did Hunt et al. (2018) use?", options:["Correlational study","Randomised controlled trial","Case study","Naturalistic observation"], correct:1, feedback:{ correct:"Hunt used a randomised controlled trial where participants were randomly assigned to limit social media or continue as normal.", incorrect:"Hunt used a randomised controlled trial (RCT) design." } }
+  ];
+
+  if(typeof initQuiz==='function'){
+    initQuiz('key-studies-exam', QUESTIONS, true);
+  } else {
+    var id='key-studies-exam';
+    var btn=setInterval(function(){
+      if(typeof initQuiz==='function'){
+        clearInterval(btn);
+        initQuiz(id, QUESTIONS, true);
+      }
+    },100);
+  }
+})();
+</script>
+</body>
+</html>

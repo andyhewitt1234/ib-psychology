@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studies Quiz - Health &amp; Well-being - Mr. Hewitt's IB Psychology Class</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html" class="active">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="../ia/index.html">IA</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="../units.html">Units</a> <span>/</span> Health & Well-being Studies Quiz</div>
+    <a href="health-wellbeing-index.html" class="back-to-index">&larr; Back to Index</a>
+
+    <header class="unit-header">
+      <h1>Health &amp; Well-being Studies Quiz</h1>
+      <p class="unit-subtitle">42 questions testing your knowledge of every study from the Health &amp; Well-being unit. Can you remember who did what, why, and what they found?</p>
+    </header>
+
+    <section class="unit-content">
+
+      <div class="quiz-container" id="hw-studies-quiz">
+        <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="hw-studies-quiz-progress-fill"></div></div>
+        <div class="quiz-progress-text" id="hw-studies-quiz-progress-text">Question 1 of 42</div>
+        <div class="quiz-score-text" id="hw-studies-quiz-score-text">0 / 42</div>
+        <div class="quiz-question-area" id="hw-studies-quiz-question"></div>
+        <div class="quiz-result" id="hw-studies-quiz-result"></div>
+      </div>
+
+    </section>
+
+    <div class="unit-nav">
+      <a href="comprehensive-quiz.html" class="prev-unit">&larr; Comprehensive Quiz</a>
+      <a href="human-development.html" class="next-unit">Human Development &rarr;</a>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &#8212; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+(function(){
+  var QUESTIONS = [
+    { type:'mc', prompt:"Rosenhan (1973) tested whether:", options:["Therapy is effective for depression","Psychiatric hospitals could reliably distinguish sane from insane people","Social media causes anxiety","Genes determine mental illness"], correct:1, feedback:{ correct:"Rosenhan sent pseudopatients to psychiatric hospitals to test whether they could be correctly identified as sane.", incorrect:"Rosenhan's study tested whether psychiatric hospitals could reliably distinguish between sane and insane people." } },
+    { type:'mc', prompt:"In Rosenhan's study, pseudopatients were diagnosed with:", options:["Depression","Anxiety","Schizophrenia","Bipolar disorder"], correct:2, feedback:{ correct:"All pseudopatients were admitted and diagnosed, most commonly with schizophrenia.", incorrect:"The pseudopatients were typically diagnosed with schizophrenia despite reporting normal behaviour after admission." } },
+    { type:'mc', prompt:"Kroska and Harkness (2008) found that psychiatric diagnosis can:", options:["Cure mental illness","Contribute to self-stigma by changing self-identity","Improve memory","Increase intelligence"], correct:1, feedback:{ correct:"Their study showed diagnosis can change how people understand themselves, leading to self-stigma.", incorrect:"Kroska and Harkness found that diagnosis can contribute to self-stigma by changing how people understand themselves." } },
+    { type:'mc', prompt:"Garb (2021) reviewed evidence for bias in psychological diagnosis related to:", options:["Age only","Race and gender","Socioeconomic status only","Religion"], correct:1, feedback:{ correct:"Garb's review examined evidence for race and gender bias in how clinicians make diagnoses.", incorrect:"Garb reviewed evidence showing race and gender bias can affect psychological diagnosis." } },
+    { type:'mc', prompt:"Regier et al. (2013) tested the reliability of:", options:["DSM-4 diagnoses","DSM-5 diagnoses","ICD-10 diagnoses","RDoC criteria"], correct:1, feedback:{ correct:"They tested how reliably clinicians could apply DSM-5 diagnostic criteria in real clinical settings.", incorrect:"Regier et al. tested the reliability of DSM-5 diagnoses in real clinical settings." } },
+    { type:'mc', prompt:"Caspi et al. (2003) found that the 5-HTTLPR gene:", options:["Causes depression directly","Interacts with stress to predict depression","Has no effect on mental health","Only affects anxiety"], correct:1, feedback:{ correct:"Caspi found that people with the short allele of 5-HTTLPR were more likely to develop depression after stressful life events.", incorrect:"Caspi found a gene-environment interaction: the 5-HTTLPR short allele increased depression risk specifically after stressful events." } },
+    { type:'mc', prompt:"Drysdale et al. (2017) used neuroimaging to identify:", options:["Memory centres in the brain","Neural network subtypes of depression","The location of the soul","How language develops"], correct:1, feedback:{ correct:"They identified distinct neural network subtypes of depression using fMRI data.", incorrect:"Drysdale used neuroimaging to identify distinct neural subtypes of depression based on brain connectivity patterns." } },
+    { type:'mc', prompt:"Williams (2016) proposed a neural circuit taxonomy for:", options:["Memory and learning","Depression and anxiety","Language processing","Motor control"], correct:1, feedback:{ correct:"Williams proposed classifying depression and anxiety based on specific brain circuit dysfunction patterns.", incorrect:"Williams proposed a neural circuit taxonomy for understanding and classifying depression and anxiety." } },
+    { type:'mc', prompt:"Eack et al. (2012) found evidence of racial bias in the diagnosis of:", options:["Depression","Schizophrenia","Anxiety disorders","ADHD"], correct:1, feedback:{ correct:"They found African Americans were more likely to be diagnosed with schizophrenia than Caucasians with similar symptoms.", incorrect:"Eack found racial bias in schizophrenia diagnosis, with African Americans more likely to receive this diagnosis." } },
+    { type:'mc', prompt:"Eaton et al. (2012) found evidence of gender bias in the diagnosis of:", options:["Schizophrenia","Mood disorders like depression","Personality disorders","Autism"], correct:1, feedback:{ correct:"They found gender bias in mood disorder diagnosis, with women more likely to be diagnosed with depression.", incorrect:"Eaton found gender bias in mood disorder diagnosis, with women more frequently diagnosed with depression." } },
+    { type:'mc', prompt:"Kirsch (2008) found that antidepressant effectiveness:", options:["Was much greater than placebo","Was largely explained by the placebo effect","Had no effect at all","Was the same for all patients"], correct:1, feedback:{ correct:"Kirsch's meta-analysis showed that most antidepressant improvement was due to placebo, with drug-placebo differences being small.", incorrect:"Kirsch found that placebo effects account for a large part of improvement, especially in mild/moderate depression." } },
+    { type:'mc', prompt:"Wagstaff et al. (2001) studied tianeptine to challenge:", options:["The diathesis-stress model","The serotonin hypothesis of depression","Social learning theory","Cognitive dissonance theory"], correct:1, feedback:{ correct:"Tianeptine increases serotonin but has antidepressant effects, challenging the simple serotonin deficiency explanation.", incorrect:"Tianeptine's mechanism (increasing serotonin) contradicts the idea that depression is caused by low serotonin." } },
+    { type:'mc', prompt:"Neumeister et al. (2002) found that the serotonin transporter gene:", options:["Had no effect on mood","Made people more vulnerable to negative mood after tryptophan depletion","Cured depression","Only affected sleep"], correct:1, feedback:{ correct:"People with the short allele showed greater mood lowering after tryptophan depletion, showing genetic vulnerability.", incorrect:"The short allele was associated with greater vulnerability to negative mood when serotonin was depleted." } },
+    { type:'mc', prompt:"Polderman et al. (2015) conducted a meta-analysis of twin studies to examine:", options:["Treatment effectiveness","Heritability of mental disorders","Cultural differences in diagnosis","The placebo effect"], correct:1, feedback:{ correct:"They estimated how much of the variation in mental disorders is due to genetic factors.", incorrect:"Polderman's twin meta-analysis estimated the heritability of various mental disorders." } },
+    { type:'mc', prompt:"Beck (1967) proposed that depression is caused by:", options:["Low serotonin only","Negative automatic thoughts and the cognitive triad","Excessive exercise","Lack of social support"], correct:1, feedback:{ correct:"Beck identified three patterns of negative thinking about self, world, and future that maintain depression.", incorrect:"Beck's cognitive model states depression is maintained by negative automatic thoughts and the cognitive triad." } },
+    { type:'mc', prompt:"Possel et al. (2022) found that social status was related to:", options:["Physical health only","The cognitive triad of depression","Musical ability","Athletic performance"], correct:1, feedback:{ correct:"They found a link between social status and negative cognitive patterns associated with depression.", incorrect:"Possel found that social status influences the cognitive triad - negative views of self, world, and future." } },
+    { type:'mc', prompt:"Parker et al. (2001) found that Chinese patients with depression were more likely to:", options:["Report psychological symptoms","Express depression through somatic (physical) symptoms","Refuse treatment","Recover faster"], correct:1, feedback:{ correct:"Chinese patients tended to express depression through physical complaints rather than emotional language.", incorrect:"Parker found that depression in Chinese populations was more often expressed through somatic symptoms." } },
+    { type:'mc', prompt:"Chiao and Blizinsky (2010) found that collectivist cultures had:", options:["Higher depression rates","Higher prevalence of the short 5-HTTLPR allele","No genetic variation","Lower rates of all mental illness"], correct:1, feedback:{ correct:"Collectivist cultures showed higher frequency of the short allele, suggesting cultural practices may buffer genetic risk.", incorrect:"They found collectivist cultures had higher prevalence of the risk allele, suggesting cultural norms may protect against depression." } },
+    { type:'mc', prompt:"Kurapov et al. (2023) studied the mental health effects of:", options:["University exams","War and displacement","Social media use","Exercise"], correct:1, feedback:{ correct:"They examined the psychological impact of war, displacement, and trauma on mental health.", incorrect:"Kurapov studied the effects of war, displacement, and trauma on mental health outcomes." } },
+    { type:'mc', prompt:"Qiu et al. (2023) found that air pollution was associated with:", options:["Improved mood","Late-life depression","Better sleep","Higher IQ"], correct:1, feedback:{ correct:"They found that exposure to air pollutants (PM2.5) was linked to increased depression in older adults.", incorrect:"Qiu found a link between air pollution exposure and increased late-life depression." } },
+    { type:'mc', prompt:"Andreassen et al. (2012) found that social media addiction was linked to:", options:["Higher self-esteem","Personality traits like narcissism and lower self-esteem","Better sleep","Improved relationships"], correct:1, feedback:{ correct:"They found narcissism and lower self-esteem predicted greater susceptibility to problematic social media use.", incorrect:"Andreassen found that personality traits like narcissism and low self-esteem predicted social media addiction." } },
+    { type:'mc', prompt:"Hunt et al. (2018) found that limiting social media to 30 minutes/day:", options:["Had no effect","Improved well-being by reducing loneliness and depression","Increased anxiety","Decreased self-esteem"], correct:1, feedback:{ correct:"The limited-use group showed significant reductions in loneliness and depression.", incorrect:"Hunt found that limiting social media use led to meaningful improvements in loneliness and depression." } },
+    { type:'mc', prompt:"Elhai et al. (2020) identified FOMO as a predictor of:", options:["Better sleep","Problematic social media and smartphone use","Higher grades","Improved mood"], correct:1, feedback:{ correct:"FOMO strongly predicted compulsive checking and problematic social media/smartphone use.", incorrect:"Elhai found FOMO strongly predicted problematic social media and smartphone use." } },
+    { type:'mc', prompt:"Samra et al. (2022) found that social comparison:", options:["Improved self-esteem","Mediated the link between social media and depression","Had no effect on mood","Only affected men"], correct:1, feedback:{ correct:"Social comparison was identified as a mechanism explaining why social media use can lead to depression.", incorrect:"Samra found social comparison partly explains the relationship between social media use and depression." } },
+    { type:'mc', prompt:"Vidal et al. (2020) reviewed evidence on social media and:", options:["Physical fitness","Depression and suicidality in adolescents","Language development","Mathematical ability"], correct:1, feedback:{ correct:"They found bidirectional associations between social media use, depression, and suicidal ideation.", incorrect:"Vidal reviewed evidence linking social media use to depression and suicidality in adolescents." } },
+    { type:'mc', prompt:"Elkin et al. (1989) compared CBT with:", options:["No treatment","Other therapies including interpersonal therapy and drug treatment","Surgery","Hypnosis"], correct:1, feedback:{ correct:"The NIMH study compared CBT, interpersonal therapy, drug treatment, and placebo for depression.", incorrect:"Elkin compared CBT with other active treatments including interpersonal therapy and imipramine." } },
+    { type:'mc', prompt:"Hagger et al. (2001) used which theory to predict physical activity?", options:["Social learning theory","Theory of Planned Behaviour","Psychoanalytic theory","Humanistic theory"], correct:1, feedback:{ correct:"They applied the Theory of Planned Behaviour (attitudes, subjective norms, perceived behavioural control) to predict exercise.", incorrect:"Hagger used the Theory of Planned Behaviour to predict physical activity intentions and behaviour." } },
+    { type:'mc', prompt:"Freijy and Kothe (2013) studied cognitive dissonance in relation to:", options:["Memory","Health behaviour change","Sleep patterns","Mathematical ability"], correct:1, feedback:{ correct:"They examined how the discomfort of holding contradictory beliefs can motivate health behaviour change.", incorrect:"Freijy and Kothe studied how cognitive dissonance can be used to promote health behaviour change." } },
+    { type:'mc', prompt:"Choi et al. (2020) found that social connection:", options:["Caused depression","Was a protective factor against depression","Had no effect on mental health","Only helped children"], correct:1, feedback:{ correct:"They found that social connections served as a protective factor against developing depression.", incorrect:"Choi found social connection was a protective factor that reduced depression risk." } },
+    { type:'mc', prompt:"Brance et al. (2023) studied social identification and mental health in:", options:["Athletes","Migrants","Children","Elderly people"], correct:1, feedback:{ correct:"They examined how social identification with communities affected the mental health of migrants.", incorrect:"Brance studied how social identification with communities affects migrants' mental health." } },
+    { type:'mc', prompt:"Bandura et al. (1961) found that children:", options:["Never imitated aggression","Imitated aggressive behaviour observed in adult models","Only imitated same-gender models","Could not learn from observation"], correct:1, feedback:{ correct:"Children who watched an aggressive model were significantly more likely to imitate aggressive behaviour.", incorrect:"Bandura found children copied aggressive behaviour they observed in adults, supporting social learning theory." } },
+    { type:'mc', prompt:"Kosfeld et al. (2005) found that oxytocin:", options:["Decreased trust","Increased trust in economic trust games","Had no effect on social behaviour","Caused aggression"], correct:1, feedback:{ correct:"Participants given oxytocin showed greater trust in the economic trust game.", incorrect:"Kosfeld found oxytocin increased interpersonal trust in an economic trust game paradigm." } },
+    { type:'mc', prompt:"Scheele et al. (2012) found that oxytocin:", options:["Decreased fidelity in men","Increased fidelity in men by reducing attraction to other women","Had no effect on relationships","Only affected women"], correct:1, feedback:{ correct:"Oxytocin increased fidelity by reducing activity in brain reward centres when men viewed attractive alternatives.", incorrect:"Scheele found oxytocin made men in monogamous relationships less likely to approach attractive women." } },
+    { type:'mc', prompt:"Goetz et al. (2014) studied testosterone in relation to:", options:["Happiness","Neural responses to social threat","Memory formation","Language acquisition"], correct:1, feedback:{ correct:"They examined how testosterone affected brain responses to threatening social cues.", incorrect:"Goetz studied how testosterone influences neural responses to social threats." } },
+    { type:'mc', prompt:"Selye's General Adaptation Syndrome describes:", options:["Learning stages","The body's three-stage response to prolonged stress","Memory formation","Language development"], correct:1, feedback:{ correct:"GAS has three stages: alarm, resistance, and exhaustion, showing how the body copes with ongoing stress.", incorrect:"Selye's GAS describes the body's alarm, resistance, and exhaustion stages in response to prolonged stress." } },
+    { type:'mc', prompt:"Lazarus and Folkman (1984) proposed that stress depends on:", options:["Only the stressor itself","How the person appraises the stressor and their coping resources","Genetics alone","Age only"], correct:1, feedback:{ correct:"Their transactional model states stress depends on primary appraisal (is it threatening?) and secondary appraisal (can I cope?).", incorrect:"Lazarus and Folkman proposed that stress depends on how a person appraises both the threat and their ability to cope." } },
+    { type:'mc', prompt:"Akins et al. (2008) studied acculturation and substance use among:", options:["Asian Americans","Hispanic/Latino adolescents","European immigrants","African Americans"], correct:1, feedback:{ correct:"They examined how cultural adaptation (acculturation) affected substance use patterns in Hispanic youth.", incorrect:"Akins studied how acculturation influenced substance use among Hispanic/Latino adolescents." } },
+    { type:'mc', prompt:"Zhang and Shrum (2009) found that self-construal affected:", options:["Memory only","Impulsive drinking behaviour","Mathematical ability","Sleep quality"], correct:1, feedback:{ correct:"They found that interdependent self-construal was linked to more impulsive drinking in certain contexts.", incorrect:"Zhang and Shrum found self-construal (independent vs interdependent) influenced impulsive drinking." } },
+    { type:'mc', prompt:"Du et al. (2014) found that individualism was linked to:", options:["Lower rates of substance use","Hopelessness and substance use","Better mental health","Higher life satisfaction"], correct:1, feedback:{ correct:"They found individualistic cultural values were associated with hopelessness, which predicted substance use.", incorrect:"Du found individualism was linked to hopelessness, which in turn predicted substance use." } },
+    { type:'mc', prompt:"Fernandez-Pujals et al. (2015) estimated the heritability of major depressive disorder (MDD) at approximately:", options:["10%","30%","50%","90%"], correct:2, feedback:{ correct:"They estimated MDD heritability at around 42-49%, showing significant genetic contribution.", incorrect:"Fernandez-Pujals estimated MDD heritability at approximately 42-49%." } },
+    { type:'mc', prompt:"Ali and Khoja (2019) examined the link between air pollution and:", options:["Physical fitness","Mental illness","Mathematical ability","Cooking skills"], correct:1, feedback:{ correct:"They reviewed evidence linking air pollution exposure to increased mental health problems.", incorrect:"Ali and Khoja examined the relationship between air pollution and mental illness." } },
+    { type:'mc', prompt:"Einstein et al. (2023) found that self-compassion:", options:["Increased anxiety","Buffered against social media anxiety in adolescents","Had no effect","Increased FOMO"], correct:1, feedback:{ correct:"Higher self-compassion weakened the link between social media use and anxiety in adolescents.", incorrect:"Einstein found self-compassion served as a protective buffer against social media-related anxiety." } }
+  ];
+
+  if(typeof initQuiz==='function'){
+    initQuiz('hw-studies-quiz', QUESTIONS, true);
+  } else {
+    var id='hw-studies-quiz';
+    var btn=setInterval(function(){
+      if(typeof initQuiz==='function'){
+        clearInterval(btn);
+        initQuiz(id, QUESTIONS, true);
+      }
+    },100);
+  }
+})();
+</script>
+</body>
+</html>
