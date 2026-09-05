@@ -151,6 +151,11 @@
   margin-bottom: .5rem !important;
 }
 
+/* Hidden answers: collapse fully so hidden content reserves no vertical space */
+.page-wrapper .reveal:not(.open) .reveal-answer {
+  contain: size;
+}
+
 /* Paragraph spacing: ensure readable gaps between text blocks */
 .theory-section p + p { margin-top: .5rem; }
 .theory-section p:last-child { margin-bottom: 0; }
