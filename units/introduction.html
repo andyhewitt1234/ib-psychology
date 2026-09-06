@@ -17,6 +17,93 @@
     .progress-rail { padding: 4px 2px; }
     .progress-rail .rail-line { top: 4px; bottom: 4px; }
     .progress-rail .rail-dot .rail-label { left: 14px; font-size: .65rem; max-width: 200px; }
+  
+    /* Slides 1-6 use the same unit-wide rules below (earlier slides 1-6
+   prototype retired; sequencing on slide-6 uses the neutral container
+   per the per-type system). */
+    /* ===== PROPAGATION: approved WHAT IS IB PSYCHOLOGY? system, unit-wide ===== */
+    /* Attribute scope keeps every rule inside this file's slides. */
+    [id^="slide-"] h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 .4rem;
+    }
+    [id^="slide-"] .slide-intro {
+      font-size: 1rem;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    [id^="slide-"] .collapsible {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: .4rem;
+    }
+    [id^="slide-"] .collapsible-trigger {
+      padding: .55rem .2rem;
+      font-size: .9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible-trigger:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+    [id^="slide-"] .collapsible-trigger::after {
+      font-size: .8rem;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible.open .collapsible-trigger {
+      border-bottom: 1px solid var(--border);
+    }
+    [id^="slide-"] .collapsible-body {
+      padding: .6rem .2rem;
+      line-height: 1.65;
+    }
+    [id^="slide-"] .reveal {
+      margin-top: .8rem;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+    }
+    [id^="slide-"] .reveal-question {
+      font-size: .95rem;
+    }
+    [id^="slide-"] .act-container {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      margin-top: .9rem;
+    }
+    [id^="slide-"] .act-subtitle {
+      margin: .15rem 0 .85rem;
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+    [id^="slide-"] .act-scenario {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    /* Per-type container accents (unit-wide, slides 1-6 included):
+       prediction + scenario-application = primary; conclude = accent;
+       other types keep the neutral container and speak via badges/structure. */
+    #slide-2 .act-container, #slide-10 .act-container, #slide-18 .act-container, #slide-30 .act-container,
+    #slide-34 .act-container, #slide-36 .act-container, #slide-38 .act-container,
+    #slide-44 .act-container {
+      border-left: 3px solid var(--primary);
+    }
+    #slide-4 .act-container, #slide-12 .act-container, #slide-14 .act-container, #slide-46 .act-container,
+    #slide-50 .act-container, #slide-54 .act-container, #slide-56 .act-container {
+      border-left: 3px solid var(--accent);
+    }
   </style>
 </head>
 <body>

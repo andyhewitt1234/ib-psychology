@@ -15,6 +15,123 @@
     .activity-slide.active { display: block; }
     .progress-rail .rail-dot { width: 5px; height: 5px; }
     .progress-rail .activity-dot { width: 3px; height: 3px; }
+  
+    /* ===== BLUEPRINT PROPAGATION: approved system, LC unit-wide ===== */
+    /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
+       Quiz (slide-55) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       analysis / classification / sequencing / synthesis / short-response keep the
+       neutral container (badge + structure carry identity), per blueprint rule.
+       The custom Working Memory widget (#lc-p14-wm-widget, slide-28) is EXCLUDED
+       from the container restyle: its page (title/intro/nav) is upgraded, the widget itself untouched. */
+    [id^="slide-"] h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 .4rem;
+    }
+    [id^="slide-"] .slide-intro {
+      font-size: 1rem;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    [id^="slide-"] .collapsible {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: .4rem;
+    }
+    [id^="slide-"] .collapsible-trigger {
+      padding: .55rem .2rem;
+      font-size: .9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible-trigger:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+    [id^="slide-"] .collapsible-trigger::after {
+      font-size: .8rem;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible.open .collapsible-trigger {
+      border-bottom: 1px solid var(--border);
+    }
+    [id^="slide-"] .collapsible-body {
+      padding: .6rem .2rem;
+      line-height: 1.65;
+    }
+    [id^="slide-"] .reveal {
+      margin-top: .8rem;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+    }
+    [id^="slide-"] .reveal-question {
+      font-size: .95rem;
+    }
+    [id^="slide-"] .act-container {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      margin-top: .9rem;
+    }
+    [id^="slide-"] .act-subtitle {
+      margin: .15rem 0 .85rem;
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+    [id^="slide-"] .act-scenario {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    /* Per-type container accents (blueprint rule: prediction + scenario-application
+       = primary; conclude = accent; all other types neutral):
+       primary: 14/22/32 prediction + 23 scenario-application slides.
+       accent: 15 conclude slides. */
+    #slide-4 .act-container, #slide-7 .act-container, #slide-8 .act-container, #slide-11 .act-container, #slide-12 .act-container, #slide-13 .act-container, #slide-14 .act-container, #slide-16 .act-container, #slide-19 .act-container, #slide-20 .act-container, #slide-21 .act-container, #slide-22 .act-container, #slide-23 .act-container, #slide-24 .act-container, #slide-32 .act-container, #slide-35 .act-container, #slide-36 .act-container, #slide-40 .act-container, #slide-41 .act-container, #slide-42 .act-container, #slide-43 .act-container, #slide-44 .act-container, #slide-45 .act-container, #slide-46 .act-container, #slide-49 .act-container, #slide-50 .act-container {
+      border-left: 3px solid var(--primary);
+    }
+    #slide-3 .act-container, #slide-5 .act-container, #slide-9 .act-container, #slide-15 .act-container, #slide-25 .act-container, #slide-27 .act-container, #slide-29 .act-container, #slide-30 .act-container, #slide-31 .act-container, #slide-33 .act-container, #slide-34 .act-container, #slide-37 .act-container, #slide-39 .act-container, #slide-47 .act-container, #slide-48 .act-container {
+      border-left: 3px solid var(--accent);
+    }
+    /* RM LESSON: live-verified very long Think/Answer questions (>200 visible
+       chars on slides 1/3/9/13/17/21/27/29/35/41/43/45/49/53) stack above their
+       Answer pill instead of squeezing beside it. QUESTION TEXT / [Answer]. */
+    #slide-1 .reveal-question, #slide-3 .reveal-question, #slide-9 .reveal-question,
+    #slide-13 .reveal-question, #slide-17 .reveal-question, #slide-21 .reveal-question,
+    #slide-27 .reveal-question, #slide-29 .reveal-question, #slide-35 .reveal-question,
+    #slide-41 .reveal-question, #slide-43 .reveal-question, #slide-45 .reveal-question,
+    #slide-49 .reveal-question, #slide-53 .reveal-question {
+      display: block;
+    }
+    #slide-1 .reveal-question::after, #slide-3 .reveal-question::after,
+    #slide-9 .reveal-question::after, #slide-13 .reveal-question::after,
+    #slide-17 .reveal-question::after, #slide-21 .reveal-question::after,
+    #slide-27 .reveal-question::after, #slide-29 .reveal-question::after,
+    #slide-35 .reveal-question::after, #slide-41 .reveal-question::after,
+    #slide-43 .reveal-question::after, #slide-45 .reveal-question::after,
+    #slide-49 .reveal-question::after, #slide-53 .reveal-question::after {
+      display: table;
+      margin-top: .5rem;
+    }
+    /* The custom Working Memory widget keeps its baseline unstyled container
+       (base .act-container carries no shared styles); only its page chrome
+       (title/intro/nav) takes the blueprint. Placed last; ID wins ties. */
+    #lc-p14-wm-widget {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>

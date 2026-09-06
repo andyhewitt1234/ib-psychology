@@ -17,6 +17,118 @@
     .progress-rail { padding: 4px 2px; }
     .progress-rail .rail-line { top: 4px; bottom: 4px; }
     .progress-rail .rail-dot .rail-label { left: 14px; font-size: .65rem; max-width: 200px; }
+  
+    /* ===== BLUEPRINT PROPAGATION: approved system, HD unit-wide ===== */
+    /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
+       Quiz (slide-72) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       fill-blank / sequencing / classification / synthesis / short-response /
+       compare-contrast keep the neutral container (badge + structure carry identity). */
+    [id^="slide-"] h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 .4rem;
+    }
+    [id^="slide-"] .slide-intro {
+      font-size: 1rem;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    [id^="slide-"] .collapsible {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: .4rem;
+    }
+    [id^="slide-"] .collapsible-trigger {
+      padding: .55rem .2rem;
+      font-size: .9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible-trigger:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+    [id^="slide-"] .collapsible-trigger::after {
+      font-size: .8rem;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible.open .collapsible-trigger {
+      border-bottom: 1px solid var(--border);
+    }
+    [id^="slide-"] .collapsible-body {
+      padding: .6rem .2rem;
+      line-height: 1.65;
+    }
+    [id^="slide-"] .reveal {
+      margin-top: .8rem;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+    }
+    [id^="slide-"] .reveal-question {
+      font-size: .95rem;
+    }
+    [id^="slide-"] .act-container {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      margin-top: .9rem;
+    }
+    [id^="slide-"] .act-subtitle {
+      margin: .15rem 0 .85rem;
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+    [id^="slide-"] .act-scenario {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    /* Per-type container accents (blueprint rule: prediction + scenario-application
+       = primary; conclude = accent; all other types neutral):
+       primary: 28/43/48/58/59/71 prediction; 39 scenario-application.
+       accent: 2/3/5/9/11/13/14/16/25/27/45/52/53/56/63/69 conclude. */
+    #slide-28 .act-container, #slide-39 .act-container, #slide-43 .act-container,
+    #slide-48 .act-container, #slide-58 .act-container, #slide-59 .act-container,
+    #slide-71 .act-container {
+      border-left: 3px solid var(--primary);
+    }
+    #slide-2 .act-container, #slide-3 .act-container, #slide-5 .act-container,
+    #slide-9 .act-container, #slide-11 .act-container, #slide-13 .act-container,
+    #slide-14 .act-container, #slide-16 .act-container, #slide-25 .act-container,
+    #slide-27 .act-container, #slide-45 .act-container, #slide-52 .act-container,
+    #slide-53 .act-container, #slide-56 .act-container, #slide-63 .act-container,
+    #slide-69 .act-container {
+      border-left: 3px solid var(--accent);
+    }
+    /* RM LESSON: live-verified very long Think/Answer questions (>200 visible
+       chars on slides 7/9/17/24/26/29/32/40/42/51/57/60/67) stack above their
+       Answer pill instead of squeezing beside it. QUESTION TEXT / [Answer]. */
+    #slide-7 .reveal-question, #slide-9 .reveal-question, #slide-17 .reveal-question,
+    #slide-24 .reveal-question, #slide-26 .reveal-question, #slide-29 .reveal-question,
+    #slide-32 .reveal-question, #slide-40 .reveal-question, #slide-42 .reveal-question,
+    #slide-51 .reveal-question, #slide-57 .reveal-question, #slide-60 .reveal-question,
+    #slide-67 .reveal-question {
+      display: block;
+    }
+    #slide-7 .reveal-question::after, #slide-9 .reveal-question::after,
+    #slide-17 .reveal-question::after, #slide-24 .reveal-question::after,
+    #slide-26 .reveal-question::after, #slide-29 .reveal-question::after,
+    #slide-32 .reveal-question::after, #slide-40 .reveal-question::after,
+    #slide-42 .reveal-question::after, #slide-51 .reveal-question::after,
+    #slide-57 .reveal-question::after, #slide-60 .reveal-question::after,
+    #slide-67 .reveal-question::after {
+      display: table;
+      margin-top: .5rem;
+    }
   </style>
 </head>
 <body>

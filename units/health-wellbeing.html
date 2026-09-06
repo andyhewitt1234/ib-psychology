@@ -17,6 +17,108 @@
     .slide.active { display: block; }
     .activity-slide { display: none; }
     .activity-slide.active { display: block; }
+  
+    /* ===== BLUEPRINT PROPAGATION: approved Introduction/RM system, HWB unit-wide ===== */
+    /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
+       Quiz (slide-49) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       compare-contrast / synthesis / short-response keep the neutral container
+       (badge + structure carry identity), per blueprint rule. */
+    [id^="slide-"] h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 .4rem;
+    }
+    [id^="slide-"] .slide-intro {
+      font-size: 1rem;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    [id^="slide-"] .collapsible {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: .4rem;
+    }
+    [id^="slide-"] .collapsible-trigger {
+      padding: .55rem .2rem;
+      font-size: .9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible-trigger:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+    [id^="slide-"] .collapsible-trigger::after {
+      font-size: .8rem;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible.open .collapsible-trigger {
+      border-bottom: 1px solid var(--border);
+    }
+    [id^="slide-"] .collapsible-body {
+      padding: .6rem .2rem;
+      line-height: 1.65;
+    }
+    [id^="slide-"] .reveal {
+      margin-top: .8rem;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+    }
+    [id^="slide-"] .reveal-question {
+      font-size: .95rem;
+    }
+    [id^="slide-"] .act-container {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      margin-top: .9rem;
+    }
+    [id^="slide-"] .act-subtitle {
+      margin: .15rem 0 .85rem;
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+    [id^="slide-"] .act-scenario {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    /* Per-type container accents (blueprint rule: prediction + scenario-application
+       = primary; conclude = accent; all other types neutral):
+       primary: 17 prediction; 9/13/18 scenario-application.
+       accent: 6/7/14/16/21/23/24/25/27/28/31/33/34/36/38/41 conclude. */
+    #slide-9 .act-container, #slide-13 .act-container,
+    #slide-17 .act-container, #slide-18 .act-container {
+      border-left: 3px solid var(--primary);
+    }
+    #slide-6 .act-container, #slide-7 .act-container, #slide-14 .act-container,
+    #slide-16 .act-container, #slide-21 .act-container, #slide-23 .act-container,
+    #slide-24 .act-container, #slide-25 .act-container, #slide-27 .act-container,
+    #slide-28 .act-container, #slide-31 .act-container, #slide-33 .act-container,
+    #slide-34 .act-container, #slide-36 .act-container, #slide-38 .act-container,
+    #slide-41 .act-container {
+      border-left: 3px solid var(--accent);
+    }
+    /* RM LESSON: very long Think/Answer questions (live-verified >200 visible
+       chars on slides 16/38) stack above their Answer pill instead of
+       squeezing beside it. QUESTION TEXT / [Answer]. */
+    #slide-16 .reveal-question, #slide-38 .reveal-question {
+      display: block;
+    }
+    #slide-16 .reveal-question::after,
+    #slide-38 .reveal-question::after {
+      display: table;
+      margin-top: .5rem;
+    }
   </style>
 
 </head>

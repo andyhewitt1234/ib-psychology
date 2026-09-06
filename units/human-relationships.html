@@ -107,6 +107,100 @@
     #slide-151 .reveal-question::after { flex: 0 0 auto; }
     #slide-154 .reveal-question { gap: 1rem; }
     #slide-154 .reveal-question::after { flex: 0 0 auto; }
+  
+    /* ===== BLUEPRINT PROPAGATION: approved system, HR unit-wide ===== */
+    /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
+       Tables keep existing inline styling. classification / sequencing / synthesis
+       keep the neutral container (badge + structure carry identity), per blueprint rule.
+       Existing per-slide .reveal-question gap fixes are preserved (only font-size
+       is set generically below); long-question stacking is added separately. */
+    [id^="slide-"] h2 {
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      margin: 0 0 .4rem;
+    }
+    [id^="slide-"] .slide-intro {
+      font-size: 1rem;
+      color: var(--text);
+      border-left: 3px solid var(--primary);
+      padding-left: .7rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    [id^="slide-"] .collapsible {
+      border: none;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      margin-bottom: .4rem;
+    }
+    [id^="slide-"] .collapsible-trigger {
+      padding: .55rem .2rem;
+      font-size: .9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible-trigger:hover {
+      background: transparent;
+      text-decoration: underline;
+    }
+    [id^="slide-"] .collapsible-trigger::after {
+      font-size: .8rem;
+      color: var(--primary);
+    }
+    [id^="slide-"] .collapsible.open .collapsible-trigger {
+      border-bottom: 1px solid var(--border);
+    }
+    [id^="slide-"] .collapsible-body {
+      padding: .6rem .2rem;
+      line-height: 1.65;
+    }
+    [id^="slide-"] .reveal {
+      margin-top: .8rem;
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+    }
+    [id^="slide-"] .reveal-question {
+      font-size: .95rem;
+    }
+    [id^="slide-"] .act-container {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: .9rem 1rem;
+      margin-top: .9rem;
+    }
+    [id^="slide-"] .act-subtitle {
+      margin: .15rem 0 .85rem;
+      font-size: .92rem;
+      line-height: 1.55;
+    }
+    [id^="slide-"] .act-scenario {
+      background: var(--primary-light);
+      border: 1px solid var(--primary);
+      border-radius: var(--radius);
+      padding: .8rem 1rem;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    /* Per-type container accents (blueprint rule: prediction + scenario-application
+       = primary; HR contains no conclude activities, so no accent rules):
+       primary: 26/46/139 prediction; 49 scenario-application slides (see map). */
+    #slide-6 .act-container, #slide-8 .act-container, #slide-16 .act-container, #slide-20 .act-container, #slide-22 .act-container, #slide-26 .act-container, #slide-27 .act-container, #slide-31 .act-container, #slide-33 .act-container, #slide-38 .act-container, #slide-40 .act-container, #slide-42 .act-container, #slide-44 .act-container, #slide-46 .act-container, #slide-50 .act-container, #slide-54 .act-container, #slide-61 .act-container, #slide-63 .act-container, #slide-65 .act-container, #slide-71 .act-container, #slide-73 .act-container, #slide-75 .act-container, #slide-77 .act-container, #slide-80 .act-container, #slide-82 .act-container, #slide-87 .act-container, #slide-89 .act-container, #slide-91 .act-container, #slide-95 .act-container, #slide-99 .act-container, #slide-101 .act-container, #slide-107 .act-container, #slide-109 .act-container, #slide-111 .act-container, #slide-113 .act-container, #slide-117 .act-container, #slide-119 .act-container, #slide-123 .act-container, #slide-125 .act-container, #slide-127 .act-container, #slide-131 .act-container, #slide-133 .act-container, #slide-135 .act-container, #slide-137 .act-container, #slide-139 .act-container, #slide-140 .act-container, #slide-142 .act-container, #slide-144 .act-container, #slide-146 .act-container, #slide-148 .act-container, #slide-150 .act-container, #slide-153 .act-container {
+      border-left: 3px solid var(--primary);
+    }
+  
+    /* RM LESSON: live-verified very long Think/Answer questions (>200 visible
+       chars on 31 slides) stack above their Answer pill instead of squeezing
+       beside it. QUESTION TEXT / [Answer]. All other slides keep the approved
+       flex row (plus this file's pre-existing per-slide gap fixes). */
+    #slide-5 .reveal-question, #slide-7 .reveal-question, #slide-11 .reveal-question, #slide-13 .reveal-question, #slide-15 .reveal-question, #slide-19 .reveal-question, #slide-23 .reveal-question, #slide-30 .reveal-question, #slide-32 .reveal-question, #slide-34 .reveal-question, #slide-39 .reveal-question, #slide-41 .reveal-question, #slide-43 .reveal-question, #slide-49 .reveal-question, #slide-51 .reveal-question, #slide-53 .reveal-question, #slide-55 .reveal-question, #slide-57 .reveal-question, #slide-60 .reveal-question, #slide-62 .reveal-question, #slide-64 .reveal-question, #slide-66 .reveal-question, #slide-68 .reveal-question, #slide-70 .reveal-question, #slide-72 .reveal-question, #slide-74 .reveal-question, #slide-76 .reveal-question, #slide-83 .reveal-question, #slide-92 .reveal-question, #slide-118 .reveal-question, #slide-154 .reveal-question {
+      display: block;
+    }
+    #slide-5 .reveal-question::after, #slide-7 .reveal-question::after, #slide-11 .reveal-question::after, #slide-13 .reveal-question::after, #slide-15 .reveal-question::after, #slide-19 .reveal-question::after, #slide-23 .reveal-question::after, #slide-30 .reveal-question::after, #slide-32 .reveal-question::after, #slide-34 .reveal-question::after, #slide-39 .reveal-question::after, #slide-41 .reveal-question::after, #slide-43 .reveal-question::after, #slide-49 .reveal-question::after, #slide-51 .reveal-question::after, #slide-53 .reveal-question::after, #slide-55 .reveal-question::after, #slide-57 .reveal-question::after, #slide-60 .reveal-question::after, #slide-62 .reveal-question::after, #slide-64 .reveal-question::after, #slide-66 .reveal-question::after, #slide-68 .reveal-question::after, #slide-70 .reveal-question::after, #slide-72 .reveal-question::after, #slide-74 .reveal-question::after, #slide-76 .reveal-question::after, #slide-83 .reveal-question::after, #slide-92 .reveal-question::after, #slide-118 .reveal-question::after, #slide-154 .reveal-question::after {
+      display: table;
+      margin-top: .5rem;
+    }
   </style>
 </head>
 <body>
