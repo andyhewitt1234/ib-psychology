@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 230" fill="none">
+  <!-- Background -->
+  <rect width="480" height="230" rx="12" fill="#f0f7f7"/>
+
+  <!-- Title -->
+  <text x="240" y="28" text-anchor="middle" font-size="13" fill="#2D3748" font-weight="700" font-family="system-ui" letter-spacing="0.5">IB PSYCHOLOGY EXAM</text>
+
+  <!-- Paper 1 -->
+  <g transform="translate(90,90)">
+    <rect x="-62" y="-38" width="124" height="104" rx="8" fill="#fff" stroke="#4FD1C5" stroke-width="2"/>
+    <rect x="-62" y="-38" width="124" height="28" rx="8" fill="#4FD1C5"/>
+    <text x="0" y="-19" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="system-ui">PAPER 1</text>
+    <text x="0" y="3" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Understanding</text>
+    <text x="0" y="16" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Behaviour</text>
+    <line x1="-35" y1="24" x2="35" y2="24" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="38" text-anchor="middle" font-size="9" fill="#718096" font-weight="600" font-family="system-ui">1h 30m · 35 marks</text>
+    <text x="0" y="52" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">Sections A, B &amp; C</text>
+    <text x="0" y="66" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">SL + HL</text>
+  </g>
+
+  <!-- Paper 2 -->
+  <g transform="translate(240,90)">
+    <rect x="-62" y="-38" width="124" height="104" rx="8" fill="#fff" stroke="#805AD5" stroke-width="2"/>
+    <rect x="-62" y="-38" width="124" height="28" rx="8" fill="#805AD5"/>
+    <text x="0" y="-19" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="system-ui">PAPER 2</text>
+    <text x="0" y="3" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Research</text>
+    <text x="0" y="16" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Methods</text>
+    <line x1="-35" y1="24" x2="35" y2="24" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="38" text-anchor="middle" font-size="9" fill="#718096" font-weight="600" font-family="system-ui">1h 30m · 35 marks</text>
+    <text x="0" y="52" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">Sections A &amp; B</text>
+    <text x="0" y="66" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">SL + HL</text>
+  </g>
+
+  <!-- Paper 3 -->
+  <g transform="translate(390,90)">
+    <rect x="-62" y="-38" width="124" height="104" rx="8" fill="#fff" stroke="#D69E2E" stroke-width="2"/>
+    <rect x="-62" y="-38" width="124" height="28" rx="8" fill="#D69E2E"/>
+    <text x="0" y="-19" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="system-ui">PAPER 3</text>
+    <text x="0" y="3" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Research Data</text>
+    <text x="0" y="16" text-anchor="middle" font-size="10" fill="#2D3748" font-weight="600" font-family="system-ui">Analysis</text>
+    <line x1="-35" y1="24" x2="35" y2="24" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="38" text-anchor="middle" font-size="9" fill="#718096" font-weight="600" font-family="system-ui">1h 45m</text>
+    <text x="0" y="52" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">HL only</text>
+    <text x="0" y="66" text-anchor="middle" font-size="9" fill="#A0AEC0" font-family="system-ui">Data &amp; sources</text>
+    <rect x="32" y="-46" width="26" height="14" rx="4" fill="#fff" stroke="#D69E2E" stroke-width="1"/>
+    <text x="45" y="-36" text-anchor="middle" font-size="8" fill="#D69E2E" font-weight="700" font-family="system-ui">HL</text>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="110" y="190" width="260" height="28" rx="6" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="1"/>
+  <text x="240" y="208" text-anchor="middle" font-size="10" fill="#2B6CB0" font-weight="600" font-family="system-ui">SL: Papers 1 &amp; 2  |  HL: Papers 1, 2 &amp; 3</text>
+</svg>

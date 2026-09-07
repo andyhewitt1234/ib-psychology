@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" fill="none">
+  <!-- Background -->
+  <rect width="480" height="300" rx="12" fill="#f0f7f7"/>
+  
+  <!-- Title -->
+  <text x="240" y="28" text-anchor="middle" font-size="11" fill="#2D3748" font-weight="700" font-family="system-ui" letter-spacing="0.5">THE SCIENTIFIC METHOD CYCLE</text>
+  
+  <!-- Center brain icon -->
+  <g transform="translate(240,155)">
+    <circle cx="0" cy="0" r="36" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="2"/>
+    <!-- Simple brain icon -->
+    <path d="M-4,-18 C-12,-18 -18,-12 -18,-4 C-18,4 -14,10 -8,12 C-12,16 -14,22 -10,26 C-6,30 2,30 6,26 C10,22 8,16 4,12 C10,10 14,4 14,-4 C14,-12 8,-18 0,-18" 
+          fill="#dbeafe" stroke="#2B6CB0" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="0" y="42" text-anchor="middle" font-size="9" fill="#2B6CB0" font-weight="700" font-family="system-ui">Psychology</text>
+  </g>
+  
+  <!-- Step 1: Observe (top) -->
+  <g transform="translate(240,55)">
+    <circle cx="0" cy="0" r="28" fill="#4FD1C5" opacity="0.9"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">👁</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Observe</text>
+  </g>
+  
+  <!-- Step 2: Question (top-right) -->
+  <g transform="translate(370,85)">
+    <circle cx="0" cy="0" r="28" fill="#805AD5" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">❓</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Question</text>
+  </g>
+  
+  <!-- Step 3: Hypothesise (right) -->
+  <g transform="translate(400,175)">
+    <circle cx="0" cy="0" r="28" fill="#DD6B20" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">💡</text>
+    <text x="0" y="10" text-anchor="middle" font-size="7" fill="#fff" font-weight="700" font-family="system-ui">Hypothesise</text>
+  </g>
+  
+  <!-- Step 4: Experiment (bottom-right) -->
+  <g transform="translate(340,250)">
+    <circle cx="0" cy="0" r="28" fill="#E53E3E" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">🧪</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Experiment</text>
+  </g>
+  
+  <!-- Step 5: Analyse (bottom-left) -->
+  <g transform="translate(140,250)">
+    <circle cx="0" cy="0" r="28" fill="#38A169" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">📊</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Analyse</text>
+  </g>
+  
+  <!-- Step 6: Conclude (left) -->
+  <g transform="translate(80,175)">
+    <circle cx="0" cy="0" r="28" fill="#D69E2E" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">✅</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Conclude</text>
+  </g>
+  
+  <!-- Step 7: Reflect (top-left) -->
+  <g transform="translate(110,85)">
+    <circle cx="0" cy="0" r="28" fill="#3182CE" opacity="0.85"/>
+    <text x="0" y="-4" text-anchor="middle" font-size="16" fill="#fff">🔄</text>
+    <text x="0" y="10" text-anchor="middle" font-size="8" fill="#fff" font-weight="700" font-family="system-ui">Reflect</text>
+  </g>
+  
+  <!-- Curved arrows connecting steps -->
+  <!-- Observe → Question -->
+  <path d="M265,40 C310,35 345,50 360,65" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Question → Hypothesise -->
+  <path d="M390,112 C405,135 410,150 405,165" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Hypothesise → Experiment -->
+  <path d="M390,200 C380,220 365,235 350,242" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Experiment → Analyse -->
+  <path d="M312,258 C270,268 200,268 162,258" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Analyse → Conclude -->
+  <path d="M118,242 C100,225 88,205 82,195" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Conclude → Reflect -->
+  <path d="M75,155 C72,130 80,108 95,95" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- Reflect → Observe -->
+  <path d="M128,70 C155,50 190,40 215,42" stroke="#A0AEC0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#A0AEC0"/>
+    </marker>
+  </defs>
+  
+  <!-- Decorative dots -->
+  <circle cx="30" cy="270" r="2" fill="#4FD1C5" opacity="0.3"/>
+  <circle cx="450" cy="30" r="2" fill="#4FD1C5" opacity="0.3"/>
+</svg>

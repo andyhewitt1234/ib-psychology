@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" fill="none">
+  <!-- Background -->
+  <rect width="480" height="280" rx="12" fill="#f0f7f7"/>
+
+  <!-- Title -->
+  <text x="240" y="24" text-anchor="middle" font-size="11" fill="#2D3748" font-weight="700" font-family="system-ui" letter-spacing="0.5">INTERNAL ASSESSMENT — RESEARCH PROPOSAL</text>
+
+  <!-- Key facts row -->
+  <g transform="translate(240,50)">
+    <rect x="-195" y="-14" width="110" height="28" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="-140" y="4" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="600" font-family="system-ui">2,200 words max</text>
+
+    <rect x="-75" y="-14" width="70" height="28" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="-40" y="4" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="600" font-family="system-ui">24 marks</text>
+
+    <rect x="5" y="-14" width="80" height="28" rx="6" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="1"/>
+    <text x="45" y="4" text-anchor="middle" font-size="9" fill="#2B6CB0" font-weight="600" font-family="system-ui">SL: 30%</text>
+
+    <rect x="95" y="-14" width="80" height="28" rx="6" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="1"/>
+    <text x="135" y="4" text-anchor="middle" font-size="9" fill="#2B6CB0" font-weight="600" font-family="system-ui">HL: 20%</text>
+
+    <rect x="185" y="-14" width="100" height="28" rx="6" fill="#FFF5F5" stroke="#E53E3E" stroke-width="1"/>
+    <text x="235" y="4" text-anchor="middle" font-size="9" fill="#E53E3E" font-weight="600" font-family="system-ui">Design only</text>
+  </g>
+
+  <!-- CALLOUT -->
+  <g transform="translate(240,90)">
+    <rect x="-130" y="-12" width="260" height="24" rx="6" fill="#EBF8FF" stroke="#2B6CB0" stroke-width="1.5"/>
+    <text x="0" y="4" text-anchor="middle" font-size="9" fill="#2B6CB0" font-weight="700" font-family="system-ui">You DESIGN the research. You do NOT conduct it.</text>
+  </g>
+
+  <!-- 6-step vertical flow -->
+  <!-- Step 1 -->
+  <g transform="translate(130,135)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#4FD1C5" opacity="0.9"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">1. Choose problem</text>
+  </g>
+  <line x1="130" y1="150" x2="130" y2="162" stroke="#A0AEC0" stroke-width="1.5" marker-end="url(#iaDown)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(130,175)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#4FD1C5" opacity="0.85"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">2. Research existing</text>
+  </g>
+  <line x1="130" y1="190" x2="130" y2="202" stroke="#A0AEC0" stroke-width="1.5" marker-end="url(#iaDown)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(130,215)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#805AD5" opacity="0.85"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">3. Choose method</text>
+  </g>
+  <line x1="130" y1="230" x2="130" y2="242" stroke="#A0AEC0" stroke-width="1.5" marker-end="url(#iaDown)"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(130,255)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#805AD5" opacity="0.8"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">4. Design data tools</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(350,135)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#E53E3E" opacity="0.85"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">5. Consider ethics</text>
+  </g>
+  <line x1="350" y1="150" x2="350" y2="162" stroke="#A0AEC0" stroke-width="1.5" marker-end="url(#iaDown)"/>
+
+  <!-- Step 6 -->
+  <g transform="translate(350,175)">
+    <rect x="-55" y="-14" width="110" height="28" rx="8" fill="#D69E2E" opacity="0.85"/>
+    <text x="0" y="5" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="system-ui">6. Discuss findings</text>
+  </g>
+
+  <!-- 4 Assessment sections -->
+  <g transform="translate(350,225)">
+    <rect x="-100" y="-14" width="200" height="28" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" font-size="8" fill="#2D3748" font-weight="600" font-family="system-ui">A: Intro /6 · B: Method /6 · C: Data /6 · D: Discussion /6</text>
+  </g>
+
+  <defs>
+    <marker id="iaDown" markerWidth="7" markerHeight="7" refX="3.5" refY="6" orient="auto">
+      <path d="M0,0 L7,0 L3.5,7 Z" fill="#A0AEC0"/>
+    </marker>
+  </defs>
+</svg>

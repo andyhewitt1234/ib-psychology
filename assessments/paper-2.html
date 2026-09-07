@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 2 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p1-sect-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: .75rem 0 1rem; }
+    .p1-sect-card { display: flex; flex-direction: column; gap: .4rem; background: var(--bg); border: 1px solid var(--border); border-top: 3px solid var(--primary); border-radius: var(--radius); padding: 1.15rem 1.25rem; text-decoration: none; color: inherit; transition: all .18s; }
+    .p1-sect-card:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); transform: translateY(-2px); color: inherit; }
+    .p1-sect-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-sect-tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); }
+    .p1-sect-card h3 { font-size: 1.05rem; font-weight: 700; margin: 0; }
+    .p1-sect-purpose { font-size: .88rem; color: var(--text-secondary); line-height: 1.55; }
+    .p1-sect-marks { font-size: .82rem; font-weight: 600; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid var(--border); padding-top: .5rem; margin-top: .15rem; }
+    .p1-sect-go { margin-top: auto; padding-top: .45rem; font-size: .86rem; font-weight: 700; color: var(--primary); }
+    @media (max-width: 640px) { .p1-sect-layout { grid-template-columns: 1fr; } }
+    .p2-concepts { display: flex; flex-wrap: wrap; gap: .4rem; margin: .6rem 0 .75rem; }
+    .p2-concept { background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .85rem; font-size: .85rem; font-weight: 600; color: var(--primary); }
+    .p2-refgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: .6rem; margin: .6rem 0 .75rem; }
+    .p2-refbox { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); padding: .85rem 1rem; }
+    .p2-refbox h4 { font-size: .92rem; margin: 0 0 .35rem; color: var(--primary); }
+    .p2-refbox ul { margin: 0; padding-left: 1.1rem; }
+    .p2-refbox li { margin-bottom: .2rem; font-size: .9rem; line-height: 1.55; }
+    @media (max-width: 640px) { .p2-refgrid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> Paper 2</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">IB Psychology Assessment</p>
+      <h1>Paper 2</h1>
+      <p class="theory-subtitle">Applying Concepts and Content to Research Contexts</p>
+      <p style="font-size:.82rem;font-weight:600;color:var(--text-secondary);margin-top:.3rem;">Class Practicals + Unseen Research Study</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">This page gives you the whole-paper picture: how Paper 2 is structured, weighed and marked. Then choose a section to study its approach and practise exam questions.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Paper 2 at a glance</h2>
+      <div class="p1-stats">
+        <div class="p1-stat"><strong>90 minutes</strong><span>Duration</span></div>
+        <div class="p1-stat"><strong>35 marks</strong><span>Total</span></div>
+        <div class="p1-stat"><strong>SL: 35%</strong><span>Weighting</span></div>
+        <div class="p1-stat"><strong>HL: 25%</strong><span>Weighting</span></div>
+      </div>
+      <div class="essentials-box">
+        <h3 style="margin-top:0;">Section A — Class Practicals</h3>
+        <p>4 compulsory questions &middot; <strong>20 marks</strong>. Every answer applies the research methodology of your class practicals.</p>
+        <h3>Section B — Unseen Study</h3>
+        <p>1 extended-response question &middot; <strong>15 marks</strong>. Evaluate an unseen research study with regard to two or more of the concepts provided.</p>
+        <p style="margin-bottom:0;"><strong>Total: 35 marks.</strong></p>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;">Each section below has its own page with the answering approach, a worked model answer, and a practice question bank.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>Choose a section</h2>
+      <div class="p1-sect-layout">
+        <a href="paper-2-section-a.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Section A</span>
+          <h3>Class Practicals</h3>
+          <p class="p1-sect-purpose">Apply your knowledge and understanding of the research methodology used in your class practicals.</p>
+          <p class="p1-sect-marks">4 compulsory questions &middot; 20 marks total</p>
+          <span class="p1-sect-go">Study Section A &rarr;</span>
+        </a>
+        <a href="paper-2-section-b.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Section B</span>
+          <h3>Unseen Study</h3>
+          <p class="p1-sect-purpose">Evaluate an unseen research study with regard to two or more of the concepts provided.</p>
+          <p class="p1-sect-marks">1 question &middot; 15 marks</p>
+          <span class="p1-sect-go">Study Section B &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Paper 2 whole-paper reference</h2>
+      <p>Two sections &middot; 35 marks &middot; 90 minutes. Section A answers through your class practicals (20 marks); Section B answers through one unseen study (15 marks).</p>
+      <div class="p2-refgrid">
+        <div class="p2-refbox">
+          <h4>Section A map — context to research method</h4>
+          <ul>
+            <li><strong>Health &amp; Well-being</strong> &mdash; Interview</li>
+            <li><strong>Human Development</strong> &mdash; Observation</li>
+            <li><strong>Human Relationships</strong> &mdash; Questionnaire / Survey</li>
+            <li><strong>Learning &amp; Cognition</strong> &mdash; Experiment</li>
+          </ul>
+        </div>
+        <div class="p2-refbox">
+          <h4>Section B methods — the unseen study</h4>
+          <ul>
+            <li>experiment</li>
+            <li>observation</li>
+            <li>survey / questionnaire</li>
+            <li>interview</li>
+            <li>correlational study</li>
+            <li>case study</li>
+          </ul>
+        </div>
+      </div>
+      <h3>The concepts</h3>
+      <p>The six concepts can appear across Paper 2. In Section A, you may be asked to explain a concept in relation to your class practical. In Section B, you evaluate the unseen study through two or more of the concepts provided.</p>
+      <div class="p2-concepts">
+        <span class="p2-concept">Bias</span>
+        <span class="p2-concept">Causality</span>
+        <span class="p2-concept">Change</span>
+        <span class="p2-concept">Measurement</span>
+        <span class="p2-concept">Perspective</span>
+        <span class="p2-concept">Responsibility</span>
+      </div>
+      <h3>Compact exam strategy</h3>
+      <ol class="p1-steps">
+        <li><strong>Let the command term lead</strong> — Describe, Explain, Compare and contrast, and Discuss each demand something different.</li>
+        <li><strong>Section A: know each practical</strong> — aim, procedure, sampling/sample, sample findings and ethical considerations — and understand the research methodology behind it.</li>
+        <li><strong>Section B: choose the strongest two or more concepts provided for THIS study,</strong> then keep linking your analysis back to specific details of the study.</li>
+        <li><strong>Budget the 90 minutes</strong> — all of Section B and Section A must fit.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>A — Know your practicals.</strong></p>
+        <p style="margin-bottom:0;"><strong>B — Analyse the unseen study.</strong></p>
+        <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;margin-top:.4rem;">A student memory aid, not official IB wording.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

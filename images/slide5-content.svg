@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none">
+  <!-- Background -->
+  <rect width="480" height="260" rx="12" fill="#f0f7f7"/>
+  
+  <!-- Title -->
+  <text x="240" y="28" text-anchor="middle" font-size="11" fill="#2D3748" font-weight="700" font-family="system-ui" letter-spacing="0.5">4 CONTENT AREAS</text>
+  
+  <!-- Base connection line -->
+  <line x1="60" y1="220" x2="420" y2="220" stroke="#E2E8F0" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Pillar 1: Research Methods -->
+  <g transform="translate(95,120)">
+    <!-- Pillar body -->
+    <rect x="-35" y="-60" width="70" height="130" rx="6" fill="#4FD1C5" opacity="0.15" stroke="#4FD1C5" stroke-width="1.5"/>
+    <!-- Icon area -->
+    <circle cx="0" cy="-35" r="16" fill="#4FD1C5" opacity="0.9"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="14" fill="#fff">🔬</text>
+    <!-- Label -->
+    <text x="0" y="0" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="700" font-family="system-ui">Research</text>
+    <text x="0" y="12" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="700" font-family="system-ui">Methods</text>
+    <!-- Description -->
+    <text x="0" y="32" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">Experiments,</text>
+    <text x="0" y="42" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">interviews,</text>
+    <text x="0" y="52" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">observations</text>
+    <!-- Base dot -->
+    <circle cx="0" cy="72" r="5" fill="#4FD1C5"/>
+  </g>
+  
+  <!-- Pillar 2: Biological -->
+  <g transform="translate(190,120)">
+    <rect x="-35" y="-60" width="70" height="130" rx="6" fill="#E53E3E" opacity="0.12" stroke="#E53E3E" stroke-width="1.5"/>
+    <circle cx="0" cy="-35" r="16" fill="#E53E3E" opacity="0.85"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="14" fill="#fff">🧬</text>
+    <text x="0" y="0" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="700" font-family="system-ui">Biological</text>
+    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">Brain, genes,</text>
+    <text x="0" y="32" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">hormones,</text>
+    <text x="0" y="42" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">neurochemistry</text>
+    <circle cx="0" cy="72" r="5" fill="#E53E3E"/>
+  </g>
+  
+  <!-- Pillar 3: Cognitive -->
+  <g transform="translate(290,120)">
+    <rect x="-35" y="-60" width="70" height="130" rx="6" fill="#805AD5" opacity="0.12" stroke="#805AD5" stroke-width="1.5"/>
+    <circle cx="0" cy="-35" r="16" fill="#805AD5" opacity="0.85"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="14" fill="#fff">🧠</text>
+    <text x="0" y="0" text-anchor="middle" font-size="9" fill="#2D3748" font-weight="700" font-family="system-ui">Cognitive</text>
+    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">Memory, thinking,</text>
+    <text x="0" y="32" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">decision-making,</text>
+    <text x="0" y="42" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">perception</text>
+    <circle cx="0" cy="72" r="5" fill="#805AD5"/>
+  </g>
+  
+  <!-- Pillar 4: Sociocultural -->
+  <g transform="translate(385,120)">
+    <rect x="-35" y="-60" width="70" height="130" rx="6" fill="#D69E2E" opacity="0.12" stroke="#D69E2E" stroke-width="1.5"/>
+    <circle cx="0" cy="-35" r="16" fill="#D69E2E" opacity="0.85"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="14" fill="#fff">👥</text>
+    <text x="0" y="0" text-anchor="middle" font-size="8.5" fill="#2D3748" font-weight="700" font-family="system-ui">Socio-</text>
+    <text x="0" y="12" text-anchor="middle" font-size="8.5" fill="#2D3748" font-weight="700" font-family="system-ui">cultural</text>
+    <text x="0" y="30" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">Culture, society,</text>
+    <text x="0" y="40" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">group norms,</text>
+    <text x="0" y="50" text-anchor="middle" font-size="7" fill="#718096" font-family="system-ui">conformity</text>
+    <circle cx="0" cy="72" r="5" fill="#D69E2E"/>
+  </g>
+  
+  <!-- Connecting arcs between pillars -->
+  <path d="M130,185 C145,175 160,175 175,185" stroke="#CBD5E0" stroke-width="1.5" fill="none"/>
+  <path d="M225,185 C240,175 255,175 270,185" stroke="#CBD5E0" stroke-width="1.5" fill="none"/>
+  <path d="M325,185 C340,175 355,175 370,185" stroke="#CBD5E0" stroke-width="1.5" fill="none"/>
+  
+  <!-- Decorative dots -->
+  <circle cx="30" cy="30" r="2" fill="#4FD1C5" opacity="0.3"/>
+  <circle cx="450" cy="240" r="2" fill="#4FD1C5" opacity="0.3"/>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="280" fill="url(#bg3)" rx="8"/>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#1e293b">Adolescent Brain Development</text>
+  <text x="200" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">School entry age and brain maturation</text>
+  
+  <!-- Timeline -->
+  <line x1="60" y1="200" x2="340" y2="200" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Age markers -->
+  <circle cx="100" cy="200" r="6" fill="#3b82f6"/>
+  <text x="100" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Age 5</text>
+  <text x="100" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#94a3b8">School entry</text>
+  
+  <circle cx="200" cy="200" r="6" fill="#f59e0b"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Age 12-14</text>
+  <text x="200" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#94a3b8">Peak gray matter</text>
+  
+  <circle cx="300" cy="200" r="6" fill="#10b981"/>
+  <text x="300" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Age 25+</text>
+  <text x="300" y="232" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#94a3b8">Full maturity</text>
+  
+  <!-- Brain illustrations at different stages -->
+  <!-- Child brain (smaller, less developed) -->
+  <g transform="translate(100, 120)">
+    <ellipse cx="0" cy="0" rx="30" ry="25" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#1e40af">Child</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#64748b">Developing</text>
+  </g>
+  
+  <!-- Adolescent brain (larger, active) -->
+  <g transform="translate(200, 110)">
+    <ellipse cx="0" cy="0" rx="40" ry="32" fill="#fed7aa" stroke="#f59e0b" stroke-width="1.5"/>
+    <!-- Highlighted prefrontal cortex -->
+    <path d="M-25,-15 C-15,-20 -5,-15 0,-10" stroke="#ef4444" stroke-width="3" fill="none"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#92400e">Adolescent</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#64748b">Maturing</text>
+    <!-- Label for PFC -->
+    <text x="-25" y="-22" font-family="Inter, sans-serif" font-size="7" fill="#ef4444" font-weight="600">PFC</text>
+  </g>
+  
+  <!-- Adult brain (fully developed) -->
+  <g transform="translate(300, 115)">
+    <ellipse cx="0" cy="0" rx="38" ry="30" fill="#bbf7d0" stroke="#10b981" stroke-width="1.5"/>
+    <text x="0" y="4" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#065f46">Adult</text>
+    <text x="0" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#64748b">Mature</text>
+  </g>
+  
+  <!-- Key finding box -->
+  <g transform="translate(200, 255)">
+    <rect x="-180" y="-15" width="360" height="28" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#92400e">Key Finding: Prefrontal cortex (PFC) matures last — affects decision-making</text>
+  </g>
+  
+  <!-- Annotation arrows -->
+  <line x1="175" y1="105" x2="165" y2="95" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrow5)"/>
+  <text x="155" y="90" font-family="Inter, sans-serif" font-size="8" fill="#ef4444">Still developing</text>
+</svg>

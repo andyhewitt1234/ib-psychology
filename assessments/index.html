@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessments | IB Psychology — Mr Hewitt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/worksheets.css">
+  <style>
+    .ws-unit-grid { grid-template-columns: repeat(2, 1fr); max-width: 1220px; margin: 0 auto; }
+    @media (max-width: 768px) { .ws-unit-grid { grid-template-columns: 1fr; max-width: none; margin: 0; } }
+    .ws-unit-card { border-top: 3px solid var(--primary); }
+    .ws-unit-card { padding: 1rem 1.15rem; gap: .3rem; }
+    .ws-unit-card .unit-desc { margin: 0; }
+    .ws-unit-card .assess-cat {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--primary);
+    }
+    .ws-unit-card .assess-go {
+      margin-top: .25rem;
+      padding-top: .15rem;
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .ws-unit-card:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" style="padding-top:3.5rem;padding-bottom:3rem;">
+  <h1 style="font-size:1.6rem;font-weight:800;margin-bottom:.3rem;">Assessments</h1>
+  <p style="color:var(--text-secondary);margin-bottom:1.5rem;line-height:1.6;">
+    This section contains the Internal Assessment and the three examination papers.
+  </p>
+
+  <div class="ws-unit-grid">
+    <a href="../ia/index.html" class="ws-unit-card">
+      <span class="assess-cat">Internal Assessment</span>
+      <h3>IA — Internal Assessment</h3>
+      <p class="unit-desc">Access the existing IA guidance, planning, methodology, data collection, discussion, and final-check materials.</p>
+      <span class="assess-go">Open guide &rarr;</span>
+    </a>
+
+    <a href="paper-1.html" class="ws-unit-card">
+      <span class="assess-cat">External Assessment</span>
+      <h3>Paper 1</h3>
+      <p class="unit-desc">Student guide to Paper 1.</p>
+      <span class="assess-go">Open guide &rarr;</span>
+    </a>
+
+    <a href="paper-2.html" class="ws-unit-card">
+      <span class="assess-cat">External Assessment</span>
+      <h3>Paper 2</h3>
+      <p class="unit-desc">Student guide to Paper 2.</p>
+      <span class="assess-go">Open guide &rarr;</span>
+    </a>
+
+    <a href="paper-3.html" class="ws-unit-card">
+      <span class="assess-cat">External Assessment</span>
+      <h3>Paper 3</h3>
+      <p class="unit-desc">Student guide to Paper 3.</p>
+      <span class="assess-go">Open guide &rarr;</span>
+    </a>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 2 Section B | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: block; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .6rem .9rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { display: block; margin-bottom: .4rem; font-weight: 800; color: var(--primary); white-space: nowrap; }
+    .p2-concepts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .5rem; margin: .6rem 0 .75rem; }
+    .p2-concept { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); padding: .55rem .75rem; }
+    .p2-concept strong { display: block; font-size: .88rem; color: var(--primary); }
+    .p2-concept span { font-size: .8rem; color: var(--text-secondary); line-height: 1.45; display: block; margin-top: .15rem; }
+    .p2-framework { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .6rem 0; }
+    .p2-fwstep { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .45rem .8rem; font-size: .82rem; font-weight: 700; color: var(--primary); }
+    .p2-fwarrow { color: var(--text-secondary); font-weight: 700; }
+    .fd-keybox { display: flex; flex-wrap: wrap; gap: .4rem .9rem; margin: .45rem 0 .7rem; font-size: .78rem; font-weight: 700; color: var(--text-secondary); }
+    .fd-key { display: inline-flex; align-items: center; gap: .4rem; }
+    .fd-swatch { width: .72rem; height: .72rem; border-radius: 3px; flex: 0 0 auto; }
+    .fd-detail { background: #e8eefb; border-radius: 3px; padding: .05rem .25rem; }
+    .fd-concept { background: #f1ecfa; color: #5b21b6; border-radius: 3px; padding: .05rem .25rem; font-weight: 600; }
+    .fd-why { background: #e8f5e9; border-radius: 3px; padding: .05rem .25rem; }
+    .fd-analysis { background: #fef3c7; border-radius: 3px; padding: .05rem .25rem; }
+    .fd-judgment { background: #f1f5f9; padding: .15rem .4rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-2.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 2 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-2.html">Paper 2</a> <span>/</span> Section B</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 2 · Section B</p>
+      <h1>Section B</h1>
+      <p class="theory-subtitle">Unseen Study</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">1 question &middot; 15 marks. You are given an unseen research study from an applied context, together with four concepts. Your task is to evaluate the study with regard to two or more of the concepts provided.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Section B — Unseen study</h2>
+      <p>1 question &middot; 15 marks.</p>
+      <p>You are given an unseen research study from an applied context, together with four concepts. Your task is to evaluate the study with regard to two or more of the concepts provided. The study can use any of six methods: experiment, observation, survey/questionnaire, interview, correlational study, or case study.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Question structure:</strong></p>
+        <p style="margin-bottom:0;"><em>Discuss the following study with reference to two or more of the following concepts: [concepts].</em></p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>For example:</strong></p>
+        <p style="margin-bottom:.3rem;"><em>Imagine the unseen study describes researchers observing children playing during school break.</em></p>
+        <p style="margin-bottom:.3rem;"><em>Discuss the following study with reference to two or more of the following concepts: Bias, Measurement, Perspective, Responsibility. [15]</em></p>
+        <p style="margin-bottom:.35rem;">Four quick thought-starters for this example:</p>
+        <p style="margin-bottom:.3rem;padding-left:.5rem;border-left:3px solid var(--primary-light);"><strong>Bias</strong> &mdash; Could the observers' expectations affect what they record?</p>
+        <p style="margin-bottom:.3rem;padding-left:.5rem;border-left:3px solid var(--primary-light);"><strong>Measurement</strong> &mdash; How was &ldquo;playing together&rdquo; actually measured?</p>
+        <p style="margin-bottom:.3rem;padding-left:.5rem;border-left:3px solid var(--primary-light);"><strong>Perspective</strong> &mdash; We see the observers' interpretation, but what about the children's perspective?</p>
+        <p style="margin-bottom:.3rem;padding-left:.5rem;border-left:3px solid var(--primary-light);"><strong>Responsibility</strong> &mdash; How were the children protected during the research?</p>
+        <p style="margin-bottom:0;">That is the task: take details from the unseen study and examine them through the concepts you are given.</p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:.4rem;"><strong>Section B = evaluate the unseen study through the concepts.</strong></p>
+        <p style="margin-bottom:0;">Do not retell the study or define concepts in isolation. Use specific study details to analyse what the concepts reveal about the study's strengths, limitations and conclusions.</p>
+      </div>
+      <h3>The concepts</h3>
+      <p>Section B gives you four of these six and asks you to use two or more of them.</p>
+      <div class="p2-concepts">
+        <div class="p2-concept"><strong>Bias</strong><span>Systematic influences that may distort research decisions, data or conclusions.</span></div>
+        <div class="p2-concept"><strong>Causality</strong><span>Whether the evidence supports a cause-and-effect conclusion.</span></div>
+        <div class="p2-concept"><strong>Change</strong><span>How behaviour, findings or psychological processes may vary over time.</span></div>
+        <div class="p2-concept"><strong>Measurement</strong><span>How psychological constructs are operationalised and how trustworthy those measurements are.</span></div>
+        <div class="p2-concept"><strong>Perspective</strong><span>Whose viewpoint is represented and how alternative viewpoints might change the interpretation.</span></div>
+        <div class="p2-concept"><strong>Responsibility</strong><span>Researchers' ethical and professional responsibilities in conducting, interpreting and communicating research.</span></div>
+      </div>
+      <h3>Choosing your concepts</h3>
+      <div class="essentials-box">
+        <p><span class="p1-teacher">Concept choice — teacher guidance</span></p>
+        <p>Choose at least two concepts that give you substantial material to evaluate. Depth matters more than mentioning extra concepts superficially. A concept is only useful if there are specific details in the study that you can connect to it.</p>
+      </div>
+      <h3>How to answer Section B</h3>
+      <ol class="p1-steps">
+        <li><strong>1. READ</strong> — identify the method, sample, setting/procedure, what was measured and what was found.</li>
+        <li><strong>2. CONNECT</strong> — link specific details from the study to relevant concepts.</li>
+        <li><strong>3. EXPLAIN</strong> — explain why the connection matters.</li>
+        <li><strong>4. EVALUATE</strong> — analyse strengths, limitations, alternative interpretations and what the study can or cannot conclude.</li>
+        <li><strong>5. JUDGE</strong> — bring the analysis together into a reasoned overall evaluation.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;">Build every paragraph from this chain:</p>
+        <div class="p2-framework">
+          <span class="p2-fwstep">STUDY DETAIL</span>
+          <span class="p2-fwarrow">&rarr;</span>
+          <span class="p2-fwstep">CONCEPT</span>
+          <span class="p2-fwarrow">&rarr;</span>
+          <span class="p2-fwstep">WHY IT MATTERS</span>
+          <span class="p2-fwarrow">&rarr;</span>
+          <span class="p2-fwstep">ANALYSIS</span>
+        </div>
+        <p style="font-size:.85rem;color:var(--text-secondary);margin-bottom:.35rem;">Name the detail, connect it to a concept, explain the connection, then analyse what it means for the study. The response as a whole then brings that analysis together into a reasoned <strong style="color:var(--primary);">JUDGMENT</strong>.</p>
+        <p style="font-size:.85rem;margin-bottom:0;">You do not need a mini-conclusion in every paragraph — judge when to draw things together, and end the response with a supported overall evaluation of the study.</p>
+      </div>
+      <h3>Worked example — a study to practise on</h3>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><span class="p1-teacher">Teaching example — not an official specimen study</span></p>
+        <p style="margin-bottom:0;"><em>Caregivers with their young children, roughly three years old, were observed quietly in fast-food restaurants. The observation was non-participant and covert: caregivers were not told they were being watched. Researchers sat at a distance and wrote detailed field notes, especially about what happened when caregivers used their mobile phones. Several researchers observed the same sessions independently, and afterwards their records were compared to check agreement before being combined and analysed qualitatively. The researchers suggest that a future laboratory study could measure the behaviour more precisely.</em></p>
+      </div>
+      <h4>Building points from the framework</h4>
+      <p>The same chain builds every point below: the study detail first, then the concept, then why the connection matters, then the analysis.</p>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Bias</span><span><strong>Study detail:</strong> the observation was covert and non-participant, so caregivers behaved without knowing they were watched, and several researchers recorded the same sessions independently. <strong>Why it matters:</strong> reactivity — behaving differently because you know you are observed — is reduced, so the behaviour is more likely to be genuine; having independent records allows agreement to be checked. <strong>Analysis:</strong> observer/researcher bias can still enter through what observers notice and record, and agreement between observers is only directly assessed when they independently record or code the same behaviour and their records are compared. The categories that matter remain the researchers' choices, so some caregiver or child behaviour is left unrecorded.</span></div>
+        <div class="row"><span class="band">Causality</span><span><strong>Study detail:</strong> researchers recorded what happened when caregivers used their phones, but they did not manipulate phone use. <strong>Why it matters:</strong> phone use and caregiver responsiveness are observed together, so co-occurrence is visible but not cause and effect. <strong>Analysis:</strong> the study cannot claim that phone use caused a change in the child's behaviour, which could change for other reasons; a well-controlled experiment that manipulated phone use could provide stronger evidence for a causal claim, but manipulation alone would not automatically establish causality.</span></div>
+        <div class="row"><span class="band">Measurement</span><span><strong>Study detail:</strong> detailed field notes, analysed qualitatively afterwards. <strong>Why it matters:</strong> the record is built from what observers notice and record, capturing contextual richness but depending heavily on the observer. <strong>Analysis:</strong> the same naturalistic setting could instead use structured behavioural coding — for example, the frequency or duration of caregiver&ndash;child interaction — increasing measurement precision and standardisation while potentially losing some of the richness of open field notes; a naturalistic observation can collect quantitative data, so these are measurement choices rather than an automatic laboratory-versus-naturalistic distinction. What counts as good measurement therefore depends on the research question.</span></div>
+        <div class="row"><span class="band">Perspective</span><span><strong>Study detail:</strong> the caregivers' and children's own views were never asked. <strong>Why it matters:</strong> the interpretation is the researchers' perspective, placed onto the participants. <strong>Analysis:</strong> an interview or survey could add the caregiver's perspective — their reasons and their awareness of their own phone use — while the child's internal experience cannot simply be assumed from observed behaviour; a single perspective gives an incomplete picture.</span></div>
+      </div>
+      <h3>Worked model answer</h3>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Sample question: <em>Discuss the following study with reference to two or more of the following concepts: Bias, Measurement, Perspective. [15]</em></p>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Attempt the question before revealing the model. The model is colour-coded so you can trace each paragraph through the framework:</p>
+      <div class="fd-keybox">
+        <span class="fd-key"><span class="fd-swatch" style="background:#e8eefb;"></span>Study detail</span>
+        <span class="fd-key"><span class="fd-swatch" style="background:#f1ecfa;"></span>Concept</span>
+        <span class="fd-key"><span class="fd-swatch" style="background:#e8f5e9;"></span>Why it matters</span>
+        <span class="fd-key"><span class="fd-swatch" style="background:#fef3c7;"></span>Analysis</span>
+        <span class="fd-key"><span class="fd-swatch" style="background:#f1f5f9;"></span>Judgment</span>
+      </div>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div>
+        <p>This covert observational study of caregivers in fast-food restaurants offers a way to discuss what the concepts of bias, measurement and perspective reveal about psychological research.</p>
+        <p>Consider <span class="fd-concept">bias</span>. <span class="fd-detail">Because the observation was non-participant and covert — caregivers were not told they were being watched —</span> <span class="fd-why">the behaviour recorded is unlikely to be shaped by reactivity, so the data are less biased by participants adjusting to being observed.</span> <span class="fd-analysis">However, observer/researcher bias can still enter through what observers notice and record: the field notes depend on researchers' expectations about caregivers and phones. The observers recorded the same sessions independently and their records were compared, so agreement could be checked directly — combining their notes alone would not establish that the record is not one person's distortion, and the categories that matter remain the researchers' decisions.</span> The study therefore reduces one source of bias — reactivity — while necessarily carrying another in interpretation.</p>
+        <p>The concept of <span class="fd-concept">measurement</span> is central to the study. <span class="fd-detail">The data are qualitative field notes, analysed qualitatively afterwards.</span> <span class="fd-why">The record captures behaviour in context, but what counts as data depends heavily on what observers notice and record.</span> <span class="fd-analysis">The same naturalistic setting could instead have used structured behavioural coding — for example, the frequency or duration of caregiver–child interaction — increasing measurement standardisation and precision while potentially losing some of the richness of open field notes. The researchers suggest a future laboratory study could measure the behaviour more precisely, but precision is a measurement choice rather than an automatic property of laboratories; what counts as good measurement depends on the question being asked.</span></p>
+        <p><span class="fd-concept">Perspective</span> reminds us whose viewpoint the study captures. <span class="fd-detail">The interpretation is entirely the researchers', placed onto caregivers and children who were never asked.</span> <span class="fd-why">The observation gives the researchers' interpretation of behaviour, while caregivers' own reasons and experiences were not directly obtained.</span> <span class="fd-analysis">Interviews or surveys could add the caregivers' perspective — their reasons and awareness of their own phone use — while the child's internal experience cannot simply be assumed from observed behaviour; a single perspective gives an incomplete picture.</span></p>
+        <p>In conclusion, the study shows that every research method carries a balance of strengths and limitations. <span class="fd-judgment">The covert naturalistic observation reduces reactivity and captures behaviour in context, but the open field-note approach used here makes measurement more dependent on researcher interpretation, and the participants' own perspective is left out. A considered reading must therefore weigh these concepts together rather than treat the study as a neutral picture of behaviour.</span></p>
+      </div></div></div>
+      <div class="essentials-box">
+        <p><span class="p1-teacher">Markband note — teacher guidance</span></p>
+        <p style="margin-bottom:0;">This model mirrors the framework you just learned: it identifies a <span class="fd-detail">study detail</span>, connects it to a <span class="fd-concept">concept</span>, explains <span class="fd-why">why it matters</span>, develops the <span class="fd-analysis">analysis/evaluation</span>, and the response as a whole reaches a supported <span class="fd-judgment">judgment</span>. Discuss asks for a considered, balanced review, so the model weighs strengths and limitations and ends with a clear, supported conclusion rather than a simple list of strengths and weaknesses.</p>
+      </div>
+      <div class="collapsible"><button class="collapsible-trigger">Official 2027 Section B markband</button><div class="collapsible-body">
+        <p><span class="p1-official">Official IB wording</span></p>
+        <p>Paper 2, Section B markband (15 marks) from the IB Psychology first-assessment-2027 specimen papers. Reproduced verbatim.</p>
+        <dl class="p1-mark">
+          <dt>0</dt><dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1&ndash;3</dt><dd><ul><li>The response indicates little understanding of, and critical engagement with, any of the specified concepts in relation to the study.</li><li>The response is descriptive. Any analysis present is superficial or incoherent. Links between concepts and source material are not included or are irrelevant to the discussion. Where a conclusion is included, this is very superficial or is not consistent with the rest of the response.</li><li>Psychological terminology is not used or is consistently used inappropriately. Points are frequently inaccurate and unclear. There are few, if any, references to the study.</li></ul></dd>
+          <dt>4&ndash;6</dt><dd><ul><li>The response indicates a basic understanding of, and critical engagement with, at least one of the specified concepts in relation to the study.</li><li>There is limited analysis present and overall the response is more descriptive than it is analytical. Links between concepts and the study are of limited relevance or ineffectively support the discussion. A simplistic conclusion is included.</li><li>Psychological terminology is used, but often inappropriately. Points are frequently imprecise or vague. There are occasional references to the study.</li></ul></dd>
+          <dt>7&ndash;9</dt><dd><ul><li>The response indicates some understanding of, and critical engagement with, one or more of the specified concepts in relation to the study.</li><li>The response contains analysis, although this analysis lacks development. Links between concepts and the source material are relevant, but they lack development in support of the discussion. A conclusion is included.</li><li>Psychological terminology is used, sometimes appropriately. Relevant points are made but lack accuracy and development. Specific references to the study are made, although these are sometimes ineffective.</li></ul></dd>
+          <dt>10&ndash;12</dt><dd><ul><li>The response indicates good understanding of, and critical engagement with, at least two of the specified concepts in relation to the study.</li><li>The response contains critical analysis, although this analysis lacks development. Links between concepts and the study are used to support the discussion. The response argues to a conclusion that is consistent with the arguments presented.</li><li>Psychological terminology is used, mostly appropriately. Points made are relevant and accurate but lack detail. There are specific references to the study.</li></ul></dd>
+          <dt>13&ndash;15</dt><dd><ul><li>The response indicates very good understanding of, and critical engagement with, two or more of the specified concepts in relation to the study.</li><li>The response contains well-developed critical analysis. Links between concepts and source material are relevant and well developed and effectively support the discussion. The response argues to a reasoned and clearly stated conclusion that is consistent with the arguments presented.</li><li>There is accurate and precise use of psychological terminology. Points are relevant, accurate and detailed. There are specific and effective references to the study.</li></ul></dd>
+        </dl>
+        <div class="essentials-box">
+          <p><span class="p1-teacher">Student guidance</span></p>
+          <p style="margin-bottom:0;">In the highest bands the response is evaluated rather than descriptive, engages critically with two or more concepts <em>in relation to the study</em>, uses specific study details effectively, and argues to a reasoned and clearly stated conclusion — exactly what the framework on this page asks you to build.</p>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Practice questions — Section B exam questions</button><div class="collapsible-body">
+        <p>Try a question before revealing the guidance. Each unseen study below is teacher-created practice in the Paper 2 format — no official specimen material is reproduced here. Decide which concepts you would choose and why, then check the planning approach.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 1</h4>
+            <p class="p1-qtext">A research team gave 200 volunteer university students a mood-tracking phone app and asked them to rate their mood three times a day for six weeks. Participants also reported their sleep hours each night in the same app. The researchers compared each student's average mood score with their average sleep hours and found a moderate positive correlation.</p>
+            <p class="p1-qtext">Discuss the following study with reference to two or more of the following concepts: Causality, Measurement, Bias, Responsibility. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The study offers most to Measurement (mood operationalised as a scale score, sleep self-reported, both entered in the same app) and Causality (a correlational design — co-occurrence only, no manipulation). Bias (volunteers, self-report) and Responsibility (demanding six weeks of daily reporting; privacy of personal data) give further material if you choose a third or fourth.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show planning approach</div><div class="reveal-answer"><div><p><strong>Planning approach:</strong> organise the response around two concepts. For Measurement: three ratings each day provide repeated measurements and may produce a more stable estimate of mood across time, although reliability still depends on the consistency of the measure; a single mood item is only a rough index, and sleep is self-reported — each is a measurement choice with trade-offs. For Causality: correlation cannot establish that sleep affects mood; stress at particular weeks could drive both; a manipulated design could test the claim but would not automatically address every limitation. Conclude on what the study can and cannot claim about sleep and mood.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 2</h4>
+            <p class="p1-qtext">A school introduced a ten-minute structured play programme at lunchtime. Teachers observed one class of 8-year-olds for a term before the programme began and for a term after it, recording how often children played together in mixed-gender groups. They found that the frequency increased after the programme started.</p>
+            <p class="p1-qtext">Discuss the following study with reference to two or more of the following concepts: Change, Measurement, Perspective, Bias. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The study offers most to Change (a before/after comparison over time with no comparison group) and Measurement (frequency counts require defined behavioural categories and consistent recording). Bias (teachers observed their own class and knew the programme's aim — expectancy) and Perspective (whose judgement defines "playing together") support further development.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show planning approach</div><div class="reveal-answer"><div><p><strong>Planning approach:</strong> for Change, the design lets the school describe development across time, but without a comparison group the increase cannot be confidently attributed to the programme because other changes across the two terms could explain it — children may mature or settle across the terms, for example. For Measurement, decide what coded as "playing together" and whether the same observer applied the categories consistently across both terms. Tie each point back to a detail of this study — the two terms, the teachers as observers, the frequency counts. Conclude on what the study can reasonably claim to have changed.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 3</h4>
+            <p class="p1-qtext">In a laboratory, 40 participants were randomly assigned to sleep for either 4 hours or 8 hours for one night. The next morning all participants completed a 20-minute sustained-attention task on a computer, and the researchers recorded reaction times and missed targets. The sleep-deprived group missed significantly more targets than the rested group.</p>
+            <p class="p1-qtext">Discuss the following study with reference to two or more of the following concepts: Causality, Measurement, Responsibility, Perspective. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Causality is the strongest choice here: manipulation, random allocation and control let the design support a causal claim. Measurement offers the precision of the dependent variable and questions about whether a computer task captures attention as it operates in real life. Responsibility (inducing sleep deprivation) and Perspective (whose definition of "attention" applies) provide further material.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show planning approach</div><div class="reveal-answer"><div><p><strong>Planning approach:</strong> for Causality, walk through how manipulation, random allocation and control reduce plausible rival explanations, and note what the design cannot address (generalisability beyond one laboratory night). For Measurement, treat reaction times and missed targets as good but narrow measures — precise and objective, yet a particular operationalisation of sustained attention in a laboratory task. Tie each point to the study's specific details and conclude with a clear judgment about what this study establishes.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 4</h4>
+            <p class="p1-qtext">A researcher interviewed eight experienced teachers about how they support students who seem anxious. The interviews were semi-structured, lasted about 45 minutes each, and were recorded and transcribed. Analysing the transcripts, the researcher noticed themes about early warning signs, and noticed that the teachers often told stories about particular students.</p>
+            <p class="p1-qtext">Discuss the following study with reference to two or more of the following concepts: Perspective, Bias, Measurement, Responsibility. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Perspective is the strongest choice: the study captures teachers' own accounts, which is precisely what observation would miss. Bias enters through memory and reconstruction, storytelling or selective accounts, social desirability in what teachers choose to say, the researcher's influence during semi-structured interviewing, and the researcher's interpretation during thematic analysis. Measurement concerns what counts as a "theme" in the qualitative analysis. Responsibility concerns recorded, transcribed accounts about potentially identifiable students and how carefully that data is handled.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show planning approach</div><div class="reveal-answer"><div><p><strong>Planning approach:</strong> for Perspective, argue what first-hand teacher accounts add — reasons, judgements and experience — and what they cannot show, since teacher accounts do not directly show what actually happened in classroom interactions. For Bias, weigh memory and reconstruction, storytelling or selective accounts, and the researcher's categorisation during thematic analysis against the strength of transcript analysis. For Responsibility, discuss anonymity and the careful handling of recorded disclosures about potentially identifiable students. Tie every point to a detail of the interview study and conclude on what it can and cannot claim about teacher support.</p></div></div></div>
+          </div>
+          <!-- Add Question 5 here later: copy one .p1-q block above. No redesign needed. -->
+        </div>
+      </div></div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

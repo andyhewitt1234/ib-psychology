@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 3 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p1-sect-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: .75rem 0 1rem; }
+    .p1-sect-card { display: flex; flex-direction: column; gap: .4rem; background: var(--bg); border: 1px solid var(--border); border-top: 3px solid var(--primary); border-radius: var(--radius); padding: 1.15rem 1.25rem; text-decoration: none; color: inherit; transition: all .18s; }
+    .p1-sect-card:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); transform: translateY(-2px); color: inherit; }
+    .p1-sect-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-sect-tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); }
+    .p1-sect-card h3 { font-size: 1.05rem; font-weight: 700; margin: 0; }
+    .p1-sect-purpose { font-size: .88rem; color: var(--text-secondary); line-height: 1.55; }
+    .p1-sect-marks { font-size: .82rem; font-weight: 600; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid var(--border); padding-top: .5rem; margin-top: .15rem; }
+    .p1-sect-go { margin-top: auto; padding-top: .45rem; font-size: .86rem; font-weight: 700; color: var(--primary); }
+    @media (max-width: 640px) { .p1-sect-layout { grid-template-columns: 1fr; } }
+    .p2-refgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: .6rem; margin: .6rem 0 .75rem; }
+    .p2-refbox { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); padding: .85rem 1rem; }
+    .p2-refbox h4 { font-size: .92rem; margin: 0 0 .35rem; color: var(--primary); }
+    .p2-refbox ul { margin: 0; padding-left: 1.1rem; }
+    .p2-refbox li { margin-bottom: .2rem; font-size: .9rem; line-height: 1.55; }
+    @media (max-width: 640px) { .p2-refgrid { grid-template-columns: 1fr; } }
+    .p3-qcards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: .75rem 0 1rem; }
+    @media (max-width: 680px) { .p3-qcards { grid-template-columns: 1fr; } }
+    .p3-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .55rem auto .25rem; max-width: 780px; }
+    .p3-nav a { font-size: .82rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .8rem; text-decoration: none; transition: all .15s; }
+    .p3-nav a:hover { border-color: var(--primary); }
+    .p3-nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .theory-hero { margin-bottom: 1.05rem; }
+    .scenario-box { margin-left: auto; margin-right: auto; }
+    .p3-ma { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .35rem .5rem; margin: .5rem 0 .9rem; font-size: .85rem; font-weight: 700; color: var(--text-secondary); }
+    .p3-ma .q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .32rem .7rem; font-weight: 800; color: var(--text); white-space: nowrap; }
+    .p3-ma .q span { color: var(--primary); font-weight: 800; }
+    .p3-ma .arrow { font-weight: 800; color: var(--text-muted); }
+    .p3-ma .tot { font-weight: 800; color: var(--primary); }
+    .p3-studenguide { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: -.15rem 0 .8rem; }
+    .p3-studenguide strong { color: var(--text); }
+    .theory-section .p3-ex { font-size: .8rem; color: var(--text-secondary); line-height: 1.55; font-weight: 500; }
+    .theory-section .p3-ex strong { color: var(--text-secondary); font-weight: 700; }
+    .p1-steps .p3-ex { display: block; margin-top: .12rem; }
+    .theory-section .p3-exnote { font-size: .78rem; color: var(--text-secondary); line-height: 1.5; margin: .4rem 0 .1rem; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> Paper 3</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">IB Psychology Assessment</p>
+      <h1>Paper 3</h1>
+      <p class="theory-subtitle">Data Analysis and Interpretation of Research Data</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">This page gives you the whole-paper picture: how Paper 3 is structured, what each question requires, and how the 30 marks are distributed. Then choose a question below to study its approach and practise exam questions.</p>
+    </div>
+
+    <nav class="p3-nav" aria-label="Paper 3 pages">
+      <a href="paper-3.html" class="active">Overview</a>
+      <a href="paper-3-question-1.html">Q1</a>
+      <a href="paper-3-question-2.html">Q2</a>
+      <a href="paper-3-question-3.html">Q3</a>
+      <a href="paper-3-question-4.html">Q4</a>
+    </nav>
+
+    <div class="scenario-box">
+      <p style="margin-bottom:.3rem;"><strong>The question types are predictable.</strong></p>
+      <p style="margin-bottom:0;"><strong>The source material is unpredictable.</strong></p>
+      <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;margin-top:.4rem;">You receive source material containing quantitative and qualitative research findings, which may include graphs, data tables, research summaries and qualitative data. The question types are predictable; the source material changes.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Paper 3 at a glance</h2>
+      <div class="p1-stats">
+        <div class="p1-stat"><strong>1 hour 45 minutes</strong><span>Duration</span></div>
+        <div class="p1-stat"><strong>30 marks</strong><span>Total</span></div>
+        <div class="p1-stat"><strong>HL only</strong><span>Level</span></div>
+        <div class="p1-stat"><strong>30%</strong><span>of HL grade</span></div>
+        <div class="p1-stat"><strong>4 questions</strong><span>Compulsory</span></div>
+      </div>
+      <div class="p3-ma" aria-label="Paper 3 mark architecture">
+        <span class="q">Q1 <span>[3]</span></span>
+        <span class="arrow">&rarr;</span>
+        <span class="q">Q2 <span>[6]</span></span>
+        <span class="arrow">&rarr;</span>
+        <span class="q">Q3 <span>[6]</span></span>
+        <span class="arrow">&rarr;</span>
+        <span class="q">Q4 <span>[15]</span></span>
+        <span class="arrow">=</span>
+        <span class="tot">30</span>
+      </div>
+      <div class="essentials-box">
+        <h3 style="margin-top:0;">Question 1 — Interpretation of Graphs</h3>
+        <p>3 marks. Identify one issue in the source/display that limits interpretation and explain why it matters.</p>
+        <p class="p3-ex"><strong>For example:</strong> A graph shows average stress scores but no error bars &rarr; you cannot see how much scores varied within each group.</p>
+        <h3>Question 2 — Data Analysis</h3>
+        <p>6 marks. Analyse the findings using the data provided and state a supported conclusion.</p>
+        <p class="p3-ex"><strong>For example:</strong> Students who slept 8 hours scored 82%, compared with 68% after 5 hours &rarr; use the difference in the actual data to explain what the findings support.</p>
+        <h3>Question 3 — Research Considerations</h3>
+        <p>6 marks. Apply a research consideration such as credibility, bias or transferability to the qualitative research.</p>
+        <p class="p3-ex"><strong>For example:</strong> Researchers interview teachers from only one international school &rarr; consider whether their experiences would transfer to teachers in very different educational settings.</p>
+        <h3>Question 4 — Synthesis</h3>
+        <p>15 marks. Evaluate the central claim using the sources and your own knowledge.</p>
+        <p class="p3-ex"><strong>For example:</strong> The claim is &ldquo;Technology harms attention.&rdquo; One source supports it, another shows little effect, and psychological research you have learned provides another perspective &rarr; combine the evidence to judge how strongly the claim is actually supported.</p>
+        <p class="p3-exnote">These examples are teacher-created to show what each question looks like in practice; they are not official IB material.</p>
+        <p style="margin-bottom:0;"><strong>Total: 30 marks.</strong></p>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;">The source material focuses on one HL extension: Culture, Motivation or Technology. Each question below has its own page with the answering approach, a worked example, and a practice question bank.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>Choose a question</h2>
+      <p class="p3-studenguide"><strong>Student guide to the four question types.</strong> The working titles below describe each question page's focus; they are teaching labels, not official IB section titles.</p>
+      <div class="p3-qcards">
+        <a href="paper-3-question-1.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Question 1</span>
+          <h3>Interpretation of Graphs</h3>
+          <p class="p1-sect-purpose">Identify one issue in the source/display that limits interpretation and explain why it matters.</p>
+          <p class="p1-sect-marks">3 marks</p>
+          <span class="p1-sect-go">Study Question 1 &rarr;</span>
+        </a>
+        <a href="paper-3-question-2.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Question 2</span>
+          <h3>Data Analysis</h3>
+          <p class="p1-sect-purpose">Analyse the findings using the data provided and state a supported conclusion.</p>
+          <p class="p1-sect-marks">6 marks</p>
+          <span class="p1-sect-go">Study Question 2 &rarr;</span>
+        </a>
+        <a href="paper-3-question-3.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Question 3</span>
+          <h3>Research Considerations</h3>
+          <p class="p1-sect-purpose">Apply one research consideration — credibility, bias or transferability — to the qualitative source, not as a general definition.</p>
+          <p class="p1-sect-marks">6 marks</p>
+          <span class="p1-sect-go">Study Question 3 &rarr;</span>
+        </a>
+        <a href="paper-3-question-4.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Question 4</span>
+          <h3>Synthesis</h3>
+          <p class="p1-sect-purpose">Evaluate the central claim using the source material and your own knowledge.</p>
+          <p class="p1-sect-marks">15 marks</p>
+          <span class="p1-sect-go">Study Question 4 &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Paper 3 whole-paper reference</h2>
+      <p>Four compulsory questions &middot; 30 marks &middot; 1 hour 45 minutes. The source material can include quantitative and qualitative research findings — for example graphs, data tables, research summaries and qualitative data.</p>
+      <div class="p2-refgrid">
+        <div class="p2-refbox">
+          <h4>Marks at a glance</h4>
+          <ul>
+            <li>Question 1 &middot; 3 marks</li>
+            <li>Question 2 &middot; 6 marks</li>
+            <li>Question 3 &middot; 6 marks</li>
+            <li>Question 4 &middot; 15 marks</li>
+            <li>Total &middot; 30 marks</li>
+          </ul>
+        </div>
+        <div class="p2-refbox">
+          <h4>Source types you may encounter</h4>
+          <ul>
+            <li><strong>Quantitative findings</strong> — for example graphs, charts and data tables</li>
+            <li><strong>Qualitative findings</strong> — for example quotations, interview or observation extracts</li>
+          </ul>
+        </div>
+        <div class="p2-refbox">
+          <h4>HL extension topics</h4>
+          <ul>
+            <li>Culture</li>
+            <li>Motivation</li>
+            <li>Technology</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-secondary);">The source material focuses on one HL extension: Culture, Motivation or Technology.</p>
+      <h3>Compact exam strategy</h3>
+      <ol class="p1-steps">
+        <li><strong>Q1: identify one issue in the source/display</strong> and explain how it limits interpretation.<span class="p3-ex"><strong>Example:</strong> A graph shows group means but no measure of variability &rarr; you cannot tell whether scores were tightly clustered or widely spread, limiting how confidently you can interpret the difference.</span></li>
+        <li><strong>Q2: use the actual data</strong> — identify relevant patterns, comparisons and statistical information provided, then state a supported conclusion.<span class="p3-ex"><strong>Example:</strong> Group A scored 74% compared with 61% for Group B &rarr; use those actual values to establish the difference before explaining what the finding supports.</span></li>
+        <li><strong>Q3: apply one consideration</strong> — credibility, bias or transferability — to the qualitative source, not as a general definition.<span class="p3-ex"><strong>Example:</strong> Interviews were conducted with teachers from only one school &rarr; for transferability, explain whether their experiences are likely to apply to teachers in substantially different settings.</span></li>
+        <li><strong>Q4: synthesise</strong> — combine evidence across the source material with your own psychological knowledge, evaluate how strongly the evidence supports the central claim, then state a supported conclusion.<span class="p3-ex"><strong>Example:</strong> Source A supports the claim that technology reduces attention, Source B finds little effect, and psychological research you know suggests the effect depends on how technology is used &rarr; weigh all three together rather than discussing each separately.</span></li>
+        <li><strong>Budget the 105 minutes</strong> — all four questions are compulsory.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Q1 — Interpret.</strong></p>
+        <p style="margin-bottom:.3rem;"><strong>Q2 — Analyse.</strong></p>
+        <p style="margin-bottom:.3rem;"><strong>Q3 — Evaluate the research.</strong></p>
+        <p style="margin-bottom:0;"><strong>Q4 — Synthesise.</strong></p>
+        <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;margin-top:.4rem;">A student memory aid, not official IB wording.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

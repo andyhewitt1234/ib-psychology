@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 3 Question 1 | Assessments &mdash; IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 118px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); overflow-wrap: break-word; }
+    .p3-ex { display: block; margin-top: .35rem; font-size: .84rem; color: var(--text-secondary); line-height: 1.5; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p3-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .55rem auto .25rem; max-width: 780px; }
+    .p3-nav a { font-size: .82rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .8rem; text-decoration: none; transition: all .15s; }
+    .p3-nav a:hover { border-color: var(--primary); }
+    .p3-nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .theory-hero { margin-bottom: 1.05rem; }
+    .p3-fig { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; margin: .6rem 0 .9rem; }
+    .p3-fig figcaption { font-weight: 700; font-size: .95rem; color: var(--text); margin-bottom: .15rem; }
+    .p3-fig .p3-source-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    .p3-svgwrap { overflow-x: auto; }
+    .p3-svgwrap svg { display: block; width: 100%; min-width: 440px; height: auto; font-family: inherit; }
+    .p3-svgwrap.svg-mini svg { min-width: 170px; max-width: 280px; margin-left: auto; margin-right: auto; }
+    .p3-fignote { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: .5rem 0 0; }
+    .p3-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .4rem 0 .5rem; }
+    .p3-table caption { font-weight: 700; font-size: .95rem; text-align: left; color: var(--text); padding-bottom: .35rem; }
+    .p3-table th, .p3-table td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; }
+    .p3-table th { background: var(--bg-secondary); color: var(--primary); font-weight: 700; }
+    .p3-table .p3-tdim { color: var(--text-muted); font-size: .8rem; }
+    .p3-chain { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .6rem 0; }
+    .p3-chain .step { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .45rem .8rem; font-size: .8rem; font-weight: 700; color: var(--primary); }
+    .p3-chain .arrow { color: var(--text-secondary); font-weight: 700; }
+    .p3-sub { font-size: .9rem; color: var(--text-secondary); line-height: 1.65; }
+    .p3-warn { background: var(--warning-light); border: 1px solid var(--warning); border-left: 4px solid var(--warning); border-radius: var(--radius); padding: .7rem .95rem; margin: .6rem 0; font-size: .9rem; line-height: 1.6; }
+    .p3-warn strong { color: var(--warning); }
+    .p3-display { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.15rem; margin: 1rem 0 1.5rem; }
+    .p3-dhead { display: flex; align-items: center; gap: .5rem; border-bottom: 2px solid var(--primary-light); padding-bottom: .35rem; margin-bottom: .6rem; }
+    .p3-dhead h3 { margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text); }
+    .p3-dtag { flex: 0 0 auto; font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); background: var(--primary-light); padding: .18rem .55rem; border-radius: 4px; }
+    .p3-duo { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem 1.1rem; margin: .55rem 0 .7rem; }
+    @media (max-width: 680px) { .p3-duo { grid-template-columns: 1fr; } }
+    .p3-dpart h4 { font-size: .87rem; font-weight: 700; color: var(--primary); margin: .6rem 0 .3rem; }
+    .p3-dpart p { font-size: .9rem; line-height: 1.65; margin: 0 0 .45rem; }
+    .p3-bullets { margin: .2rem 0 .3rem; padding-left: 1.15rem; }
+    .p3-bullets li { font-size: .9rem; line-height: 1.6; margin-bottom: .2rem; }
+    .q1prompt { background: var(--bg); border: 1px solid var(--primary); border-left: 4px solid var(--primary); border-radius: var(--radius); padding: .75rem .95rem; margin: .6rem 0 .8rem; }
+    .q1prompt p { font-style: italic; font-size: .92rem; margin: 0; }
+    .p3-minis { display: flex; flex-wrap: wrap; gap: .8rem; margin: .5rem 0 .9rem; }
+    .p3-mini { flex: 1 1 180px; min-width: 165px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .7rem .4rem; }
+    .p3-mini svg { display: block; width: 100%; height: auto; margin: 0 auto; }
+    .p3-mini p { font-size: .78rem; font-weight: 600; color: var(--text-secondary); text-align: center; margin: .35rem 0 0; line-height: 1.4; }
+    .p3-scale2 { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin: .5rem 0 .7rem; }
+    @media (max-width: 680px) { .p3-scale2 { grid-template-columns: 1fr; } }
+    .p3-issues { columns: 2; column-gap: 1.4rem; margin: .65rem 0 .8rem; }
+    @media (max-width: 680px) { .p3-issues { columns: 1; } }
+    .p3-issues .ig { break-inside: avoid; margin-bottom: .6rem; }
+    .p3-issues h5 { margin: 0 0 .2rem; font-size: .8rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: .04em; }
+    .p3-issues ul { margin: 0; padding-left: 1.1rem; }
+    .p3-issues li { font-size: .85rem; line-height: 1.5; margin-bottom: .1rem; }
+    .p3-note { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; }
+    .p3-jump { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0 .8rem; }
+    .p3-jump a { font-size: .8rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 16px; padding: .25rem .7rem; text-decoration: none; }
+    .p3-jump a:hover { border-color: var(--primary); }
+    .p3-jump a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-look { font-size: .9rem; line-height: 1.6; background: var(--bg-secondary); border-radius: var(--radius); padding: .55rem .8rem; margin: 0 0 .6rem; }
+    .p3-modelkey { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); margin: .5rem 0 .3rem; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-3.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 3 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-3.html">Paper 3</a> <span>/</span> Question 1</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 3 · Question 1</p>
+      <h1>Question 1</h1>
+      <p class="theory-subtitle">Interpretation of Graphs</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">3 marks. Explain one issue that limits interpretation of a source &mdash; and why it limits interpretation.</p>
+    </div>
+
+    <nav class="p3-nav" aria-label="Paper 3 pages">
+      <a href="paper-3.html">Overview</a>
+      <a href="paper-3-question-1.html" class="active">Q1</a>
+      <a href="paper-3-question-2.html">Q2</a>
+      <a href="paper-3-question-3.html">Q3</a>
+      <a href="paper-3-question-4.html">Q4</a>
+    </nav>
+<section class="theory-section">
+  <h2>Question 1 &mdash; Interpretation of graphs</h2>
+  <p>3 marks &middot; one issue &middot; explained.</p>
+  <div class="scenario-box">
+    <p style="margin-bottom:0;"><strong>Q1 is not "describe the graph".</strong> Do not summarise what the source shows. You explain ONE issue that limits interpretation of the information from the given source &mdash; and why it limits interpretation.</p>
+  </div>
+
+  <div class="p3-chain">
+    <span class="step">IDENTIFY one issue</span><span class="arrow">&rarr;</span>
+    <span class="step">CLEARLY DESCRIBE it</span><span class="arrow">&rarr;</span>
+    <span class="step">EXPLAIN why it limits interpretation</span>
+  </div>
+  <p class="p3-sub">Describe means tying the issue to a precise feature of the actual source. Explain means stating what the issue costs the interpretation &mdash; which claims the data can and cannot support.</p>
+
+  <p><span class="p1-official">Official IB markband</span></p>
+  <div class="p1-compare">
+    <div class="row"><span class="band">1 mark</span><span>A relevant issue is <strong>identified</strong>.</span></div>
+    <div class="row"><span class="band">2 marks</span><span>A relevant issue is <strong>clearly described</strong>.</span></div>
+    <div class="row"><span class="band">3 marks</span><span>A relevant issue is <strong>explained</strong>.</span></div>
+  </div>
+  <p class="p3-note">These are the 1&ndash;3 mark descriptors, reproduced verbatim from the IB Psychology Paper 3 markscheme. The complete markband (including the 0 descriptor) is shown again in a collapsible at the foot of this page.</p>
+
+  <div class="p3-warn">
+    <p style="margin:0;"><strong>ONLY THE FIRST ISSUE IS CREDITED.</strong> Choose the strongest issue you can support from the source and explain it fully. Do not list several limitations. The markscheme is applied to the first relevant issue stated.</p>
+  </div>
+
+  <div class="essentials-box">
+    <p><span class="p1-teacher">Important</span></p>
+    <p style="margin-bottom:0;">The issue must actually fit the source. One issue explained against the data beats five issues named.</p>
+  </div>
+</section>
+<section class="theory-section">
+  <h2>Reading the six data displays</h2>
+  <p>Paper 3 source material can contain other information &mdash; these are the six graph and table forms you are expected to know how to interpret. Each card shows the display first, then how to read it, and ends with an exam-style Question 1 and a short model response.</p>
+  <nav class="p3-jump" aria-label="Jump to a display">
+    <a href="#disp-bar">Bar</a>
+    <a href="#disp-box">Box plot</a>
+    <a href="#disp-freq">Frequency table</a>
+    <a href="#disp-hist">Histogram</a>
+    <a href="#disp-line">Line graph</a>
+    <a href="#disp-scatter">Scatterplot</a>
+  </nav>
+
+  <div class="p3-display" id="disp-bar">
+    <div class="p3-dhead">
+      <h3>Bar graph</h3><span class="p3-dtag">Categories &middot; one summary value</span>
+    </div>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Teaching visual &mdash; a normal bar graph</p>
+      <figcaption>Mean Memory Score by Study Group</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 260" role="img" aria-label="Bar graph. Group A mean 72, Group B mean 78, on a vertical axis from 0 to 100." preserveAspectRatio="xMidYMid meet">
+          <title>Mean memory score by study group (correctly scaled)</title>
+          <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Mean score (0&ndash;100 scale)</text>
+          <line x1="70" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="70" y1="40" x2="70" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="66" y1="200" x2="70" y2="200" stroke="var(--border)"/><text x="62" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="66" y1="168" x2="70" y2="168" stroke="var(--border)"/><text x="62" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+          <line x1="66" y1="136" x2="70" y2="136" stroke="var(--border)"/><text x="62" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">40</text>
+          <line x1="66" y1="104" x2="70" y2="104" stroke="var(--border)"/><text x="62" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">60</text>
+          <line x1="66" y1="72" x2="70" y2="72" stroke="var(--border)"/><text x="62" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">80</text>
+          <line x1="66" y1="40" x2="70" y2="40" stroke="var(--border)"/><text x="62" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">100</text>
+          <rect x="120" y="84.8" width="95" height="115.2" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="300" y="75.2" width="95" height="124.8" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="167.5" y="78.8" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">72</text>
+          <text x="347.5" y="69.2" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">78</text>
+          <text x="167.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">Group A</text>
+          <text x="347.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">Group B</text>
+          <text x="250" y="248" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Study group (category)</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Each bar is one category; the number above it is the value. The axis starts at 0, so the visible gap between the bars matches the real six-point gap.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> Two categories, two bars &mdash; taller means a larger summary value. The axis underneath decides how large that gap really is.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A bar graph compares separate, discrete categories. Each bar&rsquo;s height shows one summary value for that category &mdash; a mean, a count or a percentage.</p>
+      <p>Because the categories are distinct rather than continuous, the bars are separated. A histogram&rsquo;s bars touch instead, because its intervals are continuous.</p>
+    </div>
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Start with the axes: what is being compared, and in what units? Then compare the bar heights. Check whether each bar is a raw count or a group statistic such as a mean.</p>
+      <p>If error bars are shown, first check what they represent. Depending on the source they may show standard deviation, standard error or confidence intervals. Overlap between error bars is not a significance test.</p>
+    </div>
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>Does the y-axis scale accurately represent the size of the differences, or could it visually exaggerate or minimise them?</li>
+          <li>Are error bars shown, and if so, what do they represent?</li>
+          <li>Are the bars means, counts or percentages?</li>
+          <li>Is the sample size reported anywhere?</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> Which category has the higher or lower displayed summary value. If error bars are included, they provide additional information about variability or uncertainty depending on what the error bars represent.</p>
+        <p><strong>Cannot.</strong> The full underlying distribution, any individual&rsquo;s score, or whether an observed group difference is statistically significant. That requires the appropriate statistical analysis, which a bar graph alone does not contain.</p>
+      </div>
+    </div>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>A scale that exaggerates the difference between bars (for example a truncated axis).</li>
+        <li>Variability not reported where it would matter for judging how meaningful the apparent difference is.</li>
+        <li>Bars of different kinds compared as if they were the same (counts against means).</li>
+        <li>No sample size reported.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <figcaption>Mean Vigilance Accuracy (%) While Studying in a Quiet or Noisy Room</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 260" role="img" aria-label="Bar graph. Mean accuracy 88 percent in the no-noise condition and 82 percent in the noise condition. The vertical axis starts at 80 rather than zero." preserveAspectRatio="xMidYMid meet">
+          <title>Mean vigilance accuracy (%) while studying in a quiet or noisy room</title>
+          <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Mean accuracy (%)</text>
+          <line x1="70" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="70" y1="40" x2="70" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="66" y1="200" x2="70" y2="200" stroke="var(--border)"/><text x="62" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">80</text>
+          <line x1="66" y1="168" x2="70" y2="168" stroke="var(--border)"/><text x="62" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">82</text>
+          <line x1="66" y1="136" x2="70" y2="136" stroke="var(--border)"/><text x="62" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">84</text>
+          <line x1="66" y1="104" x2="70" y2="104" stroke="var(--border)"/><text x="62" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">86</text>
+          <line x1="66" y1="72" x2="70" y2="72" stroke="var(--border)"/><text x="62" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">88</text>
+          <line x1="66" y1="40" x2="70" y2="40" stroke="var(--border)"/><text x="62" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">90</text>
+          <line x1="62" y1="196" x2="76" y2="182" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <line x1="62" y1="190" x2="76" y2="176" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <rect x="120" y="72" width="95" height="128" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="300" y="168" width="95" height="32" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="167.5" y="66" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">88</text>
+          <text x="347.5" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">82</text>
+          <text x="167.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">No noise</text>
+          <text x="347.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">Noise</text>
+          <text x="250" y="248" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Study condition</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Read the axis before you read the bars: this vertical scale runs only from 80% to 90%.</p>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>The vertical axis starts at 80 rather than 0, which is a truncated scale. On a full 0&ndash;100 axis the two conditions would look almost identical (88% against 82%), but here the six-point gap fills most of the plot. The graph therefore exaggerates the size of the difference, so it cannot support a claim that noise severely impaired accuracy.</span></div>
+    </div>
+    <p class="p3-note">Named (truncated scale), located (the axis starts at 80), consequence stated (the gap looks larger than it is).</p>
+  </div>
+
+  <div class="p3-display" id="disp-box">
+    <div class="p3-dhead">
+      <h3>Box-and-whisker plot</h3><span class="p3-dtag">Median &middot; spread &middot; outliers</span>
+    </div>
+<figure class="p3-fig">
+      <p class="p3-source-label">Teaching visual &mdash; a normal box plot</p>
+      <figcaption>Reaction Times on a Vigilance Task</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 275" role="img" aria-label="Annotated box plot. Minimum 225, lower quartile 255, median 270, upper quartile 315, maximum 380 milliseconds. The interquartile range is 60 milliseconds." preserveAspectRatio="xMidYMid meet">
+          <title>Annotated box plot: reaction times on a vigilance task</title>
+          <text x="100" y="20" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">MIN</text>
+          <text x="148" y="20" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">Q1</text>
+          <text x="172" y="20" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">MED</text>
+          <text x="244" y="20" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">Q3</text>
+          <text x="348" y="20" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">MAX</text>
+          <line x1="100" y1="26" x2="100" y2="146" stroke="var(--border)" stroke-dasharray="3 3"/>
+          <line x1="148" y1="26" x2="148" y2="134" stroke="var(--border)" stroke-dasharray="3 3"/>
+          <line x1="172" y1="26" x2="172" y2="134" stroke="var(--border)" stroke-dasharray="3 3"/>
+          <line x1="244" y1="26" x2="244" y2="134" stroke="var(--border)" stroke-dasharray="3 3"/>
+          <line x1="348" y1="26" x2="348" y2="146" stroke="var(--border)" stroke-dasharray="3 3"/>
+          <line x1="100" y1="146" x2="148" y2="146" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="244" y1="146" x2="348" y2="146" stroke="var(--text-secondary)" stroke-width="2"/>
+          <text x="124" y="138" text-anchor="middle" font-size="9" fill="var(--text-secondary)">whisker</text>
+          <text x="296" y="138" text-anchor="middle" font-size="9" fill="var(--text-secondary)">whisker</text>
+          <line x1="100" y1="140" x2="100" y2="152" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="348" y1="140" x2="348" y2="152" stroke="var(--text-secondary)" stroke-width="2"/>
+          <rect x="148" y="134" width="96" height="32" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1.5"/>
+          <line x1="172" y1="134" x2="172" y2="166" stroke="var(--primary)" stroke-width="2"/>
+          <text x="100" y="190" text-anchor="middle" font-size="9.5" fill="var(--text)">225</text>
+          <text x="148" y="190" text-anchor="middle" font-size="9.5" fill="var(--text)">255</text>
+          <text x="172" y="190" text-anchor="middle" font-size="9.5" fill="var(--text)">270</text>
+          <text x="244" y="190" text-anchor="middle" font-size="9.5" fill="var(--text)">315</text>
+          <text x="348" y="190" text-anchor="middle" font-size="9.5" fill="var(--text)">380</text>
+          <line x1="148" y1="226" x2="244" y2="226" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <line x1="148" y1="220" x2="148" y2="226" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <line x1="244" y1="220" x2="244" y2="226" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <text x="196" y="239" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">IQR = Q3 &minus; Q1 (middle 50%)</text>
+          <line x1="60" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="60" y1="20" x2="60" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <text x="60" y="215" text-anchor="start" font-size="9.5" fill="var(--text-secondary)">200</text>
+          <text x="140" y="215" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">250</text>
+          <text x="220" y="215" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">300</text>
+          <text x="300" y="215" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">350</text>
+          <text x="380" y="215" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">400</text>
+          <text x="250" y="260" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reaction time (milliseconds)</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Whiskers in this example run from the minimum to the maximum. That is one common convention &mdash; other plots use 1.5&times; the IQR or similar cut-offs, which is another reason to check the labels before interpreting a box plot.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> One distribution: the box holds the middle 50%, the line inside it is the median, and the whiskers reach the extremes in this example.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A box-and-whisker plot summarises a distribution. The box itself always shows the same three values: the lower quartile (Q1), the median and the upper quartile (Q3). The box holds the middle 50% of the data, and its length is the interquartile range (IQR = Q3 &minus; Q1).</p>
+      <p>The whiskers extend according to the convention used in that particular plot. Some run to the minimum and maximum; others use a rule such as 1.5&times; IQR, with more extreme observations plotted separately as outliers. Always check the labels before interpreting a box plot.</p>
+    </div>
+    
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Compare medians (the middle lines) across groups, and compare box lengths as a guide to how spread the middle 50% is. Where the median sits inside its box hints at skew, and whiskers of very different lengths hint at unequal spread. One box describes one group; two boxes side by side compare two groups.</p>
+    </div>
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>Where does the median sit inside its box?</li>
+          <li>How long are the box and the whiskers?</li>
+          <li>Are outlier dots plotted beyond the whiskers?</li>
+          <li>Is the sample size reported? If it is not, this may limit how confidently you can judge how representative or stable the pattern is.</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> The median, the middle 50% of scores through the IQR, the spread represented by the whiskers, possible outliers, and how distributions compare. If the whiskers explicitly run to the minimum and maximum, then the full range can be read too.</p>
+        <p><strong>Cannot.</strong> Individual scores, or whether a group difference is statistically significant. Substantial overlap means the visual alone may not justify claiming a clear group difference &mdash; and a visual gap does not prove significance either.</p>
+      </div>
+    </div>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Two-group comparison</p>
+      <figcaption>Words Recalled on a Memory Task by Sleep Group</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 220" role="img" aria-label="Box and whisker plot. Rested group median 6 words, sleep-restricted group median 5 words, boxes overlap substantially. No sample sizes shown." preserveAspectRatio="xMidYMid meet">
+          <title>Words Recalled on a Memory Task by Sleep Group</title>
+          <line x1="60" y1="170" x2="444" y2="170" stroke="var(--border)" stroke-width="1"/>
+          <line x1="60" y1="20" x2="60" y2="170" stroke="var(--border)" stroke-width="1"/>
+          <line x1="156" y1="85" x2="204" y2="85" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="316" y1="85" x2="380" y2="85" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="156" y1="78" x2="156" y2="92" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="380" y1="78" x2="380" y2="92" stroke="var(--text-secondary)" stroke-width="2"/>
+          <rect x="204" y="70" width="112" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="252" y1="70" x2="252" y2="100" stroke="var(--primary)" stroke-width="2"/>
+          <line x1="124" y1="135" x2="156" y2="135" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="268" y1="135" x2="348" y2="135" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="124" y1="128" x2="124" y2="142" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="348" y1="128" x2="348" y2="142" stroke="var(--text-secondary)" stroke-width="2"/>
+          <rect x="156" y="120" width="112" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="220" y1="120" x2="220" y2="150" stroke="var(--primary)" stroke-width="2"/>
+          <text x="8" y="89" font-size="10.5" fill="var(--text)">Rested</text>
+          <text x="8" y="139" font-size="10.5" fill="var(--text)">Sleep-restricted</text>
+          <text x="60" y="187" text-anchor="start" font-size="10" fill="var(--text-secondary)">0</text>
+          <text x="124" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">2</text>
+          <text x="188" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">4</text>
+          <text x="252" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">6</text>
+          <text x="316" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">8</text>
+          <text x="380" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">10</text>
+          <text x="444" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">12</text>
+          <text x="250" y="212" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Words recalled</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">The boxes overlap heavily, which warns against treating the two medians as clearly different. But notice the plot alone cannot settle the question: overlap is a visual guide, not significance testing.</p>
+    </figure>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>A visual gap or overlap treated as proof for or against a real group difference.</li>
+        <li>An unusually extreme outlier, if it materially changes how the pattern should be interpreted.</li>
+        <li>No sample size reported, which limits how confidently the pattern can be judged.</li>
+        <li>Whisker convention undefined: without knowing what the whiskers represent, the spread cannot be read precisely.</li>
+        <li>A scale that exaggerates how far apart the boxes appear.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <figcaption>Reaction Times on a Memory-Recognition Task</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 210" role="img" aria-label="Box plot of reaction times with one outlier dot at 505 milliseconds, far beyond the upper whisker." preserveAspectRatio="xMidYMid meet">
+          <title>Reaction times on a memory-recognition task (teacher-created example)</title>
+          <line x1="60" y1="170" x2="440" y2="170" stroke="var(--border)" stroke-width="1"/>
+          <line x1="60" y1="20" x2="60" y2="170" stroke="var(--border)" stroke-width="1"/>
+          <line x1="85" y1="100" x2="115" y2="100" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="175" y1="100" x2="240" y2="100" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="85" y1="94" x2="85" y2="106" stroke="var(--text-secondary)" stroke-width="2"/>
+          <line x1="240" y1="94" x2="240" y2="106" stroke="var(--text-secondary)" stroke-width="2"/>
+          <rect x="115" y="88" width="60" height="24" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="130" y1="88" x2="130" y2="112" stroke="var(--primary)" stroke-width="2"/>
+          <circle cx="365" cy="100" r="4" fill="none" stroke="var(--primary)" stroke-width="2"/>
+          <text x="365" y="88" text-anchor="middle" font-size="10" font-weight="700" fill="var(--primary)">505</text>
+          <text x="60" y="185" text-anchor="start" font-size="9.5" fill="var(--text-secondary)">200</text>
+          <text x="110" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">250</text>
+          <text x="160" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">300</text>
+          <text x="210" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">350</text>
+          <text x="260" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">400</text>
+          <text x="310" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">450</text>
+          <text x="360" y="185" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">500</text>
+          <text x="250" y="203" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reaction time (milliseconds)</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Every value except one lies between roughly 225 and 380 ms; one value (505 ms) sits beyond the upper whisker as a plotted outlier.</p>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>The point at 505 ms lies far beyond the rest of the observations. Because it is unusually extreme, statistics that are sensitive to extreme values could be substantially affected by this one score. The source does not show whether the overall pattern would remain similar without it, so the distribution should be interpreted cautiously.</span></div>
+    </div>
+    <p class="p3-note">Named (extreme outlier at 505 ms), located (beyond the upper whisker), consequence stated (conclusions sensitive to extremes could shift).</p>
+  </div>
+
+  <div class="p3-display" id="disp-freq">
+    <div class="p3-dhead">
+      <h3>Frequency table</h3><span class="p3-dtag">Counts &middot; proportions &middot; totals</span>
+    </div>
+<figure class="p3-fig">
+      <p class="p3-source-label">Teaching visual &mdash; a normal frequency table</p>
+      <table class="p3-table">
+        <caption>Frequency of Self-Reported Mood Categories One Week After Turning Off Phone Notifications</caption>
+        <thead>
+          <tr><th scope="col">Mood category</th><th scope="col">Frequency</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Positive</td><td>18</td></tr>
+          <tr><td>Neutral</td><td>12</td></tr>
+          <tr><td>Negative</td><td>6</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>36</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="p3-fignote">These are frequencies, not percentages: &ldquo;positive&rdquo; was reported 18 times out of 36 &mdash; that is 18 out of 36 = 50%. The counts give a rank order, but they say nothing about significance or how the categories were defined.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> Three categories, three counts. &ldquo;Positive&rdquo; is the biggest count &mdash; but counts alone don&rsquo;t give percentages or tell you whether groups are the same size.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A frequency table shows how observations are distributed across the listed categories. Rows are categories; the cells hold counts &mdash; or sometimes percentages &mdash; of how many participants fell into each one.</p>
+      <p>Unlike a histogram, it does not show that distribution as a continuous visual shape. The table gives counts, and proportions or percentages if supplied &mdash; but it may not give individual scores, a direct measure such as the SD, or inferential results.</p>
+    </div>
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Read across the rows to compare categories, then check you are comparing like with like. Are these frequencies or percentages? Are the groups the same size? How were the categories defined? Proportions and percentages are the reader&rsquo;s job unless the source provides them.</p>
+    </div>
+    
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>If groups differ in size, raw counts alone may make comparisons difficult or misleading. Would proportions or percentages give a fairer comparison?</li>
+          <li>Are these frequencies or percentages?</li>
+          <li>Are the category labels defined anywhere?</li>
+          <li>Is non-response or missing data mentioned?</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> Which category was most and least common in that sample, and how many participants were counted.</p>
+        <p><strong>Cannot.</strong> Why the pattern exists (that depends on the design, not the table), whether it would replicate, individual scores, or whether a difference between counts is statistically meaningful. A table of counts reports no significance test.</p>
+      </div>
+    </div>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>Groups of different sizes compared as raw counts, where proportions would be fairer.</li>
+        <li>Frequencies where a percentage (and its base) is needed to judge the claim.</li>
+        <li>Category labels with no definition of what was counted.</li>
+        <li>Percentages given without their base (&ldquo;% of what?&rdquo;).</li>
+        <li>No mention of sample size or missing data.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <table class="p3-table">
+        <caption>Frequency of Students Reporting Excessive Daytime Sleepiness by Year Group</caption>
+        <thead>
+          <tr><th scope="col">Year group</th><th scope="col">Often sleepy in class</th><th scope="col">Rarely sleepy</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Year 12</td><td>24</td><td>36</td></tr>
+          <tr><td>Year 11</td><td>14</td><td>14</td></tr>
+          <tr><td>Year 10</td><td>9</td><td>6</td></tr>
+        </tbody>
+      </table>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>The year groups are different sizes, so the raw counts cannot be compared fairly. Year 12 has 24 sleepy students out of 60 (40%), whereas Year 10 has only 9 out of 15 (60%). The raw counts therefore suggest the opposite pattern from the proportions, so using counts alone could mislead the interpretation.</span></div>
+    </div>
+    <p class="p3-note">Named (unequal group sizes), located (24 of 60 against 9 of 15), consequence stated (counts suggest the opposite pattern from proportions).</p>
+  </div>
+</section>
+<section class="theory-section">
+  <div class="p3-display" id="disp-hist">
+    <div class="p3-dhead">
+      <h3>Histogram</h3><span class="p3-dtag">Continuous data &middot; shape</span>
+    </div>
+<div class="p3-minis">
+      <div class="p3-mini">
+        <svg viewBox="0 0 190 112" role="img" aria-label="Symmetrical distribution: bars fall off equally on both sides." preserveAspectRatio="xMidYMid meet">
+          <title>Symmetrical distribution</title>
+          <rect x="16" y="82" width="16" height="10" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="40" y="62" width="16" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="64" y="32" width="16" height="60" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="88" y="12" width="16" height="80" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="112" y="32" width="16" height="60" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="136" y="62" width="16" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="160" y="82" width="16" height="10" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="16" y1="92" x2="176" y2="92" stroke="var(--border)" stroke-width="1"/>
+        </svg>
+        <p>Symmetrical &mdash; falls off equally on both sides</p>
+      </div>
+      <div class="p3-mini">
+        <svg viewBox="0 0 190 112" role="img" aria-label="Right-skewed distribution: the tail runs toward higher values on the right." preserveAspectRatio="xMidYMid meet">
+          <title>Right-skewed distribution</title>
+          <rect x="18" y="22" width="17" height="70" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="44" y="47" width="17" height="45" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="70" y="62" width="17" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="96" y="77" width="17" height="15" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="122" y="82" width="17" height="10" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="148" y="87" width="17" height="5" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="18" y1="92" x2="165" y2="92" stroke="var(--border)" stroke-width="1"/>
+        </svg>
+        <p>Right-skewed &mdash; the tail runs toward <strong>higher</strong> values</p>
+      </div>
+      <div class="p3-mini">
+        <svg viewBox="0 0 190 112" role="img" aria-label="Left-skewed distribution: the tail runs toward lower values on the left." preserveAspectRatio="xMidYMid meet">
+          <title>Left-skewed distribution</title>
+          <rect x="18" y="87" width="17" height="5" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="44" y="82" width="17" height="10" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="70" y="77" width="17" height="15" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="96" y="62" width="17" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="122" y="47" width="17" height="45" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="148" y="22" width="17" height="70" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <line x1="18" y1="92" x2="165" y2="92" stroke="var(--border)" stroke-width="1"/>
+        </svg>
+        <p>Left-skewed &mdash; the tail runs toward <strong>lower</strong> values</p>
+      </div>
+    </div>
+    <p class="p3-note">A common error is naming the skew from the tallest bar. The tail decides: right-skewed data have a long tail toward higher values, while left-skewed data have a long tail toward lower values.</p>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Reading a histogram's shape</p>
+      <figcaption>Distribution of Daily Smartphone Use in a Student Sample</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 240" role="img" aria-label="Histogram of hours of smartphone use per day, skewing toward low use. Most students use one to three hours." preserveAspectRatio="xMidYMid meet">
+          <title>Distribution of Daily Smartphone Use in a Student Sample</title>
+          <line x1="60" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="60" y1="20" x2="60" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="56" y1="200" x2="60" y2="200" stroke="var(--border)"/><text x="52" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="56" y1="175.2" x2="60" y2="175.2" stroke="var(--border)"/><text x="52" y="178.2" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+          <line x1="56" y1="150.4" x2="60" y2="150.4" stroke="var(--border)"/><text x="52" y="153.4" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+          <line x1="56" y1="125.6" x2="60" y2="125.6" stroke="var(--border)"/><text x="52" y="128.6" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+          <line x1="56" y1="100.8" x2="60" y2="100.8" stroke="var(--border)"/><text x="52" y="103.8" text-anchor="end" font-size="10" fill="var(--text-secondary)">8</text>
+          <line x1="56" y1="76" x2="60" y2="76" stroke="var(--border)"/><text x="52" y="79" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+          <line x1="56" y1="51.2" x2="60" y2="51.2" stroke="var(--border)"/><text x="52" y="54.2" text-anchor="end" font-size="10" fill="var(--text-secondary)">12</text>
+          <line x1="56" y1="26.4" x2="60" y2="26.4" stroke="var(--border)"/><text x="52" y="29.4" text-anchor="end" font-size="10" fill="var(--text-secondary)">14</text>
+          <rect x="60" y="150.4" width="59" height="49.6" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="124" y="88.4" width="59" height="111.6" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="188" y="26.4" width="59" height="173.6" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="252" y="100.8" width="59" height="99.2" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="316" y="162.8" width="59" height="37.2" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="380" y="175.2" width="59" height="24.8" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="89.5" y="146.4" text-anchor="middle" font-size="10" fill="var(--primary)">4</text>
+          <text x="153.5" y="84.4" text-anchor="middle" font-size="10" fill="var(--primary)">9</text>
+          <text x="217.5" y="14" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">peak</text>
+          <text x="217.5" y="22.4" text-anchor="middle" font-size="10" fill="var(--primary)">14</text>
+          <text x="281.5" y="96.8" text-anchor="middle" font-size="10" fill="var(--primary)">8</text>
+          <text x="345.5" y="158.8" text-anchor="middle" font-size="10" fill="var(--primary)">3</text>
+          <text x="409.5" y="171.2" text-anchor="middle" font-size="10" fill="var(--primary)">2</text>
+          <text x="400" y="160" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">tail</text>
+          <text x="89.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">0&ndash;1</text>
+          <text x="153.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">1&ndash;2</text>
+          <text x="217.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">2&ndash;3</text>
+          <text x="281.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">3&ndash;4</text>
+          <text x="345.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">4&ndash;5</text>
+          <text x="409.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">5&ndash;6</text>
+          <text x="250" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Hours of smartphone use per day</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">The distribution is right-skewed &mdash; the tail extends toward higher values (5&ndash;6 hours). Notice also that nothing here reports the mean, the spread or the sample size, and that the shape itself depends on the bin widths chosen.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> Each bar is one interval, and the bars touch because the scale is continuous. The tallest bars are the peak; the long thin side is the tail.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A histogram groups a continuous numeric variable into intervals (bins), and the height of each bar shows how many values fell in that interval. Because the intervals are continuous and adjacent, the <strong>bars touch</strong> &mdash; that is the quick way to tell a histogram from a bar graph, whose separate-category bars are gapped.</p>
+    </div>
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Read the shape. Where the bars are tallest is where the values cluster; how quickly the bars fall away on each side is the spread; and a tail that runs on longer on one side is the skew. Skew is named by its tail, not by its tallest bar.</p>
+    </div>
+    
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>If bin widths differ, check how frequency is represented. Unequal-width bins can be misleading if their heights are compared as though the widths were equal.</li>
+          <li>Could the chosen bin boundaries hide or exaggerate features of the distribution?</li>
+          <li>Are summary statistics (mean, median, SD, sample size) given?</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> Where the values cluster, how spread they are, whether the distribution looks symmetric or skewed, and any gaps in the data.</p>
+        <p><strong>Cannot.</strong> The exact data points &mdash; values inside a bin are invisible &mdash; individual scores, or summary statistics unless they are printed on the graph.</p>
+      </div>
+    </div>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>Bin widths chosen so the grouping itself shapes the pattern (different bins, different peak).</li>
+        <li>Very broad intervals that combine distinct values and hide clusters or gaps.</li>
+        <li>No sample size or summary statistics reported.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+        <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <figcaption>Reaction Times on an Attention Task (broad intervals)</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 240" role="img" aria-label="Histogram of reaction times grouped into three broad intervals: 200 to 299, 300 to 399 and 400 to 499 milliseconds." preserveAspectRatio="xMidYMid meet">
+          <title>Reaction times on an attention task with broad intervals (teacher-created example)</title>
+          <text x="60" y="16" font-size="10.5" fill="var(--text-secondary)">Frequency</text>
+          <line x1="60" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="60" y1="32" x2="60" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="56" y1="200" x2="60" y2="200" stroke="var(--border)"/><text x="52" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="56" y1="158" x2="60" y2="158" stroke="var(--border)"/><text x="52" y="161" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+          <line x1="56" y1="116" x2="60" y2="116" stroke="var(--border)"/><text x="52" y="119" text-anchor="end" font-size="10" fill="var(--text-secondary)">12</text>
+          <line x1="56" y1="74" x2="60" y2="74" stroke="var(--border)"/><text x="52" y="77" text-anchor="end" font-size="10" fill="var(--text-secondary)">18</text>
+          <line x1="56" y1="32" x2="60" y2="32" stroke="var(--border)"/><text x="52" y="35" text-anchor="end" font-size="10" fill="var(--text-secondary)">24</text>
+          <rect x="60" y="88" width="110" height="112" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="180" y="46" width="110" height="154" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="300" y="165" width="110" height="35" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="115" y="82" text-anchor="middle" font-size="10" fill="var(--primary)">16</text>
+          <text x="235" y="40" text-anchor="middle" font-size="10" fill="var(--primary)">22</text>
+          <text x="355" y="159" text-anchor="middle" font-size="10" fill="var(--primary)">5</text>
+          <text x="115" y="218" text-anchor="middle" font-size="10" fill="var(--text)">200&ndash;299</text>
+          <text x="235" y="218" text-anchor="middle" font-size="10" fill="var(--text)">300&ndash;399</text>
+          <text x="355" y="218" text-anchor="middle" font-size="10" fill="var(--text)">400&ndash;499</text>
+          <text x="250" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reaction time (milliseconds)</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">The intervals are very broad: each bar covers a 100-millisecond range, so any smaller clusters or gaps within an interval are hidden.</p>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>The score intervals are very broad, so several different values are combined inside each bar. This can hide important features such as smaller clusters or gaps within the distribution. Because the raw scores are not shown, the apparent shape may depend heavily on how the bins were chosen.</span></div>
+    </div>
+    <p class="p3-note">Named (overly broad bins), located (100 ms intervals), consequence stated (clusters or gaps hidden; shape depends on bin choice).</p>
+  </div>
+
+  <div class="p3-display" id="disp-line">
+    <div class="p3-dhead">
+      <h3>Line graph</h3><span class="p3-dtag">Change across ordered points</span>
+    </div>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Teaching visual &mdash; a normal line graph</p>
+      <figcaption>Mean Focus Score Across Six Time Points</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 240" role="img" aria-label="Line graph. Scores rise from 3 to a peak of 6, hold steady, then fall to 2 across six time points." preserveAspectRatio="xMidYMid meet">
+          <title>Mean focus score across six time points</title>
+          <line x1="70" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="70" y1="40" x2="70" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="66" y1="200" x2="70" y2="200" stroke="var(--border)"/><text x="62" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="66" y1="168" x2="70" y2="168" stroke="var(--border)"/><text x="62" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+          <line x1="66" y1="136" x2="70" y2="136" stroke="var(--border)"/><text x="62" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+          <line x1="66" y1="104" x2="70" y2="104" stroke="var(--border)"/><text x="62" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+          <line x1="66" y1="72" x2="70" y2="72" stroke="var(--border)"/><text x="62" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">8</text>
+          <line x1="66" y1="40" x2="70" y2="40" stroke="var(--border)"/><text x="62" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+          <polyline points="80,152 150,120 220,104 290,104 360,136 430,168" fill="none" stroke="var(--primary)" stroke-width="2"/>
+          <circle cx="80" cy="152" r="3" fill="var(--primary)"/><circle cx="150" cy="120" r="3" fill="var(--primary)"/><circle cx="220" cy="104" r="3" fill="var(--primary)"/><circle cx="290" cy="104" r="3" fill="var(--primary)"/><circle cx="360" cy="136" r="3" fill="var(--primary)"/><circle cx="430" cy="168" r="3" fill="var(--primary)"/>
+          <text x="115" y="126" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">increase</text>
+          <text x="220" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">peak</text>
+          <text x="255" y="118" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">stable period</text>
+          <text x="395" y="142" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">decrease</text>
+          <text x="80" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T1</text>
+          <text x="150" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T2</text>
+          <text x="220" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T3</text>
+          <text x="290" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T4</text>
+          <text x="360" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T5</text>
+          <text x="430" y="218" text-anchor="middle" font-size="10" fill="var(--text)">T6</text>
+          <text x="250" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Time point</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">The dots show the observed values, while the lines connect successive time points to make the pattern of change easier to see. Up means increase, flat means stability, and down means decrease.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> One line joining ordered measurements. Follow it left to right &mdash; up, flat, down &mdash; but only the dots are data.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A line graph shows how a variable changes across an ordered series &mdash; usually time. Each point is one measurement (often a group mean), and the points are joined so the trend can be seen at a glance.</p>
+    </div>
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Follow the line's direction to read the trend, and compare how steep each segment is to read the rate of change between measurements. Two lines on the same axes allow one condition to be compared with another at each time point. Remember that only the plotted points are data: the line between them is a way of joining the points, not evidence that the values moved smoothly between them.</p>
+    </div>
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>Are the time intervals truly equal? Unequal intervals plotted at equal gaps distort the slope.</li>
+          <li>Does the vertical scale accurately represent the size of the changes, or does it exaggerate the slope?</li>
+          <li>Do the points carry error bars, or are they bare means?</li>
+          <li>How many points are there? Sparse measurements joined by a line imply unsampled change.</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> Whether values trend up, down or stay level across the measured points, and roughly how quickly.</p>
+        <p><strong>Cannot.</strong> Cause and effect: the line shows change across recorded points, but whether that change is causal depends on the study design. It also cannot show unsampled values between the points, or whether a change is statistically significant &mdash; without variability or significance information the difference between two lines cannot be judged.</p>
+      </div>
+    </div>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>Irregular time intervals plotted at equal spacing.</li>
+        <li>Only group means plotted, with no variability reported to judge the trend against.</li>
+        <li>Sparse points joined as if change between them were continuous.</li>
+        <li>A compressed or truncated scale that exaggerates the slope.</li>
+        <li>No sample sizes reported.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <figcaption>Average Concentration Rating Across a School Week</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 240" role="img" aria-label="Line graph. Low phone use group stays around 6.5, high phone use group declines from 6.1 to 5.0 across the week. Only group means are plotted." preserveAspectRatio="xMidYMid meet">
+          <title>Average Concentration Rating Across a School Week</title>
+          <line x1="70" y1="180" x2="430" y2="180" stroke="var(--border)" stroke-width="1"/>
+          <line x1="70" y1="20" x2="70" y2="180" stroke="var(--border)" stroke-width="1"/>
+          <line x1="66" y1="180" x2="70" y2="180" stroke="var(--border)"/><text x="62" y="183" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="66" y1="148" x2="70" y2="148" stroke="var(--border)"/><text x="62" y="151" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+          <line x1="66" y1="116" x2="70" y2="116" stroke="var(--border)"/><text x="62" y="119" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+          <line x1="66" y1="84" x2="70" y2="84" stroke="var(--border)"/><text x="62" y="87" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+          <line x1="66" y1="52" x2="70" y2="52" stroke="var(--border)"/><text x="62" y="55" text-anchor="end" font-size="10" fill="var(--text-secondary)">8</text>
+          <line x1="66" y1="20" x2="70" y2="20" stroke="var(--border)"/><text x="62" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+          <polyline points="70,76 160,74.4 250,77.6 340,72.8 430,71.2" fill="none" stroke="var(--primary)" stroke-width="2"/>
+          <polyline points="70,82.4 160,87.2 250,90.4 340,95.2 430,100" fill="none" stroke="var(--text-secondary)" stroke-width="2"/>
+          <circle cx="70" cy="76" r="3" fill="var(--primary)"/><circle cx="160" cy="74.4" r="3" fill="var(--primary)"/><circle cx="250" cy="77.6" r="3" fill="var(--primary)"/><circle cx="340" cy="72.8" r="3" fill="var(--primary)"/><circle cx="430" cy="71.2" r="3" fill="var(--primary)"/>
+          <circle cx="70" cy="82.4" r="3" fill="var(--text-secondary)"/><circle cx="160" cy="87.2" r="3" fill="var(--text-secondary)"/><circle cx="250" cy="90.4" r="3" fill="var(--text-secondary)"/><circle cx="340" cy="95.2" r="3" fill="var(--text-secondary)"/><circle cx="430" cy="100" r="3" fill="var(--text-secondary)"/>
+          <line x1="330" y1="28" x2="360" y2="28" stroke="var(--primary)" stroke-width="2"/><text x="368" y="32" font-size="10.5" fill="var(--text)">Low phone use</text>
+          <line x1="330" y1="48" x2="360" y2="48" stroke="var(--text-secondary)" stroke-width="2"/><text x="368" y="52" font-size="10.5" fill="var(--text)">High phone use</text>
+          <text x="70" y="195" text-anchor="middle" font-size="10" fill="var(--text)">Mon</text>
+          <text x="160" y="195" text-anchor="middle" font-size="10" fill="var(--text)">Tue</text>
+          <text x="250" y="195" text-anchor="middle" font-size="10" fill="var(--text)">Wed</text>
+          <text x="340" y="195" text-anchor="middle" font-size="10" fill="var(--text)">Thu</text>
+          <text x="430" y="195" text-anchor="middle" font-size="10" fill="var(--text)">Fri</text>
+          <text x="250" y="218" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Day of the school week</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Only five group means are plotted per condition. There are no error bars, no standard deviations and no sample sizes.</p>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>The graph reports only group means and gives no variability information. Although the high-phone-use mean falls across the week, the source does not show how spread the individual scores were around those means. Therefore the graph alone cannot show how clearly separated or consistent the apparent group differences are.</span></div>
+    </div>
+    <p class="p3-note">Named (no variability reported), located (bare means, no error bars), consequence stated (separation of the groups cannot be judged).</p>
+  </div>
+
+  <div class="p3-display" id="disp-scatter">
+    <div class="p3-dhead">
+      <h3>Scatterplot</h3><span class="p3-dtag">Two variables &middot; association</span>
+    </div>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Teaching visual &mdash; a normal scatterplot</p>
+      <figcaption>Hours of Revision and Exam Score (seven students)</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 250" role="img" aria-label="Scatterplot showing a positive association: higher revision generally goes with higher scores, and the points hug a straight line." preserveAspectRatio="xMidYMid meet">
+          <title>Hours of revision and exam score: a positive association</title>
+          <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Exam score (0&ndash;100)</text>
+          <line x1="80" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="80" y1="20" x2="80" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="76" y1="200" x2="80" y2="200" stroke="var(--border)"/><text x="72" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="76" y1="164" x2="80" y2="164" stroke="var(--border)"/><text x="72" y="167" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+          <line x1="76" y1="128" x2="80" y2="128" stroke="var(--border)"/><text x="72" y="131" text-anchor="end" font-size="10" fill="var(--text-secondary)">40</text>
+          <line x1="76" y1="92" x2="80" y2="92" stroke="var(--border)"/><text x="72" y="95" text-anchor="end" font-size="10" fill="var(--text-secondary)">60</text>
+          <line x1="76" y1="56" x2="80" y2="56" stroke="var(--border)"/><text x="72" y="59" text-anchor="end" font-size="10" fill="var(--text-secondary)">80</text>
+          <line x1="76" y1="20" x2="80" y2="20" stroke="var(--border)"/><text x="72" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">100</text>
+          <circle cx="125" cy="131.6" r="3" fill="var(--primary)"/>
+          <circle cx="170" cy="119" r="3" fill="var(--primary)"/>
+          <circle cx="215" cy="106.4" r="3" fill="var(--primary)"/>
+          <circle cx="260" cy="95.6" r="3" fill="var(--primary)"/>
+          <circle cx="305" cy="81.2" r="3" fill="var(--primary)"/>
+          <circle cx="350" cy="72.2" r="3" fill="var(--primary)"/>
+          <circle cx="395" cy="59.6" r="3" fill="var(--primary)"/>
+          <text x="140" y="44" text-anchor="start" font-size="9" font-weight="700" fill="var(--text-secondary)">positive direction: rises left to right</text>
+          <text x="305" y="168" text-anchor="middle" font-size="9" font-weight="700" fill="var(--text-secondary)">points closer to a straight-line pattern = stronger linear association</text>
+          <line x1="80" y1="215" x2="440" y2="215" stroke="var(--border)" stroke-width="1"/>
+          <text x="80" y="228" text-anchor="start" font-size="9.5" fill="var(--text-secondary)">0</text>
+          <text x="170" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">2</text>
+          <text x="260" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">4</text>
+          <text x="350" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">6</text>
+          <text x="440" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">8</text>
+          <text x="260" y="245" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Hours of revision (each dot = one student)</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Each dot is one student. The cloud rises from left to right (a positive association), and because the points hug a straight line the linear association is fairly strong.</p>
+    </figure>
+    <p class="p3-look"><strong>Look at this first.</strong> Each dot is one student. A rising cloud is a positive association; the tighter the cloud, the stronger the straight-line pattern.</p>
+    <div class="p3-dpart">
+      <h4>What you&rsquo;re looking at</h4>
+      <p>A scatterplot shows the relationship between two variables. Each point represents one paired observation &mdash; often one participant&rsquo;s values on the two variables &mdash; with one variable on the horizontal axis and the other on the vertical axis. The cloud of points shows whether the two variables move together.</p>
+    </div>
+    <div class="p3-dpart">
+      <h4>How to read it</h4>
+      <p>Read the direction of the cloud &mdash; rising from left to right is a positive association, falling is negative &mdash; and read its tightness: points hugging a straight line mean a stronger linear association, while a loose cloud means a weaker one. A single point far from the cloud is an outlier, and in a small sample it can be influential.</p>
+    </div>
+    <div class="p3-duo">
+      <div class="p3-dpart">
+        <h4>What to notice</h4>
+        <ul class="p3-bullets">
+          <li>Is there a trend, and is it positive or negative?</li>
+          <li>Is there an unusually influential outlier &mdash; one that materially changes how the trend should be read?</li>
+          <li>Is the correlation coefficient r reported?</li>
+          <li>Are axes, units, sample size and labels given?</li>
+        </ul>
+      </div>
+      <div class="p3-dpart">
+        <h4>What it can &mdash; and can&rsquo;t &mdash; show</h4>
+        <p><strong>Can.</strong> The direction and rough strength of a linear association between two measured variables.</p>
+        <p><strong>Cannot.</strong> Cause and effect. The relationship could run the other way, or both variables could be driven by a third factor. And r near zero only means the points do not follow a straight line &mdash; a curved (non-linear) relationship may still exist.</p>
+      </div>
+    </div>
+    <p class="p3-note">The correlation coefficient r runs from &minus;1 to +1. The closer |r| is to 1, the tighter the straight-line association; r near 0 means little linear association. There are no universal cut-off values separating "strong" from "weak" &mdash; read r in the context of the source.</p>
+    <div class="p3-dpart">
+      <h4>When interpretation may be limited</h4>
+      <p class="p3-note">Only use one of these when the feature is actually present in the source &mdash; and you can explain why it matters.</p>
+      <ul class="p3-bullets">
+        <li>A claim of causality from a correlational display.</li>
+        <li>An influential outlier.</li>
+        <li>No r, no sample size, or a very small sample.</li>
+        <li>A truncated axis that exaggerates the steepness of the trend.</li>
+        <li>Points that follow a curve being described as a straight-line relationship.</li>
+      </ul>
+    </div>
+
+    <h4>Try a Question 1</h4>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Source</p>
+      <figcaption>Hours of Revision and Exam Score</figcaption>
+      <div class="p3-svgwrap">
+        <svg viewBox="0 0 460 250" role="img" aria-label="Scatterplot of hours of revision against exam score showing a positive trend, with one outlier: two hours of revision but a score of 89." preserveAspectRatio="xMidYMid meet">
+          <title>Hours of Revision and Exam Score (teacher-created example)</title>
+          <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Exam score (0&ndash;100)</text>
+          <line x1="80" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="80" y1="20" x2="80" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="76" y1="200" x2="80" y2="200" stroke="var(--border)"/><text x="72" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+          <line x1="76" y1="164" x2="80" y2="164" stroke="var(--border)"/><text x="72" y="167" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+          <line x1="76" y1="128" x2="80" y2="128" stroke="var(--border)"/><text x="72" y="131" text-anchor="end" font-size="10" fill="var(--text-secondary)">40</text>
+          <line x1="76" y1="92" x2="80" y2="92" stroke="var(--border)"/><text x="72" y="95" text-anchor="end" font-size="10" fill="var(--text-secondary)">60</text>
+          <line x1="76" y1="56" x2="80" y2="56" stroke="var(--border)"/><text x="72" y="59" text-anchor="end" font-size="10" fill="var(--text-secondary)">80</text>
+          <line x1="76" y1="20" x2="80" y2="20" stroke="var(--border)"/><text x="72" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">100</text>
+          <circle cx="125" cy="131.6" r="3" fill="var(--primary)"/>
+          <circle cx="170" cy="119" r="3" fill="var(--primary)"/>
+          <circle cx="215" cy="106.4" r="3" fill="var(--primary)"/>
+          <circle cx="260" cy="95.6" r="3" fill="var(--primary)"/>
+          <circle cx="305" cy="81.2" r="3" fill="var(--primary)"/>
+          <circle cx="350" cy="72.2" r="3" fill="var(--primary)"/>
+          <circle cx="395" cy="59.6" r="3" fill="var(--primary)"/>
+          <circle cx="170" cy="39.8" r="4.5" fill="none" stroke="var(--primary)" stroke-width="2"/>
+          <text x="170" y="32" text-anchor="middle" font-size="10" font-weight="700" fill="var(--primary)">Outlier</text>
+          <line x1="80" y1="215" x2="440" y2="215" stroke="var(--border)" stroke-width="1"/>
+          <text x="80" y="228" text-anchor="start" font-size="9.5" fill="var(--text-secondary)">0</text>
+          <text x="170" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">2</text>
+          <text x="260" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">4</text>
+          <text x="350" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">6</text>
+          <text x="440" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">8</text>
+          <text x="260" y="245" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Hours of revision</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">Each point is one student's exam score plotted against their hours of revision. The reported Pearson correlation is r = .54. One point (2 hours, score 89) lies far from the general trend.</p>
+    </figure>
+    <div class="q1prompt">
+      <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+    </div>
+    <div class="p1-compare">
+      <p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p>
+      <div class="row"><span class="band">Model</span><span>One student scored 89 after only two hours of revision and lies far from the general pattern. Because correlation coefficients can be sensitive to influential points, this observation could substantially alter the reported r = +0.54. Without seeing how the relationship looks with and without that point, the strength of the association is uncertain.</span></div>
+    </div>
+    <p class="p3-note">Named (influential outlier), located (2 hours, score 89), consequence stated (r could change substantially without that point).</p>
+  </div>
+</section>
+<section class="theory-section">
+  <h2>How a full answer climbs from 1 to 3 marks</h2>
+  <p>The same issue can earn 1, 2 or 3 marks, depending on how it is handled. Work through the source below: identify the issue, describe it precisely, then explain what it does to interpretation.</p>
+  <figure class="p3-fig">
+    <p class="p3-source-label">Teacher-created example</p>
+    <figcaption>Hours of Sleep and Memory Score</figcaption>
+    <div class="p3-svgwrap">
+      <svg viewBox="0 0 460 250" role="img" aria-label="Scatterplot of hours of sleep against memory score showing a positive trend. One point at 4 hours of sleep has a memory score of 28, far above the rest." preserveAspectRatio="xMidYMid meet">
+        <title>Hours of Sleep and Memory Score (teacher-created example)</title>
+        <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Memory score (out of 30)</text>
+        <line x1="80" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+        <line x1="80" y1="20" x2="80" y2="200" stroke="var(--border)" stroke-width="1"/>
+        <line x1="76" y1="200" x2="80" y2="200" stroke="var(--border)"/><text x="72" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+        <line x1="76" y1="140" x2="80" y2="140" stroke="var(--border)"/><text x="72" y="143" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+        <line x1="76" y1="80" x2="80" y2="80" stroke="var(--border)"/><text x="72" y="83" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+        <line x1="76" y1="20" x2="80" y2="20" stroke="var(--border)"/><text x="72" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">30</text>
+        <circle cx="224" cy="140" r="3" fill="var(--primary)"/>
+        <circle cx="260" cy="116" r="3" fill="var(--primary)"/>
+        <circle cx="296" cy="98" r="3" fill="var(--primary)"/>
+        <circle cx="332" cy="80" r="3" fill="var(--primary)"/>
+        <circle cx="368" cy="56" r="3" fill="var(--primary)"/>
+        <circle cx="404" cy="44" r="3" fill="var(--primary)"/>
+        <circle cx="224" cy="32" r="4.5" fill="none" stroke="var(--primary)" stroke-width="2"/>
+        <text x="224" y="24" text-anchor="middle" font-size="10" font-weight="700" fill="var(--primary)">Outlier</text>
+        <line x1="80" y1="215" x2="440" y2="215" stroke="var(--border)" stroke-width="1"/>
+        <text x="80" y="228" text-anchor="start" font-size="9.5" fill="var(--text-secondary)">0</text>
+        <text x="152" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">2</text>
+        <text x="224" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">4</text>
+        <text x="296" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">6</text>
+        <text x="368" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">8</text>
+        <text x="440" y="228" text-anchor="middle" font-size="9.5" fill="var(--text-secondary)">10</text>
+        <text x="260" y="245" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Hours of sleep the night before</text>
+      </svg>
+    </div>
+    <p class="p3-fignote">Each point is one student's memory score (out of 30) plotted against hours of sleep the night before. One point sits well above the rest.</p>
+  </figure>
+  <div class="q1prompt">
+    <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+  </div>
+  <div class="p1-compare">
+    <div class="row"><span class="band">1</span><span><strong>Identify.</strong> "There is an outlier." The issue is named, but nothing is said about where it is or what it does.</span></div>
+    <div class="row"><span class="band">2</span><span><strong>Clearly describe.</strong> "One student scored 28 on the memory task after only 4 hours of sleep, while the other students at similar sleep levels scored around 10. This point sits far above the rest of the cluster."</span></div>
+    <div class="row"><span class="band">3</span><span><strong>Explain.</strong> "One student scored 28 after only four hours of sleep, far above the main pattern. Because an influential point can substantially affect the apparent relationship, the strength of the sleep&ndash;memory association is uncertain from this source."</span></div>
+  </div>
+  <p class="p3-note">What changes between 2 and 3 marks: the 3-mark answer states a consequence (&ldquo;conclusions about the strength of the relationship are uncertain&rdquo;) and ties it to a precise feature of the source (the isolated point). Describing the data is not the skill &mdash; explaining what it costs the interpretation is.</p>
+  <div class="p3-warn">
+    <p style="margin:0;"><strong>An outlier is not automatically &ldquo;bad data&rdquo;.</strong> It can be a genuine extreme value, a measurement error or a data-entry error &mdash; and a data set is not wrong for containing one. For Q1 you name the outlier, point at it, and explain what it does to interpretation (for example, it can pull a mean or inflate a correlation).</p>
+  </div>
+</section>
+<section class="theory-section">
+  <h2>Skills that transfer across every source</h2>
+  <p>Whatever the display, three issues appear again and again in Paper 3 sources. Knowing the general patterns stops you from hunting for a unique limitation in every graph &mdash; you look for the issue the actual source raises.</p>
+
+  <h3>Outliers</h3>
+  <p>An outlier is a value that sits clearly apart from the rest of the data. Before you treat one as a mistake, remember the three standard causes: a <strong>genuine extreme value</strong> (an unusual but real participant), a <strong>measurement error</strong> (a faulty instrument or procedure), and a <strong>data-entry error</strong> (a value typed or recorded wrongly).</p>
+
+  <p>A single influential value can pull a mean or inflate a correlation, so in a small sample an outlier can change the whole story. For Q1 you do not have to decide which cause is right &mdash; the source will not say &mdash; you say what the outlier does to interpretation.</p>
+
+  <h3>Scale manipulation</h3>
+  <p>A truncated axis &mdash; one that starts part-way up the scale &mdash; is not automatically a problem; plenty of plots legitimately zoom in. The issue is whether the truncated scale distorts what the data imply. The same two values look very different depending on where the axis starts:</p>
+  <div class="p3-scale2">
+    <figure class="p3-fig">
+      <p class="p3-source-label">Full 0&ndash;100 axis</p>
+      <div class="p3-svgwrap svg-mini">
+        <svg viewBox="0 0 190 150" role="img" aria-label="Bar values 72 and 78 shown on a full zero to 100 axis, where the bars look similar in height." preserveAspectRatio="xMidYMid meet">
+          <title>Full 0&ndash;100 axis</title>
+          <line x1="44" y1="112" x2="150" y2="112" stroke="var(--border)" stroke-width="1"/>
+          <line x1="44" y1="20" x2="44" y2="112" stroke="var(--border)" stroke-width="1"/>
+          <line x1="40" y1="112" x2="44" y2="112" stroke="var(--border)"/><text x="36" y="115" text-anchor="end" font-size="9" fill="var(--text-secondary)">0</text>
+          <line x1="40" y1="66" x2="44" y2="66" stroke="var(--border)"/><text x="36" y="69" text-anchor="end" font-size="9" fill="var(--text-secondary)">50</text>
+          <line x1="40" y1="20" x2="44" y2="20" stroke="var(--border)"/><text x="36" y="23" text-anchor="end" font-size="9" fill="var(--text-secondary)">100</text>
+          <rect x="56" y="45.8" width="34" height="66.2" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="104" y="40.2" width="34" height="71.8" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="73" y="130" text-anchor="middle" font-size="9.5" fill="var(--text)">A = 72</text>
+          <text x="121" y="130" text-anchor="middle" font-size="9.5" fill="var(--text)">B = 78</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">On the full 0&ndash;100 axis, the six-point difference appears relatively small.</p>
+    </figure>
+    <figure class="p3-fig">
+      <p class="p3-source-label">Truncated 70&ndash;80 axis</p>
+      <div class="p3-svgwrap svg-mini">
+        <svg viewBox="0 0 190 150" role="img" aria-label="Bar values 72 and 78 shown on a truncated 70 to 80 axis, where the same gap looks very large." preserveAspectRatio="xMidYMid meet">
+          <title>Truncated 70&ndash;80 axis</title>
+          <line x1="44" y1="40" x2="44" y2="112" stroke="var(--border)" stroke-width="1"/>
+          <line x1="44" y1="112" x2="150" y2="112" stroke="var(--border)" stroke-width="1"/>
+          <line x1="62" y1="108" x2="62" y2="116" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <line x1="62" y1="100" x2="70" y2="92" stroke="var(--text-secondary)" stroke-width="1.5"/>
+          <line x1="40" y1="112" x2="44" y2="112" stroke="var(--border)"/><text x="36" y="115" text-anchor="end" font-size="9" fill="var(--text-secondary)">70</text>
+          <line x1="40" y1="76" x2="44" y2="76" stroke="var(--border)"/><text x="36" y="79" text-anchor="end" font-size="9" fill="var(--text-secondary)">75</text>
+          <line x1="40" y1="40" x2="44" y2="40" stroke="var(--border)"/><text x="36" y="43" text-anchor="end" font-size="9" fill="var(--text-secondary)">80</text>
+          <rect x="56" y="97.6" width="34" height="14.4" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <rect x="104" y="54.4" width="34" height="57.6" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+          <text x="73" y="130" text-anchor="middle" font-size="9.5" fill="var(--text)">A = 72</text>
+          <text x="121" y="130" text-anchor="middle" font-size="9.5" fill="var(--text)">B = 78</text>
+        </svg>
+      </div>
+      <p class="p3-fignote">On a truncated 70&ndash;80 axis, the same six-point gap looks enormous.</p>
+    </figure>
+  </div>
+  <p class="p3-note">Read the axis before you judge the pattern. If you name a scale problem, state where the axis actually starts and explain how that changes the apparent size of the effect.</p>
+
+  <h3>Missing information</h3>
+  <p>A source can limit interpretation by what it leaves out: the sample size, how the variables were defined or measured, who the participants were and where the data came from, and whether any inferential statistic was calculated. These are legitimate issues even when the graph itself looks tidy &mdash; they limit the claims the source can support.</p>
+
+  <h3>What should you check?</h3>
+  <ol class="p1-steps">
+    <li><strong>Read the axes and labels</strong> &mdash; what is measured, and in what units?</li>
+    <li><strong>Check every scale</strong> &mdash; does any axis scale exaggerate or minimise the differences?</li>
+    <li><strong>Find the spread</strong> &mdash; is any information about variability reported (for example error bars or whiskers)?</li>
+    <li><strong>Spot the outliers</strong> &mdash; values sitting apart from the pattern?</li>
+    <li><strong>Ask what is missing</strong> &mdash; sample size, definitions, sample, statistics?</li>
+  </ol>
+
+  <h3>An issue bank &mdash; use it, don't memorise it</h3>
+  <p>These candidates recur in Paper 3 sources. Choose the ONE that genuinely fits the source in front of you, state it, point at the feature, and explain the consequence.</p>
+  <div class="p1-compare">
+    <div class="row"><span class="band">Missing</span><span>Missing information &mdash; the source does not state sample size, how variables were measured, or where the data came from.<span class="p3-ex"><strong>Example:</strong> A graph compares two groups but never tells you how many participants were in each group.</span></span></div>
+    <div class="row"><span class="band">Sample</span><span>Small samples &mdash; few participants mean the pattern may not be stable or generalisable.<span class="p3-ex"><strong>Example:</strong> A pattern is based on only six participants, so one unusual participant could strongly affect the result.</span></span></div>
+    <div class="row"><span class="band">Variability</span><span>Variability / uncertainty &mdash; if spread or uncertainty is large relative to the apparent difference, the visual separation may be less convincing. Check what any error bars actually represent; overlap alone is not a significance test.<span class="p3-ex"><strong>Example:</strong> Group A has a mean of 72 and Group B 78, but scores within both groups are widely spread.</span></span></div>
+    <div class="row"><span class="band">Statistics</span><span>No inferential statistics &mdash; the display alone cannot establish whether an observed difference is statistically significant or quantify sampling uncertainty.<span class="p3-ex"><strong>Example:</strong> Group A scores 78 and Group B 74, but no statistical test is reported, so the graph alone cannot show whether the difference is statistically significant.</span></span></div>
+    <div class="row"><span class="band">Causality</span><span>Causality &mdash; an association in a scatterplot does not by itself establish cause and effect. For other displays, whether a causal conclusion is justified depends on the research design.<span class="p3-ex"><strong>Example:</strong> Students who sleep more have higher memory scores, but the correlation cannot show that more sleep caused the higher scores.</span></span></div>
+    <div class="row"><span class="band">Scale</span><span>Scale &mdash; an axis range or spacing that visually exaggerates or minimises the pattern can mislead interpretation.<span class="p3-ex"><strong>Example:</strong> Scores of 72 and 78 are shown on an axis beginning at 70, making the six-point difference look much larger.</span></span></div>
+    <div class="row"><span class="band">Operationalisation</span><span>Unclear operationalisation &mdash; without definitions of the measured construct, it is unclear what the numbers really mean.<span class="p3-ex"><strong>Example:</strong> A graph reports a mean &lsquo;stress score&rsquo; of 7, but never explains how stress was measured or what a score of 7 represents.</span></span></div>
+    <div class="row"><span class="band">Context</span><span>Lack of context &mdash; no comparison point and no description of the participants, so the limits of the findings are unknown.<span class="p3-ex"><strong>Example:</strong> A source reports an average anxiety score of 18, but gives no comparison group, previous measurement, or information about who the participants were.</span></span></div>
+  </div>
+  <div class="p3-warn">
+    <p style="margin:0;"><strong>Do not memorise one limitation for each graph.</strong> An issue earns marks only if it fits the source you are given. The bank above is a search list, not an answer sheet.</p>
+  </div>
+
+  <h3>Describing the issue is not explaining it</h3>
+  <p>The difference between 2 and 3 marks is usually the consequence for interpretation. Compare:</p>
+  <div class="p1-compare">
+    <div class="row"><span class="band">2</span><span>&ldquo;The y-axis begins at 80 rather than 0, so the six-point difference fills most of the graph.&rdquo; &mdash; a clear description: the feature is named and located, but nothing is said about what it does to the conclusion.</span></div>
+    <div class="row"><span class="band">3</span><span>&ldquo;The y-axis begins at 80 rather than 0, so the six-point difference fills most of the graph. This visually exaggerates the size of the group difference and could lead the reader to overestimate the magnitude of the effect.&rdquo; &mdash; the consequence is stated.</span></div>
+  </div>
+  <p class="p3-note">A reliable habit: after stating the issue, add the clause &ldquo;&hellip;which means the source cannot support claims such as&hellip;&rdquo; and complete it. If that clause comes out empty, the answer has stopped at description.</p>
+</section>
+
+<section class="theory-section">
+  <h2>What the specimen markscheme shows</h2>
+  <p>In the specimen material for Paper 3, Question 1 is marked against the descriptors for identifying, clearly describing and explaining one relevant issue, out of 3 marks. Two habits consistently keep candidates on the markband:</p>
+  <ol class="p1-steps">
+    <li><strong>State the sharpest issue first</strong> &mdash; only the first relevant issue the candidate states is credited.</li>
+    <li><strong>Spend the rest of the answer on that one issue</strong> &mdash; one issue explained against the source beats a list of issues that are only named.</li>
+  </ol>
+  <div class="collapsible"><button class="collapsible-trigger">Official IB markband</button><div class="collapsible-body">
+    <p>The descriptors below are reproduced verbatim from the IB Psychology Paper 3 markscheme.</p>
+    <p><span class="p1-official">Official IB markband</span></p>
+    <dl class="p1-mark">
+      <dt>0</dt><dd>The work does not reach a standard described by the descriptors below.</dd>
+      <dt>1</dt><dd>A relevant issue is identified.</dd>
+      <dt>2</dt><dd>A relevant issue is clearly described.</dd>
+      <dt>3</dt><dd>A relevant issue is explained.</dd>
+    </dl>
+    <p class="p3-note">Every level is indexed to ONE issue: that it is identified, that it is clearly described, and that its consequences for interpretation are explained.</p>
+  </div></div>
+</section>
+<section class="theory-section">
+  <div class="collapsible"><button class="collapsible-trigger">Question 1 exam practice</button><div class="collapsible-body">
+    <p>Each item below gives you a source and a Question 1 prompt. All are teacher-created practice in the Paper 3 format. Try the question before revealing the guidance and model approach.</p>
+    <div class="p1-bank">
+      <div class="p1-q">
+        <p><span class="p1-teacher">Teacher-created practice</span></p>
+        <h4>Question 1</h4>
+        <figure class="p3-fig">
+          <p class="p3-source-label">Source 1</p>
+          <figcaption>Daily Screen Time and Self-Reported Wellbeing</figcaption>
+          <div class="p3-svgwrap">
+            <svg viewBox="0 0 460 250" role="img" aria-label="Scatterplot showing a weak negative relationship between hours of daily screen time and wellbeing rating." preserveAspectRatio="xMidYMid meet">
+              <title>Daily Screen Time and Self-Reported Wellbeing</title>
+              <text x="80" y="16" font-size="10.5" fill="var(--text-secondary)">Self-reported wellbeing rating (1–10)</text>
+              <line x1="80" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+              <line x1="80" y1="20" x2="80" y2="200" stroke="var(--border)" stroke-width="1"/>
+              <line x1="76" y1="200" x2="80" y2="200" stroke="var(--border)"/>
+              <line x1="170" y1="200" x2="170" y2="203" stroke="var(--border)"/><text x="170" y="215" text-anchor="middle" font-size="10" fill="var(--text-secondary)">2</text>
+              <line x1="260" y1="200" x2="260" y2="203" stroke="var(--border)"/><text x="260" y="215" text-anchor="middle" font-size="10" fill="var(--text-secondary)">4</text>
+              <line x1="350" y1="200" x2="350" y2="203" stroke="var(--border)"/><text x="350" y="215" text-anchor="middle" font-size="10" fill="var(--text-secondary)">6</text>
+              <line x1="440" y1="200" x2="440" y2="203" stroke="var(--border)"/><text x="440" y="215" text-anchor="middle" font-size="10" fill="var(--text-secondary)">8</text>
+              <line x1="76" y1="180" x2="80" y2="180" stroke="var(--border)"/><text x="72" y="183" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+              <line x1="76" y1="140" x2="80" y2="140" stroke="var(--border)"/><text x="72" y="143" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+              <line x1="76" y1="100" x2="80" y2="100" stroke="var(--border)"/><text x="72" y="103" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+              <line x1="76" y1="60" x2="80" y2="60" stroke="var(--border)"/><text x="72" y="63" text-anchor="end" font-size="10" fill="var(--text-secondary)">8</text>
+              <line x1="76" y1="20" x2="80" y2="20" stroke="var(--border)"/><text x="72" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+              <circle cx="125" cy="200" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="147.5" cy="190" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="134" cy="196" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="170" cy="180" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="179" cy="176" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="206" cy="164" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="215" cy="160" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="237.5" cy="150" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="251" cy="144" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="269" cy="136" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="282.5" cy="130" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="305" cy="120" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="327.5" cy="110" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="350" cy="100" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="372.5" cy="90" r="3" fill="var(--primary)" opacity="0.75"/>
+              <circle cx="395" cy="80" r="3" fill="var(--primary)" opacity="0.75"/>
+              <text x="260" y="230" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Daily screen time (hours)</text>
+            </svg>
+          </div>
+          <p class="p3-fignote">Each point is one student's self-reported wellbeing rating plotted against their daily screen time.</p>
+        </figure>
+        <p class="p1-qtext">Explain one issue that limits the interpretation of the data in Source 1. [3]</p>
+        <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The sharpest issue here is causality: the display only shows that the two variables were measured together. State the issue, then explain the consequence &mdash; the direction of the relationship and possible third variables cannot be ruled out, so the graph cannot support a cause-and-effect claim.</p></div></div></div>
+        <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p><p>The scatterplot shows a weak negative relationship, but both variables were only measured together. More screen time may lower wellbeing, lower wellbeing may raise screen time, or a third variable may drive both. The display therefore supports a relationship claim but not a claim that screen time caused the change.</p></div></div></div>
+      </div>
+
+      <div class="p1-q">
+        <p><span class="p1-teacher">Teacher-created practice</span></p>
+        <h4>Question 2</h4>
+        <figure class="p3-fig">
+          <p class="p3-source-label">Source 2</p>
+          <table class="p3-table">
+            <caption>Frequency of Students Reporting Excessive Daytime Sleepiness by Year Group</caption>
+            <thead>
+              <tr><th scope="col">Year group</th><th scope="col">Often sleepy in class</th><th scope="col">Rarely sleepy</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Year 12</td><td>24</td><td>36</td></tr>
+              <tr><td>Year 11</td><td>14</td><td>14</td></tr>
+              <tr><td>Year 10</td><td>9</td><td>6</td></tr>
+            </tbody>
+          </table>
+        </figure>
+        <p class="p1-qtext">Explain one issue that limits the interpretation of the data in Source 2. [3]</p>
+        <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The year groups are very different sizes (60, 28 and 15 students). Choose this ONE issue: work out what the raw counts suggest, then what the proportions show, and explain why counts alone mislead.</p></div></div></div>
+        <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p><p>The year groups are different sizes, so the raw counts cannot be compared fairly. Year 12 has 24 sleepy students out of 60 (40%), whereas Year 10 has only 9 out of 15 (60%). The raw counts therefore suggest the opposite pattern from the proportions, so using counts alone could mislead the interpretation.</p></div></div></div>
+      </div>
+
+      <div class="p1-q">
+        <p><span class="p1-teacher">Teacher-created practice</span></p>
+        <h4>Question 3</h4>
+        <figure class="p3-fig">
+          <p class="p3-source-label">Source 3</p>
+          <figcaption>Distribution of Reaction Times on a Sustained-Attention Task</figcaption>
+          <div class="p3-svgwrap">
+            <svg viewBox="0 0 460 240" role="img" aria-label="Histogram of reaction times skewing toward faster times, most between 300 and 400 milliseconds." preserveAspectRatio="xMidYMid meet">
+              <title>Distribution of Reaction Times on a Sustained-Attention Task</title>
+              <line x1="60" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+              <line x1="60" y1="20" x2="60" y2="200" stroke="var(--border)" stroke-width="1"/>
+              <line x1="56" y1="200" x2="60" y2="200" stroke="var(--border)"/><text x="52" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+              <line x1="56" y1="150" x2="60" y2="150" stroke="var(--border)"/><text x="52" y="153" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+              <line x1="56" y1="100" x2="60" y2="100" stroke="var(--border)"/><text x="52" y="103" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+              <line x1="56" y1="50" x2="60" y2="50" stroke="var(--border)"/><text x="52" y="53" text-anchor="end" font-size="10" fill="var(--text-secondary)">30</text>
+              <line x1="56" y1="0" x2="60" y2="0" stroke="var(--border)"/>
+              <rect x="60" y="100" width="59" height="100" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <rect x="124" y="50" width="59" height="150" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <rect x="188" y="60" width="59" height="140" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <rect x="252" y="110" width="59" height="90" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <rect x="316" y="150" width="59" height="50" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <rect x="380" y="180" width="59" height="20" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <text x="89.5" y="96" text-anchor="middle" font-size="10" fill="var(--primary)">8</text>
+              <text x="153.5" y="46" text-anchor="middle" font-size="10" fill="var(--primary)">12</text>
+              <text x="217.5" y="56" text-anchor="middle" font-size="10" fill="var(--primary)">11</text>
+              <text x="281.5" y="106" text-anchor="middle" font-size="10" fill="var(--primary)">7</text>
+              <text x="345.5" y="146" text-anchor="middle" font-size="10" fill="var(--primary)">4</text>
+              <text x="409.5" y="176" text-anchor="middle" font-size="10" fill="var(--primary)">1</text>
+              <text x="89.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">&lt;300</text>
+              <text x="153.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">300&ndash;349</text>
+              <text x="217.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">350&ndash;399</text>
+              <text x="281.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">400&ndash;449</text>
+              <text x="345.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">450&ndash;499</text>
+              <text x="409.5" y="218" text-anchor="middle" font-size="10" fill="var(--text)">500+</text>
+              <text x="250" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reaction time (milliseconds)</text>
+            </svg>
+          </div>
+          <p class="p3-fignote">Reaction times in milliseconds for one student sample on a sustained-attention task.</p>
+        </figure>
+        <p class="p1-qtext">Explain one issue that limits the interpretation of the data in Source 3. [3]</p>
+        <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The reaction times are grouped into broad intervals. Choose this ONE issue: explain what the grouping hides and why the visible shape depends on where the boundaries were drawn.</p></div></div></div>
+        <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p><p>The reaction times are grouped into broad intervals, so the exact values within each bar are hidden. Different bin boundaries could make the peak look sharper or flatter. The visible shape therefore depends partly on how the researcher grouped the data, which limits how confidently the distribution can be interpreted.</p></div></div></div>
+      </div>
+
+      <div class="p1-q">
+        <p><span class="p1-teacher">Teacher-created practice</span></p>
+        <h4>Question 4</h4>
+        <figure class="p3-fig">
+          <p class="p3-source-label">Source 4</p>
+          <figcaption>Words Recalled on a Memory Task by Sleep Group</figcaption>
+          <div class="p3-svgwrap">
+            <svg viewBox="0 0 460 220" role="img" aria-label="Box and whisker plot. Rested group median 6 words, sleep-restricted group median 5 words, boxes overlap. No sample sizes shown." preserveAspectRatio="xMidYMid meet">
+              <title>Words Recalled on a Memory Task by Sleep Group</title>
+              <line x1="60" y1="170" x2="444" y2="170" stroke="var(--border)" stroke-width="1"/>
+              <line x1="60" y1="20" x2="60" y2="170" stroke="var(--border)" stroke-width="1"/>
+              <line x1="156" y1="85" x2="204" y2="85" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="316" y1="85" x2="380" y2="85" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="156" y1="78" x2="156" y2="92" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="380" y1="78" x2="380" y2="92" stroke="var(--text-secondary)" stroke-width="2"/>
+              <rect x="204" y="70" width="112" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <line x1="252" y1="70" x2="252" y2="100" stroke="var(--primary)" stroke-width="2"/>
+              <line x1="124" y1="135" x2="156" y2="135" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="268" y1="135" x2="348" y2="135" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="124" y1="128" x2="124" y2="142" stroke="var(--text-secondary)" stroke-width="2"/>
+              <line x1="348" y1="128" x2="348" y2="142" stroke="var(--text-secondary)" stroke-width="2"/>
+              <rect x="156" y="120" width="112" height="30" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+              <line x1="220" y1="120" x2="220" y2="150" stroke="var(--primary)" stroke-width="2"/>
+              <text x="8" y="89" font-size="10.5" fill="var(--text)">Rested</text>
+              <text x="8" y="139" font-size="10.5" fill="var(--text)">Sleep-restricted</text>
+              <text x="60" y="187" text-anchor="start" font-size="10" fill="var(--text-secondary)">0</text>
+              <text x="124" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">2</text>
+              <text x="188" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">4</text>
+              <text x="252" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">6</text>
+              <text x="316" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">8</text>
+              <text x="380" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">10</text>
+              <text x="444" y="187" text-anchor="middle" font-size="10" fill="var(--text-secondary)">12</text>
+              <text x="250" y="212" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Words recalled</text>
+            </svg>
+          </div>
+        </figure>
+        <p class="p1-qtext">Explain one issue that limits the interpretation of the data in Source 4. [3]</p>
+        <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The plot reports no sample sizes for either group. Choose this ONE issue: explain what a missing sample size costs the interpretation of these two boxes.</p></div></div></div>
+        <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p><p>The box plot gives no sample size for either sleep group. The same-looking box could come from a very small or much larger sample, so the source gives no indication of how stable or representative these distributions are. That limits how confidently the apparent group difference can be interpreted.</p></div></div></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<section class="theory-section">
+  <h2>Final independent challenge</h2>
+  <p>This last source is new. Try it entirely on your own before revealing the guidance or the model approach &mdash; it is the closest thing here to an unseen Question 1.</p>
+  <figure class="p3-fig">
+    <p class="p3-source-label">Source</p>
+    <figcaption>Average Self-Reported Stress Rating Across a Day</figcaption>
+    <div class="p3-svgwrap">
+      <svg viewBox="0 0 460 250" role="img" aria-label="Line graph of self-reported stress across a day. Times 08:00 to 20:00 are plotted at equal spacing even though the gaps between measurements are one, two, four and five hours." preserveAspectRatio="xMidYMid meet">
+        <title>Average Self-Reported Stress Rating Across a Day (teacher-created example)</title>
+        <text x="70" y="16" font-size="10.5" fill="var(--text-secondary)">Mean stress rating (0&ndash;10)</text>
+        <line x1="70" y1="200" x2="450" y2="200" stroke="var(--border)" stroke-width="1"/>
+        <line x1="70" y1="20" x2="70" y2="200" stroke="var(--border)" stroke-width="1"/>
+        <line x1="66" y1="200" x2="70" y2="200" stroke="var(--border)"/><text x="62" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+        <line x1="66" y1="168" x2="70" y2="168" stroke="var(--border)"/><text x="62" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+        <line x1="66" y1="136" x2="70" y2="136" stroke="var(--border)"/><text x="62" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+        <line x1="66" y1="104" x2="70" y2="104" stroke="var(--border)"/><text x="62" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">6</text>
+        <line x1="66" y1="72" x2="70" y2="72" stroke="var(--border)"/><text x="62" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">8</text>
+        <line x1="66" y1="40" x2="70" y2="40" stroke="var(--border)"/><text x="62" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+        <polyline points="80,152 170,136 260,88 350,104 440,168" fill="none" stroke="var(--primary)" stroke-width="2"/>
+        <circle cx="80" cy="152" r="3.5" fill="var(--primary)"/>
+        <circle cx="170" cy="136" r="3.5" fill="var(--primary)"/>
+        <circle cx="260" cy="88" r="3.5" fill="var(--primary)"/>
+        <circle cx="350" cy="104" r="3.5" fill="var(--primary)"/>
+        <circle cx="440" cy="168" r="3.5" fill="var(--primary)"/>
+        <line x1="80" y1="200" x2="80" y2="207" stroke="var(--border)" stroke-width="1"/>
+        <line x1="170" y1="200" x2="170" y2="207" stroke="var(--border)" stroke-width="1"/>
+        <line x1="260" y1="200" x2="260" y2="207" stroke="var(--border)" stroke-width="1"/>
+        <line x1="350" y1="200" x2="350" y2="207" stroke="var(--border)" stroke-width="1"/>
+        <line x1="440" y1="200" x2="440" y2="207" stroke="var(--border)" stroke-width="1"/>
+        <text x="80" y="218" text-anchor="middle" font-size="10" fill="var(--text)">08:00</text>
+        <text x="170" y="218" text-anchor="middle" font-size="10" fill="var(--text)">12:00</text>
+        <text x="260" y="218" text-anchor="middle" font-size="10" fill="var(--text)">13:00</text>
+        <text x="350" y="218" text-anchor="middle" font-size="10" fill="var(--text)">15:00</text>
+        <text x="440" y="218" text-anchor="middle" font-size="10" fill="var(--text)">20:00</text>
+        <text x="260" y="240" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Time of day</text>
+      </svg>
+    </div>
+    <p class="p3-fignote">The times are real clock times, but the points are plotted at equal spacing. The gaps between measurements are 4 hours, 1 hour, 2 hours and 5 hours.</p>
+  </figure>
+  <div class="q1prompt">
+    <p>Explain one issue that limits the interpretation of the data in the source. [3]</p>
+  </div>
+  <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The horizontal axis is not to scale: 12:00 to 13:00 is one hour, yet it occupies the same distance as 15:00 to 20:00, which is five hours. Think about what that does to how steep each part of the line looks.</p></div></div></div>
+  <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p class="p3-modelkey">Issue &rarr; source detail &rarr; why it matters</p><p>The axis plots unequal intervals at equal spacing: one hour between 12:00 and 13:00 takes the same width as five hours between 15:00 and 20:00. The midday rise therefore looks as steep as the afternoon fall, though one took an hour and the other five. Because the axis misrepresents the rate of change, the graph exaggerates how quickly stress shifts.</p></div></div></div>
+</section>
+</div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

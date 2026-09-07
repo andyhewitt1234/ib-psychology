@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 Section A | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .theory-section p + .reveal.rv-ans { margin-top: 1rem !important; }
+    .theory-section .reveal.rv-ans + .reveal.rv-ans { margin-top: 1rem !important; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-1.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 1 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-1.html">Paper 1</a> <span>/</span> Section A</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 1 · Section A</p>
+      <h1>Section A</h1>
+      <p class="theory-subtitle">Knowledge &amp; Explanation</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">2 compulsory questions, 4 marks each, 8 marks total. Section A tests whether you can understand a psychological idea and explain one relevant example.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Section A — Knowledge and explanation</h2>
+      <p>2 compulsory questions · 4 marks each · 8 marks total.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>Section A = understand it + explain one example.</strong></p>
+      </div>
+      <h3>How to answer Section A</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Worked example: <em>Describe how one chemical messenger plays a role in one human behaviour. [4]</em></p>
+      <ol class="p1-steps">
+        <li><strong>1. DEFINE</strong> — Clearly and accurately define the key psychological concept, including the important details needed to show you understand it.</li>
+        <li><strong>2. EXPLAIN</strong> — Show detailed understanding of how the psychology works.</li>
+        <li><strong>3. EXAMPLE</strong> — Give one relevant real-world, hypothetical, or research example.</li>
+        <li><strong>4. EXPLAIN IT</strong> — Show exactly how your example demonstrates the psychology.</li>
+        <li><strong>5. LINK BACK</strong> — Make the connection to the question clear.</li>
+      </ol>
+      <p style="font-size:.9rem;color:var(--text-secondary);">This is a guide, not a five-part formula. Your goal is detailed psychological knowledge plus one relevant example that you explain.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;">Both routes are valid. Your example can be real-world/hypothetical or research-based. Detailed research-study knowledge is not required.</p>
+      </div>
+      <h3>Worked model answers</h3>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Try writing your own answer to the worked example before revealing the model answers. Notice that both routes can produce a strong Section A response — a real-world / hypothetical situation, or a research example.</p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer — real-world / hypothetical example</div><div class="reveal-answer"><div><p>A chemical messenger is a substance that carries signals between cells. Acetylcholine (ACh) is a neurotransmitter, a type of chemical messenger that allows neurons to communicate. ACh receptors are found in abundance in the hippocampus, a brain area involved in consolidating information from short-term to long-term memory. This means ACh plays an important role in learning and memory.</p><p>For example, imagine someone trying to remember where they parked their car in a large shopping centre. Remembering the location requires the formation of a new spatial memory. If acetylcholine activity in the hippocampus were disrupted, the person would have greater difficulty forming that new memory and later recalling where the car was parked. The example therefore shows how acetylcholine is involved in forming spatial memories.</p></div></div></div>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer — research example</div><div class="reveal-answer"><div><p>A chemical messenger is a substance that carries signals between cells. Acetylcholine (ACh) is a neurotransmitter, a type of chemical messenger that allows neurons to communicate. ACh receptors are found in abundance in the hippocampus, a brain area involved in consolidating information from short-term to long-term memory. This means ACh plays an important role in learning and memory.</p><p>For example, Antonova found that blocking ACh receptors reduced activity in the hippocampus during a spatial-memory task. Because blocking acetylcholine reduced hippocampal activity while participants were using spatial memory, the finding supports the role of normal ACh activity in forming spatial memories. The research therefore shows how acetylcholine contributes to human memory, particularly spatial memory.</p></div></div></div>
+      <div class="collapsible"><button class="collapsible-trigger">Practice questions — Section A exam questions</button><div class="collapsible-body">
+        <p>Try a question before revealing the guidance. Official specimen questions are tagged OFFICIAL SPECIMEN QUESTION. All other questions are teacher-created practice, not official IB questions.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-official">Official specimen question</span></p>
+            <h4>Question 1</h4>
+            <p class="p1-qtext">Describe how one chemical messenger plays a role in one human behaviour. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Follow the five-step process: define the chemical messenger, explain how it works, give one relevant example (real-world/hypothetical or research), explain how that example demonstrates the idea, then link back to the question.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p>This is the same question used in the worked example above. Reveal the two worked model answers there (real-world / hypothetical example and research example) to see how both routes answer it.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 2</h4>
+            <p class="p1-qtext">Describe the role of one brain structure in one human behaviour. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define the structure you choose (for example the amygdala). Explain what it does. Give one behaviour it helps to produce, with one explained piece of supporting evidence, then link back.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> The amygdala is a brain structure involved in processing emotionally significant information, particularly potential threats. This can influence fear and avoidance behaviour. For example, a person who sees a threatening dog may rapidly experience fear and move away from it as the amygdala helps process the threat and contributes to the emotional response. This demonstrates how the amygdala can influence behaviour by helping the brain detect and respond to potential danger.</p><p><strong>Why this satisfies the upper markband:</strong> detailed accurate knowledge with a relevant example that is explained (what the fear-and-avoidance example shows about the amygdala's role), closed with a direct link to the question.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 3</h4>
+            <p class="p1-qtext">Describe how one social factor plays a role in one human behaviour. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define the social factor (for example majority influence/conformity). Explain the mechanism — why people follow the group. Give one explained example from research or real life, then link back.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Conformity is adjusting one's behaviour or judgments to match a group. One mechanism is normative social influence: people follow the majority because they want approval and fear rejection. For example, in Asch-type line-judgment tasks, participants frequently give an answer they know is wrong simply because the rest of the group gave it first — the desire to fit in overrides their own perception. This shows a social factor (the unanimous majority) directly shaping individual behaviour through the mechanism of normative pressure.</p><p><strong>Why this satisfies the upper markband:</strong> the definition, the mechanism (why people conform), and an explained example that makes the mechanism-to-behaviour connection explicit.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-official">Official specimen question</span></p>
+            <h4>Question 4</h4>
+            <p class="p1-qtext">Explain anchoring bias with reference to one example of human behaviour. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define anchoring bias: an initial number or value anchors subsequent judgments, with adjustment away from the anchor typically insufficient. Explain the mechanism. Give one example of behaviour it produces — for instance estimates drifting toward an arbitrary starting figure — explain why the example shows anchoring at work, then link back.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model — teacher guidance on an official question):</strong> Anchoring bias is the tendency for an initial value to influence a later judgment, even when that starting value is arbitrary. For example, Tversky and Kahneman had participants see an arbitrary number from a wheel of fortune before estimating the percentage of African countries in the United Nations. Participants exposed to higher numbers generally made higher estimates than those exposed to lower numbers. Because the arbitrary starting number shifted their later judgments, the example demonstrates how an anchor can bias human decision-making.</p><p><strong>Why this satisfies the upper markband:</strong> detailed knowledge of the mechanism with a relevant example that is explained (why the drift demonstrates anchoring) rather than merely stated.</p></div></div></div>
+          </div>
+          <!-- Add Question 5 here later: copy one .p1-q block above. No redesign needed. -->
+        </div>
+      </div></div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

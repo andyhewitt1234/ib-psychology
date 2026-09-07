@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bg)" rx="8"/>
+  
+  <!-- Person A (left) -->
+  <g transform="translate(80, 60)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="18" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Body -->
+    <line x1="0" y1="18" x2="0" y2="65" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arms - leaning forward, right arm up -->
+    <line x1="0" y1="30" x2="-25" y2="55" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="30" x2="25" y2="20" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="0" y1="65" x2="-15" y2="95" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="65" x2="15" y2="95" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Face -->
+    <circle cx="-5" cy="-3" r="2" fill="#374151"/>
+    <circle cx="5" cy="-3" r="2" fill="#374151"/>
+    <path d="M-4,5 Q0,10 4,5" stroke="#374151" stroke-width="1.5" fill="none"/>
+    <!-- Label -->
+    <text x="0" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Person A</text>
+  </g>
+  
+  <!-- Person B (right) - mirroring Person A -->
+  <g transform="translate(320, 60)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="18" fill="#a78bfa" stroke="#7c3aed" stroke-width="2"/>
+    <!-- Body -->
+    <line x1="0" y1="18" x2="0" y2="65" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arms - mirroring (left arm up) -->
+    <line x1="0" y1="30" x2="25" y2="55" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="30" x2="-25" y2="20" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="0" y1="65" x2="15" y2="95" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="65" x2="-15" y2="95" stroke="#374151" stroke-width="3" stroke-linecap="round"/>
+    <!-- Face -->
+    <circle cx="-5" cy="-3" r="2" fill="#374151"/>
+    <circle cx="5" cy="-3" r="2" fill="#374151"/>
+    <path d="M-4,5 Q0,10 4,5" stroke="#374151" stroke-width="1.5" fill="none"/>
+    <!-- Label -->
+    <text x="0" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1e293b">Person B</text>
+  </g>
+  
+  <!-- Mirror line -->
+  <line x1="200" y1="30" x2="200" y2="170" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="200" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">mirroring</text>
+  
+  <!-- Arrows showing mimicry -->
+  <path d="M120,140 Q200,120 280,140" stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M280,155 Q200,175 120,155" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrow2)"/>
+  
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="200" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#1e293b">The Chameleon Effect</text>
+  <text x="200" y="238" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Nonconscious mimicry of posture and gesture</text>
+</svg>

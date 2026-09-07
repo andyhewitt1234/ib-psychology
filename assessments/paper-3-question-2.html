@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 3 Question 2 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p3-nav { display: flex; flex-wrap: wrap; gap: .4rem; max-width: 780px; margin: 1.8rem auto 1.6rem; }
+    @media (max-width: 640px) { .p3-nav { margin: 1.2rem auto 1.2rem; } }
+    .p3-nav a { font-size: .82rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .8rem; text-decoration: none; transition: all .15s; }
+    .p3-nav a:hover { border-color: var(--primary); }
+    .p3-nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .p3-fig { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; margin: .6rem 0 .9rem; }
+    .p3-fig figcaption { font-weight: 700; font-size: .95rem; color: var(--text); margin-bottom: .15rem; }
+    .p3-fig .p3-source-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    .p3-svgwrap { overflow-x: auto; }
+    .p3-svgwrap svg { display: block; width: 100%; min-width: 440px; height: auto; font-family: inherit; }
+    .p3-fignote { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: .5rem 0 0; }
+    .p3-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .4rem 0 .5rem; }
+    .p3-table caption { font-weight: 700; font-size: .95rem; text-align: left; color: var(--text); padding-bottom: .35rem; }
+    .p3-table th, .p3-table td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; }
+    .p3-table th { background: var(--bg-secondary); color: var(--primary); font-weight: 700; }
+    .p3-chain { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .6rem 0; }
+    .p3-chain .step { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .45rem .8rem; font-size: .8rem; font-weight: 700; color: var(--primary); }
+    .p3-chain .arrow { color: var(--text-secondary); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-3.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 3 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-3.html">Paper 3</a> <span>/</span> Question 2</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 3 · Question 2</p>
+      <h1>Question 2</h1>
+      <p class="theory-subtitle">Data Analysis</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">6 marks. Analyse the findings using the actual data and state a conclusion.</p>
+    </div>
+
+    <nav class="p3-nav" aria-label="Paper 3 pages">
+      <a href="paper-3.html">Overview</a>
+      <a href="paper-3-question-1.html">Q1</a>
+      <a href="paper-3-question-2.html" class="active">Q2</a>
+      <a href="paper-3-question-3.html">Q3</a>
+      <a href="paper-3-question-4.html">Q4</a>
+    </nav>
+
+    
+    <section class="theory-section">
+      <div class="scenario-box">
+        <p style="margin-bottom:.35rem;"><strong>Q2 is not “describe the findings”.</strong></p>
+        <p style="margin-bottom:0;">Analyse the findings from one of the supplied sources and state a conclusion. That means: read the pattern, support it with the specific data that are actually supplied, interpret what the data mean, and link your conclusion to those findings.</p>
+      </div>
+
+      <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem; margin:.7rem 0;">
+        <p style="margin:0 0 .3rem; font-size:.85rem; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:.04em;">Q1 vs Q2</p>
+        <p style="margin:0; font-size:.92rem; line-height:1.6;"><strong>Q1:</strong> What limits interpretation of this source? &nbsp; <strong>Q2:</strong> What do the findings show, and what conclusion do they support? Q2 is not primarily a limitation hunt.</p>
+      </div>
+
+      <h3>The analysis chain</h3>
+      <div class="p3-chain">
+        <span class="step">READ</span><span class="arrow">&rarr;</span>
+        <span class="step">COMPARE / IDENTIFY</span><span class="arrow">&rarr;</span>
+        <span class="step">SUPPORT</span><span class="arrow">&rarr;</span>
+        <span class="step">INTERPRET</span><span class="arrow">&rarr;</span>
+        <span class="step">CONCLUDE</span>
+      </div>
+      <p class="p3-note">READ the findings that are actually provided &rarr; IDENTIFY the important pattern &rarr; SUPPORT it with specific values &rarr; INTERPRET what the values mean (including any supplied variability or statistics) &rarr; CONCLUDE with a claim explicitly linked to the findings.</p>
+      <p style="font-size:.9rem; line-height:1.6;">Use whatever findings are actually provided — for example means, medians, percentages, frequencies, ranges, SDs, IQRs, correlations, p-values or confidence intervals. Do not treat absent statistics as mandatory.</p>
+      <p style="font-size:.9rem; line-height:1.6;">Detailed analysis usually needs specific evidence from the source. Use the actual values where they help you show the pattern clearly.</p>
+
+      <div class="essentials-box">
+        <p><span class="p1-teacher">Important</span></p>
+        <p style="margin-bottom:0;">The conclusion must be explicitly linked to the analysed findings. Its strength should match the evidence.</p>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Official IB wording — Question 2 markband</button><div class="collapsible-body">
+        <p><span class="p1-official">Official IB markband — Question 2</span></p>
+        <dl class="p1-mark">
+          <dt>0</dt><dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt><dd><ul><li>There is limited analysis of the data or the analysis contains inaccuracies.</li><li>A conclusion is attempted but it is not relevant.</li></ul></dd>
+          <dt>3–4</dt><dd><ul><li>Analysis of the data is accurate but lacks detail or development.</li><li>A conclusion is stated but the link to the findings lacks clarity.</li></ul></dd>
+          <dt>5–6</dt><dd><ul><li>The data is analysed in detail.</li><li>A conclusion is stated that is explicitly linked to the findings.</li></ul></dd>
+        </dl>
+      </div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>What “analysed in detail” looks like</h2>
+      <p>Analysis is data + meaning — not just listing numbers.</p>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Description</span><span>“Group A scored higher.”</span></div>
+        <div class="row"><span class="band">Analysis</span><span>“Group A scored 78 compared with 70 for Group B, an 8-point difference.”</span></div>
+        <div class="row"><span class="band">Developed</span><span>“Group A scored 78 compared with 70 for Group B, an 8-point difference. However, the supplied variability information shows considerable spread, so the group difference should be interpreted cautiously.”</span></div>
+      </div>
+      <p style="font-size:.9rem; line-height:1.6;"><strong>Conclusion:</strong> “The findings suggest Group A performed better, but the strength of that conclusion depends on the rest of the supplied evidence.” The conclusion is explicitly linked to the analysed findings.</p>
+
+      <h3>A tiny worked example</h3>
+      <figure class="p3-fig" style="max-width:420px;">
+        <table class="p3-table">
+          <thead><tr><th>Group</th><th>Mean</th></tr></thead>
+          <tbody><tr><td>Group A</td><td>72</td></tr><tr><td>Group B</td><td>64</td></tr></tbody>
+        </table>
+      </figure>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Description</span><span>“Group A scored higher.”</span></div>
+        <div class="row"><span class="band">Analysis</span><span>“Group A scored 72 compared with 64 for Group B, an 8-point difference.”</span></div>
+        <div class="row"><span class="band">Developed</span><span>“Group A scored 72 compared with 64 for Group B, an 8-point difference. If the supplied variability/statistical information also supports that difference, the evidence becomes stronger.”</span></div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>What type of findings am I looking at?</h2>
+      <p>Start with the most important pattern in the source, then use the relevant statistics provided to develop your analysis. The source determines the order.</p>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Means</span><span>Compare group averages.</span></div>
+        <div class="row"><span class="band">Medians</span><span>Compare typical central values — especially useful when distributions may be skewed.</span></div>
+        <div class="row"><span class="band">Frequencies</span><span>Compare counts/percentages carefully and check whether group sizes differ.</span></div>
+        <div class="row"><span class="band">Variability</span><span>Use SD, range, IQR or error information only if supplied — it describes spread around the summary value.</span></div>
+        <div class="row"><span class="band">Correlations</span><span>Use direction (positive/negative) and strength (|r| closer to 1 = stronger linear association; r near 0 = weak linear association). Do not infer causation.</span></div>
+        <div class="row"><span class="band">Inferential</span><span>If p-values or confidence intervals are supplied, interpret them accurately (see below).</span></div>
+      </div>
+
+      <h3>Read the statistic correctly — mini-reference</h3>
+      <figure class="p3-fig">
+        <table class="p3-table">
+          <thead><tr><th>Statistic</th><th>What it tells you</th></tr></thead>
+          <tbody>
+            <tr><td>Mean</td><td>Average score</td></tr>
+            <tr><td>Median</td><td>Middle score when ordered</td></tr>
+            <tr><td>SD</td><td>Spread around the mean</td></tr>
+            <tr><td>Range</td><td>Highest minus lowest</td></tr>
+            <tr><td>IQR</td><td>Spread of the middle 50%</td></tr>
+            <tr><td>r</td><td>Direction and strength of linear association (−1 to +1)</td></tr>
+            <tr><td>p</td><td>Evidence relative to the null hypothesis under the statistical model — smaller p indicates the observed result would be less compatible with the null hypothesis</td></tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <h3>Statistical significance</h3>
+      <p style="font-size:.92rem; line-height:1.65;">If p is below the stated or conventional alpha level, the result is statistically significant under that criterion. A small difference can be statistically significant; a larger-looking difference can fail to reach significance. Statistical significance is not the same as practical importance.</p>
+
+      <h3>Variability</h3>
+      <p style="font-size:.92rem; line-height:1.65;">Variability helps you judge how spread out the scores are around the summary value. If two groups have a modest mean difference but wide distributions, the difference may represent only part of the story. Whether that difference is statistically significant depends on the inferential statistics, not on eyeballing SD overlap.</p>
+
+      <h3>Correlation</h3>
+      <p style="font-size:.92rem; line-height:1.65;">Positive r = variables increase together; negative r = one rises as the other falls; |r| closer to 1 = stronger linear association; r near 0 = weak linear association. Do not use universal weak/moderate/strong cut-offs. Correlation does not establish causation — but the core Q2 task is still <em>what do the findings show?</em>, not a methodology essay.</p>
+
+      <h3>What can I say? — conclusion guide</h3>
+      <figure class="p3-fig">
+        <table class="p3-table">
+          <thead><tr><th>If the source shows</th><th>Say</th></tr></thead>
+          <tbody>
+            <tr><td>Correlation only</td><td>“associated with”</td></tr>
+            <tr><td>Group difference, design unclear</td><td>“the group/condition showed…”</td></tr>
+            <tr><td>Experiment with clear manipulation and appropriate design</td><td>Causal wording <em>may</em> be justified</td></tr>
+          </tbody>
+        </table>
+      </figure>
+      <p style="font-size:.92rem; line-height:1.65;">Match conclusion strength to the evidence. Stronger evidence → “The findings support…”; moderate/mixed → “The findings suggest…”; limited → “The findings provide limited evidence…”. The conclusion must be explicitly linked to the analysed findings — an evidence-appropriate conclusion, not always a cautious one.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>Solved example — smartphone presence and working memory</h2>
+      <p>In a study of smartphone presence, students completed an OSpan working-memory task (scored 1–5) with their own phone either kept away or left face up on the desk nearby.</p>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Source 1</p>
+        <table class="p3-table">
+          <caption>Results of the OSpan working-memory task by phone condition</caption>
+          <thead>
+            <tr><th scope="col">Condition</th><th scope="col">N</th><th scope="col">Mean OSpan</th><th scope="col">Median OSpan</th><th scope="col">SD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Phone absent</td><td>24</td><td>4.2</td><td>4</td><td>1.3</td></tr>
+            <tr><td>Phone present</td><td>22</td><td>3.6</td><td>4</td><td>1.8</td></tr>
+          </tbody>
+        </table>
+        <p class="p3-fignote">An independent-samples comparison of the two conditions reported p = 0.06. Student scores could range from 1 to 5.</p>
+      </figure>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Example question:</strong></p>
+        <p style="margin-bottom:0;"><em>Analyse the findings shown in Source 1 and state a conclusion about the effect of smartphone presence on working memory. [6]</em></p>
+      </div>
+      <p style="font-size:.9rem; line-height:1.6;"><strong>How to answer:</strong> Start with the most important pattern in the source, then use the relevant statistics provided to develop your analysis. The source determines the order.</p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model analysis</div><div class="reveal-answer"><div><p>The phone-absent group had a higher mean OSpan score (4.2) than the phone-present group (3.6), a difference of 0.6 points. However, both groups had the same median of 4, so the median does not show a difference between the groups even though the means differ. This suggests the difference between groups is not captured by the median alone.</p><p>The phone-present condition has a larger SD (1.8 compared with 1.3), showing greater spread in scores. The reported p value was .06, which is above the conventional .05 threshold. Using the conventional alpha level of .05, p = .06 would not be considered statistically significant.</p><p>Overall, the findings suggest slightly lower mean working-memory performance when the phone was present, but the evidence is not statistically significant under the conventional criterion.</p></div></div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Common mistakes</h2>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Vague</span><span>Vague description with no source evidence.</span></div>
+        <div class="row"><span class="band">Listing</span><span>Listing numbers without interpreting them.</span></div>
+        <div class="row"><span class="band">Ignoring</span><span>Ignoring relevant variability or statistics when they are supplied.</span></div>
+        <div class="row"><span class="band">p-values</span><span>Misreading p-values (treating p = .06 as significant, or treating significance as practical importance).</span></div>
+        <div class="row"><span class="band">Correlation</span><span>Treating correlation as causation.</span></div>
+        <div class="row"><span class="band">Overreach</span><span>Giving a conclusion that goes beyond the findings.</span></div>
+        <div class="row"><span class="band">No conclusion</span><span>Forgetting to state a conclusion, or stating one that is not linked to the findings.</span></div>
+        <div class="row"><span class="band">Significance</span><span>Treating statistical significance as practical importance, or assuming a larger-looking difference must be significant.</span></div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Question 2 exam practice</button><div class="collapsible-body">
+        <p>Each item below gives you a source with data and a Question 2 prompt. All are teacher-created practice in the Paper 3 format. Write your analysis and conclusion before revealing the guidance and model approach.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <h4>Question 1 — Caffeine</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 1</p>
+              <table class="p3-table">
+                <caption>Mean reaction time (ms) on a vigilance task by caffeine condition</caption>
+                <thead>
+                  <tr><th scope="col">Condition</th><th scope="col">N</th><th scope="col">Mean</th><th scope="col">SD</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>0 mg (control)</td><td>30</td><td>320</td><td>28</td></tr>
+                  <tr><td>100 mg</td><td>30</td><td>305</td><td>30</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Independent-samples comparison of the two conditions: p = 0.03.</p>
+            </figure>
+            <p class="p1-qtext">Analyse the findings shown in Source 1 and state a conclusion about the effect of caffeine on reaction time. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Compare the two means (320 ms vs 305 ms), note the similar SDs, then interpret p = .03 against the conventional .05 threshold. State a conclusion explicitly linked to those findings.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p>The caffeine group had a faster mean reaction time (305 ms) than the control group (320 ms), a 15 ms difference. The SDs were similar (30 and 28 ms). The reported p value was .03, which is below the conventional .05 threshold.</p><p>The findings therefore support a statistically significant difference in mean reaction time between the two conditions under the conventional criterion.</p></div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <h4>Question 2 — Correlations</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 2</p>
+              <table class="p3-table">
+                <caption>Correlations between daily social-media time and evening measures (N = 120)</caption>
+                <thead>
+                  <tr><th scope="col">Measure</th><th scope="col">Pearson r</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Evening sleep duration</td><td>&minus;0.48</td></tr>
+                  <tr><td>Daytime sleepiness rating</td><td>+0.52</td></tr>
+                  <tr><td>Self-reported mood</td><td>&minus;0.22</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Correlations were calculated for the whole sample; no experiment was performed.</p>
+            </figure>
+            <p class="p1-qtext">Analyse the correlations shown in Source 2 and state a conclusion about the relationship between daily social-media time and wellbeing. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Compare the direction and relative strength of the three r values. Together they show associations — because no experiment was performed, do not claim causation.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p>The strongest of the three correlations is with daytime sleepiness (r = .52), followed closely by sleep duration (r = −.48). The mood relationship is weaker (r = −.22).</p><p>Because these are correlations and no experiment was performed, the findings show associations but do not establish causation.</p></div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <h4>Question 3 — Study breaks</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 3</p>
+              <table class="p3-table">
+                <caption>Mean retention of study material (%) by break schedule</caption>
+                <thead>
+                  <tr><th scope="col">Condition</th><th scope="col">N</th><th scope="col">Mean retention</th><th scope="col">SD</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Continuous study</td><td>18</td><td>62%</td><td>14%</td></tr>
+                  <tr><td>Scheduled breaks</td><td>17</td><td>68%</td><td>15%</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">The research summary reports the means and standard deviations but gives no significance test.</p>
+            </figure>
+            <p class="p1-qtext">Analyse the findings shown in Source 3 and state a conclusion about the effect of study breaks on retention of material. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Compare the means (68% vs 62%), note the SDs, and observe that no inferential statistic is reported. Consider what that means for the conclusion you can state.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p>Mean retention was 6 percentage points higher with scheduled breaks (68%) than with continuous study (62%). The SDs were similar (15% and 14%).</p><p>No inferential statistic is reported, so the source does not establish whether the observed 6-point difference is statistically significant. The findings show higher mean retention in the scheduled-break condition, but whether this supports a causal effect depends on the study design, which is not stated here.</p></div></div></div>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

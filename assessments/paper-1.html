@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+      .p1-sect-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: .75rem 0 1rem; }
+    .p1-sect-card { display: flex; flex-direction: column; gap: .4rem; background: var(--bg); border: 1px solid var(--border); border-top: 3px solid var(--primary); border-radius: var(--radius); padding: 1.15rem 1.25rem; text-decoration: none; color: inherit; transition: all .18s; }
+    .p1-sect-card:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); transform: translateY(-2px); color: inherit; }
+    .p1-sect-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-sect-tag { font-size: 1.3rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); }
+    .p1-sect-card h3 { font-size: 1.05rem; font-weight: 700; margin: 0; }
+    .p1-sect-purpose { font-size: .88rem; color: var(--text-secondary); line-height: 1.55; }
+    .p1-sect-marks { font-size: .82rem; font-weight: 600; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid var(--border); padding-top: .5rem; margin-top: .15rem; }
+    .p1-sect-go { margin-top: auto; padding-top: .45rem; font-size: .86rem; font-weight: 700; color: var(--primary); }
+    @media (max-width: 640px) { .p1-sect-layout { grid-template-columns: 1fr; } .p1-sect-tag { font-size: 1.05rem; } }
+    .p1-approach li { border-left-color: var(--primary); }
+    .p1-approach strong { display: block; font-size: .95rem; text-transform: uppercase; letter-spacing: .02em; }
+    .p1-approach p { margin: .2rem 0 0; }
+    .p1-examp { padding-left: .65rem; border-left: 2px solid var(--border); color: var(--text-secondary); font-size: .88rem; line-height: 1.6; }
+    .p1-examp-label { font-weight: 700; color: var(--text-secondary); }
+    .p1-checks { margin: .5rem 0 .8rem; }
+    .p1-check { display: flex; gap: .6rem; align-items: baseline; margin: 0 0 .3rem; font-size: .92rem; font-style: italic; line-height: 1.55; }
+    .p1-check-label { flex-shrink: 0; font-style: normal; font-weight: 800; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); }
+    .p1-mark dd.p1-we { font-size: .88rem; color: var(--text-secondary); line-height: 1.6; padding-left: .65rem; border-left: 2px solid var(--border); margin: 0 0 .45rem 0; }
+    .p1-we-label { display: block; font-size: .62rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--text-secondary); background: var(--bg-secondary); padding: .12rem .45rem; border-radius: 3px; margin-bottom: .15rem; }
+    .p1-mb-trigger { flex-wrap: wrap; }
+    .p1-mb-trigger .p1-official { flex-shrink: 0; font-size: .62rem; margin: 0 .5rem 0 auto; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> Paper 1</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">IB Psychology Assessment</p>
+      <h1>Paper 1</h1>
+      <p class="theory-subtitle">Knowledge, Application &amp; Critical Analysis</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">This page gives you the whole-paper picture: how Paper 1 is structured, weighed and marked. Then choose a section to study its approach and practise exam questions.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Paper 1 at a glance</h2>
+    <div class="p1-stats">
+        <div class="p1-stat"><strong>90 minutes</strong><span>Duration</span></div>
+        <div class="p1-stat"><strong>35 marks</strong><span>Total</span></div>
+        <div class="p1-stat"><strong>SL: 35%</strong><span>Weighting</span></div>
+        <div class="p1-stat"><strong>HL: 25%</strong><span>Weighting</span></div>
+      </div>
+      <div class="essentials-box">
+        <h3 style="margin-top:0;">Section A — Knowledge &amp; Explanation</h3>
+        <p>2 compulsory questions, 4 marks each, 8 marks total.</p>
+        <h3>Section B — Knowledge &amp; Application</h3>
+        <p>2 compulsory questions, 6 marks each, 12 marks total.</p>
+        <h3>Section C — Conceptual Understanding &amp; Critical Analysis</h3>
+        <p>2 questions provided. Answer ONE. 15 marks.</p>
+        <p style="margin-bottom:0;"><strong>Total: 35 marks.</strong></p>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;">Each section below has its own page with the answering approach, a worked model answer, and a practice question bank.</p>
+    </section>
+
+<section class="theory-section">
+      <h2>Choose a section</h2>
+      <div class="p1-sect-layout">
+        <a href="paper-1-section-a.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Section A</span>
+          <h3>Knowledge &amp; Explanation</h3>
+          <p class="p1-sect-purpose">Understand a psychological idea, then explain one relevant example — real-world, hypothetical or research.</p>
+          <p class="p1-sect-marks">2 compulsory questions &middot; 4 marks each &middot; 8 marks total</p>
+          <span class="p1-sect-go">Study Section A &rarr;</span>
+        </a>
+        <a href="paper-1-section-b.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Section B</span>
+          <h3>Knowledge &amp; Application</h3>
+          <p class="p1-sect-purpose">Apply your knowledge of content to an unseen situation, keeping the psychology and the scenario connected.</p>
+          <p class="p1-sect-marks">2 compulsory questions &middot; 6 marks each &middot; 12 marks total</p>
+          <span class="p1-sect-go">Study Section B &rarr;</span>
+        </a>
+        <a href="paper-1-section-c.html" class="p1-sect-card">
+          <span class="p1-sect-tag">Section C</span>
+          <h3>Conceptual Understanding &amp; Critical Analysis</h3>
+          <p class="p1-sect-purpose">Analyse an area of study through a concept, developing critical analysis and a reasoned conclusion.</p>
+          <p class="p1-sect-marks">Answer 1 of 2 questions &middot; 15 marks</p>
+          <span class="p1-sect-go">Study Section C &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Official 2027 Paper 1 marking scheme</h2>
+      <p>The descriptors below reproduce the official IB Psychology Paper 1 markbands. Student-friendly guidance elsewhere on this page is separate from the official wording.</p>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">Section A — 4 marks per question <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>The response demonstrates limited knowledge relevant to the question.</li><li>The example is relevant but is not explained.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>The response demonstrates detailed knowledge relevant to the question.</li><li>The example is relevant and explained.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">Section B — 6 marks per question <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>Knowledge and understanding of the question are limited.</li><li>The application of knowledge is relevant but limited.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>Knowledge and understanding have some detail and are mostly accurate.</li><li>The application of knowledge is relevant and partially developed.</li></ul></dd>
+          <dt>5–6</dt>
+          <dd><ul><li>Knowledge and understanding are accurate and detailed.</li><li>The application of relevant knowledge is well developed.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">Section C — Answer 1 of 2 questions · 15 marks <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–3</dt>
+          <dd><ul><li>The response indicates little understanding of the demands of the question. Knowledge and understanding of the area of study/concept are very limited and contain inaccuracies.</li><li>The response is descriptive. Any analysis present is superficial or incoherent. Links between the area of study and the concept are not stated, or they are not relevant. Where a conclusion is included, this is very superficial or is not consistent with the rest of the response.</li><li>Psychological terminology is not used or is consistently used inappropriately. Points are frequently inaccurate and unclear.</li></ul></dd>
+          <dt>4–6</dt>
+          <dd><ul><li>The response indicates some understanding of the demands of the question. Relevant knowledge and understanding of the area of study/concept are described.</li><li>There is limited analysis present and overall the response is more descriptive than it is analytical. Links between the area of study and the concept are stated, and they are partly relevant. A simplistic conclusion is included.</li><li>Psychological terminology is used, but often inappropriately. Points are frequently imprecise or vague.</li></ul></dd>
+          <dt>7–9</dt>
+          <dd><ul><li>The response indicates understanding of the demands of the question, but these demands are only partially addressed. Relevant knowledge and understanding of the area of study/concept are partly explained.</li><li>The response contains analysis, although this analysis lacks development. Links between the area of study and the concept are explained, and they are partly relevant. A conclusion is included but it is not always consistent with the arguments presented.</li><li>Psychological terminology is used sometimes appropriately. Relevant points are made but lack accuracy and development.</li></ul></dd>
+          <dt>10–12</dt>
+          <dd><ul><li>The demands of the question are addressed. Relevant knowledge and understanding of the area of study/concept are mostly explained.</li><li>The response contains critical analysis, although this analysis lacks development. Links between the area of study and the concept are included and explained. The response argues to a conclusion that is consistent with the arguments presented.</li><li>Psychological terminology is used, mostly appropriately. Points made are relevant and accurate but lack detail.</li></ul></dd>
+          <dt>13–15</dt>
+          <dd><ul><li>The demands of the question are addressed. Relevant knowledge and understanding of the area of study/concept are fully explained.</li><li>The response contains well-developed critical analysis. Links between the area of study and the concept are included throughout the response and fully explained. The response argues to a reasoned and clearly stated conclusion that is consistent with the arguments presented.</li><li>There is accurate and precise use of psychological terminology. Points are relevant, accurate and detailed.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="essentials-box">
+        <p><span class="p1-official">Official best-fit principle</span></p>
+        <p style="font-style:italic;">"It is not necessary for every single aspect of a level descriptor to be met for that mark to be awarded."</p>
+        <p style="margin-bottom:0;">What this means for you: the examiner considers which markband best describes the response overall. The markbands are not simple checklists.</p>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Command terms you need for Paper 1</h2>
+      <p>The definitions below reproduce the official IB Psychology command-term definitions. Always let the question itself tell you what is demanded.</p>
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">Command terms <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <p><span class="p1-official">Official IB command-term definitions</span></p>
+        <dl class="p1-mark">
+          <dt>Describe</dt>
+          <dd>Give a detailed account.</dd>
+          <dd class="p1-we"><span class="p1-we-label">Example</span> “Beck's cognitive model proposes that depression is linked to negative schemas and the cognitive triad: negative views of the self, the world and the future.”</dd>
+          <dt>Explain</dt>
+          <dd>Give a detailed account including reasons or causes.</dd>
+          <dd class="p1-we"><span class="p1-we-label">Example</span> “Negative schemas may contribute to depression because they make negative interpretations more likely, which can reinforce persistent negative thoughts about the self, the world and the future.”</dd>
+          <dt>Discuss</dt>
+          <dd>Offer a considered and balanced review that includes a range of arguments, factors or hypotheses. Opinions or conclusions should be presented clearly and supported by appropriate evidence.</dd>
+          <dd class="p1-we"><span class="p1-we-label">Example</span> “A biological explanation may account for vulnerability to depression, but it may be incomplete because cognitive and environmental factors also contribute. This suggests that depression is better explained by interacting factors than by one perspective alone.”</dd>
+          <dt>Evaluate</dt>
+          <dd>Make an appraisal by weighing up the strengths and limitations.</dd>
+          <dd class="p1-we"><span class="p1-we-label">Example</span> “The Sally-Anne task is useful because it provides a clear, standardised measure of false-belief understanding, but poor performance may also reflect language or memory demands, so it may not measure theory of mind perfectly.”</dd>
+          <dt>Examine</dt>
+          <dd>Consider an argument or concept in a way that uncovers the assumptions and interrelationships of the issue.</dd>
+          <dd class="p1-we"><span class="p1-we-label">Example</span> “Culture may shape behaviour through shared norms, but individuals also influence cultural practices. This means the relationship is two-way rather than culture simply causing behaviour.”</dd>
+        </dl>
+      </div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>How to approach Paper 1</h2>
+      <h3>Before writing</h3>
+      <ol class="p1-steps p1-approach">
+        <li><strong>1. Identify the command term</strong>
+          <p>It tells you what kind of answer the examiner wants.</p>
+          <p class="p1-examp"><span class="p1-examp-label">Example:</span> “Describe” asks you to give a detailed account. “Explain” means you also need to show how or why something happens.</p></li>
+        <li><strong>2. Identify exactly what the question is asking about</strong>
+          <p>Answer that question, not a nearby one.</p>
+          <p class="p1-examp"><span class="p1-examp-label">Example:</span> If the question asks how one chemical messenger affects one behaviour, do not write everything you know about biological explanations. Identify the messenger and the specific behaviour you need to explain.</p></li>
+        <li><strong>3. For Section B, find the details you can apply</strong>
+          <p>Underline the useful details in the unseen situation before you start.</p>
+          <p class="p1-examp"><span class="p1-examp-label">Example:</span> If a student privately disagrees with a group but publicly agrees with them, those details could be explained using conformity and normative social influence.</p></li>
+        <li><strong>4. For Section C, decide your argument before writing</strong>
+          <p>Write one sentence that answers the question. Your response should then build and test that argument.</p>
+          <p class="p1-examp"><span class="p1-examp-label">Example:</span> If asked whether a single perspective is enough to explain mental health: “Biological explanations identify important vulnerabilities, but mental health is better explained by interactions between biological, cognitive and environmental factors.”</p></li>
+      </ol>
+      <div class="p1-checks">
+        <p class="p1-check"><span class="p1-check-label">Section A</span> “What do I need to explain, and what example will prove I understand it?”</p>
+        <p class="p1-check"><span class="p1-check-label">Section B</span> “Which details in this unseen situation can I connect directly to the psychology?”</p>
+        <p class="p1-check"><span class="p1-check-label">Section C</span> “What is my answer to the question, and how will I use the concept to build that argument?”</p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>A — Explain it.</strong></p>
+        <p style="margin-bottom:.3rem;"><strong>B — Apply it.</strong></p>
+        <p style="margin-bottom:0;"><strong>C — Analyse it.</strong></p>
+        <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:0;margin-top:.4rem;">A student memory aid, not official IB wording.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

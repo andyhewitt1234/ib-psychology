@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 3 Question 4 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p3-nav { display: flex; flex-wrap: wrap; gap: .4rem; max-width: 780px; margin: 1.8rem auto 1.6rem; }
+    @media (max-width: 640px) { .p3-nav { margin: 1.2rem auto 1.2rem; } }
+    .p3-nav a { font-size: .82rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .8rem; text-decoration: none; transition: all .15s; }
+    .p3-nav a:hover { border-color: var(--primary); }
+    .p3-nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .p3-fig { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; margin: .6rem 0 .9rem; }
+    .p3-fig figcaption { font-weight: 700; font-size: .95rem; color: var(--text); margin-bottom: .15rem; }
+    .p3-fig .p3-source-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    .p3-svgwrap { overflow-x: auto; }
+    .p3-svgwrap svg { display: block; width: 100%; min-width: 440px; height: auto; font-family: inherit; }
+    .p3-fignote { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: .5rem 0 0; }
+    .p3-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .4rem 0 .5rem; }
+    .p3-table caption { font-weight: 700; font-size: .95rem; text-align: left; color: var(--text); padding-bottom: .35rem; }
+    .p3-table th, .p3-table td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; }
+    .p3-table th { background: var(--bg-secondary); color: var(--primary); font-weight: 700; }
+    .p3-chain { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .6rem 0; }
+    .p3-chain .step { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .45rem .8rem; font-size: .8rem; font-weight: 700; color: var(--primary); }
+    .p3-chain .arrow { color: var(--text-secondary); font-weight: 700; }
+    .p3-quote { margin: 0; padding: .7rem .9rem; background: var(--bg-secondary); border-left: 3px solid var(--primary); border-radius: var(--radius); font-style: italic; line-height: 1.65; font-size: .92rem; }
+    .p3-quote .p3-attrib { display: block; margin-top: .4rem; font-style: normal; font-size: .8rem; color: var(--text-secondary); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-3.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 3 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-3.html">Paper 3</a> <span>/</span> Question 4</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 3 · Question 4</p>
+      <h1>Question 4</h1>
+      <p class="theory-subtitle">Synthesis</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">15 marks. Evaluate the central claim using the source material and your own knowledge.</p>
+    </div>
+
+    <nav class="p3-nav" aria-label="Paper 3 pages">
+      <a href="paper-3.html">Overview</a>
+      <a href="paper-3-question-1.html">Q1</a>
+      <a href="paper-3-question-2.html">Q2</a>
+      <a href="paper-3-question-3.html">Q3</a>
+      <a href="paper-3-question-4.html" class="active">Q4</a>
+    </nav>
+
+    
+    <section class="theory-section">
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Q4 requires you to interpret AT LEAST THREE of the supplied sources.</strong></p>
+        <p style="margin-bottom:.3rem;">Interpret at least three sources, combine them with your own psychological knowledge, and discuss how valid the central claim is.</p>
+        <p style="margin-bottom:0; font-size:.9rem; color:var(--text-secondary);">One or two sources are not enough for the full task. Three is the minimum — additional sources may be used where useful. Depth, relevance and synthesis matter more than counting sources.</p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>Q4 is not a sequence of mini source summaries.</strong> Do not structure the answer as <em>Source 1 says… Source 2 says… Source 3 says…</em> Instead, organise around the CLAIM: support / contradiction / qualification / limitation / own knowledge / judgement.</p>
+      </div>
+      <p style="font-size:.92rem; line-height:1.65;">Students interpret at least THREE of the supplied sources from the resource booklet and use their own knowledge to discuss the validity of the claim stated in the question.</p>
+      <p style="font-size:.9rem; line-height:1.6; color:var(--text-secondary);">The goal is not <em>What does each source say?</em> The goal is <em>How strong is the overall case for the claim?</em></p>
+
+      <h3>The synthesis chain</h3>
+      <div class="p3-chain">
+        <span class="step">CLAIM</span><span class="arrow">&rarr;</span>
+        <span class="step">INTERPRET SOURCES</span><span class="arrow">&rarr;</span>
+        <span class="step">CONNECT SOURCES</span><span class="arrow">&rarr;</span>
+        <span class="step">WEIGH THE EVIDENCE</span><span class="arrow">&rarr;</span>
+        <span class="step">ADD OWN KNOWLEDGE</span><span class="arrow">&rarr;</span>
+        <span class="step">EVALUATE DIFFERENT VIEWS</span><span class="arrow">&rarr;</span>
+        <span class="step">JUDGE VALIDITY</span>
+      </div>
+      <p class="p3-note">A thinking framework, not a sentence template — not every paragraph must contain all seven steps.</p>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Official IB wording — Question 4 markband</button><div class="collapsible-body">
+        <p><span class="p1-official">Official IB markband — Question 4 (2027 guide)</span></p>
+        <dl class="p1-mark">
+          <dt>0</dt><dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–3</dt><dd><ul><li>Demands of the question are not clearly understood and the response is of limited relevance to the claim.</li><li>Knowledge and understanding relevant to the claim are limited.</li><li>Sources are described rather than interpreted and own knowledge is limited or not relevant.</li></ul></dd>
+          <dt>4–6</dt><dd><ul><li>Demands of the question are partially understood.</li><li>Some relevant knowledge and understanding are demonstrated but lack detail.</li><li>Sources are interpreted to a limited extent and own knowledge is used to a limited extent.</li></ul></dd>
+          <dt>7–9</dt><dd><ul><li>Demands of the question are understood and partially addressed.</li><li>Relevant knowledge and understanding are demonstrated with some detail.</li><li>Sources are interpreted and used to support discussion of the claim to some extent.</li></ul></dd>
+          <dt>10–12</dt><dd><ul><li>Demands of the question are understood and addressed.</li><li>Relevant knowledge and understanding are detailed.</li><li>Sources are interpreted and used effectively to support discussion of the claim; critical analysis is developed to some extent.</li></ul></dd>
+          <dt>13–15</dt><dd><ul><li>Demands of the question are understood and addressed.</li><li>Detailed and well-developed knowledge and understanding relevant to the claim are demonstrated.</li><li>There is detailed relevant discussion of the extent to which the claim is valid.</li><li>Well-developed critical analysis is demonstrated.</li><li>Relevant knowledge is used to interpret at least three sources and is used effectively to support discussion of the claim.</li><li>Different points of view are identified and evaluated.</li><li>A reasoned and clearly stated conclusion is presented that is consistent with the arguments.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <h3>What 13–15 actually looks like</h3>
+      <ol class="p1-steps">
+        <li><strong>Answer the actual claim</strong> throughout.</li>
+        <li><strong>Use at least three sources</strong>.</li>
+        <li><strong>Interpret</strong> rather than merely quote/describe them.</li>
+        <li><strong>Connect evidence across sources</strong>.</li>
+        <li><strong>Use relevant own knowledge</strong>.</li>
+        <li><strong>Critically analyse</strong> how strong each piece of evidence is.</li>
+        <li><strong>Identify and evaluate different points of view</strong>.</li>
+        <li><strong>Reach a reasoned conclusion</strong> that follows from the argument.</li>
+      </ol>
+      <p class="p3-note">No one-mark-per-feature formula — the bands describe the whole response.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>Synthesis vs summary</h2>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Summary</span><span>“Source 1 shows more stress with more screen use. Source 2 says a student struggled to switch off. Source 3 shows a correlation with less sleep.” — sources sit separately.</span></div>
+        <div class="row"><span class="band">Synthesis</span><span>“Across Sources 1–3, technology is associated with several negative outcomes, particularly stress and sleep disruption. However, Source 2 also reports a benefit and Source 3 is correlational, so the combined evidence supports a conditional rather than universal negative effect.” — sources are combined to answer the claim.</span></div>
+      </div>
+
+      <h3>Organise by argument, not source number</h3>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Argument 1</span><span>Evidence supporting the claim — Source 1 + Source 3 + own knowledge</span></div>
+        <div class="row"><span class="band">Argument 2</span><span>Evidence that qualifies or contradicts — Source 2 + Source 3 + own knowledge</span></div>
+        <div class="row"><span class="band">Argument 3</span><span>How far the evidence allows the claim to go — research design / context / own knowledge</span></div>
+        <div class="row"><span class="band">Conclusion</span><span>Overall validity</span></div>
+      </div>
+      <p class="p3-note">Paragraphs should have a purpose in the argument — not exactly three body paragraphs, but purposeful ones.</p>
+
+      <h3>Different points of view</h3>
+      <p style="font-size:.92rem; line-height:1.6;">Different points of view must be psychologically relevant and evidence-based — not two random opinions. They may come from:</p>
+      <ul style="font-size:.9rem; line-height:1.6; margin:.4rem 0 .6rem 1.1rem;">
+        <li>different sources pointing in different directions</li>
+        <li>competing psychological explanations</li>
+        <li>different interpretations of the same evidence</li>
+        <li>benefits vs harms; individual vs sociocultural explanations</li>
+        <li>evidence that supports vs qualifies the claim</li>
+        <li>own knowledge that challenges the booklet’s apparent message</li>
+      </ul>
+
+      <h3>Own knowledge — what counts</h3>
+      <p style="font-size:.9rem; line-height:1.6;"><strong>Not:</strong> random facts or unrelated theory dumps. Own knowledge may be research studies, theories, concepts or psychological knowledge — only if it helps judge the claim.</p>
+      <p style="font-size:.9rem; line-height:1.6;"><strong>Should:</strong> support a source, challenge a source, explain a pattern, introduce an alternative explanation, qualify generalisation, or show conditions under which the claim may or may not hold.</p>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Example</p>
+        <p style="font-size:.88rem; line-height:1.5; margin:0;"><strong>Source:</strong> more screen time is associated with lower concentration.</p>
+        <p style="font-size:.88rem; line-height:1.5; margin:.3rem 0 0; color:var(--text-secondary);"><strong>Weak own knowledge:</strong> “Attention is a cognitive process.”</p>
+        <p style="font-size:.88rem; line-height:1.5; margin:.3rem 0 0;"><strong>Useful own knowledge:</strong> “Research on divided attention suggests that notifications and task switching can disrupt sustained concentration, which gives a plausible mechanism for the pattern shown in the source.”</p>
+      </figure>
+      <p class="p3-note">Own knowledge is not “add a study” — a study is useful only if it contributes to evaluating the claim.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>How much weight should this source carry?</h2>
+      <p style="font-size:.92rem; line-height:1.6;">Not every source deserves equal weight. Consider where relevant: research design, sample, measurement, statistical evidence, correlation vs experiment, qualitative depth, consistency with other sources, contradictory findings, applicability to the claim, whether the source actually measures the construct named in the claim.</p>
+      <p class="p3-note">How much does this source contribute to the validity of the CENTRAL CLAIM? — not another Q1 limitation hunt.</p>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Not downgrade</span><span>A single interview cannot establish prevalence or causality, but it can contribute lived experience, mechanisms, context and alternative perspectives. Ask <em>What can this source contribute?</em> not <em>Is this source weak?</em></span></div>
+        <div class="row"><span class="band">Not privilege</span><span>Statistical data are not automatically superior — a quantitative source may still be correlational, use self-report, measure a narrow construct or have limited context.</span></div>
+        <div class="row"><span class="band">Source type</span><span>Source type determines what kind of claim it can support.</span></div>
+      </div>
+
+      <h3>Does this source actually measure the claim? — Claim match</h3>
+      <figure class="p3-fig">
+        <table class="p3-table">
+          <thead><tr><th>Claim</th><th>Source</th><th>Judgement</th></tr></thead>
+          <tbody>
+            <tr><td>mental health</td><td>test anxiety</td><td>relevant, but narrower</td></tr>
+            <tr><td>concentration</td><td>homework completion</td><td>related academically, but not direct evidence of concentration</td></tr>
+            <tr><td>intrinsic motivation</td><td>hours read</td><td>behavioural indicator, but not identical to intrinsic motivation</td></tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <h3>What does this source allow?</h3>
+      <figure class="p3-fig">
+        <table class="p3-table">
+          <thead><tr><th>Source type</th><th>Directly shows</th><th>May suggest</th><th>Cannot establish</th></tr></thead>
+          <tbody>
+            <tr><td>Correlation</td><td>association</td><td>pattern</td><td>causal direction</td></tr>
+            <tr><td>Interview</td><td>one participant’s account</td><td>mechanism / experience</td><td>prevalence</td></tr>
+            <tr><td>Experiment</td><td>group difference under manipulation</td><td>causality if design appropriate</td><td>still has measurement/sample limits</td></tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <h3>Claim validity as a scale</h3>
+      <div class="p3-chain">
+        <span class="step">STRONGLY SUPPORTED</span><span class="arrow">&rarr;</span>
+        <span class="step">PARTLY SUPPORTED</span><span class="arrow">&rarr;</span>
+        <span class="step">CONDITIONAL</span><span class="arrow">&rarr;</span>
+        <span class="step">LIMITED SUPPORT</span><span class="arrow">&rarr;</span>
+        <span class="step">NOT WELL SUPPORTED</span>
+      </div>
+      <p style="font-size:.9rem; line-height:1.6;">Not <em>Is the claim true or false?</em> — the strongest conclusions are often conditional.</p>
+
+      <h3>Claim scope</h3>
+      <p style="font-size:.92rem; line-height:1.6;">“Technology harms mental health” is much broader than “High levels of disruptive technology use may increase stress in some students.” Teach students to narrow or qualify claims where evidence only supports a more limited version.</p>
+
+      <h3>Claim-strength ladder</h3>
+      <figure class="p3-fig">
+        <p style="font-size:.88rem; line-height:1.5; margin:0;"><strong>Too strong:</strong> “Technology harms students.”</p>
+        <p style="font-size:.88rem; line-height:1.5; margin:.4rem 0 0;"><strong>Better:</strong> “The evidence suggests technology may be associated with some negative outcomes.”</p>
+        <p style="font-size:.88rem; line-height:1.5; margin:.4rem 0 0;"><strong>Strongest / Qualified:</strong> “The evidence supports a conditional negative effect, particularly where technology use disrupts sleep or increases stress, but it does not support a universal claim that technology is harmful.”</p>
+      </figure>
+    </section>
+
+    <section class="theory-section">
+      <h2>Worked example — technology in education and student mental health</h2>
+      <p><span class="p1-teacher">Teacher-created example</span></p>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Central claim:</strong> the use of technology in education may have a negative effect on the mental health of students.</p>
+        <p style="margin-bottom:0;"><em>Question: To what extent can we conclude that the use of technology in education has a negative effect on the mental health of students? [15]</em></p>
+      </div>
+
+      <h3>Source 1</h3>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Source 1</p>
+        <figcaption>Mean Self-Reported Test Anxiety (1–5) by Classroom Technology Level</figcaption>
+        <div class="p3-svgwrap">
+          <svg viewBox="0 0 460 250" role="img" aria-label="Bar graph. High-technology classrooms mean test anxiety 3.4, low-technology classrooms 2.8. Whiskers show plus or minus one standard deviation." preserveAspectRatio="xMidYMid meet">
+            <title>Mean Self-Reported Test Anxiety by Classroom Technology Level</title>
+            <text x="72" y="14" font-size="10.5" fill="var(--text-secondary)">Mean test anxiety (1–5)</text>
+            <line x1="68" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+            <line x1="68" y1="20" x2="68" y2="200" stroke="var(--border)" stroke-width="1"/>
+            <line x1="64" y1="200" x2="68" y2="200" stroke="var(--border)"/><text x="58" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+            <line x1="64" y1="164" x2="68" y2="164" stroke="var(--border)"/><text x="58" y="167" text-anchor="end" font-size="10" fill="var(--text-secondary)">1</text>
+            <line x1="64" y1="128" x2="68" y2="128" stroke="var(--border)"/><text x="58" y="131" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+            <line x1="64" y1="92" x2="68" y2="92" stroke="var(--border)"/><text x="58" y="95" text-anchor="end" font-size="10" fill="var(--text-secondary)">3</text>
+            <line x1="64" y1="56" x2="68" y2="56" stroke="var(--border)"/><text x="58" y="59" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+            <line x1="64" y1="20" x2="68" y2="20" stroke="var(--border)"/><text x="58" y="23" text-anchor="end" font-size="10" fill="var(--text-secondary)">5</text>
+            <rect x="120" y="99.2" width="95" height="100.8" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+            <rect x="300" y="77.6" width="95" height="122.4" fill="var(--primary-light)" stroke="var(--primary)" stroke-width="1"/>
+            <line x1="167.5" y1="77.6" x2="167.5" y2="120.8" stroke="var(--text-secondary)" stroke-width="2"/>
+            <line x1="152" y1="77.6" x2="183" y2="77.6" stroke="var(--text-secondary)" stroke-width="2"/>
+            <line x1="152" y1="120.8" x2="183" y2="120.8" stroke="var(--text-secondary)" stroke-width="2"/>
+            <line x1="347.5" y1="48.8" x2="347.5" y2="106.4" stroke="var(--text-secondary)" stroke-width="2"/>
+            <line x1="332" y1="48.8" x2="363" y2="48.8" stroke="var(--text-secondary)" stroke-width="2"/>
+            <line x1="332" y1="106.4" x2="363" y2="106.4" stroke="var(--text-secondary)" stroke-width="2"/>
+            <text x="167.5" y="93.2" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">2.8</text>
+            <text x="347.5" y="71.6" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">3.4</text>
+            <text x="167.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">Low-tech classrooms</text>
+            <text x="347.5" y="218" text-anchor="middle" font-size="10.5" fill="var(--text)">High-tech classrooms</text>
+            <text x="250" y="238" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Classroom technology level</text>
+          </svg>
+        </div>
+        <p class="p3-fignote">Six classrooms took part (three per level, 132 students). Independent-samples comparison: p = 0.04. Self-report measure of test anxiety.</p>
+      </figure>
+      <p style="font-size:.9rem; line-height:1.6;"><strong>Weight:</strong> Source 1 shows higher self-reported test anxiety in high-technology classrooms (3.4 vs 2.8, p = .04). The p value indicates statistical significance under the stated criterion for this group difference; it does not show that technology caused the difference, nor does it speak to mental health as a whole — the measure is narrower than the claim. Students in high-technology classrooms reported higher test anxiety; causal language is not justified unless random assignment and experimental control are explicitly stated.</p>
+
+      <h3>Source 2</h3>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Source 2</p>
+        <figcaption>Extract from a student interview</figcaption>
+        <blockquote class="p3-quote">
+          When every lesson is on the tablets I can't switch off again at night - I keep going back to the school apps. But I also go back to them to check what I missed, and that helps when I am stuck.
+          <span class="p3-attrib">Student interview, single participant</span>
+        </blockquote>
+        <p class="p3-fignote">One voice, mixed: reports both cannot switch off (negative) and retrieving missed work helps (positive). A single interview cannot establish prevalence, but it can illustrate lived experience and mechanism.</p>
+      </figure>
+
+      <h3>Source 3</h3>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Source 3</p>
+        <table class="p3-table">
+          <caption>Correlations Between Daily App-Based Learning Time and Student Measures (N = 210)</caption>
+          <thead>
+            <tr><th scope="col">Measure</th><th scope="col">Pearson r</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Reported sleep duration</td><td>&minus;0.31</td></tr>
+            <tr><td>Self-reported stress</td><td>+0.24</td></tr>
+            <tr><td>Reported engagement with classes</td><td>+0.19</td></tr>
+          </tbody>
+        </table>
+        <p class="p3-fignote">Cross-sectional data collected at one time point. Correlations do not establish causal direction.</p>
+      </figure>
+      <p style="font-size:.9rem; line-height:1.6;">More app-based learning time is associated with less reported sleep (r = &minus;.31) and greater self-reported stress (r = +.24) — both consistent with a negative pathway — but also with greater reported engagement (r = +.19), which qualifies a uniformly negative interpretation. Correlations do not establish causation; describe relative strength without fixed weak/moderate cut-offs.</p>
+
+      <h3>Own knowledge — tightly linked</h3>
+      <p style="font-size:.92rem; line-height:1.65;">Relevant knowledge must stay tightly linked to technology + student mental health (not learning efficiency): for example social comparison/FOMO and sleep displacement may increase stress, while online social support or access to mental-health resources may buffer it. Individual differences (active vs passive use, purpose of use) condition the effect — presence of technology is not the same as harmful use.</p>
+
+      <h3>An actual synthesized paragraph</h3>
+      <figure class="p3-fig" style="background:var(--bg-secondary);">
+        <p style="font-size:.9rem; line-height:1.65; margin:0;">“Sources 1 and 3 both point toward a negative relationship between technology use and student wellbeing, but they support different parts of the claim. Source 1 shows higher test anxiety in high-technology classrooms (3.4 vs 2.8, p = .04), whereas Source 3 links greater app use with less sleep (r = −.31) and greater stress (r = .24). Together these suggest several possible negative associations. However, Source 3 is correlational and Source 1 measures test anxiety rather than mental health as a whole, so the combined evidence supports a narrower, conditional claim more strongly than the broad claim stated.”</p>
+        <p class="p3-fignote">Two sources + interpretation + weighing + claim — not source-by-source summary.</p>
+      </figure>
+
+      <h3>Convergence and contradiction</h3>
+      <p style="font-size:.92rem; line-height:1.6;">Convergence can increase confidence, but ask: are sources independent? Do they measure the same construct? Do they use different methods? Are they subject to same limitation? Do they support same version of claim? Contradiction: identify what differs, consider why (population, operationalisation, method, context), and decide how much it changes the overall argument — do not force false balance.</p>
+
+      <h3>Different points of view in this example</h3>
+      <div class="p1-compare">
+        <div class="row"><span class="band">View 1</span><span>Technology may harm wellbeing through stress and sleep disruption.</span></div>
+        <div class="row"><span class="band">View 2</span><span>Technology may also support students through access, communication, engagement or support.</span></div>
+      </div>
+
+      <h3>Conclusion guide</h3>
+      <p style="font-size:.92rem; line-height:1.6;">A strong Q4 conclusion: 1) Answers how valid the claim is, 2) States conditions/limits, 3) Reflects the balance already discussed — no new evidence.</p>
+      <figure class="p3-fig">
+        <p style="font-size:.88rem; line-height:1.5; margin:0;">“Overall, the claim is <em>partly supported under certain conditions</em> because… However, this appears to depend on… Therefore, the evidence supports the claim most strongly when…”</p>
+      </figure>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show teacher-created planning example</div><div class="reveal-answer"><div>
+        <p><span class="p1-teacher">Teacher-created planning example — not an official model answer</span></p>
+        <p><strong>Supports:</strong> Source 1 higher test anxiety (3.4 vs 2.8, p = .04) — statistically significant for this group difference but narrow construct; Source 3 links more app use with less sleep (r = −.31) and more stress (+.24); Source 2 lived account of not switching off.</p>
+        <p><strong>Limits/contradictions:</strong> Six classrooms/one region/self-report; Source 3 cross-sectional correlational; Source 2 single voice; Source 3 engagement +.19 and Source 2 benefit qualify the claim; p = .04 shows difference, not whole mental health.</p>
+        <p><strong>Own knowledge:</strong> Sleep displacement, social comparison/FOMO and constant connectivity may increase stress; online support/access to resources may buffer; active vs passive use and purpose matter — technology presence ≠ harmful use.</p>
+        <p><strong>Overall judgement:</strong> The careful wording “may have a negative effect” is partly supported — possible negative associations for some students/conditions, especially where use displaces sleep or focus — but the sources are few, self-reported/correlational/single-voice and contain counter-evidence, so a modest, conditional negative effect is plausible, not a clear general negative effect on mental health.</p>
+      </div></div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Micro-activities</h2>
+
+      <h3>Source weight — which carries most weight?</h3>
+      <figure class="p3-fig">
+        <p style="font-size:.9rem; line-height:1.6; margin:0;">Three tiny sources about “technology harms concentration”: (A) 12-student interview, (B) 200-student experiment on attention with random assignment, (C) 500-student survey correlating screen time and self-reported focus. Which carries most weight for <em>this specific claim</em> — and why? Consider relevance to claim, design, measurement and evidence.</p>
+        <p class="p3-fignote">No universal hierarchy experiment > survey > interview — the strongest source depends on the claim.</p>
+      </figure>
+      <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>For a causal concentration claim, the experiment (B) is most relevant <em>if</em> its manipulation and measure directly target concentration — but check whether attention test really measures concentration as claimed. Weight depends on the claim.</p></div></div></div>
+
+      <h3>Synthesis pair — combine in one sentence</h3>
+      <figure class="p3-fig">
+        <p style="font-size:.9rem; line-height:1.6; margin:0;"><strong>Source A:</strong> more app use correlates with higher stress.<br><strong>Source B:</strong> student interview says apps provide social support.<br>Write ONE sentence that synthesises both.</p>
+      </figure>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model</div><div class="reveal-answer"><div><p>“Although greater app use is associated with higher stress in Source A, Source B suggests technology may also provide social support, indicating that its effect on wellbeing is likely to depend on how it is used.”</p></div></div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Common mistakes</h2>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Source-by-source</span><span>Writing three separate source summaries.</span></div>
+        <div class="row"><span class="band">No synthesis</span><span>Using sources but never connecting them.</span></div>
+        <div class="row"><span class="band">No own knowledge</span><span>Staying entirely inside the booklet.</span></div>
+        <div class="row"><span class="band">Unrelated knowledge</span><span>Adding theory/studies that do not help judge the claim.</span></div>
+        <div class="row"><span class="band">No different view</span><span>Only presenting evidence that supports one side.</span></div>
+        <div class="row"><span class="band">Methodology dump</span><span>Listing limitations without explaining how they affect the claim.</span></div>
+        <div class="row"><span class="band">Causal overreach</span><span>Treating correlations or group differences as causal without support.</span></div>
+        <div class="row"><span class="band">Claim drift</span><span>Discussing “technology” generally when the claim is specifically about mental health / concentration / motivation etc.</span></div>
+        <div class="row"><span class="band">No judgement</span><span>Ending without stating how valid the claim actually is.</span></div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Question 4 exam practice</button><div class="collapsible-body">
+        <p>Each item gives you a central claim, three sources, and a Question 4 prompt spanning the HL extension topics. All are teacher-created practice in the Paper 3 format. Build your own synthesis before revealing the guidance and teacher-created planning example.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice — Technology</span></p>
+            <h4>Question 1</h4>
+            <div class="scenario-box">
+              <p style="margin-bottom:0;"><strong>Central claim:</strong> screen time during the school day harms students' ability to concentrate.</p>
+            </div>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 1</p>
+              <table class="p3-table">
+                <caption>Mean Self-Reported Concentration (1–10) by Lesson Format</caption>
+                <thead><tr><th scope="col">Lesson format</th><th scope="col">N</th><th scope="col">Mean</th><th scope="col">SD</th></tr></thead>
+                <tbody>
+                  <tr><td>Traditional lessons</td><td>40</td><td>7.1</td><td>1.6</td></tr>
+                  <tr><td>Tablet-led lessons</td><td>42</td><td>6.3</td><td>1.9</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Independent-samples comparison: p = 0.07. Self-report measure of concentration.</p>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 2</p>
+              <blockquote class="p3-quote">
+                Half the lesson I'm watching the timer app or the class chat instead of the work. Still, some of the best explanations in the class are the videos we re-watch on our own.
+                <span class="p3-attrib">Student interview, single participant</span>
+              </blockquote>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 3</p>
+              <table class="p3-table">
+                <caption>Correlations Between Daily In-Class Screen Minutes and Measures (N = 180)</caption>
+                <thead><tr><th scope="col">Measure</th><th scope="col">Pearson r</th></tr></thead>
+                <tbody>
+                  <tr><td>Attention test score</td><td>&minus;0.28</td></tr>
+                  <tr><td>Restlessness rating</td><td>+0.26</td></tr>
+                  <tr><td>Homework completion</td><td>+0.14</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Cross-sectional data. Correlations do not establish causal direction.</p>
+            </figure>
+            <p class="p1-qtext">To what extent can we conclude that screen time during the school day harms students' ability to concentrate? [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The correlations are relatively modest in magnitude, with the strongest absolute value being .28. Source 1’s means differ by 0.8 points and p = .07 does not reach the conventional .05 criterion. The positive association with homework completion suggests screen use may also have academic benefits, but it does not directly measure concentration. Weigh, then judge.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show teacher-created planning example</div><div class="reveal-answer"><div>
+              <p><span class="p1-teacher">Teacher-created planning example — not an official model answer</span></p>
+              <p><strong>Supports:</strong> Source 1’s means point in the claim’s direction (6.3 against 7.1); Source 3 links more screen minutes with lower attention scores (r = &minus;0.28) and higher restlessness (r = +0.26); Source 2 describes divided attention in tablet-led lessons.</p>
+              <p><strong>Limits and contradictions:</strong> Source 1’s means differ by 0.8 points, but p = .07 does not reach the conventional .05 criterion (SDs 1.6 and 1.9 show substantial spread, but SDs are not a significance test); Source 3 is cross-sectional and cannot assign causality; the positive association with homework completion (+0.14) suggests screen use may also have academic benefits, but it does not directly measure concentration; Source 2 also credits videos with helping.</p>
+              <p><strong>Own knowledge:</strong> Divided attention and notification cueing can impair sustained focus, but well-designed digital tasks can support concentration through offloading and retrieval. Level of use and type of task matter more than screen time as such.</p>
+              <p><strong>Judgement:</strong> A modest, context-dependent association in the direction claimed, but three relatively modest / non-significant sources with counter-evidence do not establish that screen time during the school day harms concentration.</p>
+            </div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice — Culture</span></p>
+            <h4>Question 2</h4>
+            <div class="scenario-box">
+              <p style="margin-bottom:0;"><strong>Central claim:</strong> cultural values shape how students attribute their academic success.</p>
+            </div>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 1</p>
+              <table class="p3-table">
+                <caption>Attribution of Academic Success (%) in Two Countries (N = 200 per Country)</caption>
+                <thead><tr><th scope="col">Attribution</th><th scope="col">Country A (individualist)</th><th scope="col">Country B (collectivist)</th></tr></thead>
+                <tbody>
+                  <tr><td>Internal (effort, ability)</td><td>64%</td><td>38%</td></tr>
+                  <tr><td>External (help, circumstances)</td><td>36%</td><td>62%</td></tr>
+                </tbody>
+              </table>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 2</p>
+              <blockquote class="p3-quote">
+                I succeeded because my family and teachers built everything around me - it was never just mine.
+                <span class="p3-attrib">Student interview, Country B</span>
+              </blockquote>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 3</p>
+              <table class="p3-table">
+                <caption>Correlations Between Collectivism Scores and Attributions (N = 400)</caption>
+                <thead><tr><th scope="col">Attribution type</th><th scope="col">Pearson r</th></tr></thead>
+                <tbody>
+                  <tr><td>External attribution</td><td>+0.55</td></tr>
+                  <tr><td>Internal attribution</td><td>&minus;0.41</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Self-report scales; correlation only. N = 400 individual participants.</p>
+            </figure>
+            <p class="p1-qtext">To what extent can we conclude that cultural values shape how students attribute their academic success? [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>The cultural contrast shows clearly (Sources 1 and 3), but two countries cannot prove culture caused the difference — country differences may also reflect education systems, norms, language, socioeconomic factors. Treat self-report conditionally.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show teacher-created planning example</div><div class="reveal-answer"><div>
+              <p><span class="p1-teacher">Teacher-created planning example — not an official model answer</span></p>
+              <p><strong>Supports:</strong> Source 1 shows the predicted contrast — internal attributions dominate in Country A (64%), external in Country B (62%); Source 3 shows a correlation between higher collectivism and more external attribution (r = +.55) and less internal (−.41); Source 2 illustrates the theme in a lived account.</p>
+              <p><strong>Limits:</strong> Two countries cannot represent culture as a whole; the surveys rely on self-report which may be influenced by how participants wish to present their explanations; Source 3 is correlational and cannot show that collectivism caused attribution — country differences may also reflect education systems, socioeconomic factors etc.; individual variation within cultures remains.</p>
+              <p><strong>Own knowledge:</strong> Research on cultural differences in attribution and self-enhancement suggests that collectivist contexts tend to emphasise situational and social explanations and show less self-serving bias than individualist contexts, but these are tendencies and patterns, not deterministic rules — culture can influence attribution.</p>
+              <p><strong>Judgement:</strong> Evidence is consistent with the claim and links collectivism scores with attribution patterns, but the two-country design and correlational data mean the claim is supported as a general tendency, not a firm causal rule.</p>
+            </div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice — Motivation</span></p>
+            <h4>Question 3</h4>
+            <div class="scenario-box">
+              <p style="margin-bottom:0;"><strong>Central claim:</strong> rewarding students for reading reduces their intrinsic motivation to read.</p>
+            </div>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 1</p>
+              <table class="p3-table">
+                <caption>Mean Enjoyment of Reading (1–7) After One Term</caption>
+                <thead><tr><th scope="col">Condition</th><th scope="col">N</th><th scope="col">Mean</th><th scope="col">SD</th></tr></thead>
+                <tbody>
+                  <tr><td>No reward</td><td>26</td><td>4.8</td><td>1.2</td></tr>
+                  <tr><td>Points reward</td><td>27</td><td>4.4</td><td>1.1</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Independent-samples comparison: p = 0.08. Self-report measure of intrinsic motivation via enjoyment.</p>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 2</p>
+              <blockquote class="p3-quote">
+                Now I read the pages for the points, not because I want to. The stories that stay with me are the ones I chose outside the scheme.
+                <span class="p3-attrib">Student interview, single participant</span>
+              </blockquote>
+            </figure>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Source 3</p>
+              <table class="p3-table">
+                <caption>Correlations Between Reliance on Rewards and Reading Behaviour (N = 130)</caption>
+                <thead><tr><th scope="col">Measure</th><th scope="col">Pearson r</th></tr></thead>
+                <tbody>
+                  <tr><td>Hours read per month outside school</td><td>&minus;0.35</td></tr>
+                  <tr><td>Enjoyment rating</td><td>&minus;0.29</td></tr>
+                </tbody>
+              </table>
+              <p class="p3-fignote">Cross-sectional data. Correlations do not establish causation.</p>
+            </figure>
+            <p class="p1-qtext">To what extent can we conclude that rewarding students for reading reduces their intrinsic motivation to read? [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Source 1 p = .08 is not significant; Source 3 is correlational; Source 2 is one voice. Balance nuanced undermining-effect knowledge against conditions where rewards do not reduce motivation.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show teacher-created planning example</div><div class="reveal-answer"><div>
+              <p><span class="p1-teacher">Teacher-created planning example — not an official model answer</span></p>
+              <p><strong>Supports:</strong> Source 1 mean enjoyment lower with reward (4.4 vs 4.8); Source 2 quote reports shift from reading for activity to reading for reward; Source 3 links greater reliance on rewards with fewer outside hours (r = −.35) and lower enjoyment (−.29).</p>
+              <p><strong>Limits:</strong> Source 1 means differ by 0.4 points, while p = .08 does not reach the conventional .05 criterion (SDs 1.2 and 1.1 indicate appreciable spread, but SDs are not a significance test); Source 3 is correlational — students who read less may rely more on rewards; Source 2 single account.</p>
+              <p><strong>Own knowledge:</strong> Research on the overjustification effect suggests that some expected, controlling rewards can reduce intrinsic motivation, especially when they shift perceived reasons for engaging, but rewards experienced as competence feedback or where intrinsic interest was initially low may preserve or raise motivation.</p>
+              <p><strong>Judgement:</strong> Modest, non-significant or correlational support in the claimed direction; the undermining effect holds under specific conditions, so the claim is supported as a conditional tendency, not as a rule that rewarding necessarily reduces intrinsic motivation.</p>
+            </div></div></div>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 Section B | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p1-app-example { margin: .5rem 0 .65rem; padding-left: .65rem; border-left: 2px solid var(--border); font-size: .9rem; line-height: 1.6; color: var(--text-secondary); }
+    .p1-provenance { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); margin: 0 0 .4rem; }
+    .p1-detail { color: #1e56c8; }
+    .p1-mech { color: #6d28d9; }
+    .p1-why { color: #15803d; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-1.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 1 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-1.html">Paper 1</a> <span>/</span> Section B</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 1 · Section B</p>
+      <h1>Section B</h1>
+      <p class="theory-subtitle">Knowledge &amp; Application</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">2 compulsory questions, 6 marks each, 12 marks total. Section B tests your ability to apply psychological knowledge to an unseen situation.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Section B — Knowledge and application</h2>
+      <p>2 compulsory questions · 6 marks each · 12 marks total.</p>
+      <p><strong>Section B requires you to apply your knowledge of content to an unseen situation.</strong> You will not have seen the scenario before. Your job is to use it.</p>
+<p class="p1-app-example">For example: If the unseen situation says a new student privately disagrees with a group but publicly agrees with them, don't just explain conformity. Use those details: the difference between private disagreement and public agreement can be explained by normative social influence, because the student may conform publicly to gain acceptance or avoid rejection.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>Section B = knowledge + application.</strong></p>
+      </div>
+      <h3>How to answer Section B</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Worked example: <em>A group of researchers investigated imagination using a three-stage cognitive model: selection of elements, random combination, and evaluation. With reference to this study, explain the value of cognitive models for understanding cognitive processes. [6]</em></p>
+      <ol class="p1-steps">
+        <li><strong>1. IDENTIFY &amp; DEFINE</strong> — Identify the psychological concept, theory or model the question requires and define it clearly and accurately.</li>
+        <li><strong>2. EXPLAIN</strong> — Show detailed understanding of how the relevant psychology works.</li>
+        <li><strong>3. APPLY</strong> — Use a specific detail from the unseen situation and connect it directly to the psychology.</li>
+        <li><strong>4. EXPLAIN IT</strong> — Explain how or why the psychology applies to that specific detail.</li>
+        <li><strong>5. DEVELOP</strong> — Take the connection further by explaining what the psychology helps us understand about this situation.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>SECTION B = KNOWLEDGE + APPLICATION.</strong> Keep connecting your psychological knowledge to specific details from the scenario.</p>
+      </div>
+      <h3>Worked model answer</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Try the question yourself first. Then reveal the model to see what a strong 6-mark response looks like.</p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer — 6/6</div><div class="reveal-answer"><div><p class="p1-provenance">Teacher-created model</p><p>Cognitive models are simplified representations of cognitive processes. They are valuable because they break complex mental processes into smaller, more manageable parts that researchers can study and test.</p><p>In this study, the model divides imagination into three stages: selecting elements, randomly combining them, and evaluating the combinations and final output. This gives researchers a clear structure for studying imagination. They can observe whether the children first select body parts, then combine them, and finally evaluate and present their imaginary creature.</p><p>Cognitive models are also valuable because they allow researchers to make predictions and compare those predictions with behaviour. Here, the children's behaviour followed the three stages predicted by the model. This allows the researchers to compare what they observed with the model and judge how well it represents the cognitive process of imagination.</p><p>Therefore, cognitive models are valuable because they provide a structured and testable way of understanding complex cognitive processes such as imagination.</p></div></div></div>
+      <h3>What development looks like</h3>
+      <div class="essentials-box">
+        <p><strong>Too weak:</strong> names or describes the theory without meaningfully using the scenario.</p>
+        <p><strong>Better:</strong> identifies a relevant scenario detail and connects it to the theory.</p>
+        <p style="margin-bottom:0;"><strong>Top-band direction:</strong> uses <span class="p1-detail">the scenario detail</span>, identifies <span class="p1-mech">the relevant psychological mechanism</span>, and develops <span class="p1-why">why that mechanism explains the situation</span>.</p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong><span class="p1-detail">Scenario detail</span> → <span class="p1-mech">psychological mechanism</span> → <span class="p1-why">why it matters here</span>.</strong></p>
+      </div>
+      <div class="essentials-box">
+        <p><span class="p1-teacher">Why this matters for marks</span></p>
+        <p>Relevant application can still remain partially developed: a response can use the right theory and the right scenario detail yet stay in the middle band. Description of the scenario or the theory is not enough on its own. The strongest responses develop the psychological significance of the connection — they explain what the link shows, not just that a link exists.</p>
+      </div>
+      <div class="collapsible"><button class="collapsible-trigger">Practice questions — Section B exam questions</button><div class="collapsible-body">
+        <p>Apply the psychology to the unseen situation. Official specimen questions are tagged OFFICIAL SPECIMEN QUESTION — their unseen source material is in the official specimen paper, so use the specimen booklet alongside this guide. All other questions are teacher-created practice, not official IB questions.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 1</h4>
+            <p class="p1-qtext">A student becomes ill after eating lunch in the school canteen. From then on, just walking past the canteen makes them feel nauseous. Identify the classical conditioning elements in this situation and explain how the association formed. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Identify: the neutral stimulus, the unconditioned stimulus and response, and what became conditioned. Explain: the pairing process — how a neutral stimulus becomes able to trigger the response alone. Apply every element to a concrete detail of this canteen situation, then develop why the nausea now appears without the food.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Before conditioning, the canteen environment is a neutral stimulus because it does not naturally cause nausea. The illness-producing food or event is the unconditioned stimulus (US), and the nausea caused by becoming ill is the unconditioned response (UR). Because becoming ill occurred in the canteen, the canteen environment became associated with the illness. After conditioning, the canteen becomes a conditioned stimulus (CS), and nausea when the student later walks past it is the conditioned response (CR). The student therefore feels nauseous even without eating because the canteen itself has become associated with the earlier illness.</p><p><strong>Why this is well developed:</strong> each element is tied to a specific scenario detail (canteen, sickness, walking past), and the final sentence explains the psychological significance — the response has transferred from the food to the place through pairing.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 2</h4>
+            <p class="p1-qtext">A new student joins a lunch group where everyone claims a rumour about a teacher is true. Privately the student doubts it, but publicly agrees with the group. Explain this situation using conformity research. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Identify the type of conformity and the mechanism (for example normative social influence and fear of rejection). Explain the mechanism. Apply it to the details: private doubt versus public agreement, the unanimous group, the new student's position — then develop why agreement happens despite doubt.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> This is conformity driven by normative social influence: the student outwardly agrees to gain approval and avoid rejection by an established, unanimous group. The split between private doubt and public agreement is the key detail — it shows behaviour changing without belief changing, exactly what normative pressure predicts. As a newcomer, the student is especially dependent on the group's acceptance, which strengthens the pressure. So the agreement does not show persuasion; it shows social belonging outweighing private judgment in this situation.</p><p><strong>Why this is well developed:</strong> the private/public split and the newcomer detail are each given psychological meaning, and the conclusion explains what the pattern proves about the mechanism at work here.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 3</h4>
+            <p class="p1-qtext">An office worker confidently "remembers" that the meeting room has a whiteboard, but it never did. The worker has used similar meeting rooms with whiteboards for years. Explain this memory error using schema theory. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define schema and reconstructive memory. Apply to the details: years of similar rooms (schema formation), the confident false detail (schema-consistent intrusion). Develop: why confidence does not guarantee accuracy when memory reconstructs rather than replays.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> A schema is an organised packet of knowledge built from repeated experience — here, years of meeting rooms that contained whiteboards. Memory is reconstructive: at recall, the brain rebuilds the room from the schema plus fragments, and fills gaps with what is typical. The whiteboard is a schema-consistent intrusion, not a lie and not a perception error at the time. The worker's confidence comes from the fluency of the reconstruction, which is why confidence is a poor guide to accuracy here: the very mechanism that usually makes recall efficient is what inserted the false detail.</p><p><strong>Why this is well developed:</strong> every scenario element (years of rooms, the specific false item, the confidence) is explained through the mechanism, ending on the psychological significance — why this error pattern is characteristic of schematic memory.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-official">Official specimen question</span></p>
+            <h4>Question 4</h4>
+            <p class="p1-qtext">With reference to this study, explain the value of cognitive models for understanding cognitive processes. [6]</p>
+            <p style="font-size:.85rem;color:var(--text-secondary);">This question refers to the unseen study on a three-stage model of imagination in the official specimen paper — use the specimen booklet alongside this guide. The question wording above is reproduced verbatim.</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Identify what the study proposes: the stages of the model and what each stage claims to do. Explain what a cognitive model is for. Then apply the study's specific details to each function of the model, explaining how or why they connect, and develop what the model lets the researchers do.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p>This is the same study and question used in the worked model answer (6/6) above — reveal it there to see the complete response.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-official">Official specimen question</span></p>
+            <h4>Question 5</h4>
+            <p class="p1-qtext">Explain how social learning theory could be used to achieve this goal. [6]</p>
+            <p style="font-size:.85rem;color:var(--text-secondary);">This question refers to the unseen school prosocial-behaviour situation in the official specimen paper — use the specimen booklet alongside this guide. The question wording above is reproduced verbatim.</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Identify the goal in the situation (increasing prosocial behaviour at school). Explain the social learning mechanisms available: attention to models, retention, reproduction, motivation, and vicarious reinforcement. Apply each mechanism to a concrete detail of the school situation — who models what, what gets reinforced, and how students would reproduce it — then develop why this route should change behaviour.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Strong response (model approach — teacher guidance on an official question):</strong> select specific, high-status models within the school (for example older students) performing the target prosocial acts where younger students attend to them. Make the acts retainable (clear, repeated, labelled) and reproducible (within students' capabilities), then motivate reproduction through vicarious reinforcement — visible approval or reward when models and early adopters act prosocially. Tie each step to a situation detail: the models' visibility explains attention, the reinforcement schedule explains persistence. Conclude on why observational learning fits a school-wide goal better than instructing each student individually.</p><p><strong>Why this is well developed:</strong> every SLT process is mapped onto the situation and its contribution to the goal is explained, not just listed.</p></div></div></div>
+          </div>
+          <!-- Add Question 6 here later: copy one .p1-q block above. No redesign needed. -->
+        </div>
+      </div></div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

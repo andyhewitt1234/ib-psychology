@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 2 Section A | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p2-methodgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; margin: .6rem 0 .75rem; }
+    @media (max-width: 640px) { .p2-methodgrid { grid-template-columns: 1fr; } }
+    .p2-context { font-size: .78rem; font-weight: 600; color: var(--text-secondary); margin-bottom: .35rem; }
+    .p1-mb-trigger { flex-wrap: wrap; }
+    .p1-mb-trigger .p1-official { flex-shrink: 0; font-size: .62rem; margin: 0 .5rem 0 auto; }
+    .p2-method { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); padding: .85rem 1rem; }
+    .p2-method h4 { font-size: .95rem; margin: 0 0 .2rem; }
+    .p2-method .p2-kind { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); margin-bottom: .35rem; }
+    .p2-method p { font-size: .88rem; line-height: 1.6; margin: 0 0 .35rem; }
+    .p2-method ul { margin: 0; padding-left: 1.05rem; }
+    .p2-method li { font-size: .86rem; line-height: 1.5; margin-bottom: .18rem; }
+    .p2-lensrow { display: flex; flex-wrap: wrap; gap: .35rem; margin: .5rem 0 .75rem; }
+    .p2-lens { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .2rem .6rem; font-size: .8rem; font-weight: 600; color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-2.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 2 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-2.html">Paper 2</a> <span>/</span> Section A</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 2 · Section A</p>
+      <h1>Section A</h1>
+      <p class="theory-subtitle">Class Practicals</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">4 compulsory questions, 20 marks total. Every question draws on one of your class practicals — the practical you actually carried out, with its aim and its procedure.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Section A — Class practicals</h2>
+      <p>4 compulsory questions &middot; 20 marks total.</p>
+      <p>All four questions are compulsory. The questions focus on the research methodology of your class practicals. The exam specifies the research method you must answer about, so you need to know how each of your four practicals was actually carried out.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Section A = know your class practicals in detail.</strong></p>
+        <p style="margin-bottom:.3rem;">The exam specifies a research method. Your job is to use what you actually did in your class practical to answer the question accurately and specifically.</p>
+        <p style="margin-bottom:0;font-weight:600;color:var(--primary);">The focus is the research methodology — not the psychological topic you investigated.</p>
+      </div>
+      <p style="font-size:.9rem;font-weight:700;margin:.9rem 0 .35rem;">Paper 2 Section A — what you will be asked to do</p>
+      <div class="p2-lensrow">
+        <span class="p2-lens">1a &middot; DESCRIBE — 4 marks</span>
+        <span class="p2-lens">1b &middot; EXPLAIN — 4 marks</span>
+        <span class="p2-lens">1c &middot; COMPARE &amp; CONTRAST — 6 marks</span>
+        <span class="p2-lens">1d &middot; DESIGN — 6 marks</span>
+        <span class="p2-lens">Total: 20 marks</span>
+      </div>
+      <p style="font-size:.9rem;line-height:1.7;"><strong>Know each practical in these terms:</strong> <span style="color:var(--text-secondary);">Aim &middot; Procedure &middot; Sampling/sample &middot; Sample findings &middot; Ethical considerations.</span></p>
+      <p style="font-size:.9rem;line-height:1.7;margin:.25rem 0 0;">Know these details so you can use the ones relevant to the question.</p>
+      <h3>The four class practicals</h3>
+      <p>Question 1a asks you to describe how one of these methods was used in a class practical — its aim and its procedure. The comparison below gives each method's key features to lean on.</p>
+      <div class="p2-methodgrid">
+        <div class="p2-method">
+          <h4>Questionnaire / Survey</h4>
+          <p class="p2-kind">Self-report &middot; standardised questions</p>
+          <p class="p2-context">Context: Human Relationships</p>
+          <p>Participants answer a fixed set of questions, usually with rating scales.</p>
+          <ul>
+            <li>Mostly quantitative data from Likert or rating scales.</li>
+            <li>Standardised wording and order for every participant.</li>
+            <li>Self-report: people describe their own behaviour or experience.</li>
+            <li>Not only quantitative — open questions can give qualitative data.</li>
+          </ul>
+        </div>
+        <div class="p2-method">
+          <h4>Interview</h4>
+          <p class="p2-kind">Self-report &middot; guided conversation</p>
+          <p class="p2-context">Context: Health &amp; Well-being</p>
+          <p>A researcher asks questions and records the participant's answers, usually following a schedule.</p>
+          <ul>
+            <li>Structured (fixed questions), semi-structured (schedule plus follow-up probes), or a focus group (a small group discussion).</li>
+            <li>Mainly qualitative data from spoken answers.</li>
+            <li>Good for depth and for the participant's own perspective.</li>
+            <li>Researcher presence can shape responses (interviewer bias).</li>
+          </ul>
+        </div>
+        <div class="p2-method">
+          <h4>Observation</h4>
+          <p class="p2-kind">Watching behaviour as it happens</p>
+          <p class="p2-context">Context: Human Development</p>
+          <p>Behaviour is watched and recorded, usually into behavioural categories.</p>
+          <ul>
+            <li>Naturalistic or controlled; overt or covert; participant or non-participant.</li>
+            <li>Quantitative (frequencies or counts) or qualitative (field notes).</li>
+            <li>Coding and sampling of moments must be planned in advance.</li>
+            <li>Observer bias is a risk.</li>
+          </ul>
+        </div>
+        <div class="p2-method">
+          <h4>Experiment</h4>
+          <p class="p2-kind">Manipulation under controlled conditions</p>
+          <p class="p2-context">Context: Learning &amp; Cognition</p>
+          <p>An independent variable is manipulated to measure its effect on a dependent variable.</p>
+          <ul>
+            <li>True experiment: manipulation of an IV; random allocation may be used to assign participants to conditions where the design requires allocation.</li>
+            <li>Quasi-experiment: comparison involving a naturally occurring IV or group, so participants cannot be randomly allocated to that naturally occurring variable.</li>
+            <li>Control of extraneous variables.</li>
+            <li>Quantitative measurement of the dependent variable.</li>
+            <li>Strongest support for causal claims; participant expectations need attention.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>How to answer Section A</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">The four questions below show the core wording to expect. Your answers always work from the practical you carried out, so every mark comes from specifics you can only write if you know your own practicals.</p>
+
+      <h4>Question 1a — Describe your practical [4]</h4>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Core wording:</strong></p>
+        <p style="margin-bottom:0;"><em>Describe how a (insert one of four research methods) was used in your class practical and its aim and procedure. [4]</em></p>
+      </div>
+      <p><strong>What it demands:</strong> <em>Describe</em> means give a detailed account of how the method was used in your class practical, with its aim and its procedure. The scaffold below is a way to organise your answer, not four individually allocated marks.</p>
+      <ol class="p1-steps">
+        <li><strong>1. Name the method</strong> — say which of the four methods the practical used.</li>
+        <li><strong>2. State the aim</strong> — what the practical set out to investigate.</li>
+        <li><strong>3. Describe the procedure</strong> — the specific steps in order: participants, materials, instructions, what was recorded.</li>
+        <li><strong>4. Include the method's key characteristics</strong> — the features from the comparison above that show you genuinely used that method.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><span class="p1-teacher">Sample practical — used for the model answers below</span></p>
+        <p style="margin-bottom:0;"><em>Your class practical was a questionnaire on sleep: an anonymous survey of Year 12 students about their sleep during a school week. Each school day during morning registration, students ticked a 5-point scale comparing the previous night's sleep with their usual sleep, from "much less than usual" to "much more than usual". The same questionnaire was repeated each school day so responses could be compared across the week.</em></p>
+      </div>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div><p>The method was a questionnaire/survey. The aim was to find out whether Year 12 students' perceived amount of sleep changed across a school week. The procedure used an anonymous paper questionnaire with a 5-point scale: each school day during morning registration, students ticked how the previous night's sleep compared with their usual sleep, from "much less than usual" to "much more than usual". Questionnaires were handed out to one form group at a time and collected immediately, and the same questionnaire was repeated each school day so responses could be compared across the week. The survey is a self-report method using standardised wording and the same rating scale for every participant, which turns a private judgment into data — key characteristics of the questionnaire method.</p></div></div></div>
+
+      <h4>Question 1b — Explain the concept [4]</h4>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Core wording:</strong></p>
+        <p style="margin-bottom:0;"><em>Explain the concept of (insert concept) in relation to the (research method) in your class practical. [4]</em></p>
+      </div>
+      <p><strong>What it demands:</strong> <em>Explain</em> means give a detailed account including reasons or causes. The concept can be any of the six — Bias, Causality, Change, Measurement, Perspective or Responsibility.</p>
+      <ol class="p1-steps">
+        <li><strong>1. Explain the concept</strong> — define it precisely.</li>
+        <li><strong>2. Identify the specific feature(s) of your practical</strong> — a design or procedural choice you can write about in detail.</li>
+        <li><strong>3. Make clear, detailed links</strong> — the reasons or causes that connect the feature to the concept.</li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;">For <strong>Measurement</strong>: a Likert scale in a questionnaire turns a judgment into a number. For <strong>Bias</strong>: a systematic distortion — for example, a leading question that nudges answers in one direction. Pick the feature you can develop furthest.</p>
+      </div>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div><p>Measurement is turning a psychological construct into data. In this practical the construct was perceived amount of sleep relative to usual, operationalised through a 5-point scale that compares each night with the student's usual sleep. That feature demonstrates Measurement because the scale assigns each judgment a number, so responses can be summarised and compared across participants. The reason this matters: without the scale, a statement like "I slept much less than usual" would stay a private judgment; the scale turns that judgment into data any researcher can count and compare.</p></div></div></div>
+
+      <h4>Question 1c — Compare and contrast [6]</h4>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Core wording:</strong></p>
+        <p style="margin-bottom:0;"><em>Compare and contrast the research methodology of (research method) used in your class practical with the research methodology of (insert alternative research method). [6]</em></p>
+      </div>
+      <p><strong>What it demands:</strong> 6 marks for BOTH similarities and differences, each grounded in a specific feature of the two methods. The most common mistake is describing each method separately.</p>
+      <div class="p2-lensrow">
+        <span class="p2-lens">experimental vs non-experimental</span>
+        <span class="p2-lens">quantitative vs qualitative</span>
+        <span class="p2-lens">measurement</span>
+        <span class="p2-lens">causality</span>
+        <span class="p2-lens">bias</span>
+        <span class="p2-lens">perspective</span>
+        <span class="p2-lens">responsibility</span>
+        <span class="p2-lens">sampling</span>
+        <span class="p2-lens">control</span>
+        <span class="p2-lens">type of data</span>
+      </div>
+      <ol class="p1-steps">
+        <li><strong>1. Choose your points of comparison</strong> — use the lenses above.</li>
+        <li><strong>2. State a similarity</strong> — with one concrete feature from each method.</li>
+        <li><strong>3. State a difference</strong> — with one concrete feature from each method.</li>
+        <li><strong>4. Develop both similarities and differences in detail</strong> — compare the methods directly rather than describing one method and then the other.</li>
+      </ol>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div><p>Both the questionnaire and a true experiment use standardised procedures — the survey's fixed wording and the experiment's fixed instructions keep conditions the same for everyone — and both can produce quantitative data: scale scores in the survey, measured outcomes in the experiment. However, the questionnaire is a self-report method: it records what participants say about their sleep, so it can show associations but cannot establish that one variable causes another. A true experiment manipulates an independent variable and controls relevant variables, so it can support a stronger causal inference. The survey therefore keeps the participant's own perspective at the centre, whereas an experiment gains control and the strength of causal claims at the cost of that perspective.</p></div></div></div>
+
+      <h4>Question 1d — Design a study [6]</h4>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Core wording:</strong></p>
+        <p style="margin-bottom:0;"><em>Design a research study using (insert an alternative research method) to investigate the same topic you investigated in your class practical. [6]</em></p>
+      </div>
+      <p><strong>What it demands:</strong> a full, workable design using a DIFFERENT method and the SAME topic. Your design must be workable and methodologically specific. A strong response explains the procedure accurately and in detail and uses relevant psychological terminology effectively.</p>
+      <ol class="p1-steps">
+        <li><strong>1. What</strong> — the research question or aim.</li>
+        <li><strong>2. Where and When</strong> — the setting and the timing.</li>
+        <li><strong>3. Who</strong> — the participants and how they are chosen.</li>
+        <li><strong>4. How</strong> — the procedure in detail: instructions, materials, what is recorded and how. This is what carries the marks.</li>
+        <li><strong>5. Why (optional)</strong> — why this method suits this topic.</li>
+      </ol>
+      <p><span class="p1-teacher">Teacher-created model answer</span></p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div><p>Design: an observational study of the same sleep topic, using observation rather than the questionnaire. What: whether observable signs of tiredness among Year 12 students change across the school week. Where and When: a Year 12 common room during morning breaks for the same week the questionnaire ran. Who: 60 volunteer Year 12 students, observed in their normal routine. Why: observation records observable behaviour directly — the study measures signs of tiredness, not hours slept — so it complements rather than duplicates the questionnaire. How: two observers use a structured coding sheet with behavioural categories — yawning, resting the head on the desk or table, and other clearly observable behaviour — recorded in 10-second time samples per student. Periods are coded independently by both observers and compared to check inter-observer reliability.</p></div></div></div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Practice questions — Section A exam questions</button><div class="collapsible-body">
+        <p>Try a question before revealing the guidance. Section A is built around YOUR class practicals, so adapt each question to the practical you actually carried out. All questions below are teacher-created practice in the Paper 2 format.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 1</h4>
+            <p class="p1-qtext">Describe how an interview was used in your class practical and its aim and procedure. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Name the interview method and its type (for example semi-structured). State the aim. Describe the procedure in specific steps — who was interviewed, what schedule was used, how answers were recorded. Include key characteristics such as self-report, guided conversation and follow-up probes.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> The method was a semi-structured interview. The aim was to explore how students describe their revision habits in their own words. The procedure used a short interview schedule of six open questions; each participant was interviewed one-to-one in a quiet room, answers were recorded in note form, and the interviewer could probe with follow-up questions. The interview is a self-report method built as a guided conversation, which lets participants answer in their own words — a key difference from a fixed questionnaire.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 2</h4>
+            <p class="p1-qtext">Explain the concept of bias in relation to the observation in your class practical. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define bias: a systematic distortion in what is recorded or concluded. Pick one specific feature of your observation — for example the behavioural categories you chose, or how moments were sampled. Explain how that feature could systematically favour some behaviours over others.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Bias is a systematic distortion — here, in what the observation captured. The observational schedule used categories chosen by the researchers, so behaviour that did not fit a category was not recorded. That feature demonstrates bias because the categories define what counts before the behaviour has been seen; a category list drawn up by one observer may miss actions that matter to participants themselves. The reason this matters: the record reflects the researchers' categories, so any conclusion is only as good as the decisions baked into the schedule.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 3</h4>
+            <p class="p1-qtext">Compare and contrast the research methodology of the questionnaire used in your class practical with the research methodology of an experiment. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Cover BOTH similarities and differences, each grounded in a specific feature of the two methods. Useful lenses: quantitative vs qualitative data, self-report vs manipulation, causality, control, sampling, bias, perspective. Develop both similarities and differences in detail. Compare the methods directly rather than describing one method and then the other.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Similarity: both produce quantitative data — scale scores in the questionnaire, measured outcomes in the experiment. Similarity: both use standardised procedures, so every participant meets the same instructions and the same conditions. Difference: the questionnaire is a self-report method, so its responses record what participants say about their own experience; it can show associations but cannot establish that one variable causes another. A true experiment manipulates an independent variable and controls relevant variables, so it can support a stronger causal inference. Difference: the questionnaire keeps the participant's own perspective at the centre, whereas an experiment gains control and the strength of causal claims at the cost of that perspective.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 4</h4>
+            <p class="p1-qtext">Design a research study using observation to investigate the same topic you investigated in your class practical. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Same topic, different method. Plan What (research question/aim), Where and When (setting and timing), Who (participants and sampling), Why this method (optional), and How (procedure in detail — coding, sampling, recording and reliability). A strong response explains the procedure accurately and in detail.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Design: an observational study of the same sleep topic, using observation rather than the questionnaire. What: whether observable signs of tiredness among Year 12 students change across the school week. Where and When: a Year 12 common room during morning breaks for the same week the questionnaire ran. Who: 60 volunteer Year 12 students, observed in their normal routine. Why: observation records observable behaviour directly — it measures signs of tiredness, not hours slept — so it complements rather than duplicates the questionnaire. How: two observers use a structured coding sheet with behavioural categories — yawning, resting the head on the desk or table, and other clearly observable behaviour — recorded in 10-second time samples per student. Periods are coded independently by both observers and compared to check inter-observer reliability.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 5</h4>
+            <p class="p1-qtext">Explain the concept of causality in relation to the experiment in your class practical. [4]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Define causality: claims that one variable produces an effect in another. Explain what the experiment's manipulation allows — and, if your class practical used random allocation and control, what those add. A quasi-experiment compares a naturally occurring IV or group, so it cannot randomly allocate. Contrast with what a correlation or survey would not allow. Link back to the practical's specific feature.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Causality is the claim that changes in one variable produce changes in another. The experiment manipulated an independent variable — in a true experiment, with control over relevant variables and, where the design required it, random allocation to conditions. That feature demonstrates causality because the manipulation comes before the measured outcome and the controls rule out the most plausible rival explanations, so a difference between conditions can be attributed to the independent variable. This is why the experiment can support a causal claim in a way that a correlation, which only records two variables together, cannot.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 6</h4>
+            <p class="p1-qtext">Compare and contrast the research methodology of the observation used in your class practical with the research methodology of an interview. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Cover BOTH similarities and differences, grounded in specifics. Lenses: what is recorded, who produces the record, bias, data type, perspective.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model answer</div><div class="reveal-answer"><div><p><strong>Strong response (model):</strong> Similarity: both can be designed around a schedule — an observational coding sheet and an interview schedule alike standardise what is captured. Similarity: both risk a researcher-mediated record — the observer decides category membership and the interviewer shapes follow-up probes. Difference: observation records observable behaviour directly as it happens, whereas an interview records the participant's self-reported account — their experiences, thoughts or explanations — which may be affected by memory or social desirability, depending on what they are asked. Difference: the interview can ask about experience and perspective directly, whereas the observer can only infer what a behaviour means. Observation therefore captures behaviour directly, while the interview gives access to the participant's own account of it.</p></div></div></div>
+          </div>
+          <!-- Add Question 7 here later: copy one .p1-q block above. No redesign needed. -->
+        </div>
+      </div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Official 2027 Paper 2 Section A markbands</h2>
+      <p>The descriptors below reproduce the official IB Psychology Paper 2 Section A markbands. Student-friendly guidance elsewhere on this page is separate from the official wording.</p>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">1a &middot; Knowledge and understanding — 4 marks <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>The response demonstrates limited knowledge and understanding of the research methodology relevant to the class practical.</li><li>Psychological terminology is limited or contains some inaccuracies.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>The response demonstrates detailed knowledge and understanding of the research methodology relevant to the class practical.</li><li>Psychological terminology is used accurately.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">1b &middot; Application — 4 marks <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>The knowledge and understanding of the concept is relevant but limited.</li><li>There are some relevant links between the concept and the class practical.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>The knowledge and understanding of the concept is well developed.</li><li>There are clear and detailed links between the concept and the class practical.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">1c &middot; Compare and contrast — 6 marks <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>Similarities or differences are described in limited detail or contain errors.</li><li>There is limited psychological terminology relevant to the research methods.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>Similarities and differences are explained in limited detail and may lack clarity or either similarities or differences are discussed in detail.</li><li>Psychological terminology relevant to the research methods is used, but with some inaccuracies.</li></ul></dd>
+          <dt>5–6</dt>
+          <dd><ul><li>Similarities and differences are discussed in detail.</li><li>Psychological terminology relevant to the research methods is used effectively.</li></ul></dd>
+        </dl>
+      </div></div>
+
+      <div class="collapsible"><button class="collapsible-trigger p1-mb-trigger">1d &middot; Design — 6 marks <span class="p1-official">Official IB wording</span></button><div class="collapsible-body">
+        <dl class="p1-mark">
+          <dt>0</dt>
+          <dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt>
+          <dd><ul><li>The procedure of the research method is described in limited detail or contains inaccuracies.</li><li>There is limited use of psychological terminology relevant to the research method.</li></ul></dd>
+          <dt>3–4</dt>
+          <dd><ul><li>The procedure of the research method is explained in some detail but lacks clarity.</li><li>Psychological terminology relevant to the research method is used, but with some inaccuracies.</li></ul></dd>
+          <dt>5–6</dt>
+          <dd><ul><li>The procedure of the research method is explained with accuracy and detail.</li><li>Psychological terminology relevant to the research method is used effectively.</li></ul></dd>
+        </dl>
+      </div></div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

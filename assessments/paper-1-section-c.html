@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 1 Section C | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p1-red { color: #b91c1c; }
+    .p1-green { color: #15803d; }
+    .p1-provenance { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); margin: 0 0 .4rem; }
+    .p1-ex { display: block; margin-top: .2rem; font-size: .82rem; color: var(--text-secondary); line-height: 1.55; }
+    .p1-ex-label { font-weight: 700; font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; margin-right: .35rem; }
+    .p1-cfg, .p1-path { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .5rem; margin: .5rem 0 .75rem; }
+    .p1-chip { font-weight: 800; font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; }
+    .p1-plus { color: var(--text-secondary); }
+    .p1-c1 { color: #1e56c8; }
+    .p1-c2 { color: #6d28d9; }
+    .p1-c3 { color: #0f766e; }
+    .p1-c4 { color: #92400e; }
+    .p1-decode { margin: .4rem 0 .75rem; }
+    .p1-dec-row { display: flex; flex-wrap: wrap; gap: .2rem .75rem; align-items: baseline; padding: .22rem 0; font-size: .9rem; line-height: 1.5; }
+    .p1-dec-val { font-weight: 600; }
+    .p1-prompt { font-size: .9rem; color: var(--text-secondary); font-style: italic; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-1.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 1 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-1.html">Paper 1</a> <span>/</span> Section C</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 1 · Section C</p>
+      <h1>Section C</h1>
+      <p class="theory-subtitle">Conceptual Understanding &amp; Critical Analysis</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">2 questions provided — answer ONE, 15 marks. Section C tests conceptual understanding and critical analysis of an area of study through a concept.</p>
+    </div>
+
+    <section class="theory-section">
+      <h2>Section C — Conceptual understanding and critical analysis</h2>
+      <p>2 questions provided · answer ONE · 15 marks.</p>
+      <p>The two questions are concept-based extended-response questions and each comes from a different context.</p>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>Knowledge of specific details of research studies is <span class="p1-red">not assessed</span>.</strong></p>
+      </div>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Section C <span class="p1-red">is not</span>: "write everything you know about some studies."</strong></p>
+        <p style="margin-bottom:0;"><span class="p1-green">It is this:</span> answer the actual question through the relationship between the <strong>area of study</strong> and the <strong>concept</strong>, while developing <strong>critical analysis</strong> and an <strong>argument</strong>.</p>
+      </div>
+      <h3>The Section C question pattern</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Section C questions can be worded differently, but the same elements keep appearing. Learn to identify them before you plan your answer.</p>
+      <div class="p1-cfg">
+        <span class="p1-chip p1-c1">Context / Area of study</span><span class="p1-plus">+</span>
+        <span class="p1-chip p1-c2">Concept</span><span class="p1-plus">+</span>
+        <span class="p1-chip p1-c3">Command term</span><span class="p1-plus">+</span>
+        <span class="p1-chip p1-c4">Specific focus</span>
+      </div>
+      <p style="font-size:.9rem;color:var(--text-secondary);"><span class="p1-teacher">Official specimen question</span> "In the context of human development, evaluate one or more strategies used by developmental psychologists to measure theory of mind. [15]"</p>
+      <div class="p1-decode">
+        <div class="p1-dec-row"><span class="p1-chip p1-c1">Context / Area of study</span><span class="p1-dec-val">Human Development</span></div>
+        <div class="p1-dec-row"><span class="p1-chip p1-c3">Command term</span><span class="p1-dec-val">Evaluate</span></div>
+        <div class="p1-dec-row"><span class="p1-chip p1-c2">Concept</span><span class="p1-dec-val">Measurement</span></div>
+        <div class="p1-dec-row"><span class="p1-chip p1-c4">Specific focus</span><span class="p1-dec-val">Strategies used to measure theory of mind</span></div>
+      </div>
+      <p class="p1-prompt">Before you write, ask: What is my context? What is my concept? What is my command term? What exactly am I being asked to analyse?</p>
+      <h3>How to answer Section C</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Worked example: <em>One claim in the psychology of health and well-being is that a single perspective is not enough to explain mental health. Discuss this claim with reference to one biological explanation of one or more disorders. [15]</em></p>
+      <ol class="p1-steps">
+        <li><strong>1. Address</strong> — Identify exactly what the question is asking and the central concept you must discuss.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "Is a biological perspective alone enough to explain depression?"</span></li>
+        <li><strong>2. Explain</strong> — Fully explain the relevant psychological knowledge using accurate terminology.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "Explain how genetic vulnerability may increase the risk of depression."</span></li>
+        <li><strong>3. Support</strong> — Use relevant evidence or examples. Specific research-study details are not the focus.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "Evidence suggests genetic vulnerability is associated with increased risk, particularly alongside stressful experiences."</span></li>
+        <li><strong>4. Analyse</strong> — Explain what the evidence means for the question. Consider strengths, limitations and alternatives where relevant.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "This supports a biological contribution, but it also suggests biology alone cannot fully explain depression."</span></li>
+        <li><strong>5. Connect</strong> — Keep linking the psychological content back to the concept in the question.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "This shows the limitation of relying on only one perspective."</span></li>
+        <li><strong>6. Argue</strong> — Develop a reasoned argument rather than simply describing different sides.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "A biological perspective explains vulnerability, but an interaction of biological, cognitive and environmental factors provides a stronger explanation."</span></li>
+        <li><strong>7. Conclude</strong> — Give a clear, reasoned answer that follows from the argument you have made.<span class="p1-ex"><span class="p1-ex-label">Example:</span> "Therefore, the claim is well supported: one perspective contributes useful knowledge but is insufficient on its own."</span></li>
+      </ol>
+      <div class="scenario-box">
+        <p style="margin-bottom:0;"><strong>SECTION C = KNOWLEDGE + CRITICAL ANALYSIS + CONCEPTUAL LINKS + A REASONED CONCLUSION.</strong> Do not just describe psychology or evaluate studies - keep analysing the concept in the question.</p>
+      </div>
+<h3>Worked model answer</h3>
+      <p style="font-size:.9rem;color:var(--text-secondary);">Try the worked example yourself first. Then reveal the model to see what a strong Section C response looks like.</p>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Model answer</div><div class="reveal-answer"><div><p class="p1-provenance">Teacher-created model</p><p>Major depressive disorder (MDD) is a mental disorder involving persistent low mood or loss of interest, often alongside changes in sleep, energy, concentration or feelings of worthlessness. One biological explanation of depression is genetic vulnerability: some people may inherit genes that increase their risk of developing depression. However, having a genetic vulnerability does not mean that a person will necessarily become depressed, which raises the question of whether the biological perspective is sufficient on its own.</p><p>Genetic research suggests that inherited differences can contribute to vulnerability to depression. However, genetic vulnerability does not operate in isolation: risk is greater when biological vulnerability interacts with stressful life experiences. This supports a biological contribution while also showing why biology alone is unlikely to provide a complete explanation.</p><p>This interaction can be explained by the diathesis-stress model. A diathesis is a vulnerability, such as genetic risk, while stress refers to difficult life experiences that may trigger the disorder. A person may therefore inherit a vulnerability to depression but remain mentally healthy unless significant stress activates that vulnerability. This gives a more complete explanation because it combines biological and environmental factors rather than treating either one as the single cause.</p><p>A cognitive perspective can add another part of the explanation. Beck's cognitive triad proposes that depression is associated with negative views of the self, the world and the future. These negative thoughts can become automatic and may help maintain depressive symptoms. This does not disprove genetic vulnerability; instead, it shows that thoughts and beliefs may also influence how depression develops or continues. Relying only on genes would therefore be reductionist because it could overlook important cognitive and environmental influences.</p><p>However, this does not mean that the biological perspective is unimportant. Genetic research helps explain why some people may be more vulnerable to depression than others, and biological factors may be particularly important for some individuals. The limitation is assuming that biological vulnerability is a complete explanation rather than one part of a more complex process.</p><p>Overall, the claim that a single perspective is not enough to explain mental health is well supported. Genetic vulnerability can contribute to depression, but genetic research shows that its effect depends partly on stressful life experiences, while cognitive explanations such as Beck's model identify additional psychological influences. Depression is therefore better explained by considering how biological, environmental and cognitive factors interact than by relying on one perspective alone.</p></div></div></div>
+      <div class="essentials-box">
+        <p><span class="p1-teacher">Why this is a strong response</span></p>
+        <div class="p1-path">
+          <span class="p1-chip p1-c1">Explain</span><span class="p1-plus">→</span>
+          <span class="p1-chip p1-c2">Analyse</span><span class="p1-plus">→</span>
+          <span class="p1-chip p1-c3">Broaden</span><span class="p1-plus">→</span>
+          <span class="p1-chip p1-c4">Conclude</span>
+        </div>
+        <div class="p1-decode">
+          <div class="p1-dec-row"><span class="p1-chip p1-c1">Explain</span><span class="p1-dec-val">Biological vulnerability is explained accurately.</span></div>
+          <div class="p1-dec-row"><span class="p1-chip p1-c2">Analyse</span><span class="p1-dec-val">What it can and cannot explain is considered.</span></div>
+          <div class="p1-dec-row"><span class="p1-chip p1-c3">Broaden</span><span class="p1-dec-val">Environmental and cognitive perspectives are brought in to challenge or extend the explanation.</span></div>
+          <div class="p1-dec-row"><span class="p1-chip p1-c4">Conclude</span><span class="p1-dec-val">A reasoned judgment answers the original claim.</span></div>
+        </div>
+        <p style="margin-bottom:0;font-size:.9rem;color:var(--text-secondary);">The key: the concept stays connected throughout. The answer does not simply describe psychology or evaluate studies for their own sake.</p>
+      </div>
+      <div class="collapsible"><button class="collapsible-trigger">Practice questions — Section C exam questions</button><div class="collapsible-body">
+        <p>Plan the argument before you begin writing. Official specimen questions are tagged OFFICIAL SPECIMEN QUESTION. All other questions are teacher-created practice, not official IB questions. Each follows the 2027 concept-based format: one area of study examined through one concept.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 1</h4>
+            <p class="p1-qtext">Discuss how psychological understanding of depression has developed over time, with reference to one area of study and the concept of Change. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Planning guidance</div><div class="reveal-answer"><div><p>Decide your argument first: what has changed (for example from purely biological accounts toward multifactorial explanations)? Select two or three developments that show change. For each, analyse it through Change: what shifted, why, and what it reveals. Plan a conclusion your argument actually supports.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Model approach (not a full essay):</strong> argue that understanding has broadened rather than simply replaced old ideas. Explain the biological account (genetic vulnerability, neurotransmission) accurately; analyse its limits (association versus causation, reductionism). Explain how cognitive and environmental accounts added layers rather than just contradicting biology. Throughout, connect each step to Change: what changed was the shape of explanation itself. Conclude with a reasoned judgment consistent with that line: a multifactorial, probabilistic understanding replaced single-cause certainty.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 2</h4>
+            <p class="p1-qtext">Discuss the use of measurement in psychological research, with reference to one area of study and the concept of Measurement. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Planning guidance</div><div class="reveal-answer"><div><p>Choose one area (for example health and well-being: questionnaires such as the PHQ-9). Plan points on what measurement makes possible (comparison, quantification) and its limits (validity, reliability, bias, self-report). Keep every point tied to Measurement as a concept, and plan a conclusion about what measurement can and cannot deliver.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Model approach (not a full essay):</strong> explain how constructs are operationalised into measurable indicators. Analyse strengths (standardisation, comparison across groups and time) and limits (a score is not a diagnosis; reliability does not guarantee validity; cultural and response biases). Throughout, treat Measurement as the lens: each example should answer what the act of measuring adds or distorts. Conclude with a reasoned judgment about when measurement strengthens psychological knowledge and when it misleads.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-teacher">Teacher-created practice</span></p>
+            <h4>Question 3</h4>
+            <p class="p1-qtext">Discuss whether psychological knowledge is affected by bias, with reference to one area of study and the concept of Bias. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Planning guidance</div><div class="reveal-answer"><div><p>Decide your position: where does bias enter (researchers, methods, interpretation, application)? Select examples spanning the research process. For each, analyse it through Bias: whose standard is treated as neutral, and with what consequence? Plan a conclusion that follows from your analysis.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Model approach (not a full essay):</strong> explain researcher and methodological sources of bias (for example diagnostic criteria applied across cultures, or attachment classifications treated as universal). Analyse each through Bias: what is assumed, who is disadvantaged by the assumption, and how conclusions shift once the bias is named. Keep the concept running through every paragraph rather than containing it in one. Conclude with a reasoned judgment about whether bias can be removed or only managed.</p></div></div></div>
+          </div>
+          <div class="p1-q">
+            <p><span class="p1-official">Official specimen question</span></p>
+            <h4>Question 4</h4>
+            <p class="p1-qtext">In the context of human development, evaluate one or more strategies used by developmental psychologists to measure theory of mind. [15]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Planning guidance</div><div class="reveal-answer"><div><p>Decide your line: which measurement strategies will you evaluate (for example false-belief tasks such as the Sally-Anne task, and alternatives used with younger children or autistic populations)? For each strategy, plan what it measures, what it shows, and where it falls short — sample limits, task demands confused with the capacity itself, and cultural assumptions. Keep tying each point to measurement: what does this strategy actually capture? Plan a conclusion your evaluation supports.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Model approach (not a full essay — teacher guidance on an official question):</strong> explain false-belief paradigms accurately (the child must track a belief that differs from reality and from their own knowledge). Analyse strengths (clear operationalisation, developmental progression it reveals) and limits (failure may reflect language, memory or motivation rather than absent theory of mind; performance varies across populations and task formats). Throughout, treat Measurement as the lens: each strategy is judged on what it captures versus what it claims. Conclude with a reasoned judgment about how confidently these strategies measure theory of mind.</p></div></div></div>
+          </div>
+          <!-- Add Question 5 here later: copy one .p1-q block above. No redesign needed. -->
+        </div>
+      </div></div>
+      <h3>Markband progression — student navigation aid</h3>
+      <p>This summary helps you navigate the full official rubric above. It is not a replacement for it.</p>
+      <div class="p1-compare">
+        <div class="row"><span class="band">1–3</span><span>Very limited understanding; descriptive; no relevant links; superficial or inconsistent conclusion.</span></div>
+        <div class="row"><span class="band">4–6</span><span>Some understanding; limited analysis, more descriptive than analytical; simplistic conclusion.</span></div>
+        <div class="row"><span class="band">7–9</span><span>Understanding but demands only partially addressed; analysis lacks development; conclusion not always consistent.</span></div>
+        <div class="row"><span class="band">10–12</span><span>Demands addressed; critical analysis present but lacks development; consistent conclusion.</span></div>
+        <div class="row"><span class="band">13–15</span><span>Fully explained; well-developed critical analysis; links throughout and fully explained; reasoned, clearly stated conclusion.</span></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>

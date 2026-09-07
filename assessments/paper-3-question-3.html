@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper 3 Question 3 | Assessments — IB Psychology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theory-bank.css">
+  <link rel="stylesheet" href="../css/activity.css">
+  <script src="../js/activity.js"></script>
+  <style>
+    .p1-eyebrow { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin-bottom: .25rem; }
+    .p1-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: .6rem; margin: 1rem 0 1.25rem; }
+    .p1-stat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .9rem; text-align: center; }
+    .p1-stat strong { display: block; font-size: 1.25rem; font-weight: 800; color: var(--primary); }
+    .p1-stat span { font-size: .8rem; color: var(--text-secondary); font-weight: 600; }
+    .p1-steps { list-style: none; padding: 0; margin: .6rem 0; }
+    .p1-steps li { padding: .35rem 0 .35rem .25rem; border-left: 3px solid var(--primary-light); margin-bottom: .3rem; padding-left: .7rem; font-size: .92rem; line-height: 1.6; }
+    .p1-steps li strong { color: var(--primary); }
+    .p1-official { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); background: var(--primary-light); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-teacher { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text-secondary); background: var(--bg-secondary); padding: .2rem .6rem; border-radius: 4px; margin-bottom: .5rem; }
+    .p1-mark { margin: .4rem 0 .8rem; }
+    .p1-mark dt { font-weight: 700; font-size: .92rem; margin-bottom: .2rem; }
+    .p1-mark dd { margin: 0 0 .4rem 0; font-size: .9rem; line-height: 1.65; }
+    .p1-mark dd ul { margin: .25rem 0 .25rem 1.1rem; padding: 0; }
+    .p1-mark dd li { margin-bottom: .2rem; }
+    .p1-bank { margin: .75rem 0 1.25rem; }
+    .p1-q { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin-bottom: .6rem; }
+    .p1-q h4 { font-size: .95rem; margin: 0 0 .3rem; }
+    .p1-q .p1-qtext { font-size: .92rem; line-height: 1.65; margin-bottom: .4rem; }
+    .p1-q .reveal { margin-top: .5rem; }
+    .rv-guide .reveal-question::after { content: 'Show'; }
+    .rv-guide.open .reveal-question::after { content: 'Hide'; }
+    .rv-ans .reveal-question::after { content: 'Show'; }
+    .rv-ans.open .reveal-question::after { content: 'Hide'; }
+    .reveal-question:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p1-compare { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0; }
+    .p1-compare .row { display: grid; grid-template-columns: 64px 1fr; gap: .7rem; align-items: start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .8rem; font-size: .88rem; line-height: 1.55; }
+    .p1-compare .band { font-weight: 800; color: var(--primary); white-space: nowrap; }
+    @media (max-width: 640px) { .p1-compare .row { grid-template-columns: 1fr; } }
+    .p3-nav { display: flex; flex-wrap: wrap; gap: .4rem; max-width: 780px; margin: 1.8rem auto 1.6rem; }
+    @media (max-width: 640px) { .p3-nav { margin: 1.2rem auto 1.2rem; } }
+    .p3-nav a { font-size: .82rem; font-weight: 600; color: var(--primary); background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: .3rem .8rem; text-decoration: none; transition: all .15s; }
+    .p3-nav a:hover { border-color: var(--primary); }
+    .p3-nav a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+    .p3-nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .p3-fig { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; margin: .6rem 0 .9rem; }
+    .p3-fig figcaption { font-weight: 700; font-size: .95rem; color: var(--text); margin-bottom: .15rem; }
+    .p3-fig .p3-source-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    .p3-svgwrap { overflow-x: auto; }
+    .p3-svgwrap svg { display: block; width: 100%; min-width: 440px; height: auto; font-family: inherit; }
+    .p3-fignote { font-size: .85rem; color: var(--text-secondary); line-height: 1.55; margin: .5rem 0 0; }
+    .p3-table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: .4rem 0 .5rem; }
+    .p3-table caption { font-weight: 700; font-size: .95rem; text-align: left; color: var(--text); padding-bottom: .35rem; }
+    .p3-table th, .p3-table td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; }
+    .p3-table th { background: var(--bg-secondary); color: var(--primary); font-weight: 700; }
+    .p3-chain { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: .6rem 0; }
+    .p3-chain .step { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .45rem .8rem; font-size: .8rem; font-weight: 700; color: var(--primary); }
+    .p3-chain .arrow { color: var(--text-secondary); font-weight: 700; }
+    .p3-quote { margin: 0; padding: .7rem .9rem; background: var(--bg-secondary); border-left: 3px solid var(--primary); border-radius: var(--radius); font-style: italic; line-height: 1.65; font-size: .92rem; }
+    .p3-quote .p3-attrib { display: block; margin-top: .4rem; font-style: normal; font-size: .8rem; color: var(--text-secondary); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">Mr. Hewitt's <span>IB Psychology</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../units.html">Units</a></li>
+      <li><a href="../practicals.html">Practicals</a></li>
+      <li><a href="index.html" class="active">Assessments</a></li>
+      <li><a href="../theories.html">Theory Bank</a></li>
+      <li><a href="../schedule.html">Schedule</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+    <p style="margin:0 0 .25rem;"><a href="paper-3.html" style="font-size:.86rem;font-weight:600;color:var(--primary);text-decoration:none;">&larr; Back to Paper 3 overview</a></p>
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>/</span> <a href="index.html">Assessments</a> <span>/</span> <a href="paper-3.html">Paper 3</a> <span>/</span> Question 3</div>
+
+    <div class="theory-hero">
+      <p class="p1-eyebrow">Paper 3 · Question 3</p>
+      <h1>Question 3</h1>
+      <p class="theory-subtitle">Research Considerations</p>
+      <p style="font-size:.92rem;line-height:1.7;margin-top:.5rem;max-width:700px;">6 marks. Discuss credibility, bias or transferability, applied to a qualitative source.</p>
+    </div>
+
+    <nav class="p3-nav" aria-label="Paper 3 pages">
+      <a href="paper-3.html">Overview</a>
+      <a href="paper-3-question-1.html">Q1</a>
+      <a href="paper-3-question-2.html">Q2</a>
+      <a href="paper-3-question-3.html" class="active">Q3</a>
+      <a href="paper-3-question-4.html">Q4</a>
+    </nav>
+
+    
+    <section class="theory-section">
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Question 3 concerns QUALITATIVE research considerations.</strong></p>
+        <p style="margin-bottom:0;">The question concerns qualitative research — findings may come from sources such as interviews, observations, focus groups, diaries or open-ended responses. Qualitative observation data are one example, not the definition. The exam specifies which consideration you must discuss. You do not choose.</p>
+      </div>
+      <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem; margin:.7rem 0;">
+        <p style="margin:0; font-size:.85rem; font-weight:700; color:var(--text-secondary); text-transform:uppercase; letter-spacing:.04em;">Q1 vs Q3</p>
+        <p style="margin:0; font-size:.92rem; line-height:1.6;"><strong>Q1:</strong> Explain ONE issue limiting interpretation of a graph/source. &nbsp; <strong>Q3:</strong> Discuss the SPECIFIED qualitative research consideration using source evidence. Q3 is not another generic “find a limitation” question.</p>
+      </div>
+      <p style="font-size:.92rem; line-height:1.6;">Identify which consideration the QUESTION asks about, then use details from the qualitative source to answer that specific question.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>The exam will ask ONE of these</h2>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Credibility</span><span>“Discuss how the researcher could improve the credibility of the findings.”</span></div>
+        <div class="row"><span class="band">Bias</span><span>“Discuss how the researcher could avoid bias.”</span></div>
+        <div class="row"><span class="band">Transferability</span><span>“To what extent are the findings transferable to other populations or contexts?”</span></div>
+      </div>
+      <p class="p3-note">Each prompt demands a different answer. Credibility → how to improve; Bias → how to avoid/reduce; Transferability → to what extent.</p>
+    </section>
+
+    <section class="theory-section">
+      <h2>How to answer — the core chain</h2>
+      <div class="p3-chain">
+        <span class="step">READ THE QUESTION</span><span class="arrow">&rarr;</span>
+        <span class="step">FIND RELEVANT SOURCE DETAILS</span><span class="arrow">&rarr;</span>
+        <span class="step">APPLY THE CONSIDERATION</span><span class="arrow">&rarr;</span>
+        <span class="step">EXPLAIN WHY IT MATTERS</span><span class="arrow">&rarr;</span>
+        <span class="step">ANSWER THE EXACT QUESTION</span>
+      </div>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Credibility</span><span>SOURCE DETAIL → WHAT CREDIBILITY ISSUE/OPPORTUNITY EXISTS → HOW CREDIBILITY COULD BE IMPROVED → WHY IT WOULD HELP</span></div>
+        <div class="row"><span class="band">Bias</span><span>SOURCE DETAIL → WHERE BIAS COULD ENTER → HOW THE RESEARCHER COULD REDUCE/AVOID IT → WHY IT WOULD HELP</span></div>
+        <div class="row"><span class="band">Transferability</span><span>SOURCE DETAIL → WHAT IT TELLS US ABOUT POPULATION/CONTEXT → COMPARE LIKELY CONTEXTS → WHY TRANSFER MAY/MAY NOT WORK → OVERALL EXTENT</span></div>
+      </div>
+      <p style="font-size:.9rem; line-height:1.6;">For transferability a reasoned overall judgement is especially important because the question explicitly asks “to what extent”. For credibility and bias, discuss practical, source-specific ways the researcher could improve credibility or avoid/reduce bias — a brief overall statement may help, but do not force a “to what extent” conclusion when not asked.</p>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Official IB wording — Question 3 markband</button><div class="collapsible-body">
+        <p><span class="p1-official">Official IB markband — Question 3</span></p>
+        <dl class="p1-mark">
+          <dt>0</dt><dd>The work does not reach a standard described by the descriptors below.</dd>
+          <dt>1–2</dt><dd><ul><li>Discussion shows limited understanding of the research consideration.</li><li>Reference to relevant supporting evidence from the source is limited or missing.</li></ul></dd>
+          <dt>3–4</dt><dd><ul><li>Discussion shows some understanding of the research consideration, but with some inaccuracies.</li><li>Reference to relevant supporting evidence from the source is implicit.</li></ul></dd>
+          <dt>5–6</dt><dd><ul><li>Discussion shows detailed understanding of the research consideration.</li><li>Reference to the relevant supporting evidence from the source is explicit.</li></ul></dd>
+        </dl>
+        <p class="p3-note">For 5–6: understand the consideration accurately, use SPECIFIC source details, make the connection explicit, and develop the point rather than merely naming a technique.</p>
+      </div></div>
+
+      <h3>What explicit source use looks like</h3>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Weak</span><span>“Use member checking.”</span></div>
+        <div class="row"><span class="band">Better</span><span>“The researcher could use member checking.”</span></div>
+        <div class="row"><span class="band">Developed</span><span>“The researcher could return the interview interpretations to participants and ask whether they accurately reflect their experiences. This would give participants an opportunity to correct misunderstandings, improving the credibility of the interpretation.”</span></div>
+        <div class="row"><span class="band">Source-specific</span><span>Tie that improvement to an actual feature of the source (e.g. “This study relies only on individual interviews. The researcher could add classroom observations and compare whether the same pattern appears across both methods.”)</span></div>
+      </div>
+      <div class="p1-compare">
+        <div class="row"><span class="band">General</span><span>“Triangulation can improve credibility.”</span></div>
+        <div class="row"><span class="band">Source-specific</span><span>“This study relies only on individual interviews. The researcher could add classroom observations and compare whether the same pattern appears across both methods.”</span></div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Three questions, three demands</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:.6rem;">
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem;">
+          <p style="margin:0 0 .25rem; font-weight:800; color:var(--primary);">Credibility</p>
+          <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Asks:</strong> How could it be improved?<br><strong>Think:</strong> What would make the interpretation more trustworthy?</p>
+        </div>
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem;">
+          <p style="margin:0 0 .25rem; font-weight:800; color:var(--primary);">Bias</p>
+          <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Asks:</strong> How could bias be avoided/reduced?<br><strong>Think:</strong> Where could influence enter, and what could change?</p>
+        </div>
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem;">
+          <p style="margin:0 0 .25rem; font-weight:800; color:var(--primary);">Transferability</p>
+          <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Asks:</strong> To what extent does it transfer?<br><strong>Think:</strong> How similar are other populations/settings to this one?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Credibility</h2>
+      <p>Credibility concerns how trustworthy and convincing the qualitative findings are as an account of participants’ experiences or the setting studied.</p>
+      <p class="p3-note">Not mechanically reliability, internal validity or “truth”. The source may simply not report a technique — distinguish <em>not reported</em> from <em>definitely not done</em>. No technique automatically guarantees credibility.</p>
+
+      <div class="p1-compare">
+        <div class="row"><span class="band">Member checking</span><span>Participants are invited to comment on transcripts, summaries or interpretations so the researcher can identify misunderstandings or disagreement. It may help identify errors; it does not automatically confirm findings are correct or eliminate interpretation.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> After analysing interviews about school stress, the researcher gives participants a summary of the themes and asks whether these represent their experiences accurately.</span></span></div>
+        <div class="row"><span class="band">Triangulation</span><span>Triangulation uses more than one method, data source, researcher or perspective to examine the phenomenon. Two methods do not automatically equal useful triangulation — the researcher must actually compare or integrate the evidence. Agreement may strengthen confidence; differences may reveal complexity.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> Interview students about classroom distraction AND observe classroom behaviour, then compare what the two sources suggest.</span></span></div>
+        <div class="row"><span class="band">Prolonged engagement</span><span>Spending sustained time in the research setting can help the researcher understand the context, build trust and distinguish typical patterns from one-off events. It may also reduce some forms of reactivity as participants become more accustomed to the researcher; it does not automatically eliminate reactivity.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> Instead of observing one lesson, the researcher spends several weeks in the school before drawing conclusions.</span></span></div>
+        <div class="row"><span class="band">Peer debriefing</span><span>Another knowledgeable researcher examines the developing analysis, questions assumptions and challenges interpretations. It does not guarantee an objective interpretation.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> A second researcher reviews how interview excerpts were interpreted and asks whether alternative explanations fit the data.</span></span></div>
+        <div class="row"><span class="band">Negative case analysis</span><span>The researcher deliberately searches for cases that do not fit the emerging pattern and considers whether the explanation needs revising.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> Most students say smartphones distract them, but two say phones improve concentration. The researcher analyses those contradictory cases rather than ignoring them.</span></span></div>
+        <div class="row"><span class="band">Reflexivity</span><span>The researcher reflects on how their background, role, expectations and relationship with participants may influence data collection and interpretation. It helps recognise and manage influence; it does not eliminate bias.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Example:</strong> A teacher interviewing their own students records how the teacher–student relationship could affect what students are willing to say.</span></span></div>
+      </div>
+
+      <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem; margin:.7rem 0;">
+        <p style="margin:0 0 .25rem; font-weight:700; font-size:.88rem;">Spot it → Fix it</p>
+        <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Source:</strong> One researcher coded every interview alone.<br><strong>Spot:</strong> Interpretation depends on one analyst.<br><strong>Fix:</strong> Add peer debriefing or independent scrutiny.<br><strong>Why:</strong> Alternative interpretations can be challenged.</p>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Bias</h2>
+      <p>The official question is <em>“Discuss how the researcher could avoid bias.”</em> Use: SOURCE FEATURE → POSSIBLE BIAS → PRACTICAL WAY TO REDUCE/AVOID IT → WHY IT WOULD HELP. Discuss how to reduce/avoid — even though the prompt says “avoid”, use <em>reduce / minimise / manage</em> accurately; do not claim bias can be completely eliminated or that multiple coders automatically remove bias.</p>
+
+      <div class="p1-compare">
+        <div class="row"><span class="band">Expectations</span><span><strong>Problem:</strong> Researcher expects technology to damage attention before interviews.<br><strong>Response:</strong> Reflexive notes, neutral prompts, independent scrutiny of analysis.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);"><strong>Why:</strong> Makes expectations visible and creates checks against interpreting every response in the expected direction.</span></span></div>
+        <div class="row"><span class="band">Leading questions</span><span><strong>Problem:</strong> “Why does social media make you anxious?” presupposes causation.<br><strong>Fix:</strong> “How, if at all, does social media affect how you feel?”<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);">Neutral/open phrasing reduces the extent to which the question pushes participants toward a predetermined answer.</span></span></div>
+        <div class="row"><span class="band">Reactivity</span><span><strong>Problem:</strong> Students know their teacher is interviewing them.<br><strong>Fix:</strong> Independent interviewer, confidentiality/anonymity, neutral setting, prolonged engagement where appropriate.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);">Socially desirable answers are less likely when the dual role is removed.</span></span></div>
+        <div class="row"><span class="band">Interpretation</span><span><strong>Problem:</strong> Only quotations supporting the expected theme are reported.<br><strong>Fix:</strong> Negative case analysis, transparent coding, reflexivity, peer debriefing.<br><span style="display:block; margin-top:.3rem; font-size:.84rem; color:var(--text-secondary);">Creates checks against selective reporting.</span></span></div>
+      </div>
+
+      <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem; margin:.7rem 0;">
+        <p style="margin:0 0 .25rem; font-weight:700; font-size:.88rem;">Spot it → Fix it</p>
+        <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Source:</strong> Teacher interviews own students.<br><strong>Spot:</strong> Power relationship may shape responses.<br><strong>Fix:</strong> Use an independent interviewer.<br><strong>Why:</strong> Students may feel freer to answer honestly.</p>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Transferability</h2>
+      <p>Transferability concerns the extent to which qualitative findings may be meaningful or applicable in other populations or contexts. Transferability is not the same as statistical generalisation. Qualitative studies often use small, purposive samples to understand a particular context deeply — a small sample is not automatically a failure.</p>
+      <p>The question is how similar another population/context is to the one studied, and whether the source provides enough detail to judge that similarity.</p>
+      <p>Consider: participant characteristics, setting, cultural/social context, sampling strategy, specificity of the phenomenon, thick description, similarities/differences between original and target.</p>
+
+      <h3>Thick description</h3>
+      <p>Thick description provides detailed information about the participants, setting, procedures and social/cultural context so readers can judge whether findings may apply elsewhere.</p>
+      <p style="font-size:.88rem; color:var(--text-secondary);"><strong>Example:</strong> Instead of “Students were interviewed” the source tells us ages, school type, location, relevant cultural norms, interview context.</p>
+
+      <div style="background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); padding:.7rem .9rem; margin:.7rem 0;">
+        <p style="margin:0 0 .25rem; font-weight:700; font-size:.88rem;">Source → Transfer</p>
+        <p style="margin:0; font-size:.88rem; line-height:1.5;"><strong>Source:</strong> Six students from one Helsinki school with low grading pressure.<br><strong>Similar target:</strong> students in schools with similar assessment cultures → transfer more plausible.<br><strong>Very different target:</strong> younger children in a highly exam-driven system → transfer less certain.</p>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Solved example — smartphone use in an Indonesian high school</h2>
+      <figure class="p3-fig">
+        <p class="p3-source-label">Qualitative source</p>
+        <figcaption>Extract from a study of smartphone use in a Jakarta senior high school</figcaption>
+        <blockquote class="p3-quote">
+          The study took place in an urban senior high school in Jakarta, Indonesia. Over two terms, the researcher carried out classroom observations and semi-structured interviews with 8 students and 3 teachers selected purposively. Participants described both positive effects of smartphone use (access to learning materials, quick communication) and negative effects (distraction in class, disrupted sleep).
+          <span class="p3-attrib">Research summary — qualitative findings</span>
+        </blockquote>
+      </figure>
+      <div class="scenario-box">
+        <p style="margin-bottom:.3rem;"><strong>Example question:</strong></p>
+        <p style="margin-bottom:0;"><em>To what extent are the findings transferable to other populations or contexts? [6]</em></p>
+      </div>
+      <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p>The findings are most transferable to educational settings that resemble the urban Jakarta school studied. The qualitative sample consisted of 11 participants — 8 students and 3 teachers — from one school, and all participants came from the same school community in one urban educational setting in Jakarta. School rules, norms around classroom phone use and the wider educational context may differ substantially elsewhere.</p><p>The study collected data across two terms, which provides an opportunity for prolonged engagement, and both students and teachers were included. Smartphone rules and school practices may differ elsewhere. The findings may therefore offer useful insight for comparable urban secondary schools, but transfer to very different age groups, countries or non-school settings should be made cautiously.</p></div></div></div>
+
+      <h3>The same study, the other considerations</h3>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Credibility</span><span>Using both observations and interviews <em>could</em> strengthen credibility <em>if</em> the researcher compares the findings across the two methods. The two-term period provides an opportunity for prolonged engagement.</span></div>
+        <div class="row"><span class="band">Bias</span><span>Participants <em>may</em> respond differently because they know they are being observed/interviewed; researcher interpretation <em>may</em> introduce bias unless checks such as reflexivity or peer debriefing are used.</span></div>
+        <div class="row"><span class="band">Transferability</span><span>One school, one city, one cultural/educational context and 11 participants — the findings travel only where the context is closely comparable.</span></div>
+      </div>
+    </section>
+
+    <section class="theory-section">
+      <div class="collapsible"><button class="collapsible-trigger">Question 3 exam practice</button><div class="collapsible-body">
+        <p>Each item below gives you a qualitative source and a Question 3 prompt targeting one consideration. All are teacher-created practice in the Paper 3 format. Write your answer before revealing the guidance and model approach.</p>
+        <div class="p1-bank">
+          <div class="p1-q">
+            <h4>Question 1 — Credibility</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Qualitative source</p>
+              <figcaption>Extract from a study of an app-based mindfulness programme</figcaption>
+              <blockquote class="p3-quote">
+                Ten university students followed a mindfulness app for six weeks and kept a daily diary of their mood. A student researcher then interviewed each participant once. The interviews were transcribed and analysed by the researcher alone, using a pre-set list of themes. No participant was asked to review the transcription.
+                <span class="p3-attrib">Research summary — qualitative findings</span>
+              </blockquote>
+            </figure>
+            <p class="p1-qtext">Discuss how the researcher could improve the credibility of the findings. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Identify where credibility could be improved: no participant review of transcripts/interpretations, one researcher analysing alone, and whether diary and interview themes are actually compared.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>Point 1 — Member checking:</strong> No participant reviewed transcripts/interpretations. The researcher could ask participants to review transcript summaries or interpreted themes. Participants could then identify misunderstandings or disagreement.</p><p><strong>Point 2 — Peer debriefing:</strong> One researcher analysed all material alone. Another researcher could review coding/themes and challenge interpretations, providing scrutiny beyond one analyst’s perspective.</p><p><strong>Point 3 — Triangulation:</strong> Daily diaries and interviews provide two forms of data. The researcher could explicitly compare themes from diaries with interview accounts rather than merely collecting both. Convergence or divergence across the two sources could strengthen or refine the interpretation.</p></div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <h4>Question 2 — Bias</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Qualitative source</p>
+              <figcaption>Extract from a study of how parents talk about grades</figcaption>
+              <blockquote class="p3-quote">
+                A teacher studying their own classes interviewed 12 parents about how they discuss grades at home. The interview guide emphasised whether parents "push" their children, and the researcher noted a strong expectation that effort-based talk would dominate. Extracts were chosen to illustrate this theme. Parents knew the researcher was their child's teacher.
+                <span class="p3-attrib">Research summary — qualitative findings</span>
+              </blockquote>
+            </figure>
+            <p class="p1-qtext">Discuss how the researcher could avoid bias. [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Focus on how to reduce/avoid bias: the teacher’s dual role, the loaded “push” wording, the researcher’s expectation, and selective extract choice. For each, tie a practical response explicitly to the source.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p><strong>1. Independent interviewer:</strong> Use an interviewer who is not the child’s teacher. This would reduce social desirability/reactivity created by the dual role.</p><p><strong>2. Neutral wording:</strong> Replace “push” with neutral open-ended questions. This reduces interviewer influence on participants’ responses.</p><p><strong>3. Reflexivity and independent scrutiny:</strong> Keep reflexive notes and have another researcher review coding/extract selection, including negative cases. This challenges the expectation that effort-based talk dominates and the selective reporting that follows.</p></div></div></div>
+          </div>
+
+          <div class="p1-q">
+            <h4>Question 3 — Transferability</h4>
+            <figure class="p3-fig">
+              <p class="p3-source-label">Qualitative source</p>
+              <figcaption>Extract from a study of motivation in a Finnish secondary school</figcaption>
+              <blockquote class="p3-quote">
+                Six students from one upper-secondary school in Helsinki took part in a one-year longitudinal interview study of motivation. The school's culture lay at the centre of the study: staff described an assessment culture low in external grading pressure, and students described motivation as largely internal.
+                <span class="p3-attrib">Research summary — qualitative findings</span>
+              </blockquote>
+            </figure>
+            <p class="p1-qtext">To what extent are the findings transferable to other populations or contexts? [6]</p>
+            <div class="reveal rv-guide"><div class="reveal-question" tabindex="0" role="button">Show guidance</div><div class="reveal-answer"><div><p>Consider the six students, one Helsinki school, and the distinctive low-grading-pressure culture. Judge more plausible vs less certain transfer targets.</p></div></div></div>
+            <div class="reveal rv-ans"><div class="reveal-question" tabindex="0" role="button">Show model approach</div><div class="reveal-answer"><div><p>The study involved six students from one upper-secondary school in Helsinki — a school described as having low external grading pressure and where motivation was described as largely internal.</p><p>Findings may transfer more readily to students in comparable secondary settings with similar assessment cultures. Transfer to settings with strong external grading pressure or very different educational/cultural contexts is less certain. Transferability is not statistical representativeness; the question is whether another context is similar enough for these findings to be meaningful there.</p></div></div></div>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="theory-section">
+      <h2>Common mistakes</h2>
+      <div class="p1-compare">
+        <div class="row"><span class="band">Wrong question</span><span>Answering credibility when the exam asks bias.</span></div>
+        <div class="row"><span class="band">Definition only</span><span>Defining “transferability” without applying it to the source.</span></div>
+        <div class="row"><span class="band">Generic method</span><span>“Use triangulation” without explaining what would be triangulated in this source.</span></div>
+        <div class="row"><span class="band">Invented detail</span><span>Claiming purposive sampling, leading questions or selective quotations when the source does not say so.</span></div>
+        <div class="row"><span class="band">Magic fix</span><span>Saying member checking or a second coder “eliminates bias.”</span></div>
+        <div class="row"><span class="band">Generalisation</span><span>Treating qualitative transferability as if it were statistical representativeness.</span></div>
+        <div class="row"><span class="band">No source evidence</span><span>Writing a generic methods essay without explicit source details.</span></div>
+      </div>
+    </section>
+
+<footer class="footer">
+  <p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.reveal-question').forEach(function(q) {
+    q.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); q.click(); }
+    });
+  });
+});
+</script>
+</body>
+</html>
