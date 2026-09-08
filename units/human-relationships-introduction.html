@@ -25,7 +25,15 @@
     .welcome-scenario h3 { font-size:1rem; font-weight:700; margin-bottom:.75rem; color:var(--text); }
     .welcome-scenario p { font-size:.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:.5rem; }
     .welcome-scenario p:last-child { margin-bottom:0; }
-    .welcome-finish { margin-top:2rem; font-size:.95rem; line-height:1.65; color:var(--text-secondary); font-style:italic; }
+    .welcome-finish { margin-top:1.25rem; margin-bottom:1.5rem; font-size:.95rem; line-height:1.65; color:var(--text-secondary); font-style:italic; }
+    /* Page-scoped reveal fixes — compact collapsed state, natural expanded height, correct alignment */
+    #welcome-reveal-btn .reveal { min-height:0; height:auto; }
+    #welcome-reveal-btn .reveal-answer { display:none; }
+    #welcome-reveal-btn .reveal.open .reveal-answer { display:block; }
+    .welcome-next { margin:1rem 0 .6rem; text-align:right; }
+    .welcome-next a { display:inline-block; padding:.6rem 1.2rem; background:var(--primary); color:#fff; border-radius:var(--radius); text-decoration:none; font-weight:600; font-size:.92rem; }
+    .welcome-next a:hover { background:var(--primary-dark, #1646b5); }
+    .welcome-next a:focus-visible { outline:2px solid var(--primary); outline-offset:2px; }
   </style>
 </head>
 <body>
@@ -91,13 +99,14 @@
 
       <div class="welcome-scenario">
         <h3>Imagine this&hellip;</h3>
-        <p>A student privately disagrees with an answer, but everyone else in their group confidently gives the same different answer.</p>
-        <p><strong>Why might the student give the group's answer even though they believe it is wrong?</strong></p>
+        <p>A student thinks the answer is B, but every other person in the group confidently says C.</p>
+        <p><strong>What do you think the student might do — stick with B, or change to C? Why?</strong></p>
         <p style="font-size:.82rem;color:var(--text-muted);margin-top:.75rem;">Think about the answer before clicking the button.</p>
         <div id="welcome-reveal-btn"></div>
       </div>
 
       <p class="welcome-finish">By the end of this unit, you should be able to explain why people influence one another &mdash; and how psychological, social, cultural and biological factors shape our relationships.</p>
+      <div class="welcome-next"><a href="human-relationships.html#slide-1">Next →</a></div>
     </div>
 
   </div>
@@ -108,7 +117,7 @@
 (function() {
   var btn = document.getElementById('welcome-reveal-btn');
   if (!btn) return;
-  btn.innerHTML = '<div class="reveal" onclick="this.classList.toggle(\'open\')" style="cursor:pointer;margin-top:.5rem;"><div class="reveal-question" style="font-weight:600;color:var(--primary);">Reveal Answer</div><div class="reveal-answer" style="margin-top:.5rem;padding:.75rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);font-size:.9rem;line-height:1.6;color:var(--text-secondary);"><strong style="color:var(--text);">Because other people can influence our behaviour even when they do not directly force us to do anything.</strong> The student may want to fit in, avoid standing out, or begin to doubt their own judgement because everyone else agrees. Psychologists study processes such as <strong>conformity and social influence</strong> to understand why this happens.</div></div>';
+  btn.innerHTML = '<div class="reveal" style="cursor:pointer;margin-top:.5rem;"><div class="reveal-question" style="font-weight:600;color:var(--primary);">Reveal Answer</div><div class="reveal-answer" style="margin-top:.5rem;padding:.75rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);font-size:.9rem;line-height:1.6;color:var(--text-secondary);">The student might change to C, even if they still think B is correct.<br><br>People are often influenced by the group around them. They may want to fit in, avoid being the only person who disagrees, or start wondering whether everyone else knows something they do not.<br><br>You do not need to know the psychology terms yet. In this unit, you will learn why people sometimes change their behaviour, decisions, and opinions because of other people.</div></div>';
 })();
 </script>
 </body>
