@@ -20,7 +20,7 @@
   
     /* ===== BLUEPRINT PROPAGATION: approved system, HD unit-wide ===== */
     /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
-       Quiz (slide-72) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       Quiz (slide-78) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
        fill-blank / sequencing / classification / synthesis / short-response /
        compare-contrast keep the neutral container (badge + structure carry identity). */
     [id^="slide-"] h2 {
@@ -94,11 +94,11 @@
     }
     /* Per-type container accents (blueprint rule: prediction + scenario-application
        = primary; conclude = accent; all other types neutral):
-       primary: 28/43/48/58/59/71 prediction; 39 scenario-application.
-       accent: 2/3/5/9/11/13/14/16/25/27/45/52/53/56/63/69 conclude. */
-    #slide-28 .act-container, #slide-39 .act-container, #slide-43 .act-container,
+       primary: 28/43/48/58/59/77 prediction; 39/68/70 scenario-application.
+       accent: 2/3/5/9/11/13/14/16/25/27/45/52/53/56/63/75 conclude. */
+    #slide-68 .act-container, #slide-70 .act-container, #slide-28 .act-container, #slide-39 .act-container, #slide-43 .act-container,
     #slide-48 .act-container, #slide-58 .act-container, #slide-59 .act-container,
-    #slide-71 .act-container {
+    #slide-77 .act-container {
       border-left: 3px solid var(--primary);
     }
     #slide-2 .act-container, #slide-3 .act-container, #slide-5 .act-container,
@@ -106,17 +106,17 @@
     #slide-14 .act-container, #slide-16 .act-container, #slide-25 .act-container,
     #slide-27 .act-container, #slide-45 .act-container, #slide-52 .act-container,
     #slide-53 .act-container, #slide-56 .act-container, #slide-63 .act-container,
-    #slide-69 .act-container {
+    #slide-75 .act-container {
       border-left: 3px solid var(--accent);
     }
     /* RM LESSON: live-verified very long Think/Answer questions (>200 visible
-       chars on slides 7/9/17/24/26/29/32/40/42/51/57/60/67) stack above their
+       chars on slides 7/9/17/24/26/29/32/40/42/51/57/60/73) stack above their
        Answer pill instead of squeezing beside it. QUESTION TEXT / [Answer]. */
     #slide-7 .reveal-question, #slide-9 .reveal-question, #slide-17 .reveal-question,
     #slide-24 .reveal-question, #slide-26 .reveal-question, #slide-29 .reveal-question,
     #slide-32 .reveal-question, #slide-40 .reveal-question, #slide-42 .reveal-question,
     #slide-51 .reveal-question, #slide-57 .reveal-question, #slide-60 .reveal-question,
-    #slide-67 .reveal-question {
+    #slide-73 .reveal-question {
       display: block;
     }
     #slide-7 .reveal-question::after, #slide-9 .reveal-question::after,
@@ -125,7 +125,7 @@
     #slide-32 .reveal-question::after, #slide-40 .reveal-question::after,
     #slide-42 .reveal-question::after, #slide-51 .reveal-question::after,
     #slide-57 .reveal-question::after, #slide-60 .reveal-question::after,
-    #slide-67 .reveal-question::after {
+    #slide-73 .reveal-question::after {
       display: table;
       margin-top: .5rem;
     }
@@ -227,13 +227,19 @@
         <div class="rail-dot activity-dot" data-slide="64"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">64. Development Synthesis</span></div>
         <div class="rail-dot activity-dot" data-slide="65"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">65. Human Development Synthesis Challenge</span></div>
         <div class="rail-dot activity-dot" data-slide="66"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">66. Culture and the Self</span></div>
-        <div class="rail-dot" data-slide="67"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">67. IB Concepts in Human Development</span></div>
-        <div class="rail-dot activity-dot" data-slide="68"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">68. IB Concepts in Development</span></div>
-        <div class="rail-dot activity-dot" data-slide="69"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">69. Unseen Scenario Application</span></div>
-        <div class="rail-dot" data-slide="70"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">70. Unseen Scenarios &mdash; Exam Application</span></div>
-        <div class="rail-dot activity-dot" data-slide="71"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">71. Predict: Exam Application</span></div>
-        <div class="rail-dot" data-slide="72"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">72. Retrieval Quiz</span></div>
-        <div class="rail-dot activity-dot" data-slide="73"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">73. Reflect on Your Learning</span></div>
+        <div class="rail-dot" data-slide="67"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">67. HL Extension: Culture &amp; Human Development</span></div>
+        <div class="rail-dot activity-dot" data-slide="68"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">68. Culture &amp; Development &mdash; Apply the Evidence</span></div>
+        <div class="rail-dot" data-slide="69"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">69. HL Extension: Motivation &amp; Human Development</span></div>
+        <div class="rail-dot activity-dot" data-slide="70"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">70. Motivation &amp; Development &mdash; What Is Driving the Behaviour?</span></div>
+        <div class="rail-dot" data-slide="71"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">71. HL Extension: Technology &amp; Human Development</span></div>
+        <div class="rail-dot activity-dot" data-slide="72"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">72. Technology &amp; Development &mdash; What Can We Conclude?</span></div>
+        <div class="rail-dot" data-slide="73"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">73. IB Concepts in Human Development</span></div>
+        <div class="rail-dot activity-dot" data-slide="74"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">74. IB Concepts in Development</span></div>
+        <div class="rail-dot activity-dot" data-slide="75"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">75. Unseen Scenario Application</span></div>
+        <div class="rail-dot" data-slide="76"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">76. Unseen Scenarios &mdash; Exam Application</span></div>
+        <div class="rail-dot activity-dot" data-slide="77"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">77. Predict: Exam Application</span></div>
+        <div class="rail-dot" data-slide="78"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">78. Retrieval Quiz</span></div>
+        <div class="rail-dot activity-dot" data-slide="79"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">79. Reflect on Your Learning</span></div>
         </div>
 <div class="slide" data-slide="1" id="slide-1">
 <h2>Human Development: What You Will Learn</h2>
@@ -1310,6 +1316,262 @@
 </div>
 
 <div class="slide" data-slide="67" id="slide-67">
+<h2>HL Extension: Culture &amp; Human Development</h2>
+<p class="slide-intro">HL extension: how cultural practices, values and meaning-making can shape developmental experiences &mdash; and why careful claims need careful interpretation.</p>
+<div class="collapsible"><button class="collapsible-trigger">What Does Culture Add to Human Development?</button><div class="collapsible-body">
+<p><strong>Culture</strong> describes the shared practices, values, norms, beliefs and tools that children grow up within &mdash; and that children actively participate in through day-to-day interaction.</p>
+<ul>
+<li>Cultural dimensions such as <strong>individualism</strong> and <strong>collectivism</strong> (or independent and interdependent patterns) describe tendencies observed <strong>across groups</strong>, not fixed types of individuals.</li>
+<li>Nationality, ethnicity or community should <strong>never</strong> be used to assume how a particular child will behave.</li>
+<li>Children within any cultural community vary, and many people show elements of both patterns across different situations.</li>
+</ul>
+<p>Culture is therefore best treated as a <strong>context for development</strong> rather than a label that predicts any single child.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A student writes: &ldquo;Children from collectivist cultures do not develop independent identities.&rdquo; Why is this claim problematic?</div><div class="reveal-answer"><div>It turns a group-level cultural pattern into a fixed trait of every individual &mdash; the ecological fallacy combined with cultural stereotyping. Dimensions describe tendencies observed across groups; individuals vary, and independence and interdependence are not opposites that exclude one another.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">The Ecological Fallacy</button><div class="collapsible-body">
+<p><strong>Ecological fallacy:</strong> drawing conclusions about every individual from a statistic averaged across a whole group.</p>
+<p><strong>Child-development example:</strong> a cross-cultural study may report that, on average, adolescents in Country A describe themselves with more relationship-focused terms than adolescents in Country B. That average says nothing about any particular adolescent &mdash; some in Country A will be highly individual-focused, and some in Country B highly relationship-focused.</p>
+<p>The fallacy matters in developmental psychology because group averages are easily quoted as if they described all children &mdash; which is exactly how stereotypes form.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A study finds the average autonomy score is lower in Country A than Country B. A journalist writes: &ldquo;Children in Country A lack autonomy.&rdquo; What two problems should a psychologist identify?</div><div class="reveal-answer"><div>First, the ecological fallacy: a group average is being applied to every child. Second, a measurement question: the self-report scale may not mean the same thing in both contexts, so the size of the difference may partly reflect how the construct was measured rather than a genuine difference in autonomy.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Western Models in Non-Western Contexts</button><div class="collapsible-body">
+<p>Piaget&rsquo;s stage theory, the Strange Situation and other frameworks were developed mainly in particular cultural contexts and carry some assumptions from those settings.</p>
+<ul>
+<li><strong>Piaget:</strong> the timing of some stage behaviours can be influenced by schooling and by the kinds of experience children have.</li>
+<li><strong>Vygotsky:</strong> places cultural tools and social guidance at the centre, so cognitive development is understood as culturally situated.</li>
+<li><strong>Attachment:</strong> what separation and reunion mean, and how children express needs, can differ across caregiving contexts.</li>
+</ul>
+<p><strong>Key nuance:</strong> a model may identify useful developmental processes while still requiring cultural qualification. Showing that a finding varies across cultures does <strong>not</strong> prove the underlying processes do not exist &mdash; it shows the model and its measures need careful adaptation and interpretation.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">Does evidence of cultural variation in attachment classifications disprove attachment theory?</div><div class="reveal-answer"><div>No. It shows that the measure and some assumptions carry cultural assumptions: separation may have different meanings, and the same behaviour may express different things. A strong conclusion is that attachment processes may be universal while their <strong>expression</strong> and <strong>measurement</strong> require cultural qualification &mdash; not that the theory is invalid.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Emic and Etic Approaches</button><div class="collapsible-body">
+<ul>
+<li><strong>Emic approach:</strong> studying behaviour from within a culture, using categories and meanings that are meaningful to the people living in it.</li>
+<li><strong>Etic approach:</strong> studying behaviour from outside, using categories that can be applied across cultures for comparison.</li>
+</ul>
+<p><strong>Both contribute.</strong> Comparisons need some shared measurement (etic), but imposed categories can miss local meaning. The main risk is an <strong>imposed etic</strong>: applying a framework from one setting unchanged, so that unfamiliar behaviour is mislabelled or judged deficient.</p>
+<p><strong>Example:</strong> importing a self-esteem scale word-for-word and concluding a community has low self-esteem may reflect that the items do not measure self-esteem equivalently there &mdash; not that children genuinely have low self-esteem.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A researcher uses a US-developed self-esteem questionnaire word-for-word in a new cultural context and concludes children there have unusually low self-esteem. What is the main concern?</div><div class="reveal-answer"><div>Imposed etic risk. The items may not carry the same meaning, and the way children respond may reflect communication style, language and familiarity with the task rather than low self-esteem. The conclusion assumes measurement equivalence that was never established.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Critical Thinking Chain</button><div class="collapsible-body">
+<p>Culture can influence development at every link in the research chain. Keep the whole chain in view:</p>
+<div style="text-align:center;margin:.75rem 0;padding:1rem;border:2px solid var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">CULTURE MAY INFLUENCE</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--text);">DEVELOPMENTAL EXPERIENCES</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--text);">BEHAVIOUR</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--text);">MEASUREMENT</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--text);">INTERPRETATION</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--text);">THEORIES</p>
+<p style="margin:.15rem 0;color:var(--text-muted);">&darr;</p>
+<p style="margin:.15rem 0;font-weight:700;color:var(--primary);">CONCLUSIONS</p>
+</div>
+<p>Culture may shape what children experience; experience shapes behaviour; behaviour is captured by particular measures; measures shape interpretation; interpretation feeds theories; theories shape conclusions. A problem at <strong>any</strong> link weakens the conclusion.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">Children in two cultural groups perform differently on an unfamiliar cognitive task. Can we conclude that one group is more cognitively developed?</div><div class="reveal-answer"><div>No. A performance difference may reflect familiarity with the task, language, schooling, expectations or measurement validity &mdash; or genuine differences in developed skills. The evidence alone rarely separates these. A strong answer identifies which explanation the particular evidence actually supports instead of assuming a difference in underlying ability.
+</div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Cultural dimensions are group-level patterns, not fixed types of individuals &mdash; avoid stereotypes.</li>
+<li>The ecological fallacy: an average across a group describes nobody in particular.</li>
+<li>Western models may identify useful processes but require cultural qualification &mdash; variation in findings does not disprove a theory.</li>
+<li>Emic and etic approaches both contribute; be alert to imposed etic risks when measures are imported unchanged.</li>
+<li>Follow the critical thinking chain: experiences &rarr; behaviour &rarr; measurement &rarr; interpretation &rarr; theories &rarr; conclusions.</li>
+</ol>
+</div>
+</div>
+
+<div class="slide activity-slide" data-slide="68" id="slide-68"><h2>Culture &amp; Development &mdash; Apply the Evidence</h2>
+<p class="slide-intro">Decide which cultural issue each scenario is mainly about &mdash; and consider why.</p>
+<div class="act-container" id="hd-culture-apply"></div>
+</div>
+
+<div class="slide" data-slide="69" id="slide-69">
+<h2>HL Extension: Motivation &amp; Human Development</h2>
+<p class="slide-intro">HL extension: motivation as an influence on children&rsquo;s learning, behaviour and development &mdash; before, during and after rewards.</p>
+<div class="collapsible"><button class="collapsible-trigger">The Active Child</button><div class="collapsible-body">
+<p>Children are not passive receivers of development. They <strong>explore</strong>, <strong>practise</strong>, <strong>persist</strong>, <strong>imitate</strong> and <strong>seek approval</strong>. Motivation is what gives this activity direction and energy.</p>
+<ul>
+<li>Exploring a new object is intrinsically driven curiosity.</li>
+<li>Repeating a skill until it is mastered is practice with a purpose.</li>
+<li>Approval-seeking reflects the child&rsquo;s sensitivity to social feedback.</li>
+</ul>
+<p>Motivation therefore helps explain why children engage with the world at all &mdash; the engine behind much of what developmental psychologists study.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A toddler builds and rebuilds the same block tower many times. Is this wasted effort?</div><div class="reveal-answer"><div>No. From a developmental view, repeated practice is intrinsically motivated activity through which skills and expectations are consolidated. The behaviour is explained less by the outcome (a tower) than by the drive to master and understand &mdash; that drive is motivation.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Intrinsic and Extrinsic Motivation</button><div class="collapsible-body">
+<ul>
+<li><strong>Intrinsic motivation:</strong> behaviour is driven primarily by internal reasons &mdash; enjoyment, curiosity, personal value. <strong>Example:</strong> a child reads at bedtime because they genuinely enjoy the story.</li>
+<li><strong>Extrinsic motivation:</strong> behaviour is influenced by external rewards, consequences, pressure or approval. <strong>Example:</strong> a child completes reading pages because each completed page earns game time.</li>
+</ul>
+<p><strong>Do not assume one type is always good and the other always bad.</strong> External structure can start a behaviour that later becomes personally valued, and an intrinsic drive alone does not guarantee persistence or success.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A child who first did chores only for pocket money later does them unprompted. Which process has changed?</div><div class="reveal-answer"><div>The behaviour has shifted from being maintained primarily by an external reward toward more internal reasons over time. This is a gradual process, not a switch &mdash; and it does not mean the reward was &ldquo;good&rdquo; or &ldquo;bad.&rdquo; It shows motivation is dynamic, not fixed.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Self-Determination Theory</button><div class="collapsible-body">
+<p><strong>Self-Determination Theory</strong> proposes that three psychological needs support sustained, self-directed engagement:</p>
+<ul>
+<li><strong>Autonomy</strong> &mdash; feeling the activity is genuinely chosen, not imposed.</li>
+<li><strong>Competence</strong> &mdash; feeling capable of making achievable progress.</li>
+<li><strong>Relatedness</strong> &mdash; feeling connected to and supported by others.</li>
+</ul>
+<p><strong>One continuous example:</strong> a child learning to read is more likely to keep reading when they help choose their own books (<strong>autonomy</strong>), experience success with texts that stretch them slightly (<strong>competence</strong>), and can talk about stories with family who listen and respond (<strong>relatedness</strong>).</p>
+<p>SDT predicts that when these needs are supported, engagement is more likely to be maintained &mdash; even when external rewards are removed.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">An app rewards reading with points. After the points stop, the child reads less. How should an SDT-trained psychologist interpret this?</div><div class="reveal-answer"><div>The reward supported engagement while it was present. When it stops, reading may decline if the activity has not become internally valued or if the child&rsquo;s needs for autonomy, competence and relatedness were not otherwise supported. This is not a claim that rewards &ldquo;destroyed&rdquo; motivation &mdash; the effect depends on the type of reward, the task, the context and how controlling the child experiences it.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Extrinsic Motivators in Child Social Development</button><div class="collapsible-body">
+<p>Praise, stickers, points and consequences are common in families, classrooms and apps. Over time, externally supported behaviour can become <strong>internalised</strong> &mdash; the child comes to value the activity itself.</p>
+<ul>
+<li>This internalisation is <strong>not automatic</strong> and does not happen at the same rate for every child.</li>
+<li>It depends on the <strong>type</strong> of motivator (informative feedback versus controlling threats), the <strong>context</strong>, the <strong>task</strong> and how the individual <strong>interprets</strong> the situation.</li>
+<li>Evidence of reduced interest after rewards in some conditions does <strong>not</strong> warrant the sweeping claim that &ldquo;rewards destroy motivation.&rdquo;</li>
+</ul>
+</div></div>
+<div class="reveal"><div class="reveal-question">&ldquo;Praise always undermines intrinsic motivation.&rdquo; Evaluate this claim.</div><div class="reveal-answer"><div>Too absolute. Effects depend on the type of praise (informative versus controlling), the task, the child&rsquo;s age and individual differences. Some forms of feedback support perceived competence and motivation; other forms may feel controlling. The strong answer rejects universal rules and asks about the specific condition.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Motivation Is One Part of the System</button><div class="collapsible-body">
+<p>Motivation helps explain why children engage, practise and persist &mdash; <strong>but</strong> motivation is not the only influence on development. Biological (maturation, attention, health), cognitive (beliefs about ability, prior knowledge) and sociocultural (norms, models, expectations, teaching quality) factors all play a role.</p>
+<p><strong>Conclusion:</strong> motivation helps explain why children engage, but it is <strong>not a single cause</strong> of developmental outcomes. Strong explanations combine motivational processes with what else is operating in a child&rsquo;s situation.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A teacher says: &ldquo;Motivation alone determines how much a child learns.&rdquo; Evaluate the claim.</div><div class="reveal-answer"><div>Motivation is one important influence, but learning also depends on prior knowledge, task demands, cognitive capacity, teaching quality, attention, health and environment. Claiming a single cause ignores the interacting system of developmental influences.
+</div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Motivation gives children&rsquo;s behaviour direction: intrinsic reasons come from within, extrinsic reasons from outside &mdash; neither is always better.</li>
+<li>Self-Determination Theory: autonomy, competence and relatedness support sustained engagement.</li>
+<li>Extrinsically motivated behaviour can become internalised, but the process is gradual, not automatic and not identical across children.</li>
+<li>Be cautious with &ldquo;rewards backfire&rdquo; claims &mdash; effects depend on type, context and individual interpretation.</li>
+<li>Motivation is one part of a wider developmental system, not a single cause.</li>
+</ol>
+</div>
+</div>
+
+<div class="slide activity-slide" data-slide="70" id="slide-70"><h2>Motivation &amp; Development &mdash; What Is Driving the Behaviour?</h2>
+<p class="slide-intro">Analyse each situation and decide which motivational process is most relevant.</p>
+<div class="act-container" id="hd-motivation-apply"></div>
+</div>
+
+<div class="slide" data-slide="71" id="slide-71">
+<h2>HL Extension: Technology &amp; Human Development</h2>
+<p class="slide-intro">HL extension: technology as a possible influence on the developing self, attachment and learning &mdash; and how to reason carefully about the evidence.</p>
+<div class="collapsible"><button class="collapsible-trigger">Technology and the Developing Self</button><div class="collapsible-body">
+<p>For many adolescents, <strong>self-presentation</strong>, <strong>feedback</strong> (likes and comments), <strong>social comparison</strong>, <strong>belonging</strong> and <strong>identity exploration</strong> partly take place online.</p>
+<ul>
+<li>Digital environments can shape how identity is presented, compared and evaluated.</li>
+<li>Online contexts can add to the settings in which young people try out and reflect on who they are.</li>
+</ul>
+<p><strong>Critical caution:</strong> do not claim social media &ldquo;creates&rdquo; a self. Identity develops through ongoing interaction across many contexts &mdash; online settings are one influence among several, not a single cause.</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">A headline states: &ldquo;Instagram creates teenagers&rsquo; identities.&rdquo; Evaluate the claim.</div><div class="reveal-answer"><div>It overclaims. Platforms may shape how identity is presented and socially compared, but identity construction is a long process involving relationships, family, school and culture. The claim also treats correlational evidence as if it showed a single causal mechanism. Stronger language: online platforms may influence identity development rather than create it.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Technology and Attachment</button><div class="collapsible-body">
+<p><strong>Video calls:</strong> infants and young children can recognise and respond to far-away caregivers through screens (for example, a parent working away from home). Video contact can therefore support relationships across distance.</p>
+<p><strong>Caregiver distraction:</strong> some research has looked at caregivers using phones while caring for a toddler. Findings show associations with reduced attention and interaction in the moment.</p>
+<ul>
+<li>Distraction during a short observation is <strong>not</strong> evidence of insecure attachment.</li>
+<li>Attachment classification depends on the broader pattern of behaviour, especially how the child uses the caregiver as a secure base and responds at reunion.</li>
+<li>Association is not causation: caregiver stress, workload or family circumstances could influence both phone use and child behaviour.</li>
+</ul>
+</div></div>
+<div class="reveal"><div class="reveal-question">A study finds that caregivers who checked phones more often had toddlers who showed more resistant behaviour during an observation. Can we conclude phone use caused insecure attachment?</div><div class="reveal-answer"><div>No. This is an association from a limited observation. &ldquo;Attachment&rdquo; was not fully assessed, direction is ambiguous, and third variables such as caregiver stress or family circumstances may influence both phone use and child behaviour. The evidence justifies cautious, associative language &mdash; not a claim of causation.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Screen Time Is Not One Variable</button><div class="collapsible-body">
+<p>&ldquo;Screen time&rdquo; bundles very different activities: a video call with a grandparent, an educational app, gaming, passive clips, homework and messaging peers. These affect development through different mechanisms &mdash; so sweeping claims such as &ldquo;screen time damages development&rdquo; are too broad to be psychologically useful.</p>
+<p><strong>A stronger psychological question is:</strong> Which technology? How is it used? At what age? With whom? For how long? What is it replacing? With what outcome?</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">&ldquo;Screen time damages children&rsquo;s development.&rdquo; Why is this claim too broad to be useful?</div><div class="reveal-answer"><div>Because &ldquo;screen time&rdquo; is not one behaviour. A video call with a relative, an educational task, gaming and passive viewing involve different processes. The strong claim treats very different activities as a single variable. Replacing it with specific questions (which technology, how, with whom, how long, replacing what, with what outcome) makes the claim testable.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">AI as a Tool for Testing Developmental Models</button><div class="collapsible-body">
+<p><strong>AI models</strong> can formalise and simulate developmental processes, making assumptions explicit and generating testable predictions &mdash; for example, models of language acquisition or of strategies children use in tasks.</p>
+<p>They are useful thinking tools, but three limits stay central:</p>
+<ul>
+<li><strong>Similar performance is not the same psychological process.</strong> A model that succeeds at a task may do so through entirely different computations.</li>
+<li>The <strong>learning mode</strong> differs: models are trained on data in ways that do not reproduce a child&rsquo;s embodied, social, maturational experience.</li>
+<li>Models <strong>do not reproduce</strong> attachment relationships, culture, embodiment or the lived experience of developing.</li>
+</ul>
+<p>Always ask of an AI demonstration: How does it learn? What experience does it assume? What is left out?</p>
+</div></div>
+<div class="reveal"><div class="reveal-question">&ldquo;An AI model that solves conservation tasks better than most six-year-olds has the same cognitive development as a six-year-old.&rdquo; Evaluate the claim.</div><div class="reveal-answer"><div>No. Similar output does not demonstrate the same underlying process. The model&rsquo;s learning mode and assumptions differ fundamentally from a child&rsquo;s embodied, social and maturational development. The claim confuses a model&rsquo;s performance with the development of a human mind.
+</div></div>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Research Problems in Technology and Development</button><div class="collapsible-body">
+<p>Evidence on technology and development has recurring problems that a careful psychologist always considers:</p>
+<ul>
+<li>Most findings are <strong>correlational</strong> &mdash; association alone cannot establish causation.</li>
+<li><strong>Self-selection:</strong> children who already behave or feel differently may choose different technology use.</li>
+<li><strong>Rapidly changing technology</strong> makes findings date quickly.</li>
+<li><strong>Measurement:</strong> self-reported screen time is unreliable, and different measures ask different questions.</li>
+<li><strong>Sampling bias:</strong> convenience samples may not represent the population.</li>
+<li><strong>Bidirectional ambiguity:</strong> the same correlation can be read in more than one direction.</li>
+</ul>
+<p><strong>Social media and self-esteem example:</strong> a survey finds that teenagers who spend more time on social media report lower average self-esteem. The same correlation fits at least four stories:</p>
+<div style="text-align:left;margin:.5rem 0 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">WHY THE SAME CORRELATION FITS FOUR STORIES</p>
+<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; MORE SOCIAL MEDIA USE &rarr; LOWER SELF-ESTEEM</p>
+<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; LOWER SELF-ESTEEM &rarr; MORE SOCIAL MEDIA USE</p>
+<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; BOTH INFLUENCE EACH OTHER</p>
+<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; A THIRD VARIABLE (FOR EXAMPLE SLEEP OR OFFLINE RELATIONSHIPS) INFLUENCES BOTH</p>
+<p style="margin:.15rem 0;color:var(--text);">An association alone cannot distinguish these possibilities.</p>
+</div>
+</div></div>
+<div class="reveal"><div class="reveal-question">A survey shows that teenagers who spend more time on social media report lower average self-esteem. Does this prove social media lowered self-esteem?</div><div class="reveal-answer"><div>No. The finding is correlational and fits at least four explanations: social media use lowers self-esteem, lower self-esteem leads to more use, both influence each other, or a third variable such as poor sleep or weak offline relationships influences both. Strong evidence would require designs that track individuals over time or manipulate the variable while controlling others.
+</div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Culture, Motivation and Technology Interact</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE asks:</strong> which behaviours, relationships and learning practices are valued in this child&rsquo;s community?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION asks:</strong> does the child want to engage, feel capable, and see the activity as genuinely chosen?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY asks:</strong> what does the technology actually do, and how is it being used?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0;">These extensions <strong>interact</strong>. Human development is rarely explained by one factor operating alone.</p>
+</div>
+<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
+<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">HL Thinking Prompt &mdash; Exam Preparation</h4>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem;">&ldquo;Discuss the influence of culture, motivation or technology on human development.&rdquo;</p>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem;">A strong response should: (1) identify the relevant HL extension; (2) explain the psychological mechanism; (3) apply the idea specifically to human development; (4) support the argument with relevant evidence or examples; (5) evaluate limitations or alternative explanations; (6) avoid deterministic claims that a single influence permanently fixes outcomes; and (7) reach a justified conclusion.</p>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0;">There is no memorised template: adapt the argument to the question and the evidence.</p>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Technology may influence self-presentation and identity exploration &mdash; influence, not creation.</li>
+<li>Caregiver distraction is not evidence of insecure attachment; classification depends on the broader pattern.</li>
+<li>&ldquo;Screen time&rdquo; is not one variable &mdash; ask which technology, how, at what age, with whom, how long, replacing what, with what outcome.</li>
+<li>AI can help test developmental models, but similar performance is not the same psychological process.</li>
+<li>Much evidence is correlational and self-selected; bidirectional and third-variable explanations must be considered.</li>
+<li>HL synthesis: culture, motivation and technology interact &mdash; development is rarely explained by one factor alone.</li>
+</ol>
+</div>
+</div>
+
+<div class="slide activity-slide" data-slide="72" id="slide-72"><h2>Technology &amp; Development &mdash; What Can We Conclude?</h2>
+<p class="slide-intro">Evaluate each claim: spot the reasoning problem and choose the stronger conclusion.</p>
+<div class="act-container" id="hd-tech-evaluate"></div>
+</div>
+
+<div class="slide" data-slide="73" id="slide-73">
 <h2>IB Concepts in Human Development</h2>
 <p class="slide-intro">Six theoretical tools for analysing evidence and claims.</p>
 <div class="collapsible"><button class="collapsible-trigger">Bias</button><div class="collapsible-body"><p><strong>Bias</strong> refers to systematic influences that may distort psychological research, interpretation or conclusions.</p>
@@ -1412,19 +1674,19 @@
 </div>
 </div>
 
-<div class="slide activity-slide" data-slide="68" id="slide-68"><h2>IB Concepts in Development</h2>
+<div class="slide activity-slide" data-slide="74" id="slide-74"><h2>IB Concepts in Development</h2>
 <p class="slide-intro">Sort each development research example under the IB concept it best illustrates.</p>
 <div class="act-container" id="hd-concepts-classify"></div>
 </div>
 
-<div class="slide activity-slide" data-slide="69" id="slide-69"><h2>Unseen Scenario Application</h2>
+<div class="slide activity-slide" data-slide="75" id="slide-75"><h2>Unseen Scenario Application</h2>
 <p class="slide-intro">Apply your knowledge to these exam-style scenarios.</p>
 <div class="act-container" id="hd-exam-scenarios"></div>
 </div>
 
 
 
-<div class="slide" data-slide="70" id="slide-70">
+<div class="slide" data-slide="76" id="slide-76">
 <h2>Unseen Scenarios &mdash; Exam Application</h2>
 <p class="slide-intro">Applying HD knowledge to novel exam-style situations.</p>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-bottom:1.5rem;"><p style="font-size:.9rem;color:var(--text);margin:0 0 .5rem;"><strong>Exam method:</strong> start with the scenario, not the researcher. Explain the psychology that genuinely explains what is happening.</p>
@@ -1523,13 +1785,13 @@
 </div>
 </div>
 
-<div class="slide activity-slide" data-slide="71" id="slide-71"><h2>Predict: Exam Application</h2>
+<div class="slide activity-slide" data-slide="77" id="slide-77"><h2>Predict: Exam Application</h2>
 <p class="slide-intro">Predict the strongest application of HD knowledge to exam scenarios.</p>
 <div class="act-container" id="hd-exam-pred"></div>
 </div>
 
 
-<div class="slide quiz-slide" data-slide="72" id="slide-72">
+<div class="slide quiz-slide" data-slide="78" id="slide-78">
 <h2>Retrieval Quiz</h2>
 <p class="slide-intro">Test your knowledge across the entire unit.</p>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Before you start</h4><p style="font-size:.88rem;color:var(--text-secondary);margin:0;">Sixteen questions sample the whole unit: brain maturation and plasticity, critical and sensitive periods, Piaget and Vygotsky, Theory of Mind, attachment, enculturation and the self, peer influence, resilience, and the IB concepts. Answer each question before revealing the feedback.</p></div>
@@ -1550,7 +1812,7 @@
 </div>
 
 
-<div class="slide activity-slide" data-slide="73" id="slide-73"><h2>Reflect on Your Learning</h2>
+<div class="slide activity-slide" data-slide="79" id="slide-79"><h2>Reflect on Your Learning</h2>
 <p class="slide-intro">Identify the concept that mattered most to you.</p>
 <div class="act-container" id="hd-reflect-short"></div>
 </div><!-- /slide-32 -->
@@ -1559,7 +1821,7 @@
 
       <div class="lesson-nav-bottom">
         <button class="btn-prev-slide" id="prev-btn">&larr; Previous</button>
-        <span class="slide-counter" id="slide-counter">1 / 73</span>
+        <span class="slide-counter" id="slide-counter">1 / 79</span>
         <button class="btn-next-slide" id="next-btn">Next &rarr;</button>
       </div>
     </div><!-- /lesson-content -->
@@ -2420,6 +2682,92 @@ window.addEventListener('DOMContentLoaded',function(){if(typeof initQuiz==='func
         'Provides a clear justification for its personal importance'
       ]
     });
+
+  initActivity('hd-culture-apply', {
+      type: 'scenario-application',
+      title: 'Culture and Development \u2014 Apply the Evidence',
+      subtitle: 'Decide which cultural issue each scenario is mainly about \u2014 and consider why.',
+      hints: ['Ask whether a group average is being applied to individuals.','Ask whether a framework from one setting is being used unchanged in another.','A performance difference between groups is not automatically a difference in underlying ability.'],
+      questions: [
+        { label: 'A study reports that, on average, adolescents in Country A describe themselves with more relationship-focused terms than adolescents in Country B. A politician concludes this proves every adolescent in Country A cares only about relationships. What is the main reasoning problem?',
+          options: ['Group averages describe every child in the group','The ecological fallacy: a group average is being treated as if it described every individual','The sample was too large to measure any difference','The questionnaire measured cognitive ability rather than self-concept'],
+          correct: 1,
+          feedback: { correct: 'Correct. Group averages describe nobody in particular; applying the average to every individual is the ecological fallacy.', incorrect: 'The average is being applied to every individual, which is the ecological fallacy. An average never describes a particular child.' } },
+        { label: 'A therapist applies a US-developed developmental checklist word-for-word to a family from a non-Western background and judges the child\'s milestones deficient. Which concept best describes the risk?',
+          options: ['Emic understanding of the family','Ecological validity of the laboratory','Imposed etic: a framework from one setting applied unchanged','Social desirability in the answers'],
+          correct: 2,
+          feedback: { correct: 'Correct. Importing a framework unchanged and judging local behaviour against it is an imposed etic risk.', incorrect: 'The problem is a framework from one setting applied unchanged to another \u2014 the imposed etic risk.' } },
+        { label: 'Researchers adapting the Strange Situation for a new cultural context discuss what separation means to families there and pilot modified procedures before classifying attachment. This work is best described as:',
+          options: ['Imposed etic: a framework applied unchanged','A correlational design','A critical period','An emic adaptation designed to improve cultural validity'],
+          correct: 3,
+          feedback: { correct: 'Correct. Adapting procedures and checking local meaning is an emic approach designed to improve cultural validity.', incorrect: 'Adapting the procedure to local meaning is an emic approach aimed at cultural validity \u2014 not an imposed etic.' } },
+        { label: 'Children from two cultural groups perform differently on an unfamiliar picture-based task. What is the strongest conclusion?',
+          options: ['One group is clearly more cognitively developed','The task may not measure the same ability in both groups, so the difference cannot be interpreted as developmental superiority','Performance differences always reflect genuine ability differences','Differential scoring proves the test was biased'],
+          correct: 1,
+          feedback: { correct: 'Correct. Familiarity, language, schooling and measurement validity could explain the difference; it does not establish superiority.', incorrect: 'A difference on one unfamiliar task cannot be assumed to reflect underlying ability. Measurement validity and familiarity must be considered first.' } },
+        { label: 'An advertisement describes children from one region as having \u201cno sense of self because they value family.\u201d Which reasoning errors are present?',
+          options: ['Only a measurement error','A correctly applied etic framework','Proof that culture caused self-concept','Stereotyping and the ecological fallacy: group-level patterns are treated as fixed individual traits'],
+          correct: 3,
+          feedback: { correct: 'Correct. Group-level cultural patterns are being treated as fixed traits of every individual, which is stereotyping plus the ecological fallacy.', incorrect: 'The claim turns a group pattern into a fixed individual trait. That is stereotyping and the ecological fallacy.' } },
+        { label: 'A cross-cultural study concludes children in Country A form poorer attachments because more are classified resistant on the Strange Situation. What must researchers check before accepting the conclusion?',
+          options: ['Whether the procedure measures attachment equivalently in both cultures and whether one behavioural standard is being assumed as universal','Whether the two samples included the same number of boys and girls','Whether the children enjoyed the laboratory','Whether the researchers used inferential statistics'],
+          correct: 0,
+          feedback: { correct: 'Correct. Measurement equivalence and the assumption of a universal behavioural standard are exactly the questions to ask.', incorrect: 'The key question is whether the measure is culturally equivalent and whether one behavioural pattern is being treated as the universal standard.' } }
+      ]
+    });
+
+  initActivity('hd-motivation-apply', {
+      type: 'scenario-application',
+      title: 'Motivation and Development \u2014 What Is Driving the Behaviour?',
+      subtitle: 'Analyse each situation and decide which motivational process is most relevant.',
+      hints: ['Ask where the drive comes from: the child\u2019s own reasons or an outside pressure.','Autonomy is about genuine choice, competence is about achievable progress, relatedness is about support from others.','When motivation is present but behaviour changes, consider the wider system of influences, not a single cause.'],
+      questions: [
+        { label: 'A child spends free time drawing because she genuinely enjoys it. Which process best fits?',
+          options: ['Intrinsic motivation','Extrinsic motivation','Competence','Autonomy'],
+          correct: 0,
+          feedback: { correct: 'Correct. The behaviour is driven by enjoyment and personal interest, which is intrinsic motivation.', incorrect: 'The drive comes from her own enjoyment and interest, which points to intrinsic motivation.' } },
+        { label: 'A child completes homework only when a parent adds thirty minutes of game time for each completed page. Which process best fits?',
+          options: ['Relatedness','Autonomy','Extrinsic motivation','Intrinsic motivation'],
+          correct: 2,
+          feedback: { correct: 'Correct. The behaviour depends on an external consequence, which makes it extrinsic motivation.', incorrect: 'The behaviour is maintained by an external reward, which is extrinsic motivation.' } },
+        { label: 'A teacher lets each child choose their own book from a set of five slightly challenging options. Which Self-Determination Theory need does the choice support?',
+          options: ['Competence','Autonomy','Relatedness','Intrinsic motivation'],
+          correct: 1,
+          feedback: { correct: 'Correct. Being able to choose genuinely supports autonomy, the feeling of self-direction.', incorrect: 'The key feature is the child choosing for themselves, which supports autonomy.' } },
+        { label: 'After struggling to ride a bike for one afternoon, a child says \u201cI can\u2019t do this\u201d and gives up. Which SDT need was most likely undermined?',
+          options: ['Relatedness','Autonomy','Intrinsic motivation','Competence'],
+          correct: 3,
+          feedback: { correct: 'Correct. Without any experience of achievable progress, the child\u2019s sense of competence collapsed.', incorrect: 'The child experienced no progress, so the undermined need is competence: feeling capable of succeeding.' } },
+        { label: 'A child keeps practising a difficult piano piece and explains: \u201cMy grandmother claps every time I play it for her.\u201d Which SDT need best explains the persistence?',
+          options: ['Autonomy','Competence','Relatedness','Extrinsic motivation'],
+          correct: 2,
+          feedback: { correct: 'Correct. Connection and warm support from another person is relatedness.', incorrect: 'The persistence is sustained by warmth and connection from someone who cares, which is relatedness.' } },
+        { label: 'A point-based reading reward is removed, and during the holiday the child reads less. What is the most accurate conclusion?',
+          options: ['The reward permanently destroyed the child\u2019s motivation','The reward supported engagement while present; the motivation may not yet have become internalised','The child never experienced any motivation to read','Extrinsic rewards always undermine intrinsic motivation'],
+          correct: 1,
+          feedback: { correct: 'Correct. The reward supported engagement while it lasted; after it stops, reading may decline until the activity becomes internally valued. No universal \u201crewards backfire\u201d claim is justified.', incorrect: 'The nuanced conclusion is that the reward supported engagement while present and motivation had not yet been fully internalised \u2014 not that rewards permanently destroyed it.' } },
+        { label: 'A child excels at maths and practises daily. A parent concludes that intrinsic motivation alone caused the achievement. Which conclusion is most accurate?',
+          options: ['Intrinsic motivation alone caused the achievement','The achievement had no environmental influences','Motivation is one influence, but ability, teaching, prior knowledge and environment also contributed','Daily practice proves self-regulation in every area of life'],
+          correct: 2,
+          feedback: { correct: 'Correct. Motivation helps explain engagement, but achievement comes from an interacting system of influences, not a single cause.', incorrect: 'Motivation is one part of the system. Ability, teaching, prior knowledge and environment also contribute to achievement.' } }
+      ]
+    });
+
+  initActivity('hd-tech-evaluate', {
+      type: 'spot-confound',
+      title: 'Technology and Development \u2014 What Can We Conclude?',
+      subtitle: 'Spot the reasoning problem in each claim about technology and child development.',
+      hints: ['A correlation between two variables does not show which caused which, or whether a third variable matters.','Popularity and downloads are not the same as evidence of effectiveness.','Similar performance or behaviour is not the same as the same underlying psychological process.'],
+      items: [
+        { id: 'te1', text: 'Children who watch more educational videos score higher on vocabulary tests, so screen time improves children\'s learning', isProblem: true, explain: 'This moves from correlation to causation and treats all screen time as one variable. Vocabulary scores may reflect the home literacy environment, parents talking with children or the specific content \u2014 not screen time in general. A stronger conclusion stays associational and asks which technology, used how, with whom.' },
+        { id: 'te2', text: 'An app claims its brain-training games sharpen young children\'s thinking because thousands of families have downloaded it', isProblem: true, explain: 'Downloads measure popularity, not effectiveness. There is no control group, no measured outcome and no evidence of improvement in thinking. A stronger claim would compare children who used the games against a comparison group on a valid measure.' },
+        { id: 'te3', text: 'Parents who checked phones more during a play observation had toddlers who showed more resistant behaviour, so phone use around children damages attachment', isProblem: true, explain: 'A brief observation of distraction cannot classify attachment, which depends on the broader pattern and especially reunion behaviour. The finding is correlational, direction is ambiguous, and caregiver stress or family circumstances may influence both phone use and child behaviour.' },
+        { id: 'te4', text: 'A child presents very differently online than in person, proving social media creates a false self', isProblem: true, explain: 'The word proving reaches beyond what observation shows. Presenting differently in different settings is common for everyone, and online contexts are one influence on identity \u2014 not a single creator of a person\'s self. A stronger claim about influence requires evidence of mechanism, not an observation alone.' },
+        { id: 'te5', text: 'An experiment randomly assigned children to video calls or audio-only calls with a distant grandparent, and the video group showed more social interaction, so video calls supported interaction in this study', isProblem: false, explain: 'Random assignment with a comparison group supports a causal interpretation within this sample. Strong conclusions still qualify: the finding concerns a specific activity, context and measure, and may not generalise to every use of video technology.' },
+        { id: 'te6', text: 'A large survey found a moderate correlation between time on social media and self-esteem scores in a sample of adolescents, and the researchers reported it as an association rather than a cause', isProblem: false, explain: 'This stays within the evidence: an associational claim, qualified to the sample, without causal language. The next step would be asking about measurement, direction and possible third variables.' }
+      ]
+    });
+
 
   })();
 </script>

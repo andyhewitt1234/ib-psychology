@@ -18,7 +18,7 @@
   
     /* ===== BLUEPRINT PROPAGATION: approved system, LC unit-wide ===== */
     /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
-       Quiz (slide-55) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       Quiz (slide-61) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
        analysis / classification / sequencing / synthesis / short-response keep the
        neutral container (badge + structure carry identity), per blueprint rule.
        The custom Working Memory widget (#lc-p14-wm-widget, slide-28) is EXCLUDED
@@ -94,22 +94,22 @@
     }
     /* Per-type container accents (blueprint rule: prediction + scenario-application
        = primary; conclude = accent; all other types neutral):
-       primary: 14/22/32 prediction + 23 scenario-application slides.
+       primary: 14/22/32 prediction + 25 scenario-application slides.
        accent: 15 conclude slides. */
-    #slide-4 .act-container, #slide-7 .act-container, #slide-8 .act-container, #slide-11 .act-container, #slide-12 .act-container, #slide-13 .act-container, #slide-14 .act-container, #slide-16 .act-container, #slide-19 .act-container, #slide-20 .act-container, #slide-21 .act-container, #slide-22 .act-container, #slide-23 .act-container, #slide-24 .act-container, #slide-32 .act-container, #slide-35 .act-container, #slide-36 .act-container, #slide-40 .act-container, #slide-41 .act-container, #slide-42 .act-container, #slide-43 .act-container, #slide-44 .act-container, #slide-45 .act-container, #slide-46 .act-container, #slide-49 .act-container, #slide-50 .act-container {
+    #slide-4 .act-container, #slide-7 .act-container, #slide-8 .act-container, #slide-11 .act-container, #slide-12 .act-container, #slide-13 .act-container, #slide-14 .act-container, #slide-16 .act-container, #slide-19 .act-container, #slide-20 .act-container, #slide-21 .act-container, #slide-22 .act-container, #slide-23 .act-container, #slide-24 .act-container, #slide-32 .act-container, #slide-35 .act-container, #slide-36 .act-container, #slide-40 .act-container, #slide-41 .act-container, #slide-42 .act-container, #slide-43 .act-container, #slide-44 .act-container, #slide-46 .act-container, #slide-48 .act-container, #slide-51 .act-container, #slide-52 .act-container, #slide-55 .act-container, #slide-56 .act-container {
       border-left: 3px solid var(--primary);
     }
-    #slide-3 .act-container, #slide-5 .act-container, #slide-9 .act-container, #slide-15 .act-container, #slide-25 .act-container, #slide-27 .act-container, #slide-29 .act-container, #slide-30 .act-container, #slide-31 .act-container, #slide-33 .act-container, #slide-34 .act-container, #slide-37 .act-container, #slide-39 .act-container, #slide-47 .act-container, #slide-48 .act-container {
+    #slide-3 .act-container, #slide-5 .act-container, #slide-9 .act-container, #slide-15 .act-container, #slide-25 .act-container, #slide-27 .act-container, #slide-29 .act-container, #slide-30 .act-container, #slide-31 .act-container, #slide-33 .act-container, #slide-34 .act-container, #slide-37 .act-container, #slide-39 .act-container, #slide-53 .act-container, #slide-54 .act-container {
       border-left: 3px solid var(--accent);
     }
     /* RM LESSON: live-verified very long Think/Answer questions (>200 visible
-       chars on slides 1/3/9/13/17/21/27/29/35/41/43/45/49/53) stack above their
+       chars on slides 1/3/9/13/17/21/27/29/35/41/43/45/47/49/51/55/59) stack above their
        Answer pill instead of squeezing beside it. QUESTION TEXT / [Answer]. */
     #slide-1 .reveal-question, #slide-3 .reveal-question, #slide-9 .reveal-question,
     #slide-13 .reveal-question, #slide-17 .reveal-question, #slide-21 .reveal-question,
     #slide-27 .reveal-question, #slide-29 .reveal-question, #slide-35 .reveal-question,
-    #slide-41 .reveal-question, #slide-43 .reveal-question, #slide-45 .reveal-question,
-    #slide-49 .reveal-question, #slide-53 .reveal-question {
+    #slide-41 .reveal-question, #slide-43 .reveal-question, #slide-45 .reveal-question, #slide-47 .reveal-question, #slide-49 .reveal-question, #slide-51 .reveal-question,
+    #slide-55 .reveal-question, #slide-59 .reveal-question {
       display: block;
     }
     #slide-1 .reveal-question::after, #slide-3 .reveal-question::after,
@@ -117,8 +117,8 @@
     #slide-17 .reveal-question::after, #slide-21 .reveal-question::after,
     #slide-27 .reveal-question::after, #slide-29 .reveal-question::after,
     #slide-35 .reveal-question::after, #slide-41 .reveal-question::after,
-    #slide-43 .reveal-question::after, #slide-45 .reveal-question::after,
-    #slide-49 .reveal-question::after, #slide-53 .reveal-question::after {
+    #slide-43 .reveal-question::after, #slide-45 .reveal-question::after, #slide-47 .reveal-question::after, #slide-49 .reveal-question::after, #slide-51 .reveal-question::after,
+    #slide-55 .reveal-question::after, #slide-59 .reveal-question::after {
       display: table;
       margin-top: .5rem;
     }
@@ -204,18 +204,24 @@
         <div class="rail-dot activity-dot" data-slide="42"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">42. Classroom Motivation Design</span></div>
         <div class="rail-dot" data-slide="43"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">43. Technology & Learning</span></div>
         <div class="rail-dot activity-dot" data-slide="44"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">44. Technology - Help or Harm?</span></div>
-        <div class="rail-dot" data-slide="45"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">45. Research Methods in Learning & Cognition</span></div>
-        <div class="rail-dot activity-dot" data-slide="46"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">46. Choose the Right Method</span></div>
-        <div class="rail-dot" data-slide="47"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">47. Analysing Data</span></div>
-        <div class="rail-dot activity-dot" data-slide="48"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">48. Interpret the Data</span></div>
-        <div class="rail-dot" data-slide="49"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">49. Concepts & Transfer</span></div>
-        <div class="rail-dot activity-dot" data-slide="50"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">50. Transfer Scenario Analysis</span></div>
-        <div class="rail-dot" data-slide="51"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">51. Synthesis & Evaluation</span></div>
-        <div class="rail-dot activity-dot" data-slide="52"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">52. Synthesis Challenge</span></div>
-        <div class="rail-dot" data-slide="53"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">53. Exam Practice</span></div>
-        <div class="rail-dot activity-dot" data-slide="54"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">54. Exam Response Planning</span></div>
-        <div class="rail-dot" data-slide="55"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">55. Unit Review</span></div>
-        <div class="rail-dot activity-dot" data-slide="56"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">56. Reflection & Next Steps</span></div>
+        <div class="rail-dot" data-slide="45"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">45. HL Extension: Culture, Bilingualism & Cognition</span></div>
+        <div class="rail-dot activity-dot" data-slide="46"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">46. Culture & Cognition - What Can We Conclude?</span></div>
+        <div class="rail-dot" data-slide="47"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">47. HL Extension: Motivation & Independent Learning</span></div>
+        <div class="rail-dot activity-dot" data-slide="48"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">48. Motivation & Learning - What Drives Improvement?</span></div>
+        <div class="rail-dot" data-slide="49"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">49. HL Extension: Technology & Cognition</span></div>
+        <div class="rail-dot activity-dot" data-slide="50"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">50. Technology & Cognition - Help, Harm, or It Depends?</span></div>
+        <div class="rail-dot" data-slide="51"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">51. Research Methods in Learning & Cognition</span></div>
+        <div class="rail-dot activity-dot" data-slide="52"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">52. Choose the Right Method</span></div>
+        <div class="rail-dot" data-slide="53"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">53. Analysing Data</span></div>
+        <div class="rail-dot activity-dot" data-slide="54"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">54. Interpret the Data</span></div>
+        <div class="rail-dot" data-slide="55"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">55. Concepts & Transfer</span></div>
+        <div class="rail-dot activity-dot" data-slide="56"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">56. Transfer Scenario Analysis</span></div>
+        <div class="rail-dot" data-slide="57"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">57. Synthesis & Evaluation</span></div>
+        <div class="rail-dot activity-dot" data-slide="58"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">58. Synthesis Challenge</span></div>
+        <div class="rail-dot" data-slide="59"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">59. Exam Practice</span></div>
+        <div class="rail-dot activity-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">60. Exam Response Planning</span></div>
+        <div class="rail-dot" data-slide="61"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">61. Unit Review</span></div>
+        <div class="rail-dot activity-dot" data-slide="62"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">62. Reflection & Next Steps</span></div>
         </div>
 
 <div class="slide" data-slide="1" id="slide-1">
@@ -1601,6 +1607,248 @@
 </div>
 
 <div class="slide" data-slide="45" id="slide-45">
+<h2>HL Extension: Culture, Bilingualism &amp; Cognition</h2>
+<p class="slide-intro">HL extension: how culture may influence cognitive processes, how psychologists compare cognition across cultures, and how bilingual experience may affect the way other cognitive processes operate &mdash; building on Cultural Influences on Memory.</p>
+<div class="collapsible"><button class="collapsible-trigger">Culture Can Shape Cognitive Experience</button><div class="collapsible-body">
+<p>Human cognition develops within cultural environments. Culture may influence <strong>what people attend to</strong>, <strong>how information is organised</strong>, <strong>what is considered important to remember</strong>, language use, categorisation, the interpretation of situations and the learning strategies people treat as normal.</p>
+<p><strong>Concrete example:</strong> two students remember the same classroom event differently because they attended to different features of it. One focuses strongly on the central person &mdash; who said what, their expression, their exact words. Another remembers more contextual relationships and background details &mdash; who was sitting near whom, how the room was arranged, what happened around the event.</p>
+<p>Cultural experiences can shape such attentional and interpretive habits. This <strong>does not</strong> mean culture rigidly determines cognition. Repeated cultural experiences <strong>may influence</strong> which features people tend to notice, rehearse and remember &mdash; tendencies, not fixed rules about individuals.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Same Cognitive Process, Different Expression?</button><div class="collapsible-body">
+<p>The key HL question: are cognitive processes themselves different across cultures, or are similar underlying processes expressed differently because of experience?</p>
+<p><strong>Memory example:</strong> people in two cultures may both use schemas when remembering information. Their schemas will, however, contain different culturally learned expectations &mdash; different content about what an ordinary event looks like, who does what, and what matters. The reconstructive process may be very similar; the content the process works on differs.</p>
+<p>This is why <strong>different content does not necessarily mean a different cognitive mechanism.</strong> A careful interpretation distinguishes the outcome observed from the underlying process it may reflect.</p>
+<div class="reveal"><div class="reveal-question">Two communities recall the same story with different details added in. What can and cannot be concluded from the difference between their recall?</div><div class="reveal-answer"><div>It can be concluded that memory content differed and that each account reflects familiar, culturally available expectations. It cannot be concluded that one community has a different or better memory system: the difference is consistent with the same reconstructive process operating on different culturally learned schema content.</div></div></div>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Cross-Cultural Comparison</button><div class="collapsible-body">
+<p>Cross-cultural comparison is useful because it helps psychologists ask whether a finding is <strong>universal</strong>, <strong>culturally influenced</strong> or <strong>context-dependent</strong>.</p>
+<p>But comparison carries a methodological problem. A difference between cultural groups might reflect:</p>
+<ul>
+<li>language and translation of the task;</li>
+<li>education and schooling;</li>
+<li>familiarity with the type of task;</li>
+<li>socioeconomic differences;</li>
+<li>the testing environment;</li>
+<li>measurement validity across groups; or</li>
+<li>actual differences in the cognitive process studied.</li>
+</ul>
+<p>&ldquo;Group A scored higher than Group B&rdquo; does <strong>not</strong> automatically mean &ldquo;Group A has better cognition.&rdquo; The same difference is consistent with many explanations until the measurement is checked.</p>
+<div class="reveal"><div class="reveal-question">A memory study finds that one cultural sample recalls more contextual detail than another. Why can this difference not by itself be interpreted as a difference in memory capacity?</div><div class="reveal-answer"><div>Memory capacity may be the same in both groups. The difference could reflect what each group attends to during encoding (attentional habits and schema content), the familiarity of the material and task, schooling, language, testing conditions or the validity of the measure across groups. More cautious evidence, including checks on measurement equivalence, is needed before interpreting the difference.</div></div></div>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">The Ecological Fallacy</button><div class="collapsible-body">
+<p>A researcher commits the <strong>ecological fallacy</strong> when they assume that because someone belongs to a cultural group, that individual must show the average characteristics associated with that group.</p>
+<p><strong>Example:</strong> a study finds that one cultural sample tends to remember more contextual information. It would be incorrect to assume that every individual from that culture will remember background detail &mdash; averages describe findings about a group, not a prediction about any particular person.</p>
+<p>Cautious language matters: culture may influence tendencies; it does not make every group member identical.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Bilingualism &amp; Cognition</button><div class="collapsible-body">
+<p>Bilingual people regularly manage more than one language system. Psychologists investigate whether this experience may influence other cognitive processes such as <strong>attention</strong>, <strong>inhibition</strong>, <strong>task switching</strong>, <strong>memory</strong> and <strong>metalinguistic awareness</strong>.</p>
+<p>Do <strong>not</strong> teach a simplistic &ldquo;bilingualism improves cognition.&rdquo; Findings are not uniform. Reported differences may vary with:</p>
+<ul>
+<li>age of language acquisition;</li>
+<li>proficiency in each language;</li>
+<li>frequency and context of language use;</li>
+<li>socioeconomic factors;</li>
+<li>the specific task used; and</li>
+<li>how bilingualism is defined.</li>
+</ul>
+<p>The measurement issue must be explicit: <strong>&ldquo;bilingual&rdquo; is not one uniform category.</strong> A study that treats &ldquo;has studied a second language at school&rdquo; and &ldquo;uses two languages daily in different domains&rdquo; as one group may be comparing very different experiences.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">The Causality Problem</button><div class="collapsible-body">
+<p><strong>Example:</strong> suppose bilingual students perform better on a task requiring them to ignore distracting information. Can we conclude that bilingualism caused the difference?</p>
+<p>Not necessarily. Other variables could include education, socioeconomic background, immigration experience, cultural context, prior cognitive ability and language proficiency. Bilingualism is bound up with many of these factors, so <strong>an association between bilingual experience and task performance does not by itself establish that bilingualism caused better performance.</strong></p>
+<div class="reveal"><div class="reveal-question">Bilingual adolescents score higher than their monolingual peers on one task-switching measure. What would psychologists need before accepting &ldquo;bilingualism improves task-switching&rdquo; as a conclusion?</div><div class="reveal-answer"><div>They would need evidence that the groups are comparable on relevant background variables (education, socioeconomic status, immigration experience, cultural context, prior ability, language proficiency), checks on how bilingualism was operationalised and measured, and designs that test causal pathways rather than relying on a single association observed under one set of conditions.</div></div></div>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Thinking &mdash; The Cultural Interpretation Chain</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE CAN INFLUENCE:</strong></p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">Experience &rarr; attention / schemas / language &rarr; cognitive performance &rarr; measurement &rarr; interpretation</p>
+<div class="reveal"><div class="reveal-question">If two cultures perform differently on the same cognitive task, what can psychologists safely conclude?</div><div class="reveal-answer"><div>Only that a difference was observed under those conditions. Stronger conclusions require careful consideration of measurement, sampling, confounding variables and cultural context before interpreting what the difference means or what caused it.</div></div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Culture may influence how cognition is expressed: attention, schemas, categorisation, language and learning strategies.</li>
+<li>Cross-cultural differences do not automatically imply different underlying cognitive mechanisms: different content can come from the same process.</li>
+<li>The ecological fallacy must be avoided: group averages describe findings, not every individual in the group.</li>
+<li>Bilingualism is not a single uniform experience; how it is defined and measured matters.</li>
+<li>Bilingualism may be associated with differences in cognitive processing, but causality must be justified, not assumed.</li>
+<li>Measurement and task familiarity matter in cross-cultural research: a score difference is evidence of a difference under those conditions.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="46" id="slide-46"><h2>Culture &amp; Cognition &mdash; What Can We Conclude?</h2>
+<p class="slide-intro">Each scenario ends with a claim about cognition. Choose the strongest, most defensible conclusion &mdash; the cautious one &mdash; and use the feedback to check your reasoning.</p>
+<div class="act-container" id="lc-p23-culture-conclude"></div>
+</div>
+<div class="slide" data-slide="47" id="slide-47">
+<h2>HL Extension: Motivation &amp; Independent Learning</h2>
+<p class="slide-intro">HL extension: how motivation can enhance a cognitive process, how students become independent learners, and the extent to which motivation can actually be assessed &mdash; building on Motivation: Why We Learn.</p>
+<div class="collapsible"><button class="collapsible-trigger">Motivation Can Change Cognitive Engagement</button><div class="collapsible-body">
+<p>Motivation does not simply affect whether someone starts a task. It may also affect <strong>attention</strong>, <strong>persistence</strong>, <strong>effort</strong>, <strong>strategy choice</strong>, <strong>depth of processing</strong>, <strong>willingness to retrieve and practise</strong>, and <strong>response to difficulty</strong>.</p>
+<p><strong>One cognitive process &mdash; memory.</strong> Two students use the same retrieval-practice activity. One is motivated to understand and improve: they attempt recall before checking the answer, notice their errors and retry. The other clicks through only because completion is required: they reveal the answer immediately and never test themselves. The learning opportunity is identical, but their effort, concentration, strategy use and persistence may differ. Motivation therefore may influence cognitive performance <strong>indirectly through engagement</strong> with the cognitive process, rather than being a separate memory mechanism.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Motivation Does Not Replace Cognitive Theory</button><div class="collapsible-body">
+<p>Do <strong>not</strong> say &ldquo;motivation causes better memory.&rdquo; Memory still depends on cognitive processes such as <strong>encoding</strong>, <strong>storage</strong>, <strong>retrieval</strong>, <strong>attention</strong> and <strong>cueing</strong>.</p>
+<p>Motivation may influence how fully a learner engages those processes &mdash; how much attention they pay, whether they retrieve or just reread, how long they persist after difficulty. Motivation is therefore an <strong>additional explanation</strong>, not a replacement for cognitive mechanisms. A complete account keeps both levels: the motivation that drives engagement and the cognitive processes that do the work.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">From Dependent to Independent Learning</button><div class="collapsible-body">
+<p>An independent learner does not simply &ldquo;study alone.&rdquo; Independent learning involves students increasingly <strong>setting goals</strong>, <strong>selecting strategies</strong>, <strong>monitoring their own understanding</strong>, <strong>evaluating progress</strong>, <strong>adjusting their behaviour</strong> and <strong>persisting without constant external control</strong>.</p>
+<p>This connects to the research concept of <strong>self-regulated learning</strong>: students actively managing their own learning rather than relying on the teacher to direct every step. An accessible cycle:</p>
+<p style="text-align:center;margin:.75rem 0;"><strong>PLAN &rarr; ACT &rarr; MONITOR &rarr; ADJUST</strong></p>
+<p><strong>Realistic example:</strong> a student notices they forget past topics while revising current ones. They plan (Wednesday: review last week&rsquo;s flashcards), act (test themselves, no notes), monitor (mark which cards they still missed) and adjust (schedule those cards again tomorrow instead of moving on). That is self-regulation in action.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Can Teachers Support Independence?</button><div class="collapsible-body">
+<p>Strategies that support learner independence include:</p>
+<ul>
+<li><strong>Meaningful choice</strong> within clear structure &mdash; students choose the topic, order or format while goals stay fixed (supports autonomy).</li>
+<li><strong>Achievable challenge</strong> &mdash; task difficulty just beyond current ability, so effort can translate into success (supports competence).</li>
+<li><strong>Clear, specific feedback</strong> that tells students what to improve and how, rather than only judging them.</li>
+<li><strong>Teaching students how to monitor understanding</strong> &mdash; for example, self-testing and checking against a rubric.</li>
+<li><strong>Encouraging retrieval rather than passive rereading</strong> in study habits.</li>
+<li><strong>Gradually reducing teacher control</strong> as students show they can regulate their own learning.</li>
+<li><strong>Helping students set specific goals</strong> (e.g., &ldquo;recall 20 terms from memory by Friday&rdquo;) rather than vague intentions.</li>
+<li><strong>Supporting competence without doing the work for them</strong> &mdash; scaffold, then step back.</li>
+</ul>
+<p>These map onto autonomy, competence and relatedness without needing to reteach SDT from scratch: choice supports autonomy, achievable challenge and feedback support competence, and a classroom where contribution matters supports relatedness.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Motivation vs Performance</button><div class="collapsible-body">
+<p>A motivated student does <strong>not</strong> necessarily perform well, and a high-performing student is <strong>not</strong> necessarily highly motivated.</p>
+<p>Performance is influenced by <strong>ability</strong>, <strong>prior knowledge</strong>, <strong>fatigue</strong>, <strong>stress</strong>, <strong>task difficulty</strong>, <strong>strategy use</strong> and <strong>environmental conditions</strong>. A student may work extremely hard and still underperform on a difficult test; another may score well through strong prior knowledge and little immediate effort.</p>
+<p>This is why <strong>a test score is not a direct measure of motivation.</strong> Researchers cannot simply read motivation off a performance outcome.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Do Psychologists Measure Motivation?</button><div class="collapsible-body">
+<p>Several methods are used, each with limitations:</p>
+<ul>
+<li><strong>Self-report:</strong> students report their interest, goals or reasons for behaviour. <em>Limitations:</em> demand characteristics (answering what is expected), social desirability, and limited introspective accuracy &mdash; people do not always know why they acted.</li>
+<li><strong>Behavioural indicators:</strong> persistence, task choice, time-on-task and voluntary engagement are observed. <em>Limitation:</em> the same behaviour can have different causes &mdash; time on a task might reflect interest, anxiety about falling behind, or habit.</li>
+<li><strong>Experimental manipulation:</strong> researchers alter rewards, feedback or choice and observe how behaviour changes. <em>Limitation:</em> artificial conditions may reduce ecological validity &mdash; the laboratory is not the classroom.</li>
+<li><strong>Physiological methods:</strong> these are sometimes used for specific primary motives (e.g., hunger or arousal) but are much less direct in capturing complex academic motivation.</li>
+</ul>
+<p>The key idea: <strong>motivation is a construct.</strong> It cannot usually be observed directly; it must be inferred from responses, behaviours or manipulations &mdash; each of which is an indirect indicator.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Operationalisation</button><div class="collapsible-body">
+<p>Research question: &ldquo;Does giving students more choice increase motivation?&rdquo;</p>
+<p>Before running the study, psychologists must decide how <strong>motivation</strong> will be measured. Possible operationalisations:</p>
+<ul>
+<li>a self-report motivation score from a questionnaire;</li>
+<li>voluntary time spent on optional practice;</li>
+<li>number of tasks attempted; or</li>
+<li>persistence after difficulty.</li>
+</ul>
+<p>Each captures only part of the construct. Choosing a measure is an <strong>operationalisation decision</strong>, and different measures may lead to different conclusions about the same manipulation &mdash; a strong Measurement link.</p>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Thinking &mdash; From Motivation to Outcome</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION</strong> &rarr; engagement &rarr; strategy use &rarr; persistence &rarr; cognitive processing &rarr; learning outcome</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">But motivation must be <strong>inferred from evidence</strong>. Psychologists must therefore distinguish the <strong>construct</strong> (what they are trying to explain) from the <strong>measure</strong> (the specific response or behaviour they recorded).</p>
+<div class="reveal"><div class="reveal-question">Why can a researcher never claim that a questionnaire score IS motivation, rather than a measure of it?</div><div class="reveal-answer"><div>A questionnaire score is a set of responses to particular items, shaped by comprehension, interpretation, social desirability and the wording chosen. It stands in for motivation; it is not the thing itself. The score could be influenced by many features of the measure that have nothing to do with motivation, so the construct and the measure must be kept distinct.</div></div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Motivation may affect cognitive performance through engagement &mdash; attention, effort, strategy and persistence.</li>
+<li>Motivation does not replace cognitive mechanisms; it influences how fully they are used.</li>
+<li>Independent learning involves self-regulation: PLAN &rarr; ACT &rarr; MONITOR &rarr; ADJUST.</li>
+<li>Autonomy, competence and relatedness can support independent learning without doing the work for the student.</li>
+<li>Motivation is a construct: it cannot usually be observed directly, so it is inferred from self-report, behaviour, or experimental manipulation.</li>
+<li>No single measure perfectly captures motivation, and performance is not identical to motivation.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="48" id="slide-48"><h2>Motivation &amp; Learning &mdash; What Drives Improvement?</h2>
+<p class="slide-intro">Each scenario separates what the evidence shows from what is being assumed about motivation. Choose the strongest conclusion.</p>
+<div class="act-container" id="lc-p24-motiv-drive"></div>
+</div>
+<div class="slide" data-slide="49" id="slide-49">
+<h2>HL Extension: Technology &amp; Cognition</h2>
+<p class="slide-intro">HL extension: how technology may affect learning and cognition more broadly, and how research on technology should be interpreted &mdash; building on Technology &amp; Learning.</p>
+<div class="collapsible"><button class="collapsible-trigger">Technology Is Not One Thing</button><div class="collapsible-body">
+<p>&ldquo;Technology&rdquo; could mean an AI tutor, digital flashcards, an online lecture, social media, smartphone notifications, virtual reality, search engines, note-taking software or educational games. A claim such as &ldquo;technology improves learning&rdquo; or &ldquo;technology harms cognition&rdquo; is therefore too broad to test.</p>
+<p>A stronger psychological question asks: <strong>Which technology? Used how? By whom? For what cognitive task? Compared with what? Measured how?</strong></p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Learning: Possible Benefits and Limits</button><div class="collapsible-body">
+<p><strong>Possible benefits</strong> of well-designed technology include immediate feedback, adaptive practice, retrieval scheduling, access to information, multimedia explanation and individualised pacing.</p>
+<p><strong>Possible limitations</strong> include distraction, shallow processing, cognitive overload, dependence on external prompts, reduced deliberate retrieval and multitasking.</p>
+<p>Technology is <strong>not inherently positive or negative</strong>: the same tool can support or interfere with learning depending on how it is designed and used.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Attention</button><div class="collapsible-body">
+<p>Smartphone notifications are a concrete example: each notification may compete for limited attentional resources and interrupt an ongoing task.</p>
+<p>But do <strong>not</strong> simply claim &ldquo;phones destroy attention.&rdquo; Psychologists must ask whether the phone was actively used or merely present, whether notifications were even enabled, whether attention was measured directly or inferred from self-report, whether the task was artificial, and whether participants were accustomed to the environment. Each answer changes how the finding should be interpreted.</p>
+<div class="reveal"><div class="reveal-question">A laboratory study finds that receiving notifications during a task lowers accuracy on that task. Why should this finding not be stated as &ldquo;smartphones reduce attention in everyday life&rdquo;?</div><div class="reveal-answer"><div>The finding was produced under specific conditions: one laboratory task, one type of notification, participants not necessarily habituated, and attention measured on that task. Real-world contexts differ in the tasks, the users, their habits and the salience of notifications, so generalising the effect to all everyday attention requires caution.</div></div></div>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Memory: Cognitive Offloading</button><div class="collapsible-body">
+<p>People increasingly store information externally using phones, calendars, search engines and cloud notes.</p>
+<p><strong>Cognitive offloading</strong> means using an external tool to reduce the amount of information that must be internally maintained or remembered.</p>
+<p><strong>Possible advantages:</strong> it reduces cognitive load, frees resources for other tasks and supports planning. <strong>Possible cost:</strong> people may remember less information internally when they expect it to remain externally available.</p>
+<p>Do <strong>not</strong> imply offloading is necessarily harmful. It can be adaptive &mdash; the same memory system that stores facts internally can instead be freed for reasoning, and external storage is often the point of the tool.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">AI &amp; Learning</button><div class="collapsible-body">
+<p>AI tools are discussed by psychologists with caution.</p>
+<p><strong>Possible benefits:</strong> feedback, explanations, personalised practice, questioning and scaffolding. <strong>Possible risks:</strong> passive acceptance of answers, reduced productive struggle, inaccurate information, overreliance and weakened monitoring of one&rsquo;s own understanding.</p>
+<p>Using AI does <strong>not</strong> automatically reduce learning &mdash; the effect may depend on <strong>how</strong> the learner uses it. Compare:</p>
+<ul>
+<li><strong>Student A:</strong> asks the AI to generate an answer and copies it.</li>
+<li><strong>Student B:</strong> attempts the problem first, asks the AI for feedback, corrects errors and retrieves the solution later.</li>
+</ul>
+<p>Same technology. Very different cognitive engagement. The tool is not the whole story; the learner&rsquo;s activity is part of it.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Correlation &amp; Bidirectional Ambiguity</button><div class="collapsible-body">
+<p>Example: students who use smartphones more report poorer concentration. The same correlation is consistent with several explanations:</p>
+<ul>
+<li><strong>A.</strong> smartphone use contributes to poorer concentration;</li>
+<li><strong>B.</strong> students with poorer concentration use smartphones more;</li>
+<li><strong>C.</strong> another variable (sleep, stress, deadlines) influences both; or</li>
+<li><strong>D.</strong> the relationship is bidirectional &mdash; each influences the other.</li>
+</ul>
+<p><strong>Correlation alone cannot establish causality.</strong> Distinguishing these possibilities is an HL critical-thinking skill: the observed association is consistent with each until further evidence separates them.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology Research Changes Quickly</button><div class="collapsible-body">
+<p>Technology evolves faster than many research programmes. A study of one platform or device may become less relevant when software changes, usage patterns change, new technologies appear or populations adapt.</p>
+<p>Interpreting this evidence also requires awareness of <strong>sampling bias</strong>, <strong>publication bias</strong> (successful findings are more likely to be published), <strong>confirmation bias</strong>, <strong>funding influences</strong> and <strong>replication problems</strong>. Keep each point concise and applied: a single study of one app at one point in time is a snapshot, not a law.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Should Technology Effects Be Measured?</button><div class="collapsible-body">
+<p>Possible outcome measures include test performance, reaction time, recall, attention-task scores, long-term retention, self-reported concentration and classroom achievement.</p>
+<p><strong>Different measures may produce different conclusions.</strong> For example, a tool may improve immediate quiz scores without improving long-term retention. &ldquo;Learning improved&rdquo; therefore has to be <strong>operationally defined</strong>: the answer depends on what was measured, when it was measured and in comparison with what.</p>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Technology Is Not a Single Cause</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY</strong> &times; <strong>HOW IT IS USED</strong> &times; <strong>COGNITIVE PROCESS</strong> &times; <strong>LEARNER</strong> &times; <strong>CONTEXT</strong> = <strong>POSSIBLE OUTCOME</strong></p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">&ldquo;Does technology improve cognition?&rdquo; is too broad to answer. A stronger conclusion identifies the specific technology, the cognitive process, the population, the comparison and the evidence used &mdash; and states what could and could not be concluded.</p>
+</div>
+<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
+<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">HL Paper 3 Thinking &mdash; Applying This to Source Analysis</h4>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem;">A Paper 3 source set could focus on something such as motivation in learning. You may need to analyse quantitative findings, analyse qualitative findings, identify limitations, discuss credibility, bias and transferability, synthesise evidence, and draw a conclusion about culture, motivation or technology.</p>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0;">Do not memorise a generic essay. Instead ask: <strong>What does each source actually show? How strong is the evidence? What can and cannot be concluded? How do the sources fit together?</strong></p>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Culture, Motivation and Technology Interact</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;">Take one learning situation: <strong>a bilingual student uses an AI-supported retrieval-practice app.</strong></p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE asks:</strong> what prior knowledge, language and learning expectations shape the student&rsquo;s cognition?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION asks:</strong> why does the student engage, persist and regulate their own learning?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY asks:</strong> how does the tool alter practice, feedback and cognitive demands?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0;">Learning outcomes emerge from <strong>interacting influences</strong> rather than one isolated factor. No single extension explains the outcome on its own.</p>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Technology is not one variable: ask which technology, used how, by whom, for what task.</li>
+<li>Technology can support or interfere with learning depending on use &mdash; it is not inherently good or bad.</li>
+<li>Attention and memory may be affected differently; notifications and offloading are separate issues.</li>
+<li>Cognitive offloading can be adaptive: external storage frees cognitive resources, though internal memory may be weaker.</li>
+<li>AI effects depend heavily on how the learner uses the tool &mdash; attempt, feedback, correct, retrieve.</li>
+<li>Correlation does not establish causation, and direction is often ambiguous.</li>
+<li>Technology research faces rapid-change and measurement problems: operationalise the outcome and the technology.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="50" id="slide-50"><h2>Technology &amp; Cognition &mdash; Help, Harm, or It Depends?</h2>
+<p class="slide-intro">Each item is a claim about technology and cognition. Select the claims whose conclusions overreach the evidence &mdash; the reasoning problems &mdash; and leave the ones that stay within it.</p>
+<div class="act-container" id="lc-p25-tech-eval"></div>
+</div>
+<div class="slide" data-slide="51" id="slide-51">
 <h2>Research Methods in Learning &amp; Cognition</h2>
 <p class="slide-intro">How psychologists study memory, thinking and behaviour: core methods, their strengths and weaknesses, and the ethical issues they raise.</p>
 <div class="collapsible"><button class="collapsible-trigger">Experimental Method</button><div class="collapsible-body">
@@ -1648,12 +1896,12 @@
 </ol></div>
 </div>
 
-<div class="slide activity-slide" data-slide="46" id="slide-46"><h2>Choose the Right Method</h2>
+<div class="slide activity-slide" data-slide="52" id="slide-52"><h2>Choose the Right Method</h2>
 <p class="slide-intro">Each research question requires a specific method. Identify the most appropriate design and explain why it fits &mdash; feedback checks whether your reasoning accounts for the question's demands.</p>
 <div class="act-container" id="lc-p23-experiment"></div>
 </div>
 
-<div class="slide" data-slide="47" id="slide-47">
+<div class="slide" data-slide="53" id="slide-53">
 <h2>Analysing Data</h2>
 <p class="slide-intro">How to read and interpret the quantitative evidence used across this unit &mdash; from mean, median and range to effect size and correlation.</p>
 <div class="collapsible"><button class="collapsible-trigger">Measures of Central Tendency &amp; Spread</button><div class="collapsible-body">
@@ -1701,12 +1949,12 @@
 </ol></div>
 </div>
 
-<div class="slide activity-slide" data-slide="48" id="slide-48"><h2>Interpret the Data</h2>
+<div class="slide activity-slide" data-slide="54" id="slide-54"><h2>Interpret the Data</h2>
 <p class="slide-intro">Each scenario presents a data pattern. Identify the correct statistical interpretation &mdash; and avoid the common mistake of confusing significance with importance, or correlation with causation.</p>
 <div class="act-container" id="lc-p24-data"></div>
 </div>
 
-<div class="slide" data-slide="49" id="slide-49">
+<div class="slide" data-slide="55" id="slide-55">
 <h2>Concepts &amp; Transfer</h2>
 <p class="slide-intro">How general principles learned in one context apply (and often fail to apply) in new settings &mdash; and why the ability to transfer is the ultimate test of understanding.</p>
 <div class="collapsible"><button class="collapsible-trigger">What Is Transfer?</button><div class="collapsible-body">
@@ -1754,12 +2002,12 @@
 </ol></div>
 </div>
 
-<div class="slide activity-slide" data-slide="50" id="slide-50"><h2>Transfer Scenario Analysis</h2>
+<div class="slide activity-slide" data-slide="56" id="slide-56"><h2>Transfer Scenario Analysis</h2>
 <p class="slide-intro">Each scenario describes knowledge that exists but fails to transfer to a new context. Identify why transfer failed and which strategy would most help &mdash; feedback unpacks the full analysis.</p>
 <div class="act-container" id="lc-p25-concepts"></div>
 </div>
 
-<div class="slide" data-slide="51" id="slide-51">
+<div class="slide" data-slide="57" id="slide-57">
 <h2>Synthesis &amp; Evaluation</h2>
 <p class="slide-intro">Bringing the entire unit together: how conditioning, social learning, schemas, heuristics, biases, memory systems, motivation and research methods interconnect into one coherent account of learning and cognition.</p>
 <div class="collapsible"><button class="collapsible-trigger">How the Unit's Ideas Connect</button><div class="collapsible-body">
@@ -1823,12 +2071,12 @@
 </ol></div>
 </div>
 
-<div class="slide activity-slide" data-slide="52" id="slide-52"><h2>Synthesis Challenge</h2>
+<div class="slide activity-slide" data-slide="58" id="slide-58"><h2>Synthesis Challenge</h2>
 <p class="slide-intro">Each question requires connecting multiple concepts from across the unit. The best answers weave together two or more mechanisms to explain a single phenomenon &mdash; the model answer demonstrates how.</p>
 <div class="act-container" id="lc-p26-synthesis"></div>
 </div>
 
-<div class="slide" data-slide="53" id="slide-53">
+<div class="slide" data-slide="59" id="slide-59">
 <h2>Exam Practice</h2>
 <p class="slide-intro">How to turn psychological knowledge into strong IB Psychology responses: answer the command, apply psychology to unfamiliar situations, use evidence purposefully, and build justified arguments.</p>
 <div class="collapsible"><button class="collapsible-trigger">Know What the 2027 Exam Is Testing</button><div class="collapsible-body">
@@ -1951,12 +2199,12 @@
 </ol></div>
 </div>
 
-<div class="slide activity-slide" data-slide="54" id="slide-54"><h2>Exam Response Planning</h2>
+<div class="slide activity-slide" data-slide="60" id="slide-60"><h2>Exam Response Planning</h2>
 <p class="slide-intro">For each practice question, build a plan: identify what the question requires, choose relevant psychological content, apply it to scenario details where appropriate, select useful evidence, explain what that evidence demonstrates, identify a meaningful evaluation issue, and form a justified conclusion where required.</p>
 <div class="act-container" id="lc-p27-response"></div>
 </div>
 
-<div class="slide" data-slide="55" id="slide-55">
+<div class="slide" data-slide="61" id="slide-61">
 <h2>Unit Review</h2>
 <p class="slide-intro">A final consolidation quiz covering the breadth of the unit &mdash; retrieval practice as the best revision strategy you can use.</p>
 <div class="quiz-progress">
@@ -1968,7 +2216,7 @@
 <div class="quiz-result" id="lc-quiz-result"></div>
 </div>
 
-<div class="slide activity-slide" data-slide="56" id="slide-56"><h2>Reflection &amp; Next Steps</h2>
+<div class="slide activity-slide" data-slide="62" id="slide-62"><h2>Reflection &amp; Next Steps</h2>
 <p class="slide-intro">Identify your strongest and weakest areas, plan your revision priorities, and connect what you learned about learning to how you will study from now on.</p>
 <div class="act-container" id="lc-p28-reflect"></div>
 </div>
@@ -1980,7 +2228,7 @@
 
       <div class="lesson-nav-bottom">
         <button class="btn-prev-slide" id="prev-btn">&larr; Previous</button>
-        <span class="slide-counter" id="slide-counter">1 / 56</span>
+        <span class="slide-counter" id="slide-counter">1 / 62</span>
         <button class="btn-next-slide" id="next-btn">Next &rarr;</button>
       </div>
     </div><!-- /lesson-content -->
@@ -2691,6 +2939,95 @@ initActivity('lc-inline-exam-check', {
   });
 
 
+
+  initActivity('lc-p23-culture-conclude', {
+    type: 'scenario-application',
+    title: 'Culture &amp; Cognition \u2014 What Can We Conclude?',
+    subtitle: 'Each scenario ends with a claim. Choose the strongest, most defensible conclusion and consider why.',
+    hints: ['Ask whether a difference between groups is being treated as a difference in ability or mechanism.','Ask whether a group average is being applied to individuals.','Ask whether the task measures the same thing, and whether the conclusion goes beyond the measure used.'],
+    questions: [
+      { label: 'A word-list memory study finds that a sample from Country A recalls more items than a sample from Country B. A newspaper headline states: "Country A has better memory." What is the strongest conclusion?',
+        options: ['Country A citizens have superior memory capacity to Country B citizens','The study proves that the task was too easy for Country A','A group difference was observed under these task conditions; language, schooling, task familiarity and scoring may explain it, so a difference in memory ability cannot be concluded','Country B has poorer memory because of its cultural values'],
+        correct: 2,
+        feedback: { correct: 'Correct. A difference under one set of conditions cannot be read as a memory-ability difference. Language, education, familiarity with word-list tasks and measurement could all contribute. The cautious conclusion reports the observed difference and nothing more.', incorrect: 'The careful conclusion stays within the evidence: a group difference was observed under these conditions. It cannot be interpreted as a memory-ability difference because language, schooling, task familiarity and measurement may explain it.' } },
+      { label: 'In one scene-memory task, a sample remembered more background context while another remembered more focal objects. What is the strongest conclusion?',
+        options: ['The two samples may have attended to different features during encoding, so similar memory systems could produce different remembered content','One sample clearly has better memory than the other','Scene memory cannot be studied across cultures','The task was invalid for both samples'],
+        correct: 0,
+        feedback: { correct: 'Correct. Different remembered content is consistent with the same memory systems operating under different attentional habits shaped by experience. The conclusion stays at the level of what was observed and what could explain it.', incorrect: 'Different content does not prove different mechanisms. The difference is consistent with similar memory systems and different attentional habits during encoding.' } },
+      { label: 'Two communities recall the same story, each adding familiar local details. What is the strongest conclusion?',
+        options: ['One community reconstructed the story more accurately','The communities must have different memory systems','Recall differences prove different cognitive mechanisms','Different schema content produced different recall; the reconstructive process itself may be the same'],
+        correct: 3,
+        feedback: { correct: 'Correct. Each community brings different culturally learned expectations to the story, so the recalled content differs while the underlying reconstructive process may be identical. Distinct content does not require a distinct mechanism.', incorrect: 'The difference is best explained as different schema content feeding the same reconstructive process, rather than different memory mechanisms.' } },
+      { label: 'A study reports that, on average, one cultural group tends to remember more visual detail. A company then claims: "Everyone from that culture notices every detail." What is the reasoning problem?',
+        options: ['The group is too large to study at all','There is no reasoning problem; averages always describe individuals','Visual detail cannot be measured in research','The ecological fallacy: a group average is being applied to every individual in the group'],
+        correct: 3,
+        feedback: { correct: 'Correct. An average describes a finding about a group; it does not predict any particular individual. Assuming every member shows the average pattern is the ecological fallacy.', incorrect: 'Applying a group average to every individual is the ecological fallacy. Averages describe findings about groups, not predictions about individual people.' } },
+      { label: 'Children from two cultural groups score differently on an unfamiliar picture-based task. What is the strongest conclusion?',
+        options: ['One group is clearly more cognitively developed than the other','Unfamiliar tasks always produce invalid scores','The task may not measure the same ability in both groups, so the difference cannot be interpreted as developmental superiority','Performance differences always reflect genuine ability differences'],
+        correct: 2,
+        feedback: { correct: 'Correct. Familiarity with the materials, instructions, language and schooled task formats could explain the gap. Without checking what the task measures in each group, the difference cannot be read as developmental superiority.', incorrect: 'The difference cannot be interpreted as superiority because the task may not measure the same ability in both groups. Measurement validity and familiarity must be checked first.' } },
+      { label: 'A study compares scores of "bilingual" and "monolingual" groups on an inhibition task. In the study, "bilingual" includes anyone who took a school language class, while the comparison group never did. What is the main problem?',
+        options: ['Inhibition tasks are too difficult to score','"Bilingual" is treated as one uniform category, mixing very different language experiences, so the comparison is unclear','School language classes always improve cognition','Monolingual students cannot complete inhibition tasks'],
+        correct: 1,
+        feedback: { correct: 'Correct. "Bilingual" is not one uniform experience. Grouping a beginner language class with daily dual-language users muddies what is being compared, so the scores are hard to interpret.', incorrect: 'The problem is that "bilingual" is used as a single category when it covers very different experiences. How bilingualism is defined and measured shapes what the comparison means.' } },
+      { label: 'Bilingual adolescents score higher on a task-switching measure than their monolingual peers, and the groups also differ in educational and socioeconomic background. What is the strongest conclusion?',
+        options: ['An association was observed, but education, socioeconomic background and other variables could also contribute, so causality is not established','Bilingualism definitely caused better task switching','Task switching is unrelated to language experience','Monolingual cognition is inferior on every measure'],
+        correct: 0,
+        feedback: { correct: 'Correct. The pattern is an association observed under these conditions. Because the groups differ on other relevant variables, the cautious conclusion keeps the association and rejects the causal claim.', incorrect: 'The groups differ on other variables, so the association cannot be read as proof that bilingualism caused the difference. Causality requires more than one observed association.' } }
+    ]
+  });
+
+  initActivity('lc-p24-motiv-drive', {
+    type: 'scenario-application',
+    title: 'Motivation &amp; Learning \u2014 What Drives Improvement?',
+    subtitle: 'Separate what the evidence shows from what is being assumed about motivation in each scenario.',
+    hints: ['Ask where the drive comes from: the learner\u2019s own reasons or an outside pressure.','Motivation may work indirectly: through the engagement, strategy and persistence it produces.','A score or behaviour is not the same thing as motivation itself.'],
+    questions: [
+      { label: 'Two students use the same retrieval-practice app. Student C tries to recall the answer before checking it and reviews the errors. Student D reveals the answer immediately and moves on. What best explains why C learns more?',
+        options: ['C has a fundamentally better memory system','The app works only for students who reveal answers first','D is simply unlucky','C engages the retrieval process more fully through effort and strategy, so motivation influences cognitive engagement'],
+        correct: 3,
+        feedback: { correct: 'Correct. The learning opportunity was identical; what differed was the engagement. Motivation may influence how fully a learner uses attention, retrieval and error review, and those cognitive processes then do the work.', incorrect: 'C did not have a different memory system: they engaged the same retrieval process more fully, through effort, strategy and persistence. Motivation shaped engagement with the cognitive process.' } },
+      { label: 'A student who personally values becoming a psychologist practises retrieval from flashcards most evenings, without any reward. Which best explains the persistence after difficulty?',
+        options: ['An externally imposed schedule','Punishment avoidance','Autonomous motivation: the goal matters to them, so effort continues when work becomes hard','Pure chance'],
+        correct: 2,
+        feedback: { correct: 'Correct. The behaviour is driven by reasons the student has endorsed, which is autonomous motivation. That kind of motivation is more likely to persist when the work becomes difficult and no external reward is present.', incorrect: 'The drive comes from reasons the student personally endorses, which is autonomous motivation. It tends to persist after difficulty because no outside pressure needs to be present.' } },
+      { label: 'A student sets a goal, tests themselves, marks what they missed, and plans extra practice on those items next session. What is this best described as?',
+        options: ['Procrastination','Reading aloud repeatedly','External control by the teacher','Self-regulated learning: plan, act, monitor and adjust'],
+        correct: 3,
+        feedback: { correct: 'Correct. The student plans a goal, acts by testing, monitors what they missed and adjusts the next session. That is the cycle of self-regulated learning.', incorrect: 'This is self-regulated learning: setting a goal, carrying it out, monitoring the result, then adjusting the next attempt.' } },
+      { label: 'A teacher gives one class more choice and then measures motivation by asking each student to rate it afterwards. What is the main limitation of this measure?',
+        options: ['Self-reports can reflect demand characteristics and social desirability, and students may not accurately know why they behaved as they did','Choice never affects motivation at all','Rating scales are perfectly reliable','The only valid measure of motivation is an exam score'],
+        correct: 0,
+        feedback: { correct: 'Correct. Asking people to rate their motivation is a self-report: it can be shaped by social desirability and demand characteristics, and introspection is not always accurate. It remains one useful indicator, but it is indirect.', incorrect: 'The limitation is that self-report is shaped by social desirability and demand characteristics, and people are not always accurate about their own reasons. It is one indirect indicator among several.' } },
+      { label: 'A researcher measures "motivation" as minutes spent on optional practice. Which interpretation problem follows?',
+        options: ['Optional practice minutes perfectly capture motivation','The same behaviour could stem from interest, anxiety about falling behind, or habit, so time-on-task is an indirect indicator with alternative explanations','Optional practice is unrelated to learning','Researchers can never observe behaviour at all'],
+        correct: 1,
+        feedback: { correct: 'Correct. Behavioural measures are observable, but the same behaviour can have different causes. Time on a task could reflect genuine interest, worry, compliance or habit, so it is evidence about motivation, not motivation itself.', incorrect: 'Time-on-task is an indirect behavioural indicator: the same behaviour could come from interest, anxiety, compliance or habit. Alternative explanations must be considered.' } },
+      { label: 'A student scores high on an exam despite studying mainly under parental pressure near the deadline. What is the strongest conclusion?',
+        options: ['High performance proves the student was highly motivated','Pressure always lowers exam performance','The student must have been intrinsically motivated throughout','Performance reflects many influences, so high scores do not directly prove strong motivation'],
+        correct: 2,
+        feedback: { correct: 'Correct. Performance depends on ability, prior knowledge, strategy, task difficulty and conditions as well as motivation. A high score cannot be read back as direct evidence of motivation.', incorrect: 'A high score reflects many influences beyond motivation, so it is not a direct measure of it. Motivation influences engagement; performance is a separate outcome.' } },
+      { label: 'Which statement best integrates motivation with cognitive theory?',
+        options: ['Motivation replaces the need to explain encoding and retrieval','Motivation may influence how fully a learner engages attention, encoding and retrieval; it does not replace those processes','Motivation directly stores memories in long-term memory','Cognitive processes do not matter when students are motivated'],
+        correct: 1,
+        feedback: { correct: 'Correct. Memory still depends on encoding, storage, retrieval, attention and cueing. Motivation is an additional explanation that affects how fully those processes are engaged, not a substitute for them.', incorrect: 'Motivation does not replace cognitive mechanisms. It may influence engagement with attention, encoding and retrieval while those processes still do the cognitive work.' } }
+    ]
+  });
+
+  initActivity('lc-p25-tech-eval', {
+    type: 'spot-the-problem',
+    title: 'Technology &amp; Cognition \u2014 Help, Harm, or It Depends?',
+    subtitle: 'Each claim states a conclusion about technology and cognition. Select the claims whose conclusions overreach the evidence.',
+    hints: ['A correlation between two variables does not show which caused which, or whether a third variable matters.','Improvement over time is not the same as evidence that a specific tool caused it.','Generalising from one laboratory task to all everyday cognition overreaches the evidence.'],
+    items: [
+      { id: 'laptops', text: 'Students who use laptops in class score lower, therefore laptops reduce learning', isProblem: true, explain: 'This moves from a correlation to a causal claim and treats all laptop use as one variable. No information is given about what students did on their laptops, who was compared, or what was measured. Students may use laptops differently (notes, games, chat), and other factors could explain both laptop use and scores.' },
+      { id: 'ai-tutor', text: 'Students using an AI tutor improved more than before, so the AI caused the improvement', isProblem: true, explain: 'Improvement over time cannot show that the AI caused it. Extra practice, familiarity with the format, feedback, motivation or simply gaining experience could all contribute, and there was no comparison group. A stronger claim needs a comparison condition.' },
+      { id: 'search-memory', text: 'People who rely on search engines remember fewer facts, therefore technology damages memory', isProblem: true, explain: 'This is an association, not a causal test, and it overgeneralises. Relying on external storage (cognitive offloading) can be adaptive, and remembering fewer facts internally does not by itself show the memory system is damaged. The claim treats offloading as harm without evidence.' },
+      { id: 'notif-attn', text: 'Phone notifications reduced performance on one laboratory attention task, so smartphones reduce attention in everyday life', isProblem: true, explain: 'The claim jumps from one artificial laboratory task to all everyday attention. Real-world tasks, users, habits and the salience of notifications differ, so the finding should be stated as specific to those conditions, not as a general law.' },
+      { id: 'retention-test', text: 'A study randomly assigned students to a specific retrieval-app condition or a workbook condition, and the app group recalled more after two weeks; the researchers reported this only for that app and that retention measure', isProblem: false, explain: 'Random assignment with a comparison group supports a causal interpretation within this sample, and the conclusion is qualified to that app and that measure rather than all technology. Strong claims stay this specific.' },
+      { id: 'survey-association', text: 'A survey found a moderate correlation between daily notification count and self-reported concentration during study; the researchers reported it as an association and noted that direction and third variables remain unclear', isProblem: false, explain: 'This stays within the evidence: an associational claim, reported as an association, with the limits stated. Cautious reporting of a correlation is not a reasoning problem.' }
+    ]
+  });
 
 })();
 </script>

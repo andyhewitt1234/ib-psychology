@@ -18,7 +18,7 @@
   
     /* ===== BLUEPRINT PROPAGATION: approved Introduction/RM system, HWB unit-wide ===== */
     /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
-       Quiz (slide-49) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
+       Quiz (slide-55) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
        compare-contrast / synthesis / short-response keep the neutral container
        (badge + structure carry identity), per blueprint rule. */
     [id^="slide-"] h2 {
@@ -77,6 +77,8 @@
       padding: .9rem 1rem;
       margin-top: .9rem;
     }
+    .progress-rail .rail-dot { width: 5px; height: 5px; }
+    .progress-rail .activity-dot { width: 3px; height: 3px; }
     [id^="slide-"] .act-subtitle {
       margin: .15rem 0 .85rem;
       font-size: .92rem;
@@ -92,10 +94,11 @@
     }
     /* Per-type container accents (blueprint rule: prediction + scenario-application
        = primary; conclude = accent; all other types neutral):
-       primary: 17 prediction; 9/13/18 scenario-application.
+       primary: 17 prediction; 9/13/18/46 scenario-application.
        accent: 6/7/14/16/21/23/24/25/27/28/31/33/34/36/38/41 conclude. */
     #slide-9 .act-container, #slide-13 .act-container,
-    #slide-17 .act-container, #slide-18 .act-container {
+    #slide-17 .act-container, #slide-18 .act-container,
+    #slide-46 .act-container {
       border-left: 3px solid var(--primary);
     }
     #slide-6 .act-container, #slide-7 .act-container, #slide-14 .act-container,
@@ -188,14 +191,20 @@
         <div class="rail-dot activity-dot" data-slide="40"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">40. CBT vs Drug Therapy for Depression</span></div>
         <div class="rail-dot" data-slide="41"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">41. Comparing Prevention &amp; Treatment</span></div>
         <div class="rail-dot activity-dot" data-slide="42"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">42. Prevention or Treatment?</span></div>
-        <div class="rail-dot" data-slide="43"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">43. IB Concepts in Health &amp; Well-being</span></div>
-        <div class="rail-dot activity-dot" data-slide="44"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">44. Health and Well-being Synthesis</span></div>
-        <div class="rail-dot" data-slide="45"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">45. Health &amp; Well-being Practical: Interview / Focus Group</span></div>
-        <div class="rail-dot activity-dot" data-slide="46"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">46. Improve This Study</span></div>
-        <div class="rail-dot" data-slide="47"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">47. Health &amp; Well-being Review &amp; Exam Practice</span></div>
-        <div class="rail-dot activity-dot" data-slide="48"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">48. Evaluate a Treatment Approach</span></div>
-        <div class="rail-dot" data-slide="49"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">49. Health &amp; Well-being Quiz</span></div>
-        <div class="rail-dot activity-dot" data-slide="50"><span class="rail-marker">&#128204;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">50. HL Data Analysis</span></div>
+        <div class="rail-dot" data-slide="43"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">43. HL Extension: Culture &amp; Health</span></div>
+        <div class="rail-dot activity-dot" data-slide="44"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">44. Culture &amp; Health &mdash; Apply the Evidence</span></div>
+        <div class="rail-dot" data-slide="45"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">45. HL Extension: Motivation &amp; Health Behaviour Change</span></div>
+        <div class="rail-dot activity-dot" data-slide="46"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">46. Motivation &mdash; Why Would Behaviour Change?</span></div>
+        <div class="rail-dot" data-slide="47"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">47. HL Extension: Technology &amp; Health</span></div>
+        <div class="rail-dot activity-dot" data-slide="48"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">48. Technology &amp; Health &mdash; Help, Harm, or Both?</span></div>
+        <div class="rail-dot" data-slide="49"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">49. IB Concepts in Health &amp; Well-being</span></div>
+        <div class="rail-dot activity-dot" data-slide="50"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">50. Health and Well-being Synthesis</span></div>
+        <div class="rail-dot" data-slide="51"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">51. Health &amp; Well-being Practical: Interview / Focus Group</span></div>
+        <div class="rail-dot activity-dot" data-slide="52"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">52. Improve This Study</span></div>
+        <div class="rail-dot" data-slide="53"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">53. Health &amp; Well-being Review &amp; Exam Practice</span></div>
+        <div class="rail-dot activity-dot" data-slide="54"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">54. Evaluate a Treatment Approach</span></div>
+        <div class="rail-dot" data-slide="55"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">55. Health &amp; Well-being Quiz</span></div>
+        <div class="rail-dot activity-dot" data-slide="56"><span class="rail-marker">&#128204;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">56. HL Data Analysis</span></div>
         </div></div>
 <div class="slide" data-slide="1" id="slide-1">
 <h2>Health &amp; Well-being: The Big Picture</h2>
@@ -1994,6 +2003,194 @@ Culture influences depression through a chain of connected steps:</p>
 <div class="act-container" id="hw-prev-treat-match"></div>
 </div>
 <div class="slide" data-slide="43" id="slide-43">
+<h2>HL Extension: Culture &amp; Health</h2>
+<p class="slide-intro">HL extension: how culture shapes the understanding, diagnosis, prevalence and treatment of health problems &mdash; building on Culture &amp; Depression.</p>
+<div class="collapsible"><button class="collapsible-trigger">Culture Changes How Health Is Understood</button><div class="collapsible-body">
+<p>People do not experience health in a cultural vacuum. Culture can influence the language people use to describe distress, whether emotional or physical symptoms are emphasised, beliefs about what causes illness, attitudes toward professional treatment, how families and communities respond, and the stigma surrounding diagnosis.</p>
+<p><strong>Example:</strong> two people experiencing similar depressive symptoms might describe them differently. One person may report &ldquo;I feel hopeless and empty,&rdquo; while another may focus more on &ldquo;I cannot sleep, I am exhausted and my body hurts.&rdquo;</p>
+<p>This does <strong>not</strong> mean one person is more depressed than the other. It shows that culture may influence how distress is expressed and reported &mdash; which matters because clinicians and researchers can only work with what is expressed, reported and measured.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Culture and Diagnosis</button><div class="collapsible-body">
+<p>Diagnostic systems attempt to create consistent criteria so that clinicians in different places mean similar things by the same diagnosis. However, clinicians still interpret reported behaviour &mdash; and interpretation can be shaped by culture:</p>
+<ul>
+<li><strong>Cultural norms</strong> affect what is considered unusual enough to count as a symptom.</li>
+<li><strong>Language and translation</strong> may change meaning: an emotion word in one language may have no exact equivalent in another.</li>
+<li><strong>Clinicians</strong> may interpret behaviour through their own cultural assumptions without realising it.</li>
+</ul>
+<p>As a result, cultural bias can contribute to <strong>overdiagnosis, underdiagnosis or misdiagnosis</strong> of particular groups.</p>
+<p><strong>Imposed etic bias:</strong> an <strong>imposed etic</strong> occurs when a framework developed in one cultural setting is assumed to apply equally well in another, without sufficient consideration of cultural differences. For example, if an MDD assessment assumes that depression is normally reported directly as persistent low mood, it may under-detect depression in contexts where distress is more commonly expressed through physical symptoms &mdash; not because depression is absent, but because the framework was not designed for that context.</p>
+<p>The tension: <strong>standardised criteria can improve consistency, but cultural differences may affect how symptoms appear and are interpreted.</strong> Recognising this tension does not mean diagnostic systems are useless &mdash; it means they must be applied with cultural awareness.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Culture and Prevalence</button><div class="collapsible-body">
+<p>Recorded prevalence rates differ between countries and cultural groups, but a recorded difference cannot automatically be interpreted as a genuine difference in underlying disorder rates. Possible influences include:</p>
+<ul>
+<li>actual differences in risk factors between populations;</li>
+<li>willingness to report symptoms;</li>
+<li>stigma surrounding mental illness;</li>
+<li>access to mental-health services;</li>
+<li>diagnostic practices;</li>
+<li>the measurement tools used; and</li>
+<li>cultural interpretation of symptoms by patients, clinicians and researchers.</li>
+</ul>
+<p><strong>Causal caution:</strong> a higher recorded prevalence does <strong>not</strong> automatically mean that culture caused more depression. Prevalence figures describe what was recorded, under particular conditions, with particular tools &mdash; they do not by themselves explain why.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Culture and Treatment</button><div class="collapsible-body">
+<p>Treatment effectiveness and engagement may depend partly on whether treatment fits the person&rsquo;s cultural context, including:</p>
+<ul>
+<li>beliefs about what mental illness is and what causes it;</li>
+<li>the expected role of family involvement in decisions;</li>
+<li>attitudes toward medication;</li>
+<li>expectations about what therapy involves;</li>
+<li>communication styles; and</li>
+<li>individual versus family- or community-based approaches.</li>
+</ul>
+<p><strong>Example:</strong> a therapy programme emphasising individual independence may fit one person well but may need adaptation for someone whose decisions are strongly embedded in family relationships &mdash; for instance, by involving trusted family members in agreed ways.</p>
+<p><strong>Important:</strong> culture influences tendencies and expectations; it does <strong>not</strong> determine how every individual behaves. Assuming that all members of a cultural group think alike is itself a form of stereotyping.</p>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Thinking &mdash; Culture Across the Whole Pathway</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE CAN INFLUENCE:</strong></p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">Experience &rarr; Expression &rarr; Measurement &rarr; Diagnosis &rarr; Treatment &rarr; Recorded prevalence</p>
+<div class="reveal"><div class="reveal-question">Why would it be misleading to say &ldquo;Country A has a higher depression rate than Country B, therefore people in Country A are genuinely more depressed&rdquo;?</div><div class="reveal-answer"><div>The recorded rate is the end product of the whole chain: differences in expression, willingness to report, stigma, access to services, diagnostic practice, measurement tools and cultural interpretation can all shift the recorded figure without any genuine difference in underlying depression. A rate describes what was recorded, not necessarily what exists.</div></div></div>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Culture may shape how distress is experienced, expressed and reported.</li>
+<li>Standardised diagnosis improves consistency, but interpretation can still carry cultural bias, including imposed etic bias.</li>
+<li>Recorded prevalence differences do not automatically reflect genuine differences in disorder rates.</li>
+<li>Treatment engagement may depend on cultural fit; culture shapes tendencies, not every individual.</li>
+<li>HL chain: experience &rarr; expression &rarr; measurement &rarr; diagnosis &rarr; treatment &rarr; recorded prevalence.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="44" id="slide-44"><h2>Culture &amp; Health &mdash; Apply the Evidence</h2>
+<p class="slide-intro">Decide which cultural issue each scenario is mainly about &mdash; and consider why.</p>
+<div class="act-container" id="hw-culture-apply"></div>
+</div>
+<div class="slide" data-slide="45" id="slide-45">
+<h2>HL Extension: Motivation &amp; Health Behaviour Change</h2>
+<p class="slide-intro">HL extension: why knowing a behaviour is unhealthy does not automatically change it &mdash; connecting motivation to problematic social-media use, prevention and treatment.</p>
+<div class="collapsible"><button class="collapsible-trigger">What Is Motivation?</button><div class="collapsible-body">
+<p><strong>Motivation</strong> is what gives behaviour direction and helps explain why someone begins, continues or stops an action.</p>
+<ul>
+<li><strong>Intrinsic motivation:</strong> behaviour is driven primarily by internal reasons, such as personal values, enjoyment or a genuine desire to improve. <strong>Health example:</strong> a student reduces late-night social-media use because they personally want to sleep better and feel more focused.</li>
+<li><strong>Extrinsic motivation:</strong> behaviour is influenced by external rewards, consequences, pressure or incentives. <strong>Health example:</strong> a student reduces phone use because their parents remove privileges if they exceed a screen-time limit.</li>
+</ul>
+<p>Do <strong>not</strong> assume one type is always good and the other always bad: external structure can start a change that later becomes personally valued, and internal drive alone does not guarantee success.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Self-Determination Theory</button><div class="collapsible-body">
+<p><strong>Self-Determination Theory</strong> proposes that three psychological needs support sustained, self-directed behaviour change:</p>
+<ul>
+<li><strong>Autonomy</strong> &mdash; feeling that the behaviour is genuinely chosen.</li>
+<li><strong>Competence</strong> &mdash; feeling capable of succeeding.</li>
+<li><strong>Relatedness</strong> &mdash; feeling connected to and supported by others.</li>
+</ul>
+<p><strong>One continuous example:</strong> a student trying to reduce problematic social-media use is more likely to maintain change when they help choose the strategy (<strong>autonomy</strong>), experience achievable progress such as two phone-free evenings per week (<strong>competence</strong>), and friends or family support rather than ridicule them (<strong>relatedness</strong>).</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Why Health Behaviour Is Hard to Change</button><div class="collapsible-body">
+<p>Motivation competes with immediate rewards and established habits. For problematic social-media use, the <strong>immediate rewards</strong> may include social connection, entertainment, notifications, fear of missing out and relief from boredom &mdash; while the <strong>benefits of reducing use</strong>, such as improved sleep, concentration, mood and academic performance, may be delayed.</p>
+<p>This is why <strong>&ldquo;I know it is unhealthy&rdquo; does not equal &ldquo;I am motivated and able to change it.&rdquo;</strong> Knowledge addresses what someone believes; motivation and capability determine what they actually do, especially when the unhealthy option is instantly rewarding and the healthy option pays off later.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Motivation in Prevention and Treatment</button><div class="collapsible-body">
+<p>Compare two approaches to the same problem:</p>
+<ul>
+<li><strong>A. An externally imposed phone ban:</strong> the rules are set and enforced by someone else.</li>
+<li><strong>B. A collaborative behaviour-change plan:</strong> the person chooses realistic limits, monitors their own progress and receives support.</li>
+</ul>
+<p>Consider: which might produce faster compliance? Which might produce more sustained behaviour change? Why?</p>
+<div class="reveal"><div class="reveal-question">Which approach is better &mdash; the ban or the collaborative plan?</div><div class="reveal-answer"><div>There is no universally correct answer, which is the point. An imposed ban may produce faster short-term compliance, while a collaborative plan may better support autonomy, competence and relatedness and therefore more sustained change &mdash; but effectiveness depends on the person, the context, the severity of the problem and how well each approach is implemented. A strong answer compares the options using motivation theory and then qualifies the conclusion.</div></div></div>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">HL Evaluation &mdash; Motivation Is One Part of the System</button><div class="collapsible-body">
+<p>Motivation can help explain change, <strong>but</strong> motivation is not the only cause of behaviour. Other influences may include habit, environment, stress, social norms, access to support, and biological and cognitive factors.</p>
+<p><strong>Conclusion:</strong> motivation is therefore one part of a wider system of influences on health behaviour. Explaining behaviour change requires motivation theory <strong>plus</strong> consideration of what else is operating in the person&rsquo;s situation.</p>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Motivation gives behaviour direction: intrinsic reasons come from within, extrinsic reasons from outside &mdash; neither is always better.</li>
+<li>Self-Determination Theory: autonomy, competence and relatedness support sustained change.</li>
+<li>Immediate rewards and habits compete with motivation, so knowledge alone rarely changes behaviour.</li>
+<li>Imposed versus collaborative interventions differ in compliance speed and sustainability; context decides.</li>
+<li>Motivation is one part of a wider system of influences on health behaviour.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="46" id="slide-46"><h2>Motivation &mdash; Why Would Behaviour Change?</h2>
+<p class="slide-intro">Analyse each situation and decide which motivational process is most relevant.</p>
+<div class="act-container" id="hw-motivation-apply"></div>
+</div>
+<div class="slide" data-slide="47" id="slide-47">
+<h2>HL Extension: Technology &amp; Health</h2>
+<p class="slide-intro">HL extension: technology as a possible influence on health problems and as a tool for prevention and treatment &mdash; neither inherently harmful nor inherently beneficial.</p>
+<div class="collapsible"><button class="collapsible-trigger">Technology Can Affect Health</button><div class="collapsible-body">
+<p>Building on the problematic social-media material, one possible pathway runs: technology and social media &rarr; social comparison &rarr; fear of missing out &rarr; sleep disruption &rarr; stress &rarr; possible effects on well-being.</p>
+<p>But the evidence issue must be explicit: <strong>much of this research is correlational, so association does not equal causation.</strong> There is also bidirectional ambiguity &mdash; three serious questions, not one:</p>
+<ul>
+<li>Does heavy social-media use contribute to poorer mental health?</li>
+<li>Or are people experiencing poorer mental health more likely to use social media heavily?</li>
+<li>Or could both influence one another?</li>
+</ul>
+<p>Distinguishing these possibilities is an HL critical-thinking skill: the same correlation is consistent with each explanation until further evidence separates them.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology Can Also Support Health</button><div class="collapsible-body">
+<p>Digital tools are also used in prevention and treatment, for example tele-therapy, video counselling, mental-health apps, online CBT programmes, digital reminders, sleep and activity tracking, behaviour-monitoring tools and online support communities.</p>
+<p>However, psychologists must evaluate effectiveness: <strong>not all digital interventions are evidence-based.</strong> Availability, popularity and good design do not by themselves show that an intervention improves health.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Tele-Therapy</button><div class="collapsible-body">
+<p><strong>Tele-therapy</strong> is psychological treatment delivered remotely through technology, commonly video or other secure communication systems.</p>
+<p><strong>Potential benefits</strong> include increased access, convenience, reduced travel, access for geographically isolated people and continuity of care.</p>
+<p><strong>Potential limitations</strong> include digital access inequality, privacy and confidentiality concerns, technology failures, reduced access to some non-verbal cues, and the fact that suitability may differ depending on the client and the problem.</p>
+<p>Tele-therapy should therefore be evaluated case by case: it is neither universally better nor universally worse than face-to-face therapy.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Do We Know Technology Works?</button><div class="collapsible-body">
+<p>Evaluating a digital intervention means asking research-quality questions:</p>
+<ul>
+<li>What was measured &mdash; and how was the outcome operationalised?</li>
+<li>Was there a control or comparison group?</li>
+<li>Was the evidence correlational or experimental?</li>
+<li>How large was the sample, and who was represented in it?</li>
+<li>Was improvement statistically significant &mdash; and was the effect practically meaningful?</li>
+<li>How long did improvement last?</li>
+</ul>
+<p>A <strong>statistically significant</strong> effect does not automatically mean a treatment has a large or important real-world effect. Asking about practical significance as well as statistical significance bridges toward HL data interpretation &mdash; without turning this page into a statistics lesson.</p>
+</div></div>
+<div class="collapsible"><button class="collapsible-trigger">Technology Is Not One Variable</button><div class="collapsible-body">
+<p>&ldquo;Technology&rdquo; is extremely broad. A student using social media for six hours, following an online CBT programme, wearing a sleep tracker and attending video therapy is having very different experiences &mdash; so broad claims such as &ldquo;technology harms mental health&rdquo; are too simplistic to be psychologically useful.</p>
+<p><strong>A stronger psychological question is: Which technology, used by whom, in what way, under what conditions, and with what outcome?</strong></p>
+</div></div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Culture, Motivation and Technology Interact</h3>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE asks:</strong> how might health behaviour, diagnosis and treatment differ across cultural contexts?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION asks:</strong> why does a person begin, maintain or resist behaviour change?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY asks:</strong> how can technological environments influence health, and how can technology be used to improve health?</p>
+<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0;">These extensions <strong>interact</strong> rather than existing as isolated topics: a digital health intervention may work differently depending on cultural expectations, the person&rsquo;s motivation, and their access to and experience with technology.</p>
+</div>
+<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
+<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">HL Thinking Prompt &mdash; Exam Preparation</h4>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem;">&ldquo;Discuss the influence of culture, motivation or technology on health and well-being.&rdquo;</p>
+<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0;">A strong response should: (1) identify the relevant HL extension; (2) explain the psychological mechanism; (3) apply it specifically to health and well-being; (4) use relevant evidence or examples; (5) evaluate limitations or alternative explanations; and (6) reach a justified conclusion.</p>
+</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Technology can influence health and can also be a tool for prevention and treatment.</li>
+<li>Much technology&ndash;health evidence is correlational: association is not causation, and direction is often ambiguous.</li>
+<li>Tele-therapy extends access but has limits; it is neither universally better nor worse than face-to-face therapy.</li>
+<li>Evaluate digital interventions: measurement, controls, design, sample, significance, practical meaning and duration.</li>
+<li>&ldquo;Technology&rdquo; is not one variable &mdash; ask which technology, whom, how, under what conditions, with what outcome.</li>
+<li>HL synthesis: culture, motivation and technology interact in shaping health behaviour and treatment.</li>
+</ol>
+</div>
+
+</div>
+<div class="slide activity-slide" data-slide="48" id="slide-48"><h2>Technology &amp; Health &mdash; Help, Harm, or Both?</h2>
+<p class="slide-intro">Evaluate each claim: spot the reasoning problem and choose the stronger conclusion.</p>
+<div class="act-container" id="hw-tech-evaluate"></div>
+</div>
+<div class="slide" data-slide="49" id="slide-49">
 <h2>IB Concepts in Health &amp; Well-being</h2>
 <p class="slide-intro">Applying key IB concepts to health-related psychology.</p>
 <div class="collapsible"><button class="collapsible-trigger">Bias</button><div class="collapsible-body">
@@ -2043,13 +2240,13 @@ Culture influences depression through a chain of connected steps:</p>
 </div></div>
 </div>
 
-<div class="slide activity-slide" data-slide="44" id="slide-44"><h2>Health and Well-being Synthesis</h2>
+<div class="slide activity-slide" data-slide="50" id="slide-50"><h2>Health and Well-being Synthesis</h2>
 <p class="slide-intro">Integrate knowledge across the unit.</p>
 <div class="act-container" id="hw-evaluation-synth"></div>
 </div>
 
 
-        <div class="slide" data-slide="45" id="slide-45">
+        <div class="slide" data-slide="51" id="slide-51">
 <h2>Health &amp; Well-being Practical: Interview / Focus Group</h2>
 <p class="slide-intro">Designing and carrying out a qualitative research method.</p>
 <div class="collapsible"><button class="collapsible-trigger">Why Interview or Focus Group?</button><div class="collapsible-body">
@@ -2125,13 +2322,13 @@ Culture influences depression through a chain of connected steps:</p>
 </div>
 </div>
 
-<div class="slide activity-slide" data-slide="46" id="slide-46"><h2>Improve This Study</h2>
+<div class="slide activity-slide" data-slide="52" id="slide-52"><h2>Improve This Study</h2>
 <p class="slide-intro">Identify methodological weaknesses in this social media study.</p>
 <div class="act-container" id="hw-improve-method"></div>
 </div>
 
 
-        <div class="slide" data-slide="47" id="slide-47">
+        <div class="slide" data-slide="53" id="slide-53">
 <h2>Health &amp; Well-being Review &amp; Exam Practice</h2>
 <p class="slide-intro">A cumulative review of the unit, organised around exam skills rather than simple recall.</p>
 <div class="collapsible"><button class="collapsible-trigger">Section A: Know &amp; Explain</button><div class="collapsible-body">
@@ -2176,12 +2373,12 @@ Culture influences depression through a chain of connected steps:</p>
 </div>
 
 
-        <div class="slide activity-slide" data-slide="48" id="slide-48"><h2>Evaluate a Treatment Approach</h2>
+        <div class="slide activity-slide" data-slide="54" id="slide-54"><h2>Evaluate a Treatment Approach</h2>
 <p class="slide-intro">Demonstrate your understanding of treatment evaluation.</p>
 <div class="act-container" id="hw-evaluate"></div>
 </div>
 
-<div class="slide" data-slide="49" id="slide-49">
+<div class="slide" data-slide="55" id="slide-55">
           <h2>Health &amp; Well-being Quiz</h2>
           <p class="slide-intro">10 questions covering the key topics from this unit. Test your understanding!</p>
           <div class="quiz-progress">
@@ -2193,7 +2390,7 @@ Culture influences depression through a chain of connected steps:</p>
           <div class="quiz-result" id="hw-quiz-result"></div>
         
 </div>
-<div class="slide" data-slide="50" id="slide-50">
+<div class="slide" data-slide="56" id="slide-56">
 <h2>HL Data Analysis &amp; Interpretation</h2>
 <p class="slide-intro">Practising data interpretation skills using Health &amp; Well-being evidence.</p>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">The Data Set</h4><p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .5rem;">200 Year 11 students from two schools completed measures of social-media use, depressive symptoms, sleep quality and FOMO at one point in time.</p>
@@ -2220,7 +2417,7 @@ Culture influences depression through a chain of connected steps:</p>
 
       <div class="lesson-nav-bottom">
         <button class="btn-prev-slide" id="prev-btn">&larr; Previous</button>
-        <span class="slide-counter" id="slide-counter">1 / 49</span>
+        <span class="slide-counter" id="slide-counter">1 / 56</span>
         <button class="btn-next-slide" id="next-btn">Next &rarr;</button>
       </div>
     </div><!-- /lesson-content -->
@@ -3025,6 +3222,77 @@ Culture influences depression through a chain of connected steps:</p>
       { id: 'pt6', text: 'Behavioural activation for someone who has withdrawn from activities', bin: 1 },
       { id: 'pt7', text: 'Mindfulness training offered to all students proactively', bin: 0 },
       { id: 'pt8', text: 'ECT for severe treatment-resistant depression', bin: 1 }
+    ]
+  });
+  initActivity('hw-culture-apply', {
+    type: 'classification',
+    title: 'Culture and Health \u2014 Apply the Evidence',
+    subtitle: 'Decide which cultural issue each scenario is mainly about.',
+    hints: ['Ask what the scenario is mainly about: how distress shows, how a label is decided, what a rate means, how help is given, or whether a foreign framework is being imposed.','Expression is about how symptoms appear and are reported; diagnosis is about how those reports are interpreted and labelled.','Prevalence items turn on recorded versus genuine rates; imposed etic items turn on a framework from one setting applied without adaptation.'],
+    bins: [
+      { label: 'Symptom expression' },
+      { label: 'Diagnosis' },
+      { label: 'Prevalence' },
+      { label: 'Treatment' },
+      { label: 'Cultural bias (imposed etic)' }
+    ],
+    items: [
+      { id: 'cu1', text: 'A patient describes depression mainly through headaches and exhaustion rather than sadness', bin: 0 },
+      { id: 'cu2', text: 'A questionnaire is translated word for word without checking whether the emotion words mean the same thing', bin: 4 },
+      { id: 'cu3', text: 'A country reports low depression, but stigma is strong and very few clinics exist', bin: 2 },
+      { id: 'cu4', text: 'A therapist involves trusted family members in planning after learning the client expects family input', bin: 3 },
+      { id: 'cu5', text: 'A manual written in one country is applied unchanged elsewhere, and unfamiliar local behaviour is labelled disordered', bin: 4 },
+      { id: 'cu6', text: 'A clinician mistakes a culturally normal mourning ritual for a depressive symptom', bin: 1 },
+      { id: 'cu7', text: 'Two people with similar severity describe it differently: one reports emptiness, the other body pain and poor sleep', bin: 0 },
+      { id: 'cu8', text: 'A survey counts only clinic visitors and misses everyone who never sought help', bin: 2 },
+      { id: 'cu9', text: 'Two clinicians from different backgrounds interpret the same reported behaviour differently', bin: 1 },
+      { id: 'cu10', text: 'A programme built around personal independence is adapted for a client whose decisions centre on family', bin: 3 }
+    ]
+  });
+  initActivity('hw-motivation-apply', {
+    type: 'scenario-application',
+    title: 'Motivation \u2014 Why Would Behaviour Change?',
+    subtitle: 'Analyse each situation and decide which motivational process is most relevant.',
+    hints: ['Ask where the drive comes from: the person\u2019s own values or an outside pressure.','Autonomy is about choice, competence is about achievable progress, relatedness is about support from others.','When motivation is present but behaviour does not change, look for barriers such as habit, environment or stress.'],
+    questions: [
+      { label: 'A student starts leaving her phone in another room at night because she personally wants to sleep better and feel more focused. Which process best fits?',
+        options: ['Intrinsic motivation','Extrinsic motivation','Competence','Barriers to change'],
+        correct: 0,
+        feedback: { correct: 'The drive comes from her own values and goals, which is intrinsic motivation.', incorrect: 'Look for where the drive comes from: her own wish for better sleep points to intrinsic motivation.' } },
+      { label: 'A student keeps screen time down only because his parents remove gaming time when he goes over the limit. Which process best fits?',
+        options: ['Relatedness','Extrinsic motivation','Autonomy','Intrinsic motivation'],
+        correct: 1,
+        feedback: { correct: 'Behaviour maintained by outside consequences and pressure is extrinsic motivation.', incorrect: 'The behaviour depends on parental consequences, which makes it extrinsic rather than self-chosen.' } },
+      { label: 'One app lets users set their own scrolling limits; another locks the same schedule for everyone. A psychologist predicts the first supports longer change. Which SDT need explains the prediction?',
+        options: ['Competence','Relatedness','Autonomy','Barriers to change'],
+        correct: 2,
+        feedback: { correct: 'Choosing your own limits supports autonomy, the feeling that change is genuinely chosen.', incorrect: 'The key difference is who chooses: self-chosen limits protect autonomy.' } },
+      { label: 'After failing a strict 30-day break from social media, a student concludes she is simply unable to change. From an SDT view, which need was most likely missing?',
+        options: ['Relatedness','Autonomy','Intrinsic motivation','Competence'],
+        correct: 3,
+        feedback: { correct: 'An all-or-nothing goal offered no achievable progress, undermining competence.', incorrect: 'She never experienced success, so the missing need is competence: feeling capable of succeeding.' } },
+      { label: 'A student sets phone limits, but friends mock the limits and he soon gives up. Which SDT need best explains why support mattered?',
+        options: ['Relatedness','Intrinsic motivation','Competence','Barriers to change'],
+        correct: 0,
+        feedback: { correct: 'Change is harder without connection and support from others, which is relatedness.', incorrect: 'The turning point was ridicule versus support from others, which is about relatedness.' } },
+      { label: 'A student understands the risks and genuinely wants to cut down, yet keeps scrolling late at night with the phone beside the bed during exam stress. What best explains the gap?',
+        options: ['Autonomy','Competence','Barriers to change','Relatedness'],
+        correct: 2,
+        feedback: { correct: 'Easy access, habit and stress can block change even when motivation is present.', incorrect: 'Motivation is present here, so look beyond it: environment, habit and stress are barriers to change.' } }
+    ]
+  });
+  initActivity('hw-tech-evaluate', {
+    type: 'spot-confound',
+    title: 'Technology and Health \u2014 Help, Harm, or Both?',
+    subtitle: 'Spot the reasoning problem in each claim about technology and health.',
+    hints: ['A correlation between two variables does not show which caused which, or whether a third variable matters.','Ask who was studied, whether there was a comparison group, and how long effects lasted.','Popularity and statistical significance are not the same as real-world effectiveness.'],
+    items: [
+      { id: 'te1', text: 'Teenagers who use social media more report more depressive symptoms, so social media causes depression', isProblem: true, explain: 'This moves from correlation to causation. Bidirectional ambiguity applies: heavier use may affect mood, poorer mood may increase use, or both may influence each other. A stronger conclusion stays associational and calls for longitudinal or experimental evidence.' },
+      { id: 'te2', text: 'People receiving online CBT improved significantly, therefore online CBT works equally well for everyone', isProblem: true, explain: 'This overgeneralises. Improvement in one sample does not show equal effects for all clients, problems and settings. A stronger conclusion limits the claim to the studied group and asks about sampling, comparison conditions and follow-up.' },
+      { id: 'te3', text: 'A mental-health app has millions of downloads, therefore it is an effective treatment', isProblem: true, explain: 'Downloads measure popularity, not effectiveness. There is no control group, no measured outcome and no evidence of improvement. A stronger conclusion asks what was measured against what comparison before claiming effectiveness.' },
+      { id: 'te4', text: 'An experiment randomly assigned students to limit social media or continue normally, and the limit group slept better on average', isProblem: false, explain: 'Random assignment with a comparison group supports a causal interpretation within this sample. Limits still apply: short duration, a student sample and the specific sleep measure restrict how far the finding generalises.' },
+      { id: 'te5', text: 'A tele-therapy trial reported improvement after two weeks with no comparison group, and the clinic now advertises proven results', isProblem: true, explain: 'Without a comparison group, improvement may reflect natural recovery or expectations rather than the therapy. Two weeks says little about lasting change. A stronger conclusion requires a control condition, longer follow-up and evidence that the effect is practically meaningful, not only statistically significant.' },
+      { id: 'te6', text: 'Researchers found r = +0.41 between phone hours and depression scores and concluded the two are moderately associated in this sample', isProblem: false, explain: 'This stays within the evidence: an associational claim, qualified to the sample, without causal language. The next step would be asking about measurement, direction and possible third variables.' }
     ]
   });
 })();
