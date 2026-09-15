@@ -411,8 +411,13 @@
 <p><strong>Reliability</strong> asks whether psychological measurement produces reasonably consistent results.</p>
 <p>Consider this question: <strong>If the same person were assessed again, or if different clinicians assessed the same person, would the result be similar?</strong></p>
 <h3 style="font-size:1rem;font-weight:700;margin:1rem 0 .5rem;">Regier et al. (2013)</h3>
-<p>In the DSM-5 field-trial conditions examined by <strong>Regier et al. (2013)</strong>, MDD showed relatively low test-retest diagnostic agreement, with a pooled kappa of approximately <strong>0.28</strong>, which the researchers classified as <strong>questionable reliability</strong>.</p>
-<p><strong>Kappa is not a percentage-agreement statistic.</strong> A kappa of 0.28 does not mean that clinicians agreed only 28% of the time; it indexes agreement beyond what would be expected by chance.</p>
+<p>Researchers wanted to see whether people would receive the <strong>same MDD diagnosis when assessed again</strong>.</p>
+<p>MDD received a <strong>kappa score of about 0.28</strong>, which is considered <strong>low</strong>.</p>
+<p><strong>In simple terms:</strong> the diagnoses were not very consistent. A person might receive an MDD diagnosis in one assessment but not receive the same diagnosis when assessed again.</p>
+<p>This suggests that <strong>diagnosing MDD may not always be very reliable</strong>.</p>
+<p><strong>Important:</strong> A kappa of 0.28 does <strong>not</strong> mean that clinicians agreed only 28% of the time.</p>
+<p>For now, remember:</p>
+<p><strong>Low kappa score = low consistency = lower reliability.</strong></p>
 <p>This provides evidence that standardized diagnostic criteria do not guarantee perfect agreement between assessments. Reliability can also depend on the assessment procedure, sample, clinicians and context.</p>
 <div class="reveal" style="margin-top:1rem;"><div class="reveal-question">What does this show?</div><div class="reveal-answer"><div>Even when clinicians use standardized diagnostic criteria, they may not always reach the same diagnosis.</div></div></div>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1rem;margin-top:.75rem;">
@@ -3670,8 +3675,21 @@ Culture influences depression through a chain of connected steps:</p>
     });
     
     html += '<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">';
-    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.5rem;">Your Total Score: <span id="phq9-total" style="color:var(--primary);">0</span> / 27</p>';
+    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.35rem;">Your Total Score: <span id="phq9-total" style="color:var(--primary);">0</span> / 27</p>';
+    html += '<p style="font-size:.88rem;color:var(--text);margin:0 0 .5rem;">General interpretation: <strong id="phq9-interpretation">Minimal symptoms</strong></p>';
     html += '<p style="font-size:.85rem;color:var(--text-muted);margin:0;"><strong>Reminder:</strong> This is how questionnaire responses can be converted into a numerical symptom score. The score represents reported symptom frequency; it does not by itself establish a clinical diagnosis.</p>';
+    html += '</div>';
+    html += '<div style="margin-top:.75rem;">';
+    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.5rem;">What does the score mean?</p>';
+    html += '<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:.6rem;">';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.45rem .75rem;background:var(--bg-secondary);border-bottom:1px solid var(--border);font-size:.82rem;font-weight:700;color:var(--text);"><span>PHQ-9 score</span><span>General interpretation</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>0&ndash;4</strong></span><span>Minimal symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>5&ndash;9</strong></span><span>Mild symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>10&ndash;14</strong></span><span>Moderate symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>15&ndash;19</strong></span><span>Moderately severe symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);"><span><strong>20&ndash;27</strong></span><span>Severe symptoms</span></div>';
+    html += '</div>';
+    html += '<p style="font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin:0;"><strong>The higher the score, the more frequent the reported depressive symptoms. However, a high score does not automatically mean that someone has MDD. The PHQ-9 is a measurement tool and does not provide a diagnosis by itself.</strong></p>';
     html += '</div>';
     
     phq9Container.innerHTML = html;
@@ -3702,6 +3720,7 @@ Culture influences depression through a chain of connected steps:</p>
           total += phq9Responses[key];
         }
         document.getElementById('phq9-total').textContent = total;
+        document.getElementById('phq9-interpretation').textContent = total <= 4 ? 'Minimal symptoms' : total <= 9 ? 'Mild symptoms' : total <= 14 ? 'Moderate symptoms' : total <= 19 ? 'Moderately severe symptoms' : 'Severe symptoms';
       });
     });
   }
@@ -3755,8 +3774,20 @@ Culture influences depression through a chain of connected steps:</p>
     });
     
     html += '<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">';
-    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.5rem;">Your Total Score: <span id="bdi2-total" style="color:var(--primary);">0</span> / 63</p>';
+    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.35rem;">Your Total Score: <span id="bdi2-total" style="color:var(--primary);">0</span> / 63</p>';
+    html += '<p style="font-size:.88rem;color:var(--text);margin:0 0 .5rem;">General interpretation: <strong id="bdi2-interpretation">Minimal symptoms</strong></p>';
     html += '<p style="font-size:.85rem;color:var(--text-muted);margin:0;"><strong>Reminder:</strong> The BDI-II converts selected statements into numerical scores. This demonstrates how different measures operationalize the same psychological construct. The score does not by itself establish a clinical diagnosis.</p>';
+    html += '</div>';
+    html += '<div style="margin-top:.75rem;">';
+    html += '<p style="font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:.5rem;">What does the score mean?</p>';
+    html += '<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:.6rem;">';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.45rem .75rem;background:var(--bg-secondary);border-bottom:1px solid var(--border);font-size:.82rem;font-weight:700;color:var(--text);"><span>BDI-II score</span><span>General interpretation</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>0&ndash;13</strong></span><span>Minimal symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>14&ndash;19</strong></span><span>Mild symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);border-bottom:1px solid var(--border);"><span><strong>20&ndash;28</strong></span><span>Moderate symptoms</span></div>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;padding:.4rem .75rem;font-size:.85rem;color:var(--text);"><span><strong>29&ndash;63</strong></span><span>Severe symptoms</span></div>';
+    html += '</div>';
+    html += '<p style="font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin:0;"><strong>Higher scores indicate greater reported severity of depressive symptoms. However, the score alone does not mean that someone has MDD. The BDI-II measures depressive symptoms and does not provide a diagnosis by itself.</strong></p>';
     html += '</div>';
     
     bdi2Container.innerHTML = html;
@@ -3787,6 +3818,7 @@ Culture influences depression through a chain of connected steps:</p>
           total += bdi2Responses[key];
         }
         document.getElementById('bdi2-total').textContent = total;
+        document.getElementById('bdi2-interpretation').textContent = total <= 13 ? 'Minimal symptoms' : total <= 19 ? 'Mild symptoms' : total <= 28 ? 'Moderate symptoms' : 'Severe symptoms';
       });
     });
   }
