@@ -120,7 +120,30 @@
       display: table;
       margin-top: .5rem;
     }
-  </style>
+  /* ===== SLIDE 1 WHAT YOU WILL LEARN: scoped to #slide-1 ===== */
+#slide-1 .hw-s1-subtitle { background: var(--primary-light); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .8rem 1rem; margin: 0 0 1.4rem; font-size: .95rem; line-height: 1.65; color: var(--text); }
+#slide-1 .hw-s1-section { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 1.7rem 0 .7rem; color: var(--text); }
+#slide-1 .hw-s1-duo, #slide-1 .hw-s1-trio, #slide-1 .hw-s1-journey { display: grid; gap: 1rem; }
+#slide-1 .hw-s1-duo { grid-template-columns: 1fr 1fr; }
+#slide-1 .hw-s1-trio, #slide-1 .hw-s1-journey { grid-template-columns: repeat(3, 1fr); }
+#slide-1 .hw-s1-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.15rem; }
+#slide-1 .hw-s1-card h4 { font-size: .98rem; font-weight: 700; margin: 0 0 .45rem; color: var(--text); }
+#slide-1 .hw-s1-card p { font-size: .92rem; line-height: 1.6; color: var(--text); margin: 0 0 .5rem; }
+#slide-1 .hw-s1-card p:last-child { margin-bottom: 0; }
+#slide-1 .hw-s1-card ul { margin: .25rem 0 0 1.15rem; padding: 0; }
+#slide-1 .hw-s1-card li { font-size: .9rem; line-height: 1.55; color: var(--text); margin-bottom: .25rem; }
+#slide-1 .hw-s1-q { font-weight: 700; color: var(--primary); }
+#slide-1 .hw-s1-focus { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin: 0 0 1rem; font-size: .95rem; line-height: 1.65; color: var(--text); }
+#slide-1 .hw-s1-takeaway { background: var(--primary-light); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .7rem 1rem; margin: 1rem 0 0; font-size: .92rem; line-height: 1.6; color: var(--text); }
+#slide-1 .hw-s1-takeaway .hw-s1-takeaway-title { display: block; font-weight: 800; color: var(--primary); margin-bottom: .25rem; }
+#slide-1 .hw-s1-final { background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius); padding: 1.1rem 1.25rem; margin: 0 0 1rem; }
+#slide-1 .hw-s1-final-question { font-size: 1.1rem; font-weight: 800; color: var(--primary); margin: 0 0 .5rem; line-height: 1.4; }
+#slide-1 .hw-s1-final p:last-child { font-size: .95rem; line-height: 1.6; color: var(--text); margin: 0; }
+@media (max-width: 768px) {
+  #slide-1 .hw-s1-duo, #slide-1 .hw-s1-trio, #slide-1 .hw-s1-journey { grid-template-columns: 1fr; }
+}
+
+</style>
 
 </head>
 <body>
@@ -148,7 +171,7 @@
       <div class="slide-container" id="slide-container">
                 <div class="progress-rail" id="progress-rail">
         <div class="rail-line"></div>
-        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. Health &amp; Well-being: The Big Picture</span></div>
+        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. Health &amp; Well-being: What You Will Learn</span></div>
         <div class="rail-dot" data-slide="2"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">2. Understanding Major Depressive Disorder</span></div>
         <div class="rail-dot activity-dot" data-slide="3"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">3. MDD or Normal Sadness?</span></div>
         <div class="rail-dot" data-slide="4"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">4. Measuring &amp; Diagnosing Depression</span></div>
@@ -210,38 +233,88 @@
         <div class="rail-dot activity-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">60. HL Data Analysis</span></div>
         </div>
 <div class="slide" data-slide="1" id="slide-1">
-<h2>Health &amp; Well-being: The Big Picture</h2>
-<p class="slide-intro">An overview of how psychology examines health, mental health, and well-being.</p>
-<div class="collapsible"><button class="collapsible-trigger">Three Branches of Study</button><div class="collapsible-body">
-<p>The IB Psychology Health &amp; Well-being context has three main areas:</p>
-<h3>Mental Health Disorder</h3>
-<p>Understanding psychological disorders through biological, cognitive, and environmental explanations. For this course: <strong>Major Depressive Disorder (MDD)</strong>.</p>
-<h3>Health Problem</h3>
-<p>Understanding factors influencing health-related behaviour. For this course: <strong>Social Media Addiction / Problematic Social-Media Use</strong>.</p>
-<h3>Prevention &amp; Treatment</h3>
-<p>Evidence-based strategies for treating mental health disorders and preventing or managing health problems.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Three Psychological Perspectives</button><div class="collapsible-body">
-<p>Psychology examines health using multiple perspectives:</p>
-<ul>
-<li><strong>Biological:</strong> Genetics, neurotransmitters, brain structure, stress response</li>
-<li><strong>Cognitive:</strong> Schemas, beliefs, interpretations, attention patterns</li>
-<li><strong>Sociocultural/environmental:</strong> Culture, social learning, life events, social norms</li>
-</ul>
-<p>No single perspective explains every aspect of health. Psychologists often combine evidence from different perspectives to develop a fuller understanding.</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">Why does psychology need multiple perspectives to understand health?</div><div class="reveal-answer"><div>Because health and behaviour can be influenced by biological, cognitive, social, cultural, and environmental factors. Looking at several perspectives can therefore provide a more complete explanation.</div></div></div>
-
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Predict: Which Perspective?</h3>
-<p style="font-size:.9rem;color:var(--text-secondary);margin-bottom:.75rem;">A teenager has stopped seeing friends, sleeps 12 hours a day, and says &ldquo;nothing matters anymore.&rdquo; For each explanation below, decide which psychological perspective it represents.</p>
-<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem;">
-<button class="p6-predict-btn" data-q="p1a" data-val="bio" style="padding:.4rem .8rem;border:2px solid var(--border);border-radius:var(--radius);background:var(--bg);cursor:pointer;font-size:.82rem;font-weight:600;color:var(--text);">Biological</button>
-<button class="p6-predict-btn" data-q="p1a" data-val="cog" style="padding:.4rem .8rem;border:2px solid var(--border);border-radius:var(--radius);background:var(--bg);cursor:pointer;font-size:.82rem;font-weight:600;color:var(--text);">Cognitive</button>
-<button class="p6-predict-btn" data-q="p1a" data-val="soc" style="padding:.4rem .8rem;border:2px solid var(--border);border-radius:var(--radius);background:var(--bg);cursor:pointer;font-size:.82rem;font-weight:600;color:var(--text);">Sociocultural</button>
+<h2>Health &amp; Well-being: What You Will Learn</h2>
+<p class="hw-s1-subtitle">Two health problems will guide this unit: Major Depressive Disorder and problematic social-media use. We will investigate why they develop, how psychologists study them, and what can be done to help.</p>
+<h3 class="hw-s1-section">Two People. Two Health Problems. Many Questions.</h3>
+<div class="hw-s1-duo">
+<div class="hw-s1-card">
+<h4>Maya &mdash; Major Depressive Disorder</h4>
+<p>Maya has been diagnosed with Major Depressive Disorder (MDD). She has experienced persistent low mood, loss of interest in activities she previously enjoyed, difficulty sleeping and problems concentrating. But knowing that Maya has MDD does not explain why she developed it.</p>
+<p class="hw-s1-q">What could be contributing to Maya's depression?</p>
 </div>
-<p style="font-size:.85rem;color:var(--text-secondary);margin-bottom:.35rem;">&ldquo;She has a family history of depression and low serotonin levels.&rdquo;</p>
-<div id="p6-p1a-feedback" style="display:none;margin-top:.5rem;padding:.6rem .8rem;border-radius:var(--radius);font-size:.85rem;line-height:1.5;"></div>
+<div class="hw-s1-card">
+<h4>Leo &mdash; Problematic Social-Media Use</h4>
+<p>Leo spends increasing amounts of time checking social media, including when he intends to study or sleep. He often reaches for his phone when stressed and finds it difficult to reduce his use even when it interferes with other parts of his life. But describing Leo's behaviour does not explain why it developed.</p>
+<p class="hw-s1-q">What could be contributing to Leo's behaviour?</p>
+</div>
+</div>
+<h3 class="hw-s1-section">Our Two Focus Areas</h3>
+<div class="hw-s1-focus">
+<p>Throughout this unit, our selected <strong>mental health disorder</strong> is <strong>Major Depressive Disorder (MDD)</strong>. Our selected <strong>health problem</strong> is <strong>problematic social-media use</strong>. The IB guide uses social media addiction as one possible health problem. In this course, we will generally use the more cautious term <strong>problematic social-media use</strong> rather than assuming that every pattern of excessive use should automatically be classified as an addiction.</p>
+</div>
+<h3 class="hw-s1-section">Why Might Maya Develop MDD?</h3>
+<div class="hw-s1-trio">
+<div class="hw-s1-card">
+<h4>Biological</h4>
+<p>Some people may have greater biological vulnerability to depression. Psychologists can investigate factors such as genetic vulnerability, brain function and neurotransmission. But finding a biological process associated with depression does not automatically prove that it caused Maya's MDD.</p>
+</div>
+<div class="hw-s1-card">
+<h4>Cognitive</h4>
+<p>How Maya interprets experiences may also matter. For example, repeatedly interpreting setbacks as evidence that 'nothing will ever improve' could contribute to patterns of thinking associated with depression. Later, we will examine how cognitive models such as Beck's attempt to explain this.</p>
+</div>
+<div class="hw-s1-card">
+<h4>Environmental</h4>
+<p>Experiences can also contribute to vulnerability. Persistent stress, major negative life events or difficult social circumstances may increase the risk of depression. However, experiencing adversity does not mean that a person will inevitably develop MDD.</p>
+</div>
+</div>
+<div class="hw-s1-takeaway">
+<span class="hw-s1-takeaway-title">The key idea</span>
+<p>Maya's depression does not need to have one single cause. Biological vulnerability, patterns of thinking and environmental experiences may interact.</p>
+</div>
+<h3 class="hw-s1-section">Why Might Leo's Social-Media Use Become Problematic?</h3>
+<div class="hw-s1-trio">
+<div class="hw-s1-card">
+<h4>Social Learning</h4>
+<p>Leo sees friends and influencers repeatedly checking, posting and receiving attention online. Observing other people being rewarded can make behaviours more likely to be copied, while likes, replies and other responses may reinforce Leo's own behaviour. Later, we will use Social Learning Theory to examine this process more carefully.</p>
+</div>
+<div class="hw-s1-card">
+<h4>Stress</h4>
+<p>Leo often checks social media when he feels stressed. If scrolling temporarily reduces unpleasant feelings, using social media may become a coping response that is repeated. This creates an important question: does stress contribute to problematic use, can problematic use contribute to stress, or can both occur?</p>
+</div>
+<div class="hw-s1-card">
+<h4>Social &amp; Environmental Context</h4>
+<p>Leo's behaviour also occurs within a social environment. Peer expectations, constant access to technology and patterns of online interaction may influence when and how often he uses social media. The behaviour therefore cannot be understood only by looking at Leo as an isolated individual.</p>
+</div>
+</div>
+<div class="hw-s1-takeaway">
+<span class="hw-s1-takeaway-title">The key idea</span>
+<p>Problematic social-media use can also have multiple influences. Social learning, stress and the wider social environment may interact.</p>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">What Do Maya and Leo Have in Common?</button><div class="collapsible-body"><p>Their problems are different, but psychologists can ask similar questions.</p><p>For both Maya and Leo, we can ask:</p><ul><li>What exactly is the health problem?</li><li>How is it being measured?</li><li>What factors could contribute to it?</li><li>How might different factors interact?</li><li>Does the evidence show association or causation?</li><li>What could be changed to prevent or treat the problem?</li></ul><p>This is why Health &amp; Well-being is not simply a list of disorders, theories and treatments.</p><p>Psychologists are trying to explain health outcomes using evidence.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Why Study Prevalence?</button><div class="collapsible-body"><p>Psychologists are also interested in how common health problems are.</p><p>But prevalence becomes psychologically interesting when we ask <strong>why rates change or differ</strong>.</p><p>For example:</p><p>What might explain an increase in recorded problematic social-media use over time?</p><p>Why might recorded rates of depression differ between populations?</p><p>Possible explanations could involve genuine differences in risk or exposure, but psychologists must also consider measurement, diagnosis, access to healthcare, reporting and cultural context.</p><p>A prevalence difference is therefore something to explain &mdash; not an explanation by itself.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">From Explanation to Treatment</button><div class="collapsible-body"><p>If psychologists understand processes contributing to a health problem, they can ask whether changing those processes may help.</p><p>For MDD, we will examine both <strong>biological treatment</strong> and <strong>psychological treatment</strong>.</p><p>For problematic social-media use, we will examine strategies designed to reduce problematic behaviour.</p><p>But an intervention sounding reasonable does not prove that it works.</p><p>We must ask:</p><ul><li>What is the intervention trying to change?</li><li>How should improvement be measured?</li><li>Compared with what?</li><li>How large and consistent is the improvement?</li><li>What other explanations could account for the result?</li></ul><p>This is why the unit examines both the <strong>explanation</strong> and the <strong>effectiveness</strong> of treatment and prevention.</p></div></div>
+<h3 class="hw-s1-section">Our Health &amp; Well-being Journey</h3>
+<div class="hw-s1-journey">
+<div class="hw-s1-card">
+<h4>1. Major Depressive Disorder</h4>
+<p>We will investigate:</p>
+<ul><li>measuring depression</li><li>biological explanations</li><li>cognitive models</li><li>environmental factors</li><li>cultural differences</li></ul>
+</div>
+<div class="hw-s1-card">
+<h4>2. Problematic Social-Media Use</h4>
+<p>We will investigate:</p>
+<ul><li>changes in prevalence</li><li>differences between populations</li><li>Social Learning Theory</li><li>stress and health</li></ul>
+</div>
+<div class="hw-s1-card">
+<h4>3. Prevention &amp; Treatment</h4>
+<p>We will investigate:</p>
+<ul><li>biological treatment for MDD</li><li>psychological treatment for MDD</li><li>prevention or treatment of problematic social-media use</li><li>how psychologists evaluate effectiveness</li></ul>
+</div>
+</div>
+<h3 class="hw-s1-section">The Question Behind the Whole Unit</h3>
+<div class="hw-s1-final">
+<p class="hw-s1-final-question">How can psychology explain, measure and improve health and well-being?</p>
+<p>Every theory, study and intervention in this unit helps us answer part of that question.</p>
 </div>
 </div>
 
@@ -497,29 +570,37 @@
 <p style="font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0;">Biological explanations examine how genetic inheritance, brain processes and chemical messengers may contribute to vulnerability to Major Depressive Disorder (MDD). Importantly, biological factors may <strong>increase risk or vulnerability</strong> — they do not mean that depression is biologically predetermined. Keep this distinction in mind as you work through the evidence.</p>
 </div>
 
-<div class="collapsible"><button class="collapsible-trigger">Genetic Vulnerability</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Depression runs in families</h3>
-<p>Depression does tend to run in families. On its own, though, that does not prove that genes cause depression, because relatives often share environments as well as genes — the same household, routines, stresses and experiences. To separate the two, researchers turn to twins.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Genetic Vulnerability</h4>
+<p>Depression can run in families, which suggests that genetic differences may contribute to a person&rsquo;s vulnerability to developing MDD.</p>
+<p>This does not mean that there is a single &lsquo;depression gene.&rsquo; Depression is polygenic: many genes may each make a small contribution to vulnerability. A person may therefore inherit a greater or lower susceptibility to depression rather than inheriting depression itself.</p>
+<p>Genes also do not act independently of experience. Two people with similar genetic vulnerability can have different outcomes because their environments, experiences and other biological factors differ.</p>
 
-<p><strong>Why twins?</strong> <strong>Monozygotic (MZ) twins</strong> are identical twins who share almost all of their genetic material, while <strong>dizygotic (DZ) twins</strong> are fraternal twins who share, on average, about half of it. <strong>Concordance</strong> means that both twins share the characteristic being studied — in this research, that both twins had depression. If genes contribute to depression, depression should occur together more often in MZ twins than in DZ twins, because MZ twins share more of their genetic material.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">A Real-Life Example</h4>
+<p>Imagine that depression has occurred several times in Noah&rsquo;s family. His mother and grandfather have both experienced MDD.</p>
+<p>This family history could mean that Noah has inherited some genetic vulnerability. But it does not mean that Noah will inevitably develop depression.</p>
+<p>Noah&rsquo;s outcome may also depend on factors such as stressful life events, relationships, social support and other biological differences. Genetic vulnerability changes probability; it does not determine a person&rsquo;s future.</p>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">McGuffin et al. (1996): Do genes matter?</h3>
-<p>Start with the logic. If genes contribute to vulnerability to depression, we would expect identical twins to show greater similarity in MDD than fraternal twins — because MZ twins are genetically more similar. McGuffin and colleagues examined twins in which one member had experienced major depression and compared MDD concordance between MZ and DZ pairs.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Why &ldquo;Polygenic&rdquo; Matters</h4>
+<p>Because depression is polygenic, psychologists should not expect to find one gene that explains whether someone develops MDD.</p>
+<p>Instead, many genetic differences may contribute small amounts of vulnerability. Genetic explanations therefore describe differences in risk, not a simple gene-to-disorder pathway.</p>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:1rem 0;">
-<p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.5rem;">What did they find? (concordance for MDD)</p>
-<p style="font-size:1rem;line-height:1.8;color:var(--text);margin:0;"><strong>MZ twins: 46% concordance</strong><br><strong>DZ twins: 20% concordance</strong></p>
-</div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">McGuffin et al. (1996): Do Genes Matter?</h4>
+<p>McGuffin and colleagues compared depression concordance in identical (monozygotic or MZ) twins and non-identical (dizygotic or DZ) twins.</p>
+<p>MZ twins share almost all of their genes, while DZ twins share roughly half of their segregating genes on average.</p>
+<p>The researchers reported probandwise concordance of approximately 46% for MZ twins and 20% for DZ twins.</p>
+<p>The higher concordance among MZ twins is consistent with genetic differences contributing to vulnerability to depression.</p>
 
-<p>The much higher concordance among MZ twins supports the idea that genetic differences contribute to vulnerability to depression.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">What Does This Actually Tell Us?</h4>
+<p>The most important comparison is that concordance was higher for MZ twins than DZ twins.</p>
+<p>Because MZ twins are more genetically similar, this pattern is consistent with a genetic contribution to depression.</p>
+<p>But notice something equally important: MZ concordance was about 46%, not close to 100%.</p>
+<p>If genes completely determined whether someone developed depression, we would expect identical twins to show much greater similarity. The fact that many identical twin pairs differed shows that genes are not sufficient by themselves.</p>
 
-<p>But notice the second half of the result. The MZ concordance rate was <strong>nowhere near 100%</strong>. Identical twins can share virtually all of their DNA without both developing depression. If genes completely determined who develops depression, we would expect identical twins to show much closer to 100% concordance; instead, many identical co-twins did not share the diagnosis. Genes therefore appear to <strong>increase vulnerability rather than determine</strong> whether MDD develops. Environmental experiences, cognition and other biological factors may also contribute.</p>
+<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">If genes completely determined whether someone developed MDD, what would you expect the concordance rate for identical twins to be?</div><div class="reveal-answer"><div>Close to 100%. Identical twins are extremely genetically similar, so a completely genetically determined disorder should appear in both twins almost every time. The actual MZ concordance was much lower, which supports genetic influence but not genetic determinism.</div></div></div>
 
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">THINK: If genes completely determined whether someone developed MDD, what would you expect the MZ concordance rate to be?</div><div class="reveal-answer"><div><strong>Close to 100%.</strong> The actual concordance was much lower, suggesting that genes contribute to vulnerability but are not sufficient on their own to determine whether MDD develops.</div></div></div>
-
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">Study detail</div><div class="reveal-answer"><div>Twins were assessed using <strong>standardized diagnostic procedures</strong>, and the assessments were conducted <strong>blind</strong> to relevant information such as zygosity — raters did not know whether the twin they were assessing came from an identical or fraternal pair. Comparing MZ and DZ concordance in this way is what allows researchers to infer a genetic contribution.</div></div></div>
-
-<p>Twin studies also rest on the <strong>equal-environments assumption</strong>: that identical and fraternal pairs experience similarly similar environments. If identical twins are treated more alike (dressed alike, kept in the same room), some of their greater similarity could reflect shared experience rather than shared genes alone — one reason to interpret concordance results with care.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">One Important Limitation</h4>
+<p>Twin studies cannot perfectly separate genes from environment. Identical twins may experience more similar environments than non-identical twins, so greater MZ concordance cannot automatically be attributed entirely to genetics.</p>
+<p>The evidence therefore supports genetic influence, but it does not tell us that genes alone caused the difference.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; interpreting what McGuffin can and cannot tell us</h4>
@@ -527,79 +608,38 @@
 <div class="act-container" id="hw-mc-evidence"></div>
 </div>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Polygenic inheritance</h3>
-<p>There is no single &ldquo;depression gene.&rdquo; Depression is considered <strong>polygenic</strong>, meaning that many genetic variants may each contribute a small amount to a person&rsquo;s overall vulnerability. A person may therefore inherit a greater or smaller genetic vulnerability rather than inheriting depression itself.</p>
-
-<div style="background:var(--primary-light);border-left:3px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1rem;margin-top:1rem;">
-<p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.25rem;">IB Connection &mdash; Genetics</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;">Twin studies help researchers investigate genetic influences on psychological characteristics. Higher concordance among MZ than DZ twins supports a genetic contribution, while concordance below 100% suggests that genes alone cannot explain MDD.</p>
-</div>
-</div></div>
-
-<div class="collapsible"><button class="collapsible-trigger">Brain Differences</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">How do researchers study the brain in depression?</h3>
-<p>Researchers use <strong>brain-imaging techniques such as functional Magnetic Resonance Imaging (fMRI)</strong> to compare patterns of brain activity in people with and without Major Depressive Disorder (MDD). fMRI indirectly measures changes in blood flow associated with neural activity, letting researchers see which brain regions are more or less active during specific tasks or states.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Brain Function and Depression</h4>
+<p>Researchers have found differences in the activity and functioning of several brain regions in people experiencing depression.</p>
+<p>Two useful examples are the prefrontal cortex and the amygdala.</p>
+<p>These findings can help psychologists understand biological processes associated with depressive symptoms. However, finding a brain difference does not automatically tell us whether that difference caused the depression, resulted from it, or developed through an interaction with other factors.</p>
 
 <img src="../images/brain-pfc-amygdala.jpg" alt="Diagram of the brain showing the prefrontal cortex and the amygdala" style="width:100%;max-width:520px;height:auto;border-radius:var(--radius);margin:0 0 .35rem;">
 <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 1rem;">Two brain areas commonly discussed in research on depression: the prefrontal cortex and amygdala.</p>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Prefrontal cortex (PFC)</h3>
-<p>The <strong>prefrontal cortex (PFC)</strong> is an area at the front of the brain that helps us control and direct our thinking and behaviour. For example, when you concentrate on a difficult task, make a decision, stop yourself from acting impulsively, or try to manage an emotional reaction, parts of the PFC are involved.</p>
-<p><strong>A real-life example:</strong> Imagine receiving a disappointing test result. You might immediately feel upset and think, &ldquo;I&rsquo;m terrible at this.&rdquo; Your PFC helps you step back from that initial reaction, consider the situation more carefully, and redirect your attention: &ldquo;One bad result doesn&rsquo;t mean I&rsquo;m terrible. What can I do differently next time?&rdquo;</p>
-<p>Research on depression has found <strong>altered functioning in prefrontal networks</strong>, including reduced activity in some regions involved in cognitive control and emotion regulation. This could help account for difficulties such as:</p>
-<ul>
-<li>concentrating</li>
-<li>making decisions</li>
-<li>shifting attention away from negative information</li>
-<li>regulating persistent negative thoughts and emotions</li>
-</ul>
-<p>Importantly, the PFC contains several regions with different functions, and depression can involve different patterns of altered activity across these regions. So altered PFC functioning may make cognitive and emotional control harder — but it does not mean the PFC simply &ldquo;switches off&rdquo; in depression.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">The Prefrontal Cortex</h4>
+<p>The prefrontal cortex is involved in processes such as planning, decision-making, attention and regulating thoughts and emotions.</p>
+<p>Differences in prefrontal functioning have been associated with depression. This could help explain why some people with MDD experience difficulties such as persistent negative thinking, poor concentration or difficulty regulating emotional responses.</p>
+<p>For example, imagine someone receives one piece of criticism at work and then spends the entire evening repeatedly thinking, &lsquo;I&rsquo;m useless. I always get everything wrong.&rsquo; Difficulties in the systems involved in regulating attention and thought may contribute to why negative information becomes difficult to disengage from.</p>
+<p>This does not mean that the prefrontal cortex contains a &lsquo;depression centre.&rsquo; It is one part of a much larger network.</p>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Amygdala</h3>
-<p>The <strong>amygdala</strong> helps the brain notice and respond to emotionally important information. It is particularly responsive to information that may be threatening or negative, although it is not simply a &ldquo;fear centre.&rdquo;</p>
-<p><strong>A real-life example:</strong> Imagine seeing ten comments about a piece of work: nine are positive and one is highly critical. Your brain has to determine which information deserves attention and how strongly to respond to it. The amygdala is part of the system involved in detecting the emotional significance of that information.</p>
-<p>Research has frequently found <strong>stronger or more prolonged amygdala responses to negative emotional information</strong> in people with MDD. This could mean that negative information captures attention more strongly or produces a more persistent emotional response. A criticism, upsetting memory, negative facial expression, or other negative information may therefore be particularly difficult to disengage from.</p>
-<p>The amygdala processes a broader range of emotionally significant information and works together with other brain regions — and people with depression do not all respond identically.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">The Amygdala</h4>
+<p>The amygdala is involved in detecting and processing emotionally important information, particularly information related to threat and negative emotion.</p>
+<p>Research has associated depression with differences in amygdala responses to emotional information. This may help explain why some people with depression show increased sensitivity to negative emotional cues.</p>
+<p>For example, someone with depression might receive nine positive comments and one critical comment but find that the criticism captures their attention and produces a particularly strong emotional response.</p>
+<p>The amygdala does not simply &lsquo;create negative emotion,&rsquo; and depression cannot be reduced to an overactive amygdala. Its activity is part of interacting brain systems.</p>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Putting the Two Together</h3>
-<p>A useful way to understand these findings is to think about the interaction between emotional responding and cognitive control. The <strong>amygdala</strong> helps detect emotionally significant information, while parts of the <strong>PFC</strong> help regulate attention, thinking, and emotional responses. In depression, stronger responses to negative information combined with altered cognitive control could make negative thoughts and emotions harder to regulate.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">These Regions Do Not Work Alone</h4>
+<p>The prefrontal cortex and amygdala interact with wider brain networks.</p>
+<p>It can therefore be useful to think about depression in terms of systems involved in processing emotional information and regulating thought and attention, rather than imagining that one brain region causes the disorder.</p>
+<p>Brain findings provide evidence about biological processes associated with depression, but they need to be interpreted alongside cognitive, environmental and genetic evidence.</p>
 
-<div style="margin:1rem 0;text-align:center;">
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;"><strong>Negative emotional information</strong><br>&darr;<br><strong>Amygdala</strong> &mdash; stronger or more prolonged response to negative information<br><span style="color:var(--text-secondary);">+</span><br><strong>Prefrontal networks</strong> &mdash; greater difficulty redirecting attention or regulating the response<br>&darr;<br><strong>Negative thoughts and emotions may become harder to disengage from or regulate.</strong></p>
-</div>
-
-<p style="margin-top:.75rem;">These brain differences do not prove that they cause depression. They may contribute to vulnerability, may partly result from experiencing depression, or may interact with genetic, cognitive and environmental factors. In short, a biological association is not proof of a simple cause, and biological vulnerability is not biological determinism.</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Siegle et al. (2007): Do brains respond differently to negative information?</h3>
-<p>The logic follows from the amygdala and PFC findings. If people with depression get &ldquo;stuck&rdquo; on negative material, we would expect their emotional brain regions to keep responding after a negative stimulus has disappeared, and their control systems to struggle to bring activity back down.</p>
-
-<p>Siegle and colleagues tested this by comparing adults with a current diagnosis of MDD who were <strong>not on antidepressant medication</strong> with psychologically healthy controls. Excluding medicated patients mattered: medication changes serotonin systems, which would have contaminated any brain-activity comparison. Both groups lay in an <strong>fMRI scanner</strong> while viewing negative, positive and neutral words and responding to each.</p>
-
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:1rem 0;">
-<p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.5rem;">What did they find?</p>
-<p style="font-size:.9rem;line-height:1.7;color:var(--text);margin:0;">Both groups&rsquo; <strong>amygdalae responded</strong> when negative words appeared — initial detection was normal. The crucial difference came <strong>after</strong> each word ended: in controls, amygdala activity faded back toward baseline, while in the MDD group it <strong>stayed elevated long after</strong> the word disappeared. Participants with MDD also showed <strong>reduced recruitment of prefrontal regions</strong> that normally regulate emotional responses.</p>
-</div>
-
-<p>Sustained amygdala activation locates the difference in <strong>recovery, not detection</strong>: both brains notice negativity, but the depressed brain does not let go of it. That maps directly onto the lived symptom of <strong>rumination</strong> — negative thoughts persisting and repeating — giving a biological reading of a psychological symptom. Overall, MDD appears to involve measurable differences in emotion-regulation circuitry: heightened limbic reactivity combined with weaker prefrontal control.</p>
-
-<p>One important caution: these findings show that depression is <strong>associated with</strong> differences in brain activity; they do not show those differences <em>caused</em> the depression. This was a small cross-sectional study — a snapshot of people who were depressed at that moment. We cannot tell whether the sustained amygdala response preceded the disorder or was a consequence of being depressed, and chronic stress and rumination can themselves reshape these circuits. The finding earns the word <em>associated</em>, not <em>caused</em>.</p>
+<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">A student with depression receives mostly positive feedback on an assignment but becomes intensely focused on the one negative comment and cannot stop thinking about it. How could the prefrontal cortex and amygdala help us understand this pattern?</div><div class="reveal-answer"><div>The amygdala is involved in processing emotionally important information and may contribute to a strong response to the negative comment. Prefrontal systems are involved in regulating attention, thought and emotion, so differences in these systems may contribute to difficulty disengaging from the criticism. This is a possible biological explanation of the pattern, not proof that these brain differences caused the student&rsquo;s depression.</div></div></div>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; reasoning from Siegle&rsquo;s data</h4>
 <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">For each claim, choose the conclusion the evidence actually licenses.</p>
 <div class="act-container" id="hw-siegle-evidence"></div>
 </div>
-
-<div style="background:var(--primary-light);border-left:3px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1rem;margin-top:1rem;">
-<p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.25rem;">IB Connection &mdash; Causality</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;"><strong>Causality</strong> concerns whether one factor produces change in another. Brain-imaging studies can identify correlations between neural activity and depression, but correlational evidence cannot establish the direction of cause and effect.</p>
-</div>
-
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-<p style="font-size:.88rem;font-weight:700;color:var(--text);margin-bottom:.35rem;">Exam Takeaway:</p>
-<p style="font-size:.88rem;line-height:1.55;color:var(--text-secondary);margin:0;"><strong>Evidence:</strong> MDD is associated with altered functioning in neural systems involved in emotion processing and cognitive control.<br><strong>Evaluation:</strong> association does not establish whether brain differences are a cause or consequence of depression.</p>
-</div>
-</div></div>
 
 <div class="collapsible"><button class="collapsible-trigger">Neurotransmitters and Depression</button><div class="collapsible-body">
 <img src="../images/neurotransmitter-communication.jpg" alt="Diagram illustrating neurotransmitter communication between neurons across a synapse" style="max-width:100%;border-radius:var(--radius);margin:0 0 .75rem;">
@@ -726,16 +766,11 @@
 <div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question">Set vulnerability low but stress high &mdash; is MDD guaranteed?</div><div class="reveal-answer"><div><strong>No.</strong> The model is probabilistic, not deterministic. Even with high stress, lower vulnerability means the probability of MDD is reduced. However, sufficiently extreme stress can affect anyone, and the model does not guarantee protection for any individual.</div></div></div>
 
 <div class="collapsible"><button class="collapsible-trigger">Same Stress, Different Vulnerability</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Three people, one stressful event</h3>
-<p>All three people experience the same stressful event: failing an important exam.</p>
-<ul>
-<li><strong>Person A:</strong> No family history of depression, strong social support, effective coping strategies, generally positive outlook.</li>
-<li><strong>Person B:</strong> Family history of depression, moderate social support, tends to ruminate on negative events.</li>
-<li><strong>Person C:</strong> Strong family history of depression, limited social support, history of childhood adversity, tendency toward negative thinking patterns.</li>
-</ul>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.75rem;"><strong>Think about it:</strong> Three students sitting the same exam all fail. Student A is disappointed but copes. Student B feels devastated and replays the failure repeatedly. Student C spirals into hopelessness and withdraws. The exam result was identical &mdash; the difference is vulnerability.</p>
-
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">According to the Diathesis&ndash;Stress Model, who would you predict has the greatest risk of developing MDD after this event? Why?</div><div class="reveal-answer"><div><strong>Person C</strong> has the greatest risk because they have the highest vulnerability (genetic, developmental, and cognitive factors) combined with significant stress. Person B has moderate risk. Person A has the lowest risk because their vulnerability is low, even though they experienced the same stress. The model predicts risk through the <strong>interaction</strong> of vulnerability and stress, not through either factor alone.</div></div></div>
+<h3 style="font-size:1rem;font-weight:700;margin:1rem 0 .5rem;">A Real-Life Example</h3>
+<p>Imagine two students, Leo and Marcus, both experience the breakup of a long-term relationship.</p>
+<p>Leo has a stronger underlying vulnerability to depression, while Marcus has lower vulnerability.</p>
+<p>The same stressful event could therefore affect them differently. Leo might develop a depressive episode while Marcus experiences temporary sadness and gradually recovers.</p>
+<p>The model does not claim that vulnerability automatically produces depression or that a stressful event automatically produces depression. It focuses on how vulnerability and experience can interact.</p>
 </div></div>
 
 <div class="collapsible"><button class="collapsible-trigger">Same Vulnerability, Different Stress</button><div class="collapsible-body">
@@ -761,21 +796,6 @@
 <div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">How does the model explain the interaction?</div><div class="reveal-answer"><div>Sarah's pre-existing vulnerability (genetic risk + cognitive style) means she is more susceptible to the effects of social stress. The loss of her friendship group provides the environmental trigger. The model predicts that the combination of her vulnerability and this stressor increases the probability of developing MDD, though it does not guarantee it.</div></div></div>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Connecting to McGuffin et al. (1996)</button><div class="collapsible-body">
-<p>On Page 04, we learned that <strong>McGuffin et al. (1996)</strong> studied concordance rates for MDD in both identical (MZ) and fraternal (DZ) twins. Key findings:</p>
-<ul>
-<li><strong>MZ concordance:</strong> Pairwise concordance was approximately <strong>46%</strong> for MZ twins, compared with approximately <strong>20%</strong> for DZ twins. The higher MZ concordance is consistent with a genetic influence on MDD risk, but because it is well short of 100%, it also shows that genes do not fully determine who develops MDD. A 46% pairwise concordance is a <em>group</em> statistic: it does not mean that any given identical twin has a 46% prospective chance of developing MDD.</li>
-<li><strong>DZ concordance:</strong> Approximately <strong>20%</strong> &mdash; lower than MZ, suggesting a genetic component.</li>
-<li>If depression were entirely genetically determined, MZ concordance would be <strong>100%</strong>. The fact that it is only 46% means genes influence vulnerability but cannot by itself determine who develops MDD.</li>
-</ul>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Why this matters for the Diathesis&ndash;Stress Model</h3>
-<p>The Diathesis&ndash;Stress Model offers a probabilistic account of the 46% figure: identical twins share genetic vulnerability, but they may experience different levels of environmental stress, develop different cognitive styles, or encounter different protective factors. This leaves room for environmental and psychological influences. The McGuffin twin findings are <strong>consistent with</strong> a multifactorial, non-deterministic account &mdash; although the twin study itself does not directly demonstrate the Diathesis&ndash;Stress Model; it shows that genetic similarity alone does not determine who develops MDD.</p>
-
-<p><strong>Real-life example:</strong> Twin sisters Sarah and Emma share the same genes. Sarah experiences a difficult breakup and prolonged loneliness at university. Emma has a supportive partner and a close friendship group. Both have the same genetic vulnerability, but Sarah&rsquo;s higher stress and fewer protective factors make her more likely to develop MDD. This is exactly what the Diathesis&ndash;Stress Model predicts.</p>
-
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">Why does the 46% MZ concordance fit an interaction explanation better than genetic determinism?</div><div class="reveal-answer"><div>If depression were entirely genetically determined, MZ concordance would be 100%. The 46% figure means genetic similarity influences vulnerability but environmental stress and other factors also play a role. The Diathesis&ndash;Stress Model explains this: identical twins share genetic vulnerability, but they may experience different levels of environmental stress, have different cognitive styles, or encounter different protective factors.</div></div></div>
-</div></div>
 
 <div class="collapsible"><button class="collapsible-trigger">Protective Factors</button><div class="collapsible-body">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Reducing risk</h3>
@@ -843,47 +863,29 @@
 <div id="p6-synapse-feedback" style="display:none;margin-top:.75rem;padding:.75rem 1rem;border-radius:var(--radius);font-size:.9rem;line-height:1.5;"></div>
 </div>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Label the Synapse</h3>
-<p style="font-size:.9rem;color:var(--text-secondary);margin-bottom:.75rem;">Click a label below, then click the matching part box.</p>
-<div id="p6-label-choices" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem;"></div>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;">
-<div class="p6-synapse-part" data-part="A" style="padding:.55rem .75rem;border:2px dashed var(--border);border-radius:var(--radius);cursor:pointer;font-size:.85rem;font-weight:600;color:var(--text);text-align:center;">A</div>
-<div class="p6-synapse-part" data-part="B" style="padding:.55rem .75rem;border:2px dashed var(--border);border-radius:var(--radius);cursor:pointer;font-size:.85rem;font-weight:600;color:var(--text);text-align:center;">B</div>
-<div class="p6-synapse-part" data-part="C" style="padding:.55rem .75rem;border:2px dashed var(--border);border-radius:var(--radius);cursor:pointer;font-size:.85rem;font-weight:600;color:var(--text);text-align:center;">C</div>
-<div class="p6-synapse-part" data-part="D" style="padding:.55rem .75rem;border:2px dashed var(--border);border-radius:var(--radius);cursor:pointer;font-size:.85rem;font-weight:600;color:var(--text);text-align:center;">D</div>
-</div>
-</div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Does Serotonin Communication Work?</h4>
+<p>Serotonin is a neurotransmitter: a chemical messenger used by neurons to communicate.</p>
+<p>A neuron releases serotonin into the small gap between neurons called the synapse. The serotonin crosses the synapse and can bind to receptors on another neuron. Some serotonin is then taken back into the neuron that released it through a process called reuptake.</p>
+<p>Serotonin is involved in several processes relevant to depression, including mood, sleep and appetite. This makes serotonin signalling biologically relevant to MDD, but it does not mean that depression can be explained simply as &lsquo;not enough serotonin.&rsquo;</p>
 
-<div class="collapsible"><button class="collapsible-trigger">How Neurotransmission Works</button><div class="collapsible-body">
-<p>Neurons communicate by releasing chemical messengers (<strong>neurotransmitters</strong>) across a tiny gap called a <strong>synapse</strong>. The process follows a clear sequence:</p>
-<ol style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.5rem 0 .75rem 1.25rem;">
-<li>A neural signal (electrical impulse) travels down the axon and reaches the <strong>axon terminal</strong> of the sending (presynaptic) neuron.</li>
-<li>The signal triggers <strong>vesicles</strong> containing neurotransmitter molecules to fuse with the cell membrane and release their contents into the <strong>synaptic cleft</strong> (the gap between neurons).</li>
-<li>Neurotransmitter molecules diffuse across the synaptic cleft.</li>
-<li>They bind to specific <strong>receptors</strong> on the receiving (postsynaptic) neuron, like a key fitting a lock.</li>
-<li>Binding triggers a response in the receiving neuron &mdash; either <strong>excitation</strong> (making it more likely to fire) or <strong>inhibition</strong> (making it less likely to fire).</li>
-<li>After binding, neurotransmitters are removed from the cleft by <strong>reuptake</strong> (reabsorbed by the sending neuron) or <strong>enzymatic breakdown</strong>, terminating the signal.</li>
-</ol>
-<p><strong>Key point:</strong> Each neuron has receptors for specific neurotransmitters. The effect depends on which neurotransmitter is released, which receptor it binds to, and what that receptor does when activated.</p>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Why Might This Matter for Depression?</h4>
+<p>Imagine someone with MDD who has persistent low mood, disrupted sleep and changes in appetite.</p>
+<p>Because serotonin is involved in systems related to these processes, researchers have investigated whether differences in serotonin signalling may be involved in depression.</p>
+<p>That is a reasonable biological hypothesis. But showing that serotonin is involved in processes affected by depression is not the same as proving that a serotonin deficiency caused the disorder.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Serotonin and the Monoamine Hypothesis</button><div class="collapsible-body">
-<p><strong>Serotonin</strong> (5-hydroxytryptamine, 5-HT) is a neurotransmitter involved in mood regulation, sleep, and appetite &mdash; all commonly disrupted in depression.</p>
-<p>The <strong>monoamine hypothesis</strong> proposed that depression is caused by a deficiency of monoamine neurotransmitters (including serotonin) in the brain. This became the dominant biological explanation from the 1960s.</p>
-<p><strong>The logic:</strong> If low serotonin causes depression, then increasing serotonin should relieve depression. SSRIs were developed as a treatment intended to increase monoamine availability, partly on the basis of the monoamine hypothesis. At the same time, evidence from research on antidepressants has shaped how the monoamine hypothesis itself has been evaluated and refined.</p>
-<p><strong>SSRIs</strong> (Selective Serotonin Reuptake Inhibitors) block the reuptake transporter, preventing serotonin from being reabsorbed by the sending neuron. This leaves more serotonin available in the synaptic cleft, increasing stimulation of postsynaptic receptors.</p>
-<p><strong>Key terms:</strong> <em>Presynaptic neuron</em> (sends signal), <em>postsynaptic neuron</em> (receives signal), <em>synaptic cleft</em> (gap), <em>reuptake</em> (reabsorption of neurotransmitter).</p>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">What Do SSRIs Tell Us?</h4>
+<p>SSRIs reduce the reuptake of serotonin after it has been released. This means serotonin remains available in the synapse for longer.</p>
+<p>SSRIs can reduce depressive symptoms for some people, which shows that changing serotonin signalling can influence depression.</p>
+<p>However, this does not prove that depression was originally caused by too little serotonin. A treatment can alter a biological system and improve symptoms without identifying the original cause of the disorder.</p>
+<p>There is another important clue: SSRIs begin altering serotonin reuptake relatively quickly, but improvement in depressive symptoms usually takes longer. This suggests that the relationship between serotonin signalling and recovery involves more than an immediate increase in serotonin availability.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">The Serotonin Debate: Evidence and Evaluation</button><div class="collapsible-body">
-<p><strong>The time-lag problem:</strong> SSRIs alter serotonin levels within hours, but clinical improvement typically takes 2&ndash;6 weeks. If low serotonin simply caused depression, relief should be immediate. This delay suggests SSRIs work through downstream effects (e.g., neuroplasticity, gene expression) rather than correcting a simple deficiency.</p><p><strong>Mechanism of drug action vs mechanism of therapeutic improvement:</strong> These are different questions. The <strong>mechanism of drug action</strong> is relatively well established &mdash; an SSRI blocks the serotonin reuptake transporter, so serotonin remains in the synaptic cleft longer and stimulation of postsynaptic receptors increases within hours. The <strong>mechanism of therapeutic improvement</strong> &mdash; how taking the drug over weeks produces clinical benefit &mdash; is not yet fully established. The time-lag chain: SSRI increases serotonin availability quickly &rarr; but clinical improvement takes 2&ndash;6 weeks &rarr; so the simple &ldquo;replacing missing serotonin&rdquo; explanation is inadequate on its own &rarr; downstream adaptations (signalling, receptor functioning, gene expression, neuroplasticity) are likely important. No single mechanism is currently established.</p>
-<p><strong>Moncrieff et al. (2022)</strong> conducted a comprehensive umbrella review of the evidence. They concluded that there is no consistent evidence supporting the claim that depression is caused by lowered serotonin activity or concentrations.</p>
-<p><strong>What this means:</strong> The simple &ldquo;chemical imbalance&rdquo; explanation is not supported. This does NOT mean serotonin is irrelevant to depression or that SSRIs do not work &mdash; it means the mechanism is more complex than simply correcting a deficiency.</p>
-<p><strong>Scientific caution:</strong> Moncrieff et al. strongly challenged the simple serotonin-deficiency explanation. However, researchers have debated whether the review justifies broader conclusions about serotonin&rsquo;s involvement in depression. The safest conclusion is that MDD cannot be explained simply as having &ldquo;too little serotonin.&rdquo;</p>
-<p><strong>Evaluation of the causal claim &ldquo;SSRIs work, therefore low serotonin causes depression&rdquo;:</strong> This is a <strong>reverse inference error</strong>. A treatment targeting a system does not prove that dysfunction in that system was the original cause. Painkillers relieve headaches, but headaches are not caused by a painkiller deficiency.</p>
-<p><strong>Conclusion:</strong> Serotonin signalling is relevant to depression and its treatment, but depression is better understood as involving complex interactions among biological, cognitive, and environmental processes &mdash; not a simple chemical imbalance.</p><p><strong>Evidence reasoning &mdash; three claims that must be kept apart:</strong></p><ul><li><strong>Claim 1:</strong> SSRIs inhibit the reuptake of serotonin. This is an established drug action.</li><li><strong>Claim 2:</strong> SSRIs can reduce depressive symptoms for some people. This is a statement about treatment effectiveness.</li><li><strong>Claim 3:</strong> Depression is caused by low serotonin. This is a causal claim about the origins of the disorder.</li></ul><p>Claims 1 and 2 do not imply Claim 3. A treatment can act on a system and be effective without the disorder having been caused by a deficiency in that system. In short: <strong>treatment mechanism &ne; disorder cause</strong>.</p><div style="background:var(--primary-light);border-left:3px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1rem;margin-top:1rem;"><p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.25rem;">IB Connection &mdash; Causality</p><p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;">Causal claims require more than association or a beneficial treatment effect. Showing that a treatment changes symptoms does not establish that a deficiency of that substance originally caused the disorder.</p></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">The Serotonin Debate</h4>
+<p>The popular &lsquo;chemical imbalance&rsquo; explanation suggested that depression is caused by abnormally low serotonin.</p>
+<p>The evidence does not support such a simple explanation.</p>
+<p>A major review by Moncrieff and colleagues examined several lines of evidence concerning serotonin and depression and concluded that the evidence did not support the idea that depression can be explained simply as a serotonin deficiency.</p>
+<p>This does not show that serotonin is irrelevant to depression, and it does not show that SSRIs cannot work. It means that the simple claim &lsquo;low serotonin causes depression&rsquo; goes beyond what the evidence can establish.</p>
+
+<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">Jamie says, &lsquo;My antidepressant helped me, so that proves my depression was caused by low serotonin.&rsquo; What is wrong with this conclusion?</div><div class="reveal-answer"><div>An effective treatment does not necessarily reveal the original cause of a disorder. SSRIs alter serotonin signalling and can reduce symptoms for some people, but this does not prove that Jamie&rsquo;s depression began because serotonin was too low. Treatment mechanism and disorder cause are different questions.</div></div></div>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Evaluate the Claim</h3>
@@ -956,101 +958,65 @@
         
 <div class="slide" data-slide="12" id="slide-12">
 <h2>Beck's Cognitive Model of Depression</h2>
-<p class="slide-intro">How negative thinking patterns develop and maintain depression &mdash; and why changing thinking can change mood.</p>
+<p>Beck&rsquo;s cognitive model proposes that the way a person interprets experiences can contribute to depression.</p>
+<p>Previous experiences may contribute to underlying negative schemas &mdash; organised beliefs about ourselves and the world. These schemas can influence how new situations are interpreted and can make negative automatic thoughts more likely.</p>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Think about this</h3>
-<p style="font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0;">Two students receive the same exam result: 52%. One thinks &ldquo;I&rsquo;ll do better next time &mdash; I just need to revise differently.&rdquo; The other thinks &ldquo;I&rsquo;m useless. I&rsquo;ll never understand this. What&rsquo;s the point?&rdquo; Same result, completely different thoughts. Why? Beck&rsquo;s model explains this difference through underlying schemas.</p>
-</div>
-
-<div class="collapsible"><button class="collapsible-trigger">The Full Model</button><div class="collapsible-body">
-<p>Aaron Beck (1967, 1976) proposed that the way people interpret experiences can play an important role in the development and maintenance of depressive symptoms. Negative schemas can bias how events are processed, increasing the likelihood of negative automatic thoughts and depressive thinking. The key mechanism is a chain of cognitive processes:</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">1. Negative Schemas (core beliefs)</h3>
-<p>Negative schemas are underlying beliefs about the self, the world, and the future that can develop through experiences such as repeated criticism, rejection, loss or failure. Early experiences may be particularly influential, but schemas are not inevitably produced by adversity and can develop or change across experience. They act as <strong>filters</strong> that can bias how new information is processed.</p>
-<p><strong>Real-life example:</strong> A child repeatedly exposed to severe criticism may develop the belief &ldquo;I am not good enough.&rdquo; This schema may sit dormant until activated by a relevant stressful event &mdash; then it can colour subsequent interpretations.</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">2. Cognitive Distortions (biased thinking habits)</h3>
-<p>Once a schema is activated, it produces systematic errors in thinking:</p>
-<ul>
-<li><strong>All-or-nothing thinking:</strong> &ldquo;If I don&rsquo;t get 100%, I&rsquo;ve failed completely.&rdquo;</li>
-<li><strong>Catastrophising:</strong> &ldquo;I got a bad mark &mdash; my whole future is ruined.&rdquo;</li>
-<li><strong>Personalisation:</strong> &ldquo;My friend is quiet &mdash; it must be something I did.&rdquo;</li>
-<li><strong>Overgeneralisation:</strong> &ldquo;I failed this test, so I&rsquo;ll fail everything.&rdquo;</li>
-<li><strong>Selective abstraction:</strong> Focusing only on negative feedback while ignoring praise.</li>
-</ul>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">3. Negative Automatic Thoughts (NATs)</h3>
-<p>These are spontaneous, involuntary negative thoughts that pop into awareness when a schema is triggered. They feel believable and factual to the person experiencing them, even though they are distorted.</p>
-<p><strong>Real-life example:</strong> A student sees friends laughing in the corridor. The NAT is: &ldquo;They&rsquo;re laughing at me.&rdquo; No evidence supports this, but the schema (&ldquo;I am not accepted&rdquo;) makes it feel true.</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">4. The Negative Cognitive Triad</h3>
-<p>NATs cluster into three themes that sustain depression:</p>
-<ul>
-<li><strong>Negative view of self:</strong> &ldquo;I am worthless / inadequate / a failure&rdquo;</li>
-<li><strong>Negative view of the world:</strong> &ldquo;Nothing ever goes right / the world is unfair&rdquo;</li>
-<li><strong>Negative view of the future:</strong> &ldquo;Things will never improve / there is no hope&rdquo;</li>
-</ul>
-<p>The triad creates a self-reinforcing cycle: negative beliefs lead to withdrawal and low motivation, which reduce opportunities for positive experiences, which confirm the negative beliefs.</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">The complete chain</h3>
-<p><strong>Adverse or relevant experiences &rarr; a negative schema may develop &rarr; a relevant stressor may activate the schema &rarr; biased processing / cognitive distortions &rarr; negative automatic thoughts (NATs) &rarr; negative cognitive triad &rarr; may contribute to or maintain depressive symptoms &rarr; withdrawal and reduced positive experiences may reinforce negative beliefs</strong></p>
+<div class="collapsible"><button class="collapsible-trigger">A Real-Life Example</button><div class="collapsible-body">
+<p>Imagine Sofia receives a lower grade than she expected on an important test.</p>
+<p>Sofia already has a negative schema about herself: she believes that she is not intelligent enough.</p>
+<p>Because of this underlying belief, the disappointing grade may trigger an automatic thought such as:</p>
+<p>&lsquo;I knew it. I&rsquo;m a failure.&rsquo;</p>
+<p>Another student receiving exactly the same grade might think:</p>
+<p>&lsquo;I didn&rsquo;t prepare well enough this time. I need to change how I study.&rsquo;</p>
+<p>The event is the same, but the interpretation is different. Beck&rsquo;s model focuses on how underlying beliefs can influence the meaning a person gives to experiences.</p>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Supporting Evidence</button><div class="collapsible-body">
-<p><strong>Gotlib &amp; Joormann (2010):</strong> Reviewed extensive evidence that people with depression show biased attention towards negative stimuli, biased memory for negative events, and difficulty disengaging from negative material. These cognitive biases are more pronounced during depressive episodes and support Beck&rsquo;s claim that biased processing maintains depression.</p>
-<p><strong>Beck et al. (1961):</strong> Introduced the original Beck Depression Inventory (BDI), providing a systematic self-report measure of depressive symptom severity. The BDI is one of the most widely used depression screening tools in both clinical and research settings, demonstrating the model&rsquo;s practical utility. Beck&rsquo;s later formulation of cognitive therapy (Beck et al., 1979) built on this measurement tradition rather than introducing the BDI.</p>
-<p><strong>Rueger et al. (2011):</strong> Found that negative cognitive styles predicted depression in adolescents, supporting the idea that schemas develop early and predispose individuals to depression when activated by stress.</p>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.75rem;"><strong>Criticism:</strong> The direction of causation is unclear &mdash; negative thinking may cause depression, or depression may cause negative thinking (or both). Longitudinal studies partially support a causal role for cognition, but the relationship is likely bidirectional.</p>
+<div class="collapsible"><button class="collapsible-trigger">The Negative Cognitive Triad</button><div class="collapsible-body">
+<p>Beck proposed that depression is often associated with negative thinking in three related areas:</p>
+<p><strong>The self:</strong> negative beliefs about who I am.</p>
+<p>For Sofia:</p>
+<p>&lsquo;I&rsquo;m a failure.&rsquo;</p>
+<p><strong>The world:</strong> negative beliefs about experiences or the environment around me.</p>
+<p>For Sofia:</p>
+<p>&lsquo;Nothing ever works out for me.&rsquo;</p>
+<p><strong>The future:</strong> negative expectations about what will happen next.</p>
+<p>For Sofia:</p>
+<p>&lsquo;I&rsquo;m never going to succeed.&rsquo;</p>
+<p>These three patterns form the negative cognitive triad.</p>
+<p>The important idea is not simply that someone has an occasional negative thought. The model proposes that persistent patterns of negative interpretation can contribute to and maintain depressive symptoms.</p>
 </div></div>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">Interactive Task: Spot the Distortion</h3>
-<p style="font-size:.88rem;line-height:1.55;color:var(--text-secondary);margin-bottom:1rem;">Read each scenario and identify which cognitive distortion is operating. Click the distortion you think applies, then check your answer.</p>
-
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question"><strong>Scenario 1:</strong> Priya gets 78% on her psychology essay. She thinks: &ldquo;I&rsquo;m terrible at psychology. I&rsquo;ll never get into university.&rdquo;</div><div class="reveal-answer"><div><strong>All-or-nothing thinking</strong> (treating 78% as total failure) combined with <strong>catastrophising</strong> (jumping to &ldquo;never getting into university&rdquo; from one mark). The schema &ldquo;I am not good enough&rdquo; is activated, and the distortion magnifies a single result into a global, permanent conclusion.</div></div></div>
-
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question"><strong>Scenario 2:</strong> James sees his housemate cooking dinner and not speaking to him. He thinks: &ldquo;He&rsquo;s angry with me. I must have done something wrong.&rdquo;</div><div class="reveal-answer"><div><strong>Personalisation</strong> (assuming you are the cause of something without evidence) combined with <strong>mind-reading</strong> (assuming you know what someone else is thinking). James has no evidence his housemate is angry &mdash; he could be tired, busy, or simply focused on cooking.</div></div></div>
-
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question"><strong>Scenario 3:</strong> Aisha applies for a part-time job and doesn&rsquo;t get it. She thinks: &ldquo;I&rsquo;ll never get a job. Nobody will ever hire me.&rdquo;</div><div class="reveal-answer"><div><strong>Overgeneralisation</strong> (drawing a broad conclusion from one event) combined with <strong>fortune-telling</strong> (predicting the future negatively without evidence). One rejection becomes a permanent prediction about all future employment.</div></div></div>
-</div>
-
-<div class="collapsible"><button class="collapsible-trigger">Connecting to Treatment: CBT</button><div class="collapsible-body">
-<p>If depression is maintained by distorted thinking, then <strong>changing thinking should reduce depression</strong>. This is the logic behind <strong>Cognitive Behavioural Therapy (CBT)</strong>.</p>
-<p><strong>How CBT targets the model:</strong></p>
-<ul>
-<li><strong>Identify NATs:</strong> The client learns to notice automatic negative thoughts as they occur.</li>
-<li><strong>Challenge distortions:</strong> The therapist helps the client examine the evidence for and against the thought (&ldquo;What evidence do you have that they&rsquo;re laughing at you? What evidence do you have that they&rsquo;re not?&rdquo;).</li>
-<li><strong>Generate alternatives:</strong> The client practices replacing distorted thoughts with more balanced ones.</li>
-<li><strong>Behavioural experiments:</strong> The client tests predictions (e.g., &ldquo;If I speak to someone, they will reject me&rdquo;) and discovers the prediction is usually wrong.</li>
-<li><strong>Modify schemas:</strong> Over time, repeated challenges to NATs weaken the underlying schema.</li>
-</ul>
-<p><strong>Real-life example:</strong> A student who believes &ldquo;I am stupid&rdquo; (schema) might predict &ldquo;I will fail this presentation&rdquo; (NAT). In CBT, they give the presentation, notice that the audience responded positively, and update the schema: &ldquo;Maybe I am not as stupid as I thought.&rdquo;</p>
-
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">If Beck&rsquo;s model is correct, what would you predict about the effectiveness of CBT for depression?</div><div class="reveal-answer"><div>If the model is correct, CBT should be effective because it targets mechanisms that can maintain depression: distorted thinking. CBT is an evidence-based treatment for depression, although treatment response varies between individuals. Depending on symptom severity, individual needs and clinical circumstances, psychological therapy may be used alone or alongside medication. CBT&rsquo;s effectiveness is consistent with cognition being therapeutically important &mdash; but it does not prove that distorted cognition was the original cause of every case of depression. A treatment can be effective without the targeted process having caused the disorder in the first place.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Could This Contribute to Depression?</button><div class="collapsible-body">
+<p>If Sofia repeatedly interprets setbacks as evidence that she is worthless, that the world is against her and that her future is hopeless, these interpretations may contribute to persistent low mood, hopelessness and withdrawal.</p>
+<p>Withdrawal can also reduce opportunities for positive experiences. For example, if Sofia stops studying, seeing friends or participating in activities because she expects failure, she may experience fewer events that challenge her negative beliefs.</p>
+<p>This helps explain how patterns of thinking and behaviour may reinforce one another over time.</p>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Evaluation</button><div class="collapsible-body">
-<p><strong>Strength:</strong> Provides a clear, testable mechanism for how depression is maintained &mdash; and how treatment (CBT) can target it. CBT&rsquo;s demonstrated effectiveness provides indirect support for the model.</p>
-<p><strong>Strength:</strong> Accounts for why negative thinking persists even when life circumstances improve &mdash; schemas filter out positive information, maintaining the cognitive triad regardless of external reality.</p>
-<p><strong>Strength:</strong> Integrates cognitive and behavioural factors, explaining both the thinking patterns and the withdrawal/inactivity seen in depression.</p>
-<p><strong>Limitation:</strong> The direction of causation is unclear &mdash; negative thinking may cause depression, or depression may cause negative thinking (or both). This makes the model difficult to test as a causal explanation.</p>
-<p><strong>Limitation:</strong> Does not explain why schemas form in the first place &mdash; biological factors (e.g., serotonin, genetics) and social factors (e.g., childhood adversity) are needed to explain schema origins.</p>
-<p><strong>Limitation:</strong> May overemphasise individual cognition and understate the role of social context, inequality, and structural factors in causing depression.</p>
+<div class="collapsible"><button class="collapsible-trigger">What Is the Value of Beck&rsquo;s Model?</button><div class="collapsible-body">
+<p>Beck&rsquo;s model is valuable because it provides a clear psychological explanation for how patterns of interpretation may contribute to depression.</p>
+<p>It can help explain why two people experiencing a similar event may respond differently. The event itself does not automatically determine the emotional outcome; existing beliefs can influence how the event is interpreted.</p>
+<p>The model also has practical value. If negative interpretations contribute to depressive symptoms, psychologists can try to identify and change these patterns. This idea helped provide the theoretical basis for cognitive behavioural therapy (CBT).</p>
+<p>Research has also found associations between negative thinking patterns and depression, providing support for the idea that cognition is relevant to the disorder.</p>
 </div></div>
 
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question">How does Beck&rsquo;s model explain why depression can persist even when circumstances improve?</div><div class="reveal-answer"><div>Negative schemas act as filters that bias information processing. Even when positive events occur, a depressed person&rsquo;s schemas cause them to dismiss, minimise, or reinterpret positive information. A compliment becomes &ldquo;They&rsquo;re just being nice,&rdquo; a success becomes &ldquo;It was just luck.&rdquo; The cognitive triad is maintained regardless of external circumstances, because the schema controls what information is noticed and how it is interpreted.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">What Can&rsquo;t the Model Tell Us?</button><div class="collapsible-body">
+<p>One limitation is that negative thinking and depression can influence each other.</p>
+<p>For example, negative schemas and automatic thoughts may contribute to the development or maintenance of depressive symptoms.</p>
+<p>But experiencing depression may also make negative thoughts more frequent.</p>
+<p>This makes causality difficult to establish. If negative thinking and depression occur together, we cannot automatically conclude that the thinking caused the disorder.</p>
+<p>Beck&rsquo;s model is therefore useful for understanding an important psychological process involved in depression, but it is not a complete explanation of every case. Biological vulnerability, stressful experiences and other factors may also contribute.</p>
+</div></div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Beck&rsquo;s model proposes that depression is maintained by cognitive processes: schemas &rarr; distortions &rarr; NATs &rarr; cognitive triad.</li>
-<li>Schemas are core beliefs that can form through experience and can bias how new information is processed.</li>
-<li>The model explains why depression persists even when life improves &mdash; schemas filter out positive information.</li>
-<li>CBT directly targets this mechanism by helping clients identify, challenge, and replace distorted thinking.</li>
-<li>Evaluation: strong explanatory power and treatment link, but unclear causation and limited explanation of schema origins.</li>
-</ol>
-</div>
+<div class="collapsible"><button class="collapsible-trigger">Research Evidence</button><div class="collapsible-body">
+<p>Gotlib and Joormann (2010) reviewed extensive evidence that people with depression show biased attention towards negative stimuli, biased memory for negative events, and difficulty disengaging from negative material, supporting Beck&rsquo;s claim that biased processing maintains depression.</p>
+<p>Rueger and colleagues (2011) found that negative cognitive styles predicted depression in adolescents, supporting the idea that schemas can develop early and predispose individuals to depression when activated by stress.</p>
+</div></div>
+
+
+
+
+<div class="reveal"><div class="reveal-question">Sofia and Daniel both receive the same disappointing test result. Sofia thinks, &lsquo;I&rsquo;m useless and I&rsquo;ll never succeed,&rsquo; while Daniel thinks, &lsquo;I need to prepare differently next time.&rsquo; How would Beck&rsquo;s model explain why the same event might affect them differently?</div><div class="reveal-answer"><div>Beck&rsquo;s model proposes that underlying schemas influence how people interpret events. Sofia may have an existing negative schema about herself, so the disappointing grade activates automatic negative thoughts about herself and her future. Daniel interprets the same event as a specific problem that can be changed. The different interpretations could therefore contribute to different emotional responses even though the external event was the same.</div></div></div>
+
 </div>
 
 
@@ -1063,99 +1029,56 @@
         
 <div class="slide" data-slide="14" id="slide-14">
 <h2>Environmental Factors &amp; Depression</h2>
-<p class="slide-intro">How life experiences and circumstances contribute to depression &mdash; and how strong that evidence really is.</p>
+<p>Environmental explanations focus on experiences and circumstances outside the individual that may contribute to depression.</p>
+<p>One important example is stressful life events. Experiences such as bereavement, relationship breakdown, serious conflict, unemployment or major changes in living circumstances can increase psychological strain.</p>
+<p>These experiences can increase the risk of depression, but they do not automatically cause MDD.</p>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Think about this first</h3>
-<p style="font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0;">Two students go through the same breakup. One feels sad for two weeks, then recovers. The other spirals into six months of hopelessness and withdrawal. Same event &mdash; different outcome. Environmental explanations ask what <strong>external circumstances</strong> contribute to that difference.</p>
-</div>
-
-<div class="collapsible"><button class="collapsible-trigger">The Types of Environmental Risk</button><div class="collapsible-body">
-<p><strong>Mechanism:</strong> Environmental exposure &rarr; psychological/biological response &rarr; increased probability of depressive episode.</p>
-<ul>
-<li><strong>Acute stressors:</strong> discrete events &mdash; bereavement, job loss, relationship breakdown, academic failure.<br><span style="font-size:.85rem;color:var(--text-muted);">Example: being made redundant two weeks before exams.</span></li>
-<li><strong>Chronic stressors:</strong> ongoing conditions &mdash; financial strain, caring responsibilities, discrimination, poverty.<br><span style="font-size:.85rem;color:var(--text-muted);">Example: years of bullying at work that never reaches a crisis point.</span></li>
-<li><strong>Early adversity:</strong> childhood abuse, neglect, parental separation &mdash; may create both long-term vulnerability <em>and</em> later stress.</li>
-</ul>
-<div class="reveal"><div class="reveal-question">A student&rsquo;s parents divorce (acute). Afterwards, money becomes tight at home for years (chronic). Why might combining the two matter more than either alone?</div><div class="reveal-answer"><div>Acute events demand sudden coping resources; chronic strain keeps those resources depleted, preventing recovery. Combined, the person faces a major shock while their buffers are worn down &mdash; which is precisely the pattern that elevates depression risk most strongly.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">A Real-Life Example</button><div class="collapsible-body">
+<p>Imagine Amira loses her job unexpectedly.</p>
+<p>The loss creates several pressures at the same time. She worries about money, loses part of her daily routine, sees former colleagues less often and begins to feel uncertain about the future.</p>
+<p>These changes could contribute to stress and increase her vulnerability to depression.</p>
+<p>But losing a job does not automatically cause MDD. Another person might experience the same event without developing depression because they have different biological vulnerabilities, coping resources, relationships, financial circumstances or social support.</p>
+<p>Environmental explanations therefore concern changes in risk, not inevitable outcomes.</p>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Key Study: Brown &amp; Harris (1978)</button><div class="collapsible-body">
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.25rem 0 .35rem;color:var(--text);">Aim</h4>
-<p>To test whether severe life events and ongoing social difficulties precede the onset of depression in ordinary women &mdash; and whether certain vulnerability factors magnify that effect.</p>
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Who was studied</h4>
-<p>Roughly <strong>450 working-class women</strong> aged 18&ndash;65 living in Camberwell, London &mdash; recruited from the community (GP lists, schools, factories), <em>not</em> psychiatric patients. Each had at least one child living at home.</p>
-<div class="reveal"><div class="reveal-question">Why interview women from the community instead of studying psychiatric patients?</div><div class="reveal-answer"><div>Clinic samples are selected twice over: by the disorder <em>and</em> by help-seeking. Community sampling captures people who became depressed but never sought treatment, avoiding referral bias and allowing true risk estimates in the population.</div></div></div>
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Procedure</h4>
-<ul>
-<li>Each woman completed an extensive <strong>structured interview</strong>, including a detailed timeline of the previous year&rsquo;s events (an early life-events calendar).</li>
-<li><strong>Severity of events was rated by trained researchers</strong> against an explicit manual &mdash; based on the event&rsquo;s likely meaning for that woman in her context, <em>not</em> on how she felt about it, and raters were kept blind to her current psychiatric state.</li>
-<li>Current mental state was assessed with standardised criteria to classify who was clinically depressed.</li>
-<li>Vulnerability factors were recorded: loss of mother before age 11, lack of an intimate confidant, unemployment outside the home, three or more children under 14 at home.</li>
-</ul>
-<div class="reveal"><div class="reveal-question">Why insist that researchers &mdash; not the participants &mdash; rated how severe each event was?</div><div class="reveal-answer"><div>If depressed women rated their own events as worse, apparent links could reflect low mood colouring memory (mood-congruent recall). External, blind, criterion-based rating keeps the measurement of the cause independent of the outcome being explained.</div></div></div>
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Key findings</h4>
-<ul>
-<li>Around <strong>three-quarters (about 75%)</strong> of the women who became depressed had experienced a <strong>severe life event or major ongoing difficulty within roughly six months</strong> before onset.</li>
-<li>Risk was highest where severe events coincided with <strong>vulnerability factors</strong> &mdash; especially lacking a trusted confidant.</li>
-<li>Very few women became depressed in the absence of any severe event or major difficulty.</li>
-</ul>
-<div class="reveal"><div class="reveal-question">The headline number is &ldquo;three-quarters.&rdquo; What does that temporal pattern tell us that a vague &ldquo;stress is linked to depression&rdquo; does not?</div><div class="reveal-answer"><div>The six-month window shows <strong>closeness in time</strong>: severe events cluster immediately before onset rather than anywhere in the life story. That timing pattern is what makes a plausible <em>trigger</em> role credible &mdash; consistent with events precipitating an episode rather than merely co-occurring.</div></div></div>
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Conclusion</h4>
-<p>Major life stress appears to act as a <strong>proximal trigger</strong> for depressive episodes, with social vulnerability factors amplifying sensitivity to that stress.</p>
+<div class="collapsible"><button class="collapsible-trigger">Brown & Harris (1978): Do Severe Life Events Matter?</button><div class="collapsible-body">
+<p>Brown and Harris investigated depression and stressful life experiences among women in London.</p>
+<p>They found that severe life events and major difficulties were much more common before the onset of depression than among women who had not developed depression.</p>
+<p>This supports the idea that stressful environmental experiences can contribute to the risk of depression.</p>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Step 3 &mdash; Evaluating Brown &amp; Harris</button><div class="collapsible-body">
-<p><strong>Strengths:</strong></p>
-<ul>
-<li><strong>Community sample</strong> avoided clinic-referral bias and included untreated cases.</li>
-<li><strong>Structured interviews + blind severity ratings</strong> protected measurement from researcher expectations.</li>
-<li>Large sample with rich contextual detail; findings shaped later research and practice worldwide.</li>
-</ul>
-<p><strong>Limitations / alternative interpretations:</strong></p>
-<ul>
-<li><strong>Correlational:</strong> association with onset does not establish causation &mdash; and the direction could partly run backwards (low mood can increase exposure to negative events like breakups).</li>
-<li><strong>Recall limitations:</strong> even calendar methods rely partly on memory across a year.</li>
-<li><strong>Generalisability:</strong> working-class London women with children in the 1970s &mdash; extrapolating to men or other cultures requires caution.</li>
-<li>No biological measures &mdash; cannot speak to mechanisms inside the body.</li>
-</ul>
-<div class="reveal"><div class="reveal-question">A student writes: &ldquo;Brown &amp; Harris proved stress causes depression.&rdquo; Give the two strongest corrections.</div><div class="reveal-answer"><div>(1) The design is correlational &mdash; it shows events preceded onset in most cases, which is consistent with triggering but cannot rule out bidirectional or third-factor influences. (2) The sample was specific (working-class mothers in 1970s London), so causal language would also overreach the evidence&rsquo;s generalisability. Developed evaluation means pairing the support with exactly these boundaries.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">What Does This Evidence Show?</button><div class="collapsible-body">
+<p>The important finding is an association between severe stressful experiences and the onset of depression.</p>
+<p>This makes stressful life events a plausible environmental risk factor.</p>
+<p>However, not everyone who experienced severe adversity developed depression. Environmental stress therefore changes risk rather than determining outcome.</p>
 </div></div>
+
+<div class="collapsible"><button class="collapsible-trigger">Can We Say the Life Events Caused the Depression?</button><div class="collapsible-body">
+<p>Not with certainty.</p>
+<p>Brown and Harris identified a relationship between stressful experiences and depression, but observational evidence cannot completely rule out other explanations.</p>
+<p>People differ in biological vulnerability, previous experiences, social support and many other factors. Some aspects of depression may also affect relationships and life circumstances.</p>
+<p>The evidence therefore supports an important role for environmental stress without showing that one type of life event is sufficient to cause MDD.</p>
+</div></div>
+
+
+<div class="collapsible"><button class="collapsible-trigger">Other Environmental Influences</button><div class="collapsible-body">
+<p>Stressful life events are not the only environmental influences that may matter.</p>
+<p>Long-term conflict, social isolation, chronic stress, poverty, unstable living conditions and lack of social support may also contribute to psychological strain.</p>
+<p>These factors can interact with one another and with biological or cognitive vulnerability. Environmental explanations therefore do not claim that one particular experience causes every case of depression.</p>
+</div></div>
+
+<div class="collapsible"><button class="collapsible-trigger">Connecting the Explanations</button><div class="collapsible-body">
+<p>Environmental and biological explanations do not have to compete.</p>
+<p>A stressful experience may have different effects depending on the person experiencing it. Someone with greater underlying vulnerability may be more likely to develop depression following severe stress than someone with lower vulnerability.</p>
+<p>This is why psychologists often consider the interaction between vulnerability and experience rather than looking for one single cause of MDD.</p>
+</div></div>
+
+<div class="reveal"><div class="reveal-question">Two people both lose their jobs. One later develops MDD while the other does not. Does this mean job loss cannot contribute to depression? Explain.</div><div class="reveal-answer"><div>No. An environmental factor can increase the risk of depression without producing the same outcome in everyone. The two people may differ in biological vulnerability, previous experiences, social support, coping resources or other circumstances. Job loss could therefore contribute to depression in one case without being a sufficient or deterministic cause.</div></div></div>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; reasoning from Brown &amp; Harris</h4>
 <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Choose only the conclusions the evidence licenses.</p>
 <div class="act-container" id="hw-env-evidence"></div>
-</div>
-
-<div class="collapsible"><button class="collapsible-trigger">Social Isolation &amp; Loss</button><div class="collapsible-body">
-<p>Social isolation and loss of important relationships are consistently associated with depression. Lack of social support removes emotional buffers precisely when coping demands are highest.</p>
-<p style="font-size:.88rem;color:var(--text-muted);"><strong>Real-life parallel:</strong> bereavement support groups exist because recovery after loss can depend heavily on continued connection &mdash; social isolation may reduce an important source of emotional and practical support during bereavement and can be associated with poorer adjustment or prolonged distress.</p>
-<p>This connects to the biopsychosocial model: social factors interact with psychological processes (grief, meaning-making) and biological processes (stress physiology).</p>
-</div></div>
-
-<div class="collapsible"><button class="collapsible-trigger">Connecting to Diathesis&ndash;Stress</button><div class="collapsible-body">
-<ul>
-<li>The same life event may trigger depression in one person but not another</li>
-<li>Individuals differ in vulnerability (genetic, cognitive, developmental)</li>
-<li>Environmental factors interact with pre-existing vulnerabilities rather than acting alone</li>
-</ul>
-<div class="reveal"><div class="reveal-question">How do environmental factors connect to the Diathesis&ndash;Stress Model?</div><div class="reveal-answer"><div>Stressors represent the &ldquo;stress&rarr;&rdquo; component: they interact with pre-existing vulnerabilities to raise the probability of depression. The same event may trigger an episode in a vulnerable person but not in someone with a different or lower combination of relevant vulnerabilities and protective factors &mdash; which is why environmental explanations are less reductionist than purely biological ones, though some depression still occurs without obvious triggers.</div></div></div>
-</div></div>
-
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Acute, chronic and early-adversity stressors all elevate depression risk &mdash; combinations matter most.</li>
-<li>Brown &amp; Harris (1978): ~75% of depressed women experienced a severe event/difficulty within six months of onset; community sample, blind severity ratings.</li>
-<li>Their design supports a <em>triggering</em> role for stress amplified by vulnerability factors &mdash; but remains correlational, retrospective, and limited in generalisability.</li>
-<li>Environmental accounts integrate naturally with diathesis&ndash;stress: events trigger; vulnerability shapes response.</li>
-</ol>
 </div>
 
 
@@ -1233,25 +1156,24 @@
 </div>
 
 
-<div style="background:#e8f0fe;border-left:4px solid #1a73e8;border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:.95rem;font-weight:700;margin:0 0 .5rem;color:#1a56db;">HL Lens: Culture</h3>
-<p style="font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .75rem;">
-Culture influences depression through a chain of connected steps:</p>
-<p style="font-size:.88rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;background:var(--bg);padding:.75rem;border-radius:var(--radius);">
-<strong>Cultural norms / beliefs</strong> &rarr; influence how distress is understood and expressed &rarr; influence what symptoms are reported &rarr; influence help-seeking &rarr; interact with clinician interpretation and measurement &rarr; can influence diagnosis and recorded prevalence &rarr; can influence treatment pathways</p>
-<ul style="font-size:.88rem;line-height:1.7;color:var(--text-secondary);margin:0 0 .75rem;padding-left:1.25rem;">
-<li><strong>Experience:</strong> Cultural norms shape whether distress is felt emotionally (&ldquo;I feel hopeless&rdquo;) or somatically (&ldquo;my body is heavy&rdquo;)</li>
-<li><strong>Expression:</strong> Norms and stigma influence whether people describe psychological symptoms openly or frame them as physical complaints</li>
-<li><strong>Measurement:</strong> Questionnaires and interviews may lose meaning in translation or embed culturally specific assumptions</li>
-<li><strong>Help-seeking:</strong> Norms and stigma shape whether and how people seek help, and from whom</li>
-<li><strong>Interpretation:</strong> A clinician trained on Western criteria may miss somatic presentations or misinterpret cultural idioms of distress</li>
-<li><strong>Diagnosis:</strong> Different criteria produce different prevalence rates across countries</li>
-<li><strong>Treatment:</strong> Attitudes toward medication vs talking therapy vary culturally; some cultures prefer family/community support over individual treatment</li>
-</ul>
-<p style="font-size:.82rem;color:var(--text-muted);margin:0 0 .75rem;">Culture can affect each of these steps, but it does not determine any of them for any individual.</p>
-<p style="font-size:.85rem;color:var(--text-muted);margin:0 0 .75rem;">Potentially similar depressive experiences can be expressed, interpreted and diagnosed differently depending on cultural context. Cultural evidence about symptom reporting does not establish identical underlying biological states.</p>
-<div class="reveal"><div class="reveal-question"><strong>Application:</strong> Two people experience similar persistent low mood, sleep disruption and loss of interest. Person A lives in a culture where depression is openly discussed; Person B lives in a culture where mental illness carries strong stigma and emotional distress is typically expressed through physical complaints. Explain HOW culture could lead them to be diagnosed differently.</div><div class="reveal-answer"><div>Person A may conceptualise and report distress primarily using psychological or emotional language &mdash; they recognise it as depression, tell a doctor directly, and receive a diagnosis using standard emotional-symptom criteria. Person B may emphasise physical symptoms (headaches, fatigue, sleep), either because they do not conceptualise their experience as mental illness or because stigma discourages admitting emotional struggles. If an assessment tool or clinician expects one particular symptom presentation, this can affect detection or diagnosis: a clinician using Western criteria might diagnose Person A with MDD but fail to detect depression in Person B &mdash; or diagnose a physical condition instead. Potentially similar depressive experiences, but different expression and interpretation pathways, different recorded diagnosis and treatment. Conclusions: <strong>different recorded diagnosis &ne; necessarily different underlying prevalence</strong>, and <strong>different symptom expression &ne; proof of different underlying biology</strong>. Connect the concepts: <strong>Bias</strong> (assessment expects particular symptom presentations), <strong>Measurement</strong> (tools may not operationalise depression equivalently in this cultural context) and <strong>Perspective</strong> (context shapes how both patient and clinician interpret symptoms). This is why culturally adapted assessment tools matter.</div></div></div>
-</div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Cultural Differences in Approaches to Mental Health</h4>
+<p>Culture can influence not only how mental-health difficulties are expressed, but also how people understand those difficulties and what kind of help they consider appropriate.</p>
+<p>For example, some people may understand depression mainly as a medical or psychological condition and may be comfortable seeking help from a doctor, psychologist or psychiatrist. Treatments such as individual therapy or medication may therefore seem like appropriate responses.</p>
+<p>In other cultural contexts, distress may be understood more strongly through family, community, social or spiritual relationships. Someone may be more likely to discuss the problem with relatives, involve family members in decisions, or seek support from a community or religious figure.</p>
+<p>Culture can also influence attitudes toward particular treatments. Individual therapy may feel natural to someone who is comfortable discussing private emotions one-to-one with a therapist, while another person may prefer an approach that involves family or places greater emphasis on relationships and community support.</p>
+<p>These are cultural influences, not rules about individuals. People from the same cultural background can have very different beliefs, experiences and preferences.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">A Real-Life Example</h4>
+<p>Imagine two university students, Maya and Lina, are both experiencing persistent low mood, loss of interest, poor sleep and difficulty concentrating.</p>
+<p>Maya has grown up in an environment where mental health is discussed openly. She understands depression as a condition for which professional treatment is normal. She tells her doctor about her emotional symptoms and is comfortable considering CBT or antidepressant medication.</p>
+<p>Lina has grown up in an environment where emotional difficulties are usually kept within the family and mental illness carries greater stigma. She initially talks to her parents rather than a mental-health professional. Her family wants to be involved in deciding what support she receives, and Lina is more comfortable beginning with family and community support before considering individual therapy.</p>
+<p>Their cultural contexts have not determined what either person must do. Instead, cultural beliefs and expectations have influenced how they understand their difficulties, where they seek help and which forms of support initially feel acceptable.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">What Does This Show?</h4>
+<p>The important difference is not whether one culture &lsquo;cares more&rsquo; about mental health than another. Cultural beliefs can influence what people think mental-health problems are, whether they feel comfortable discussing them, who they approach for help and which treatments they consider appropriate.</p>
+<p>This means psychologists should avoid assuming that one approach to mental health will be equally acceptable or effective for everyone.</p>
+
+<div class="reveal"><div class="reveal-question">Two people have similar symptoms of depression. One immediately seeks individual therapy, while the other first discusses the problem with family members and wants them involved in treatment decisions. How could culture help explain this difference?</div><div class="reveal-answer"><div>Cultural beliefs can influence how mental-health difficulties are understood and what kinds of help people consider appropriate. The first person may come from a context in which professional psychological treatment and discussing emotions individually are widely accepted. The second may come from a context in which family involvement is more strongly expected when dealing with personal difficulties. Culture may therefore influence help-seeking and treatment preferences, although it does not determine how every individual will respond.</div></div></div>
 </div>
 
 
@@ -1483,57 +1405,28 @@ Culture influences depression through a chain of connected steps:</p>
 
 <div class="slide" data-slide="24" id="slide-24">
 <h2>Prevalence: Why Does It Differ?</h2>
-<p class="slide-intro">Factors explaining why rates of problematic use change and differ between groups.</p>
+<p class="slide-intro">Why recorded rates of problematic social-media use may change over time.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Change Within Populations</button><div class="collapsible-body">
-<ul>
-<li><strong>Technology access:</strong> smartphone diffusion raises use across age groups</li>
-<li><strong>Platform design:</strong> features such as infinite scroll, notifications and algorithmic feeds are designed to encourage continued engagement and may contribute to longer or more frequent use</li>
-<li><strong>Social norms:</strong> participation pressure grows as use becomes embedded in social life</li>
-<li><strong>COVID-19:</strong> lockdowns increased screen time and digital reliance</li>
-</ul>
-</div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Differences Between Populations</button><div class="collapsible-body">
-<ul>
-<li><strong>Age:</strong> adolescents more vulnerable (identity formation, peer influence, developing prefrontal control)</li>
-<li><strong>Peer environments:</strong> platform participation pressure varies by group</li>
-<li><strong>Cultural norms:</strong> attitudes to technology differ across cultures</li>
-<li><strong>Measurement:</strong> differing definitions and cut-offs produce different estimates</li>
-</ul>
-<div class="reveal"><div class="reveal-question">Two studies report adolescent problematic-use rates of 5% and 20%. What is the most likely explanation?</div><div class="reveal-answer"><div>Measurement differences are one plausible explanation, but the difference could also reflect sampling, population characteristics, cultural or reporting differences, patterns of platform use, or genuine population differences. Recorded prevalence alone cannot tell us which explanation is responsible. Before concluding the populations genuinely differ, ask: did they define problematic use the same way? Did they use the same questionnaire? Did they use the same cut-off? Did they study comparable populations? Different definitions and cut-offs can produce different prevalence estimates &mdash; a pure Measurement-concept lesson.</div></div></div>
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">Researchers find that problematic-use estimates increased over several years. Can this trend alone tell us WHY the increase occurred?</div><div class="reveal-answer"><div><strong>No.</strong> A prevalence trend can show change over time, but it cannot by itself identify the cause. Changes in access, platform design, social norms, population behaviour, measurement methods or other factors could contribute. This is a useful <strong>Causality + Change</strong> connection: observing change over time is not the same as explaining it.</div></div></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">What Is Prevalence?</h4>
+<p>Prevalence refers to how common a health problem is within a particular population during a particular period or at a particular point in time.</p>
+<p>Psychologists may be interested in whether prevalence changes over time. For example, has problematic social-media use become more common among teenagers over the last ten years? If the recorded prevalence changes, there may be several possible explanations.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Key Study: Twenge &amp; Campbell (2018)</button><div class="collapsible-body">
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Aim</h4>
-<p>Examine associations between screen time and psychological well-being among children and adolescents.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Changes in Technology and Access</h4>
+<p>One possibility is that people&rsquo;s access to social media has changed. Smartphones and mobile internet have made social media available almost constantly. People therefore have many more opportunities to check, scroll, post and interact throughout the day.</p>
+<p>Greater access does not automatically cause problematic social-media use. However, if people are using social media more frequently and in more situations, there are also more opportunities for patterns of use to become difficult to control. Changes in technology and access could therefore help explain why prevalence changes over time.</p>
 
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Participants and data</h4>
-<p><strong>40,337 U.S. children and adolescents</strong> aged 2&ndash;17, using data from the <strong>2016 National Survey of Children&rsquo;s Health</strong>. Screen-time information and well-being information were reported by caregivers.</p>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.5rem;">Screen time included several forms of screen media rather than social media alone.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Changes in Social Behaviour</h4>
+<p>Social media has also become more integrated into everyday life. Friendships, entertainment, school communication and social events can all involve being online.</p>
+<p>As staying connected becomes more normal or expected, patterns of social-media use within a population may change. For some people, more frequent engagement may increase the likelihood of developing problematic patterns of use. Changes in social norms and behaviour could therefore contribute to changes in prevalence.</p>
 
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Key findings</h4>
-<ul>
-<li>Greater screen time was associated with lower psychological well-being.</li>
-<li>The relationship was particularly noticeable among adolescents.</li>
-<li>Among 14&ndash;17-year-olds, those reported as using screens <strong>7+ hours per day</strong> were more than twice as likely as approximately 1-hour-per-day users to have received diagnoses of depression or anxiety.</li>
-</ul>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.5rem;">These are <strong>associations</strong> &mdash; the study does not show that screen time <em>caused</em> the diagnoses, and it did not measure social media separately from other screen activities.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">But Has the Problem Really Become More Common?</h4>
+<p>An increase in recorded prevalence does not necessarily mean that the underlying health problem increased by exactly the same amount.</p>
+<p>Imagine that one study found that 12% of teenagers showed problematic social-media use in 2016, while another found 20% in 2026. It would be tempting to conclude that the problem had become much more common.</p>
+<p>But what if the researchers used different questionnaires? What if the later study used a broader definition of problematic use, a different cut-off score or a different sample?</p>
+<p>The recorded prevalence could therefore change partly because the way the health problem was measured changed. Psychologists need to consider both genuine changes in behaviour and changes in measurement before deciding why prevalence has changed.</p>
 
-<div class="reveal"><div class="reveal-question">Commit first: what CAN this design tell us, and what can it not?</div><div class="reveal-answer"><div>Can: a large-scale association between caregiver-reported screen time and well-being. Cannot: the direction of causation (poorer well-being may increase screen use, or other factors may drive both), or the effects of specific activities such as social media versus gaming or television, since total screen time groups them together.</div></div></div>
-
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Evaluation</h4>
-<p><strong>Strength:</strong> a very large population-based U.S. sample.</p>
-<p><strong>Limitations:</strong> correlational and cross-sectional evidence cannot establish the direction of causation; caregiver reports may not perfectly measure adolescents&rsquo; actual screen behaviour; and total screen time combines different activities &mdash; watching television, gaming, messaging friends and using social media may have different psychological effects.</p>
-<p><strong>IB Measurement question:</strong> does <em>total screen time</em> accurately operationalize problematic social-media use? Not necessarily &mdash; this is useful evidence about screen exposure and well-being, but it should not be treated as direct evidence that specifically measures problematic social-media use.</p>
-
-</div></div>
-
-<div class="collapsible"><button class="collapsible-trigger">The Measurement Problem</button><div class="collapsible-body">
-<p>Prevalence depends entirely on definition and instrument: different questionnaires, cut-offs and recall windows yield different estimates for identical populations.</p>
-<p>This is the <strong>Measurement</strong> concept in action: change the measure, change the prevalence.</p>
-</div></div>
+<div class="reveal"><div class="reveal-question">A study reports that problematic social-media use among teenagers increased from 12% in 2016 to 20% in 2026. Explain two possible reasons why the recorded prevalence may have increased.</div><div class="reveal-answer"><div>One possibility is that teenagers&rsquo; actual patterns of social-media use changed. Greater access to smartphones and social media, or changes in social expectations around staying connected, could have increased opportunities for problematic patterns of use to develop. Another possibility is that the recorded increase partly reflects measurement. Researchers may have used different definitions, questionnaires, cut-off scores or samples. The figures therefore need to be interpreted before concluding that the underlying health problem itself increased by exactly the same amount.</div></div></div>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; interpreting prevalence data</h4>
@@ -1543,22 +1436,36 @@ Culture influences depression through a chain of connected steps:</p>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Within-population growth tracks access, platform design, norms and events like COVID-19.</li>
-<li>Between-group gaps track age, peers, culture &mdash; and measurement choices.</li>
-<li>Twenge &amp; Campbell (2018): 40,337 U.S. children and adolescents aged 2&ndash;17 (caregiver-reported screen time); 7+ h/day associated with lower well-being and, among 14&ndash;17-year-olds, more than twice the diagnosis likelihood vs ~1 h/day &mdash; association, not causation.</li>
-<li>Licensed conclusion = dose-related association, NOT causation.</li>
-<li>Measurement, Causality, Change and Technology are particularly useful IB connections.</li>
+<li>Prevalence describes how common a health problem is within a population at a particular time.</li>
+<li>Within a population, recorded prevalence can change over time as technology, access and everyday social behaviour change.</li>
+<li>Greater access creates more opportunities for problematic patterns to develop, but does not automatically cause them.</li>
+<li>An apparent change in prevalence can also partly reflect changes in measurement, so figures need to be interpreted carefully.</li>
 </ol>
 </div>
 
-
-<div style="background:#e8f0fe;border-left:4px solid #1a73e8;border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-top:1rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .5rem;color:#1a56db;">HL Lens: Technology</h4><p style="font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .5rem;">Platform design features may contribute to patterns of use through psychological mechanisms such as:</p><ul style="font-size:.85rem;line-height:1.7;color:var(--text-secondary);margin:0 0 .5rem;padding-left:1.25rem;"><li><strong>Algorithmic feeds</strong> &rarr; capture attention by predicting engagement &rarr; longer sessions than intended</li><li><strong>Push notifications</strong> &rarr; act as external cues triggering checking &rarr; habitual loop forms</li><li><strong>Infinite scroll</strong> &rarr; removes natural stopping points &rarr; time passes without conscious decision to continue</li><li><strong>Curated content</strong> &rarr; shows idealised highlights &rarr; triggers upward comparison</li><li><strong>Engagement metrics</strong> &rarr; make social approval visible and measurable &rarr; can intensify monitoring of validation</li></ul><p style="font-size:.85rem;color:var(--text-muted);margin:0;">Technology does not simply <em>cause</em> poor mental health. Individual differences, patterns of use and context all affect outcomes.</p><div class="reveal"><div class="reveal-question">A platform introduces “you might like” push notifications. Using the HL mechanism chain, explain one way this could increase engagement.</div><div class="reveal-answer"><div>Notification (feature) &rarr; external cue triggering curiosity/anticipation of reward (psychological process) &rarr; user opens app to check (behaviour) &rarr; brief satisfaction from new content reinforces the checking loop &rarr; increased daily engagement over time.</div></div></div>
 </div>
 </div>
 
 
 <div class="slide activity-slide" data-slide="25" id="slide-25"><h2>Prevalence: What Affects Rates?</h2>
 <p class="slide-intro">Decide what conclusions are justified about problematic social-media use prevalence.</p>
+<p>Prevalence can also differ between populations. Researchers might find different rates of problematic social-media use in different countries, age groups or social groups.</p>
+<p>A difference in recorded prevalence can reflect genuine differences between the populations, but it can also be influenced by how the health problem was measured.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Differences in Social-Media Use</h4>
+<p>Populations may differ in access to smartphones and the internet, the platforms they use and how frequently they use them. These differences can affect how much opportunity people have to develop patterns of use that become difficult to control.</p>
+<p>For example, if adolescents in one population use highly interactive social-media platforms much more frequently than adolescents in another population, this could contribute to a difference in problematic use. It would not, by itself, prove that greater use caused the difference.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Social and Cultural Differences</h4>
+<p>Populations can also differ in expectations surrounding online communication, peer behaviour, parental monitoring and acceptable technology use.</p>
+<p>These differences may influence how people use social media and how willing they are to describe their use as problematic. Culture should therefore be considered as one possible influence rather than treated as a simple cause.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Differences in Measurement</h4>
+<p>Researchers also need to ask whether the populations were measured in the same way.</p>
+<p>Different studies may use different definitions of problematic use, questionnaires, cut-off scores or sampling methods. People from different populations may also interpret questions differently or differ in their willingness to report particular behaviours.</p>
+<p>This means that different recorded prevalence rates do not automatically demonstrate an equally large difference in the underlying health problem.</p>
+
+<div class="reveal"><div class="reveal-question">Researchers report that problematic social-media use is more common among teenagers in Population A than Population B. Explain two possible reasons for this difference.</div><div class="reveal-answer"><div>One possibility is a genuine difference in social-media behaviour. The populations may differ in access, frequency of use, social expectations or other aspects of how social media is used. Another possibility is measurement. The researchers may have used different definitions, questionnaires, samples or cut-off scores, or participants may have responded differently to the measures. The difference in recorded prevalence therefore needs to be interpreted before concluding that the underlying health problem is genuinely more common to the same extent.</div></div></div>
 <div class="act-container" id="hw-prevalence-conclude"></div>
 </div>
 
@@ -1568,47 +1475,20 @@ Culture influences depression through a chain of connected steps:</p>
 <h2>Social Learning &amp; Health Behaviour</h2>
 <p class="slide-intro">How observation and modelling shape social-media behaviour.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">The SLT Mechanism</button><div class="collapsible-body">
-<p><strong>Mechanism:</strong> Observe peers/models &rarr; see rewards (likes/approval) &rarr; behaviour becomes desirable/normal &rarr; imitation &rarr; own posting rewarded directly &rarr; repetition.</p>
-<ul>
-<li><strong>Observation:</strong> seeing peers post and receive approval</li>
-<li><strong>Modelling:</strong> influencers demonstrate what &ldquo;normal&rdquo; use looks like</li>
-<li><strong>Identification:</strong> similarity (age, interests) raises imitation likelihood</li>
-<li><strong>Vicarious reinforcement:</strong> watching others be rewarded increases your likelihood of copying</li>
-<li><strong>Direct reinforcement:</strong> your own likes/comments maintain the behaviour</li>
-</ul>
-<div class="reveal"><div class="reveal-question">Quick check: you watch a classmate&rsquo;s post collect 300 likes. Nothing happens to you directly &mdash; so where does the learning come from?</div><div class="reveal-answer"><div><strong>Vicarious reinforcement.</strong> SLT claims the observed reward is enough to raise your probability of posting similarly &mdash; no personal reward required first. That is the theory&rsquo;s distinctive claim versus plain conditioning.</div></div></div>
-</div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Key Study: Bandura, Ross &amp; Ross (1961)</button><div class="collapsible-body">
-<p><strong>Aim:</strong> Test whether children learn aggressive behaviour purely by <em>observing</em> an adult model &mdash; without any direct reinforcement.</p>
-<p><strong>Who:</strong> <strong>72 children</strong> (36 boys, 36 girls), aged roughly 3&ndash;6 years, from Stanford&rsquo;s nursery school.</p>
-<p><strong>Procedure:</strong></p>
-<ul>
-<li>Children were pre-rated for baseline aggression and <strong>matched</strong> across conditions.</li>
-<li>Each child individually watched an adult behave either <strong>aggressively</strong> (hitting and verbally abusing an inflatable Bobo doll: &ldquo;Pow!&rdquo;, &ldquo;Boom!&rdquo;) or calmly non-aggressively; some saw no model.</li>
-<li>Models were same-sex or opposite-sex to test identification effects.</li>
-<li>All children were then deliberately <strong>mildly frustrated</strong> (shown attractive toys then told these were for someone else).</li>
-<li>Each was observed <em>alone</em> for 20 minutes through a one-way mirror with Bobo, weapons and neutral toys available; behaviour was coded by observers.</li>
-</ul>
-<p><strong>Key findings:</strong></p>
-<ul>
-<li>Children who saw the aggressive model copied <strong>specific novel acts</strong> &mdash; physical blows <em>and</em> the exact verbal phrases.</li>
-<li>Boys showed roughly <strong>twice</strong> the physical-imitation levels of girls.</li>
-<li>The influence of the model&rsquo;s sex and the child&rsquo;s sex on imitation was more complex than a simple &ldquo;same-sex = strongest imitation&rdquo; rule. Similarity to a model <em>can</em> influence identification and imitation, but Bandura&rsquo;s findings should not be reduced to a universal same-sex rule.</li>
-<li>The non-aggressive/control groups rarely aggressed.</li>
-</ul>
-<p><strong>Conclusion:</strong> New behaviour can be acquired through observation alone &mdash; vicariously &mdash; exactly the process SLT names.</p>
-<p><strong>Strengths:</strong> controlled laboratory manipulation (exposure changed behaviour, supporting cause&ndash;effect for short-term imitation); standardised model scripts; objective coding; matching controlled baseline differences.</p>
-<p><strong>Limitations:</strong> the Bobo doll is <em>designed</em> to be struck &mdash; it cannot fight back, so &ldquo;aggression&rdquo; here is unusual; single short session says nothing about long-term real-world aggression; nursery sample limits generalisability; exposing children to aggression raises ethical questions.</p>
-<div class="reveal"><div class="reveal-question">Before results were known &mdash; which group did SLT predict would imitate most?</div><div class="reveal-answer"><div>Children observing the <strong>same-sex aggressive model</strong>: per SLT, identification with a similar model can increase attention and modelling. The results broadly supported the importance of modelling, but the sex effects were more complex than a simple same-sex rule &mdash; so this should not be read as a perfectly confirmed prediction.</div></div></div>
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">The lab lets Bandura claim cause for short-term imitation. What blocks extending that causal claim to real-life social-media habits?</div><div class="reveal-answer"><div>Ecological validity (a stranger attacking an inflatable toy differs from scrolling curated feeds), single brief exposure versus years of daily modelling, and no measurement of lasting behaviour outside the lab.</div></div></div>
-</div></div>
+<p>Social Learning Theory can help explain how patterns of social-media behaviour are learned from other people.</p>
+<p>People do not have to discover every behaviour for themselves. They can observe what other people do, notice what happens to them, and become more or less likely to imitate their behaviour.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Applying SLT to Social Media</button><div class="collapsible-body">
-<p>The Bobo mechanism maps onto platform life: <strong>influencers and peers act as models</strong>, and <strong>likes and comments can function as observable social rewards</strong>. Similarity in age, interests or identity may increase identification with a model. Seeing others rewarded can function as vicarious reinforcement, and receiving your own positive feedback can function as direct reinforcement &mdash; potentially increasing the likelihood that similar behaviour is copied.</p>
-<p style="font-size:.88rem;color:var(--text-muted);"><strong>Real-life parallel:</strong> trends (specific dances, filters) often spread fastest within peer groups &mdash; consistent with the idea that similarity can boost identification and imitation.</p>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Learning From Other People</h4>
+<p>Imagine a teenager who follows a popular influencer. The influencer posts frequently and receives thousands of likes, positive comments and attention.</p>
+<p>The teenager observes both the behaviour and its consequences. Seeing the influencer receive social approval may make frequent posting appear rewarding and worth copying. This is vicarious reinforcement: another person is being rewarded, but observing that reward can still influence the teenager&rsquo;s behaviour.</p>
+<p>Imitation may be especially likely if the teenager admires the influencer or wants to be like them. This is identification.</p>
+<p>If the teenager then begins posting frequently and receives likes and positive comments themselves, their own behaviour may also be directly reinforced. Receiving a rewarding consequence can make the behaviour more likely to be repeated.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Could This Contribute to Problematic Use?</h4>
+<p>Over time, repeatedly observing and experiencing rewards associated with social media may help establish patterns such as frequent checking, posting or monitoring reactions from other people.</p>
+<p>Social Learning Theory therefore provides one explanation for how social-media behaviour can be learned and maintained. If these patterns become difficult to control and begin interfering with everyday life, they may contribute to problematic social-media use.</p>
+<p>This does not mean that seeing an influencer or receiving likes automatically causes problematic use. People differ in how they respond, and other psychological, social and environmental factors also matter.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; applying SLT</h4>
@@ -1618,22 +1498,26 @@ Culture influences depression through a chain of connected steps:</p>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>SLT explains learning through observation and modelling.</li>
-<li>Vicarious reinforcement occurs when observing another person&rsquo;s reward increases the likelihood of imitation.</li>
-<li>Identification (similarity to a model) can make modelling more likely &mdash; without a universal same-sex rule.</li>
-<li>Bandura et al. (1961) provides experimental evidence that behaviour can be learned through observation.</li>
-<li>Its laboratory evidence supports short-term causal conclusions but cannot automatically explain long-term social-media behaviour.</li>
-<li>Social-media technology can increase exposure to models and visible social rewards.</li>
+<li>Social Learning Theory explains how patterns of social-media behaviour can be learned from other people.</li>
+<li>Observing a model&rsquo;s behaviour is modelling; observing the model&rsquo;s rewards can make imitation more likely through vicarious reinforcement.</li>
+<li>Identification can increase imitation when the observer admires or relates to the model.</li>
+<li>Direct reinforcement can maintain behaviour once the person experiences rewarding consequences themselves.</li>
+<li>Learned patterns may contribute to problematic use only if they become difficult to control and interfere with everyday life.</li>
 </ol>
 </div>
 
 
-<div style="background:#e8f0fe;border-left:4px solid #1a73e8;border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-top:1rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .5rem;color:#1a56db;">HL Lens: Technology</h4><p style="font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .5rem;">Platform design amplifies SLT mechanisms:</p><ul style="font-size:.85rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li><strong>Likes/social feedback</strong> = visible vicarious reinforcement &rarr; strengthens imitation</li><li><strong>Algorithmic feeds</strong> may repeatedly expose users to creators and content that match their interests or previous engagement &rarr; can increase opportunities for observational learning and identification</li><li><strong>Viral trends</strong> &rarr; consequences demonstrated publicly and instantly across millions simultaneously</li></ul><p style="font-size:.85rem;color:var(--text-muted);margin:0;">Technology increases the SPEED, SCALE and VISIBILITY of reinforcement signals.</p></div>
+
 </div>
 
 
 <div class="slide activity-slide" data-slide="27" id="slide-27"><h2>Social Learning Theory in Health</h2>
 <p class="slide-intro">Match each example to the SLT mechanism.</p>
+<p>Before you begin, make sure you can distinguish the four ideas:</p>
+<p><strong>Modelling</strong> means observing another person&rsquo;s behaviour.</p>
+<p><strong>Vicarious reinforcement</strong> occurs when seeing another person rewarded makes imitation more likely.</p>
+<p><strong>Identification</strong> makes imitation more likely when the observer admires or relates to the model.</p>
+<p><strong>Direct reinforcement</strong> occurs when your own behaviour is followed by a rewarding consequence.</p>
 <div class="act-container" id="hw-slt-match"></div>
 </div>
 
@@ -1725,11 +1609,31 @@ Culture influences depression through a chain of connected steps:</p>
 <div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">Rat data underpins GAS. Give one reason that matters for using it to explain human depression risk &mdash; and one counterpoint keeping it useful.</div><div class="reveal-answer"><div>Humans appraise stressors psychologically; rat stressors were physical and inescapable, so translation needs care (limitation). Counterpoint: HPA-axis architecture and cortisol&rsquo;s immune suppression are deeply conserved, and human chronically stressed patients show overlapping patterns (usefulness).</div></div></div>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Stress, Depression &amp; Problematic Use</button><div class="collapsible-body">
-<p><strong>To depression:</strong> repeated or prolonged stress responses can disrupt sleep, mood and emotional regulation and may increase vulnerability to depressive symptoms, particularly when combined with other biological, cognitive or environmental risk factors. Stress alone does not guarantee depression &mdash; the diathesis&ndash;stress model proposes that environmental stress may interact with existing vulnerabilities to increase risk.</p>
-<p><strong>To problematic use:</strong> stress &rarr; the person uses scrolling or checking as distraction or escape &rarr; temporary relief &rarr; <strong>negative reinforcement</strong> &rarr; checking becomes more likely during future stress. If scrolling does not address the original stressor &mdash; and creates additional problems such as lost sleep or unfinished work &mdash; stress may continue. This can create a self-maintaining cycle: <strong>stress &rarr; checking for relief &rarr; temporary relief &rarr; problems remain or new problems appear &rarr; more stress &rarr; more checking</strong>.</p>
-<div class="reveal"><div class="reveal-question">Could the SAME kind of stress lead one person toward depressive symptoms and another toward repeated scrolling?</div><div class="reveal-answer"><div>Yes &mdash; stress may contribute to several different psychological outcomes. For one person it may increase vulnerability to depressive symptoms; for another it may encourage avoidance behaviours such as repeated scrolling. These outcomes depend on individual vulnerabilities, coping strategies and context. A <strong>common risk factor is not a single inevitable outcome</strong> &mdash; a useful Causality lesson.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">STRESS AND PROBLEMATIC SOCIAL-MEDIA USE</button><div class="collapsible-body">
+<p>A student feels stressed while revising for an important examination. They pick up their phone and begin scrolling social media. For a short time, the distraction makes them feel less stressed.</p>
+<p>If scrolling temporarily reduces an unpleasant feeling such as stress, the behaviour may become more likely to happen again when the student feels stressed.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">NEGATIVE REINFORCEMENT</h4>
+<p>Negative reinforcement occurs when a behaviour becomes more likely because it removes or reduces something unpleasant.</p>
+<p>Negative does NOT mean 'bad'. It means that an unpleasant state is reduced or removed.</p>
+<p><strong>STRESS</strong> &rarr; social media used for distraction, escape, reassurance or connection &rarr; temporary relief &rarr; behaviour reinforced &rarr; more likely to use social media again when stressed &rarr; repeated coping through social media may contribute to problematic use</p>
+<p>Social-media use can also sometimes create additional stress. Social comparison, FOMO, online conflict, disrupted sleep or pressure to remain constantly connected may increase stress.</p>
+<div style="margin:1rem 0;text-align:center;"><p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;"><strong>STRESS</strong><br>&darr;<br><strong>SOCIAL-MEDIA USE FOR RELIEF</strong><br>&darr;<br><strong>TEMPORARY RELIEF</strong><br>&darr;<br><strong>BEHAVIOUR REINFORCED</strong><br>&darr;<br><strong>GREATER / PROBLEMATIC USE</strong><br>&darr;<br><strong>POSSIBLE ADDITIONAL STRESS</strong><br>&darr;<br><strong>MORE USE</strong></p></div>
+<p>Stress is a contributing factor, not a deterministic cause. Not everyone who experiences stress develops problematic social-media use, and social media can sometimes provide genuine social support or connection.</p>
 </div></div>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Stress and Problematic Social-Media Use</h4>
+<p>Stress can influence how people use social media. Someone who feels overwhelmed, lonely or under pressure may turn to social media for distraction, reassurance, entertainment or social connection.</p>
+<p>Imagine a student who feels stressed while revising for an important examination. They pick up their phone and begin scrolling. For a while, this distracts them from the stress and makes them feel better.</p>
+<p>If using social media repeatedly provides temporary relief from an unpleasant feeling, the behaviour may become more likely to happen again the next time the person feels stressed. In psychology, this is an example of negative reinforcement: a behaviour becomes more likely because it reduces or removes something unpleasant.</p>
+<p>&lsquo;Negative&rsquo; does not mean that the behaviour is bad. It means that an unpleasant state has been reduced.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">When Coping Becomes a Problem</h4>
+<p>Using social media when stressed is not automatically problematic. It may sometimes provide genuine social support, entertainment or connection.</p>
+<p>The concern is when social media becomes a repeated or difficult-to-control way of coping with stress. A person may begin checking or scrolling whenever they feel uncomfortable, making the behaviour increasingly habitual and potentially interfering with sleep, schoolwork, relationships or other activities.</p>
+<p>Social media can sometimes also create additional stress through experiences such as social comparison, FOMO, online conflict or pressure to remain constantly connected. Stress and social-media use may therefore influence each other rather than operating in only one direction.</p>
+<p>Stress should be understood as a contributing factor, not a deterministic cause. Most people experience stress without developing problematic social-media use.</p>
+
+<p>Stress also produces physiological responses in the body. The General Adaptation Syndrome (GAS) describes how the body may respond when stress continues over time. The activity below will help you distinguish its three stages.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; stages and stressors</h4>
@@ -1756,6 +1660,7 @@ Culture influences depression through a chain of connected steps:</p>
 
 <div class="slide activity-slide" data-slide="31" id="slide-31"><h2>Stress Response Mechanism</h2>
 <p class="slide-intro">Order the steps of the stress response.</p>
+<p>Understanding the body&rsquo;s stress response gives us useful background, but remember the main health question in this unit: stress can influence behaviour as well as physiology. In problematic social-media use, stress may increase the motivation to seek distraction, reassurance or relief through social media.</p>
 <div class="act-container" id="hw-stress-mechanism"></div>
 </div>
 
@@ -1886,62 +1791,36 @@ Culture influences depression through a chain of connected steps:</p>
 <h2>Biological Treatment of Depression</h2>
 <p class="slide-intro">How antidepressants work &mdash; and how two major pieces of evidence sharpen what we can claim about them.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">SSRIs: Mechanism</button><div class="collapsible-body">
-<p><strong>WHAT:</strong> Selective Serotonin Reuptake Inhibitors &mdash; e.g., fluoxetine (Prozac), sertraline (Zoloft).</p>
-<p><strong>HOW:</strong> SSRIs inhibit the reuptake of serotonin into the presynaptic neuron, altering serotonin signalling in the synapse. They do not simply add &ldquo;more serotonin because depressed people lack serotonin.&rdquo; SSRIs affect serotonin transmission relatively quickly, while noticeable therapeutic improvement usually takes longer. This suggests that their therapeutic effects are more complicated than simply correcting an immediate serotonin deficiency.</p>
-<div class="reveal"><div class="reveal-question">Synapses change within hours; patients improve after weeks. Why is that delay theoretically important?</div><div class="reveal-answer"><div>It breaks the naive &ldquo;top up the tank&rdquo; story. A fast effect on serotonin signalling combined with slower clinical improvement suggests that a simple serotonin-deficiency correction is insufficient as an explanation &mdash; so effectiveness does not certify the old monoamine-deficiency cause.</div></div></div>
-</div></div>
+<p>Selective serotonin reuptake inhibitors (SSRIs) are a commonly used biological treatment for depression. Examples include fluoxetine and sertraline.</p>
+<p>SSRIs change serotonin signalling in the brain. When serotonin is released by one neuron, some of it is normally taken back into the neuron that released it. SSRIs reduce this reuptake, meaning that serotonin remains available in the synapse for longer and can continue interacting with receptors on neighbouring neurons.</p>
+<p>This describes what the medication does biologically. The relationship between this change and improvement in depression is more complicated. Antidepressant effects usually develop over time, suggesting that recovery cannot be explained simply by saying that SSRIs immediately &lsquo;increase serotonin.&rsquo;</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Study A: Cipriani et al. (2018)</button><div class="collapsible-body">
-<p><strong>Aim:</strong> Examine whether antidepressants are more effective than placebo across a very large evidence base.</p>
-<p><strong>Who:</strong> <strong>116,477 patients</strong> across <strong>522 trials</strong> covering <strong>21 antidepressants</strong>; unpublished trial data obtained from regulators to reduce publication bias.</p>
-<p><strong>Procedure:</strong> <strong>Network meta-analysis</strong> &mdash; combines direct comparisons (drug vs placebo) and indirect ones (drugs compared through shared comparators) under one statistical framework; outcomes measured on standard depression rating scales at 8 weeks.</p>
-<p><strong>Findings:</strong> Across this very large evidence base, antidepressants were more effective than placebo on average, supporting their effectiveness as a treatment. An average treatment effect does not mean every patient benefits equally.</p>
-<p><strong>Evaluation:</strong> Strengths &mdash; a very large evidence base, and the inclusion of unpublished trial data reduces publication-bias concerns. Limits &mdash; trials were generally relatively short (often around 8 weeks), and average effects can hide substantial individual differences.</p>
-<div class="reveal"><div class="reveal-question">Why did obtaining UNPUBLISHED trial data matter so much here?</div><div class="reveal-answer"><div>Failed trials historically went unreported, inflating apparent effectiveness (file-drawer bias). Pulling regulator-held unpublished results means the analysis sees the full evidence base &mdash; making its conclusions unusually resistant to that bias.</div></div></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Does This Mean Depression Is Caused by Low Serotonin?</h4>
+<p>No. A treatment can influence a biological system without proving that a problem was originally caused by a deficiency in that system.</p>
+<p>For example, reducing pain with a painkiller would not demonstrate that the original cause of the pain was a shortage of painkillers in the body. In the same way, the fact that SSRIs affect serotonin signalling and can help some people with depression does not prove that depression is simply caused by &lsquo;low serotonin.&rsquo;</p>
+<p>This distinction is important because treatment mechanism and disorder cause are different questions.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Study B: Kirsch et al. (2008) &mdash; The Productive Contrast</button><div class="collapsible-body">
-<p><strong>Aim:</strong> Ask how large the drug&ndash;placebo difference really is when <em>every</em> submitted FDA trial is counted &mdash; including failed ones.</p>
-<p><strong>Who:</strong> Data from <strong>38 manufacturer-submitted trials</strong> (four SSRIs/SNRIs), over <strong>5,000 patients</strong>.</p>
-<p><strong>Procedure:</strong> Meta-analysis restricted to trials registered with the US regulator; effect sizes computed on the Hamilton Depression Rating Scale; results examined by baseline severity.</p>
-<p><strong>Key findings:</strong> Kirsch et al. found that the average difference between antidepressants and placebo was relatively modest, with a larger advantage among participants with more severe depression. Much of the overall improvement appeared in the placebo arms.</p>
-<p><strong>Evaluation:</strong> Strengths &mdash; the complete set of submitted FDA trials reduces cherry-picking; the severity breakdown adds nuance. Limits &mdash; an average statistical effect is not a large practical effect for every person, and averages can hide substantial individual differences.</p>
-<div class="reveal"><div class="reveal-question">A headline says: &ldquo;Kirsch proves antidepressants don&rsquo;t work.&rdquo; Using BOTH studies, write the accurate version.</div><div class="reveal-answer"><div>&ldquo;That conclusion is too strong. Cipriani et al. found that antidepressants outperform placebo on average across a very large evidence base. Kirsch et al. suggests that the average advantage can be modest and may vary with severity. Together, the studies support the effectiveness of antidepressants while showing that the size and practical importance of the benefit varies.&rdquo; Support plus a boundary or qualification is what developed evaluation looks like.</div></div></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Effective Are SSRIs?</h4>
+<p>Effectiveness is not an all-or-nothing question. Researchers need to consider whether symptoms improve, how large the improvement is, whether it lasts, how people compare with an appropriate control condition, and whether the treatment is helpful enough to matter in everyday life.</p>
+<p>Research evidence indicates that antidepressants can reduce depressive symptoms for many people. However, the average effect found across a group does not mean that every individual will benefit equally. Some people improve substantially, some improve only a little, and some may experience side effects or stop taking the medication.</p>
+<p>Placebo-controlled research also matters. If people taking a placebo improve as well, some improvement cannot automatically be attributed to the medication itself. The important question is therefore not simply whether people improve after taking an SSRI, but whether the evidence suggests that the treatment produces additional meaningful improvement.</p>
+<p>Large comparisons of antidepressant trials have generally found that antidepressants perform better than placebo for acute depression, supporting the conclusion that they can be effective. However, other analyses have questioned how large the average advantage over placebo is, particularly when considering the clinical importance of the difference. These comparisons draw on very large combined evidence &mdash; in one case more than a hundred thousand patients across hundreds of trials, including unpublished data obtained from regulators &mdash; while analyses restricted to manufacturer-submitted trials found a more modest average advantage, clearer among more severely depressed patients, with much of the overall improvement also appearing in placebo groups.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Side Effects &amp; Limits</button><div class="collapsible-body">
-<ul>
-<li><strong>Side effects:</strong> nausea, weight gain, sexual dysfunction, sleep disruption, emotional blunting</li>
-<li><strong>Not everyone responds:</strong> many people do not respond adequately to a first-line antidepressant</li>
-<li><strong>Relapse after discontinuation</strong> is common &mdash; skills-based treatments target this gap</li>
-<li><strong>Treatment-effectiveness does not prove cause:</strong> painkillers relieve headaches without proving headache deficiency disorders</li>
-</ul>
-<div class="reveal"><div class="reveal-question">SSRIs help many patients. Does their success confirm the monoamine-deficiency cause of depression?</div><div class="reveal-answer"><div>No. Treatment effectiveness does not establish the original cause of a disorder. SSRIs acting on serotonin systems show that altering serotonin signalling can influence symptoms &mdash; but that does not prove that depression was originally caused by a serotonin deficiency. Painkillers relieve headaches without headaches being painkiller deficiencies.</div></div></div>
-</div></div>
+<p>Overall, SSRIs can be an effective treatment for depression, but effectiveness varies between individuals. Evidence that SSRIs can reduce symptoms supports their use as a treatment; it does not establish that low serotonin is the single cause of depression.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; reading treatment claims</h4>
 <div class="act-container" id="hw-kirsch-read"></div>
 </div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>SSRIs inhibit serotonin reuptake and alter serotonin signalling.</li>
-<li>Their therapeutic effects take longer than their immediate effect on serotonin transmission.</li>
-<li>Cipriani et al. provides strong large-scale evidence that antidepressants outperform placebo on average.</li>
-<li>Kirsch et al. shows that the average advantage can be relatively modest and may vary with severity.</li>
-<li>Treatment effects vary between individuals.</li>
-<li>Effective treatment does NOT prove the original cause of depression.</li>
-</ol>
-</div>
 
 </div>
 
 
 <div class="slide activity-slide" data-slide="37" id="slide-37"><h2>Biological Treatment: How SSRIs Work</h2>
 <p class="slide-intro">Order the steps of how SSRI medication affects the brain.</p>
+<p>Remember the central idea: SSRIs reduce the reuptake of serotonin after it has been released. This changes serotonin signalling by allowing serotonin to remain available in the synapse for longer.</p>
+<p>That explains the drug&rsquo;s immediate biological action. It does not mean that depression can simply be explained as a shortage of serotonin.</p>
 <div class="act-container" id="hw-bio-sequencing"></div>
 </div>
 
@@ -1949,137 +1828,71 @@ Culture influences depression through a chain of connected steps:</p>
         
 <div class="slide" data-slide="38" id="slide-38">
 <h2>Psychological Treatment of Depression</h2>
-<p class="slide-intro">How CBT targets cognitive patterns &mdash; tested in one of psychiatry&rsquo;s landmark trials.</p>
+<p class="slide-intro">How CBT targets patterns of thinking and behaviour, and how psychologists evaluate its effectiveness.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">From Model to Treatment</button><div class="collapsible-body">
-<p>CBT is based partly on the idea that maladaptive cognitive patterns can contribute to maintaining depression. If patterns such as negative schemas, automatic thoughts and cognitive distortions help maintain depressive symptoms, changing those patterns may help reduce symptoms.</p>
-<ol>
-<li><strong>Identify:</strong> catch NATs and distortions as they occur (thought diaries)</li>
-<li><strong>Challenge:</strong> examine evidence for and against each thought</li>
-<li><strong>Restructure:</strong> build balanced alternatives (&ldquo;I failed this test&rdquo; not &ldquo;I am a failure&rdquo;)</li>
-<li><strong>Behavioural activation:</strong> gradually re-engage with meaningful or rewarding activities &mdash; targeting withdrawal and inactivity</li>
-</ol>
-<div class="reveal"><div class="reveal-question">Which Beck component does behavioural activation target?</div><div class="reveal-answer"><div>Withdrawal and inactivity. Behavioural activation targets withdrawal and inactivity: re-engaging with meaningful activities can increase opportunities for positive reinforcement and may also challenge negative beliefs.</div></div></div>
-</div></div>
+<p>Cognitive behavioural therapy (CBT) is a psychological treatment that aims to change patterns of thinking and behaviour that may contribute to depressive symptoms.</p>
+<p>The cognitive part of CBT is closely related to ideas such as Beck&rsquo;s cognitive model of depression. A person may experience automatic negative thoughts about themselves, their experiences or their future. In therapy, they learn to recognise these thoughts, examine the evidence for them and develop more balanced ways of interpreting situations.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Key Study: Elkin et al. (1989), NIMH Treatment of Depression Collaborative Research Program</button><div class="collapsible-body">
-<p><strong>Aim:</strong> Compare CBT, interpersonal therapy (IPT), and antidepressant medication against pill-placebo under rigorous conditions.</p>
-<p><strong>Who:</strong> <strong>239</strong> depressed adults across three US research clinics.</p>
-<p><strong>Procedure:</strong> Random assignment to <strong>four conditions for 16 weeks</strong>: (1) CBT, (2) IPT, (3) imipramine + clinical management, (4) placebo + clinical management. Therapists followed manuals; evaluators were independent and blind; standardised symptom scales tracked change throughout.</p>
-<p><strong>Key findings:</strong></p>
-<ul>
-<li>All three active treatments produced substantial improvement; imipramine acted fastest on some measures.</li>
-<li><strong>No significant overall difference between CBT, IPT and imipramine</strong> at termination.</li>
-<li>Placebo groups also improved &mdash; expectancy and weekly attention carry real weight.</li>
-<li>In the <strong>most severely impaired</strong> subgroup, imipramine outperformed CBT and placebo.</li>
-</ul>
-<p><strong>Conclusion:</strong> In this study, CBT, IPT and imipramine all produced substantial improvement, with no clear overall superiority across the active treatments at the end of treatment. Some differences appeared depending on severity and the outcome measure used.</p>
-<p><strong>Strengths:</strong> randomisation + placebo arm + blind assessment (gold-standard elements rare for psychotherapy); manualisation protects treatment integrity; multi-site design broadens applicability.</p>
-<p><strong>Limitations:</strong> research-clinic therapists may exceed community practice quality (efficacy vs effectiveness gap); possible therapist-allegiance effects; attrition reduced power, especially for subgroup claims; 16-week horizon cannot address relapse-prevention durability.</p>
-<div class="reveal"><div class="reveal-question">Predict before reading on: why include a PLACEBO-plus-management arm in a psychotherapy trial at all?</div><div class="reveal-answer"><div>To separate drug chemistry from care context: weekly meetings, empathy and expectation themselves relieve symptoms. Without that arm, medication&rsquo;s edge over CBT could not be interpreted &mdash; part of any difference might simply be pill-ritual versus conversation.</div></div></div>
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">The severity finding matters practically. What does it imply for choosing treatment &mdash; and what does it NOT tell us?</div><div class="reveal-answer"><div>The severity finding suggests that relative treatment effectiveness may differ depending on symptom severity. However, this study alone does not establish a universal rule for choosing treatment. Structurally: differences in treatment response do not tell us what originally caused a person&rsquo;s depression. A treatment can reduce symptoms without targeting the original cause &mdash; the same Causality lesson as on the biological treatment page.</div></div></div>
-</div></div>
+<p>CBT also focuses on behaviour. Depression can lead people to withdraw from activities, relationships or routines that previously gave them enjoyment, achievement or social contact. This withdrawal may then leave the person with fewer positive experiences.</p>
+<p>A therapist may therefore help the person gradually re-engage with meaningful activities rather than focusing only on their thoughts.</p>
+<p>CBT is therefore not simply &lsquo;thinking positively.&rsquo; The person learns to examine patterns of thinking and to make practical behavioural changes that may reduce depressive symptoms.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Evaluation &amp; Relapse Logic</button><div class="collapsible-body">
-<p><strong>Strengths:</strong> targets maintaining mechanisms; teaches transferable skills patients can continue using after treatment ends (some evidence suggests CBT may have more enduring benefits after stopping than medication alone); no physiological side effects.</p>
-<p><strong>Limitations:</strong> therapy requires time and access to trained therapists; engagement and motivation can affect treatment; therapist quality may vary; findings from specialist research clinics may not perfectly generalise to everyday treatment; and depression is heterogeneous, so the same treatment may not work equally well for everyone.</p>
-<div class="reveal"><div class="reveal-question">Some evidence suggests CBT may have more enduring benefits after treatment ends. Why might that be?</div><div class="reveal-answer"><div>Because CBT teaches skills &mdash; identifying, challenging and restructuring thoughts &mdash; that patients can continue using after formal treatment, whereas a medication&rsquo;s direct pharmacological effect depends on continued treatment. This does not mean everyone taking medication relapses after stopping, or that CBT always prevents relapse.</div></div></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">What Might This Look Like?</h4>
+<p>Imagine a student receives a low test score and immediately thinks, &lsquo;I fail at everything. I&rsquo;m never going to succeed.&rsquo;</p>
+<p>In CBT, the student could learn to recognise that automatic thought and examine whether the evidence really supports such a broad conclusion. One disappointing result does not demonstrate failure in every area of life.</p>
+<p>If the student has also begun avoiding friends, hobbies and schoolwork because they feel hopeless, treatment may involve gradually returning to activities that provide achievement, enjoyment or social connection.</p>
+<p>The aim is not to pretend that everything is fine. It is to develop more realistic thinking and healthier patterns of behaviour.</p>
+
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Effective Is CBT?</h4>
+<p>To judge whether CBT is effective, psychologists need evidence showing whether people receiving the treatment improve and how that improvement compares with appropriate alternatives.</p>
+<p>Research has found that CBT can reduce depressive symptoms for many people. However, effectiveness varies. Some people respond strongly, while others may need a different treatment, additional support or a combination of psychological and biological treatment.</p>
+<p>Researchers should also consider whether improvements continue after therapy ends. A treatment that produces short-term improvement may still be useful, but lasting improvement provides stronger evidence of long-term effectiveness.</p>
+<p>For example, in one rigorous comparison, depressed adults were randomly assigned to cognitive behavioural therapy, a different talking therapy, antidepressant medication, or a placebo pill with regular clinical contact over sixteen weeks. All three active treatments produced substantial improvement, with no clear overall winner at the end of treatment; medication showed an extra advantage for the most severely impaired patients, and even the placebo group improved. This supports CBT as an effective treatment while showing that outcomes vary and that care and expectation themselves contribute to improvement.</p>
+
+<p>Overall, CBT can be an effective psychological treatment for depression because it helps people change unhelpful patterns of thinking and behaviour. Its effectiveness is supported by treatment research, but outcomes vary between individuals and improvement cannot be guaranteed.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; verdicts from TDCRP</h4>
 <div class="act-container" id="hw-elkin-verdict"></div>
 </div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>CBT is based partly on the idea that maladaptive cognitive patterns can maintain depression.</li>
-<li>CBT identifies, challenges and restructures negative thinking patterns.</li>
-<li>Behavioural activation targets withdrawal and inactivity.</li>
-<li>Elkin et al. (1989) compared CBT, IPT, medication and placebo/clinical management using random assignment.</li>
-<li>Multiple active treatments produced substantial improvement.</li>
-<li>Treatment effectiveness varies between people.</li>
-<li>Treatment response does NOT prove what originally caused depression.</li>
-<li>CBT may provide enduring coping strategies that can continue after treatment.</li>
-</ol>
-</div>
 
 </div>
 
 
 <div class="slide activity-slide" data-slide="39" id="slide-39"><h2>CBT in Action</h2>
 <p class="slide-intro">Match each CBT technique to what it targets.</p>
+<p>When applying CBT, ask what pattern of thinking or behaviour is contributing to the person&rsquo;s difficulty and what the therapist could help the person change.</p>
+<p>Remember that CBT is not about replacing every negative thought with a positive one. The aim is to examine thoughts more realistically and change behaviours that may be maintaining the problem.</p>
 <div class="act-container" id="hw-cbt-classify"></div>
 </div>
 
 <div class="slide" data-slide="40" id="slide-40">
 <h2>Preventing &amp; Treating Problematic Social-Media Use</h2>
-<p class="slide-intro">Evidence-based strategies &mdash; including one genuine randomised experiment.</p>
+<p class="slide-intro">How reducing social-media use may help, and how psychologists evaluate whether it works.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Strategy 1 &mdash; Digital Literacy Education</button><div class="collapsible-body">
-<p><strong>Mechanism targeted:</strong> users rarely notice persuasive design (infinite scroll, variable-ratio notifications).</p>
-<p><strong>Intervention:</strong> teach algorithmic feeds, engagement engineering, advertising-vs-content distinctions.</p>
-<p><strong>Evidence:</strong> media-literacy programmes show promise for critical evaluation. Digital literacy may increase awareness of how platforms influence attention and behaviour, but knowledge alone may not be enough to change established habits.</p>
-<div class="reveal"><div class="reveal-question">Literacy changes what people KNOW. Which earlier concept explains why knowing is not enough?</div><div class="reveal-answer"><div>Habit strength and negative-reinforcement loops (FOMO checking buys relief regardless of insight). Cognitive knowledge competes with conditioned cues &mdash; which is why environmental strategies pair with education.</div></div></div>
-</div></div>
+<p>One straightforward strategy for problematic social-media use is to deliberately reduce or limit the amount of time a person spends using social media.</p>
+<p>The aim is not necessarily to eliminate social media completely. For many people it is an important part of communication and everyday life. Instead, a person might set limits on when or how long they use it, reduce unnecessary checking, or create periods of the day when social media is not used.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Strategy 2 &mdash; Behavioural Alternatives</button><div class="collapsible-body">
-<p><strong>Mechanism targeted:</strong> platforms monopolise belonging/stimulation needs.</p>
-<p><strong>Intervention:</strong> substitute satisfying offline activities (sport, clubs, face-to-face time) so reduction costs less.</p>
-<p><strong>Evidence:</strong> behavioural-activation research provides a useful psychological rationale for increasing rewarding offline activities, but evidence from depression treatment should not be treated as direct evidence that the same strategy will reduce problematic social-media use.</p>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Could This Help?</h4>
+<p>If someone repeatedly checks social media throughout the day, reducing access creates fewer opportunities for that pattern to continue.</p>
+<p>It may also interrupt habits in which boredom, stress or notifications automatically lead to checking. With less time spent on social media, a person may have more time for sleep, face-to-face interaction, schoolwork, exercise or other activities.</p>
+<p>This does not mean that reducing social-media use will solve every problem associated with mental health. The important question is whether deliberately changing social-media behaviour produces meaningful improvements for people experiencing problematic use.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">&mdash; Key Study: Hunt, Marx, Lipson &amp; Young (2018)</button><div class="collapsible-body">
-<p><strong>Aim:</strong> Test experimentally whether <em>limiting</em> social media improves well-being.</p>
-<p><strong>Who:</strong> <strong>143 University of Pennsylvania undergraduates</strong>.</p>
-<p><strong>Procedure:</strong> Random assignment to one of two conditions for <strong>three weeks</strong>:</p>
-<ul>
-<li><strong>Limitation condition:</strong> maximum 10 minutes per day on Facebook, Instagram and Snapchat &mdash; compliance verified by <strong>battery-screenshot data</strong>, not trust</li>
-<li><strong>Usual-use control:</strong> no restrictions</li>
-</ul>
-<p>Well-being (loneliness, depression, anxiety, FOMO, self-esteem, social support) was measured at baseline and weekly.</p>
-<p><strong>Key findings:</strong> The limitation group showed <strong>significant reductions in loneliness and depressive symptoms</strong> compared with controls; improvements were largest for participants who began the study more depressed. Anxiety and FOMO shifts were smaller/less consistent.</p>
-<p><strong>Conclusion:</strong> Because participants were randomly assigned, the study provides evidence that limiting social-media use contributed to short-term reductions in loneliness and depressive symptoms in this sample.</p>
-<p><strong>Boundaries:</strong> the study does NOT establish that everyone benefits from reducing social media, that social-media use originally caused participants&rsquo; difficulties, that the effects necessarily persist long term, or that the same effects would occur in adolescents or other populations.</p>
-<p><strong>Strengths:</strong> RCT design licenses cause-and-effect for the study window; objective usage verification defeats the self-report problem that weakened Twenge&rsquo;s survey; multiple validated outcome scales.</p>
-<p><strong>Limitations:</strong> single university sample (generalisability); only three weeks &mdash; durability unknown; monitoring via screenshots may itself alter behaviour (reactivity); platform landscape already ageing.</p>
-<div class="reveal"><div class="reveal-question">Before reading: Hunt&rsquo;s team could have simply surveyed people who already use little social media. Why would that design have been far weaker?</div><div class="reveal-answer"><div>Low-use people may differ in personality, friendships or mood from the start &mdash; selection, not effect. Randomly <em>assigning</em> the reduction removes those pre-existing differences, which is exactly what makes this causal where surveys stay correlational.</div></div></div>
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">Loneliness fell but FOMO barely moved. What does that dissociation suggest about mechanisms?</div><div class="reveal-answer"><div>The different outcome pattern can suggest hypotheses about the mechanisms involved, but the study did not directly test mediation. We therefore cannot conclude from these results alone which psychological mechanism produced the improvement.</div></div></div>
-</div></div>
+<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">How Effective Is It?</h4>
+<p>To evaluate the strategy, psychologists need to consider what actually improves.</p>
+<p>A study might show that participants reduced their screen time, but that alone would demonstrate a change in behaviour rather than an improvement in the health problem. Researchers should also examine relevant outcomes such as wellbeing, distress, sleep, functioning or symptoms associated with problematic use.</p>
+<p>They also need to consider whether any improvement lasts. A strategy may work while participants are being closely monitored in a study but become harder to maintain once the study ends.</p>
+<p>Individual differences matter as well. A strict limit may help one person but be unnecessary, impractical or ineffective for another.</p>
+<p>What does this tell us about whether reducing social-media use can actually help? In one three-week experiment, undergraduates were randomly assigned either to limit three platforms to ten minutes per day &mdash; with compliance checked through phone battery screenshots &mdash; or to continue their usual use. The limitation group showed significant reductions in loneliness and depressive symptoms compared with controls, especially among those who began the study more depressed. Because participants were randomly assigned, this supports a short-term causal contribution in this sample &mdash; but three weeks with university students cannot show that everyone benefits, that effects last, or that reduced use was the original cause of anyone&rsquo;s difficulties.</p>
 
-<div class="collapsible"><button class="collapsible-trigger">Strategy 3 &mdash; Environmental Design</button><div class="collapsible-body">
-<p><strong>Mechanism targeted:</strong> notification cues trigger habitual checking.</p>
-<p><strong>Intervention:</strong> disable non-human notifications, app timers, phone out of bedroom, greyscale mode.</p>
-<p><strong>Evidence:</strong> reducing environmental cues may make habitual checking less likely by removing some of the triggers associated with the behaviour. This is a theoretically informed strategy rather than proven treatment evidence on this page.</p>
-</div></div>
+<p>Reducing or limiting social-media use may be a useful strategy for some people, but effectiveness should be judged by meaningful improvements in wellbeing or functioning, not simply by whether screen time decreases.</p>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
 <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; judging interventions</h4>
 <div class="act-container" id="hw-hunt-experiment"></div>
 </div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);padding:1rem 1.25rem;border-radius:0 var(--radius) var(--radius) 0;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">HL Extension: Motivation &amp; Behaviour Change</h3>
-<ul style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;padding-left:1.25rem;">
-<li><strong>Motivation</strong> &rarr; initiating change &rarr; maintaining change.</li>
-<li><strong>Intrinsic vs extrinsic:</strong> internally valued reasons for change may support persistence, while external pressures can sometimes initiate behaviour change but may not be sufficient for long-term maintenance.</li>
-<li><strong>Takeaway:</strong> knowing that a behaviour is harmful does not automatically create the motivation or ability to change it.</li>
-</ul>
-</div>
-
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Prevention strategies can target knowledge, habits, environmental cues and alternative behaviours.</li>
-<li>Hunt et al. (2018): 143 undergraduates; 3-week randomised experiment limiting platforms to 10 min/day with battery-screenshot verification; loneliness and depressive symptoms fell significantly versus usual use.</li>
-<li>Random assignment strengthens causal inference, but the sample and three-week duration limit generalisation &mdash; Hunt provides short-term evidence about this sample, not a universal rule.</li>
-<li>Evidence supporting one psychological intervention cannot automatically be transferred to another problem (depression-based behavioural-activation research is not direct evidence for treating problematic social-media use).</li>
-<li>Motivation influences both starting and maintaining behaviour change; self-efficacy and environmental/social barriers can influence whether change is maintained.</li>
-</ol>
-</div>
-
-<div style="background:#fef9e7;border-left:4px solid #f9ab00;border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-top:1rem;"><h3 style="font-size:.95rem;font-weight:700;margin:0 0 .5rem;color:#b06000;">HL Lens: Motivation</h3><p style="font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .5rem;">Understanding why someone initiates AND maintains behaviour change requires more than knowledge of harms:</p><p style="font-size:.88rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;background:var(--bg);padding:.6rem;border-radius:var(--radius);"><strong>Motivation</strong> &rarr; engagement with change/treatment &rarr; <strong>persistence or adherence</strong> &rarr; outcome</p><h4 style="font-size:.92rem;font-weight:700;margin:.5rem 0 .25rem;color:var(--text);">Wanting vs Maintaining</h4><ul style="font-size:.85rem;line-height:1.6;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li><strong>Initiating</strong> often needs a trigger (health scare, crisis, relationship ending)</li><li><strong>Maintaining</strong> requires different processes: habit replacement, managing cravings, social support</li><li>Many start successfully but fail to sustain &mdash; maintenance demands differ from initiation</li></ul><h4 style="font-size:.92rem;font-weight:700;margin:.5rem 0 .25rem;color:var(--text);">Intrinsic vs Extrinsic Motivation</h4><ul style="font-size:.85rem;line-height:1.6;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li><strong>Intrinsic:</strong> reducing screen time because you genuinely value face-to-face relationships and want to feel present</li><li><strong>Extrinsic:</strong> reducing screen time because parents threatened confiscation &mdash; works short-term but rarely sustains once external pressure is removed</li><li>Lasting change is more likely when motivation shifts from extrinsic toward intrinsic over time</li></ul><h4 style="font-size:.92rem;font-weight:700;margin:.5rem 0 .25rem;color:var(--text);">Self-Efficacy</h4><p style="font-size:.85rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .5rem;">Belief in your ability to successfully change matters independently of motivation. Someone may WANT to reduce use but believe “I could never actually do it” &mdash; low self-efficacy predicts giving up at the first obstacle.</p><h4 style="font-size:.92rem;font-weight:700;margin:.5rem 0 .25rem;color:var(--text);">Barriers to Change</h4><ul style="font-size:.85rem;line-height:1.6;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li>Habit strength: automatic checking overrides conscious intentions</li><li>Social environment: friends still on platforms all day</li><li>FOMO returning when initial motivation dips</li><li>Using social media as the only available coping mechanism for stress</li></ul><div class="reveal"><div class="reveal-question">A student says: “I know I spend too much time scrolling. It’s affecting my grades and sleep. But every time I try to cut down, I last about two days before going back to normal. Why does understanding the harm not translate into changing behaviour?”</div><div class="reveal-answer"><div>Multiple motivational barriers are operating simultaneously: (1) habit strength — automatic checking overrides conscious goals; (2) the reinforcement loop is active — each checking episode provides brief relief; (3) self-efficacy may be low after previous failed attempts; (4) if peers are also heavy users, the social environment provides no alternative model. Knowledge of harm is NECESSARY but NOT SUFFICIENT — effective change requires addressing habit cues, building self-efficacy through small successes, and finding alternative sources of the same rewards.</div></div></div></div>
 
 </div>
 
@@ -2976,10 +2789,6 @@ Culture influences depression through a chain of connected steps:</p>
     subtitle: 'Which conclusions do the data license?',
     hints: ['Cross-sectional designs block causal verbs.','Measurement choice moves the number.','Subgroup patterns still count as findings.'],
     questions: [
-      { label: 'Twenge & Campbell report 5+h users show about double the elevated-symptom rate of ~1 h users. Justified conclusion?',
-        options: ['Screens cause depression in adolescents','Dose-related association exists; direction undetermined because depressed teens may also withdraw into screens','Girls exaggerate their answers'],
-        correct: 1,
-        feedback: 'Large-sample association supports a dose pattern worth testing longitudinally — nothing stronger without temporal precedence.' },
       { label: 'Study A reports 6% adolescent problematic use; Study B reports 19% on the same year. Most defensible reading?',
         options: ['One study is fraudulent','Different instruments/thresholds likely drive the gap — check measures before comparing','Adolescence got worse between studies'],
         correct: 1,
@@ -4071,50 +3880,6 @@ Culture influences depression through a chain of connected steps:</p>
     });
   }
 
-  // Synapse labelling
-  var p6Labels = ['Presynaptic neuron', 'Synaptic cleft', 'Neurotransmitter', 'Postsynaptic receptor', 'Reuptake transporter'];
-  var p6LabelAnswers = { A: 'Presynaptic neuron', B: 'Synaptic cleft', C: 'Neurotransmitter', D: 'Postsynaptic receptor' };
-  var p6LabelState = {};
-  var p6LabelChoices = document.getElementById('p6-label-choices');
-  if (p6LabelChoices) {
-    var shuffledLabels = p6Labels.slice().sort(function() { return Math.random() - 0.5; });
-    shuffledLabels.forEach(function(label) {
-      var btn = document.createElement('button');
-      btn.className = 'p6-label-btn';
-      btn.setAttribute('data-label', label);
-      btn.style.cssText = 'padding:.4rem .75rem;border:2px solid var(--border);border-radius:var(--radius);background:var(--bg);cursor:pointer;font-size:.82rem;font-weight:600;color:var(--text);';
-      btn.textContent = label;
-      p6LabelChoices.appendChild(btn);
-    });
-    
-    document.querySelectorAll('.p6-label-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        if (this.style.background === 'var(--primary)') return;
-        var selectedLabel = this.getAttribute('data-label');
-        document.querySelectorAll('.p6-synapse-part').forEach(function(part) {
-          part.addEventListener('click', function handler() {
-            var partId = this.getAttribute('data-part');
-            p6LabelState[partId] = selectedLabel;
-            this.textContent = selectedLabel;
-            this.style.borderStyle = 'solid';
-            this.style.background = 'var(--primary-light)';
-            this.removeEventListener('click', handler);
-          });
-        });
-      });
-    });
-    
-    document.querySelectorAll('.p6-synapse-part').forEach(function(part) {
-      part.addEventListener('click', function() {
-        var partId = this.getAttribute('data-part');
-        if (p6LabelState[partId]) return;
-        document.querySelectorAll('.p6-label-btn').forEach(function(btn) {
-          btn.style.background = 'var(--bg)';
-          btn.style.borderColor = 'var(--border)';
-        });
-      });
-    });
-  }
 </script>
 
 <script>

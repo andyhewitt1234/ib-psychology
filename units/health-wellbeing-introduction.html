@@ -13,19 +13,14 @@
     .welcome-hero h1 { font-size:1.8rem; font-weight:800; margin-bottom:1rem; }
     .welcome-hero .lead { font-size:1.05rem; line-height:1.7; color:var(--text-secondary); margin-bottom:1.5rem; }
     .welcome-hero .lead strong { color:var(--text); }
-    .welcome-overview { display:grid; gap:.75rem; margin:1.5rem 0; }
-    .welcome-overview-item { display:flex; gap:.75rem; align-items:flex-start; padding:.85rem 1rem; background:var(--bg-secondary); border-radius:var(--radius); border-left:3px solid var(--primary); }
-    .welcome-overview-item .wo-icon { font-size:1.1rem; flex-shrink:0; margin-top:2px; }
-    .welcome-overview-item .wo-text { font-size:.92rem; line-height:1.55; }
-    .welcome-overview-item .wo-text strong { color:var(--text); }
-    .welcome-big-idea { margin:2rem 0; padding:1.25rem 1.5rem; background:var(--primary-light); border-left:4px solid var(--primary); border-radius:0 var(--radius) var(--radius) 0; }
+    .welcome-big-idea { margin:1.5rem 0 2rem; padding:1.25rem 1.5rem; background:var(--primary-light); border-left:4px solid var(--primary); border-radius:0 var(--radius) var(--radius) 0; }
     .welcome-big-idea p { font-size:1rem; line-height:1.65; color:var(--text); margin:0; }
     .welcome-big-idea p + p { margin-top:.75rem; }
-    .welcome-scenario { margin:2rem 0; padding:1.25rem 1.5rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); }
+    .welcome-scenario { margin:1.25rem 0; padding:1.25rem 1.5rem; background:var(--bg-secondary); border:1px solid var(--border); border-radius:var(--radius); }
     .welcome-scenario h3 { font-size:1rem; font-weight:700; margin-bottom:.75rem; color:var(--text); }
     .welcome-scenario p { font-size:.92rem; line-height:1.65; color:var(--text-secondary); margin-bottom:.5rem; }
     .welcome-scenario p:last-child { margin-bottom:0; }
-    .welcome-finish { margin-top:2rem; font-size:.95rem; line-height:1.65; color:var(--text-secondary); font-style:italic; }
+    .welcome-scenario strong { color:var(--text); }
   </style>
 </head>
 <body>
@@ -49,67 +44,144 @@
     <a href="health-wellbeing-index.html" class="back-to-index">&larr; Back to Index</a>
 
     <div class="welcome-hero">
-      <h1>Welcome to Health &amp; Well-being</h1>
+      <div class="lesson-content">
+        <h1>Welcome to Health &amp; Well-being</h1>
 
-      <p class="lead"><strong>Why do some people develop health problems while others do not?</strong></p>
-      <p class="lead">Our health and well-being are shaped by much more than one cause. Biological processes, thoughts, behaviour, social experiences, culture, stress and our environment can all interact to influence our health.</p>
-      <p class="lead">In this unit, you will explore <strong>why health problems develop, how psychologists investigate them, and what can be done to prevent and treat them.</strong></p>
+        <p class="lead">Health and well-being are shaped by interactions between the mind, body and social environment.</p>
+        <p class="lead">Psychologists therefore study health holistically rather than assuming that mental and physical health are completely separate.</p>
+        <p class="lead">In this unit, we will investigate why health problems develop, why their prevalence may change or differ between populations, and how psychologists evaluate attempts to prevent or treat them.</p>
 
-      <h2 style="font-size:1.15rem;font-weight:700;margin:1.75rem 0 .5rem;">What will we explore?</h2>
+        <h2 style="font-size:1.15rem;font-weight:700;margin:1.5rem 0 .5rem;">Health, Mental Health and Well-being</h2>
 
-      <div class="welcome-overview">
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#128153;</span>
-          <span class="wo-text"><strong>Major Depressive Disorder</strong> &mdash; How biological, cognitive, environmental and cultural factors can help explain depression.</span>
+        <p><strong>Physical health</strong> concerns the functioning and condition of the body.</p>
+        <p><strong>Mental health</strong> concerns psychological and emotional functioning.</p>
+        <p><strong>Well-being</strong> is related to both, but it also includes a person&rsquo;s subjective experience of how pleasant, satisfying and manageable their life feels.</p>
+        <p>This distinction matters because health can sometimes be assessed using relatively objective indicators, while well-being often depends on what the individual reports about their own experience.</p>
+        <p>A complete psychological understanding of health therefore needs to consider both measurable health outcomes and subjective experience.</p>
+
+        <div>
+          <div class="collapsible">
+            <button class="collapsible-trigger">Health Is an Interaction</button>
+            <div class="collapsible-body">
+              <p>Health outcomes rarely have one simple cause.</p>
+              <p>Psychologists may investigate:</p>
+              <ul>
+                <li><strong>Biological factors</strong> &mdash; such as genetics, neural processes or other physiological mechanisms.</li>
+                <li><strong>Cognitive factors</strong> &mdash; such as beliefs, interpretations and patterns of thinking.</li>
+                <li><strong>Environmental factors</strong> &mdash; such as stressful experiences or features of a person&rsquo;s surroundings.</li>
+                <li><strong>Sociocultural factors</strong> &mdash; such as social relationships, cultural expectations and population context.</li>
+              </ul>
+              <p>These influences can interact.</p>
+              <p>For example, a stressful experience may affect people differently depending on their biological vulnerability, how they interpret the situation, the support available to them and the wider social environment.</p>
+              <p>The strongest psychological explanations therefore avoid automatically reducing a health problem to one isolated cause.</p>
+            </div>
+          </div>
+          <div class="collapsible">
+            <button class="collapsible-trigger">Why Do Health Problems Develop?</button>
+            <div class="collapsible-body">
+              <p>A psychological explanation attempts to identify processes that may contribute to a health problem.</p>
+              <p>Different explanations can focus on different levels.</p>
+              <p>A biological explanation might investigate vulnerability or physiological processes.</p>
+              <p>A cognitive explanation might investigate how patterns of thinking contribute.</p>
+              <p>An environmental explanation might investigate experiences or conditions associated with the problem.</p>
+              <p>A social explanation might investigate learning from other people or the influence of relationships and social environments.</p>
+              <p>These explanations do not necessarily compete.</p>
+              <p>More than one process can contribute to the same health outcome, and the importance of different influences can vary between individuals.</p>
+            </div>
+          </div>
+          <div class="collapsible">
+            <button class="collapsible-trigger">Why Do Prevalence Rates Change or Differ?</button>
+            <div class="collapsible-body">
+              <p><strong>Prevalence</strong> refers to how common a health problem is within a particular population during a specified period.</p>
+              <p>Psychologists may ask why prevalence:</p>
+              <ul>
+                <li>changes over time within a population, or</li>
+                <li>differs between populations.</li>
+              </ul>
+              <p>A difference in recorded prevalence can reflect genuine differences in risk or exposure.</p>
+              <p>However, psychologists must also consider factors such as:</p>
+              <ul>
+                <li>how the health problem is defined</li>
+                <li>how it is measured</li>
+                <li>access to diagnosis or healthcare</li>
+                <li>willingness to report symptoms</li>
+                <li>cultural interpretations of health and distress</li>
+              </ul>
+              <p>A recorded difference between populations therefore needs to be explained carefully rather than automatically treated as proof that one population genuinely experiences more of the problem.</p>
+            </div>
+          </div>
+
+          <h2 style="font-size:1.15rem;font-weight:700;margin:1.75rem 0 .5rem;">The Three Parts of This Unit</h2>
+
+          <div class="welcome-scenario">
+            <h3>1. Mental Health Disorders</h3>
+            <p>&ldquo;How can psychologists understand a mental health disorder?&rdquo;</p>
+            <p><strong>Our focus: Major Depressive Disorder (MDD)</strong></p>
+            <p>We will investigate:</p>
+            <p><strong>Biological Explanations</strong><br>How biological processes may contribute to MDD.</p>
+            <p><strong>Cognitive Models</strong><br>How patterns of thinking can help us understand MDD.</p>
+            <p><strong>Environmental Factors</strong><br>How experiences and environmental conditions may contribute.</p>
+            <p><strong>Cultural Differences</strong><br>Why prevalence may differ between populations and how approaches to mental health can vary.</p>
+          </div>
+
+          <div class="welcome-scenario">
+            <h3>2. Health Problems</h3>
+            <p>&ldquo;How can psychologists understand a health problem?&rdquo;</p>
+            <p><strong>Our focus: Problematic Social-Media Use</strong></p>
+            <p>We will investigate:</p>
+            <p><strong>Prevalence</strong><br>Why recorded rates may change over time or differ between populations.</p>
+            <p><strong>Social Learning</strong><br>How observing and responding to other people can contribute to health-related behaviour.</p>
+            <p><strong>Stress and Health</strong><br>How stress can contribute to problematic patterns of behaviour.</p>
+          </div>
+
+          <div class="welcome-scenario">
+            <h3>3. Prevention &amp; Treatment</h3>
+            <p>&ldquo;How can health problems be prevented or treated?&rdquo;</p>
+            <p>We will investigate:</p>
+            <p><strong>Biological Treatment for MDD</strong><br>How a biological treatment works and how effectively it reduces symptoms.</p>
+            <p><strong>Psychological Treatment for MDD</strong><br>How a psychological treatment works and how effectively it reduces symptoms.</p>
+            <p><strong>Prevention or Treatment of Problematic Social-Media Use</strong><br>How strategies attempt to reduce the problem and how their effectiveness can be evaluated.</p>
+          </div>
+          <div class="collapsible">
+            <button class="collapsible-trigger">Prevention and Treatment: Does It Work?</button>
+            <div class="collapsible-body">
+              <p>Knowing that a treatment or prevention strategy exists is not enough.</p>
+              <p>Psychologists need to ask:</p>
+              <p><strong>How is it supposed to work?</strong></p>
+              <p>What psychological or biological process is the intervention trying to change?</p>
+              <p><strong>Does it actually work?</strong></p>
+              <p>What evidence shows improvement, and how was that improvement measured?</p>
+              <p><strong>For whom does it work?</strong></p>
+              <p>Average effectiveness does not mean every individual responds in the same way.</p>
+              <p><strong>What can we conclude from the evidence?</strong></p>
+              <p>Researchers must consider research design, measurement, alternative explanations and the size and consistency of the observed effect.</p>
+              <p>Throughout this unit, we will therefore study both the <strong>explanation</strong> and the <strong>effectiveness</strong> of prevention and treatment.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#9878;&#65039;</span>
-          <span class="wo-text"><strong>Risk &amp; protection</strong> &mdash; Why similar experiences may affect different people in different ways, including the diathesis&ndash;stress model.</span>
+
+        <h2 style="font-size:1.15rem;font-weight:700;margin:1.75rem 0 .5rem;">The Questions to Keep Asking</h2>
+
+        <div class="welcome-big-idea">
+          <p><strong>How can psychology explain, measure and improve health and well-being?</strong></p>
+          <ol style="margin:.5rem 0 .75rem 1.5rem; padding:0;">
+            <li>WHAT health or well-being outcome are we trying to understand?</li>
+            <li>HOW is that outcome being measured?</li>
+            <li>WHAT factors could contribute to it?</li>
+            <li>HOW might those factors interact?</li>
+            <li>WHAT does the evidence actually allow us to conclude?</li>
+            <li>HOW could the problem be prevented or treated &mdash; and how do we know whether that works?</li>
+          </ol>
+          <p>Keep these questions in mind throughout Health &amp; Well-being. The theories, research and interventions in this unit are tools for answering them.</p>
         </div>
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#128241;</span>
-          <span class="wo-text"><strong>Problematic social-media use</strong> &mdash; How social learning, social comparison, FOMO and other factors may influence health and well-being.</span>
-        </div>
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#127777;&#65039;</span>
-          <span class="wo-text"><strong>Stress &amp; health</strong> &mdash; How psychological and biological responses to stress can affect us.</span>
-        </div>
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#129657;</span>
-          <span class="wo-text"><strong>Prevention &amp; treatment</strong> &mdash; How approaches such as CBT, biological treatments and behavioural interventions can improve health.</span>
-        </div>
-        <div class="welcome-overview-item">
-          <span class="wo-icon">&#128200;</span>
-          <span class="wo-text"><strong>Evaluating evidence</strong> &mdash; How psychologists decide whether explanations and treatments are actually supported by research.</span>
-        </div>
+
       </div>
-
-      <div class="welcome-big-idea">
-        <p><strong>Health problems rarely have one simple cause.</strong></p>
-        <p>Throughout the unit, students should begin thinking about how <strong>biological, cognitive, social, cultural and environmental factors can interact</strong> to influence health and well-being.</p>
-      </div>
-
-      <div class="welcome-scenario">
-        <h3>Imagine this&hellip;</h3>
-        <p>Two teenagers experience the same stressful life event. One later develops depression, while the other does not.</p>
-        <p><strong>If they experienced the same stressful event, why might their outcomes be different?</strong></p>
-        <p style="font-size:.82rem;color:var(--text-muted);margin-top:.75rem;">Think about the answer before clicking the button.</p>
-        <div id="welcome-reveal-btn"></div>
-      </div>
-
-      <p class="welcome-finish">By the end of this unit, you should be able to explain how these different influences interact &mdash; and evaluate the evidence psychologists use to understand and improve health.</p>
     </div>
 
   </div>
 </div>
 <footer class="footer"><p>Mr. Hewitt's IB Psychology Class &mdash; DP IB Psychology Course Website</p></footer>
 <script src="../js/script.js"></script>
-<script>
-(function() {
-  var btn = document.getElementById('welcome-reveal-btn');
-  if (!btn) return;
-  btn.innerHTML = '<div class="reveal" onclick="this.classList.toggle(\'open\')" style="cursor:pointer;margin-top:.5rem;"><div class="reveal-question" style="font-weight:600;color:var(--primary);">Reveal Answer</div><div class="reveal-answer" style="margin-top:.5rem;padding:.75rem 1rem;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);font-size:.9rem;line-height:1.6;color:var(--text-secondary);"><strong style="color:var(--text);">Because the stressful event is only one part of the explanation.</strong> The two teenagers may differ in biological vulnerability, patterns of thinking, previous experiences, coping strategies, social support, culture, or other protective and risk factors. Psychological health often results from <strong>several interacting influences rather than one single cause</strong>.</div></div>';
-})();
-</script>
 </body>
 </html>

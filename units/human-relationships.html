@@ -191,7 +191,39 @@
       margin-top: 0;
       margin-bottom: .4rem;
     }
-  </style>
+  /* ===== SLIDE 1 WHAT YOU WILL LEARN: scoped to #slide-1 ===== */
+#slide-1 .hr-fnd-sub { font-size: 1rem; line-height: 1.65; color: var(--text); border-left: 3px solid var(--primary); padding-left: .7rem; margin: 0 0 1.2rem; max-width: 72ch; }
+#slide-1 .hr-fnd-sec { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 1.7rem 0 .7rem; color: var(--text); }
+#slide-1 .hr-fnd-lead { font-size: .95rem; line-height: 1.65; color: var(--text); margin: 0 0 .7rem; max-width: 72ch; }
+#slide-1 .hr-fnd-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .hr-fnd-duo { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .hr-fnd-quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .hr-fnd-six { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .hr-fnd-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; }
+#slide-1 .hr-fnd-card h4 { font-size: .95rem; font-weight: 700; margin: 0 0 .4rem; color: var(--text); }
+#slide-1 .hr-fnd-card p { font-size: .9rem; line-height: 1.6; color: var(--text); margin: 0 0 .5rem; }
+#slide-1 .hr-fnd-card p:last-child { margin-bottom: 0; }
+#slide-1 .hr-fnd-card .hr-fnd-q { font-weight: 700; color: var(--primary); }
+#slide-1 .hr-fnd-hook .hr-fnd-card { border-top: 3px solid var(--primary); }
+#slide-1 .hr-fnd-take { background: var(--primary-light); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .75rem 1rem; margin: .8rem 0 0; max-width: 72ch; font-size: .92rem; line-height: 1.65; color: var(--text); }
+#slide-1 .hr-fnd-model { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin: .8rem 0 0; max-width: 72ch; font-size: .92rem; line-height: 1.7; color: var(--text); }
+#slide-1 .hr-fnd-model strong { color: var(--primary); }
+#slide-1 .hr-fnd-final { background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius); padding: 1rem 1.2rem; margin: .9rem 0 0; font-size: .95rem; line-height: 1.65; color: var(--text); }
+#slide-1 .hr-fnd-final-q { font-size: 1.1rem; font-weight: 800; color: var(--primary); margin: 0 0 .5rem; line-height: 1.4; }
+#slide-1 .hr-fnd-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: .5rem; align-items: stretch; margin: .8rem 0 0; counter-reset: hrfnd; }
+#slide-1 .hr-fnd-step { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .85rem; }
+#slide-1 .hr-fnd-step h4 { font-size: .82rem; font-weight: 800; margin: 0 0 .3rem; color: var(--primary); line-height: 1.35; }
+#slide-1 .hr-fnd-step p { font-size: .86rem; line-height: 1.55; color: var(--text); margin: 0; }
+@media (max-width: 900px) {
+  #slide-1 .hr-fnd-quad { grid-template-columns: 1fr 1fr; }
+  #slide-1 .hr-fnd-steps { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  #slide-1 .hr-fnd-trio, #slide-1 .hr-fnd-duo, #slide-1 .hr-fnd-six { grid-template-columns: 1fr; }
+  #slide-1 .hr-fnd-quad, #slide-1 .hr-fnd-steps { grid-template-columns: 1fr; }
+}
+
+</style>
 </head>
 <body>
 
@@ -219,7 +251,7 @@
 
                 <div class="progress-rail" id="progress-rail">
           <div class="rail-line"></div>
-        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. 01. Human Relationships: The Big Picture.</span></div>
+        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. Human Relationships: What You Will Learn</span></div>
         <div class="rail-dot activity-dot" data-slide="2"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">2. Activity: Check Your Understanding</span></div>
         <div class="rail-dot" data-slide="3"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">3. Social Identity Theory: Core Process</span></div>
         <div class="rail-dot activity-dot" data-slide="4"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">4. Activity: Check Your Understanding</span></div>
@@ -330,33 +362,247 @@
         <div class="rail-dot" data-slide="109"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">124. HL Extension: Technology: Evaluation</span></div>
         <div class="rail-dot" data-slide="110"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">Paper 1 Application — Technology</span></div>
         </div><div class="slide" data-slide="1" id="slide-1">
-<h2>01. Human Relationships: The Big Picture.</h2>
-<div class="collapsible"><button class="collapsible-trigger">Two Areas of Human Relationships</button><div class="collapsible-body">
-<p><strong>Group Behaviour</strong> examines how people's behaviour is influenced by group membership and other people, including social identity, social learning, conformity, compliance, culture and acculturation.</p>
-<p><strong>Interpersonal Relationships</strong> examines psychological processes affecting relationships between individuals, including how relationships are interpreted, how conflict develops, communication, biological influences and ways relationships can be improved.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Real-Life Example</button><div class="collapsible-body">
-<p>A student joins a new friendship group and gradually begins using the group's slang, clothing style and opinions. This is <strong>group behaviour</strong> because membership of the group is influencing the student's behaviour. In contrast, two friends arguing because one interprets the other's short text message as rude is an <strong>interpersonal relationship</strong> issue because psychological processes are influencing the interaction between two individuals.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">What Shapes Human Relationships?</button><div class="collapsible-body">
-<p>Relationships cannot usually be explained by one factor alone.</p>
-<p><strong>Cognitive factors</strong> — schemas, expectations, interpretations and attributions.</p>
-<p><strong>Sociocultural factors</strong> — group membership, norms, social learning and culture.</p>
-<p><strong>Biological factors</strong> — including chemical messengers associated with social behaviour.</p>
-<p><strong>Communication</strong> — language, tone, facial expressions and communication patterns.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Real-Life Examples</button><div class="collapsible-body">
-<p><strong>Cognitive</strong> — a person who expects others to be untrustworthy interprets an unanswered message as deliberate rejection.</p>
-<p><strong>Sociocultural</strong> — a teenager changes how they behave around a friendship group because fitting in is important.</p>
-<p><strong>Biological</strong> — biological processes such as oxytocin may contribute to bonding and social behaviour, but do not determine relationships by themselves.</p>
-<p><strong>Communication</strong> — the message “Fine.” could seem neutral face-to-face when accompanied by a smile but angry in a text where tone and facial expression are missing.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">What You Will Learn</button><div class="collapsible-body">
-<p>Students will use psychological theories and research to understand group behaviour and interpersonal relationships, evaluate psychological evidence and explanations, apply relevant IB Psychology concepts, and complete the required survey/questionnaire class practical.</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">Question 1: A student starts using the same slang as their new friendship group. Which area of Human Relationships would investigate this?</div><div class="reveal-answer"><div>Group behaviour, because the student's behaviour is being influenced by group membership and social influence.</div></div></div>
-<div class="reveal"><div class="reveal-question">Question 2: Two friends receive the same message — “Fine.” One thinks it is neutral while the other thinks the sender is angry. What does this demonstrate?</div><div class="reveal-answer"><div>Cognitive processes and communication can interact. Existing expectations can influence interpretation, while text communication removes cues such as tone and facial expression.</div></div></div>
-<div class="reveal"><div class="reveal-question">Question 3: Why shouldn't psychologists explain relationships using only biology, cognition or culture?</div><div class="reveal-answer"><div>Human relationships usually result from interacting influences. Biological processes, thoughts and expectations, social experiences, culture and communication can all contribute to behaviour.</div></div></div>
+<h2>Human Relationships: What You Will Learn</h2>
+<p class="hr-fnd-sub">Human relationships are shaped by the ways people influence one another — as members of groups and as individuals interacting with other individuals.</p>
+<h3 class="hr-fnd-sec">Other People Change What We Do</h3>
+<p class="hr-fnd-lead">Imagine Maya in three different situations.</p>
+<div class="hr-fnd-trio hr-fnd-hook">
+<div class="hr-fnd-card">
+<h4>With Her Friends</h4>
+<p>Maya normally says she does not care about fashion.</p>
+<p>But when nearly everyone in her friendship group begins wearing a particular style, Maya starts wearing it too.</p>
+<p>Why might the behaviour of the group influence what Maya does?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>With Another Group</h4>
+<p>Maya strongly identifies with her school house.</p>
+<p>During a competition, she becomes much more supportive of students from her own house and increasingly critical of students from the rival house.</p>
+<p>Why might simply thinking in terms of ‘us’ and ’them’ influence behaviour?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>With a Close Friend</h4>
+<p>Maya sends a message to a close friend and receives the reply:</p>
+<p><strong>'Fine.'</strong></p>
+<p>Maya interprets the reply as irritated and responds defensively.</p>
+<p>Her friend had not intended to sound irritated.</p>
+<p>How could communication and interpretation change what happens next in the relationship?</p>
+</div>
+</div>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">What Do These Situations Have in Common?</h4>
+<p class="hr-fnd-lead">Maya’s behaviour cannot be understood by looking only at Maya as an isolated individual.</p>
+<p class="hr-fnd-lead">In every situation, other people are part of the psychological explanation.</p>
+<p class="hr-fnd-lead">But they influence behaviour in different ways.</p>
+<p class="hr-fnd-lead">This unit investigates those different processes.</p>
+<h3 class="hr-fnd-sec">Human Relationships Are Interdependent</h3>
+<p class="hr-fnd-lead">People are social and interdependent.</p>
+<p class="hr-fnd-lead">This means our behaviour can influence other people, while their behaviour can influence us.</p>
+<p class="hr-fnd-lead">Human relationships include interactions within friendships, families, romantic partnerships, workplaces and other social settings.</p>
+<p class="hr-fnd-lead">Psychologists therefore investigate not only what individuals think and do, but also what happens <strong>between people</strong> and <strong>within groups</strong>.</p>
+<div class="hr-fnd-take">
+<p>Human relationships are not simply a background in which behaviour happens.</p>
+<p>The relationship or group can itself become part of the explanation for behaviour.</p>
+</div>
+<h3 class="hr-fnd-sec">Two Ways of Studying Human Relationships</h3>
+<p class="hr-fnd-lead">In this unit, we will investigate human relationships through two connected areas.</p>
+<div class="hr-fnd-duo">
+<div class="hr-fnd-card">
+<h4>Part 1 — Group Behaviour</h4>
+<p class="hr-fnd-q">How does being part of a group influence what people do?</p>
+<p>People belong to many groups — friendship groups, cultures, teams, schools, workplaces and communities.</p>
+<p>Psychologists investigate how group membership, observation of others, social pressure and cultural environments can influence behaviour.</p>
+<p>We will also examine how psychological knowledge can be applied in attempts to change group behaviour.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Part 2 — Interpersonal Relationships</h4>
+<p class="hr-fnd-q">What influences relationships between individuals, and how might those relationships be improved?</p>
+<p>Relationships between individuals involve communication, interpretation, emotion and biological processes.</p>
+<p>Psychologists investigate how these processes can contribute to trust, closeness, misunderstanding or conflict.</p>
+<p>They can then ask whether psychological knowledge can be used to improve relationships.</p>
+</div>
+</div>
+<p class="hr-fnd-lead">Both areas study social influence, but at different levels.</p>
+<p class="hr-fnd-lead"><strong>Group Behaviour</strong> focuses primarily on behaviour in relation to groups.</p>
+<p class="hr-fnd-lead"><strong>Interpersonal Relationships</strong> focuses primarily on interactions and relationships between individuals.</p>
+<h3 class="hr-fnd-sec">How Can a Group Influence Behaviour?</h3>
+<p class="hr-fnd-lead">There is no single ‘group effect’.</p>
+<p class="hr-fnd-lead">Groups can influence behaviour through different psychological and sociocultural processes.</p>
+<div class="hr-fnd-quad">
+<div class="hr-fnd-card">
+<h4>Identity</h4>
+<p>People can define themselves partly through the groups they belong to.</p>
+<p>When a group becomes psychologically important, distinctions between <strong>‘us’</strong> and <strong>’them’</strong> can influence judgement and behaviour.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Learning From Others</h4>
+<p>People can observe what other group members do and what happens to them.</p>
+<p>Observed behaviour and its consequences can influence what someone later chooses to do.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Social Influence</h4>
+<p>The behaviour or requests of other people can create pressure to respond in particular ways.</p>
+<p>Psychologists investigate processes such as conformity and compliance to understand this influence.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Culture</h4>
+<p>People develop within cultural environments containing values, expectations and social norms.</p>
+<p>These environments can influence what behaviours are encouraged, expected or considered appropriate.</p>
+</div>
+</div>
+<h3 class="hr-fnd-sec">One Behaviour Can Have More Than One Possible Explanation</h3>
+<p class="hr-fnd-lead">Imagine Maya begins behaving like the other members of her friendship group.</p>
+<p class="hr-fnd-lead">Did she copy behaviour she observed?</p>
+<p class="hr-fnd-lead">Did she conform because most members behaved that way?</p>
+<p class="hr-fnd-lead">Did the behaviour become connected to an important group identity?</p>
+<p class="hr-fnd-lead">Did shared cultural expectations make the behaviour more likely?</p>
+<p class="hr-fnd-lead">These explanations are related, but they are not identical.</p>
+<p class="hr-fnd-lead">A major skill in this unit is identifying <strong>which psychological process actually explains the behaviour in the situation</strong>.</p>
+<h3 class="hr-fnd-sec">Part 1 — What We Will Investigate</h3>
+<div class="hr-fnd-six">
+<div class="hr-fnd-card">
+<h4>Social Identity Theory</h4>
+<p class="hr-fnd-q">How can group membership influence behaviour — and how might changing group identity change behaviour?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Social Learning</h4>
+<p class="hr-fnd-q">How can observing other people help explain and change group behaviour?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Conformity</h4>
+<p class="hr-fnd-q">Why might people change their behaviour in response to a group?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Compliance Techniques</h4>
+<p class="hr-fnd-q">How can the way a request is made influence whether people agree to it?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Cultural Dimensions</h4>
+<p class="hr-fnd-q">How can broad cultural differences help psychologists understand patterns of group behaviour?</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Acculturation</h4>
+<p class="hr-fnd-q">How can different patterns of cultural adaptation influence behaviour and experience?</p>
+</div>
+</div>
+<h3 class="hr-fnd-sec">What Kinds of Relationships Will We Examine?</h3>
+<p class="hr-fnd-lead">In this unit, we will use <strong>social relationships and interpersonal conflict</strong> to investigate how chemical messengers, cognition and communication can influence relationships — and how psychological knowledge can be applied in attempts to improve them.</p>
+<div class="hr-fnd-duo">
+<div class="hr-fnd-card">
+<h4>Social Relationships</h4>
+<p>Friendships and other close relationships allow psychologists to investigate processes involved in trust, closeness, interpretation, communication and interaction.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Interpersonal Conflict</h4>
+<p>Conflict allows psychologists to investigate how communication, interpretation, emotion and other psychological processes can contribute to disagreement or escalation between people.</p>
+</div>
+</div>
+<p class="hr-fnd-lead">These are not completely separate topics.</p>
+<p class="hr-fnd-lead">The same relationship can involve closeness, trust, misunderstanding and conflict at different times.</p>
+<h3 class="hr-fnd-sec">What Happens Between Two People?</h3>
+<p class="hr-fnd-lead">Interpersonal relationships develop through repeated interactions.</p>
+<p class="hr-fnd-lead">One person behaves or communicates.</p>
+<p class="hr-fnd-lead">The other person interprets what happened and responds.</p>
+<p class="hr-fnd-lead">That response then becomes part of the situation for the first person.</p>
+<div class="hr-fnd-model">
+<p><strong>Person A communicates or behaves</strong><br>↓<br><strong>Person B interprets it</strong><br>↓<br><strong>Person B responds</strong><br>↓<br><strong>Person A interprets that response</strong><br>↓<br><strong>the interaction continues</strong></p>
+</div>
+<p class="hr-fnd-lead">Over time, repeated interactions can contribute to patterns of trust, closeness, misunderstanding or conflict.</p>
+<p class="hr-fnd-lead">Psychologists investigate the processes that may influence these interactions.</p>
+<h3 class="hr-fnd-sec">One Interaction. Several Psychological Processes.</h3>
+<p class="hr-fnd-lead">Alex and Jordan are close friends.</p>
+<p class="hr-fnd-lead">Jordan has had a stressful day and sends Alex a very short reply to a message:</p>
+<p class="hr-fnd-lead"><strong>‘Whatever.’</strong></p>
+<p class="hr-fnd-lead">Alex interprets the message as deliberately disrespectful and replies angrily.</p>
+<p class="hr-fnd-lead">Jordan becomes defensive and the disagreement escalates.</p>
+<div class="hr-fnd-trio">
+<div class="hr-fnd-card">
+<h4>Communication</h4>
+<p>The message provides information, but text removes cues such as tone of voice and facial expression.</p>
+<p>Alex has to interpret what Jordan means.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Cognition</h4>
+<p>Alex’s interpretation matters.</p>
+<p>If Alex interprets the message as deliberately hostile, that judgement can influence the response.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Biological Processes</h4>
+<p>Processes involved in stress and emotional regulation may also contribute to how strongly someone reacts during an interpersonal conflict.</p>
+</div>
+</div>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Do We Have to Choose One?</h4>
+<p class="hr-fnd-lead">No.</p>
+<p class="hr-fnd-lead">Different psychological processes can contribute to the same interaction.</p>
+<p class="hr-fnd-lead">The important question is not:</p>
+<p class="hr-fnd-lead"><strong>‘Which explanation is always correct?’</strong></p>
+<p class="hr-fnd-lead">It is:</p>
+<p class="hr-fnd-lead"><strong>‘Which process could help explain this behaviour, how would it work, and what does the evidence support?’</strong></p>
+<h3 class="hr-fnd-sec">Explaining a Relationship Is Not the Same as Improving It</h3>
+<p class="hr-fnd-lead">Chemical messengers, cognition and communication can help psychologists explain processes involved in interpersonal relationships.</p>
+<p class="hr-fnd-lead">A <strong>strategy for improving relationships</strong> has a different purpose.</p>
+<p class="hr-fnd-lead">It attempts to change a process or situation contributing to a relationship problem.</p>
+<div class="hr-fnd-model">
+<p><strong>relationship problem</strong><br>↓<br><strong>identify a process contributing to it</strong><br>↓<br><strong>target that process</strong><br>↓<br><strong>evaluate whether the relationship improves</strong></p>
+</div>
+<p class="hr-fnd-lead">A strategy sounding sensible does not prove that it works.</p>
+<p class="hr-fnd-lead">Psychologists need evidence that the proposed change actually improves the relevant relationship outcome.</p>
+<h3 class="hr-fnd-sec">Part 2 — What We Will Investigate</h3>
+<div class="hr-fnd-quad">
+<div class="hr-fnd-card">
+<h4>Chemical Messengers</h4>
+<p class="hr-fnd-q">How can chemical messengers contribute to interpersonal behaviour?</p>
+<p>We will investigate the role of chemical messengers in psychological processes involved in relationships while avoiding the assumption that biology determines complex social behaviour.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Cognitive Explanations</h4>
+<p class="hr-fnd-q">How can interpretation and judgement influence an interpersonal relationship?</p>
+<p>We will investigate how the way people interpret interpersonal events can influence their responses and contribute to developing interaction patterns.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Communication / Language</h4>
+<p class="hr-fnd-q">How can the way people communicate and interpret messages influence a relationship?</p>
+<p>We will examine how verbal, paralinguistic and non-verbal information can influence interpretation and reciprocal interaction.</p>
+</div>
+<div class="hr-fnd-card">
+<h4>Strategies for Improving Relationships</h4>
+<p class="hr-fnd-q">How can psychological knowledge be used in attempts to improve relationships?</p>
+<p>We will examine how a strategy can target a process contributing to a relationship problem and how psychologists evaluate whether the strategy actually works.</p>
+</div>
+</div>
+<h3 class="hr-fnd-sec">You Will Also Work Like a Psychologist</h3>
+<p class="hr-fnd-lead">Our class practical in Human Relationships will use a <strong>survey/questionnaire</strong>.</p>
+<p class="hr-fnd-lead">This will give us an opportunity to think about how psychologists turn questions about human relationships into variables that can be measured using data from participants.</p>
+<p class="hr-fnd-lead">The practical is not separate from the psychology.</p>
+<p class="hr-fnd-lead">It gives us another way to ask:</p>
+<p class="hr-fnd-lead"><strong>How can we investigate human relationships using evidence?</strong></p>
+<h3 class="hr-fnd-sec">Think Like a Psychologist Studying Human Relationships</h3>
+<p class="hr-fnd-lead">When you encounter a theory, study or scenario in this unit, do not stop at naming the topic.</p>
+<div class="hr-fnd-steps">
+<div class="hr-fnd-step">
+<h4>WHAT BEHAVIOUR ARE WE TRYING TO EXPLAIN?</h4>
+<p>Identify the specific group behaviour or interpersonal interaction.</p>
+</div>
+<div class="hr-fnd-step">
+<h4>WHAT PSYCHOLOGICAL PROCESS COULD EXPLAIN IT?</h4>
+<p>Identify the relevant process rather than simply naming a broad topic.</p>
+</div>
+<div class="hr-fnd-step">
+<h4>HOW WOULD THAT PROCESS PRODUCE THE BEHAVIOUR?</h4>
+<p>Explain the mechanism connecting the psychology to what the person or group actually does.</p>
+</div>
+<div class="hr-fnd-step">
+<h4>WHAT DOES THE EVIDENCE SUPPORT?</h4>
+<p>Consider what was measured, what the research found and whether the evidence supports association, causation or a more limited conclusion.</p>
+</div>
+<div class="hr-fnd-step">
+<h4>IF WE WANT BEHAVIOUR TO CHANGE, WHAT SHOULD WE TARGET?</h4>
+<p>Identify the process contributing to the problem and explain how a strategy could attempt to change it.</p>
+</div>
+</div>
+<h3 class="hr-fnd-sec">The Question Behind the Whole Unit</h3>
+<div class="hr-fnd-final">
+<p class="hr-fnd-final-q">How do other people influence what we think and do — and how can psychology help us understand or change those interactions?</p>
+<p>Every theory, study, activity and application in this unit helps us answer part of that question.</p>
+</div>
 </div><div class="slide activity-slide" data-slide="2" id="slide-2"><h2>Activity: Check Your Understanding</h2>
 <p class="slide-intro">Two branches were just introduced. Classify each real-life situation into the correct branch.</p>
 <div class="act-container" id="hr-batch1-002"></div>
@@ -495,7 +741,11 @@
 <div class="collapsible"><button class="collapsible-trigger">Overall Evaluation</button><div class="collapsible-body">
 <p>SIT is valuable because it identifies a clear psychological mechanism linking <strong>social categorisation</strong>, group identification and social comparison to group behaviour, and this mechanism has experimental support. However, it should not be treated as a complete or <strong>deterministic</strong> explanation. Intergroup behaviour is usually produced by an interaction between social identity and other individual, cultural and situational influences.</p>
 </div></div>
-<div class="reveal"><div class="reveal-question">A psychologist argues that Tajfel's minimal-group research proves that simply belonging to different groups will always cause prejudice and discrimination. What is wrong with this conclusion?</div><div class="reveal-answer"><div>The conclusion is too <strong>deterministic</strong>. Tajfel's research shows that <strong>social categorisation</strong> can be sufficient to produce <strong>ingroup favouritism</strong> under minimal-group conditions, but it does not show that group membership always causes prejudice or discrimination. Real-world behaviour is also influenced by factors such as group norms, culture, competition, previous experiences and the social situation.</div></div></div></div><div class="slide activity-slide" data-slide="8" id="slide-8"><h2>In-Group or Out-Group?</h2>
+<div class="reveal"><div class="reveal-question">A psychologist argues that Tajfel's minimal-group research proves that simply belonging to different groups will always cause prejudice and discrimination. What is wrong with this conclusion?</div><div class="reveal-answer"><div>The conclusion is too <strong>deterministic</strong>. Tajfel's research shows that <strong>social categorisation</strong> can be sufficient to produce <strong>ingroup favouritism</strong> under minimal-group conditions, but it does not show that group membership always causes prejudice or discrimination. Real-world behaviour is also influenced by factors such as group norms, culture, competition, previous experiences and the social situation.</div></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Using Social Identity Theory to Change Group Behaviour</button><div class="collapsible-body"><p>Social Identity Theory can be used not only to explain group behaviour, but also to think about how group behaviour might be changed.</p><p>If behaviour is partly influenced by how people categorise themselves and others, one possible strategy is to change which group identity becomes most important in the situation.</p><p>For example, imagine two school houses have developed a strong rivalry.</p><p>If students mainly think in terms of:</p><p><strong>‘our house’ vs ’their house’</strong></p><p>the original ingroup–outgroup distinction may remain highly salient.</p><p>A school could instead create meaningful shared goals and experiences that emphasise a broader identity:</p><p><strong>‘we are students from the same school working towards the same goal.’</strong></p><p>The psychological idea is not simply ‘make everyone cooperate’.</p><p>The proposed mechanism is:</p><p><strong>make a shared superordinate identity more salient → reduce the importance of the original ingroup–outgroup division → potentially change intergroup behaviour.</strong></p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Does This Guarantee Behaviour Will Change?</button><div class="collapsible-body"><p>No.</p><p>Changing the situation does not guarantee that people will abandon an existing group identity.</p><p>People can hold several social identities at the same time, and the original group distinction may remain important.</p><p>SIT can therefore help psychologists design and explain a possible strategy for changing group behaviour without allowing us to predict that the strategy must succeed.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Apply SIT: Changing Group Behaviour</button><div class="collapsible-body"><p>A school has two house groups, Falcons and Tigers. Rivalry has become increasingly hostile. Students avoid members of the other house and regularly make negative comments about them.</p><p>The school introduces a community project in which mixed Falcons–Tigers teams work together towards one shared school goal.</p><p>Use Social Identity Theory to explain <strong>how this strategy could help change group behaviour</strong>.</p><p>&square; identify the existing Falcons/Tigers categorisation</p><p>&square; explain how identification with the house can create an ingroup–outgroup distinction</p><p>&square; explain how the shared project could make a broader school identity more salient</p><p>&square; explain how reducing the salience of the original division could potentially change intergroup behaviour</p><p>&square; avoid claiming that the intervention is guaranteed to work</p></div></div>
+</div><div class="slide activity-slide" data-slide="8" id="slide-8"><h2>In-Group or Out-Group?</h2>
 <p class="slide-intro">Sort each description into the correct SIT concept — practising the three-stage process you just evaluated.</p>
 <div class="act-container" id="hr-act-002-batch1"></div>
 </div>
@@ -2232,6 +2482,20 @@
 <p class="slide-intro">How can the same words communicate completely different messages?</p>
 <p class="slide-intro">Imagine your friend says “Fine.” while smiling warmly at you. Now imagine they send “Fine.” in a text message immediately after an argument. The word is identical, but its meaning may feel completely different because communication involves more than the literal words being used.</p>
 <p class="slide-intro">Communication in relationships involves both verbal information and non-verbal information, together with the context in which the message occurs and the way the receiver interprets it.</p>
+<p><strong>SAME WORD. POSSIBLY DIFFERENT MESSAGE.</strong></p>
+<p>“Fine.” could communicate genuine agreement.</p>
+<p>“Fine.” could communicate irritation.</p>
+<p>“Fine.” could communicate resignation.</p>
+<p>“Fine.” could communicate that the speaker wants the conversation to end.</p>
+<p>The difference may depend on information such as:</p>
+<ul><li>tone</li><li>volume</li><li>facial expression</li><li>eye contact</li><li>timing</li><li>previous interaction</li><li>communication medium</li></ul>
+<p>The literal words are only part of the communication.</p>
+<p>The receiver must interpret what the speaker means, and that interpretation can influence what happens next in the relationship.</p>
+<p><strong>How Communication Can Affect a Relationship</strong></p>
+<p><strong>Message</strong><br>↓<br><strong>Interpretation</strong><br>↓<br><strong>Response</strong><br>↓<br><strong>Partner interprets that response</strong><br>↓<br><strong>Relationship pattern may develop</strong></p>
+<p>Communication is therefore an interactive process.</p>
+<p>One person communicates something. The other person interprets it and responds. That response becomes new information for the first person to interpret.</p>
+<p>Over repeated interactions, these exchanges can contribute to patterns of closeness, trust, misunderstanding or conflict.</p>
 <div class="collapsible"><button class="collapsible-trigger">Verbal Communication</button><div class="collapsible-body">
 <p>Verbal communication refers to the words and language people use.</p>
 <p>For example, during an argument:</p>
@@ -2255,6 +2519,7 @@
 <p>For example, someone saying “I'm happy to help” while smiling and speaking warmly may communicate something very different from someone saying exactly the same words while sighing, avoiding eye contact and rolling their eyes.</p>
 <p>The words have not changed. The additional social information has.</p>
 </div></div>
+<div class="collapsible"><button class="collapsible-trigger">Paralinguistic Information</button><div class="collapsible-body"><p>How something is said can also carry information.</p><p>Tone, volume, pace and emphasis can change how the same words are interpreted.</p><p><strong>Why does this matter?</strong></p><p>People usually interpret these sources of information together.</p><p>If the words and other signals appear inconsistent, the receiver must decide what the speaker actually means.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Digital Communication and Missing Cues</button><div class="collapsible-body">
 <p>Digital communication can remove many of these non-verbal cues.</p>
 <p>Imagine receiving:</p>
@@ -2265,7 +2530,7 @@
 <p><strong>“Fine, if I have to.”</strong></p>
 <p>Without facial expression or tone of voice, the message may be more ambiguous. The receiver may therefore rely more heavily on the context of the conversation and their existing expectations about the other person.</p>
 <p>This connects communication with cognitive explanations of relationships: communication provides the information, but cognitive processes help determine how that information is interpreted.</p>
-</div></div>
+<p>Digital communication is not automatically worse than face-to-face communication.</p><p>The important psychological point is that different communication environments provide different information for interpretation.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Active Listening</button><div class="collapsible-body">
 <p>Communication also involves how people respond to one another.</p>
 <p>Active listening involves paying attention to what another person is saying and checking that their meaning has been understood.</p>
@@ -2284,6 +2549,9 @@
 <p>Alex interprets Maya's angry response as unreasonable and becomes defensive.</p>
 <p>A message that originally had little emotional meaning can therefore contribute to conflict through the interaction between communication and interpretation.</p>
 </div></div>
+<div class="collapsible"><button class="collapsible-trigger">Same Words. Different Interaction.</button><div class="collapsible-body"><p>Alex asks Jordan whether anything is wrong.</p><p>Jordan replies:</p><p><strong>‘Nothing.’</strong></p><p>Imagine two versions.</p><p><strong>Version A</strong></p><p>Jordan speaks normally, looks at Alex and continues the conversation.</p><p>Alex interprets the message as genuine and moves on.</p><p><strong>Version B</strong></p><p>Jordan answers sharply, avoids eye contact and immediately turns away.</p><p>Alex interprets the message as meaning that Jordan is upset but unwilling to discuss it.</p><p><strong>What changed?</strong></p><p>The word did not change.</p><p>The additional communication changed how Alex interpreted the message.</p><p>That interpretation could then influence Alex’s response — and Jordan may react to that response in turn.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Communication Does Not Affect Relationships Directly</button><div class="collapsible-body"><p>Communication has to be interpreted.</p><p>This means the psychological effect of a message depends partly on what the receiver thinks the message means.</p><p>The same behaviour may therefore produce different responses in different relationships or situations.</p><p>Imagine someone does not reply to a message for several hours.</p><p>One person might interpret this as:</p><p><strong>‘They must be busy.’</strong></p><p>Another might interpret it as:</p><p><strong>‘They are deliberately ignoring me.’</strong></p><p>The observable event is the same.</p><p>The interpretation is different.</p><p>Those interpretations may lead to very different responses.</p><p>This is one reason communication and cognition can interact in interpersonal relationships.</p><p>However, communication and cognitive explanations are not the same thing.</p><p>Communication concerns the information exchanged between people.</p><p>Cognitive explanations concern psychological processes involved in interpreting and thinking about that information.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">Relationships Are Conversations, Not One-Way Messages</button><div class="collapsible-body"><p>Interpersonal communication is reciprocal.</p><p>A response from one person becomes communication for the other person.</p><p>Sam thinks Priya sounds annoyed.</p><p>Sam becomes defensive.</p><p>Priya interprets Sam’s defensive response as hostility and responds more sharply.</p><p>Sam then sees Priya’s sharper response as confirmation that something is wrong.</p><p>This creates a feedback process:</p><p><strong>message → interpretation → response → new message → new interpretation</strong></p><p>Repeated cycles like this can contribute to escalating conflict even when neither person originally intended the final outcome.</p><p>This does not mean communication problems always cause relationship conflict. Existing conflict can also change how people communicate.</p><p>The relationship between communication and relationship quality can therefore work in both directions.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Application to Behaviour</button><div class="collapsible-body">
 <p>Sam asks Jordan:</p>
 <p><strong>“Are you coming tonight?”</strong></p>
@@ -2293,6 +2561,7 @@
 <p>If Jordan sends the same words by text after the two have been arguing, Sam may interpret the message as annoyed or reluctant.</p>
 <p>The behaviour cannot be understood from the words alone. Non-verbal cues, context and interpretation all matter.</p>
 </div></div>
+<div class="collapsible"><button class="collapsible-trigger">Communication Can Also Support Relationships</button><div class="collapsible-body"><p>Communication can also contribute to trust, understanding and relationship maintenance.</p><p>Clear expression can make intentions easier to interpret.</p><p>Listening can provide information about another person’s perspective.</p><p>Responses that show understanding can influence how the other person experiences the interaction.</p><p>The important psychological principle is not simply:</p><p><strong>‘communicate more.’</strong></p><p>It is that the way information is expressed, interpreted and responded to can influence the interaction between people.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Big IB Point</button><div class="collapsible-body">
 <p>Avoid claims such as “body language communicates most of what people mean.”</p>
 <p>A more psychologically useful explanation is:</p>
@@ -2361,6 +2630,7 @@
 <p>For example, criticism may produce defensiveness. Defensiveness may frustrate the other partner, leading to contempt. The other person may then withdraw, which creates even greater frustration.</p>
 <p>The important psychological idea is therefore not simply identifying four behaviours. It is understanding how patterns of communication can influence subsequent interaction.</p>
 </div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Can Communication Contribute to Conflict?</button><div class="collapsible-body"><p>Conflict can develop when messages are expressed or interpreted in ways that produce increasingly negative responses.</p><p>For example:</p><p><strong>ambiguous message</strong><br>→ interpreted as hostile<br>→ defensive response<br>→ defensive response interpreted as hostility<br>→ stronger negative response</p><p>Communication can therefore contribute to an escalating interaction.</p><p>But the communication itself is only part of the explanation.</p><p>Interpretation, emotion, previous experiences and the existing relationship can all influence how the interaction develops.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Research Evidence</button><div class="collapsible-body">
 <p>Gottman's longitudinal research observed couples' interactions and examined whether communication patterns were associated with later relationship outcomes.</p>
 <p>Recurring negative interaction patterns, including behaviours represented by the Four Horsemen, were strongly associated with relationship distress and could help predict later relationship outcomes within the samples studied.</p>
@@ -2516,6 +2786,13 @@
 <p class="slide-intro">Can a chemical messenger influence how we interact with other people?</p>
 <p class="slide-intro">Imagine a parent holding and comforting their baby. The interaction involves touch, facial expressions, previous experiences, emotions and learning. It also involves biological processes.</p>
 <p class="slide-intro">One chemical messenger psychologists have investigated in social relationships is oxytocin.</p>
+<p><strong>Chemical Messengers and Relationships</strong></p>
+<p>Interpersonal relationships involve psychological processes such as affiliation, trust, emotional regulation and responses to conflict.</p>
+<p>Biological processes can contribute to these processes.</p>
+<p>This means chemical messengers may help explain part of interpersonal behaviour — but they do not provide a complete explanation of a relationship.</p>
+<p><strong>Chemical messenger</strong><br>↓<br><strong>psychological or social process</strong><br>↓<br><strong>possible influence on interpersonal behaviour</strong></p>
+<p>The middle step matters.</p>
+<p>A strong psychological explanation should identify the process through which the biological factor could contribute to behaviour rather than jumping directly from a chemical messenger to a complex relationship outcome.</p>
 <div class="collapsible"><button class="collapsible-trigger">What Is Oxytocin?</button><div class="collapsible-body">
 <p>Oxytocin is a hormone and neuropeptide produced in the hypothalamus. It is released into the bloodstream through the posterior pituitary and also acts within the brain.</p>
 <p>Oxytocin has been studied in behaviours involving:</p>
@@ -2529,7 +2806,7 @@
 <p>It is particularly associated with childbirth and breastfeeding and has also been investigated in parent-infant bonding and other social interactions.</p>
 <p>Oxytocin is sometimes called the “bonding hormone” or “love hormone.”</p>
 <p>These labels are useful for remembering it, but they are psychologically oversimplified.</p>
-<p>Oxytocin does not simply make people love or trust one another.</p>
+
 <p>A better model is:</p>
 <p<LD>Oxytocin may influence social processing → the social context influences how this is expressed → behaviour</p>
 </div></div>
@@ -2794,6 +3071,18 @@
 <p class="slide-intro">Imagine two groups of students who rarely interact and hold negative stereotypes about each other.</p>
 <p class="slide-intro">Simply putting them in the same room may not improve their relationship. If they compete, argue or feel unequal, contact could even reinforce existing prejudice.</p>
 <p class="slide-intro">Psychologist Gordon Allport (1954) proposed the Contact Hypothesis: contact between members of different groups can reduce prejudice, but it is particularly effective when important conditions are present.</p>
+<p><strong>How Psychologists Evaluate a Relationship Strategy</strong></p>
+<p><strong>What is the relationship problem?</strong><br>↓<br><strong>What psychological or social process may be maintaining it?</strong><br>↓<br><strong>What does the strategy change?</strong><br>↓<br><strong>How should that change affect the process?</strong><br>↓<br><strong>How would we know whether the relationship improved?</strong></p>
+<p>A relationship strategy should do more than sound helpful.</p>
+<p>Psychologists need to explain the mechanism through which the strategy is expected to influence the relationship and then examine evidence about whether the predicted improvement actually occurs.</p>
+<p><strong>Advice or Psychological Strategy?</strong></p>
+<p>Advice tells someone what they might do.</p>
+<p>A psychological strategy should be connected to a process that could explain why the relationship problem is occurring.</p>
+<p>For example:</p>
+<p><strong>‘Just spend more time together’</strong></p>
+<p>does not explain why spending time together should improve a relationship.</p>
+<p>A psychological explanation asks:</p>
+<p><strong>What changes during that interaction, and why should that influence the relationship?</strong></p>
 <div class="collapsible"><button class="collapsible-trigger">The Four Conditions</button><div class="collapsible-body">
 <p>Allport proposed four important conditions.</p>
 <p><strong>1. Equal status.</strong> The groups should interact on relatively equal terms.</p>
@@ -2961,6 +3250,9 @@
 <p>They attempt to identify interpretations, expectations or attributional patterns that may influence subsequent behaviour.</p>
 <p>Connecting an intervention to a mechanism allows psychologists to explain why the strategy might work.</p>
 </div></div>
+<p>Explaining a relationship problem and improving it are related but different questions.</p>
+<p>A theory may identify a process associated with conflict.</p>
+<p>Psychologists still need evidence that an intervention targeting that process actually produces improvement.</p>
 <div class="collapsible"><button class="collapsible-trigger">Limitation: One Strategy Will Not Fit Every Problem</button><div class="collapsible-body">
 <p>Different relationship problems may have different causes.</p>
 <p>Consider three situations:</p>

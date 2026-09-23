@@ -132,7 +132,39 @@
       padding: 0;
       margin-top: 0;
     }
-  </style>
+  /* ===== SLIDE 1 WHAT YOU WILL LEARN: scoped to #slide-1 ===== */
+#slide-1 .lc-fnd-sub { font-size: 1rem; line-height: 1.65; color: var(--text); border-left: 3px solid var(--primary); padding-left: .7rem; margin: 0 0 1.2rem; max-width: 72ch; }
+#slide-1 .lc-fnd-sec { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; margin: 1.7rem 0 .7rem; color: var(--text); }
+#slide-1 .lc-fnd-lead { font-size: .95rem; line-height: 1.65; color: var(--text); margin: 0 0 .7rem; max-width: 72ch; }
+#slide-1 .lc-fnd-quad { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .lc-fnd-duo { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .lc-fnd-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .lc-fnd-six { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .lc-fnd-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem; }
+#slide-1 .lc-fnd-card h4 { font-size: .95rem; font-weight: 700; margin: 0 0 .4rem; color: var(--text); }
+#slide-1 .lc-fnd-card p { font-size: .9rem; line-height: 1.6; color: var(--text); margin: 0 0 .5rem; }
+#slide-1 .lc-fnd-card p:last-child { margin-bottom: 0; }
+#slide-1 .lc-fnd-card .lc-fnd-q { font-weight: 700; color: var(--primary); }
+#slide-1 .lc-fnd-hook .lc-fnd-card { border-top: 3px solid var(--primary); }
+#slide-1 .lc-fnd-take { background: var(--primary-light); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .75rem 1rem; margin: .8rem 0 0; max-width: 72ch; font-size: .92rem; line-height: 1.65; color: var(--text); }
+#slide-1 .lc-fnd-model { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .9rem 1.1rem; margin: .8rem 0 0; max-width: 72ch; font-size: .92rem; line-height: 1.7; color: var(--text); }
+#slide-1 .lc-fnd-model strong { color: var(--primary); }
+#slide-1 .lc-fnd-final { background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius); padding: 1rem 1.2rem; margin: .9rem 0 0; font-size: .95rem; line-height: 1.65; color: var(--text); }
+#slide-1 .lc-fnd-final-q { font-size: 1.1rem; font-weight: 800; color: var(--primary); margin: 0 0 .5rem; line-height: 1.4; }
+#slide-1 .lc-fnd-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; align-items: stretch; margin: .8rem 0 0; }
+#slide-1 .lc-fnd-step { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .85rem; }
+#slide-1 .lc-fnd-step h4 { font-size: .82rem; font-weight: 800; margin: 0 0 .3rem; color: var(--primary); line-height: 1.35; }
+#slide-1 .lc-fnd-step p { font-size: .86rem; line-height: 1.55; color: var(--text); margin: 0; }
+@media (max-width: 900px) {
+  #slide-1 .lc-fnd-quad { grid-template-columns: 1fr 1fr; }
+  #slide-1 .lc-fnd-steps { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  #slide-1 .lc-fnd-trio, #slide-1 .lc-fnd-duo, #slide-1 .lc-fnd-six { grid-template-columns: 1fr; }
+  #slide-1 .lc-fnd-quad, #slide-1 .lc-fnd-steps { grid-template-columns: 1fr; }
+}
+
+</style>
 </head>
 <body>
 
@@ -160,7 +192,7 @@
 
         <div class="progress-rail" id="progress-rail">
           <div class="rail-line"></div>
-        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. Learning & Cognition: The Big Picture</span></div>
+        <div class="rail-dot" data-slide="1"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">1. Learning & Cognition: What You Will Learn</span></div>
         <div class="rail-dot activity-dot" data-slide="2"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">2. Classify the Branches</span></div>
         <div class="rail-dot" data-slide="3"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">3. Classical Conditioning: Pavlov & Watson</span></div>
         <div class="rail-dot activity-dot" data-slide="4"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">4. Apply Conditioning to a Scenario</span></div>
@@ -217,6 +249,7 @@
         <div class="rail-dot" data-slide="55"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">49. HL Extension: Technology & Cognition</span></div>
         <div class="rail-dot activity-dot" data-slide="56"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">50. Technology & Cognition - Help, Harm, or It Depends?</span></div>
         <div class="rail-dot" data-slide="57"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">57. Scenario Application &mdash; HL Culture, Motivation &amp; Technology</span></div>
+<div class="rail-dot" data-slide="57b"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">Class Practical — Does Retrieval Practice Improve Memory?</span></div>
 <div class="rail-dot" data-slide="58"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">51. Research Methods in Learning & Cognition</span></div>
         <div class="rail-dot activity-dot" data-slide="59"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">52. Choose the Right Method</span></div>
         <div class="rail-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">53. Analysing Data</span></div>
@@ -232,47 +265,260 @@
         </div>
 
 <div class="slide" data-slide="1" id="slide-1">
-<h2>Learning &amp; Cognition: The Big Picture</h2>
-<p class="slide-intro">Introducing the relationship between learning, cognition and behaviour &mdash; and the journey this unit takes from simple associations to complex decision-making.</p>
-<div class="collapsible"><button class="collapsible-trigger">What Is Learning?</button><div class="collapsible-body">
-<p><strong>Learning</strong> is a relatively permanent change in behaviour or knowledge that results from experience. The change must last beyond the immediate moment &mdash; a temporary shift caused by fatigue, drugs or hunger does not count as learning.</p>
-<ul>
-<li>A toddler who touches a hot radiator once and never touches it again has <em>learned</em>.</li>
-<li>A student who improves at essay writing after practising across the year has <em>learned</em>.</li>
-<li>Feeling tired at 9 p.m. because you stayed up late yesterday is <strong>not</strong> learning &mdash; nothing changed through experience.</li>
-</ul>
-<p>Learning shows itself in <strong>behaviour</strong>: what we do changes. But something also changes inside &mdash; and that is where cognition enters.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">What Is Cognition?</button><div class="collapsible-body">
-<p><strong>Cognition</strong> refers to all the mental processes involved in acquiring, storing, transforming and using knowledge: attention, perception, memory, language, thinking, reasoning and decision-making.</p>
-<p>Cognition happens inside the mind, so it cannot be observed directly. Psychologists infer it from behaviour: we watch what people do (answer this question, recall this list, judge this price) and draw conclusions about the mental processing behind the performance.</p>
-<div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:var(--radius);padding:.85rem 1rem;margin-top:.75rem;">
-<p style="font-size:.88rem;line-height:1.6;color:#78350f;margin:0;"><strong>Key distinction:</strong> learning is traditionally defined as a change in <em>behaviour</em> caused by experience; cognition is the <em>mental processing</em> itself. Learning can happen without obvious thinking (a phobia acquired in seconds), and cognition can happen without new learning (retrieving an old memory). In practice they are deeply intertwined.</p>
+<h2>Learning &amp; Cognition: What You Will Learn</h2>
+<p class="lc-fnd-sub">How do we learn from experience, how does the mind process information, and why do our thoughts, memories and decisions sometimes work differently from what we expect?</p>
+<h3 class="lc-fnd-sec">Your Mind Is Learning and Thinking All the Time</h3>
+<p class="lc-fnd-lead">Imagine Maya during one ordinary school day.</p>
+<div class="lc-fnd-quad lc-fnd-hook">
+<div class="lc-fnd-card">
+<h4>A Notification Sound</h4>
+<p>Maya hears the notification sound from her phone and immediately feels the urge to check it.</p>
+<p>The sound did not always produce that reaction.</p>
+<p>How could an association have been learned?</p>
 </div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">How Are They Related?</button><div class="collapsible-body">
-<p>Every act of learning involves cognition somewhere: to profit from experience, an organism must detect, encode, store and retrieve information. And every cognitive process depends on learning: your schemas, your vocabulary and your judgement of prices all exist because past experience shaped them.</p>
-<p>This unit moves deliberately from simpler to more complex levels:</p>
-<ol>
-<li><strong>Conditioning</strong> &mdash; learning through association and consequences (Pages 02&ndash;04)</li>
-<li><strong>Learning from others</strong> &mdash; observational learning and modelling (Pages 05&ndash;06)</li>
-<li><strong>Mental representations</strong> &mdash; schemas and reconstructive memory (Pages 07&ndash;08)</li>
-<li><strong>Complex thinking</strong> &mdash; dual processing, biases and decision-making (Pages 09&ndash;12)</li>
-<li><strong>Memory in depth</strong> &mdash; the selected cognitive process, with biological, environmental and cultural factors (Pages 13&ndash;17)</li>
-<li><strong>Applying the evidence</strong> &mdash; improving learning, motivation, technology, research skills and exam preparation (Pages 18&ndash;28)</li>
-</ol>
-</div></div>
-<div class="reveal"><div class="reveal-question">Think first: A dog salivates when it hears a can opener. A student carefully compares two phones before buying one. Which example is best described as learning, which as cognition &mdash; and why is the line between them blurry?</div><div class="reveal-answer"><div>The dog shows <strong>learning</strong>: repeated experience with the can opener paired with food changed its behaviour (salivating to a sound). The student shows <strong>cognition</strong>: weighing information, comparing attributes and making a decision. The line is blurry because both involve internal change: the dog presumably now <em>expects</em> food (a mental representation), and the student's careful comparison relies on things previously learned (what specs mean, brand reputations). Learning and cognition are two lenses on the same underlying machinery.</div></div></div>
-<div class="reveal"><div class="reveal-question">Why might psychologists who study conditioning avoid using mental concepts like &ldquo;expectation&rdquo;, while cognitive psychologists use them freely?</div><div class="reveal-answer"><div>Behaviourist researchers wanted psychology to study only what can be observed, so they described learning purely as changes in measurable behaviour. Cognitive psychologists accept inference about unobservable processes because mental representations allow them to explain complex, flexible behaviour &mdash; planning, judging and deciding &mdash; which simple stimulus&ndash;response descriptions struggle to capture. Modern psychology combines both traditions, which is exactly what this unit does.</div></div></div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Learning = relatively permanent change in behaviour or knowledge from experience.</li>
-<li>Cognition = mental processes: attention, memory, language, thinking, decision-making.</li>
-<li>Learning is inferred from behaviour; cognition is inferred indirectly from performance.</li>
-<li>The two are intertwined: learning builds mental representations, and those representations guide future learning.</li>
-<li>The unit progresses: conditioning &rarr; social learning &rarr; schemas &rarr; thinking and decisions &rarr; memory in depth &rarr; applications.</li>
-</ol></div>
+<div class="lc-fnd-card">
+<h4>A Reward</h4>
+<p>Maya starts completing revision questions every evening because each completed set earns points in a study app.</p>
+<p>Why might the consequence of a behaviour make that behaviour more likely to happen again?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Watching a Friend</h4>
+<p>Maya sees a successful student using flashcards every day and notices that teachers praise the student’s preparation.</p>
+<p>Maya begins using flashcards too.</p>
+<p>How can people learn by observing other people?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Remembering the Lesson</h4>
+<p>A week later, Maya tries to remember what she learned in class.</p>
+<p>She remembers some information accurately, forgets other information and reconstructs parts of the lesson using what she already knows.</p>
+<p>Why is memory not simply a perfect recording of experience?</p>
+</div>
+</div>
+<h3 class="lc-fnd-sec">What Connects These Situations?</h3>
+<p class="lc-fnd-lead">Psychologists study both <strong>learning</strong> and <strong>cognition</strong>.</p>
+<p class="lc-fnd-lead">Learning asks how experience can produce changes in behaviour or knowledge.</p>
+<p class="lc-fnd-lead">Cognition asks how mental processes allow us to process, interpret, store and use information.</p>
+<p class="lc-fnd-lead">These processes are connected: what we learn can influence how we think, and how we think can influence what and how we learn.</p>
+<h3 class="lc-fnd-sec">Two Ways We Will Investigate Learning &amp; Cognition</h3>
+<p class="lc-fnd-lead">This unit has two connected areas.</p>
+<div class="lc-fnd-duo">
+<div class="lc-fnd-card">
+<h4>Part 1 — Thinking &amp; Learning</h4>
+<p class="lc-fnd-q">How do people learn, think and make decisions — and how can behaviour sometimes be changed?</p>
+<p>We will investigate learning through association, consequences and observation.</p>
+<p>We will also investigate how schemas, different modes of thinking and cognitive biases can influence cognition, behaviour and decision-making.</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Part 2 — Cognitive Processes: Memory</h4>
+<p class="lc-fnd-q">How does memory work, what influences it, and can it be improved?</p>
+<p>Psychologists study cognitive processes such as attention, memory, perception, thinking and language.</p>
+<p>In this course, our main cognitive process will be <strong>memory</strong>.</p>
+<p>We will investigate memory from biological, cognitive, cultural and environmental perspectives and examine strategies that may improve it.</p>
+</div>
+</div>
+<div class="lc-fnd-take">
+<p>Part 1 asks how learning and thinking operate.</p>
+<p>Part 2 takes one cognitive process — <strong>memory</strong> — and investigates it in greater depth.</p>
+</div>
+<h3 class="lc-fnd-sec">How Do We Learn?</h3>
+<p class="lc-fnd-lead">Learning does not happen through one single process.</p>
+<p class="lc-fnd-lead">Psychologists have developed different explanations for how experience can influence behaviour.</p>
+<div class="lc-fnd-trio">
+<div class="lc-fnd-card">
+<h4>Learning Through Association</h4>
+<p>Events that repeatedly occur together can become associated.</p>
+<p>Eventually, one event may produce a response that originally depended on another event.</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Learning Through Consequences</h4>
+<p>What happens after a behaviour can influence whether that behaviour becomes more or less likely to happen again.</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Learning Through Other People</h4>
+<p>People can learn by observing models, noticing what they do and seeing the consequences of their behaviour.</p>
+</div>
+</div>
+<p class="lc-fnd-lead">These processes provide different explanations for learning.</p>
+<p class="lc-fnd-lead">A major skill in this unit is identifying <strong>which learning process actually explains the behaviour in a particular situation</strong>.</p>
+<h3 class="lc-fnd-sec">Explaining Learning Can Help Us Ask How Behaviour Might Change</h3>
+<p class="lc-fnd-lead">If psychologists understand a process involved in learning, they can ask whether that process can be deliberately used to influence behaviour.</p>
+<div class="lc-fnd-model">
+<p><strong>identify the behaviour</strong><br>↓<br><strong>identify the learning process</strong><br>↓<br><strong>change something relevant to that process</strong><br>↓<br><strong>observe whether behaviour changes</strong></p>
+</div>
+<p class="lc-fnd-lead">In this unit, we will investigate this especially through <strong>operant conditioning</strong> and <strong>social learning theory</strong>.</p>
+<p class="lc-fnd-lead">But a strategy sounding reasonable is not enough.</p>
+<p class="lc-fnd-lead">Psychologists still need evidence that behaviour actually changed.</p>
+<h3 class="lc-fnd-sec">How Do We Think?</h3>
+<p class="lc-fnd-lead">Learning explains only part of human behaviour.</p>
+<p class="lc-fnd-lead">Psychologists also investigate how people organise information, make judgements and reach decisions.</p>
+<div class="lc-fnd-trio">
+<div class="lc-fnd-card">
+<h4>Schemas</h4>
+<p>Previous experience can help form mental frameworks that influence how new information is interpreted, remembered and used.</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Different Modes of Thinking</h4>
+<p>Some thinking is fast and automatic, while other thinking is slower and more deliberate.</p>
+<p>Psychologists ask whether distinguishing these modes helps us understand thinking and decision-making.</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cognitive Biases</h4>
+<p>Human judgement can show systematic patterns of error.</p>
+<p>Psychologists investigate how cognitive biases can influence the decisions people make.</p>
+</div>
+</div>
+<h3 class="lc-fnd-sec">These Ideas Can Connect</h3>
+<p class="lc-fnd-lead">A schema may influence what information comes to mind.</p>
+<p class="lc-fnd-lead">Fast processing may rely on readily available information.</p>
+<p class="lc-fnd-lead">A judgement may then become systematically biased.</p>
+<p class="lc-fnd-lead">The theories are not interchangeable, but different cognitive processes can contribute to the same decision.</p>
+<h3 class="lc-fnd-sec">Part 1 — What We Will Investigate</h3>
+<div class="lc-fnd-six">
+<div class="lc-fnd-card">
+<h4>Classical Conditioning</h4>
+<p class="lc-fnd-q">How can learning occur through associations between stimuli?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Operant Conditioning</h4>
+<p class="lc-fnd-q">How can consequences influence behaviour — and how can operant conditioning be applied to change behaviour?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Social Learning Theory</h4>
+<p class="lc-fnd-q">How can observing other people explain learning — and how can social learning be applied to explain and change behaviour?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Schema Theory</h4>
+<p class="lc-fnd-q">How can schemas influence cognition and behaviour?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Dual Processing Theory</h4>
+<p class="lc-fnd-q">How useful is dual processing theory for understanding thinking and decision-making?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cognitive Biases</h4>
+<p class="lc-fnd-q">How can cognitive biases influence decision-making?</p>
+</div>
+</div>
+<h3 class="lc-fnd-sec">From Thinking &amp; Learning to a Cognitive Process</h3>
+<p class="lc-fnd-lead">Psychologists study several cognitive processes, including attention, memory, perception, thinking and language.</p>
+<p class="lc-fnd-lead">To investigate a cognitive process properly, however, psychologists need to do more than describe what it is.</p>
+<p class="lc-fnd-lead">They can ask what happens biologically, whether models help explain the process, how culture and environment may influence it, and whether the process can be improved.</p>
+<h3 class="lc-fnd-sec">Our Cognitive Process: Memory</h3>
+<p class="lc-fnd-lead">In this course, <strong>memory</strong> will be our main cognitive process.</p>
+<p class="lc-fnd-lead">We will use memory to investigate how one cognitive process can be understood from several different perspectives.</p>
+<h3 class="lc-fnd-sec">The Same Memory Can Raise Different Psychological Questions</h3>
+<p class="lc-fnd-lead">Imagine Maya attends a school event.</p>
+<p class="lc-fnd-lead">A week later, she tries to remember what happened.</p>
+<p class="lc-fnd-lead">Her memory is incomplete, some details are clearer than others, and parts of what she remembers may have been influenced by later information.</p>
+<div class="lc-fnd-quad">
+<div class="lc-fnd-card">
+<h4>Biological</h4>
+<p>What biological processes or structures might contribute to Maya’s ability to form or retrieve the memory?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cognitive</h4>
+<p>Can a cognitive model help explain how information was processed, stored or retrieved?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cultural</h4>
+<p>Could cultural experience influence what Maya notices, remembers or reconstructs?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Environmental</h4>
+<p>Could something in Maya’s environment influence how well information is remembered?</p>
+</div>
+</div>
+<p class="lc-fnd-lead">Notice that these questions do not compete to find one universal cause of memory.</p>
+<p class="lc-fnd-lead">They investigate <strong>different influences on the same cognitive process</strong>.</p>
+<h3 class="lc-fnd-sec">Biological Factors</h3>
+<p class="lc-fnd-lead"><strong>How can biological factors influence memory?</strong></p>
+<p class="lc-fnd-lead">Cognition depends on biological systems.</p>
+<p class="lc-fnd-lead">We will investigate the role of one or more biological factors in memory and consider what biological evidence can — and cannot — tell us about a cognitive process.</p>
+<h3 class="lc-fnd-sec">Cognitive Models</h3>
+<p class="lc-fnd-lead"><strong>How useful are cognitive models for understanding memory?</strong></p>
+<p class="lc-fnd-lead">A cognitive model is a simplified representation of how a cognitive process may work.</p>
+<p class="lc-fnd-lead">Models can help psychologists organise observations and generate predictions, but a useful model does not need to reproduce every detail of the real mind.</p>
+<p class="lc-fnd-lead">We will therefore ask not only what a model proposes, but also what the model helps explain and where its limitations appear.</p>
+<h3 class="lc-fnd-sec">Cultural Factors</h3>
+<p class="lc-fnd-lead"><strong>How can culture influence memory?</strong></p>
+<p class="lc-fnd-lead">People do not remember information in a cultural vacuum.</p>
+<p class="lc-fnd-lead">Experience, expectations and culturally shared knowledge may influence how information is interpreted and remembered.</p>
+<p class="lc-fnd-lead">We will investigate the role of one or more cultural factors in memory.</p>
+<h3 class="lc-fnd-sec">Environmental Influences</h3>
+<p class="lc-fnd-lead"><strong>How can the environment influence memory?</strong></p>
+<p class="lc-fnd-lead">Memory takes place under particular conditions.</p>
+<p class="lc-fnd-lead">Features of the environment may influence how information is encoded or retrieved.</p>
+<p class="lc-fnd-lead">We will investigate the potential influence of one or more environmental factors on memory.</p>
+<h3 class="lc-fnd-sec">Can a Cognitive Process Be Improved?</h3>
+<p class="lc-fnd-lead">Understanding memory also creates an applied question:</p>
+<p class="lc-fnd-lead">Can psychological knowledge help people remember more effectively?</p>
+<div class="lc-fnd-model">
+<p><strong>understand the cognitive process</strong><br>↓<br><strong>identify something that may influence it</strong><br>↓<br><strong>apply a strategy</strong><br>↓<br><strong>measure whether performance improves</strong></p>
+</div>
+<p class="lc-fnd-lead">We will investigate one or more strategies designed to improve memory.</p>
+<p class="lc-fnd-lead">The important question is not simply whether a strategy sounds useful.</p>
+<p class="lc-fnd-lead">Psychologists need evidence that the strategy actually improves the cognitive process being measured.</p>
+<h3 class="lc-fnd-sec">Part 2 — Memory: What We Will Investigate</h3>
+<div class="lc-fnd-six">
+<div class="lc-fnd-card">
+<h4>Biological Factors</h4>
+<p class="lc-fnd-q">What role can biological factors play in memory?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cognitive Models</h4>
+<p class="lc-fnd-q">How valuable are cognitive models for understanding memory?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Cultural Factors</h4>
+<p class="lc-fnd-q">How can cultural factors influence memory?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Environmental Influences</h4>
+<p class="lc-fnd-q">How can environmental factors potentially influence memory?</p>
+</div>
+<div class="lc-fnd-card">
+<h4>Improving Memory</h4>
+<p class="lc-fnd-q">What strategies might improve memory, and what evidence would show that they work?</p>
+</div>
+</div>
+<h3 class="lc-fnd-sec">You Will Also Work Like a Psychologist</h3>
+<p class="lc-fnd-lead">Our class practical in Learning &amp; Cognition will use an <strong>experiment</strong>.</p>
+<p class="lc-fnd-lead">An experiment allows psychologists to manipulate an independent variable and measure its effect on a dependent variable while attempting to control other influences.</p>
+<p class="lc-fnd-lead">In this unit, this gives us a way to investigate a question about learning or cognition rather than simply discussing it.</p>
+<p class="lc-fnd-lead"><strong>If we change one factor, does it produce a measurable change in learning, thinking or memory?</strong></p>
+<h3 class="lc-fnd-sec">Think Like a Psychologist Studying Learning &amp; Cognition</h3>
+<p class="lc-fnd-lead">When you encounter a theory, study or scenario in this unit, do not stop at naming the topic.</p>
+<div class="lc-fnd-steps">
+<div class="lc-fnd-step">
+<h4>WHAT ARE WE TRYING TO EXPLAIN?</h4>
+<p>Identify the specific behaviour, learning process, thought, decision or memory outcome.</p>
+</div>
+<div class="lc-fnd-step">
+<h4>WHAT PROCESS COULD EXPLAIN IT?</h4>
+<p>Identify the relevant learning or cognitive process rather than simply naming a broad topic.</p>
+</div>
+<div class="lc-fnd-step">
+<h4>HOW WOULD THAT PROCESS PRODUCE THE OUTCOME?</h4>
+<p>Explain the mechanism connecting the psychology to the behaviour or cognition.</p>
+</div>
+<div class="lc-fnd-step">
+<h4>WHAT DOES THE EVIDENCE SUPPORT?</h4>
+<p>Consider what was measured, what the research found and whether the evidence supports causation, association or a more limited conclusion.</p>
+</div>
+<div class="lc-fnd-step">
+<h4>WHAT OTHER INFLUENCES MIGHT MATTER?</h4>
+<p>Consider whether biological, cognitive, cultural or environmental factors could also contribute.</p>
+</div>
+<div class="lc-fnd-step">
+<h4>IF WE WANT CHANGE OR IMPROVEMENT, WHAT SHOULD WE TARGET?</h4>
+<p>Identify the relevant process, apply a strategy and ask what evidence would demonstrate that it actually worked.</p>
+</div>
+</div>
+<h3 class="lc-fnd-sec">The Question Behind the Whole Unit</h3>
+<div class="lc-fnd-final">
+<p class="lc-fnd-final-q">How do experience and mental processes shape what we learn, think, remember and do — and how can psychology help us understand or change these processes?</p>
+<p>Every theory, study, activity and application in this unit helps us answer part of that question.</p>
+</div>
 </div>
 
 <div class="slide activity-slide" data-slide="2" id="slide-2"><h2>Learning or Cognition?</h2>
@@ -1190,42 +1436,48 @@
 </div>
 <div class="slide" data-slide="29" id="slide-29">
 <h2>Memory Processes</h2>
-<p class="slide-intro">How information moves through sensory, short-term and long-term storage &mdash; with practical examples that make each stage concrete.</p>
+<p class="slide-intro">How information is briefly registered, actively maintained and stored over time &mdash; and why psychologists distinguish between encoding, storage and retrieval.</p>
 <div class="collapsible"><button class="collapsible-trigger">The Three-Store Model of Memory</button><div class="collapsible-body">
-<p>The Atkinson-Shiffrin model (1968) proposes three stores, each with distinct properties:</p>
+<p>Atkinson and Shiffrin (1968) proposed that memory can be understood as involving three stores: the sensory register, short-term memory and long-term memory.</p>
 <table style="width:100%;border-collapse:collapse;font-size:.86rem;">
 <tr style="background:var(--bg-secondary);"><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);"></th><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);">Sensory Register (SR)</th><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);">Short-Term Memory (STM)</th><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);">Long-Term Memory (LTM)</th></tr>
 <tr><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Capacity</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Very large</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">~4&plusmn;1 items</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Very large / potentially vast</td></tr>
 <tr><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Duration</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Very brief (ms&ndash;sec)</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">~18-30 sec without rehearsal</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Can persist for very long periods</td></tr>
 <tr><td style="padding:.35rem .5rem;">Encoding</td><td style="padding:.35rem .5rem;">Modality-specific</td><td style="padding:.35rem .5rem;">Acoustic/verbal</td><td style="padding:.35rem .5rem;">Semantic (meaning)</td></tr>
 </table>
-<p style="margin-top:.6rem;">Example walkthrough: you glance at a price (SR captures it visually); you keep repeating it to remember while reaching for your phone (STM, maintenance rehearsal); if the price matters, you link it to why you need it (deeper, more meaningful processing supports stronger long-term retention).</p>
+<p><strong>A simple example:</strong> you glance at a price. The visual information is registered extremely briefly by the sensory system. If you attend to the price, it can enter short-term memory, where you may keep it active while using it. If it is encoded more durably, information may later be retrieved from long-term memory.</p>
+<p>The model is useful because it distinguishes memory systems with different properties and gives us a starting framework for thinking about how information can be retained over different periods of time.</p>
+<p>However, it should not be treated as a complete modern explanation of memory. In particular, treating short-term memory as one single store becomes difficult to reconcile with evidence that people can simultaneously maintain and process different kinds of information. This problem leads directly to the Working Memory Model later in this section.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">What Keeps Information in STM?</button><div class="collapsible-body">
-<p><strong>Maintenance rehearsal</strong> &mdash; simple repetition &mdash; can keep information active in short-term memory. <strong>Elaborative rehearsal</strong> &mdash; connecting new information meaningfully to existing knowledge &mdash; generally produces stronger, more durable long-term retention than simple repetition. This distinction matters because students often mistake repetition for learning.</p>
-<p>Chunking (Miller, 1956): the trick of grouping single digits into meaningful clusters. 1492718004 becomes four chunks (1492, 7, 1800, 4) that fit easily in STM and link to world knowledge (Columbus, atomic number, millennium, moon landing).</p>
-<p>Short-term memory is also <em>working memory</em>: it actively maintains and manipulates, not just stores &mdash; the basis for Baddeley and Hitch's model on Page 14.</p>
+<div class="collapsible"><button class="collapsible-trigger">Keeping Information Active</button><div class="collapsible-body">
+<p><strong>Maintenance rehearsal</strong> involves repeating information to keep it active for a short period of time.</p>
+<p>For example, repeating a phone number while preparing to type it can help keep the number available temporarily.</p>
+<p><strong>Elaborative rehearsal</strong> involves connecting new information to meaning or existing knowledge. Meaningful processing can support more durable encoding than simply repeating information.</p>
+<p><strong>Chunking</strong> involves organising separate pieces of information into meaningful groups. For example, a long sequence of digits may become easier to maintain if it can be organised into several familiar chunks.</p>
+<p>These strategies illustrate an important distinction: temporarily keeping information available is not the same thing as creating a durable long-term memory.</p>
 </div></div>
 <div class="reveal"><div class="reveal-question">Why do students who reread a textbook five times often forget the content, while students who answer practice questions once remember better?</div><div class="reveal-answer"><div>Rereading is maintenance rehearsal &mdash; surface repetition without generating meaning. Practice questions force elaborative rehearsal: the student must retrieve and organize meaning to construct an answer. Practice questions require retrieval and meaningful processing rather than simple re-exposure. Deeper, more elaborative processing generally produces stronger long-term retention, while retrieval practice also strengthens later access to the information.</div></div></div>
-<div class="collapsible"><button class="collapsible-trigger">Storage Failure &mdash; Forgetting in LTM</button><div class="collapsible-body">
-<p>Two main accounts:</p>
+<div class="collapsible"><button class="collapsible-trigger">When Remembering Fails</button><div class="collapsible-body">
+<p>A failure to remember does not automatically mean that information has simply disappeared.</p>
+<p>Psychologists distinguish between several possibilities.</p>
+<p><strong>Encoding failure:</strong> information was not encoded sufficiently for later retrieval.</p>
+<p><strong>Retrieval failure:</strong> information may have been stored but is not accessible at that moment because suitable retrieval cues are unavailable.</p>
+<p><strong>Interference:</strong> other learning can make retrieval more difficult.</p>
 <ul>
-<li><strong>Encoding failure:</strong> the information never made it to LTM. You cannot remember what you never encoded. Most of life is lost to encoding failure, not forgetting after storage.</li>
-<li><strong>Retrieval failure:</strong> information is in LTM but cannot be accessed at the moment. Cue-dependent forgetting &mdash; the trace exists but without the right cue (context, mood, reminder) it remains dormant.</li>
+<li><strong>Proactive interference:</strong> earlier learning interferes with newer information.</li>
+<li><strong>Retroactive interference:</strong> newer learning interferes with earlier information.</li>
 </ul>
-<p>Interference also plays a role: previously learned material (proactive) or subsequently learned material (retroactive) blocks retrieval. The page on cognitive failure on Page 13 develops this further.</p>
+<p>This distinction matters because the same observable outcome — “I cannot remember” — can result from different underlying processes.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">Practical Application: Why Testing Works</button><div class="collapsible-body">
-<p>Roediger &amp; Karpicke (Page 18) demonstrate that testing is not only assessment &mdash; it is itself a learning event. Why? Because the act of retrieval rebuilds the memory trace, strengthens the retrieval route and highlights gaps. This connects directly to the encoding/retrieval distinction: you learn by retrieving, not by re-exposing.</p>
-<p>Practical consequences for students:</p>
-<ul>
-<li>Self-testing after studying beats rereading for every measure that matters (delayed retention, transfer).</li>
-<li>Spacing tests over time beats massing them &mdash; retrieval becomes harder, but the resulting strengthening is greater (desirable difficulty).</li>
-<li>Mixing topics during practice (interleaving) builds the skill of selecting the right strategy &mdash; the skill exams actually test.</li>
-</ul>
-</div></div>
-<div class="reveal"><div class="reveal-question">You smell baking bread and are suddenly back at your grandmother's kitchen. What type of memory does this demonstrate, and which store would you initially expect it to occupy?</div><div class="reveal-answer"><div>A smell can act as a powerful retrieval cue for a long-term autobiographical memory. The smell itself is first processed through the sensory system, but it may automatically cue an associated memory stored in long-term memory. If you consciously remember your grandmother's kitchen, the retrieved autobiographical memory is explicit rather than implicit. The important idea is cue-dependent retrieval: environmental cues can make stored memories suddenly accessible.</div></div></div>
-<div class="reveal"><div class="reveal-question">A student says, &ldquo;I studied this last week, so if I cannot remember it now, it must have disappeared from long-term memory.&rdquo; What is wrong with this conclusion?</div><div class="reveal-answer"><div>Failure to remember something does not necessarily mean the memory has disappeared. The information may not have been encoded strongly in the first place, or it may be stored but temporarily inaccessible because the right retrieval cues are missing. Interference from other learning may also make retrieval more difficult. Psychologists therefore distinguish between encoding failure and retrieval failure.</div></div></div>
+
+
+<div class="reveal"><div class="reveal-question">A student says, "I studied this last week, so if I cannot remember it now, the memory must have disappeared." What is wrong with this conclusion?</div><div class="reveal-answer"><div>Not being able to retrieve something does not prove that the memory has disappeared. The information may not have been encoded strongly in the first place, it may be stored but temporarily difficult to retrieve because useful cues are missing, or other learning may be interfering with access. Psychologists therefore distinguish between encoding and retrieval rather than treating every failure to remember as loss from storage.</div></div></div>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">From Short-Term Memory to Working Memory</h3>
+<p>The three-store model gives us a useful starting distinction between short-term and long-term retention, but short-term memory does more than passively hold information.</p>
+<p>When you calculate something mentally, follow spoken instructions while looking at a diagram, or remember part of a sentence while interpreting what comes next, you are both <strong>maintaining and processing information</strong>.</p>
+<p>This raises an important question:</p>
+<p><strong>Is short-term memory really one single store, or does it contain different systems that can work together?</strong></p>
+<p>That question leads to Baddeley and Hitch’s Working Memory Model.</p>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
   <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Memory Processes</h4>
   <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Check your understanding of memory stages and failure types.</p>
@@ -1235,11 +1487,11 @@
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>SR: very large capacity, brief duration, modality-specific. STM: ~4+/-1 items, 18-30 sec, acoustic. LTM: potentially vast capacity, can persist for very long periods, semantic.</li>
-<li>Maintenance rehearsal (repetition) keeps STM alive; elaborative rehearsal (meaning) generally produces stronger, more durable long-term retention.</li>
-<li>Storage failure = encoding failure (never stored). Retrieval failure = cannot access (cue-dependent).</li>
-<li>Interference: proactive (old blocks new), retroactive (new blocks old).</li>
-<li>Testing effect: retrieving strengthens memory more than re-exposing.</li>
+<li>The three-store model distinguishes sensory memory, short-term memory and long-term memory.</li>
+<li>The stores differ in properties such as capacity, duration and typical forms of encoding.</li>
+<li>Maintenance rehearsal can keep information temporarily active, while meaningful elaboration can support more durable encoding.</li>
+<li>Failure to remember may reflect encoding failure, retrieval failure or interference.</li>
+<li>Treating STM as one unitary store has limitations — helping motivate the Working Memory Model.</li>
 </ol></div>
 </div>
 
@@ -1314,6 +1566,7 @@
   <div class="act-container" id="lc-inline-wm-check"></div>
 </div>
 
+<div class="collapsible"><button class="collapsible-trigger">What Is the Value of the Model?</button><div class="collapsible-body"><p>The value of a cognitive model is not simply that it gives names to parts of memory. A useful model should help psychologists <strong>explain how memory works, organise evidence and make predictions that can be tested</strong>.</p><p><strong>Explains</strong></p><p>The Working Memory Model helps explain why people can sometimes perform two tasks at once but struggle when both tasks compete for the same limited processing system.</p><p><strong>Organises Evidence</strong></p><p>The model provides a framework for interpreting findings about different kinds of short-term processing rather than treating every memory result as unrelated.</p><p><strong>Predicts</strong></p><p>If different components have partly separate capacities, the model predicts that tasks using different components should interfere less than tasks competing for the same component.</p><p><strong>Where Does Its Value Stop?</strong></p><p>A model is a simplified representation, not the memory system itself. Evidence supporting some predictions increases the model’s usefulness, but limitations, vague components or findings that the model struggles to explain restrict how completely it can represent memory.</p><p><strong>VALUE = what the model helps psychologists explain, organise and predict — weighed against what the model leaves unexplained.</strong></p></div></div>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
@@ -1540,6 +1793,7 @@
 <div class="slide" data-slide="39" id="slide-39">
 <h2>Retrieval &amp; Cueing</h2>
 <p class="slide-intro">How accessing memories depends on cues, context and mood &mdash; and what this means for real-world recall of both academic content and life events.</p>
+<div class="collapsible"><button class="collapsible-trigger">Environmental Influences on Memory</button><div class="collapsible-body"><p>Memory does not occur independently of the environment. Features of the surroundings present when information is learned may become <strong>retrieval cues</strong>, meaning that the environment can potentially influence how easily information is later remembered.</p><p><strong>environment during encoding</strong><br>&darr;<br><strong>features of that environment become associated with the memory</strong><br>&darr;<br><strong>similar cues are available at retrieval</strong><br>&darr;<br><strong>retrieval may become easier</strong></p><p>Notice the wording: the environment can <strong>influence</strong> memory; it does not determine whether remembering succeeds. Strength of learning, attention, other retrieval cues and individual differences may also matter.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Encoding Specificity: Cues Matter</button><div class="collapsible-body">
 <p>Tulving's encoding specificity principle: memory works best when the cues present at retrieval match those present at encoding. You remember your home address in its own context but struggle to recall your hotel room number when back home &mdash; different context, different cues available.</p>
 <p><strong>Cue-dependent forgetting:</strong> information exists in LTM but cannot be accessed because the right retrieval cue is absent. The trace is intact; the route to it is not.</p>
@@ -1569,6 +1823,7 @@
   <div class="act-container" id="lc-inline-retrieve-check"></div>
 </div>
 
+<div class="collapsible"><button class="collapsible-trigger">What Does This Tell Us About Environmental Influence?</button><div class="collapsible-body"><p>Godden and Baddeley provide evidence that <strong>environmental context can potentially influence memory retrieval</strong>. Recall was affected by whether the learning and retrieval environments matched, which is consistent with environmental cues becoming part of the retrieval context.</p><p>However, the study does not show that context controls memory in every situation. Environmental context is one possible influence on retrieval, and its effect can depend on the task and the availability of other cues.</p><p><strong>ENVIRONMENTAL FACTOR &rarr; retrieval context &rarr; potential influence on memory performance</strong></p></div></div>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
@@ -1696,6 +1951,7 @@
 <div class="slide" data-slide="44" id="slide-44">
 <h2>Improving Learning</h2>
 <p class="slide-intro">Evidence-based strategies that directly improve learning &mdash; from retrieval practice and elaborative interrogation to metacognition and feedback.</p>
+<div class="collapsible"><button class="collapsible-trigger">Improving a Cognitive Process: Memory</button><div class="collapsible-body"><p>The syllabus question is not simply ‘What is a good study technique?’</p><p>The psychological question is:</p><p><strong>Can a strategy produce a measurable improvement in memory?</strong></p><p><strong>strategy</strong><br>&darr;<br><strong>psychological mechanism</strong><br>&darr;<br><strong>memory outcome</strong><br>&darr;<br><strong>evidence of improvement</strong></p><p>To evaluate a strategy properly, psychologists need to identify <strong>what aspect of memory should improve</strong> and compare performance using evidence rather than relying on whether the strategy feels effective.</p></div></div>
 <div class="collapsible"><button class="collapsible-trigger">Retrieval Practice: Testing as Learning</button><div class="collapsible-body">
 <p><strong>Retrieval practice</strong> is the act of recalling information from memory without looking it up. It is one of the most strongly supported strategies for improving long-term learning, particularly when learners successfully retrieve information and receive appropriate feedback.</p>
 <ul>
@@ -1737,6 +1993,8 @@
   <div class="act-container" id="lc-inline-improve-check"></div>
 </div>
 
+<div class="collapsible"><button class="collapsible-trigger">Core Strategies to Know Well</button><div class="collapsible-body"><p>For this course, make sure you can explain <strong>retrieval practice</strong> and <strong>spacing</strong> particularly well: what the strategy involves, why it should influence memory, what evidence supports it and what limitations affect the conclusion.</p></div></div>
+<div class="collapsible"><button class="collapsible-trigger">How Do We Know Memory Improved?</button><div class="collapsible-body"><p>1. <strong>What changed?</strong><br>“Identify the strategy that was used.”</p><p>2. <strong>What memory outcome was measured?</strong><br>“For example, accuracy, amount recalled or retention after a delay.”</p><p>3. <strong>Was performance actually better?</strong><br>“Compare the relevant memory performance rather than relying on confidence or preference.”</p><p>4. <strong>What can we conclude?</strong><br>“Decide whether the evidence supports improvement and consider important limitations.”</p><p><strong>A strategy is not effective because students like it or because it feels easier. Improvement requires evidence of better memory performance.</strong></p></div></div>
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
@@ -1990,7 +2248,7 @@
 </div>
 <div class="slide" data-slide="53" id="slide-53">
 <h2>HL Extension: Motivation &amp; Independent Learning</h2>
-<p class="slide-intro">HL extension: how motivation can enhance a cognitive process, how students become independent learners, and the extent to which motivation can actually be assessed &mdash; building on Motivation: Why We Learn.</p>
+<p class="slide-intro">HL extension: how motivation can influence engagement with cognitive processes, how learners increasingly regulate their own learning, and how psychologists measure and interpret motivation.</p>
 <div class="collapsible"><button class="collapsible-trigger">Motivation Can Change Cognitive Engagement</button><div class="collapsible-body">
 <p>Motivation does not simply affect whether someone starts a task. It may also affect <strong>attention</strong>, <strong>persistence</strong>, <strong>effort</strong>, <strong>strategy choice</strong>, <strong>depth of processing</strong>, <strong>willingness to retrieve and practise</strong>, and <strong>response to difficulty</strong>.</p>
 <p><strong>One cognitive process &mdash; memory.</strong> Two students use the same retrieval-practice activity. One is motivated to understand and improve: they attempt recall before checking the answer, notice their errors and retry. The other clicks through only because completion is required: they reveal the answer immediately and never test themselves. The learning opportunity is identical, but their effort, concentration, strategy use and persistence may differ. Motivation therefore may influence cognitive performance <strong>indirectly through engagement</strong> with the cognitive process, rather than being a separate memory mechanism.</p>
@@ -2005,20 +2263,23 @@
 <p style="text-align:center;margin:.75rem 0;"><strong>PLAN &rarr; ACT &rarr; MONITOR &rarr; ADJUST</strong></p>
 <p><strong>Realistic example:</strong> a student notices they forget past topics while revising current ones. They plan (Wednesday: review last week&rsquo;s flashcards), act (test themselves, no notes), monitor (mark which cards they still missed) and adjust (schedule those cards again tomorrow instead of moving on). That is self-regulation in action.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">How Can Teachers Support Independence?</button><div class="collapsible-body">
-<p>Strategies that support learner independence include:</p>
+<div class="collapsible"><button class="collapsible-trigger">Why Self-Regulation Matters for Cognition</button><div class="collapsible-body">
+<p>Independent learning requires students to make decisions about their own cognitive activity.</p>
+<p>A self-regulated learner must decide:</p>
 <ul>
-<li><strong>Meaningful choice</strong> within clear structure &mdash; students choose the topic, order or format while goals stay fixed (supports autonomy).</li>
-<li><strong>Achievable challenge</strong> &mdash; task difficulty just beyond current ability, so effort can translate into success (supports competence).</li>
-<li><strong>Clear, specific feedback</strong> that tells students what to improve and how, rather than only judging them.</li>
-<li><strong>Teaching students how to monitor understanding</strong> &mdash; for example, self-testing and checking against a rubric.</li>
-<li><strong>Encouraging retrieval rather than passive rereading</strong> in study habits.</li>
-<li><strong>Gradually reducing teacher control</strong> as students show they can regulate their own learning.</li>
-<li><strong>Helping students set specific goals</strong> (e.g., &ldquo;recall 20 terms from memory by Friday&rdquo;) rather than vague intentions.</li>
-<li><strong>Supporting competence without doing the work for them</strong> &mdash; scaffold, then step back.</li>
+<li>what needs to be learned;</li>
+<li>which strategy is appropriate;</li>
+<li>whether information can actually be retrieved;</li>
+<li>whether an error signals a gap in understanding;</li>
+<li>when a strategy should be changed; and</li>
+<li>when previously learned material needs to be revisited.</li>
 </ul>
-<p>These map onto autonomy, competence and relatedness without needing to reteach SDT from scratch: choice supports autonomy, achievable challenge and feedback support competence, and a classroom where contribution matters supports relatedness.</p>
+<p>This means motivation and cognition can interact.</p>
+<p><strong>Motivation may influence whether a learner persists and engages with an effective strategy, while cognitive processes determine what is encoded, retained and retrieved.</strong></p>
+<p>For example, a student may know that retrieval practice is effective but avoid it because it feels difficult. Another student may persist with retrieval, monitor errors and return to weak material. The difference is not a different memory system — it is a difference in how the learner regulates engagement with that system.</p>
+<p><strong>HL distinction:</strong> knowing an effective learning strategy does not guarantee that a learner will use it, and being highly motivated does not guarantee that the strategy being used is effective.</p>
 </div></div>
+
 <div class="collapsible"><button class="collapsible-trigger">Motivation vs Performance</button><div class="collapsible-body">
 <p>A motivated student does <strong>not</strong> necessarily perform well, and a high-performing student is <strong>not</strong> necessarily highly motivated.</p>
 <p>Performance is influenced by <strong>ability</strong>, <strong>prior knowledge</strong>, <strong>fatigue</strong>, <strong>stress</strong>, <strong>task difficulty</strong>, <strong>strategy use</strong> and <strong>environmental conditions</strong>. A student may work extremely hard and still underperform on a difficult test; another may score well through strong prior knowledge and little immediate effort.</p>
@@ -2195,6 +2456,46 @@
 <p>The teacher also treats Aiko&rsquo;s scores as evidence of generally &ldquo;better cognition&rdquo;. In reality, the tests measure particular aspects of memory and task switching under specific conditions. Other variables, including prior ability, language experience, study habits and task familiarity, could contribute to the difference.</p>
 <p>A stronger conclusion is that Aiko&rsquo;s performance may reflect an interaction among language and cultural experience, motivation, self-regulation and the way she uses technology. The scenario does not establish that bilingualism, AI or motivation independently caused her higher scores.</p>
 </div></div></div>
+</div>
+<div class="slide" data-slide="57b" id="slide-57b"><h2>Class Practical — Does Retrieval Practice Improve Memory?</h2>
+<p class="slide-intro">Design and conduct a simple experiment to test whether retrieving information produces better later memory than simply restudying it.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">Our Research Question</h3>
+<p><strong>Does retrieval practice lead to better later recall than restudying the same material?</strong></p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">The Experimental Logic</h3>
+<p><strong>IV: learning strategy</strong><br>→ retrieval practice OR restudy</p>
+<p><strong>DV: later memory performance</strong><br>→ number of items correctly recalled</p>
+<p>To test a causal question, the conditions should differ in the learning strategy while other important features are kept as similar as possible.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">1. Prepare the Material</h3>
+<p>Use the same set of neutral learning material for everyone, such as a teacher-prepared list of words.</p>
+<p>Everyone receives the same initial study time.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">2. Manipulate the Learning Strategy</h3>
+<p>Create two conditions.</p>
+<p><strong>Retrieval-practice condition:</strong> students attempt to recall the material without looking at it.</p>
+<p><strong>Restudy condition:</strong> students spend the same amount of time looking at the material again.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">3. Keep the Comparison Fair</h3>
+<p>Keep important features as similar as possible between conditions, including the material, initial study time, delay before the final test and final recall instructions.</p>
+<p>The intended difference is the learning strategy.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">4. Measure Memory</h3>
+<p>After the same delay, give both conditions the same final recall test.</p>
+<p>Record the number of items correctly recalled.</p>
+<div style="background:#fef2f2;border:2px solid #dc2626;border-radius:var(--radius);padding:1rem 1.25rem;margin:1rem 0;text-align:center;">
+<p><strong>STOP — SHOW ME YOUR EXPERIMENTAL PLAN BEFORE COLLECTING DATA.</strong></p>
+</div>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">5. Compare the Results</h3>
+<p>Compare memory performance between the retrieval-practice and restudy conditions.</p>
+<p>Ask:</p>
+<ul><li>Which condition produced higher recall?</li><li>How large does the difference appear?</li><li>Is there variation within each condition?</li><li>Does the pattern support the prediction?</li></ul>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">6. Interpret Carefully</h3>
+<p>If the retrieval-practice condition remembers more, the result is consistent with retrieval practice improving later memory under the conditions of this experiment.</p>
+<p>Do not claim that retrieval practice always improves every kind of memory for every person.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Makes This an Experiment?</h3>
+<p>Students manipulate an <strong>independent variable</strong> — learning strategy — and measure its effect on a <strong>dependent variable</strong> — later recall.</p>
+<p>By keeping other important features similar, the design attempts to isolate the effect of the learning strategy.</p>
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Can We Learn From It?</h3>
+<p>The practical connects three parts of the unit:</p>
+<p><strong>memory</strong> — the cognitive process being measured</p>
+<p><strong>retrieval practice</strong> — a strategy intended to improve memory</p>
+<p><strong>experimental method</strong> — a way of testing whether changing the strategy produces a measurable difference</p>
 </div>
 <div class="slide" data-slide="58" id="slide-58">
 <h2>Research Methods in Learning &amp; Cognition</h2>
