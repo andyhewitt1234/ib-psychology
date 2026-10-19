@@ -143,6 +143,40 @@
   #slide-1 .hw-s1-duo, #slide-1 .hw-s1-trio, #slide-1 .hw-s1-journey { grid-template-columns: 1fr; }
 }
 
+    /* ===== SLIDE 19 PAPER 3 GRAPH PRACTICE: scoped to #slide-19 ===== */
+    #slide-19 .p3g-eyebrow { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin: 1.9rem 0 .2rem; }
+    #slide-19 .p3g-lead { background: var(--primary-light); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .85rem 1rem; margin: .6rem 0 0; font-size: .92rem; line-height: 1.65; }
+    #slide-19 .p3g-lead p { margin: 0; }
+    #slide-19 .p3g-h { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 .5rem; color: var(--text); }
+    #slide-19 .p3g-teach { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: .55rem 0 0; }
+    #slide-19 .p3g-teach > div { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .65rem .8rem; }
+    #slide-19 .p3g-teach strong { display: block; font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--primary); margin-bottom: .2rem; }
+    #slide-19 .p3g-teach p { font-size: .88rem; line-height: 1.55; margin: 0; }
+    @media (max-width: 700px) { #slide-19 .p3g-teach { grid-template-columns: 1fr; } }
+    #slide-19 .p3g-context { font-size: .9rem; line-height: 1.65; margin: .8rem 0 .3rem; }
+    #slide-19 .p3g-graph { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem .7rem; margin: .5rem 0 .8rem; }
+    #slide-19 .p3g-graph figcaption { font-weight: 700; font-size: .96rem; color: var(--text); margin-bottom: .55rem; }
+    #slide-19 .p3g-svgwrap { overflow-x: auto; }
+    #slide-19 .p3g-svgwrap svg { display: block; width: 100%; min-width: 420px; height: auto; font-family: inherit; }
+    #slide-19 .p3g-fignote { font-size: .8rem; color: var(--text-secondary); line-height: 1.5; margin: .55rem 0 0; }
+    #slide-19 .p3g-scaffold { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .95rem; margin: .6rem 0; }
+    #slide-19 .p3g-scaffold h4 { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); margin: 0 0 .4rem; }
+    #slide-19 .p3g-scaffold ol { margin: 0; padding-left: 1.15rem; }
+    #slide-19 .p3g-scaffold li { font-size: .89rem; line-height: 1.6; margin-bottom: .15rem; }
+    #slide-19 .p3g-reminder { background: var(--warning-light); border-left: 4px solid var(--warning); border-radius: 0 var(--radius) var(--radius) 0; padding: .5rem .8rem; margin: .55rem 0; font-size: .86rem; line-height: 1.5; color: var(--text); }
+    #slide-19 .p3g-reminder strong { color: var(--warning); }
+    #slide-19 .p3g-q { background: var(--bg); border: 1px solid var(--primary); border-left: 4px solid var(--primary); border-radius: var(--radius); padding: .7rem .95rem; margin: .55rem 0; }
+    #slide-19 .p3g-q .p3g-qtag { display: block; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    #slide-19 .p3g-q p { font-style: italic; font-size: .9rem; margin: 0 0 .35rem; }
+    #slide-19 .p3g-q p:last-child { margin-bottom: 0; }
+    #slide-19 .p3g-q .p3g-qinstr { font-style: normal; font-size: .85rem; color: var(--text-secondary); }
+    #slide-19 .p3g-mark { margin: .65rem 0 .3rem; }
+    #slide-19 .p3g-mark h4 { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); margin: 0 0 .35rem; }
+    #slide-19 .p3g-mark ul { margin: 0 0 .45rem; padding-left: 1.15rem; }
+    #slide-19 .p3g-mark li { font-size: .88rem; line-height: 1.6; margin-bottom: .15rem; }
+    #slide-19 .p3g-mark li span { font-weight: 800; color: var(--primary); }
+    #slide-19 .p3g-band { font-size: .88rem; line-height: 1.6; margin: 0 0 .2rem; }
+    #slide-19 .p3g-band span { font-weight: 800; color: var(--primary); }
 </style>
 
 </head>
@@ -1436,6 +1470,152 @@
 <h3>Optional Extension</h3>
 <p>The scenarios below are optional. They are not part of the ManageBac submission.</p><p><strong>Scenario 1: Maya.</strong> 17-year-old; mother and aunt treated for depression; parental divorce; anhedonia, concentration loss, exhaustion; "Nothing is ever going to get better." Questions: biological factors, cognitive processes, environmental contribution, best integrative model. <em>Model answer:</em> familial/genetic vulnerability (McGuffin: higher but non-deterministic concordance); future-hopelessness as Beck's triad with schema filtering; divorce as Brown-&amp;-Harris-type severe event; diathesis–stress integration without claiming proven causation.</p><p><strong>Scenario 2: Dr. Patel.</strong> Mumbai psychiatrist; fatigue/insomnia/headache patients diagnosed via Western criteria; possible expression differences. <em>Model answer:</em> somatic emphasis vs emotional idioms; stigma and reporting effects; tools non-equivalent across contexts (not automatic underdiagnosis); Parker, Gladstone &amp; Chee (2001) on expression/identification with within-population variation; culturally appropriate assessment plus mood enquiry; Bias/Measurement/Perspective links; expression ≠ biology.</p><p><strong>Scenario 3: Alex.</strong> Friend's "chemical imbalance, fix your serotonin" claim vs Alex's scepticism. <em>Model answer:</em> SSRI speed vs therapeutic lag; Moncrieff et al. (2022) — no consistent serotonin-deficiency support; treatment ≠ origin; serotonin relevant but not reductive.</p><p><strong>Command-term compass:</strong> Discuss → evidence, perspectives, reasoned conclusion. Evaluate → judgement via strengths, limitations, evidence. To what extent → how far, with alternatives/limitations weighed.</p>
 <div style="background:#F0FDF4;border-left:4px solid #15803D;border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;"><h3 style="font-size:1rem;font-weight:700;margin:0 0 .5rem;color:var(--text);">Final Submission — ManageBac</h3><p style="margin:0 0 .5rem;">Upload <strong>ONE Word document (.docx)</strong> containing:</p><p style="margin:.4rem 0 0;"><strong>1. Identifying the Factors</strong></p><p style="margin:.2rem 0 .4rem;">Identify Daniel’s biological vulnerability, cognitive factor, and environmental stressor. Explain how they may interact.</p><p style="margin:.4rem 0 0;"><strong>2. Written Explanation</strong></p><p style="margin:.2rem 0 .4rem;">Your paragraph explaining how biological, cognitive, and environmental factors may interact in the development of MDD, using Daniel’s case.</p><p style="margin:.4rem 0 0;"><strong>3. Evaluation</strong></p><p style="margin:.2rem 0 .4rem;">Your explanation of why the failed exam alone cannot fully explain Daniel’s difficulties.</p><p style="margin:.4rem 0 0;"><strong>4. Reflection and Improvement</strong></p><p style="margin:.2rem 0 .4rem;">Briefly explain one improvement you made after comparing your response with the model answer.</p><p style="margin:.5rem 0 0;"><strong>Before uploading:</strong> Check that all four sections are completed, use clear headings, and upload your document to ManageBac.</p></div>
+
+<p class="p3g-eyebrow">HL Exam Skills &mdash; Paper 3</p>
+<h3>Interpreting Depression Research &mdash; Paper 3 Practice</h3>
+<div class="p3g-lead">
+<p>Psychologists use quantitative data to investigate factors associated with depression. In these activities, you will interpret two graphs and consider what the findings can&mdash;and cannot&mdash;tell us.</p>
+</div>
+
+<h4 class="p3g-h">Understanding a Scatterplot</h4>
+<div class="p3g-teach">
+<div><strong>Purpose</strong><p>Shows the relationship between two numerical variables. Each point represents one paired observation.</p></div>
+<div><strong>Strength</strong><p>Helps identify the direction and approximate strength of an association.</p></div>
+<div><strong>Limitation</strong><p>A relationship between two variables does not, by itself, establish causation.</p></div>
+</div>
+
+<p class="p3g-context">Researchers recorded a perceived stress score (0&ndash;10) and a depressive symptom score (0&ndash;27) for each of eight students. Higher scores indicate greater reported stress or depressive symptom severity. These symptom scores are illustrative measurements, not clinical diagnoses.</p>
+
+<figure class="p3g-graph">
+<figcaption>Perceived Stress and Depressive Symptom Scores</figcaption>
+<div class="p3g-svgwrap">
+    <svg viewBox="0 0 460 260" role="img" aria-label="Scatterplot of perceived stress score against depressive symptom score for eight participants. Points run generally upward from lower-left to upper-right, showing a positive association." preserveAspectRatio="xMidYMid meet">
+      <title>Perceived stress and depressive symptom scores (teacher-created example)</title>
+      <line x1="64" y1="30" x2="64" y2="215" stroke="var(--border)" stroke-width="1"/>
+      <line x1="64" y1="215" x2="430" y2="215" stroke="var(--border)" stroke-width="1"/>
+      <line x1="60" y1="215" x2="64" y2="215" stroke="var(--border)"/><text x="55" y="218" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+      <line x1="60" y1="181" x2="64" y2="181" stroke="var(--border)"/><text x="55" y="184" text-anchor="end" font-size="10" fill="var(--text-secondary)">5</text>
+      <line x1="60" y1="146" x2="64" y2="146" stroke="var(--border)"/><text x="55" y="149" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+      <line x1="60" y1="112" x2="64" y2="112" stroke="var(--border)"/><text x="55" y="115" text-anchor="end" font-size="10" fill="var(--text-secondary)">15</text>
+      <line x1="60" y1="78" x2="64" y2="78" stroke="var(--border)"/><text x="55" y="81" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+      <line x1="60" y1="44" x2="64" y2="44" stroke="var(--border)"/><text x="55" y="47" text-anchor="end" font-size="10" fill="var(--text-secondary)">25</text>
+      <text x="64" y="16" font-size="10.5" fill="var(--text-secondary)">Depressive symptom score (0&ndash;27)</text>
+      <circle cx="136" cy="181" r="4" fill="var(--primary)"/>
+      <circle cx="172" cy="160" r="4" fill="var(--primary)"/>
+      <circle cx="208" cy="167" r="4" fill="var(--primary)"/>
+      <circle cx="244" cy="133" r="4" fill="var(--primary)"/>
+      <circle cx="280" cy="140" r="4" fill="var(--primary)"/>
+      <circle cx="316" cy="99" r="4" fill="var(--primary)"/>
+      <circle cx="352" cy="112" r="4" fill="var(--primary)"/>
+      <circle cx="388" cy="71" r="4" fill="var(--primary)"/>
+      <text x="64" y="229" text-anchor="middle" font-size="10" fill="var(--text)">0</text>
+      <text x="136" y="229" text-anchor="middle" font-size="10" fill="var(--text)">2</text>
+      <text x="208" y="229" text-anchor="middle" font-size="10" fill="var(--text)">4</text>
+      <text x="280" y="229" text-anchor="middle" font-size="10" fill="var(--text)">6</text>
+      <text x="352" y="229" text-anchor="middle" font-size="10" fill="var(--text)">8</text>
+      <text x="424" y="229" text-anchor="middle" font-size="10" fill="var(--text)">10</text>
+      <text x="247" y="245" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Perceived stress score (0&ndash;10)</text>
+      <text x="64" y="243" font-size="9.5" fill="var(--text-muted)">Each point = one participant</text>
+    </svg>
+</div>
+<p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
+</figure>
+
+<div class="p3g-scaffold">
+<h4>Before You Answer</h4>
+<ol>
+<li>What does each axis measure?</li>
+<li>What overall pattern do the points form?</li>
+<li>Which specific observations support your interpretation?</li>
+<li>What conclusion can the data support?</li>
+</ol>
+</div>
+
+<p class="p3g-reminder"><strong>Question 2:</strong> Pattern &rarr; Numerical Evidence &rarr; Interpretation &rarr; Conclusion</p>
+
+<div class="p3g-q">
+<span class="p3g-qtag">Paper 3 Practice &mdash; Question 2 [6 marks]</span>
+<p>Analyze the findings shown in Graph 1 and state a conclusion about the relationship between perceived stress and depressive symptoms.</p>
+<p class="p3g-qinstr">Write your response in your notebook before revealing the model.</p>
+</div>
+
+<div class="reveal"><div class="reveal-question">Reveal Model Answer</div><div class="reveal-answer"><div>The scatterplot shows an overall positive association between perceived stress and depressive symptom scores. For example, the participant with a stress score of 2 had a depressive symptom score of 5, whereas the participant with a stress score of 9 had a symptom score of 21. However, the relationship is not perfectly consistent: a participant with a stress score of 4 scored 7 for depressive symptoms, while a participant with a stress score of 3 scored 8.<br><br>Overall, the findings suggest that higher perceived stress is associated with greater reported depressive symptoms in this small sample. This is consistent with environmental explanations of depression, but the correlational data cannot establish that stress caused the symptoms.</div></div></div>
+
+<div class="p3g-mark">
+<h4>What earns high marks?</h4>
+<ul>
+<li>Detailed analysis using specific data, with a conclusion explicitly linked to the findings.</li>
+</ul>
+<p class="p3g-band"><span>1&ndash;2 marks:</span> Limited or inaccurate analysis; attempted but irrelevant conclusion.</p>
+<p class="p3g-band"><span>3&ndash;4 marks:</span> Accurate but insufficiently developed analysis; conclusion not clearly linked to findings.</p>
+<p class="p3g-band"><span>5&ndash;6 marks:</span> Detailed analysis with a conclusion explicitly linked to the findings.</p>
+</div>
+
+<h4 class="p3g-h">Understanding a Bar Graph</h4>
+<div class="p3g-teach">
+<div><strong>Purpose</strong><p>Compares numerical values across separate categories or groups.</p></div>
+<div><strong>Strength</strong><p>Makes differences between groups easy to identify.</p></div>
+<div><strong>General limitation</strong><p>Summary values may conceal important information about individual participants.</p></div>
+</div>
+
+<p class="p3g-context">Researchers compared mean depressive symptom scores between students classified as experiencing lower and higher stress.</p>
+
+<figure class="p3g-graph">
+<figcaption>Mean Depressive Symptom Scores by Stress Group</figcaption>
+<div class="p3g-svgwrap">
+    <svg viewBox="0 0 460 250" role="img" aria-label="Bar graph of mean depressive symptom scores by stress group: lower-stress group 9, higher-stress group 16, on a vertical axis from 0 to 25." preserveAspectRatio="xMidYMid meet">
+      <title>Mean depressive symptom scores by stress group (teacher-created example)</title>
+      <line x1="64" y1="30" x2="64" y2="210" stroke="var(--border)" stroke-width="1"/>
+      <line x1="64" y1="210" x2="430" y2="210" stroke="var(--border)" stroke-width="1"/>
+      <line x1="60" y1="210" x2="64" y2="210" stroke="var(--border)"/><text x="55" y="213" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+      <line x1="60" y1="177" x2="64" y2="177" stroke="var(--border)"/><text x="55" y="180" text-anchor="end" font-size="10" fill="var(--text-secondary)">5</text>
+      <line x1="60" y1="143" x2="64" y2="143" stroke="var(--border)"/><text x="55" y="146" text-anchor="end" font-size="10" fill="var(--text-secondary)">10</text>
+      <line x1="60" y1="110" x2="64" y2="110" stroke="var(--border)"/><text x="55" y="113" text-anchor="end" font-size="10" fill="var(--text-secondary)">15</text>
+      <line x1="60" y1="77" x2="64" y2="77" stroke="var(--border)"/><text x="55" y="80" text-anchor="end" font-size="10" fill="var(--text-secondary)">20</text>
+      <line x1="60" y1="43" x2="64" y2="43" stroke="var(--border)"/><text x="55" y="46" text-anchor="end" font-size="10" fill="var(--text-secondary)">25</text>
+      <text x="64" y="16" font-size="10.5" fill="var(--text-secondary)">Mean depressive symptom score (0&ndash;27)</text>
+      <rect x="100" y="150" width="110" height="60" fill="var(--accent)"/>
+      <rect x="283" y="103" width="110" height="107" fill="var(--primary)"/>
+      <text x="155" y="144" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text)">9</text>
+      <text x="338" y="97" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text)">16</text>
+      <text x="155" y="226" text-anchor="middle" font-size="10.5" fill="var(--text)">Lower stress</text>
+      <text x="338" y="226" text-anchor="middle" font-size="10.5" fill="var(--text)">Higher stress</text>
+      <text x="247" y="244" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Stress group</text>
+    </svg>
+</div>
+<p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
+</figure>
+
+<div class="p3g-scaffold">
+<h4>Before You Answer</h4>
+<ol>
+<li>What does each bar represent?</li>
+<li>What information is provided about the two groups?</li>
+<li>What additional information would help you interpret the comparison?</li>
+<li>Why might that information matter?</li>
+</ol>
+</div>
+
+<p class="p3g-reminder"><strong>Question 1:</strong> Issue &rarr; Source Detail &rarr; Consequence for Interpretation</p>
+
+<div class="p3g-q">
+<span class="p3g-qtag">Paper 3 Practice &mdash; Question 1 [3 marks]</span>
+<p>Explain one issue that limits the interpretation of the data in Graph 2.</p>
+<p class="p3g-qinstr">Identify and explain ONE genuine issue, describing it using a specific feature of the source.</p>
+</div>
+
+<div class="reveal"><div class="reveal-question">Reveal Model Answer</div><div class="reveal-answer"><div>One issue is that the researchers do not explain how students were classified into the lower-stress and higher-stress groups. Although the graph shows mean depressive symptom scores of 9 and 16 respectively, we do not know what stress scores or criteria were used to separate the groups. This limits interpretation because the difference in depressive symptoms cannot be confidently related to a clearly defined difference in stress levels.</div></div></div>
+
+<div class="p3g-mark">
+<h4>Paper 3 Question 1 &mdash; 3 marks</h4>
+<ul>
+<li><span>1 mark:</span> A relevant issue is identified.</li>
+<li><span>2 marks:</span> A relevant issue is clearly described.</li>
+<li><span>3 marks:</span> A relevant issue is explained.</li>
+</ul>
+<p class="p3g-band"><strong>Only the first issue is credited.</strong> Other limitations may also be valid if they genuinely apply to the source and are properly explained.</p>
+</div>
+
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-bottom:1rem;"><h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3><ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li>Identify the explanation, apply it to scenario details, support with evidence, explain the link, qualify the conclusion.</li><li>Link vulnerability (genes/schemas) to triggers (events/culture) through diathesis–stress logic.</li><li>Cultural presentation differences are about expression and measurement, not underlying biology.</li><li>Calibrate causal language: associated vs caused vs triggered.</li><li>Daniel's rule: no single factor — genes, exam, or withdrawal — explains a case alone; interaction of vulnerability × thinking × stress raises probability, never guarantees it.</li></ol></div>
 
 </div>
