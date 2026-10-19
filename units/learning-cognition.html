@@ -165,6 +165,41 @@
   #slide-1 .lc-fnd-quad, #slide-1 .lc-fnd-steps { grid-template-columns: 1fr; }
 }
 
+    /* ===== SLIDE 7 PAPER 3 GRAPH PRACTICE: scoped to #slide-7 ===== */
+    #slide-7 .p3g-eyebrow { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin: 1.9rem 0 .2rem; }
+    #slide-7 .p3g-lead { background: var(--primary-light); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .85rem 1rem; margin: .6rem 0 0; font-size: .92rem; line-height: 1.65; }
+    #slide-7 .p3g-lead p { margin: 0 0 .5rem; }
+    #slide-7 .p3g-lead p:last-child { margin-bottom: 0; }
+    #slide-7 .p3g-h { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 .5rem; color: var(--text); }
+    #slide-7 .p3g-teach { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: .55rem 0 0; }
+    #slide-7 .p3g-teach > div { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .65rem .8rem; }
+    #slide-7 .p3g-teach strong { display: block; font-size: .76rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--primary); margin-bottom: .2rem; }
+    #slide-7 .p3g-teach p { font-size: .88rem; line-height: 1.55; margin: 0; }
+    @media (max-width: 700px) { #slide-7 .p3g-teach { grid-template-columns: 1fr; } }
+    #slide-7 .p3g-context { font-size: .9rem; line-height: 1.65; margin: .8rem 0 .3rem; }
+    #slide-7 .p3g-graph { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem 1rem .7rem; margin: .5rem 0 .8rem; }
+    #slide-7 .p3g-graph figcaption { font-weight: 700; font-size: .96rem; color: var(--text); margin-bottom: .55rem; }
+    #slide-7 .p3g-svgwrap { overflow-x: auto; }
+    #slide-7 .p3g-svgwrap svg { display: block; width: 100%; min-width: 420px; height: auto; font-family: inherit; }
+    #slide-7 .p3g-fignote { font-size: .8rem; color: var(--text-secondary); line-height: 1.5; margin: .55rem 0 0; }
+    #slide-7 .p3g-scaffold { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .95rem; margin: .6rem 0; }
+    #slide-7 .p3g-scaffold h4 { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); margin: 0 0 .4rem; }
+    #slide-7 .p3g-scaffold ol { margin: 0; padding-left: 1.15rem; }
+    #slide-7 .p3g-scaffold li { font-size: .89rem; line-height: 1.6; margin-bottom: .15rem; }
+    #slide-7 .p3g-reminder { background: var(--warning-light); border-left: 4px solid var(--warning); border-radius: 0 var(--radius) var(--radius) 0; padding: .5rem .8rem; margin: .55rem 0; font-size: .86rem; line-height: 1.5; color: var(--text); }
+    #slide-7 .p3g-reminder strong { color: var(--warning); }
+    #slide-7 .p3g-q { background: var(--bg); border: 1px solid var(--primary); border-left: 4px solid var(--primary); border-radius: var(--radius); padding: .7rem .95rem; margin: .55rem 0; }
+    #slide-7 .p3g-q .p3g-qtag { display: block; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--primary); margin-bottom: .3rem; }
+    #slide-7 .p3g-q p { font-style: italic; font-size: .9rem; margin: 0 0 .35rem; }
+    #slide-7 .p3g-q p:last-child { margin-bottom: 0; }
+    #slide-7 .p3g-q .p3g-qinstr { font-style: normal; font-size: .85rem; color: var(--text-secondary); }
+    #slide-7 .p3g-mark { margin: .65rem 0 .3rem; }
+    #slide-7 .p3g-mark h4 { font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--text-secondary); margin: 0 0 .35rem; }
+    #slide-7 .p3g-mark ul { margin: 0 0 .45rem; padding-left: 1.15rem; }
+    #slide-7 .p3g-mark li { font-size: .88rem; line-height: 1.6; margin-bottom: .15rem; }
+    #slide-7 .p3g-mark li span { font-weight: 800; color: var(--primary); }
+    #slide-7 .p3g-band { font-size: .88rem; line-height: 1.6; margin: 0 0 .2rem; }
+    #slide-7 .p3g-band span { font-weight: 800; color: var(--primary); }
 </style>
 </head>
 <body>
@@ -687,6 +722,159 @@
 <li><strong>Failing to reinforce a replacement behavior:</strong> if you remove a behavior without building an alternative, the old habit returns; teach and reinforce what to do instead.</li>
 </ul>
 </div></div>
+
+<p class="p3g-eyebrow">HL Exam Skills &mdash; Paper 3</p>
+<h3>Interpreting Behavior-Change Data &mdash; Paper 3 Practice</h3>
+<div class="p3g-lead">
+<p>Psychologists need evidence that a behavior-change strategy actually works. Graphs help researchers identify patterns, compare results, and evaluate what the findings support.</p>
+<p>In this activity, you will learn to interpret two types of graphs and practice answering Paper 3-style questions.</p>
+</div>
+
+<h4 class="p3g-h">Understanding a Line Graph</h4>
+<div class="p3g-teach">
+<div><strong>Purpose</strong><p>A line graph shows how a variable changes across an ordered sequence, usually time.</p></div>
+<div><strong>Strength</strong><p>It makes trends, increases, decreases, and periods of stability easy to identify.</p></div>
+<div><strong>Limitation</strong><p>Connecting data points does not prove exactly what happened between measurements or establish what caused a change.</p></div>
+</div>
+
+<p class="p3g-context">A student recorded how many distraction-free revision sessions they completed each week. During Weeks 1&ndash;2, no rewards were offered. From Week 3 onward, the student received a preferred reward after completing each revision session.</p>
+
+<figure class="p3g-graph">
+<figcaption>Weekly Distraction-Free Revision Sessions</figcaption>
+<div class="p3g-svgwrap">
+    <svg viewBox="0 0 460 250" role="img" aria-label="Line graph of completed distraction-free revision sessions per week across five weeks. Weeks 1 and 2 show one session each during the baseline. After rewards are introduced in Week 3, sessions rise to three, then four in Weeks 4 and 5." preserveAspectRatio="xMidYMid meet">
+      <title>Weekly distraction-free revision sessions (teacher-created example)</title>
+      <rect x="72" y="40" width="148" height="160" fill="var(--bg-secondary)"/>
+      <rect x="220" y="40" width="220" height="160" fill="var(--primary-light)" opacity="0.5"/>
+      <text x="146" y="55" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--text-secondary)">Baseline &mdash; no rewards</text>
+      <text x="330" y="55" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--primary)">Reward system introduced</text>
+      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <line x1="68" y1="200" x2="72" y2="200" stroke="var(--border)"/><text x="64" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+      <line x1="68" y1="168" x2="72" y2="168" stroke="var(--border)"/><text x="64" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">1</text>
+      <line x1="68" y1="136" x2="72" y2="136" stroke="var(--border)"/><text x="64" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+      <line x1="68" y1="104" x2="72" y2="104" stroke="var(--border)"/><text x="64" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">3</text>
+      <line x1="68" y1="72" x2="72" y2="72" stroke="var(--border)"/><text x="64" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+      <line x1="68" y1="40" x2="72" y2="40" stroke="var(--border)"/><text x="64" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">5</text>
+      <text x="72" y="14" font-size="10.5" fill="var(--text-secondary)">Completed revision sessions per week</text>
+      <polyline points="100,168 180,168 260,104 340,72 420,72" fill="none" stroke="var(--primary)" stroke-width="2"/>
+      <circle cx="100" cy="168" r="3.5" fill="var(--primary)"/>
+      <circle cx="180" cy="168" r="3.5" fill="var(--primary)"/>
+      <circle cx="260" cy="104" r="3.5" fill="var(--primary)"/>
+      <circle cx="340" cy="72" r="3.5" fill="var(--primary)"/>
+      <circle cx="420" cy="72" r="3.5" fill="var(--primary)"/>
+      <text x="100" y="160" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">1</text>
+      <text x="180" y="160" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">1</text>
+      <text x="260" y="96" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">3</text>
+      <text x="340" y="64" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">4</text>
+      <text x="420" y="64" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)">4</text>
+      <text x="100" y="215" text-anchor="middle" font-size="10" fill="var(--text)">1</text>
+      <text x="180" y="215" text-anchor="middle" font-size="10" fill="var(--text)">2</text>
+      <text x="260" y="215" text-anchor="middle" font-size="10" fill="var(--text)">3</text>
+      <text x="340" y="215" text-anchor="middle" font-size="10" fill="var(--text)">4</text>
+      <text x="420" y="215" text-anchor="middle" font-size="10" fill="var(--text)">5</text>
+      <text x="256" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Week</text>
+    </svg>
+</div>
+<p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
+</figure>
+
+<div class="p3g-scaffold">
+<h4>Before You Answer</h4>
+<ol>
+<li>What do the X-axis and Y-axis measure?</li>
+<li>What changes between the baseline and reward periods?</li>
+<li>Which numerical values support your interpretation?</li>
+<li>What conclusion can the findings support?</li>
+</ol>
+</div>
+
+<p class="p3g-reminder"><strong>Paper 3 Question 2:</strong> Pattern &rarr; Numerical Evidence &rarr; Interpretation &rarr; Conclusion</p>
+
+<div class="p3g-q">
+<span class="p3g-qtag">Paper 3 Practice &mdash; Question 2 [6 marks]</span>
+<p>Analyze the findings shown in Graph 1 and state a conclusion about the effectiveness of the reward system.</p>
+</div>
+
+<div class="reveal"><div class="reveal-question">Reveal Model Answer</div><div class="reveal-answer"><div>During the baseline period, the student completed one distraction-free revision session per week in both Weeks 1 and 2. After rewards were introduced in Week 3, the number increased to three sessions, followed by four sessions in Weeks 4 and 5. This represents an increase of three sessions per week compared with baseline, with the higher level maintained during the final two weeks.<br><br>The findings suggest that the reward system may have increased revision behavior. This is consistent with positive reinforcement because a desirable consequence followed completed revision sessions. However, the graph alone cannot establish that rewards caused the increase, as other influences were not controlled.</div></div></div>
+
+<div class="p3g-mark">
+<h4>What earns high marks?</h4>
+<ul>
+<li>Accurate identification of the main pattern.</li>
+<li>Specific numerical comparisons.</li>
+<li>Interpretation of what the data suggest.</li>
+<li>A conclusion explicitly linked to the findings.</li>
+</ul>
+<p class="p3g-band"><span>1&ndash;2 marks:</span> Limited or inaccurate analysis; attempted but irrelevant conclusion.</p>
+<p class="p3g-band"><span>3&ndash;4 marks:</span> Accurate but insufficiently developed analysis; conclusion not clearly linked to findings.</p>
+<p class="p3g-band"><span>5&ndash;6 marks:</span> Detailed analysis with a conclusion explicitly linked to the findings.</p>
+</div>
+
+<h4 class="p3g-h">Understanding a Bar Graph</h4>
+<div class="p3g-teach">
+<div><strong>Purpose</strong><p>A bar graph compares numerical values across separate categories or groups.</p></div>
+<div><strong>Strength</strong><p>It makes differences between categories easy to compare.</p></div>
+<div><strong>General limitation</strong><p>A bar graph may summarize complex data into a small number of values, so important information about individual observations may not be visible.</p></div>
+</div>
+
+<p class="p3g-context">Researchers compared the average number of distraction-free revision sessions completed per week by two groups of students. One group received rewards after completed sessions; the other did not.</p>
+
+<figure class="p3g-graph">
+<figcaption>Mean Weekly Revision Sessions by Reward Condition</figcaption>
+<div class="p3g-svgwrap">
+    <svg viewBox="0 0 460 240" role="img" aria-label="Bar graph comparing mean completed revision sessions per week: 2.5 in the no-reward group and 3.8 in the reward group, on a vertical axis from 0 to 4." preserveAspectRatio="xMidYMid meet">
+      <title>Mean weekly revision sessions by reward condition (teacher-created example)</title>
+      <text x="72" y="14" font-size="10.5" fill="var(--text-secondary)">Mean completed revision sessions per week</text>
+      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <line x1="68" y1="200" x2="72" y2="200" stroke="var(--border)"/><text x="64" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
+      <line x1="68" y1="160" x2="72" y2="160" stroke="var(--border)"/><text x="64" y="163" text-anchor="end" font-size="10" fill="var(--text-secondary)">1</text>
+      <line x1="68" y1="120" x2="72" y2="120" stroke="var(--border)"/><text x="64" y="123" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
+      <line x1="68" y1="80" x2="72" y2="80" stroke="var(--border)"/><text x="64" y="83" text-anchor="end" font-size="10" fill="var(--text-secondary)">3</text>
+      <line x1="68" y1="40" x2="72" y2="40" stroke="var(--border)"/><text x="64" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
+      <rect x="109" y="100" width="110" height="100" fill="var(--accent)"/>
+      <rect x="293" y="48" width="110" height="152" fill="var(--primary)"/>
+      <text x="164" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text)">2.5</text>
+      <text x="348" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text)">3.8</text>
+      <text x="164" y="216" text-anchor="middle" font-size="10.5" fill="var(--text)">No rewards</text>
+      <text x="348" y="216" text-anchor="middle" font-size="10.5" fill="var(--text)">Rewards</text>
+      <text x="256" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reward condition</text>
+    </svg>
+</div>
+<p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
+</figure>
+
+<div class="p3g-scaffold">
+<h4>Before You Answer</h4>
+<ol>
+<li>What does each bar represent?</li>
+<li>What information is provided about the groups?</li>
+<li>What additional information might help you interpret the comparison?</li>
+<li>How could missing or unclear information affect your conclusion?</li>
+</ol>
+</div>
+
+<p class="p3g-reminder"><strong>Paper 3 Question 1:</strong> Issue &rarr; Source Detail &rarr; Consequence for Interpretation</p>
+
+<div class="p3g-q">
+<span class="p3g-qtag">Paper 3 Practice &mdash; Question 1 [3 marks]</span>
+<p>Explain one issue that limits the interpretation of the data in Graph 2.</p>
+<p class="p3g-qinstr">Identify ONE genuine issue, describe it using a specific feature of the source, and explain why it limits interpretation.</p>
+</div>
+
+<div class="reveal"><div class="reveal-question">Reveal Model Answer</div><div class="reveal-answer"><div>One issue is that the graph provides no information about variability. Although the reward group completed an average of 3.8 revision sessions per week compared with 2.5 in the no-reward group, we cannot tell whether individual students' scores were closely grouped around these means or varied considerably. This limits how confidently we can interpret the difference between the groups.</div></div></div>
+
+<div class="p3g-mark">
+<h4>Paper 3 Question 1 &mdash; 3 marks</h4>
+<ul>
+<li><span>1 mark:</span> A relevant issue is identified.</li>
+<li><span>2 marks:</span> A relevant issue is clearly described.</li>
+<li><span>3 marks:</span> A relevant issue is explained.</li>
+</ul>
+<p class="p3g-band"><strong>Only the first issue is credited.</strong> Naming several limitations is less effective than explaining one properly.</p>
+</div>
+
 <h3>Behavior-Change Challenge</h3>
 <p><strong>Scenario.</strong> A student regularly checks their phone during revision. They want to reduce phone checking and increase the amount of time they spend studying without distractions.</p>
 <p><strong>Your task:</strong> Design a behavior-change plan using operant conditioning. Answer the following six questions in your Word document. You do not need to carry out the intervention.</p>
