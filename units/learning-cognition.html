@@ -200,6 +200,62 @@
     #slide-7 .p3g-mark li span { font-weight: 800; color: var(--primary); }
     #slide-7 .p3g-band { font-size: .88rem; line-height: 1.6; margin: 0 0 .2rem; }
     #slide-7 .p3g-band span { font-weight: 800; color: var(--primary); }
+    /* ===== SLIDE 7 COLOUR SYSTEM: blue = concepts, green = examples + model answers,
+       amber = student activities + instructions, purple = HL-only Paper 3 ===== */
+    #slide-7 {
+      --lc-blue: #1a56db; --lc-blue-tint: #eef3fd;
+      --lc-green: #15803d; --lc-green-tint: #effaf3;
+      --lc-amber: #b45309; --lc-amber-tint: #fffbeb;
+      --lc-purple: #6d28d9; --lc-purple-tint: #f6f1fd;
+    }
+    #slide-7 .lc7-label { display: inline-block; font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; margin-right: .35rem; }
+    #slide-7 .lc7-label-amber { color: var(--lc-amber); }
+    #slide-7 .lc7-label-purple { color: var(--lc-purple); }
+    #slide-7 .lc7-key { font-weight: 600; color: var(--lc-blue); }
+    #slide-7 .lc7-guide { background: var(--lc-blue-tint); border: 1px solid var(--border); border-left: 3px solid var(--lc-blue); border-radius: 0 var(--radius) var(--radius) 0; padding: .9rem 1.1rem; margin: 1rem 0 1.25rem; font-size: .9rem; line-height: 1.6; }
+    #slide-7 .lc7-guide h3 { font-size: 1rem; font-weight: 700; color: var(--lc-blue); margin: 0 0 .5rem; }
+    #slide-7 .lc7-guide p { margin: 0 0 .5rem; }
+    #slide-7 .lc7-guide p:last-child { margin-bottom: 0; }
+    #slide-7 .lc7-guide ul { margin: 0; padding-left: 1.1rem; }
+    #slide-7 .lc7-guide-block { border-left: 2px solid var(--lc-amber); padding: .1rem 0 .1rem .65rem; margin: .55rem 0; }
+    #slide-7 .lc7-guide-block-hl { border-left-color: var(--lc-purple); }
+    #slide-7 .lc7-guide-block .lc7-label { margin: 0 0 .15rem; }
+    #slide-7 .collapsible.lc7-blue > .collapsible-trigger { box-shadow: inset 3px 0 0 var(--lc-blue); color: var(--lc-blue); }
+    #slide-7 .collapsible.lc7-green > .collapsible-trigger { box-shadow: inset 3px 0 0 var(--lc-green); color: var(--lc-green); }
+    #slide-7 .collapsible.lc7-blue > .collapsible-body { background: var(--lc-blue-tint); }
+    #slide-7 .collapsible.lc7-green > .collapsible-body { background: var(--lc-green-tint); }
+    #slide-7 h3.lc7-amber { color: var(--lc-amber); }
+    #slide-7 h3.lc7-purple { color: var(--lc-purple); }
+    #slide-7 .lc7-note { font-size: .9rem; line-height: 1.6; color: var(--text-secondary); margin: .25rem 0 .75rem; padding: .4rem .65rem; border-left: 2px solid var(--border); }
+    #slide-7 .lc7-note-amber { border-left-color: var(--lc-amber); background: var(--lc-amber-tint); color: var(--text); }
+    #slide-7 .lc7-note-green { border-left-color: var(--lc-green); background: var(--lc-green-tint); color: var(--text); }
+    #slide-7 .reveal { border-left: 3px solid var(--lc-amber); }
+    #slide-7 .reveal:hover { border-color: var(--lc-amber); }
+    #slide-7 .reveal-question::after { background: var(--lc-amber-tint); color: var(--lc-amber); }
+    #slide-7 .reveal.open { background: var(--lc-green-tint); border-color: var(--lc-green); }
+    #slide-7 .reveal.open .reveal-answer { color: var(--text-secondary); border-top-color: var(--lc-green); }
+    #slide-7 .p3g-eyebrow.lc7-purple { color: var(--lc-purple); }
+    #slide-7 .p3g-lead { background: var(--lc-purple-tint); border-left-color: var(--lc-purple); }
+    #slide-7 .p3g-h { color: var(--lc-purple); }
+    #slide-7 .p3g-teach > div { border-top: 2px solid var(--lc-purple); }
+    #slide-7 .p3g-context { background: var(--lc-green-tint); border-left: 2px solid var(--lc-green); border-radius: 0 var(--radius) var(--radius) 0; padding: .5rem .7rem; }
+    #slide-7 .p3g-graph { border-color: var(--lc-purple); }
+    #slide-7 .p3g-graph figcaption { color: var(--lc-purple); }
+    #slide-7 .p3g-scaffold { background: var(--lc-amber-tint); border-color: var(--lc-amber); }
+    #slide-7 .p3g-scaffold h4 { color: var(--lc-amber); }
+    #slide-7 .p3g-reminder { background: var(--lc-amber-tint); border-left-color: var(--lc-amber); }
+    #slide-7 .p3g-reminder strong { color: var(--lc-amber); }
+    #slide-7 .p3g-q { border-color: var(--lc-amber); border-left-color: var(--lc-amber); }
+    #slide-7 .p3g-q .p3g-qtag { color: var(--lc-amber); }
+    #slide-7 .p3g-mark h4 { color: var(--lc-blue); }
+    #slide-7 .p3g-mark li span { color: var(--lc-blue); }
+    #slide-7 .p3g-band span { color: var(--lc-blue); }
+    #slide-7 .p3g-svgwrap { -webkit-overflow-scrolling: touch; }
+    #slide-7 .p3g-svgwrap svg { min-width: 440px; }
+    #slide-7 .lc7-summary { background: var(--lc-blue-tint); border-left: 3px solid var(--lc-blue); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.1rem 1.3rem; margin-top: 1rem; }
+    #slide-7 .lc7-summary h3 { font-size: 1rem; font-weight: 700; margin: 0 0 .6rem; color: var(--lc-blue); }
+    #slide-7 .lc7-summary ol { font-size: .92rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: 1.2rem; }
+    #slide-7 .lc7-upload { background: var(--lc-amber-tint); border-left: 3px solid var(--lc-amber); border-radius: 0 var(--radius) var(--radius) 0; padding: .55rem .8rem; margin: .6rem 0 0; font-weight: 600; }
     /* ===== SLIDE 13 PAPER 2 SECTION B PRACTICE: scoped to #slide-13 ===== */
     #slide-13 .p2sb-section { border-top: 2px solid var(--border); margin-top: 2.2rem; padding-top: 1.4rem; overflow-wrap: break-word; }
     #slide-13 .p2sb-eyebrow { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin: 0 0 .25rem; }
@@ -746,20 +802,28 @@
 <h2>Using Operant Conditioning to Change Behavior</h2>
 <p class="slide-intro">Moving beyond definitions: how operant conditioning is deliberately applied to increase or decrease target behaviors in real settings.</p>
 
-<div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:.85rem 0;margin:1rem 0 1.25rem;font-size:.9rem;line-height:1.6;">
-<h3 style="font-size:1rem;font-weight:700;margin:0 0 .4rem;color:var(--text);">Your Task</h3>
-<p style="margin:0 0 .5rem;">Work through this page from top to bottom. Read each section and complete the written activities as you reach them.</p>
-<p style="margin:0 0 .25rem;"><strong>What to complete:</strong></p>
-<ul style="margin:0 0 .5rem;padding-left:1.25rem;">
-<li><strong>All students:</strong> The two &ldquo;Apply Your Understanding&rdquo; questions and all six Behavior-Change Challenge questions.</li>
-<li><strong>HL students only:</strong> Both Paper 3 graph questions.</li>
+<div class="lc7-guide">
+<h3>Your Task</h3>
+<p>Work through this page from top to bottom. Read each section and complete the written activities as you reach them.</p>
+<p class="lc7-label lc7-label-amber">What to complete:</p>
+<div class="lc7-guide-block">
+<p class="lc7-label lc7-label-amber">All students:</p>
+<ul>
+<li>The two &ldquo;Apply Your Understanding&rdquo; questions and all six Behavior-Change Challenge questions.</li>
 </ul>
-<p style="margin:0 0 .5rem;">Write all your answers in <strong>ONE Word document</strong>. Use the headings and question numbers to organize your work.</p>
-<p style="margin:0 0 .5rem;">Write your answers before revealing the model answers. Use the models afterward to check your understanding.</p>
-<p style="margin:0;"><strong>ManageBac:</strong> Upload ONE completed Word document (.docx). You do not need to carry out the behavior-change intervention or create your own graphs.</p>
+</div>
+<div class="lc7-guide-block lc7-guide-block-hl">
+<p class="lc7-label lc7-label-purple">HL students only:</p>
+<ul>
+<li>Both Paper 3 graph questions.</li>
+</ul>
+</div>
+<p>Write all your answers in <span class="lc7-key">ONE Word document</span>. Use the headings and question numbers to organize your work.</p>
+<p>Write your answers before revealing the model answers. Use the models afterward to check your understanding.</p>
+<p><span class="lc7-label lc7-label-amber">ManageBac:</span> Upload ONE completed Word document (.docx). You do not need to carry out the behavior-change intervention or create your own graphs.</p>
 </div>
 
-<div class="collapsible"><button class="collapsible-trigger">The Logic of Deliberate Change</button><div class="collapsible-body">
+<div class="collapsible lc7-blue"><button class="collapsible-trigger">The Logic of Deliberate Change</button><div class="collapsible-body">
 <p>Knowing that consequences shape behavior means consequences can be <em>engineered</em>. A deliberate behavior-change plan has four steps:</p>
 <ol>
 <li><strong>Define the target behavior</strong> precisely and observably (&ldquo;study biology for 30 minutes,&rdquo; not &ldquo;be more motivated&rdquo;).</li>
@@ -770,7 +834,7 @@
 <p>The same logic applies to increasing behavior (such as studying or exercise) and decreasing it (such as late-night phone use or interruptions).</p>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Worked Real-Life Examples</button><div class="collapsible-body">
+<div class="collapsible lc7-green"><button class="collapsible-trigger">Worked Real-Life Examples</button><div class="collapsible-body">
 <ul>
 <li><strong>Study habits:</strong> Maya checks social media while studying. She puts her phone in another room during 40-minute study sessions. This is an environmental adjustment that removes a cue for checking; it is not itself an operant consequence. After each completed session, she watches one episode of her favorite show. The episode is an <em>intended</em> positive reinforcement: it functions as reinforcement only if studying increases, so she tracks study minutes and phone checks to see whether the plan works.</li>
 <li><strong>Exercise:</strong> A beginner runner wants to run three times per week. After each run, they mark a visible calendar and listen to a favorite podcast. These are intended positive reinforcers; if running becomes more consistent, they are working. If a run is missed, the plan schedules a specific make-up run rather than taking something away. The aim is to reinforce the routine, not punish the person.</li>
@@ -779,7 +843,7 @@
 </ul>
 </div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Why Plans Fail &mdash; Common Design Errors</button><div class="collapsible-body">
+<div class="collapsible lc7-blue"><button class="collapsible-trigger">Why Plans Fail &mdash; Common Design Errors</button><div class="collapsible-body">
 <ul>
 <li><strong>Inconsistent consequences:</strong> reinforcing today but ignoring the same behavior tomorrow teaches nothing reliable.</li>
 <li><strong>Delayed, weak, or satiated reinforcers:</strong> a reward that arrives long after the behavior, or one the learner does not value, will not strengthen it. A reinforcer can also lose power once the learner has had enough of it, so rotate rewards.</li>
@@ -790,16 +854,16 @@
 </ul>
 </div></div>
 
-<h3>Apply Your Understanding</h3>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin:.25rem 0 .75rem;">Write your own answer in your Word document before revealing the explanation.</p>
+<h3 class="lc7-amber">Apply Your Understanding</h3>
+<p class="lc7-note lc7-note-amber">Write your own answer in your Word document before revealing the explanation.</p>
 
 <div class="reveal"><div class="reveal-question"><span style="flex:1 1 auto;min-width:0;">Why do well-designed plans reward the <em>process</em> (one completed study session) rather than only the outcome (the exam grade)? Think about timing and consistency before revealing.</span></div><div class="reveal-answer"><div>Rewarding each completed study session places the consequence close to the behavior being encouraged, which makes it easier to establish a regular study habit than relying only on an exam grade received much later. Delayed consequences can still influence behavior, and intermittent reinforcement can help maintain behavior that has already been learned. The key is that the consequence must actually strengthen the behavior; a reward is only a reinforcer if the behavior increases.</div></div></div>
 
 <div class="reveal"><div class="reveal-question">A parent wants to reduce a child's interrupting but only ever reacts &mdash; loudly &mdash; when the child interrupts. Predict what will happen over time using operant principles.</div><div class="reveal-answer"><div>Interrupting may well increase. The loud reaction is attention, which can function as a powerful reinforcer for many children, delivered immediately and consistently after the behavior. Meanwhile, quiet waiting earns nothing. The parent believes they are punishing the interruption, but they may be positively reinforcing it. A stronger plan reinforces the desired alternative behavior &mdash; waiting quietly or asking for a turn &mdash; as well as managing the unwanted behavior. The classification depends on what happens to the behavior over time: if interrupting increases, the attention is functioning as reinforcement.</div></div></div>
 
-<h3>Behavior-Change Challenge</h3>
-<p><strong>Scenario.</strong> A student regularly checks their phone while studying. They want to reduce phone checking and increase the amount of time they spend studying without distractions.</p>
-<p><strong>Your task:</strong> Design a proposed behavior-change plan using operant conditioning. Answer the following six questions in your Word document. This is a proposed intervention, not a practical investigation you must carry out.</p>
+<h3 class="lc7-amber">Behavior-Change Challenge</h3>
+<p><span class="lc7-label lc7-label-amber">Scenario.</span> A student regularly checks their phone while studying. They want to reduce phone checking and increase the amount of time they spend studying without distractions.</p>
+<p><span class="lc7-label lc7-label-amber">Your task:</span> Design a proposed behavior-change plan using operant conditioning. Answer the following six questions in your Word document. This is a proposed intervention, not a practical investigation you must carry out.</p>
 <table style="width:100%;border-collapse:collapse;font-size:.95rem;line-height:1.45;margin:.5rem 0;">
 <thead><tr><th style="padding:.3rem .5rem;text-align:left;font-weight:400;border-bottom:1px solid var(--border);">Question</th><th style="padding:.3rem .5rem;text-align:left;font-weight:400;border-bottom:1px solid var(--border);">Instructions</th></tr></thead>
 <tbody>
@@ -810,12 +874,12 @@
 <tr><td style="padding:.3rem .5rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">5. Measuring success</td><td style="padding:.3rem .5rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Explain what data you would collect to determine whether the behavior changed.</td></tr>
 <tr><td style="padding:.3rem .5rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">6. Evaluation</td><td style="padding:.3rem .5rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);">Identify one realistic limitation of your plan, explain why it matters, and suggest an improvement.</td></tr>
 </tbody></table>
-<p>Complete your own answers before revealing the model.</p>
+<p class="lc7-note lc7-note-amber">Complete your own answers before revealing the model.</p>
 <div class="reveal"><div class="reveal-question">Reveal Model Answer</div><div class="reveal-answer"><div>Target behavior: checking a phone while studying, with the goal of increasing uninterrupted study time. Baseline: for one week the student tallies each phone check while studying and records total distraction-free minutes per day. Strategy: the phone stays in another room during 30-minute study sessions; after each completed session, the student earns 15 minutes of a preferred leisure activity such as gaming or videos. Psychological explanation: earning the activity is intended as positive reinforcement — a desirable stimulus added after the target behavior — which should make distraction-free studying more likely. This is only an attempt at positive reinforcement: reinforcement is established only if the behavior actually increases. If distraction-free minutes rise across weeks, the activity functioned as a reinforcer; if studying does not increase, the consequence was not reinforcing and the plan must change. Measuring success: compare daily distraction-free minutes and phone checks before and after the plan begins. Evaluation: one limitation is that the student controls both the plan and the data, so results may reflect wishful recording rather than real change; having a roommate verify phone checks, or using screen-time records, would improve measurement.</div></div></div>
-<p>Compare your plan with the model. Check whether your behavior is measurable, your consequence is clearly explained, and your evaluation identifies a realistic limitation.</p>
+<p class="lc7-note lc7-note-green">Compare your plan with the model. Check whether your behavior is measurable, your consequence is clearly explained, and your evaluation identifies a realistic limitation.</p>
 
-<p class="p3g-eyebrow">Paper 3 Practice &mdash; HL Students Only</p>
-<h3>Interpreting Behavior-Change Data &mdash; Paper 3 Practice</h3>
+<p class="p3g-eyebrow lc7-purple">Paper 3 Practice &mdash; HL Students Only</p>
+<h3 class="lc7-purple">Interpreting Behavior-Change Data &mdash; Paper 3 Practice</h3>
 <div class="p3g-lead">
 <p>Psychologists need evidence that a behavior-change strategy actually works. Graphs help researchers identify patterns, compare results, and evaluate what the findings support.</p>
 <p>In this activity, you will learn to interpret two types of graphs and practice answering Paper 3-style questions.</p>
@@ -840,15 +904,15 @@
       <rect x="220" y="40" width="220" height="160" fill="var(--primary-light)" opacity="0.5"/>
       <text x="146" y="55" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--text-secondary)">Baseline &mdash; no rewards</text>
       <text x="330" y="55" text-anchor="middle" font-size="9.5" font-weight="700" fill="var(--primary)">Reward system introduced</text>
-      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--border)" stroke-width="1"/>
-      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--text-secondary)" stroke-width="1.2"/>
+      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--text-secondary)" stroke-width="1.2"/>
       <line x1="68" y1="200" x2="72" y2="200" stroke="var(--border)"/><text x="64" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
       <line x1="68" y1="168" x2="72" y2="168" stroke="var(--border)"/><text x="64" y="171" text-anchor="end" font-size="10" fill="var(--text-secondary)">1</text>
       <line x1="68" y1="136" x2="72" y2="136" stroke="var(--border)"/><text x="64" y="139" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
       <line x1="68" y1="104" x2="72" y2="104" stroke="var(--border)"/><text x="64" y="107" text-anchor="end" font-size="10" fill="var(--text-secondary)">3</text>
       <line x1="68" y1="72" x2="72" y2="72" stroke="var(--border)"/><text x="64" y="75" text-anchor="end" font-size="10" fill="var(--text-secondary)">4</text>
       <line x1="68" y1="40" x2="72" y2="40" stroke="var(--border)"/><text x="64" y="43" text-anchor="end" font-size="10" fill="var(--text-secondary)">5</text>
-      <text x="72" y="14" font-size="10.5" fill="var(--text-secondary)">Completed study sessions per week</text>
+      <text x="26" y="120" font-size="11" fill="var(--text)" text-anchor="middle" transform="rotate(-90 26 120)">Completed study sessions per week</text>
       <polyline points="100,168 180,168 260,104 340,72 420,72" fill="none" stroke="var(--primary)" stroke-width="2"/>
       <circle cx="100" cy="168" r="3.5" fill="var(--primary)"/>
       <circle cx="180" cy="168" r="3.5" fill="var(--primary)"/>
@@ -865,7 +929,7 @@
       <text x="260" y="215" text-anchor="middle" font-size="10" fill="var(--text)">3</text>
       <text x="340" y="215" text-anchor="middle" font-size="10" fill="var(--text)">4</text>
       <text x="420" y="215" text-anchor="middle" font-size="10" fill="var(--text)">5</text>
-      <text x="256" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Week</text>
+      <text x="256" y="236" text-anchor="middle" font-size="11" fill="var(--text)">Week</text>
     </svg>
 </div>
 <p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
@@ -917,9 +981,9 @@
 <div class="p3g-svgwrap">
     <svg viewBox="0 0 460 240" role="img" aria-label="Bar graph comparing mean completed study sessions per week: 2.5 in the no-reward group and 3.8 in the reward group, on a vertical axis from 0 to 4." preserveAspectRatio="xMidYMid meet">
       <title>Mean weekly study sessions by reward condition (teacher-created example)</title>
-      <text x="72" y="14" font-size="10.5" fill="var(--text-secondary)">Mean completed study sessions per week</text>
-      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--border)" stroke-width="1"/>
-      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--border)" stroke-width="1"/>
+      <text x="26" y="120" font-size="11" fill="var(--text)" text-anchor="middle" transform="rotate(-90 26 120)">Mean completed study sessions per week</text>
+      <line x1="72" y1="40" x2="72" y2="200" stroke="var(--text-secondary)" stroke-width="1.2"/>
+      <line x1="72" y1="200" x2="440" y2="200" stroke="var(--text-secondary)" stroke-width="1.2"/>
       <line x1="68" y1="200" x2="72" y2="200" stroke="var(--border)"/><text x="64" y="203" text-anchor="end" font-size="10" fill="var(--text-secondary)">0</text>
       <line x1="68" y1="160" x2="72" y2="160" stroke="var(--border)"/><text x="64" y="163" text-anchor="end" font-size="10" fill="var(--text-secondary)">1</text>
       <line x1="68" y1="120" x2="72" y2="120" stroke="var(--border)"/><text x="64" y="123" text-anchor="end" font-size="10" fill="var(--text-secondary)">2</text>
@@ -931,7 +995,7 @@
       <text x="348" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--text)">3.8</text>
       <text x="164" y="216" text-anchor="middle" font-size="10.5" fill="var(--text)">No rewards</text>
       <text x="348" y="216" text-anchor="middle" font-size="10.5" fill="var(--text)">Rewards</text>
-      <text x="256" y="234" text-anchor="middle" font-size="10.5" fill="var(--text-secondary)">Reward condition</text>
+      <text x="256" y="236" text-anchor="middle" font-size="11" fill="var(--text)">Reward condition</text>
     </svg>
 </div>
 <p class="p3g-fignote">Teacher-created example data. Not findings from a published study.</p>
@@ -967,17 +1031,17 @@
 <p class="p3g-band"><strong>Only the first issue is credited.</strong> Naming several limitations is less effective than explaining one properly.</p>
 </div>
 
-<h3>Before You Submit</h3>
+<h3 class="lc7-amber">Before You Submit</h3>
 <p>Check that your Word document includes:</p>
 <ul>
-<li><strong>All students:</strong> Two &ldquo;Apply Your Understanding&rdquo; responses and six Behavior-Change Challenge answers.</li>
-<li><strong>HL students:</strong> Both Paper 3 graph responses as well.</li>
+<li><span class="lc7-label lc7-label-amber">All students:</span> Two &ldquo;Apply Your Understanding&rdquo; responses and six Behavior-Change Challenge answers.</li>
+<li><span class="lc7-label lc7-label-purple">HL students:</span> Both Paper 3 graph responses as well.</li>
 </ul>
-<p><strong>Upload ONE Word document (.docx) to ManageBac.</strong></p>
+<p class="lc7-upload">Upload ONE Word document (.docx) to ManageBac.</p>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<div class="lc7-summary">
+<h3>What Should I Remember?</h3>
+<ol>
 <li>A behavior-change plan defines the target precisely, measures a baseline, chooses a consequence strategy, and implements and monitors the plan.</li>
 <li>Immediate, reliable consequences are especially useful when establishing a new behavior; once it is established, intermittent reinforcement can help maintain it.</li>
 <li>Token systems can bridge the delay between behavior and reward by using generalized reinforcers.</li>
