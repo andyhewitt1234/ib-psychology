@@ -200,11 +200,24 @@
     #slide-7 .p3g-mark li span { font-weight: 800; color: var(--primary); }
     #slide-7 .p3g-band { font-size: .88rem; line-height: 1.6; margin: 0 0 .2rem; }
     #slide-7 .p3g-band span { font-weight: 800; color: var(--primary); }
-    /* ===== SLIDE 7 SUBTLE BACKGROUNDS: instructional = light blue, written activities = light amber,
-       HL-only Paper 3 = light mint. Background tints only, text keeps default styling. ===== */
-    #slide-7 .collapsible-body { background: var(--primary-light); }
+    /* ===== SLIDE 7 PALETTE: general instructions #F8FAFC, all-student #EFF6FF, HL-only #F5F3FF,
+       written activities #FFFDF4, teaching content white. Background tints only; all text stays dark. ===== */
     #slide-7 .p3g-svgwrap { -webkit-overflow-scrolling: touch; }
     #slide-7 .p3g-svgwrap svg { min-width: 440px; }
+    #slide-7 .reveal { background: var(--bg); border: 1px solid var(--border); }
+    #slide-7 .reveal:hover { border-color: var(--text-muted); }
+    #slide-7 .reveal-question { color: var(--text); }
+    #slide-7 .reveal-question::after { color: var(--text-secondary); background: var(--bg-secondary); border: 1px solid var(--border); }
+    #slide-7 .p3g-eyebrow { color: var(--text-secondary); }
+    #slide-7 .p3g-lead { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--border); border-radius: var(--radius); }
+    #slide-7 .p3g-teach strong { color: var(--text); }
+    #slide-7 .p3g-reminder { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--border); border-radius: var(--radius); }
+    #slide-7 .p3g-reminder strong { color: var(--text); }
+    #slide-7 .p3g-q { background: var(--bg); border: 1px solid var(--border); }
+    #slide-7 .p3g-q .p3g-qtag { color: var(--text-secondary); }
+    #slide-7 .p3g-mark h4 { color: var(--text); }
+    #slide-7 .p3g-mark li span { color: var(--text); }
+    #slide-7 .p3g-band span { color: var(--text); }
     /* ===== SLIDE 13 PAPER 2 SECTION B PRACTICE: scoped to #slide-13 ===== */
     #slide-13 .p2sb-section { border-top: 2px solid var(--border); margin-top: 2.2rem; padding-top: 1.4rem; overflow-wrap: break-word; }
     #slide-13 .p2sb-eyebrow { font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--primary); margin: 0 0 .25rem; }
@@ -751,14 +764,22 @@
 <h2>Using Operant Conditioning to Change Behavior</h2>
 <p class="slide-intro">Moving beyond definitions: how operant conditioning is deliberately applied to increase or decrease target behaviors in real settings.</p>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.9rem 1.1rem;margin:1rem 0 1.25rem;font-size:.9rem;line-height:1.6;">
+<div style="background:#F8FAFC;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.9rem 1.1rem;margin:1rem 0 1.25rem;font-size:.9rem;line-height:1.6;">
 <h3 style="font-size:1rem;font-weight:700;margin:0 0 .5rem;">Your Task</h3>
 <p style="margin:0 0 .5rem;">Work through this page from top to bottom. Read each section and complete the written activities as you reach them.</p>
-<p style="margin:0 0 .25rem;"><strong>What to complete:</strong></p>
-<ul style="margin:0 0 .5rem;padding-left:1.25rem;">
-<li><strong>All students:</strong> The two &ldquo;Apply Your Understanding&rdquo; questions and all six Behavior-Change Challenge questions.</li>
-<li><strong>HL students only:</strong> Both Paper 3 graph questions.</li>
+<p style="margin:0 0 .3rem;"><strong>What to complete:</strong></p>
+<div style="background:#EFF6FF;border-radius:var(--radius);padding:.55rem .8rem;margin:0 0 .5rem;">
+<p style="font-weight:600;margin:0 0 .2rem;">All students</p>
+<ul style="margin:0;padding-left:1.1rem;">
+<li>The two &ldquo;Apply Your Understanding&rdquo; questions and all six Behavior-Change Challenge questions.</li>
 </ul>
+</div>
+<div style="background:#F5F3FF;border-radius:var(--radius);padding:.55rem .8rem;margin:0 0 .6rem;">
+<p style="font-weight:600;margin:0 0 .2rem;">HL students only</p>
+<ul style="margin:0;padding-left:1.1rem;">
+<li>Both Paper 3 graph questions.</li>
+</ul>
+</div>
 <p style="margin:0 0 .5rem;">Write all your answers in <strong>ONE Word document</strong>. Use the headings and question numbers to organize your work.</p>
 <p style="margin:0 0 .5rem;">Write your answers before revealing the model answers. Use the models afterward to check your understanding.</p>
 <p style="margin:0;"><strong>ManageBac:</strong> Upload ONE completed Word document (.docx). You do not need to carry out the behavior-change intervention or create your own graphs.</p>
@@ -795,7 +816,7 @@
 </ul>
 </div></div>
 
-<div style="background:var(--warning-light);border-left:3px solid var(--warning);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1.1rem;margin:.75rem 0;">
+<div style="background:#FFFDF4;border-radius:var(--radius);padding:.85rem 1.1rem;margin:.75rem 0;">
 <h3>Apply Your Understanding</h3>
 <p style="font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin:.25rem 0 .75rem;">Write your own answer in your Word document before revealing the explanation.</p>
 
@@ -804,7 +825,7 @@
 <div class="reveal"><div class="reveal-question">A parent wants to reduce a child's interrupting but only ever reacts &mdash; loudly &mdash; when the child interrupts. Predict what will happen over time using operant principles.</div><div class="reveal-answer"><div>Interrupting may well increase. The loud reaction is attention, which can function as a powerful reinforcer for many children, delivered immediately and consistently after the behavior. Meanwhile, quiet waiting earns nothing. The parent believes they are punishing the interruption, but they may be positively reinforcing it. A stronger plan reinforces the desired alternative behavior &mdash; waiting quietly or asking for a turn &mdash; as well as managing the unwanted behavior. The classification depends on what happens to the behavior over time: if interrupting increases, the attention is functioning as reinforcement.</div></div></div>
 </div>
 
-<div style="background:var(--warning-light);border-left:3px solid var(--warning);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1.1rem;margin:.75rem 0;">
+<div style="background:#FFFDF4;border-radius:var(--radius);padding:.85rem 1.1rem;margin:.75rem 0;">
 <h3>Behavior-Change Challenge</h3>
 <p><strong>Scenario.</strong> A student regularly checks their phone while studying. They want to reduce phone checking and increase the amount of time they spend studying without distractions.</p>
 <p><strong>Your task:</strong> Design a proposed behavior-change plan using operant conditioning. Answer the following six questions in your Word document. This is a proposed intervention, not a practical investigation you must carry out.</p>
@@ -823,10 +844,9 @@
 <p>Compare your plan with the model. Check whether your behavior is measurable, your consequence is clearly explained, and your evaluation identifies a realistic limitation.</p>
 </div>
 
-<div style="background:var(--accent-light);border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;padding:.65rem .9rem;margin:1.2rem 0 .7rem;">
+<div style="background:#F5F3FF;border-radius:var(--radius);padding:1rem 1.15rem;margin:1.2rem 0 1rem;">
 <p class="p3g-eyebrow" style="margin:0 0 .15rem;">Paper 3 Practice &mdash; HL Students Only</p>
-<h3 style="margin:0;">Interpreting Behavior-Change Data &mdash; Paper 3 Practice</h3>
-</div>
+<h3 style="margin:0 0 .6rem;">Interpreting Behavior-Change Data &mdash; Paper 3 Practice</h3>
 <div class="p3g-lead">
 <p>Psychologists need evidence that a behavior-change strategy actually works. Graphs help researchers identify patterns, compare results, and evaluate what the findings support.</p>
 <p>In this activity, you will learn to interpret two types of graphs and practice answering Paper 3-style questions.</p>
@@ -977,8 +997,9 @@
 </ul>
 <p class="p3g-band"><strong>Only the first issue is credited.</strong> Naming several limitations is less effective than explaining one properly.</p>
 </div>
+</div>
 
-<div style="background:var(--warning-light);border-left:3px solid var(--warning);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1.1rem;margin:.75rem 0;">
+<div style="background:#F8FAFC;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.85rem 1.1rem;margin:.75rem 0;">
 <h3>Before You Submit</h3>
 <p>Check that your Word document includes:</p>
 <ul>
@@ -988,8 +1009,8 @@
 <p><strong>Upload ONE Word document (.docx) to ManageBac.</strong></p>
 </div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
 <li>A behavior-change plan defines the target precisely, measures a baseline, chooses a consequence strategy, and implements and monitors the plan.</li>
 <li>Immediate, reliable consequences are especially useful when establishing a new behavior; once it is established, intermittent reinforcement can help maintain it.</li>
