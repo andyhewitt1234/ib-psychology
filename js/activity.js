@@ -16,7 +16,7 @@ function renderActivity(actId, cfg) {
   if (!el) return;
   var html = '';
   html += '<div class="act-header">';
-  html += '<div class="act-badge act-badge-' + cfg.type + '">' + cfg.type.charAt(0).toUpperCase() + cfg.type.slice(1).replace(/-/g, ' ') + '</div>';
+  if (!cfg.hideBadge) html += '<div class="act-badge act-badge-' + cfg.type + '">' + cfg.type.charAt(0).toUpperCase() + cfg.type.slice(1).replace(/-/g, ' ') + '</div>';
   html += '<div class="act-title">' + cfg.title + '</div>';
   if (cfg.subtitle) html += '<div class="act-subtitle">' + cfg.subtitle + '</div>';
   html += '</div>';
@@ -39,6 +39,7 @@ function renderActivityBody(actId, cfg) {
     case 'classification': return renderClassificationBody(actId, cfg);
     case 'short-response': return renderShortResponseBody(actId, cfg);
     case 'scenario-application': return renderScenarioBody(actId, cfg);
+    case 'reconstruction': return renderReconstructionBody(actId, cfg);
     case 'spot-the-problem': return renderSpotProblemBody(actId, cfg);
     case 'compare-contrast': return renderCompareBody(actId, cfg);
     case 'analysis': return renderAnalysisBody(actId, cfg);
@@ -64,7 +65,7 @@ function renderActions(actId, cfg) {
     html += '<button class="act-btn act-btn-primary" id="' + actId + '-check" onclick="checkActivity(\'' + actId + '\')" disabled>Check Placements</button>';
   } else if (cfg.type === 'spot-the-problem' || cfg.type === 'spot-confound') {
     html += '<button class="act-btn act-btn-primary" id="' + actId + '-check" onclick="checkActivity(\'' + actId + '\')">Check Selections</button>';
-  } else if (cfg.type === 'scenario-application' || cfg.type === 'prediction' || cfg.type === 'conclude') {
+  } else if (cfg.type === 'scenario-application' || cfg.type === 'reconstruction' || cfg.type === 'prediction' || cfg.type === 'conclude') {
     html += '<button class="act-btn act-btn-primary" id="' + actId + '-check" onclick="checkActivity(\'' + actId + '\')">Check Answers</button>';
   } else if (cfg.type === 'compare-contrast') {
     html += '<button class="act-btn act-btn-primary" onclick="showModelAnswer(\'' + actId + '\')">Show Model Comparison</button>';
@@ -275,7 +276,7 @@ function renderScenarioBody(actId, cfg) {
   for (var i = 0; i < cfg.questions.length; i++) {
     var q = cfg.questions[i];
     html += '<div class="act-scenario-q" data-act="' + actId + '" data-q="' + i + '">';
-    html += '<div class="act-scenario-q-label">' + (i + 1) + '. ' + q.label + '</div>';
+    html += '<div class="act-scenario-q-label">' + (i + 1) + '. ' + (q.label || q.scenario || '') + '</div>';
     html += '<div class="act-scenario-q-options">';
     for (var o = 0; o < q.options.length; o++) {
       html += '<div class="act-scenario-q-option" data-act="' + actId + '" data-q="' + i + '" data-opt="' + o + '" onclick="scnOptClick(this)">';
@@ -298,6 +299,92 @@ function scnOptClick(el) {
   if (!qEl) return;
   qEl.querySelectorAll('.act-scenario-q-option').forEach(function(o) { o.classList.remove('selected'); });
   el.classList.add('selected');
+}
+
+
+// ===== RECONSTRUCTION (original vs later recollection) =====
+function renderReconstructionBody(actId, cfg) {
+  var html = '<div class="act-recon-questions">';
+  for (var i = 0; i < cfg.questions.length; i++) {
+    var q = cfg.questions[i];
+    html += '<div class="act-recon-q" data-act="' + actId + '" data-q="' + i + '">';
+    html += '<div class="act-recon-q-head"><span class="act-recon-q-count">Question ' + (i + 1) + ' of ' + cfg.questions.length + '</span></div>';
+    html += '<div class="act-recon-compare">';
+    html += '<div class="act-recon-panel act-recon-original"><div class="act-recon-label">Original Detail</div><p class="act-recon-text">' + q.original + '</p></div>';
+    html += '<div class="act-recon-arrow" aria-hidden="true">&rarr;</div>';
+    html += '<div class="act-recon-panel act-recon-later"><div class="act-recon-label">Later Recollection</div><p class="act-recon-text">' + q.later + '</p></div>';
+    html += '</div>';
+    html += '<div class="act-recon-prompt">What changed in the recollection?</div>';
+    html += '<div class="act-recon-instruction">Choose the best explanation:</div>';
+    html += '<div class="act-recon-options" role="group" aria-label="Question ' + (i + 1) + ' options">';
+    for (var o = 0; o < q.options.length; o++) {
+      html += '<button type="button" class="act-recon-option" data-act="' + actId + '" data-q="' + i + '" data-opt="' + o + '" onclick="reconOptClick(this)">';
+      html += '<span class="act-radio-dot" aria-hidden="true"></span><span>' + q.options[o] + '</span></button>';
+    }
+    html += '</div>';
+    html += '<div class="act-recon-feedback" id="' + actId + '-qf-' + i + '" aria-live="polite"></div>';
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
+}
+
+function reconOptClick(el) {
+  var actId = el.getAttribute('data-act');
+  var qIdx = el.getAttribute('data-q');
+  var state = ACT_STATES[actId];
+  if (state && state.answered) return;
+  var qEl = document.querySelector('[data-act="' + actId + '"].act-recon-q[data-q="' + qIdx + '"]');
+  if (!qEl) return;
+  qEl.querySelectorAll('.act-recon-option').forEach(function(o) { o.classList.remove('selected'); });
+  el.classList.add('selected');
+}
+
+function checkReconstruction(actId, cfg) {
+  var total = cfg.questions.length;
+  var selected = [];
+  var allAnswered = true;
+  for (var i = 0; i < total; i++) {
+    var qEl = document.querySelector('[data-act="' + actId + '"].act-recon-q[data-q="' + i + '"]');
+    if (!qEl) { allAnswered = false; continue; }
+    var choice = qEl.querySelector('.act-recon-option.selected');
+    selected.push(choice);
+    if (!choice) allAnswered = false;
+  }
+  if (!allAnswered) {
+    ACT_STATES[actId].answered = false;
+    showFeedback(actId, false, 'Choose an explanation for every question before checking.');
+    return;
+  }
+  var correct = 0;
+  for (var j = 0; j < total; j++) {
+    var q = cfg.questions[j];
+    var qBox = document.querySelector('[data-act="' + actId + '"].act-recon-q[data-q="' + j + '"]');
+    var chosen = selected[j];
+    var fb = document.getElementById(actId + '-qf-' + j);
+    qBox.querySelectorAll('.act-recon-option').forEach(function(o) {
+      o.classList.add('disabled');
+      o.classList.remove('selected');
+    });
+    if (parseInt(chosen.getAttribute('data-opt')) === q.correct) {
+      chosen.classList.add('correct');
+      correct++;
+      if (fb) { fb.className = 'act-recon-feedback show correct'; fb.innerHTML = '<strong>Correct.</strong> ' + q.feedback.correct; }
+    } else {
+      chosen.classList.add('incorrect');
+      var correctOpt = qBox.querySelector('[data-opt="' + q.correct + '"]');
+      if (correctOpt) correctOpt.classList.add('correct');
+      if (fb) { fb.className = 'act-recon-feedback show incorrect'; fb.innerHTML = '<strong>Not quite.</strong> ' + q.feedback.incorrect; }
+    }
+  }
+  var msg = correct === total
+    ? 'Perfect score! You identified all three forms of reconstruction correctly.'
+    : correct >= total - 1
+      ? 'Good work! ' + correct + ' of ' + total + ' correct. Review the feedback for the remaining question.'
+      : 'You got ' + correct + ' of ' + total + '. Review the feedback and try to identify what changed in each recollection.';
+  showFeedback(actId, correct === total, msg);
+  var checkBtn = document.getElementById(actId + '-check');
+  if (checkBtn) checkBtn.disabled = true;
 }
 
 // ===== SPOT THE PROBLEM =====
@@ -431,6 +518,7 @@ function checkActivity(actId) {
   switch (cfg.type) {
     case 'classification': checkClassification(actId, cfg); break;
     case 'scenario-application': checkScenario(actId, cfg); break;
+    case 'reconstruction': checkReconstruction(actId, cfg); break;
     case 'spot-the-problem': checkSpotProblem(actId, cfg); break;
     case 'spot-confound': checkSpotConfound(actId, cfg); break;
     case 'research-design': checkDesignBuilder(actId, cfg); break;
@@ -499,12 +587,12 @@ function checkScenario(actId, cfg) {
     if (optIdx === cfg.questions[i].correct) {
       selected.classList.add('correct');
       correct++;
-      if (fb) { fb.className = 'act-scenario-q-feedback show correct'; fb.innerHTML = '<strong>Correct.</strong> ' + cfg.questions[i].feedback.correct; }
+      if (fb) { var okMsg = cfg.questions[i].feedback.correct.replace(/^Correct\.\s*/i, ''); fb.className = 'act-scenario-q-feedback show correct'; fb.innerHTML = '<strong>Correct.</strong> ' + okMsg; }
     } else {
       selected.classList.add('incorrect');
       var correctOpt = qEl.querySelector('[data-opt="' + cfg.questions[i].correct + '"]');
       if (correctOpt) correctOpt.classList.add('correct');
-      if (fb) { fb.className = 'act-scenario-q-feedback show incorrect'; fb.innerHTML = '<strong>Not quite.</strong> ' + cfg.questions[i].feedback.incorrect; }
+      if (fb) { var noMsg = cfg.questions[i].feedback.incorrect.replace(/^(Not quite\.|Incorrect\.)\s*/i, ''); fb.className = 'act-scenario-q-feedback show incorrect'; fb.innerHTML = '<strong>Not quite.</strong> ' + noMsg; }
     }
     if (cfg.questions[i].explain) {
       if (fb) fb.innerHTML += '<div class="act-scenario-q-explain">' + cfg.questions[i].explain + '</div>';

@@ -1645,8 +1645,48 @@
 </ol></div>
 </div>
 <div class="slide activity-slide" data-slide="16" id="slide-16"><h2>Reconstruct the Memory</h2>
-<p class="slide-intro">Compare each original detail with how it was later retold. Identify which type of schema-driven reconstruction occurred &mdash; the feedback explains each judgement.</p>
+<p class="slide-intro">Memories are not always recalled exactly as events occurred. In this activity, compare an original detail with how it was later remembered. Identify what changed and decide which form of reconstruction best explains the difference.</p>
+<style>
+#slide-16 .s16-how{background:transparent;border:0;border-radius:0;padding:0;margin:.1rem 0 1rem}
+#slide-16 .s16-how-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-16 .s16-how-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.45rem .9rem;margin:0;padding:0}
+#slide-16 .s16-how-list li{display:flex;gap:.5rem;align-items:flex-start;font-size:.88rem;line-height:1.5;color:var(--text)}
+#slide-16 .s16-how-num{flex:0 0 auto;width:1.35rem;height:1.35rem;border-radius:50%;background:#FFFFFF;border:1px solid #D1D5DB;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:var(--text-secondary)}
+#slide-16 .s16-guide{margin:.2rem 0 .95rem}
+#slide-16 .s16-guide-title{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-16 .s16-guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;align-items:stretch}
+#slide-16 .s16-guide-card{background:#F3F5F7;border:1px solid #E5E7EB;border-radius:8px;padding:.75rem .85rem;min-width:0}
+#slide-16 .s16-guide-card h3{margin:0 0 .3rem;font-size:.9rem;font-weight:700;line-height:1.3;color:var(--text)}
+#slide-16 .s16-guide-card p{margin:0;font-size:.82rem;line-height:1.5;color:var(--text-secondary)}
+#slide-16 .s16-guide-note{margin:.55rem 0 0;font-size:.8rem;line-height:1.5;color:#64748B}
+#slide-16 .s16-source-note{margin:.55rem 0 0;font-size:.78rem;line-height:1.5;color:#64748B;font-style:italic}
+#slide-16 .act-container{border:1px solid var(--border);border-left:1px solid var(--border);background:#FFFFFF;border-radius:var(--radius-lg);padding:1.1rem 1.15rem;margin-top:1rem}
+#slide-16 .act-header{margin-bottom:.9rem}
+#slide-16 .act-title{font-size:1.1rem;font-weight:700;color:var(--text)}
+#slide-16 .act-btn:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+@media (max-width:760px){#slide-16 .s16-guide-grid{grid-template-columns:1fr}}
+@media (max-width:640px){#slide-16 .s16-how-list{grid-template-columns:1fr}#slide-16 .act-container{padding:.9rem .8rem}}
+</style>
+<div class="s16-how">
+<p class="s16-how-title">How to complete the activity</p>
+<ol class="s16-how-list">
+<li><span class="s16-how-num" aria-hidden="true">1</span><span>Read the original detail and the later recollection.</span></li>
+<li><span class="s16-how-num" aria-hidden="true">2</span><span>Identify exactly what changed.</span></li>
+<li><span class="s16-how-num" aria-hidden="true">3</span><span>Choose the best explanation.</span></li>
+<li><span class="s16-how-num" aria-hidden="true">4</span><span>Check the feedback to understand the reasoning.</span></li>
+</ol>
+</div>
+<div class="s16-guide">
+<p class="s16-guide-title">Three forms of reconstruction</p>
+<div class="s16-guide-grid">
+<div class="s16-guide-card"><h3>Leveling</h3><p>Information is removed or simplified. A person recalls fewer details than were originally presented.</p></div>
+<div class="s16-guide-card"><h3>Sharpening</h3><p>Certain details become more prominent. A particular feature is emphasized or exaggerated in the recollection.</p></div>
+<div class="s16-guide-card"><h3>Assimilation</h3><p>Information is changed to fit existing knowledge or expectations. An unfamiliar detail is transformed into something more familiar or meaningful.</p></div>
+</div>
+<p class="s16-guide-note">These categories describe patterns in recollections. They help you analyze what changed, but they do not prove that a particular schema caused an individual memory error. Conventionalization, where unfamiliar content is reshaped toward familiar cultural expectations, is one form of assimilation.</p>
+</div>
 <div class="act-container" id="lc-p08-bartlett"></div>
+<p class="s16-source-note">The retellings are teaching examples modeled on reconstruction patterns reported by Bartlett (1932), not verbatim participant transcripts.</p>
 </div>
 
 
@@ -3627,13 +3667,52 @@
   });
 
   initActivity('lc-p08-bartlett', {
-    type: 'scenario-application',
-    title: 'Reconstruct the Memory',
-    subtitle: 'Identify which type of schema-driven reconstruction occurred in each retelling.',
+    type: 'reconstruction',
+    title: 'Identify the Memory Change',
+    hideBadge: true,
     questions: [
-      { scenario: 'The original story mentions "two seals were hunted." A retelling changes this to "two men went fishing."', options: ['Sharpening: detail made more vivid', 'Levelling: detail omitted entirely', 'Rationalisation: unfamiliar detail made familiar and sensible', 'Invention: detail added that was never there'], correct: 2, feedback: { correct: 'Correct. Seal hunting is unfamiliar to British participants; fishing is a familiar river activity. The schema replaced an alien concept with a schema-consistent one - rationalisation toward cultural familiarity.', incorrect: 'This is rationalisation: the unfamiliar (seal hunting) was replaced with a culturally familiar equivalent (fishing). Bartlett found this pattern systematically - participants reshaped alien content toward their own cultural schemas.' } },
-      { scenario: 'In the original story, a man is struck by "falling darkness." In the retelling, this becomes "he was hit by a stranger."', options: ['Rationalisation: unfamiliar detail made sensible', 'Levelling: detail lost', 'Cultural conventionalisation: reshaped toward familiar cultural frameworks', 'Both rationalisation and cultural conventionalisation'], correct: 3, feedback: { correct: 'Correct. "Falling darkness" is a culturally specific metaphor unfamiliar to British readers. Replacing it with a physical assault is both rationalisation (making the cause sensible) and cultural conventionalisation (reshaping toward a familiar framework).', incorrect: 'This change involves both processes: the unfamiliar metaphor (falling darkness) was rationalised into something physically plausible (a stranger) AND conventionalised toward a British cultural framework where violence, not supernatural darkness, causes injury.' } },
-      { scenario: 'The original tale mentions "ghosts" throughout. In retellings, ghost references gradually disappear across the chain.', options: ['Sharpening: details become more vivid', 'Rationalisation: unfamiliar detail made sensible', 'Levelling: unfamiliar detail dropped over time', 'Cultural conventionalisation'], correct: 2, feedback: { correct: 'Correct. As the story passes through the chain (serial reproduction), the supernatural elements that do not fit the participants\' schemas are progressively levelled out - omitted rather than retained. Schema-consistent details survive; schema-inconsistent ones fade.', incorrect: 'This is levelling: unfamiliar, schema-inconsistent details (ghosts) are progressively dropped across serial reproductions. The supernatural elements did not fit participants\' schemas and were systematically eliminated over retellings.' } }
+      {
+        original: 'Two young men went down to the river to hunt seals.',
+        later: 'Two men went to the river to go fishing.',
+        options: [
+          '<strong>Leveling</strong> &mdash; Information was omitted or simplified.',
+          '<strong>Sharpening</strong> &mdash; A detail became more prominent or exaggerated.',
+          '<strong>Assimilation</strong> &mdash; Information was changed to fit expectations.'
+        ],
+        correct: 2,
+        feedback: {
+          correct: 'Seal hunting was unfamiliar to Bartlett\'s British participants, so it was changed into the more familiar activity of fishing. This is assimilation: the detail was altered to fit existing knowledge and expectations.',
+          incorrect: 'Look at what replaced what. The unfamiliar activity of seal hunting became the familiar activity of fishing. It was not omitted or exaggerated, so this is assimilation.'
+        }
+      },
+      {
+        original: 'Two young men from Egulac went up the river to a town on the other side of Kalama.',
+        later: 'Two young men from a village went up the river to a town.',
+        options: [
+          '<strong>Leveling</strong> &mdash; Information was omitted or simplified.',
+          '<strong>Sharpening</strong> &mdash; A detail became more prominent or exaggerated.',
+          '<strong>Assimilation</strong> &mdash; Information was changed to fit expectations.'
+        ],
+        correct: 0,
+        feedback: {
+          correct: 'The unfamiliar place names were dropped and the account became less specific. This is leveling: information is omitted or simplified.',
+          incorrect: 'The place names did not become more vivid, and no new detail replaced them. They were removed, so this is leveling.'
+        }
+      },
+      {
+        original: 'Something black came out of his mouth.',
+        later: 'A stream of black liquid poured from his mouth as he fell.',
+        options: [
+          '<strong>Leveling</strong> &mdash; Information was omitted or simplified.',
+          '<strong>Sharpening</strong> &mdash; A detail became more prominent or exaggerated.',
+          '<strong>Assimilation</strong> &mdash; Information was changed to fit expectations.'
+        ],
+        correct: 1,
+        feedback: {
+          correct: 'The brief detail is retained but described in more vivid, dramatic terms. This is sharpening: a particular detail becomes more prominent or exaggerated.',
+          incorrect: 'Nothing was omitted, and no unfamiliar idea was replaced. The detail became more vivid and dramatic, so this is sharpening.'
+        }
+      }
     ]
   });
 
