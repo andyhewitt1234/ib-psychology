@@ -1979,54 +1979,162 @@
 <div class="slide" data-slide="18" id="slide-18">
 <h2>Dual Processing Theory</h2>
 <p class="slide-intro">How automatic and deliberate thinking influence our judgments, decisions, and behavior &mdash; and what this distinction can and cannot explain.</p>
-<div class="collapsible"><button class="collapsible-trigger">Two Modes of Thinking</button><div class="collapsible-body">
-<p>You catch a ball without calculating projectile physics; you complete a tax form slowly, checking each line. Dual processing theory uses these familiar differences to describe two broad modes of thinking:</p>
-<table style="width:100%;border-collapse:collapse;font-size:.86rem;">
-<tr style="background:var(--bg-secondary);"><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);"></th><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);">Fast, automatic (System 1)</th><th style="padding:.4rem .5rem;text-align:left;border-bottom:1px solid var(--border);">Slow, deliberate (System 2)</th></tr>
-<tr><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Speed / effort</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Immediate, low effort</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Gradual, effortful</td></tr>
-<tr><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Control</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Automatic; runs without intention</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Intentional; requires concentration</td></tr>
-<tr><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Typical operations</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Recognition, reading emotion in faces, skilled driving, associations, gut estimates</td><td style="padding:.35rem .5rem;border-bottom:1px solid var(--border);">Arithmetic, comparing options, logical checking, learning a new skill</td></tr>
-<tr><td style="padding:.35rem .5rem;">Capacity</td><td style="padding:.35rem .5rem;">Parallel; low cost</td><td style="padding:.35rem .5rem;">One demanding task at a time; tiring</td></tr>
+<style>
+#slide-18 h3{margin:1.3rem 0 .5rem;font-size:1.05rem;font-weight:700;color:var(--text)}
+#slide-18 h3:first-of-type{margin-top:.6rem}
+#slide-18 h4{margin:0 0 .4rem;font-size:.98rem;font-weight:700;color:var(--text)}
+#slide-18 p{margin:0 0 .6rem}
+#slide-18 .slide-intro{margin-bottom:1rem}
+#slide-18 .s18-tablewrap{border:1px solid #E5E7EB;border-radius:8px;overflow:hidden;background:#FFFFFF;margin:.7rem 0 .55rem}
+#slide-18 .s18-table{width:100%;border-collapse:collapse;font-size:.88rem;line-height:1.5}
+#slide-18 .s18-table th,#slide-18 .s18-table td{padding:.5rem .7rem;text-align:left;vertical-align:top;border-bottom:1px solid #EEF1F4}
+#slide-18 .s18-table thead th{background:#F3F5F7;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--text-secondary)}
+#slide-18 .s18-table tbody th{width:22%;font-weight:700;color:var(--text);background:#FCFCFD}
+#slide-18 .s18-table tbody td{color:var(--text-secondary)}
+#slide-18 .s18-table tbody tr:last-child th,#slide-18 .s18-table tbody tr:last-child td{border-bottom:0}
+#slide-18 .s18-explains{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin:.6rem 0 .55rem}
+#slide-18 .s18-explain{background:#F3F5F7;border:1px solid #E5E7EB;border-radius:8px;padding:.85rem 1rem;min-width:0}
+#slide-18 .s18-explain h4{font-size:.92rem;margin:0 0 .35rem}
+#slide-18 .s18-explain p{margin:0;font-size:.87rem;line-height:1.6;color:var(--text-secondary)}
+#slide-18 .s18-connection{font-size:.9rem;line-height:1.6;color:var(--text)}
+#slide-18 .s18-apply{background:#FFF9EC;border:1px solid #E5E7EB;border-radius:8px;padding:1rem 1.15rem;margin:.9rem 0}
+#slide-18 .s18-apply h4{font-size:1rem;margin:0 0 .45rem}
+#slide-18 .s18-apply p{font-size:.9rem;line-height:1.6;color:var(--text)}
+#slide-18 .s18-apply .reveal{background:#FFFFFF;border:1px solid #E5E7EB;margin:.5rem 0 0}
+#slide-18 .s18-apply .reveal:hover{border-color:#C9CFD6}
+#slide-18 .s18-apply .reveal-answer p{font-size:.88rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .5rem}
+#slide-18 .s18-apply .reveal-answer p:last-child{margin-bottom:0}
+#slide-18 .s18-points{margin:.1rem 0 0;padding-left:1.15rem}
+#slide-18 .s18-points li{font-size:.88rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .4rem}
+#slide-18 .s18-points li:last-child{margin-bottom:0}
+#slide-18 .s18-panel{background:#F3F5F7;border:1px solid #E5E7EB;border-radius:8px;padding:1rem 1.15rem;margin:.9rem 0}
+#slide-18 .s18-panel p{font-size:.89rem;line-height:1.6;color:var(--text-secondary)}
+#slide-18 .s18-panel p:last-child{margin-bottom:0}
+#slide-18 .s18-limits ol{margin:.1rem 0 0;padding-left:1.3rem}
+#slide-18 .s18-limits li{font-size:.89rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-18 .s18-limits li:last-child{margin-bottom:0}
+#slide-18 .s18-limits strong,#slide-18 .s18-panel strong,#slide-18 .s18-apply strong{color:var(--text)}
+#slide-18 .s18-item{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:6px;padding:.65rem .85rem;margin:.15rem 0 .6rem}
+#slide-18 .s18-item p{font-size:.87rem;margin:0 0 .35rem;color:var(--text-secondary)}
+#slide-18 .s18-item p:last-child{margin-bottom:0}
+#slide-18 .s18-cite{font-size:.79rem;line-height:1.5;color:var(--text-secondary);margin:.45rem 0 0}
+#slide-18 .s18-task{background:#E5F0FF;border:1px solid #D6E4F7;border-radius:8px;padding:1rem 1.15rem;margin:.9rem 0}
+#slide-18 .s18-task h4{font-size:.95rem;margin:0 0 .35rem}
+#slide-18 .s18-task p{font-size:.85rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .75rem}
+#slide-18 .s18-wsr{background:#F3F5F7;border:1px solid #E5E7EB;border-radius:8px;padding:1rem 1.15rem;margin:1rem 0 0}
+#slide-18 .s18-wsr h3{margin:0 0 .6rem}
+#slide-18 .s18-wsr ol{margin:0;padding-left:1.25rem;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+#slide-18 .s18-wsr li{margin:0 0 .4rem}
+#slide-18 .s18-wsr li:last-child{margin-bottom:0}
+#slide-18 .s18-wsr strong{color:var(--text)}
+@media (max-width:700px){#slide-18 .s18-explains{grid-template-columns:1fr}}
+@media (max-width:640px){
+#slide-18 .s18-tablewrap{border:0;background:transparent;border-radius:0}
+#slide-18 .s18-table,#slide-18 .s18-table tbody,#slide-18 .s18-table tr,#slide-18 .s18-table th,#slide-18 .s18-table td{display:block;width:auto}
+#slide-18 .s18-table thead{display:none}
+#slide-18 .s18-table tbody tr{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;margin:0 0 .5rem;padding:.15rem .8rem}
+#slide-18 .s18-table tbody th{background:transparent;padding:.5rem 0 .2rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text-secondary)}
+#slide-18 .s18-table tbody td{border-bottom:0;padding:.15rem 0 .4rem;font-size:.87rem}
+#slide-18 .s18-table tbody td.s18-s1::before{content:"System 1: ";font-weight:700;color:var(--text)}
+#slide-18 .s18-table tbody td.s18-s2::before{content:"System 2: ";font-weight:700;color:var(--text)}
+}
+</style>
+<h3>Two Modes of Thinking</h3>
+<p>Some judgments happen almost immediately, while others require sustained concentration. An experienced driver may recognize a developing hazard without consciously analyzing every detail, whereas someone learning to drive must think carefully about each action. Dual processing theory uses this distinction to explain two broad patterns of cognitive processing.</p>
+<div class="s18-tablewrap">
+<table class="s18-table">
+<thead>
+<tr><th scope="col">Characteristic</th><th scope="col">System 1 &mdash; Automatic Processing</th><th scope="col">System 2 &mdash; Deliberate Processing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Speed and effort</th><td class="s18-s1">Typically fast and relatively effortless</td><td class="s18-s2">Typically slower and more effortful</td></tr>
+<tr><th scope="row">Control</th><td class="s18-s1">Often operates automatically, without conscious intention</td><td class="s18-s2">Usually involves conscious attention and control</td></tr>
+<tr><th scope="row">Examples</th><td class="s18-s1">Familiar pattern recognition, practiced skills, intuitive judgments</td><td class="s18-s2">Complex calculations, comparing evidence, unfamiliar problems</td></tr>
+<tr><th scope="row">Cognitive demands</th><td class="s18-s1">Can handle many familiar operations with limited conscious attention</td><td class="s18-s2">Draws more heavily on limited attentional and working-memory resources</td></tr>
+</tbody>
 </table>
-<p style="margin-top:.6rem;"><strong>What the labels mean &mdash; and do not mean.</strong> &ldquo;System 1&rdquo; and &ldquo;System 2&rdquo; are broad descriptions of different processing characteristics &mdash; fast, automatic and largely parallel versus slow, deliberate and sequential &mdash; not two physically separate brain systems. They are useful distinctions rather than rigid categories: thinking grades along continua of speed, control and effort, and many cognitive activities mix the two.</p>
-<p><strong>Both modes can be accurate &mdash; and both can err.</strong> Automatic thinking can be highly accurate, particularly where expertise and experience have tuned it, and practiced skills become increasingly automatic through repetition. Deliberate thinking is not automatically logical or correct &mdash; it is effortful, but it is still capable of error.</p>
-<p>Everyday thread: driving a familiar route home, you arrive with no memory of decisions (automatic processing). A detour forces deliberate navigation (deliberate processing) &mdash; and the radio suddenly becomes impossible to follow.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">What the Theory Explains Well</button><div class="collapsible-body">
-<p>The theory's value is not in labeling individual tasks as one kind of thinking. It helps explain four recurring patterns in cognitive effort, automaticity, expertise, and decision-making:</p>
-<ol>
-<li><strong>Predictable errors:</strong> intelligent people make the same systematic mistakes because automatic answers arrive first and deliberate checking often approves rather than examines them. Errors cluster where intuition is confident and wrong.</li>
-<li><strong>Cognitive economy:</strong> deliberate processing is effortful and generally handles one demanding task at a time. Automating routine judgment frees capacity for whatever needs attention.</li>
-<li><strong>When to slow down:</strong> high stakes, ambiguity and available time together call for deliberate checking. Expertise fits the same account: novices need deliberate effort even for the basics, while an expert's trained intuition is fast but can still be wrong.</li>
-<li><strong>Unit connection:</strong> schemas and heuristics can be understood as tools of automatic processing, and biases as their predictable outputs (developed on Pages 10&ndash;12).</li>
-</ol>
-</div></div>
-<div class="reveal"><div class="reveal-question">An experienced firefighter orders everyone out seconds after entering a building, sensing danger he cannot articulate. Novice firefighters analyzing the same cues take minutes. Use dual processing theory to explain both performances.</div><div class="reveal-answer"><div>Years of responding to fires have built a rich repertoire of meaningful patterns, and practiced patterns can be recognized automatically: the configuration of heat, smoke and sound registers as danger in seconds &mdash; before he can articulate why. The novice has not yet developed these patterns, so the same cues must be inspected consciously and combined step by step, which is why the analysis takes minutes. Expert intuition is therefore not irrational or necessarily inaccurate: it is perception shaped by extensive experience and is often highly accurate. However, expertise does not guarantee correctness &mdash; intuition can miss a genuinely novel hazard, so it is most dependable when deliberate checking is engaged where stakes are high or the situation is unfamiliar. This application illustrates the framework; it is not experimental proof that cognition uses two separate systems.</div></div></div>
-<div class="collapsible"><button class="collapsible-trigger">Limitations of the Two-System Model</button><div class="collapsible-body">
-<ul>
-<li><strong>Not two separate systems:</strong> &ldquo;System 1&rdquo; and &ldquo;System 2&rdquo; are broad descriptions of processing characteristics &mdash; speed, control, effort &mdash; not physically separate brain regions, and thinking cannot always be divided neatly into two systems.</li>
-<li><strong>Interaction, not relay race:</strong> automatic and deliberate processes influence each other continuously: deliberate practice trains intuition, and intuition steers where deliberation looks next.</li>
-<li><strong>Speed is not evidence:</strong> how quickly a judgment arrives does not establish which cognitive mechanism produced it, so response speed alone cannot diagnose the mode of processing.</li>
-<li><strong>Errors are not confined to one mode:</strong> deliberate thinking can still produce errors &mdash; it tires and can rationalize hunches after the fact &mdash; while fast, intuitive thinking can be accurate and adaptive, particularly in familiar situations.</li>
-<li><strong>A framework, not a complete account:</strong> the two-system distinction is a useful explanatory framework, but used loosely it can be stretched to explain any result after the fact, so it should not be mistaken for a complete theory of cognition.</li>
+</div>
+<p>These are typical differences, not absolute rules: thinking varies along continua of speed, control and effort, and many activities combine automatic and deliberate processing.</p>
+<p><strong>What the labels mean &mdash; and do not mean.</strong> &ldquo;System 1&rdquo; and &ldquo;System 2&rdquo; are theoretical descriptions of different processing characteristics &mdash; typically fast, automatic and largely parallel versus typically slower, deliberate and sequential &mdash; rather than two physically separate brain systems.</p>
+<p><strong>Neither type of thinking guarantees an accurate judgment.</strong> Automatic thinking can be remarkably effective, especially when experience and practice have made certain responses familiar and reliable. Deliberate thinking allows us to examine information more carefully, but taking more time and effort does not necessarily lead to a correct conclusion.</p>
+<p>Everyday thread: driving a familiar route home, you arrive with no memory of the decisions you made (automatic processing). A detour forces deliberate navigation &mdash; and the radio suddenly becomes impossible to follow.</p>
+<h3>What the Theory Explains Well</h3>
+<p>The theory is most useful when it explains patterns of thinking rather than labelling individual tasks.</p>
+<div class="s18-explains">
+<div class="s18-explain">
+<h4>Cognitive Efficiency</h4>
+<p>Automatic processing allows familiar judgments and actions to occur without requiring continuous conscious attention. This helps people manage routine activities while reserving attentional resources for more demanding tasks.</p>
+</div>
+<div class="s18-explain">
+<h4>Expertise and Automaticity</h4>
+<p>Through extensive practice, some complex skills become faster and less dependent on deliberate step-by-step reasoning. Experts may recognize meaningful patterns that novices must analyze consciously. However, expert intuition is not necessarily accurate in unfamiliar or unpredictable situations.</p>
+</div>
+<div class="s18-explain">
+<h4>Errors in Judgment</h4>
+<p>Automatic judgments can sometimes produce systematic errors when familiar patterns or shortcuts are applied inappropriately. Deliberate reasoning may help people examine an initial judgment, but it does not guarantee that they will detect or correct an error.</p>
+</div>
+</div>
+<p class="s18-connection">This helps connect dual processing theory to schemas and cognitive biases. However, the two-system distinction does not provide a complete explanation of every bias or decision.</p>
+<div class="s18-apply">
+<h4>Apply Your Understanding &mdash; Expertise and Thinking</h4>
+<p>An experienced firefighter orders everyone out of a building shortly after entering because he recognizes signs of danger. Novice firefighters examining the same situation take several minutes to reach a conclusion.</p>
+<p>Using dual processing theory, explain why their judgments might differ.</p>
+<div class="reveal"><div class="reveal-question" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">Reveal Answer</div><div class="reveal-answer"><div>
+<p>This scenario is a hypothetical teaching example, not a reported experiment.</p>
+<ul class="s18-points">
+<li>Extensive experience may allow the firefighter to recognize meaningful patterns &mdash; particular combinations of heat, smoke and sound &mdash; quickly and with little conscious effort, so danger is registered before he can explain it.</li>
+<li>The novices have not yet built these patterns, so they must examine the same cues deliberately and combine them step by step, which takes minutes.</li>
+<li>Faster judgment is not therefore less accurate: automatic recognition can be highly reliable when experience has made the relevant cues familiar.</li>
+<li>Expertise does not guarantee correctness &mdash; in an unfamiliar building or an unusual fire the firefighter&rsquo;s intuition may be wrong, which is why deliberate checking still matters.</li>
 </ul>
-</div></div>
-<div class="reveal"><div class="reveal-question">Is fast thinking bad and slow thinking good? Answer with the trade-off in mind.</div><div class="reveal-answer"><div>No &mdash; neither claim survives the trade-off. Fast, automatic processing is efficient: it runs without intention, demands little capacity and handles most daily cognition accurately in familiar domains. Its cost is flexibility: it applies familiar patterns even when they no longer fit, so it is vulnerable to systematic biases. Slow, deliberate processing is flexible &mdash; it can compare options, check estimates and catch errors we know to look for &mdash; but it is effortful, handles one demanding task at a time and still makes mistakes: it tires, and it can rationalize hunches after the fact. The practical lesson is matching processing to the situation: rely on trained intuition where experience has made the patterns reliable, and engage deliberate checking where stakes, novelty or known biases make a fast answer risky.</div></div></div>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-  <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Dual Processing</h4>
-  <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Classify each cognitive task by which processing system dominates.</p>
-  <div class="act-container" id="lc-inline-dp-check"></div>
+</div></div></div>
+</div>
+<h3>Research Connection &mdash; The Cognitive Reflection Test</h3>
+<div class="s18-panel">
+<p>Most of the examples above are illustrations rather than evidence. One short empirical example is the <strong>Cognitive Reflection Test</strong> (CRT), introduced by Frederick (2005) to study the tendency to question an answer that comes to mind quickly. It consists of three short problems, each with an attractive intuitive answer and a different correct answer.</p>
+<div class="s18-item">
+<p><em>Example item (Frederick&rsquo;s bat-and-ball problem):</em> &ldquo;A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?&rdquo;</p>
+<p>The answer that usually comes to mind is 10 cents. Checking the arithmetic shows that the ball must cost 5 cents, because the bat would then cost $1.05 and $1.05 + $0.05 = $1.10.</p>
+</div>
+<p>Performance on items like this illustrates why questioning an initial response matters: the first answer feels satisfactory, and only deliberate checking reveals that it is wrong. In dual processing terms, the intuitive answer is interpreted as the product of fast, automatic processing, while correcting it requires more deliberate work. The test itself records only the answers people give and whether those answers are correct.</p>
+<p><strong>Interpretive caution.</strong> CRT performance does not directly demonstrate two physically distinct cognitive systems; the two-system reading is an interpretation of the scores. The test also has limitations: it contains only a few items, some people may already be familiar with them, and performance depends partly on numerical ability &mdash; so a low score does not show that someone never thinks carefully.</p>
+<p class="s18-cite">Frederick, S. (2005). Cognitive reflection and decision making. <em>Journal of Economic Perspectives, 19</em>(4), 25&ndash;42.</p>
+</div>
+<h3>Limitations of the Two-System Model</h3>
+<div class="s18-panel s18-limits">
+<ol>
+<li><strong>Thinking Does Not Always Fit Two Categories.</strong> Many cognitive activities combine automatic and deliberate processing. The distinction is useful, but actual thinking does not always fall neatly into two separate categories.</li>
+<li><strong>The Processes Interact.</strong> Deliberate practice can make a skill increasingly automatic, while an unexpected situation may require someone to interrupt an automatic response and think more carefully.</li>
+<li><strong>Processing Speed Does Not Reveal the Mechanism.</strong> A quick response does not, by itself, establish which psychological process produced it. Researchers need evidence beyond response time to identify the mechanisms involved.</li>
+<li><strong>Explanatory Limitations.</strong> Dual processing theory describes important differences in cognitive processing, but broad labels alone do not explain exactly how a particular judgment is produced. The theory is more useful when researchers identify specific mechanisms and test predictions rather than assigning a System 1 or System 2 label after observing a result.</li>
+</ol>
+</div>
+<div class="s18-apply">
+<h4>Evaluate the Explanation &mdash; Is Fast Thinking Unreliable?</h4>
+<p>An experienced firefighter makes an immediate judgment that a building is unsafe. Another firefighter argues that the decision cannot be reliable because it was made without deliberate analysis.</p>
+<p>Using dual processing theory, evaluate this argument.</p>
+<div class="reveal"><div class="reveal-question" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click();}">Reveal Answer</div><div class="reveal-answer"><div>
+<p>The argument is not justified simply because the decision was made quickly. Dual processing theory suggests that automatic processing can support accurate judgments when extensive experience has allowed someone to recognize meaningful patterns. The experienced firefighter may recognize combinations of warning signs that a novice would need to analyze deliberately.</p>
+<p>However, rapid judgments are not necessarily accurate. If the situation is unfamiliar or the firefighter&rsquo;s experience does not provide reliable cues, intuition may be misleading. Deliberate checking can help, although it is also capable of error and may take valuable time.</p>
+<p>Therefore, the reliability of the firefighter&rsquo;s judgment depends on the quality and relevance of their experience, the information available, and the circumstances of the decision&mdash;not simply on whether the thinking was fast or slow.</p>
+</div></div></div>
+</div>
+<div class="s18-task">
+<h4>Evidence Check &mdash; Dual Processing</h4>
+<p>Sort each task by the processing that dominates. Choose <strong>Both interact</strong> when a task combines automatic and deliberate processing.</p>
+<div class="act-container" id="lc-inline-dp-check"></div>
 </div>
 
-<div style="background:#F3F5F7;border:1px solid #E2E8F0;border-radius:10px;padding:1.1rem 1.15rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>System 1: fast, automatic, effortless, parallel. System 2: slow, controlled, effortful, serial.</li>
-<li>Value: explains clustered errors, cognitive economy, when to slow down, and links schemas/heuristics/biases.</li>
-<li>Expert intuition = trained System 1, not absence of thinking.</li>
-<li>Limits: continuum not binary; systems interact; no clean brain mapping; unfalsifiability risk.</li>
-<li>Neither mode is universally better; matching mode to task is the practical lesson.</li>
-</ol></div>
+<div class="s18-wsr">
+<h3>What Should I Remember?</h3>
+<ol>
+<li><strong>System 1</strong> describes typically fast, automatic, relatively effortless processing; <strong>System 2</strong> describes typically slower, more deliberate and effortful processing.</li>
+<li>Experience and practice can make complex judgments and skills increasingly automatic.</li>
+<li>Neither automatic nor deliberate thinking guarantees accuracy.</li>
+<li>The two-system distinction helps explain cognitive efficiency, expertise, and some errors in judgment.</li>
+<li>The distinction has limitations: cognitive processes interact, do not always fit two categories, and cannot be identified from speed alone.</li>
+</ol>
+</div>
 </div>
 
 <div class="slide activity-slide" data-slide="19" id="slide-19"><h2>Fast or Deliberate Thinking?</h2>
@@ -4319,7 +4427,7 @@ initActivity('lc-inline-recon-check', {
 initActivity('lc-inline-dp-check', {
     type: 'classification',
     title: 'Dual Processing Classification',
-    subtitle: 'Sort each task into the processing system that dominates.',
+    subtitle: 'Sort each task by the processing that dominates. Some tasks combine both.',
     bins: [
       { label: 'System 1 (Fast)' },
       { label: 'System 2 (Slow)' },
