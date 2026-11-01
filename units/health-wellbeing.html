@@ -2346,89 +2346,140 @@
         
 <div class="slide" data-slide="28" id="slide-28">
 <h2>Social Comparison, FOMO &amp; Social Media</h2>
-<p class="slide-intro">Psychological mechanisms that help explain problematic use beyond SLT.</p>
-<div class="collapsible"><button class="collapsible-trigger">Why Do People Compare Themselves with Others?</button><div class="collapsible-body">
+<p class="slide-intro">How social comparison and fear of missing out may influence social-media behavior and psychological well-being.</p>
+<style>
+#slide-28 .hw28-part{margin:1.7rem 0 0;padding:0;border-bottom:1px solid #E5E7EB}
+#slide-28 .hw28-part-toggle{display:flex;align-items:center;justify-content:space-between;gap:.75rem;width:100%;background:transparent;border:0;border-radius:4px;margin:0;padding:.6rem 0 .45rem;font-family:inherit;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text);text-align:left;cursor:pointer}
+#slide-28 .hw28-part-toggle:hover{color:var(--primary-dark)}
+#slide-28 .hw28-part-toggle:focus-visible{outline:2px solid #2563EB;outline-offset:2px}
+#slide-28 .hw28-chevron{flex:0 0 auto;width:.5rem;height:.5rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .2s ease;margin:0 .15rem .2rem 0}
+#slide-28 .hw28-part-toggle[aria-expanded="false"] .hw28-chevron,#slide-28 .hw28-study-toggle[aria-expanded="false"] .hw28-chevron{transform:rotate(-45deg);margin-bottom:0}
+#slide-28 .hw28-part-body{padding-top:.15rem}
+#slide-28 .hw28-panel{background:#F3F5F7;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.9rem 1.1rem;margin:.75rem 0}
+#slide-28 .hw28-panel p{margin:0 0 .55rem;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+#slide-28 .hw28-panel p:last-child{margin-bottom:0}
+#slide-28 .hw28-chain{font-size:.92rem;line-height:1.7;color:var(--text)}
+#slide-28 .hw28-ex{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.7rem .95rem;margin:.6rem 0}
+#slide-28 .hw28-ex p{margin:0;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+#slide-28 .hw28-apply{background:#FFF9EC;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.95rem 1.1rem;margin:.85rem 0}
+#slide-28 .hw28-apply p{margin:0 0 .55rem;font-size:.9rem;line-height:1.6;color:var(--text)}
+#slide-28 .hw28-apply ul{margin:0 0 .55rem;padding-left:1.25rem}
+#slide-28 .hw28-apply li{font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .25rem}
+#slide-28 .hw28-apply .reveal:last-child{margin-bottom:0}
+#slide-28 .hw28-study{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:10px;margin:.6rem 0 .8rem;overflow:hidden}
+#slide-28 .hw28-study-head{margin:0;padding:0}
+#slide-28 .hw28-study-toggle{display:flex;align-items:center;justify-content:space-between;gap:.75rem;width:100%;background:transparent;border:0;margin:0;padding:.7rem .95rem;font-family:inherit;font-size:.95rem;font-weight:700;line-height:1.35;color:var(--text);text-align:left;cursor:pointer}
+#slide-28 .hw28-study-toggle:hover{color:var(--primary-dark)}
+#slide-28 .hw28-study-toggle:focus-visible{outline:2px solid #2563EB;outline-offset:-2px}
+#slide-28 .hw28-study-body{border-top:1px solid #E5E7EB;padding:.85rem 1rem .4rem}
+#slide-28 .hw28-study-body p{margin:0 0 .55rem;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+#slide-28 .hw28-study-body p:last-child{margin-bottom:0}
+#slide-28 .hw28-study-body ul{margin:0 0 .55rem;padding-left:1.25rem}
+#slide-28 .hw28-study-body li{font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-28 .hw28-study-body h4:first-child{margin-top:0}
+#slide-28 h3{font-size:1.02rem;font-weight:700;margin:1.2rem 0 .45rem;line-height:1.35;color:var(--text)}
+#slide-28 h4{margin:.75rem 0 .3rem;font-size:.92rem;font-weight:700;line-height:1.3;color:var(--text)}
+#slide-28 p{margin:0 0 .62rem}
+#slide-28 .reveal{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;padding:.6rem .85rem;margin:.6rem 0 0}
+#slide-28 .reveal:hover{border-color:#C9CFD6}
+#slide-28 .reveal-question{font-size:.9rem;font-weight:700;flex-wrap:wrap;gap:.35rem .75rem;color:var(--text)}
+#slide-28 .reveal-question::after{content:'Reveal';font-size:.75rem;font-weight:600;color:#475569;background:#F1F5F9;padding:.18rem .55rem;border-radius:4px}
+#slide-28 .hw28-task{background:#E5F0FF;border:1px solid #D6E4F7;border-radius:10px;padding:1rem 1.1rem;margin:1rem 0 0}
+#slide-28 .hw28-task h4{margin:0 0 .35rem}
+#slide-28 .hw28-summary h3{margin:0 0 .75rem;font-size:1rem}
+@media (max-width:640px){#slide-28 .hw28-apply,#slide-28 .hw28-panel,#slide-28 .hw28-ex,#slide-28 .hw28-task,#slide-28 .hw28-study-body{padding:.8rem .85rem}#slide-28 .hw28-study-toggle{padding:.7rem .85rem}}
+</style>
+<h3 class="hw28-part"><button class="hw28-part-toggle" type="button" id="hw28-part1-toggle" aria-expanded="true" aria-controls="hw28-part1-body"><span class="hw28-part-label">Part 1 &mdash; Understanding Social Comparison</span><span class="hw28-chevron" aria-hidden="true"></span></button></h3><div class="hw28-part-body" id="hw28-part1-body" role="region" aria-labelledby="hw28-part1-toggle">
+<h3>Why Do People Compare Themselves with Others?</h3>
+
 <p>Humans often evaluate themselves by comparing their abilities, opinions and characteristics with other people &mdash; at school, at work, among friends and online.</p>
 <p>People may compare academic achievement, appearance, popularity, skills or lifestyle.</p>
-<p><em>Example:</em> a student may compare their grades with classmates to understand their own academic performance &mdash; the comparison supplies information that no textbook can: <em>where do I stand?</em></p>
+<div class="hw28-ex"><p><em>Example:</em> a student may compare their grades with classmates to understand their own academic performance &mdash; the comparison supplies information that no textbook can: <em>where do I stand?</em></p></div>
 <p>Psychologists study these processes through Social Comparison Theory.</p>
-</div></div>
+<h3>Social Comparison Theory</h3>
+<div class="hw28-panel">
 
-<div class="collapsible"><button class="collapsible-trigger">Social Comparison Theory</button><div class="collapsible-body">
 <p>Leon Festinger proposed that people have a tendency to evaluate themselves by comparing themselves with others. These comparisons can help people understand their abilities, their social position and their progress.</p>
 <p>However, comparisons can also influence emotions and self-evaluation &mdash; the same comparison that informs can also wound or encourage.</p>
-<p><em>Example:</em> a student comparing their performance with classmates may feel motivated, confident or discouraged depending on how they interpret the comparison. The comparison provides the information; the interpretation decides the feeling.</p>
-</div></div>
+</div>
+<div class="hw28-ex"><p><em>Example:</em> a student comparing their performance with classmates may feel motivated, confident or discouraged depending on how they interpret the comparison. The comparison provides the information; the interpretation decides the feeling.</p></div>
+<h3>Different Types of Social Comparison</h3>
 
-<div class="collapsible"><button class="collapsible-trigger">Different Types of Social Comparison</button><div class="collapsible-body">
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Upward Social Comparison</h4>
+<h4>Upward Social Comparison</h4>
 <p>Upward comparison occurs when people compare themselves with someone who appears better than them in some way.</p>
-<p><em>Examples:</em> a student comparing grades with a top-performing classmate; someone comparing appearance with an idealised online image.</p>
+<div class="hw28-ex"><p><em>Examples:</em> a student comparing grades with a top-performing classmate; someone comparing appearance with an idealised online image.</p></div>
 <p>Possible effects cut both ways. <strong>Positive:</strong> inspiration, motivation &mdash; the better-off other shows what is reachable. <strong>Negative:</strong> feeling inadequate, lower self-evaluation &mdash; the gap feels like a verdict. <strong>Important:</strong> upward comparison does not always have the same effect on everyone; the same gap inspires one student and deflates another.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Downward Social Comparison</h4>
+<h4>Downward Social Comparison</h4>
 <p>Downward comparison occurs when people compare themselves with someone who appears worse off.</p>
-<p><em>Example:</em> a student compares their academic performance with someone struggling more &mdash; and feels steadier about their own position.</p>
+<div class="hw28-ex"><p><em>Example:</em> a student compares their academic performance with someone struggling more &mdash; and feels steadier about their own position.</p></div>
 <p>Possible effects: increased confidence, reassurance. Measuring yourself against someone facing greater difficulty can stabilise self-evaluation, at least temporarily.</p>
-</div></div>
+</div>
+<h3 class="hw28-part"><button class="hw28-part-toggle" type="button" id="hw28-part2-toggle" aria-expanded="false" aria-controls="hw28-part2-body"><span class="hw28-part-label">Part 2 &mdash; Social Media, FOMO &amp; Well-being</span><span class="hw28-chevron" aria-hidden="true"></span></button></h3><div class="hw28-part-body" id="hw28-part2-body" role="region" aria-labelledby="hw28-part2-toggle" hidden>
+<h3>Why Can Social Media Increase Comparison Opportunities?</h3>
 
-<div class="collapsible"><button class="collapsible-trigger">Why Can Social Media Increase Comparison Opportunities?</button><div class="collapsible-body">
 <p>Social comparison existed long before technology. But social media changes the comparison <em>environment</em> by increasing the number of people we compare ourselves with, the amount of information available about them, and the visibility of popularity and success.</p>
 <p>Social media often includes follower counts, likes, comments, views and carefully selected images &mdash; each one a ready-made yardstick. Where offline life offered a handful of comparison targets glimpsed occasionally, the feed offers hundreds, measured precisely, updated constantly.</p>
-</div></div>
+<h3>The Highlight Reel Effect</h3>
 
-<div class="collapsible"><button class="collapsible-trigger">The Highlight Reel Effect</button><div class="collapsible-body">
 <p>People usually share selected parts of their lives online. They are more likely to post achievements, celebrations, attractive images and exciting experiences &mdash; and less likely to post failures, worries and ordinary moments.</p>
 <p>This means people may compare their <strong>complete everyday life</strong> &mdash; including boring mornings, bad days and unfiltered faces &mdash; with another person&rsquo;s <strong>carefully selected highlights</strong>. The comparison is rigged by selection before psychology even enters the picture.</p>
-<p><em>Example:</em> a student sees classmates posting successful achievements online and assumes everyone else is happier or more successful &mdash; mistaking a curated sample for a representative one.</p>
-</div></div>
+<div class="hw28-ex"><p><em>Example:</em> a student sees classmates posting successful achievements online and assumes everyone else is happier or more successful &mdash; mistaking a curated sample for a representative one.</p></div>
+<h3>Fear of Missing Out (FOMO)</h3>
 
-<div class="collapsible"><button class="collapsible-trigger">Fear of Missing Out (FOMO)</button><div class="collapsible-body">
 <p><strong>Fear of Missing Out</strong> refers to anxiety that other people are experiencing enjoyable or meaningful events without you.</p>
 <p>Social media may increase FOMO because users constantly see social events, achievements, experiences and group activities unfolding in real time &mdash; a continuous broadcast of everything happening elsewhere.</p>
-<p><em>Example:</em> a student sees pictures of classmates together at an event and worries they are being excluded. The photographs supply the event; FOMO supplies the fear that exclusion is a pattern, not a moment.</p>
-</div></div>
+<div class="hw28-ex"><p><em>Example:</em> a student sees pictures of classmates together at an event and worries they are being excluded. The photographs supply the event; FOMO supplies the fear that exclusion is a pattern, not a moment.</p></div>
+<h3>How Can Social Comparison Influence Well-being?</h3>
+<div class="hw28-panel">
 
-<div class="collapsible"><button class="collapsible-trigger">How Can Social Comparison Influence Wellbeing?</button><div class="collapsible-body">
 <p>The psychological process runs in steps:</p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);">Exposure to content<br>&darr;<br>Social comparison<br>&darr;<br>Interpretation of the comparison<br>&darr;<br>Emotional response<br>&darr;<br>Possible behavior change</p>
+<p class="hw28-chain">Exposure to content<br>&darr;<br>Social comparison<br>&darr;<br>Interpretation of the comparison<br>&darr;<br>Emotional response<br>&darr;<br>Possible behavior change</p>
 <p>The comparison itself does not automatically produce negative outcomes. <strong>The interpretation matters.</strong></p>
-<p><em>Example:</em> the same post of a classmate&rsquo;s success produces two reactions. Student A: &ldquo;I want to improve after seeing someone succeed.&rdquo; Student B: &ldquo;I will never be good enough compared with them.&rdquo; Identical content, opposite interpretations, opposite emotional outcomes &mdash; which is why comparison predicts wellbeing only through the meanings people make.</p>
-</div></div>
+</div>
+<div class="hw28-ex"><p><em>Example:</em> the same post of a classmate&rsquo;s success produces two reactions. Student A: &ldquo;I want to improve after seeing someone succeed.&rdquo; Student B: &ldquo;I will never be good enough compared with them.&rdquo; Identical content, opposite interpretations, opposite emotional outcomes &mdash; which is why comparison predicts wellbeing only through the meanings people make.</p></div>
+</div>
+<h3 class="hw28-part"><button class="hw28-part-toggle" type="button" id="hw28-part3-toggle" aria-expanded="false" aria-controls="hw28-part3-body"><span class="hw28-part-label">Part 3 &mdash; Research Evidence &amp; Evaluation</span><span class="hw28-chevron" aria-hidden="true"></span></button></h3><div class="hw28-part-body" id="hw28-part3-body" role="region" aria-labelledby="hw28-part3-toggle" hidden>
+<div class="hw28-study">
+<h3 class="hw28-study-head"><button class="hw28-study-toggle" type="button" id="hw28-vogel-toggle" aria-expanded="false" aria-controls="hw28-vogel-body"><span>Research Evidence: Vogel et al. (2014)</span><span class="hw28-chevron" aria-hidden="true"></span></button></h3><div class="hw28-study-body" id="hw28-vogel-body" role="region" aria-labelledby="hw28-vogel-toggle" hidden>
 
-<div class="collapsible"><button class="collapsible-trigger">Research Evidence: Vogel et al. (2014)</button><div class="collapsible-body">
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Aim</h4>
+<h4>Aim</h4>
 <p>To investigate the relationship between social media use, social comparison and self-esteem &mdash; testing whether comparison explains the link between online behavior and self-evaluation.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Method</h4>
+<h4>Method</h4>
 <p>Undergraduates completed measures of social media (Facebook) use, social comparison orientation (how much and in which direction they compare on Facebook), and self-esteem. In a follow-up experiment, different participants were randomly assigned to view fictitious Facebook profiles presenting upward or downward comparison targets, then reported their state self-esteem.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Findings</h4>
+<h4>Findings</h4>
 <p>Greater Facebook use was associated with greater social comparison and lower self-esteem &mdash; and upward comparison statistically explained (mediated) the link between use and self-esteem. Experimentally, participants shown upward-comparison profiles reported lower state self-esteem than those shown downward-comparison profiles.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Conclusion</h4>
+<h4>Conclusion</h4>
 <p>Social media may provide more opportunities for comparison processes &mdash; especially upward comparison &mdash; which in turn relate to lower self-evaluation.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Evaluation</h4>
+<h4>Evaluation</h4>
 <p>A strength is that the study helps explain a possible psychological <em>mechanism</em> linking online behavior and self-evaluation &mdash; not just that use and self-esteem travel together, but <em>how</em> comparison carries the effect &mdash; with experimental follow-up supporting the direction. One limitation is that the core association remains correlational: it cannot prove that social media use <em>caused</em> lower self-esteem. Other explanations are possible &mdash; for instance, people with lower self-esteem may use social media differently, or third factors may shape both.</p>
-</div></div>
+</div>
+</div>
+<div class="hw28-study">
+<h3 class="hw28-study-head"><button class="hw28-study-toggle" type="button" id="hw28-fardouly-toggle" aria-expanded="false" aria-controls="hw28-fardouly-body"><span>Key Study: Fardouly et al.</span><span class="hw28-chevron" aria-hidden="true"></span></button></h3><div class="hw28-study-body" id="hw28-fardouly-body" role="region" aria-labelledby="hw28-fardouly-toggle" hidden>
+<p>The aim was to test experimentally whether browsing Facebook affects young women's mood and body-image concerns, whether the effect differs from an online fashion magazine, and whether appearance-comparison tendency changes (moderates) any effect.</p><p><strong>Participants.</strong> <strong>112 young women</strong>, randomly assigned to three groups: own Facebook account (38), fashion-magazine website (36), appearance-neutral control website (38).</p><p>This was a true experiment: 10 minutes of browsing, with state mood and body dissatisfaction measured before and after, plus a state appearance-discrepancy measure (weight/shape items such as "flatter stomach"; face/hair/skin items such as "better complexion") collected with an unobtrusive questionnaire designed to reduce demand characteristics. Trait appearance-comparison tendency was measured one week later.</p><p><strong>Findings — stated precisely.</strong></p><ul><li><strong>Mood:</strong> the Facebook group reported significantly more <strong>negative mood</strong> than the control group — a main effect of condition.</li><li><strong>Face, hair and skin discrepancies:</strong> <strong>no overall effect</strong> of condition. The effect appeared <strong>only</strong> in women <strong>high</strong> in appearance-comparison tendency: for them, Facebook exposure produced greater face/hair/skin discrepancies than the control website. Women low in comparison tendency were unaffected.</li><li><strong>Weight/shape body dissatisfaction:</strong> <strong>no Facebook effect at all.</strong> (The magazine website, not Facebook, increased weight/shape discrepancy versus control.)</li><li>So: Facebook exposure worsened mood generally, but its appearance effects depended on the person — exactly the individual-differences point: the same exposure affects different people differently.</li></ul><p><strong>Interpretation.</strong> Random allocation means the browsing difference <em>caused</em> the short-term differences in mood (and, for high comparers, face/hair/skin concerns) — a <strong>short-term causal state effect</strong>. But the study cannot prove that social media causes depression, eating disorders, long-term body-image problems or problematic use: exposure lasted 10 minutes, participants were women only, and outcomes were temporary states, not clinical conditions.</p><p><strong>Application.</strong> A student spends ten minutes viewing appearance-focused content, then feels dissatisfied with their own face and skin. This connects directly: brief exposure can shift <em>state</em> appearance concerns — especially in someone who habitually compares — without showing anything about lasting disorder.</p><div class="reveal"><div class="reveal-question">Using Fardouly et al. (2015), explain (a) what researchers can claim about Facebook exposure and mood, and (b) two things they cannot claim.</div><div class="reveal-answer"><div>(a) Because participants were <strong>randomly allocated</strong> to browsing conditions and measured immediately after, researchers can claim Facebook browsing <strong>caused a short-term increase in negative mood</strong> in this sample, and caused short-term face/hair/skin concerns specifically in women <strong>high</strong> in comparison tendency. Randomisation rules out pre-existing differences as the explanation. (b) They cannot claim Facebook causes <strong>depression, eating disorders or lasting body-image problems</strong> — exposure was 10 minutes and outcomes were temporary states. Nor can they generalize to <strong>men or to long-term use</strong> — the sample was women only and duration was untested. This is why experiments license short-term causal conclusions but never long-term clinical ones.</div></div></div></div>
+</div>
+<h3>Evaluating Social Comparison Explanations</h3>
 
-<div class="collapsible"><button class="collapsible-trigger">Evaluating Social Comparison Explanations</button><div class="collapsible-body">
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Strength: Explains a psychological mechanism</h4>
+<h4>Strength: Explains a psychological mechanism</h4>
 <p>Social Comparison Theory explains <em>why</em> social media may influence wellbeing &mdash; through the process of comparing oneself with others &mdash; rather than stopping at &ldquo;social media is harmful.&rdquo; A mechanism can be tested, traced and interrupted; a slogan cannot.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Strength: Recognizes individual differences</h4>
+<h4>Strength: Recognizes individual differences</h4>
 <p>The same online content may affect people differently depending on self-esteem, personality, goals and interpretation &mdash; Student A&rsquo;s motivation and Student B&rsquo;s despair from the identical post. The theory expects variation instead of predicting uniform harm.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Limitation: Correlation does not prove causation</h4>
+<h4>Limitation: Correlation does not prove causation</h4>
 <p>People with lower wellbeing may also use social media differently &mdash; seeking reassurance, comparing more, scrolling longer. The relationship may work in multiple directions, and cross-sectional findings cannot separate them.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:.75rem 0 .35rem;color:var(--text);">Limitation: Other factors influence wellbeing</h4>
+<h4>Limitation: Other factors influence wellbeing</h4>
 <p>Social comparison is only one possible influence among many &mdash; stress, relationships, environment and coping strategies all shape wellbeing alongside it. Any account that stops at comparison is incomplete by design.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">5. Key Study: Fardouly et al.</button><div class="collapsible-body"><p>The aim was to test experimentally whether browsing Facebook affects young women's mood and body-image concerns, whether the effect differs from an online fashion magazine, and whether appearance-comparison tendency changes (moderates) any effect.</p><p><strong>Participants.</strong> <strong>112 young women</strong>, randomly assigned to three groups: own Facebook account (38), fashion-magazine website (36), appearance-neutral control website (38).</p><p>This was a true experiment: 10 minutes of browsing, with state mood and body dissatisfaction measured before and after, plus a state appearance-discrepancy measure (weight/shape items such as "flatter stomach"; face/hair/skin items such as "better complexion") collected with an unobtrusive questionnaire designed to reduce demand characteristics. Trait appearance-comparison tendency was measured one week later.</p><p><strong>Findings — stated precisely.</strong></p><ul><li><strong>Mood:</strong> the Facebook group reported significantly more <strong>negative mood</strong> than the control group — a main effect of condition.</li><li><strong>Face, hair and skin discrepancies:</strong> <strong>no overall effect</strong> of condition. The effect appeared <strong>only</strong> in women <strong>high</strong> in appearance-comparison tendency: for them, Facebook exposure produced greater face/hair/skin discrepancies than the control website. Women low in comparison tendency were unaffected.</li><li><strong>Weight/shape body dissatisfaction:</strong> <strong>no Facebook effect at all.</strong> (The magazine website, not Facebook, increased weight/shape discrepancy versus control.)</li><li>So: Facebook exposure worsened mood generally, but its appearance effects depended on the person — exactly the individual-differences point: the same exposure affects different people differently.</li></ul><p><strong>Interpretation.</strong> Random allocation means the browsing difference <em>caused</em> the short-term differences in mood (and, for high comparers, face/hair/skin concerns) — a <strong>short-term causal state effect</strong>. But the study cannot prove that social media causes depression, eating disorders, long-term body-image problems or problematic use: exposure lasted 10 minutes, participants were women only, and outcomes were temporary states, not clinical conditions.</p><p><strong>Application.</strong> A student spends ten minutes viewing appearance-focused content, then feels dissatisfied with their own face and skin. This connects directly: brief exposure can shift <em>state</em> appearance concerns — especially in someone who habitually compares — without showing anything about lasting disorder.</p><div class="reveal" style="background:#E5F0FF;border:1px solid #E5E7EB;"><div class="reveal-question">Using Fardouly et al. (2015), explain (a) what researchers can claim about Facebook exposure and mood, and (b) two things they cannot claim.</div><div class="reveal-answer" style="background:#FFFFFF;"><div>(a) Because participants were <strong>randomly allocated</strong> to browsing conditions and measured immediately after, researchers can claim Facebook browsing <strong>caused a short-term increase in negative mood</strong> in this sample, and caused short-term face/hair/skin concerns specifically in women <strong>high</strong> in comparison tendency. Randomisation rules out pre-existing differences as the explanation. (b) They cannot claim Facebook causes <strong>depression, eating disorders or lasting body-image problems</strong> — exposure was 10 minutes and outcomes were temporary states. Nor can they generalize to <strong>men or to long-term use</strong> — the sample was women only and duration was untested. This is why experiments license short-term causal conclusions but never long-term clinical ones.</div></div></div></div></div>
+<h3>Apply Social Comparison Theory: Emma</h3>
+<div class="hw28-apply">
 
-<div class="collapsible"><button class="collapsible-trigger">Apply Social Comparison Theory: Emma</button><div class="collapsible-body">
-<div style="background:#EDF5FF;border:1px solid #E5E7EB;border-radius:var(--radius);padding:.8rem 1.05rem;margin:.5rem 0 .7rem;"><p style="margin:0;"><em>Scenario:</em> Emma follows several influencers who post about appearance, fitness and luxury lifestyles. After spending time online, Emma begins feeling dissatisfied with herself.</p></div>
-<div class="reveal" style="background:#E5F0FF;border:1px solid #E5E7EB;"><div class="reveal-question">1. Which type of social comparison may Emma be experiencing?</div><div class="reveal-answer" style="background:#FFFFFF;"><div><strong>Upward social comparison</strong> &mdash; Emma measures herself against influencers who appear better off in appearance, fitness and lifestyle, and the gap leaves her dissatisfied.</div></div></div>
-<div class="reveal" style="background:#E5F0FF;border:1px solid #E5E7EB;"><div class="reveal-question">2. Why might social media increase this type of comparison?</div><div class="reveal-answer" style="background:#FFFFFF;"><div>Social media exposes Emma to <strong>many idealised and carefully selected presentations</strong> of other people&rsquo;s lives &mdash; more targets, more often, more visibly quantified (likes, followers) and more heavily curated than anything offline life supplies.</div></div></div>
-<div class="reveal" style="background:#E5F0FF;border:1px solid #E5E7EB;"><div class="reveal-question">3. Why might another person respond differently to the same content?</div><div class="reveal-answer" style="background:#FFFFFF;"><div>People differ in <strong>self-esteem, interpretation, goals and personal circumstances</strong>. Another viewer might admire the same posts without self-judgment, find them motivating, or simply not care &mdash; the content is constant, the interpretation varies.</div></div></div>
-<div class="reveal" style="background:#E5F0FF;border:1px solid #E5E7EB;"><div class="reveal-question">4. Does this prove social media causes low self-esteem?</div><div class="reveal-answer" style="background:#FFFFFF;"><div><strong>No.</strong> The evidence shows an <em>association</em>: Emma feels worse after scrolling, but causation cannot be established &mdash; prior low self-esteem may drive both the scrolling and the dissatisfaction, and other factors (stress, relationships, sleep) may influence both. Direction needs longitudinal or experimental evidence, not a single episode.</div></div></div>
-</div></div>
+<p><em>Scenario:</em> Emma follows several influencers who post about appearance, fitness and luxury lifestyles. After spending time online, Emma begins feeling dissatisfied with herself.</p>
+<div class="reveal"><div class="reveal-question">1. Which type of social comparison may Emma be experiencing?</div><div class="reveal-answer"><div><strong>Upward social comparison</strong> &mdash; Emma measures herself against influencers who appear better off in appearance, fitness and lifestyle, and the gap leaves her dissatisfied.</div></div></div>
+<div class="reveal"><div class="reveal-question">2. Why might social media increase this type of comparison?</div><div class="reveal-answer"><div>Social media exposes Emma to <strong>many idealised and carefully selected presentations</strong> of other people&rsquo;s lives &mdash; more targets, more often, more visibly quantified (likes, followers) and more heavily curated than anything offline life supplies.</div></div></div>
+<div class="reveal"><div class="reveal-question">3. Why might another person respond differently to the same content?</div><div class="reveal-answer"><div>People differ in <strong>self-esteem, interpretation, goals and personal circumstances</strong>. Another viewer might admire the same posts without self-judgment, find them motivating, or simply not care &mdash; the content is constant, the interpretation varies.</div></div></div>
+<div class="reveal"><div class="reveal-question">4. Does this prove social media causes low self-esteem?</div><div class="reveal-answer"><div><strong>No.</strong> The evidence shows an <em>association</em>: Emma feels worse after scrolling, but causation cannot be established &mdash; prior low self-esteem may drive both the scrolling and the dissatisfaction, and other factors (stress, relationships, sleep) may influence both. Direction needs longitudinal or experimental evidence, not a single episode.</div></div></div>
+</div>
+<h3>Exam Practice</h3>
+<div class="hw28-apply">
 
-<div class="collapsible"><button class="collapsible-trigger">Exam Practice</button><div class="collapsible-body">
 <p><strong>Question:</strong> &ldquo;Explain how Social Comparison Theory may influence wellbeing.&rdquo; A strong answer should include:</p>
 <ul>
 <li>definition of Social Comparison Theory (evaluating the self against others),</li>
@@ -2436,10 +2487,14 @@
 <li>application to social media (opportunities, highlight reels, FOMO),</li>
 <li>evaluation (interpretation matters; individual differences; correlation is not causation).</li>
 </ul>
-<div class="reveal" style="background:#FFFFFF;border:1px solid #E5E7EB;"><div class="reveal-question">Model answer</div><div class="reveal-answer" style="background:#FFFFFF;"><div>Social Comparison Theory proposes that people evaluate their abilities, opinions and characteristics against others. Upward comparison &mdash; for example, measuring yourself against influencers&rsquo; edited appearance content &mdash; can inspire or deflate depending on interpretation; downward comparison &mdash; for example, against someone struggling more &mdash; can reassure. Social media multiplies opportunities for comparison through countless visible, quantified, curated targets, plus FOMO when rewarding experiences appear to exclude you. Whether wellbeing falls depends on interpretation and individual differences (self-esteem, goals, circumstances) &mdash; and because most evidence is correlational, comparison explains a plausible mechanism rather than a proven cause. It is one influence among many, not the whole story.</div></div></div>
-</div></div>
-
-<div style="background:#F3F5F7;border:1px solid #E5E7EB;border-radius:var(--radius);padding:1.25rem 1.5rem;">
+<div class="reveal"><div class="reveal-question">Model answer</div><div class="reveal-answer"><div>Social Comparison Theory proposes that people evaluate their abilities, opinions and characteristics against others. Upward comparison &mdash; for example, measuring yourself against influencers&rsquo; edited appearance content &mdash; can inspire or deflate depending on interpretation; downward comparison &mdash; for example, against someone struggling more &mdash; can reassure. Social media multiplies opportunities for comparison through countless visible, quantified, curated targets, plus FOMO when rewarding experiences appear to exclude you. Whether wellbeing falls depends on interpretation and individual differences (self-esteem, goals, circumstances) &mdash; and because most evidence is correlational, comparison explains a plausible mechanism rather than a proven cause. It is one influence among many, not the whole story.</div></div></div>
+</div>
+<div class="hw28-task">
+<h4>Evidence Check — comparing the designs</h4>
+<div class="act-container" id="hw-fomo-design"></div>
+</div>
+</div>
+<div class="hw28-summary" style="background:#F3F5F7;border:1px solid #E5E7EB;border-radius:var(--radius);padding:1.25rem 1.5rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
 <li>Comparison is a normal psychological process: people evaluate abilities, opinions and characteristics against others.</li>
@@ -2451,9 +2506,22 @@
 <li>Interpretation, individual differences and direction-of-causation limits decide what comparison findings can claim.</li>
 </ol>
 </div>
-<div style="background:#E5F0FF;border:1px solid #E5E7EB;border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — comparing the designs</h4><div class="act-container" id="hw-fomo-design"></div></div>
-
-
+<script>
+(function () {
+  var slide = document.getElementById('slide-28');
+  if (!slide) return;
+  var toggles = slide.querySelectorAll('.hw28-part-toggle, .hw28-study-toggle');
+  Array.prototype.forEach.call(toggles, function (btn) {
+    btn.addEventListener('click', function () {
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!body) return;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      body.hidden = expanded;
+    });
+  });
+})();
+</script>
 </div>
 
 
