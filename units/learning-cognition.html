@@ -2284,55 +2284,203 @@
 <div class="slide" data-slide="22" id="slide-22">
 <h2>Anchoring &amp; Decision-Making</h2>
 <p class="slide-intro">Experiencing the anchoring effect yourself, then examining Tversky &amp; Kahneman (1974) &mdash; procedure, findings and what they imply about judgement under uncertainty.</p>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:.5rem;">
-<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Try It Yourself &mdash; Before Any Theory</h4>
-<p style="font-size:.88rem;color:var(--text-secondary);margin:0;">Answer both questions in writing or in your head BEFORE opening either reveal. Commit to specific numbers.</p>
+<style>
+#slide-22 .s22-h3{font-size:1rem;font-weight:700;margin:1.1rem 0 .6rem;color:var(--text)}
+#slide-22 .s22-intro{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin:0 0 .9rem}
+#slide-22 .s22-intro p{font-size:.88rem;line-height:1.6;color:var(--text-secondary);margin:0}
+#slide-22 .s22-panel{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:10px;padding:1rem 1.1rem;margin:0 0 .9rem}
+#slide-22 .s22-panel h4{margin:0 0 .45rem;font-size:.95rem;font-weight:700;color:var(--text)}
+#slide-22 .s22-panel p{margin:0 0 .45rem;font-size:.9rem;line-height:1.65;color:var(--text-secondary)}
+#slide-22 .s22-panel p:last-child{margin-bottom:0}
+#slide-22 .s22-q{font-size:.92rem;font-weight:600;line-height:1.6;color:var(--text);margin:0 0 .35rem}
+#slide-22 .s22-hint{font-size:.82rem;font-style:italic;line-height:1.55;color:#64748B;margin:.35rem 0 0}
+#slide-22 .collapsible{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:10px;margin:0 0 .9rem;overflow:hidden}
+#slide-22 .collapsible-trigger{background:#FFFFFF;padding:.8rem 1.05rem;font-size:.95rem;font-weight:700;color:var(--text)}
+#slide-22 .collapsible-trigger:hover{background:#F8FAFC}
+#slide-22 .collapsible-body{background:#FFFFFF;border-top:1px solid #E2E8F0;padding:.9rem 1.05rem}
+#slide-22 .collapsible-body strong{color:var(--text)}
+#slide-22 .collapsible-body p{font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-22 .collapsible-body p:last-child{margin-bottom:0}
+#slide-22 .collapsible-body ul,#slide-22 .collapsible-body ol{margin:0 0 .55rem;padding-left:1.25rem}
+#slide-22 .collapsible-body li{font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-22 .reveal{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:10px;padding:.75rem 1rem;margin:0 0 .9rem}
+#slide-22 .reveal:hover{border-color:#CBD5E1}
+#slide-22 .reveal-question{font-size:.92rem;font-weight:700;flex-wrap:wrap;gap:.35rem .75rem}
+#slide-22 .reveal-question::after{content:'Reveal';font-size:.75rem;font-weight:600;color:#475569;background:#F1F5F9;padding:.18rem .55rem;border-radius:4px}
+#slide-22 .reveal-answer p{font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem}
+#slide-22 .reveal-answer p:last-child{margin-bottom:0}
+#slide-22 .s22-task{background:#E5F0FF;border:1px solid #D6E4F7;border-radius:10px;padding:1rem 1.1rem;margin:.9rem 0}
+#slide-22 .s22-task h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .3rem}
+#slide-22 .s22-task .s22-sub{font-size:.88rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .7rem}
+#slide-22 .s22-task ol,#slide-22 .s22-task ul{margin:0 0 .75rem;padding-left:1.25rem}
+#slide-22 .s22-task ol li,#slide-22 .s22-task ul li{font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-22 .s22-task ol li:last-child,#slide-22 .s22-task ul li:last-child{margin-bottom:0}
+#slide-22 .s22-task .reveal{margin:0 0 .75rem}
+#slide-22 .s22-task .reveal:last-child{margin-bottom:0}
+#slide-22 .s22-note{font-size:.82rem;line-height:1.6;color:#64748B;margin:0}
+#slide-22 .s22-note strong{color:#475569}
+#slide-22 .s22-card{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:10px;padding:.9rem 1rem;margin:0 0 .8rem}
+#slide-22 .s22-card h4{margin:0 0 .35rem;font-size:.9rem;font-weight:700;color:var(--text)}
+#slide-22 .s22-card p{margin:0 0 .35rem;font-size:.88rem;line-height:1.6;color:var(--text-secondary)}
+#slide-22 .s22-card p:last-child{margin-bottom:0}
+#slide-22 .s22-table{width:100%;border-collapse:collapse;margin:.4rem 0 .75rem}
+#slide-22 .s22-table th,#slide-22 .s22-table td{border:1px solid #E2E8F0;padding:.4rem .6rem;font-size:.88rem;color:var(--text-secondary);text-align:left}
+#slide-22 .s22-table th{background:#F8FAFC;font-weight:600;color:var(--text)}
+#slide-22 .s22-table th:last-child,#slide-22 .s22-table td:last-child{text-align:right}
+@media (max-width:640px){#slide-22 .s22-panel,#slide-22 .s22-task,#slide-22 .s22-card,#slide-22 .s22-intro,#slide-22 .collapsible-body{padding:.8rem .85rem}#slide-22 .collapsible-trigger{padding:.7rem .85rem}}
+</style>
+<h3 class="s22-h3">Try It Yourself &mdash; Does an Irrelevant Number Influence Your Estimate?</h3>
+<div class="s22-intro">
+<p>You will answer one question about the height of a redwood tree. Give your best estimate without looking up the answer. Your teacher will then compare the estimates from two groups.</p>
 </div>
-<div class="reveal"><div class="reveal-question">Question A: The tallest redwood tree on record &mdash; is it more or less than 366 metres tall? Now estimate its actual height in metres.</div><div class="reveal-answer"><div>Note your estimate. The true height of the tallest redwoods is roughly 115 metres &mdash; far below the 366 m anchor. If your estimate drifted upward from what you would have said cold, you have just experienced anchoring: the given number pulls estimates toward itself even when obviously wrong.</div></div></div>
-<div class="reveal"><div class="reveal-question">Question B: Another group was asked the same question with a low anchor &mdash; more or less than 8 metres? Their estimates also clustered near their anchor. Predict which group averaged higher before revealing the research below.</div><div class="reveal-answer"><div>The high-anchor group always averages higher than the low-anchor group, despite identical trees and identical logic. In real experiments using this format (Jacowitz &amp; Kahneman, 1995), anchors shifted mean estimates dramatically. Keep your Question A estimate &mdash; compare it with someone who answers Question B first.</div></div></div>
+<div class="s22-panel" id="s22-group-none" hidden>
+<p>This page has two versions of the question &mdash; Group A and Group B. Your teacher will tell you which group you are in and give you the web address for your group. Open your group's link, read the question, and write your estimate in your notebook.</p>
+</div>
+<div class="s22-panel" id="s22-group-a" hidden>
+<h4>Group A &mdash; High Anchor</h4>
+<p class="s22-q">Is the tallest redwood tree on record taller or shorter than 366 meters?</p>
+<p class="s22-q">What do you estimate its actual height is, in meters?</p>
+<p class="s22-hint">Write your estimate in your notebook now &mdash; do not discuss it with anyone in another group until your teacher says so.</p>
+</div>
+<div class="s22-panel" id="s22-group-b" hidden>
+<h4>Group B &mdash; Low Anchor</h4>
+<p class="s22-q">Is the tallest redwood tree on record taller or shorter than 8 meters?</p>
+<p class="s22-q">What do you estimate its actual height is, in meters?</p>
+<p class="s22-hint">Write your estimate in your notebook now &mdash; do not discuss it with anyone in another group until your teacher says so.</p>
+</div>
+<script>
+(function(){var m=location.search.match(/[?&]group=(a|b)(?:&|$)/);var a=document.getElementById('s22-group-a');var b=document.getElementById('s22-group-b');var n=document.getElementById('s22-group-none');if(m&&m[1]==='a'){a.hidden=false}else if(m&&m[1]==='b'){b.hidden=false}else{n.hidden=false}})();
+</script>
+<div class="collapsible"><button class="collapsible-trigger">Note for teachers: how to run this demonstration</button><div class="collapsible-body">
+<p>Assign students to Group A or Group B <strong>before</strong> they open this page. Share the link ending in <strong>?group=a</strong> with Group A and the link ending in <strong>?group=b</strong> with Group B &mdash; each student sees only their own group's question, and students without a group link see no anchor at all.</p>
+<p>Collect one written estimate from every student, then use <strong>Compare the Results</strong> below as a class.</p>
+<p>This is a teacher-controlled classroom demonstration, not a randomized experiment: students are assigned to groups by the teacher rather than at random, so the class results illustrate the anchoring effect rather than testing it.</p>
+</div></div>
+<div class="s22-task">
+<h4>Compare the Results</h4>
+<p class="s22-sub">After both groups have committed their estimates in writing, work through these as a class.</p>
+<ol>
+<li>Calculate the mean estimate for Group A.</li>
+<li>Calculate the mean estimate for Group B.</li>
+<li>Which group produced the higher mean?</li>
+<li>Did the pattern match what anchoring research would predict?</li>
+</ol>
+<div class="reveal"><div class="reveal-question">After collecting the estimates, reveal the explanation.</div><div class="reveal-answer"><div>
+<p>Anchoring research predicts that people exposed to a higher numerical anchor will, on average, tend to give higher estimates than people exposed to a lower anchor. However, the effect is not guaranteed in every small sample. Our classroom results may or may not show the expected pattern.</p>
+</div></div></div>
+<p class="s22-note"><strong>Note:</strong> this classroom activity is a demonstration of anchoring &mdash; not the original Tversky and Kahneman (1974) experiment.</p>
+</div>
+<h3 class="s22-h3">What Is Anchoring?</h3>
+<div class="s22-panel">
+<p>Anchoring is a cognitive bias in which an initial number or piece of information influences a later judgment. Even when the starting number is irrelevant, people's estimates can be drawn toward it.</p>
+<p>Imagine two people estimating the price of the same secondhand car. One first sees a price of $20,000, while the other sees $8,000. Even if both know the starting prices may be unrealistic, those numbers could influence their subsequent estimates.</p>
+<p>The starting number <strong>can influence</strong> the later judgment &mdash; but it does not determine it. People can adjust away from an anchor, and other information matters too.</p>
+</div>
 <div class="collapsible"><button class="collapsible-trigger">Core Study: Tversky &amp; Kahneman (1974) &mdash; The Wheel of Fortune</button><div class="collapsible-body">
 <h4 style="font-size:.95rem;font-weight:700;margin:.25rem 0 .35rem;color:var(--text);">Aim</h4>
-<p>To test whether an arbitrary number &mdash; one generated by pure chance, visibly unrelated to the question &mdash; influences numerical estimation.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Who was studied</h4>
-<p>Adult participants (including university students) tested individually in small-scale experimental sessions.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Procedure</h4>
+<p>To investigate whether an arbitrary numerical starting point influences people's estimates of an uncertain quantity.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Who was studied</h4>
+<p>Participants took part in an experimental judgment task involving numerical estimates.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Procedure</h4>
+<ol>
+<li>Participants observed a wheel of fortune that appeared to produce a random number.</li>
+<li>The wheel was manipulated to stop at either <strong>10 or 65</strong>.</li>
+<li>Participants were asked whether the percentage of African countries among United Nations member states was higher or lower than the number shown.</li>
+<li>They then estimated the actual percentage.</li>
+<li>Researchers compared estimates between the two anchor conditions.</li>
+</ol>
+<p>The wheel's number was unrelated to the actual percentage being estimated &mdash; it served purely as an arbitrary starting point.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Findings</h4>
+<table class="s22-table">
+<tr><th>Anchor shown</th><th>Median estimate</th></tr>
+<tr><td>10</td><td>25%</td></tr>
+<tr><td>65</td><td>45%</td></tr>
+</table>
+<p>Participants exposed to the higher anchor gave higher median estimates. This suggests that an arbitrary number influenced their subsequent judgment.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Conclusion</h4>
+<p>The findings provide evidence that numerical judgments can be influenced by arbitrary starting points, even when those starting points have no meaningful connection to the correct answer.</p>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Strengths</h4>
 <ul>
-<li>Participants watched a wheel of fortune spin &mdash; rigged to stop at either 10 or 65 depending on group.</li>
-<li>They first answered: is the percentage of African nations in the United Nations higher or lower than that number?</li>
-<li>They then gave their own estimate of the actual percentage.</li>
-<li>The comparison of interest was between the estimates of the anchor-10 group versus the anchor-65 group.</li>
+<li>The researchers manipulated the numerical anchor &mdash; the only intended difference between the two conditions.</li>
+<li>Both conditions answered the same substantive question, so the two sets of estimates are directly comparable.</li>
+<li>The comparison allowed researchers to investigate whether the anchor shifted estimates, rather than whether participants differed in knowledge or effort.</li>
 </ul>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Key findings</h4>
+<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Limitations</h4>
 <ul>
-<li>Anchor-65 group: median estimate around 45%.</li>
-<li>Anchor-10 group: median estimate around 25%.</li>
-<li>The wheel value was transparently arbitrary, yet estimates differed by roughly double between groups &mdash; pulled toward whichever number chance provided.</li>
+<li>Estimating an unfamiliar percentage in an artificial task may not fully represent real-world decision-making.</li>
+<li>The findings demonstrate an anchoring effect but do not establish one exclusive psychological mechanism behind it &mdash; explanations such as insufficient adjustment and selective accessibility are still debated.</li>
+<li>The experiment does not show that every individual is equally susceptible to anchoring.</li>
 </ul>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Conclusion</h4>
-<p>Numerical judgement under uncertainty starts from whatever value is available and adjusts insufficiently. Anchoring is not a quirk of obvious relevance: even meaningless numbers bias serious estimates. Tversky and Kahneman placed anchoring among the heuristics &mdash; fast judgmental procedures that usually work but produce systematic error.</p>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Strengths</h4>
-<ul>
-<li>Randomised, controlled manipulation of a single variable with a clean quantitative DV &mdash; strong causal inference.</li>
-<li>The arbitrariness of the anchor eliminates plausible alternative explanations (expertise, relevance).</li>
-</ul>
-<h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;">Limitations / alternative interpretations</h4>
-<ul>
-<li>Small samples and student-heavy participation limit generalisability (though replications worldwide reproduce the effect).</li>
-<li>Demand characteristics debated: participants might guess the intended direction &mdash; though effects survive designs designed to hide purpose.</li>
-<li>Mechanism debate persists: insufficient adjustment vs selective accessibility (anchor makes anchor-consistent knowledge easier to retrieve). Both accounts agree on the effect, differing on process.</li>
-</ul>
-<p style="margin-top:.75rem;"><strong>Link:</strong> Anchoring demonstrates dual processing directly: System 1 delivers an instant estimate built around the available number; System 2 adjusts lazily if not explicitly engaged. The bias is the measurable fingerprint of heuristic processing.</p>
+<p style="margin-top:.75rem;"><strong>Link to theory:</strong> anchoring is often connected to dual processing theory, because it shows how quickly available numbers can shape judgment. However, the experiment itself does not show which type of processing produced the effect &mdash; this is discussed below.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">Anchoring Beyond the Laboratory</button><div class="collapsible-body">
+<h3 class="s22-h3">How Does Anchoring Relate to Dual Processing?</h3>
+<div class="s22-panel">
+<p>Dual processing theory distinguishes between relatively fast, automatic thinking and slower, more deliberate thinking. Anchoring is relevant because it shows how information can influence judgments even when people have little reason to treat that information as useful.</p>
+<p>However, Tversky and Kahneman's experiment does not directly establish which type of processing produced the effect. Researchers have proposed different explanations for anchoring, including insufficient adjustment from an initial value and the selective accessibility of anchor-consistent information.</p>
+</div>
+<div class="s22-task">
+<h4>Consider This Claim</h4>
+<p class="s22-sub">A student says, &ldquo;The wheel-of-fortune experiment proves that System 1 causes anchoring because System 2 is too lazy to correct it.&rdquo;</p>
+<p class="s22-sub" style="margin-bottom:.75rem;">Explain why this conclusion goes beyond what the experiment actually demonstrated.</p>
+<div class="reveal"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>
+<p>The experiment showed that an arbitrary numerical anchor influenced participants' estimates. However, the researchers did not directly measure System 1 or System 2 processing. The results therefore support the existence of anchoring but do not establish that one particular cognitive system caused it.</p>
+</div></div></div>
+</div>
+<h3 class="s22-h3">Anchoring in Everyday Decisions</h3>
+<div class="s22-card">
+<h4>Retail pricing</h4>
+<p>The anchor: the first price a customer sees &mdash; for example, an expensive product displayed before a cheaper alternative.</p>
+<p>The judgment it could influence: what the customer considers a reasonable price for the cheaper option. The first price may influence what seems reasonable, but the customer may still compare elsewhere, check their budget, or decide the product is not worth it.</p>
+</div>
+<div class="s22-card">
+<h4>Salary negotiations</h4>
+<p>The anchor: the initial salary figure put forward in the discussion.</p>
+<p>The judgment it could influence: the offers and counteroffers that follow &mdash; even when both parties know the opening figure is negotiable.</p>
+</div>
+<div class="s22-card">
+<h4>Legal judgments</h4>
+<p>The anchor: an initial numerical demand, such as a suggested damages amount.</p>
+<p>The judgment it could influence: later estimates of what the case is worth, such as a settlement figure. Evidence, argument and case law also shape the outcome.</p>
+</div>
+<div class="s22-card">
+<h4>Defence against anchoring</h4>
+<p>Generate your own estimate BEFORE hearing others'; consider a deliberate range rather than single values; assign devil's-advocate roles in group decisions.</p>
+</div>
+<p class="s22-note" style="margin:.2rem 0 .9rem;">In each example, anchoring is one influence among many &mdash; it does not determine the final decision.</p>
+<div class="reveal"><div class="reveal-question">Connect back: why might anchoring be described as a bias in fast, everyday judgment?</div><div class="reveal-answer"><div>
+<p>Anchoring appears when people make quick estimates without deliberately checking whether the starting number is relevant. The first value acts as a shortcut, and adjustment from it is often limited, so fast judgments can be drawn toward an irrelevant number. It is described as a bias, not carelessness: it shows up in motivated people trying to be accurate. It is also a tendency rather than a rule &mdash; the effect can be reduced when people generate their own estimate first or consider a range of values.</p>
+</div></div></div>
+<div class="s22-task">
+<h4>Apply Your Understanding</h4>
+<p class="s22-sub">Two students are asked to estimate the value of the same secondhand laptop. Before making their estimates, Student A sees an advertised price of $1,800. Student B sees an advertised price of $400. Neither advertised price is necessarily the laptop's actual market value.</p>
+<ol>
+<li>Identify the anchor in each student's situation.</li>
+<li>Predict which student is more likely to give the higher estimate.</li>
+<li>Explain the prediction using anchoring.</li>
+<li>Explain why the two students might still give similar estimates.</li>
+</ol>
+<div class="reveal"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>
+<p><strong>1.</strong> The anchors are the advertised prices: $1,800 for Student A and $400 for Student B.</p>
+<p><strong>2.</strong> Anchoring research predicts that Student A is more likely to give the higher estimate.</p>
+<p><strong>3.</strong> Each student's estimate is likely to be drawn toward the number they saw first. Even though neither advertised price is necessarily the laptop's real market value, the initial figure influences the judgment that follows.</p>
+<p><strong>4.</strong> The estimates could still turn out similar: the students might research prices, already know what this laptop is worth, or deliberately adjust away from the advertised figure. Anchoring can influence estimates, but it does not guarantee that the two students will give different answers.</p>
+</div></div></div>
+</div>
+<div class="s22-task">
+<h4>Evaluate the Evidence</h4>
+<p class="s22-sub">To what extent does Tversky and Kahneman's (1974) experiment support the claim that irrelevant information can influence decision-making?</p>
+<p class="s22-sub" style="margin-bottom:.7rem;">A strong answer will:</p>
 <ul>
-<li><strong>Retail:</strong> reference pricing (&ldquo;was $300&rdquo;) sets the anchor that makes sale prices feel generous.</li>
-<li><strong>Negotiation:</strong> the first offer frames the range; research on salary and price negotiation shows early numbers systematically shift outcomes.</li>
-<li><strong>Legal decisions:</strong> sentencing requests and damages claims function as anchors on professional judgement.</li>
-<li><strong>Defence against anchoring:</strong> generate your own estimate BEFORE hearing others'; consider a deliberate range rather than single values; assign devil's-advocate roles in group decisions.</li>
+<li>Describe the manipulated anchors.</li>
+<li>Refer to the 25% and 45% median estimates.</li>
+<li>Explain what the comparison supports.</li>
+<li>Identify one limitation of applying the findings to everyday decisions.</li>
 </ul>
-</div></div>
-<div class="reveal"><div class="reveal-question">Connect back: why is anchoring classified as a failure mode of automatic processing rather than carelessness?</div><div class="reveal-answer"><div>Because it appears in motivated, intelligent people trying to be accurate &mdash; the error arises from the architecture of fast estimation, not from lack of effort. The shortcut (start from available value, adjust a little) is efficient and often adequate; it misfires specifically when the starting value is irrelevant. That signature &mdash; good performance degraded predictably by context &mdash; defines heuristic processing.</div></div></div>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
+<div class="reveal"><div class="reveal-question">Model Response</div><div class="reveal-answer"><div>
+<p>Tversky and Kahneman manipulated an irrelevant number: a wheel of fortune that stopped at either 10 or 65. Participants who saw 65 gave a higher median estimate of the percentage of African countries in the United Nations (45%) than participants who saw 10 (25%). Because the anchor was unrelated to the question, the comparison supports the claim that an arbitrary starting point influenced numerical judgments. The support is only partial, however: the task was artificial and unfamiliar, the study does not establish which mechanism produced the effect, and it does not show that every individual is equally susceptible &mdash; so the findings should be applied to everyday decision-making with caution.</p>
+</div></div></div>
+</div>
+<div style="background:#E5F0FF;border:1px solid #E5E7EB;border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
   <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Anchoring</h4>
   <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Identify the anchoring mechanism in a real-world scenario.</p>
   <div class="act-container" id="lc-inline-anchor-check"></div>
@@ -2341,14 +2489,13 @@
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>You experienced anchoring first-hand: identical questions, different anchors, different answers.</li>
-<li>Tversky &amp; Kahneman (1974): wheel stopping at 10 vs 65 produced median UN estimates ~25% vs ~45%.</li>
-<li>Conclusion: estimates start from available values; adjustment is insufficient &mdash; even from random anchors.</li>
-<li>Design strengths: randomised control, clean DV. Limits: sample size, demand-characteristic debates, mechanism dispute.</li>
-<li>Practical defence: self-generate first estimates; use ranges; structure decisions before exposure to numbers.</li>
+<li>Anchoring occurs when an initial number or piece of information influences a later judgment.</li>
+<li>Tversky and Kahneman (1974) used arbitrary anchors of 10 and 65.</li>
+<li>The corresponding median estimates were 25% and 45%.</li>
+<li>The findings support the anchoring effect but do not establish one exclusive cognitive explanation.</li>
+<li>Anchoring can influence everyday judgments, but its effects are not inevitable.</li>
 </ol></div>
 </div>
-
 <div class="slide activity-slide" data-slide="23" id="slide-23"><h2>Experience the Anchoring Effect</h2>
 <p class="slide-intro">Run the classic experiment on yourself: make your judgements first, then reveal how the anchors shaped them.</p>
 <div class="act-container" id="lc-p11-anchor"></div>
