@@ -122,6 +122,14 @@
       display: table;
       margin-top: .5rem;
     }
+    #slide-25 .reveal-question {
+      display: block;
+    }
+    #slide-25 .reveal-question::after {
+      display: table;
+      margin-top: .5rem;
+      margin-left: auto;
+    }
     /* The custom Working Memory widget keeps its baseline unstyled container
        (base .act-container carries no shared styles); only its page chrome
        (title/intro/nav) takes the blueprint. Placed last; ID wins ties. */
@@ -2547,40 +2555,60 @@
 
 <div class="slide" data-slide="25" id="slide-25">
 <h2>Memory Processes</h2>
-<p class="slide-intro">How information is briefly registered, actively maintained and stored over time &mdash; and why psychologists distinguish between encoding, storage and retrieval.</p>
+<p class="slide-intro">How we encode, store, and retrieve information &mdash; and why remembering something is not always as straightforward as it seems.</p>
+<p>Memory allows us to retain information and use it later. Psychologists distinguish between three processes: encoding, storage, and retrieval. These processes help explain how memories are formed, maintained, and recalled.</p>
+<ul style="margin:.25rem 0;padding-left:1.25rem;font-size:.95rem;line-height:1.6;">
+<li><strong>Encoding:</strong> Processing information so that it can be represented in memory.</li>
+<li><strong>Storage:</strong> Maintaining information in memory over time.</li>
+<li><strong>Retrieval:</strong> Accessing information that has previously been stored.</li>
+</ul>
+<p style="margin-top:.25rem;">These processes are interconnected rather than strictly sequential &mdash; remembering typically depends on how they work together.</p>
 <div class="collapsible"><button class="collapsible-trigger">The Three-Store Model of Memory</button><div class="collapsible-body">
 <p>Atkinson and Shiffrin (1968) proposed that memory can be understood as involving three stores: the sensory register, short-term memory and long-term memory.</p>
 <p style="text-align:center;margin:1rem 0;"><img src="../images/three-store-model-memory.png" alt="Atkinson and Shiffrin three-store model showing sensory register, short-term memory and long-term memory" style="width:100%;height:auto;border-radius:var(--radius);"></p>
+<p>It is a theoretical model: the stores are proposed components of an explanation of memory, not literal physical locations in the brain.</p>
+<p>Each store is proposed to handle information differently:</p>
+<p><strong>Sensory register:</strong> The sensory register briefly retains information from our senses. Most information is lost quickly, but attended information may be processed further.</p>
+<p><strong>Short-term memory:</strong> Short-term memory temporarily maintains a limited amount of information. Without continued processing, information may be lost or become difficult to retrieve.</p>
+<p><strong>Long-term memory:</strong> Long-term memory allows information to be retained over extended periods, potentially for many years.</p>
+<p><strong>How information moves between stores:</strong> The model proposes that attention allows some sensory information to enter short-term memory. Rehearsal and other control processes can help maintain information and support its transfer into long-term memory, although they do not guarantee it &mdash; the depth and meaning of processing also matter. Information stored in long-term memory may later be retrieved into short-term memory for conscious use.</p>
 </div></div>
 <div class="collapsible"><button class="collapsible-trigger">Why Is This Model Useful?</button><div class="collapsible-body">
-<p>The model is useful because it distinguishes memory systems with different properties and gives us a starting framework for thinking about how information can be retained over different periods of time.</p>
+<p>The three-store model helps explain why information can be briefly noticed without being remembered later. It distinguishes temporary maintenance from longer-term retention and highlights the importance of attention and processing in memory.</p>
+<p>For example, you might hear a phone number and remember it long enough to type it, but struggle to recall it the following day. The model helps explain the difference between temporarily maintaining information and storing it for later retrieval.</p>
+<p>The model also provided a framework for research into different memory systems and encouraged psychologists to investigate whether short-term and long-term memory operate differently.</p>
 </div></div>
 <div class="collapsible"><button class="collapsible-trigger">Where Does the Model Fall Short?</button><div class="collapsible-body">
-<p>The model should not be treated as a complete modern explanation of memory. In particular, treating short-term memory as one single store becomes difficult to reconcile with evidence that people can simultaneously maintain and process different kinds of information. This problem leads directly to the Working Memory Model.</p>
+<p>One limitation is that the model treats short-term memory as a relatively unified store. However, research suggests that people can maintain and process different types of information using partly separate resources. For example, performing a verbal task and a visual task at the same time may produce less interference than performing two tasks that compete for similar resources.</p>
+<p>These findings helped motivate Baddeley and Hitch's Working Memory Model (1974), which proposes a more detailed explanation of temporary information storage and processing.</p>
+<p>The three-store model also gives a simplified account of how information becomes stored in long-term memory. Rehearsal can help, but the depth and meaning of processing also influence later remembering.</p>
+<p>We will examine the Working Memory Model on the next page.</p>
 </div></div>
 <div class="collapsible"><button class="collapsible-trigger">Keeping Information Active</button><div class="collapsible-body">
-<p><strong>Maintenance rehearsal</strong> involves repeating information to keep it active for a short period of time.</p>
-<p>For example, repeating a phone number while preparing to type it can help keep the number available temporarily.</p>
-<p><strong>Elaborative rehearsal</strong> involves connecting new information to meaning or existing knowledge. Meaningful processing can support more durable encoding than simply repeating information.</p>
+<p><strong>Maintenance rehearsal:</strong> Repeating information to keep it temporarily available in memory. For example, repeating a phone number until you have entered it.</p>
+<p><strong>Elaborative rehearsal:</strong> Connecting new information to its meaning, existing knowledge, or other relevant information. For example, connecting a new psychological concept to a situation you have experienced.</p>
+<p><strong>Retrieval practice:</strong> Attempting to recall previously learned information without looking at the answer. For example, closing your textbook and answering practice questions from memory.</p>
+<p>These are related but different processes. Retrieval practice should not simply be described as elaborative rehearsal &mdash; it involves actively retrieving information, whereas elaborative rehearsal involves processing information through meaningful connections.</p>
 <p><strong>Chunking</strong> involves organising separate pieces of information into meaningful groups. For example, a long sequence of digits may become easier to maintain if it can be organised into several familiar chunks.</p>
 <p>These strategies illustrate an important distinction: temporarily keeping information available is not the same thing as creating a durable long-term memory.</p>
 </div></div>
-<div class="reveal"><div class="reveal-question">Why do students who reread a textbook five times often forget the content, while students who answer practice questions once remember better?</div><div class="reveal-answer"><div>Rereading is maintenance rehearsal &mdash; surface repetition without generating meaning. Practice questions force elaborative rehearsal: the student must retrieve and organize meaning to construct an answer. Practice questions require retrieval and meaningful processing rather than simple re-exposure. Deeper, more elaborative processing generally produces stronger long-term retention, while retrieval practice also strengthens later access to the information.</div></div></div>
+<div class="reveal"><div class="reveal-question">Two students prepare for a psychology test. One repeatedly rereads their notes, while the other closes the notes and tries to answer questions from memory. Why might the second strategy lead to better long-term retention?</div><div class="reveal-answer"><div>Answering questions from memory involves retrieval practice, which can improve later retention by strengthening access to learned information. Rereading provides another opportunity to process the material, but it does not necessarily require students to retrieve information independently. Both strategies can help, but retrieval practice often produces stronger long-term retention under suitable conditions.</div></div></div>
 <div class="collapsible"><button class="collapsible-trigger">When Remembering Fails</button><div class="collapsible-body">
 <p>A failure to remember does not automatically mean that information has simply disappeared.</p>
 <p>Psychologists distinguish between several possibilities.</p>
-<p><strong>Encoding failure:</strong> information was not encoded sufficiently for later retrieval.</p>
-<p><strong>Retrieval failure:</strong> information may have been stored but is not accessible at that moment because suitable retrieval cues are unavailable.</p>
+<p><strong>Encoding failure:</strong> Information may not be remembered because it was not adequately encoded in the first place. For example, you cannot recall the color of a sign you passed because you paid little attention to it.</p>
+<p><strong>Retrieval failure:</strong> Information may have been stored but cannot be accessed successfully at a particular moment. For example, you temporarily cannot remember someone's name but recall it later.</p>
 <p><strong>Interference:</strong> other learning can make retrieval more difficult.</p>
 <ul>
-<li><strong>Proactive interference:</strong> earlier learning interferes with newer information.</li>
-<li><strong>Retroactive interference:</strong> newer learning interferes with earlier information.</li>
+<li><strong>Proactive interference:</strong> Previously learned information interferes with remembering newer information &mdash; for example, your old password makes it difficult to remember your new password.</li>
+<li><strong>Retroactive interference:</strong> Newly learned information interferes with remembering older information &mdash; for example, after learning a new password, you struggle to recall your old one.</li>
 </ul>
 <p>This distinction matters because the same observable outcome — “I cannot remember” — can result from different underlying processes.</p>
+<p>It is not always possible to identify with confidence which process explains a particular failure to remember.</p>
 </div></div>
 
 
-<div class="reveal"><div class="reveal-question">A student says, "I studied this last week, so if I cannot remember it now, the memory must have disappeared." What is wrong with this conclusion?</div><div class="reveal-answer"><div>Not being able to retrieve something does not prove that the memory has disappeared. The information may not have been encoded strongly in the first place, it may be stored but temporarily difficult to retrieve because useful cues are missing, or other learning may be interfering with access. Psychologists therefore distinguish between encoding and retrieval rather than treating every failure to remember as loss from storage.</div></div></div>
+<div class="reveal"><div class="reveal-question">A student says, "I studied this last week, so if I cannot remember it now, the memory must have disappeared." What is wrong with this conclusion?</div><div class="reveal-answer"><div>Not being able to remember something does not necessarily mean the information has disappeared from memory. The student may not have encoded it effectively, or the information may be stored but temporarily difficult to retrieve. Interference from other learning may also make recall more difficult. Without further evidence, we cannot determine exactly why the student has forgotten it.</div></div></div>
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">From Short-Term Memory to Working Memory</h3>
 <p>The three-store model gives us a useful starting distinction between short-term and long-term retention, but short-term memory does more than passively hold information.</p>
 <p>When you calculate something mentally, follow spoken instructions while looking at a diagram, or remember part of a sentence while interpreting what comes next, you are both <strong>maintaining and processing information</strong>.</p>
@@ -2596,11 +2624,11 @@
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>The three-store model distinguishes sensory memory, short-term memory and long-term memory.</li>
-<li>The stores differ in properties such as capacity, duration and typical forms of encoding.</li>
-<li>Maintenance rehearsal can keep information temporarily active, while meaningful elaboration can support more durable encoding.</li>
-<li>Failure to remember may reflect encoding failure, retrieval failure or interference.</li>
-<li>Treating STM as one unitary store has limitations — helping motivate the Working Memory Model.</li>
+<li>Memory involves encoding, storage, and retrieval.</li>
+<li>Atkinson and Shiffrin's three-store model distinguishes sensory, short-term, and long-term memory.</li>
+<li>The model is useful for understanding temporary and longer-term retention, but it simplifies how information is processed.</li>
+<li>Maintenance rehearsal, elaborative rehearsal, and retrieval practice are different processes that may support remembering.</li>
+<li>Forgetting can involve encoding difficulties, retrieval failure, or interference; unsuccessful recall does not necessarily mean a memory has disappeared.</li>
 </ol></div>
 </div>
 
@@ -4550,7 +4578,7 @@ initActivity('lc-inline-mem-check', {
     title: 'Memory Processes Check',
     subtitle: 'Select the best answer for each question.',
     questions: [
-      { label: "You hear a phone number but forget it before reaching your phone. Failure in:", options: ['Sensory register', 'STM without rehearsal', 'LTM encoding failure', 'LTM retrieval'], correct: 1, feedback: 'The information was briefly held in STM but decayed before it could be rehearsed or transferred to LTM. Without maintenance rehearsal, STM items last approximately 18-30 seconds. This is STM decay, not encoding failure or retrieval failure.' },
+      { label: "You hear a phone number but forget it before reaching your phone. Failure in:", options: ['Sensory register', 'STM without rehearsal', 'LTM encoding failure', 'LTM retrieval'], correct: 1, feedback: 'The information was briefly held in STM but decayed before it could be rehearsed or transferred to LTM. Without continued processing, information in STM is quickly lost. This is STM decay, not encoding failure or retrieval failure.' },
       { label: "You studied in your bedroom but can't recall in the exam hall. This is:", options: ['Encoding failure', 'Context-dependent retrieval failure', 'Storage failure', 'Proactive interference'], correct: 1, feedback: 'Encoding specificity predicts that recall is strongest when retrieval cues match encoding cues. The bedroom context provided cues during encoding that are absent in the exam hall. Different context = fewer matching cues = weaker retrieval.' }
     ]
   });
