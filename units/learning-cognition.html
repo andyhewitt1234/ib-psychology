@@ -2333,52 +2333,25 @@
 #slide-22 .s22-table th,#slide-22 .s22-table td{border:1px solid #E2E8F0;padding:.4rem .6rem;font-size:.88rem;color:var(--text-secondary);text-align:left}
 #slide-22 .s22-table th{background:#F8FAFC;font-weight:600;color:var(--text)}
 #slide-22 .s22-table th:last-child,#slide-22 .s22-table td:last-child{text-align:right}
+#slide-22 .s22-try .reveal-question{display:block}
+#slide-22 .s22-try .reveal-question::after{content:'Answer';display:table;margin-top:.5rem;margin-left:auto}
 @media (max-width:640px){#slide-22 .s22-panel,#slide-22 .s22-task,#slide-22 .s22-card,#slide-22 .s22-intro,#slide-22 .collapsible-body{padding:.8rem .85rem}#slide-22 .collapsible-trigger{padding:.7rem .85rem}}
 </style>
-<h3 class="s22-h3">Try It Yourself &mdash; Does an Irrelevant Number Influence Your Estimate?</h3>
-<div class="s22-intro">
-<p>You will answer one question about the height of a redwood tree. Give your best estimate without looking up the answer. Your teacher will then compare the estimates from two groups.</p>
-</div>
-<div class="s22-panel" id="s22-group-none" hidden>
-<p>This page has two versions of the question &mdash; Group A and Group B. Your teacher will tell you which group you are in and give you the web address for your group. Open your group's link, read the question, and write your estimate in your notebook.</p>
-</div>
-<div class="s22-panel" id="s22-group-a" hidden>
-<h4>Group A &mdash; High Anchor</h4>
-<p class="s22-q">Is the tallest redwood tree on record taller or shorter than 366 meters?</p>
-<p class="s22-q">What do you estimate its actual height is, in meters?</p>
-<p class="s22-hint">Write your estimate in your notebook now &mdash; do not discuss it with anyone in another group until your teacher says so.</p>
-</div>
-<div class="s22-panel" id="s22-group-b" hidden>
-<h4>Group B &mdash; Low Anchor</h4>
-<p class="s22-q">Is the tallest redwood tree on record taller or shorter than 8 meters?</p>
-<p class="s22-q">What do you estimate its actual height is, in meters?</p>
-<p class="s22-hint">Write your estimate in your notebook now &mdash; do not discuss it with anyone in another group until your teacher says so.</p>
-</div>
-<script>
-(function(){var m=location.search.match(/[?&]group=(a|b)(?:&|$)/);var a=document.getElementById('s22-group-a');var b=document.getElementById('s22-group-b');var n=document.getElementById('s22-group-none');if(m&&m[1]==='a'){a.hidden=false}else if(m&&m[1]==='b'){b.hidden=false}else{n.hidden=false}})();
-</script>
-<div class="collapsible"><button class="collapsible-trigger">Note for teachers: how to run this demonstration</button><div class="collapsible-body">
-<p>Assign students to Group A or Group B <strong>before</strong> they open this page. Share the link ending in <strong>?group=a</strong> with Group A and the link ending in <strong>?group=b</strong> with Group B &mdash; each student sees only their own group's question, and students without a group link see no anchor at all.</p>
-<p>Collect one written estimate from every student, then use <strong>Compare the Results</strong> below as a class.</p>
-<p>This is a teacher-controlled classroom demonstration, not a randomized experiment: students are assigned to groups by the teacher rather than at random, so the class results illustrate the anchoring effect rather than testing it.</p>
-</div></div>
+<h3 class="s22-h3">Try It Yourself &mdash; Anchoring</h3>
 <div class="s22-task">
-<h4>Compare the Results</h4>
-<p class="s22-sub">After both groups have committed their estimates in writing, work through these as a class.</p>
-<ol>
-<li>Calculate the mean estimate for Group A.</li>
-<li>Calculate the mean estimate for Group B.</li>
-<li>Which group produced the higher mean?</li>
-<li>Did the pattern match what anchoring research would predict?</li>
-</ol>
-<div class="reveal"><div class="reveal-question">After collecting the estimates, reveal the explanation.</div><div class="reveal-answer"><div>
-<p>Anchoring research predicts that people exposed to a higher numerical anchor will, on average, tend to give higher estimates than people exposed to a lower anchor. However, the effect is not guaranteed in every small sample. Our classroom results may or may not show the expected pattern.</p>
+<p class="s22-q"><strong>Question</strong></p>
+<p class="s22-q">Is the tallest redwood tree in the world taller or shorter than 366 meters?</p>
+<p class="s22-q">Now estimate the height, in meters, of the tallest redwood tree in the world.</p>
+<p class="s22-note">Write down your estimate before revealing the explanation. Do not search for the answer.</p>
+<div class="reveal s22-try"><div class="reveal-question">Explanation</div><div class="reveal-answer"><div>
+<p>The tallest known living tree is approximately 116 meters tall. The number 366 meters was deliberately much higher than the actual height.</p>
+<p>This illustrates anchoring: an initial number can influence a person's later numerical judgment, even when that number is not a reliable guide to the correct answer.</p>
+<p>However, your individual estimate cannot prove that anchoring occurred. To investigate the effect scientifically, psychologists need to compare estimates from people exposed to different initial numbers.</p>
 </div></div></div>
-<p class="s22-note"><strong>Note:</strong> this classroom activity is a demonstration of anchoring &mdash; not the original Tversky and Kahneman (1974) experiment.</p>
 </div>
 <h3 class="s22-h3">What Is Anchoring?</h3>
 <div class="s22-panel">
-<p>Anchoring is a cognitive bias in which an initial number or piece of information influences a later judgment. Even when the starting number is irrelevant, people's estimates can be drawn toward it.</p>
+<p><strong>Anchoring bias</strong> is the tendency for an initial piece of information, particularly a numerical value, to influence subsequent judgments or estimates.</p>
 <p>Imagine two people estimating the price of the same secondhand car. One first sees a price of $20,000, while the other sees $8,000. Even if both know the starting prices may be unrealistic, those numbers could influence their subsequent estimates.</p>
 <p>The starting number <strong>can influence</strong> the later judgment &mdash; but it does not determine it. People can adjust away from an anchor, and other information matters too.</p>
 </div>
@@ -2410,6 +2383,7 @@
 <li>The researchers manipulated the numerical anchor &mdash; the only intended difference between the two conditions.</li>
 <li>Both conditions answered the same substantive question, so the two sets of estimates are directly comparable.</li>
 <li>The comparison allowed researchers to investigate whether the anchor shifted estimates, rather than whether participants differed in knowledge or effort.</li>
+<li>The two conditions differed only because the researchers set the wheel to stop at different numbers, so a difference in median estimates points to the anchor itself &mdash; a stronger basis for the anchoring claim than comparing the estimates of a single student or of groups assigned by a teacher.</li>
 </ul>
 <h4 style="font-size:.95rem;font-weight:700;margin:1rem 0 .35rem;color:var(--text);">Limitations</h4>
 <ul>
@@ -2458,18 +2432,10 @@
 </div></div></div>
 <div class="s22-task">
 <h4>Apply Your Understanding</h4>
-<p class="s22-sub">Two students are asked to estimate the value of the same secondhand laptop. Before making their estimates, Student A sees an advertised price of $1,800. Student B sees an advertised price of $400. Neither advertised price is necessarily the laptop's actual market value.</p>
-<ol>
-<li>Identify the anchor in each student's situation.</li>
-<li>Predict which student is more likely to give the higher estimate.</li>
-<li>Explain the prediction using anchoring.</li>
-<li>Explain why the two students might still give similar estimates.</li>
-</ol>
-<div class="reveal"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>
-<p><strong>1.</strong> The anchors are the advertised prices: $1,800 for Student A and $400 for Student B.</p>
-<p><strong>2.</strong> Anchoring research predicts that Student A is more likely to give the higher estimate.</p>
-<p><strong>3.</strong> Each student's estimate is likely to be drawn toward the number they saw first. Even though neither advertised price is necessarily the laptop's real market value, the initial figure influences the judgment that follows.</p>
-<p><strong>4.</strong> The estimates could still turn out similar: the students might research prices, already know what this laptop is worth, or deliberately adjust away from the advertised figure. Anchoring can influence estimates, but it does not guarantee that the two students will give different answers.</p>
+<p class="s22-sub">A secondhand car is advertised for $18,000. A buyer believes this is expensive but offers $16,500. Explain how anchoring might have influenced the buyer's offer. What additional information would you need before concluding that anchoring actually occurred?</p>
+<div class="reveal s22-try"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>
+<p>The advertised price of $18,000 may have acted as an anchor, influencing the buyer's estimate of a reasonable price. Although the buyer offered less, the initial price may still have affected the amount they were willing to pay.</p>
+<p>However, the offer alone does not establish anchoring. We would need information about the car's market value, the buyer's prior expectations, and ideally how buyers respond to different initial asking prices.</p>
 </div></div></div>
 </div>
 <div class="s22-task">
