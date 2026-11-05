@@ -2521,22 +2521,23 @@
 
 <div class="slide" data-slide="25" id="slide-25">
 <h2>Memory Processes</h2>
-<p class="slide-intro">How we encode, store, and retrieve information &mdash; and why remembering something is not always as straightforward as it seems.</p>
-<p><strong>Memory involves three interconnected processes:</strong></p>
+<p class="slide-intro">How information enters memory, how long it can last, and why we sometimes forget.</p>
+<p>Memory involves three important processes:</p>
 <ul style="margin:.25rem 0;padding-left:1.25rem;font-size:.95rem;line-height:1.6;">
-<li><strong>Encoding:</strong> Processing information so it can be represented in memory.</li>
-<li><strong>Storage:</strong> Maintaining information in memory over time.</li>
-<li><strong>Retrieval:</strong> Accessing previously stored information.</li>
+<li><strong>Encoding:</strong> Turning information into a form that can be remembered.</li>
+<li><strong>Storage:</strong> Keeping information in memory over time.</li>
+<li><strong>Retrieval:</strong> Bringing stored information back when we need it.</li>
 </ul>
 <h3 style="font-size:1rem;font-weight:700;margin:1.2rem 0 .65rem;color:var(--text);">The Three-Store Model of Memory</h3>
-<p>Atkinson and Shiffrin (1968) proposed a model that distinguishes three memory stores: the sensory register, short-term memory, and long-term memory. The model helps explain how information may be briefly registered, temporarily maintained, and retained over longer periods.</p>
+<p>Atkinson and Shiffrin (1968) proposed that memory involves three stores. Each differs in how much information it can hold and how long that information typically lasts.</p>
 <style>
-#slide-25 .tsmd{margin:1.15rem 0 0;}
+#slide-25 .tsmd{margin:1.1rem 0 0;}
 #slide-25 .tsmd-grid{display:grid;grid-template-columns:1fr 64px 1fr 64px 1fr;align-items:stretch;}
-#slide-25 .tsmd-store{border-radius:12px;border:1.5px solid;background:#FFFFFF;padding-bottom:.6rem;}
-#slide-25 .tsmd-store h4{margin:0;padding:.6rem .45rem;text-align:center;font-size:.95rem;font-weight:700;}
-#slide-25 .tsmd-store ul{margin:.7rem 0 0;padding:0 .8rem 0 1.35rem;font-size:.8rem;line-height:1.5;color:var(--text-secondary);}
+#slide-25 .tsmd-store{border-radius:12px;border:1.5px solid;padding-bottom:.8rem;display:flex;flex-direction:column;}
+#slide-25 .tsmd-store h4{margin:0;padding:.6rem .5rem;text-align:center;font-size:.85rem;font-weight:700;}
+#slide-25 .tsmd-store ul{margin:.7rem 0 0;padding:0 .85rem 0 1.3rem;font-size:.82rem;line-height:1.5;color:var(--text-secondary);}
 #slide-25 .tsmd-store li{margin-bottom:.45rem;}
+#slide-25 .tsmd-store li:last-child{margin-bottom:0;}
 #slide-25 .tsmd-store strong{color:var(--text);}
 #slide-25 .tsmd-sr{border-color:#7FB4DE;background:#EAF4FC;}
 #slide-25 .tsmd-sr h4{background:#B7DFF7;color:#123B5C;}
@@ -2544,25 +2545,23 @@
 #slide-25 .tsmd-stm h4{background:#BFDFC5;color:#1E4620;}
 #slide-25 .tsmd-ltm{border-color:#F2B57E;background:#FEF5EA;}
 #slide-25 .tsmd-ltm h4{background:#FBD3A2;color:#5A3212;}
-#slide-25 .tsmd-flow{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 8px;}
+#slide-25 .tsmd-flow{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 4px;}
 #slide-25 .tsmd-arrow{display:flex;align-items:center;}
 #slide-25 .tsmd-shaft{display:block;width:20px;height:9px;background:#8195A9;border-radius:2px 0 0 2px;}
 #slide-25 .tsmd-head{display:block;width:0;height:0;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:13px solid #8195A9;}
 #slide-25 .tsmd-flow-label{margin:.45rem 0 0;font-size:.8rem;font-weight:700;color:var(--text);}
-#slide-25 .tsmd-flow-note{margin:.2rem 0 0;font-size:.72rem;font-style:italic;color:var(--text-secondary);text-align:center;line-height:1.4;}
-#slide-25 .tsmd-retrieval{grid-column:3/6;display:flex;align-items:center;gap:.55rem;margin-top:.6rem;padding:0 .35rem;}
-#slide-25 .tsmd-retr-line{display:flex;align-items:center;flex:0 1 110px;}
+#slide-25 .tsmd-retrieval{grid-column:3/6;display:flex;flex-direction:column;align-items:center;gap:.2rem;margin-top:.5rem;padding:0 .35rem;}
+#slide-25 .tsmd-retr-line{display:flex;align-items:center;width:150px;}
 #slide-25 .tsmd-retr-head{display:block;width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-right:12px solid #8195A9;}
-#slide-25 .tsmd-retr-shaft{display:block;flex:1;height:4px;background:#8195A9;border-radius:2px;}
+#slide-25 .tsmd-retr-shaft{display:block;flex:1;height:4px;background:#8195A9;border-radius:0 2px 2px 0;}
 #slide-25 .tsmd-retr-label{margin:0;font-size:.8rem;font-weight:700;color:var(--text);}
-#slide-25 .tsmd-retr-note{margin:0;font-size:.72rem;font-style:italic;color:var(--text-secondary);line-height:1.4;}
-#slide-25 .tsmd-caption{background:var(--bg-secondary);border-radius:var(--radius);padding:.75rem 1.05rem;margin-top:.85rem;}
-#slide-25 .tsmd-caption p{margin:0;font-size:.78rem;color:var(--text-secondary);line-height:1.55;}
-#slide-25 .tsmd-caption p+p{margin-top:.45rem;}
-#slide-25 .tsmd-caption strong{color:var(--text);}
-#slide-25 .tsmd-explain{margin-top:.9rem;}
-#slide-25 .tsmd-explain p{margin:0;font-size:.88rem;line-height:1.65;color:var(--text-secondary);}
-#slide-25 .tsmd-explain p+p{margin-top:.55rem;}
+#slide-25 .tsmd-note{margin:.7rem 0 0;padding:.6rem .9rem;background:var(--bg-secondary);border-radius:var(--radius);font-size:.78rem;line-height:1.55;color:var(--text-secondary);}
+#slide-25 .tsk{margin:0 0 .95rem;}
+#slide-25 .tsk:last-of-type{margin-bottom:0;}
+#slide-25 .tsk-title{margin:0 0 .2rem;font-size:.92rem;font-weight:700;color:var(--text);}
+#slide-25 .tsk-def{margin:0;font-size:.92rem;line-height:1.6;color:var(--text-secondary);}
+#slide-25 .tsk-ex{margin:.2rem 0 0;font-size:.88rem;line-height:1.55;color:var(--text-secondary);}
+#slide-25 .tsk-close{margin:.95rem 0 0;font-size:.92rem;line-height:1.6;color:var(--text-secondary);}
 @media (max-width:700px){
 #slide-25 .tsmd-grid{display:block;}
 #slide-25 .tsmd-store{margin-bottom:.25rem;}
@@ -2570,76 +2569,67 @@
 #slide-25 .tsmd-arrow{flex-direction:column;}
 #slide-25 .tsmd-shaft{width:9px;height:16px;border-radius:2px 2px 0 0;}
 #slide-25 .tsmd-head{border-left:9px solid transparent;border-right:9px solid transparent;border-top:12px solid #8195A9;border-bottom:none;}
-#slide-25 .tsmd-retr-line{flex:0 0 60px;}
+#slide-25 .tsmd-retrieval{align-items:flex-start;margin-top:.6rem;padding-left:1.35rem;}
+#slide-25 .tsmd-retr-line{display:none;}
+#slide-25 .tsmd-retr-label::before{content:"\2191\00A0";}
 }
 </style>
 <div class="tsmd">
 <div class="tsmd-grid">
 <div class="tsmd-store tsmd-sr"><h4>Sensory Register</h4><ul>
-<li><strong>Capacity:</strong> very large</li>
-<li><strong>Duration:</strong> very brief (ms&ndash;sec)</li>
-<li><strong>Encoding:</strong> modality-specific (e.g., visual, auditory)</li>
+<li><strong>Capacity:</strong> Very large</li>
+<li><strong>Duration:</strong> Usually less than 1 second for visual information; approximately 2&ndash;4 seconds for auditory information.</li>
+<li><strong>Example:</strong> Briefly seeing the image of a light after it disappears.</li>
 </ul></div>
-<div class="tsmd-flow"><div class="tsmd-arrow"><span class="tsmd-shaft"></span><span class="tsmd-head"></span></div><p class="tsmd-flow-label">Attention</p><p class="tsmd-flow-note">Some information is selected for further processing.</p></div>
-<div class="tsmd-store tsmd-stm"><h4>Short-Term Memory</h4><ul>
-<li><strong>Capacity:</strong> Limited; estimates depend on the task and how information is grouped.</li>
-<li><strong>Duration:</strong> Brief without continued maintenance; commonly estimated in seconds.</li>
-<li><strong>Encoding:</strong> often acoustic or verbal, but not exclusively</li>
+<div class="tsmd-flow"><div class="tsmd-arrow"><span class="tsmd-shaft"></span><span class="tsmd-head"></span></div><p class="tsmd-flow-label">Attention</p></div>
+<div class="tsmd-store tsmd-stm"><h4>Short-Term Memory (STM)</h4><ul>
+<li><strong>Capacity:</strong> Traditionally around 7 &plusmn; 2 items; estimates vary with the task.</li>
+<li><strong>Duration:</strong> Approximately 15&ndash;30 seconds without rehearsal.</li>
+<li><strong>Example:</strong> Remembering a phone number long enough to dial it.</li>
 </ul></div>
-<div class="tsmd-flow"><div class="tsmd-arrow"><span class="tsmd-shaft"></span><span class="tsmd-head"></span></div><p class="tsmd-flow-label">Encoding</p><p class="tsmd-flow-note">Information can be encoded more durably, often with the help of meaning.</p></div>
-<div class="tsmd-store tsmd-ltm"><h4>Long-Term Memory</h4><ul>
-<li><strong>Capacity:</strong> very large / potentially vast</li>
-<li><strong>Duration:</strong> can persist for very long periods</li>
-<li><strong>Encoding:</strong> often semantic (meaning), but not exclusively</li>
+<div class="tsmd-flow"><div class="tsmd-arrow"><span class="tsmd-shaft"></span><span class="tsmd-head"></span></div><p class="tsmd-flow-label">Encoding</p></div>
+<div class="tsmd-store tsmd-ltm"><h4>Long-Term Memory (LTM)</h4><ul>
+<li><strong>Capacity:</strong> Potentially vast.</li>
+<li><strong>Duration:</strong> From minutes to a lifetime.</li>
+<li><strong>Example:</strong> Remembering how to ride a bicycle.</li>
 </ul></div>
-</div>
-<div class="tsmd-retrieval"><div class="tsmd-retr-line"><span class="tsmd-retr-head"></span><span class="tsmd-retr-shaft"></span></div><p class="tsmd-retr-label">Retrieval</p><p class="tsmd-retr-note">previously stored information may be retrieved back into short-term memory for current use</p></div>
-<div class="tsmd-caption">
-<p><strong>A simplified theoretical representation:</strong> the stores are proposed components of an explanation of memory, not literal locations in the brain, and information can follow different pathways than the one shown here.</p>
-<p><strong>Note on capacity:</strong> capacity estimates vary across studies. Traditional estimates were often around seven items, while more recent research suggests approximately four chunks under certain conditions.</p>
+<div class="tsmd-retrieval"><div class="tsmd-retr-line"><span class="tsmd-retr-head"></span><span class="tsmd-retr-shaft"></span></div><p class="tsmd-retr-label">Retrieval</p></div>
 </div>
 </div>
-<div class="tsmd-explain">
-<p>The model distinguishes temporary retention from longer-term storage. Attention helps determine which sensory information receives further processing, while rehearsal and other encoding processes can support retention. Information stored in long-term memory may later be retrieved for conscious use.</p>
-<p>The model is useful, but it simplifies how memory operates. Psychologists have developed other models to explain processes that it does not describe in sufficient detail.</p>
-</div>
+<p class="tsmd-note">These are approximate values from memory research. The three-store model is a simplified explanation, and actual memory performance varies depending on the information and the task.</p>
+<h3 style="font-size:1rem;font-weight:700;margin:1.2rem 0 .55rem;color:var(--text);">Example: Remembering a Phone Number</h3>
+<p>You hear someone say a phone number. The sound is briefly registered in sensory memory. If you pay attention, you may hold the number in short-term memory while entering it into your phone. If you remember the number days later, it has been stored in long-term memory and retrieved.</p>
 <div class="collapsible"><button class="collapsible-trigger">Why Is This Model Useful?</button><div class="collapsible-body">
-<p>The three-store model helps explain why information can be noticed briefly without necessarily being remembered later. It distinguishes temporary maintenance from longer-term retention and highlights the role of attention and processing.</p>
-<p>For example, you may remember a phone number long enough to enter it but be unable to recall it the following day.</p>
-<p>The model also provided a framework for investigating differences between short-term and long-term memory.</p>
+<p>The model helps explain why some information disappears almost immediately while other information can be remembered for years.</p>
+<p>For example, you might remember a phone number for 20 seconds but forget it the next day. However, you may remember your childhood address many years later.</p>
+<p>The model also helped psychologists investigate whether short-term and long-term memory work differently.</p>
 </div></div>
 <div class="collapsible"><button class="collapsible-trigger">Where Does the Model Fall Short?</button><div class="collapsible-body">
-<p>One limitation is that the model treats short-term memory as a relatively unified store. However, research suggests that people can sometimes maintain and process different types of information using partly separate resources.</p>
-<p>For example, a verbal task and a visual task may interfere with one another less than two tasks that rely heavily on the same type of processing.</p>
-<p>The model also provides a simplified explanation of how information becomes stored in long-term memory. Rehearsal can support retention, but meaningful processing and other factors also influence remembering.</p>
-<p>These limitations helped motivate the development of the Working Memory Model.</p>
+<p>The model treats short-term memory as one store. However, short-term memory is not simply a place where information waits.</p>
+<p>For example, you can try to remember a phone number while mentally calculating a price. You are holding information in mind and working with it at the same time.</p>
+<p>Research also suggests that verbal and visual information can sometimes be processed using partly separate resources. The original model does not explain these differences in much detail.</p>
+<p>This helped lead to Baddeley and Hitch&rsquo;s Working Memory Model (1974), which provides a more detailed explanation of how we temporarily hold and use information.</p>
 </div></div>
 <div class="collapsible"><button class="collapsible-trigger">Keeping Information Active</button><div class="collapsible-body">
-<p><strong>Maintenance rehearsal:</strong> Repeating information to keep it temporarily available in memory. <strong>Example:</strong> Repeating a phone number until you have entered it.</p>
-<p><strong>Elaborative rehearsal:</strong> Connecting new information to meaning, existing knowledge, or other relevant information. <strong>Example:</strong> Connecting a psychological theory to an example from everyday life.</p>
-<p><strong>Chunking:</strong> Organizing separate pieces of information into meaningful groups to make them easier to maintain in memory. <strong>Example:</strong> Remembering 20261104 as 2026&ndash;11&ndash;04.</p>
-<p><strong>Retrieval practice:</strong> Attempting to recall previously learned information without looking at the answer. <strong>Example:</strong> Closing your notes and answering practice questions from memory.</p>
-<p>These processes are related but not identical. Maintenance rehearsal helps keep information available temporarily, elaborative rehearsal connects information to meaning, chunking organizes information into manageable groups, and retrieval practice involves actively recalling previously learned material.</p>
+<div class="tsk"><p class="tsk-title">Maintenance Rehearsal</p><p class="tsk-def">Repeating information to keep it in short-term memory.</p><p class="tsk-ex"><em>Example: Repeating a phone number until you have dialed it.</em></p></div>
+<div class="tsk"><p class="tsk-title">Elaborative Rehearsal</p><p class="tsk-def">Connecting new information to something you already know so that it becomes more meaningful.</p><p class="tsk-ex"><em>Example: Remembering negative reinforcement by connecting it to a seatbelt alarm that stops when you buckle up.</em></p></div>
+<div class="tsk"><p class="tsk-title">Chunking</p><p class="tsk-def">Grouping separate pieces of information into larger, meaningful units.</p><p class="tsk-ex"><em>Example: Remembering 20261105 as 2026&ndash;11&ndash;05.</em></p></div>
+<div class="tsk"><p class="tsk-title">Retrieval Practice</p><p class="tsk-def">Trying to remember information without looking at your notes or the answer.</p><p class="tsk-ex"><em>Example: Closing your textbook and answering a psychology question from memory.</em></p></div>
+<p class="tsk-close">These strategies work differently: some help us keep information available briefly, while others can help us remember it later.</p>
 </div></div>
 <h4 style="font-size:1rem;font-weight:700;margin:1rem 0 .55rem;color:var(--text);">Apply Your Understanding</h4>
-<div class="reveal"><div class="reveal-question">Two students prepare for a psychology test. One repeatedly rereads their notes, while the other closes the notes and tries to answer questions from memory. Why might the second strategy lead to better long-term retention?</div><div class="reveal-answer"><div>Answering questions from memory involves retrieval practice, which can improve later retention by strengthening access to learned information. Rereading provides another opportunity to process the material, but it does not necessarily require students to retrieve information independently. Both strategies can help, but retrieval practice often produces stronger long-term retention under suitable conditions.</div></div></div>
+<div class="reveal"><div class="reveal-question">Two students prepare for a psychology test. One repeatedly rereads their notes, while the other closes the notes and tries to answer questions from memory. Why might the second strategy lead to better long-term retention?</div><div class="reveal-answer"><div>The second student is using retrieval practice. Trying to recall information strengthens the ability to retrieve it later. Rereading can help with learning, but it does not necessarily require students to remember information without looking at it. This is why retrieval practice often leads to better long-term retention.</div></div></div>
 <div class="collapsible"><button class="collapsible-trigger">When Remembering Fails</button><div class="collapsible-body">
-<p>A failure to remember does not automatically mean that information has simply disappeared.</p>
-<p>Psychologists distinguish between several possibilities.</p>
-<p><strong>Encoding failure:</strong> Information may not be remembered because it was not adequately encoded in the first place. For example, you cannot recall the color of a sign you passed because you paid little attention to it.</p>
-<p><strong>Retrieval failure:</strong> Information may have been stored but cannot be accessed successfully at a particular moment. For example, you temporarily cannot remember someone's name but recall it later.</p>
-<p><strong>Interference:</strong> other learning can make retrieval more difficult.</p>
-<ul>
-<li><strong>Proactive interference:</strong> Previously learned information interferes with remembering newer information &mdash; for example, your old password makes it difficult to remember your new password.</li>
-<li><strong>Retroactive interference:</strong> Newly learned information interferes with remembering older information &mdash; for example, after learning a new password, you struggle to recall your old one.</li>
-</ul>
-<p>This distinction matters because the same observable outcome — “I cannot remember” — can result from different underlying processes.</p>
-<p>It is not always possible to identify with confidence which process explains a particular failure to remember.</p>
+<p>Forgetting does not always mean a memory has disappeared. Sometimes information was not properly encoded, and sometimes we have difficulty retrieving it.</p>
+<div class="tsk"><p class="tsk-title">Encoding Failure</p><p class="tsk-def">The information was not adequately processed when we first encountered it.</p><p class="tsk-ex"><em>Example: You cannot remember the color of a car you passed because you barely noticed it.</em></p></div>
+<div class="tsk"><p class="tsk-title">Retrieval Failure</p><p class="tsk-def">The information may be stored, but you cannot access it at that moment.</p><p class="tsk-ex"><em>Example: You forget someone&rsquo;s name during a conversation but remember it an hour later.</em></p></div>
+<div class="tsk"><p class="tsk-title">Proactive Interference</p><p class="tsk-def">Old information makes it harder to remember new information.</p><p class="tsk-ex"><em>Example: Your old password keeps coming to mind when you try to remember your new password.</em></p></div>
+<div class="tsk"><p class="tsk-title">Retroactive Interference</p><p class="tsk-def">New information makes it harder to remember old information.</p><p class="tsk-ex"><em>Example: After learning your new password, you struggle to remember the old one.</em></p></div>
 </div></div>
 
 
 <h4 style="font-size:1rem;font-weight:700;margin:1rem 0 .55rem;color:var(--text);">Apply Your Understanding</h4>
-<div class="reveal"><div class="reveal-question">A student says, "I studied this last week, so if I cannot remember it now, the memory must have disappeared." What is wrong with this conclusion?</div><div class="reveal-answer"><div>Not being able to remember something does not necessarily mean the information has disappeared from memory. The student may not have encoded it effectively, or the information may be stored but temporarily difficult to retrieve. Interference from other learning may also make recall more difficult. Without further evidence, we cannot determine exactly why the student has forgotten it.</div></div></div>
+<div class="reveal"><div class="reveal-question">A student says, "I studied this last week, so if I cannot remember it now, the memory must have disappeared." What is wrong with this conclusion?</div><div class="reveal-answer"><div>Forgetting something does not prove that the memory has disappeared. The student may not have encoded the information effectively, or they may be having difficulty retrieving it. Other information may also be interfering with recall. We cannot determine the exact reason from this statement alone.</div></div></div>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
   <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Memory Processes</h4>
   <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Check your understanding of memory stages and failure types.</p>
@@ -2649,11 +2639,11 @@
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Memory involves three interconnected processes: encoding, storage, and retrieval.</li>
-<li>Atkinson and Shiffrin's three-store model distinguishes sensory, short-term, and long-term memory.</li>
-<li>The model helps explain different forms of retention, but it simplifies how information is processed and retrieved.</li>
-<li>Maintenance rehearsal, elaborative rehearsal, chunking, and retrieval practice can support remembering in different ways.</li>
-<li>Forgetting may involve encoding difficulties, retrieval failure, or interference; unsuccessful recall does not necessarily mean information has disappeared.</li>
+<li>Encoding, storage, and retrieval are three important memory processes.</li>
+<li>The three-store model distinguishes sensory memory, short-term memory, and long-term memory.</li>
+<li>Sensory memory lasts only briefly, short-term memory usually lasts seconds without rehearsal, and long-term memory can last for years.</li>
+<li>Maintenance rehearsal, elaborative rehearsal, chunking, and retrieval practice can help memory in different ways.</li>
+<li>Forgetting may involve encoding failure, retrieval failure, or interference.</li>
 </ol></div>
 </div>
 
