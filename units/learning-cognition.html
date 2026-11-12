@@ -4059,45 +4059,106 @@
 
 
 <div class="slide" data-slide="46" id="slide-46">
+<style>
+#slide-46 .lc-scen{background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1.1rem;margin:.6rem 0}
+#slide-46 .lc-scen-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin:0 0 .25rem}
+#slide-46 .lc-scen p{font-size:.93rem;line-height:1.55;color:var(--text);margin:.4rem 0 0}
+#slide-46 .lc-scen p.lc-scen-quote{font-style:italic}
+#slide-46 .lc-scen p.lc-scen-src{font-size:.82rem;line-height:1.5;color:var(--text-secondary);margin:.45rem 0 0}
+#slide-46 .lc-q{margin:.55rem 0}
+#slide-46 .lc-q-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#3B82F6;margin:0 0 .3rem}
+#slide-46 .lc-q-text{font-size:1rem;line-height:1.55;font-weight:600;color:var(--text);margin:0}
+#slide-46 .lc-plan{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.75rem .9rem;margin:.6rem 0}
+#slide-46 .lc-plan-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin:0 0 .35rem}
+#slide-46 .lc-plan-lead{font-size:.9rem;line-height:1.55;color:var(--text);margin:0 0 .45rem}
+#slide-46 .lc-plan-lead strong{color:var(--text)}
+#slide-46 .lc-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;margin:0 0 .45rem}
+#slide-46 .lc-step{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:8px;padding:.5rem .6rem}
+#slide-46 .lc-step h5{font-size:.82rem;font-weight:700;color:var(--text);margin:0 0 .2rem}
+#slide-46 .lc-step p{font-size:.78rem;line-height:1.45;color:var(--text-secondary);margin:0}
+#slide-46 .lc-plan-note{font-size:.82rem;line-height:1.5;color:var(--text-secondary);margin:0}
+#slide-46 .lc-plan-note strong{color:var(--text)}
+#slide-46 .collapsible{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;margin:.6rem 0}
+#slide-46 .collapsible-trigger{background:transparent;border:none;box-shadow:none;font-size:.88rem;font-weight:700;color:#1E40AF;width:100%;text-align:left;padding:.6rem .9rem;cursor:pointer}
+#slide-46 .collapsible-trigger:hover{background:rgba(59,130,246,.08)}
+#slide-46 .collapsible-body{padding:0 .9rem .7rem}
+#slide-46 .collapsible-body p{font-size:.85rem;line-height:1.5;color:var(--text);margin:0 0 .4rem}
+#slide-46 .collapsible-body ol{margin:0;padding-left:1.25rem}
+#slide-46 .collapsible-body li{font-size:.85rem;line-height:1.55;color:var(--text);margin:0 0 .25rem}
+#slide-46 .lc-ma{margin:.7rem 0 .5rem}
+#slide-46 .lc-ma-h{font-size:1rem;font-weight:700;color:var(--text);margin:0 0 11px}
+#slide-46 .reveal{background:transparent;border:none;border-radius:0;padding:0;margin:0}
+#slide-46 .reveal:hover{border:none}
+#slide-46 .reveal.open{padding:0}
+#slide-46 .reveal-question{display:block;text-align:left;font-size:.85rem;font-weight:400;color:var(--text-secondary);white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-46 .reveal-question::after{content:'Reveal Model Answer';display:block;width:max-content;margin-top:11px;font-size:.78rem;font-weight:600;color:#FFFFFF;background:var(--primary);border:1px solid var(--primary);padding:.32rem .8rem;border-radius:6px}
+#slide-46 .reveal-question:hover::after{background:var(--primary-dark)}
+#slide-46 .reveal.open .reveal-question::after{content:'Hide Model Answer'}
+#slide-46 .reveal-answer{margin-top:.65rem}
+#slide-46 .reveal-answer p{font-size:.9rem;margin:0 0 .5rem;line-height:1.6;color:var(--text)}
+#slide-46 .reveal-answer p:last-child{margin-bottom:0}
+#slide-46 .lc-cl{background:#FFFFFF;border:1px solid var(--border);border-radius:10px;padding:.75rem .9rem;margin:.7rem 0 .3rem}
+#slide-46 .lc-cl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#15803D;margin:0 0 .35rem}
+#slide-46 .lc-cl ul{margin:0;padding-left:1.25rem}
+#slide-46 .lc-cl li{font-size:.85rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .25rem}
+#slide-46 .lc-cl li:last-child{margin-bottom:0}
+#slide-46 .lc-cl strong{color:var(--text)}
+@media (max-width:640px){
+#slide-46 .lc-steps{grid-template-columns:1fr}
+#slide-46 .lc-scen,#slide-46 .lc-plan,#slide-46 .lc-cl{padding:.7rem .8rem}
+}
+</style>
 <h2>Scenario Application &mdash; Improving Learning</h2>
-<p class="slide-intro">Ethan&rsquo;s studying feels fluent while Priya&rsquo;s does not. Use your knowledge of improving learning to explain the likely differences and evaluate the teacher&rsquo;s conclusion.</p>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.1rem 1.4rem;margin:.85rem 0;">
-<p style="font-size:.9rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin:0 0 .4rem;">Scenario</p>
-<p style="font-size:.95rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">Two students, Ethan and Priya, are preparing for the same psychology exam.</p>
-<p style="font-size:.95rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">Ethan studies for five hours on Sunday evening. He rereads each chapter several times, highlights large sections of his notes and watches explanation videos while messages continue appearing on his phone. By the end of the evening, the material feels very familiar, so he stops testing himself.</p>
-<p style="font-size:.95rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">Priya studies for shorter sessions across several days. She mixes tasks from different topics, tries to answer them from memory before checking her notes, explains difficult ideas aloud in her own words and records which topics she gets wrong. She then returns to those weaker topics in later sessions.</p>
-<p style="font-size:.95rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;font-style:italic;">&ldquo;Priya&rsquo;s method looks harder and slower, so Ethan is probably learning more because his studying feels easier and more fluent.&rdquo;</p>
-<p style="font-size:.85rem;line-height:1.5;color:var(--text-secondary);margin:.5rem 0 0;">&mdash; the teacher&rsquo;s conclusion</p>
+<p class="slide-intro">Two students prepare for the same exam in two very different ways &mdash; and their teacher is confident that the studying which feels easiest is working best.</p>
+<div class="lc-scen">
+<p class="lc-scen-tag">Scenario</p>
+<p>Two students, Ethan and Priya, are preparing for the same psychology exam.</p>
+<p>Ethan studies for five hours on Sunday evening. He rereads each chapter several times, highlights large sections of his notes and watches explanation videos while messages continue appearing on his phone. By the end of the evening, the material feels very familiar, so he stops testing himself.</p>
+<p>Priya studies for shorter sessions across several days. She mixes tasks from different topics, tries to answer them from memory before checking her notes, explains difficult ideas aloud in her own words and records which topics she gets wrong. She then returns to those weaker topics in later sessions.</p>
+<p class="lc-scen-quote">&ldquo;Priya&rsquo;s method looks harder and slower, so Ethan is probably learning more because his studying feels easier and more fluent.&rdquo;</p>
+<p class="lc-scen-src">&mdash; the teacher&rsquo;s conclusion</p>
 </div>
-<p style="font-size:.95rem;font-weight:600;margin:1rem 0 .5rem;color:var(--text);"><strong>The prompt:</strong> Using your knowledge of improving learning, explain the likely differences between Ethan and Priya&rsquo;s study approaches and evaluate the teacher&rsquo;s conclusion.</p>
-<div class="collapsible"><button class="collapsible-trigger">1. What Is the Prompt Asking?</button><div class="collapsible-body">
-<p>Identify the relevant learning principles yourself &mdash; then explain the Ethan/Priya difference and judge the fluency-equals-learning claim. Very brief: the mapping work is yours.</p>
+<div class="lc-q">
+<p class="lc-q-tag">Your task</p>
+<p class="lc-q-text">Using your knowledge of improving learning, explain the likely differences between Ethan and Priya&rsquo;s study approaches and evaluate the teacher&rsquo;s conclusion.</p>
+</div>
+<div class="lc-plan">
+<p class="lc-plan-tag">Response planning</p>
+<p class="lc-plan-lead"><strong>Attempt the question yourself before using any help below.</strong> Plan your response in three moves:</p>
+<div class="lc-steps">
+<div class="lc-step"><h5>1 &mdash; Describe</h5><p>What does each student actually do? Name the strategies precisely.</p></div>
+<div class="lc-step"><h5>2 &mdash; Explain</h5><p>Why might those strategies produce different learning outcomes? Use the mechanisms.</p></div>
+<div class="lc-step"><h5>3 &mdash; Evaluate</h5><p>Is &ldquo;it feels easy and fluent&rdquo; good evidence that learning is happening?</p></div>
+</div>
+<p class="lc-plan-note"><strong>Watch out for two traps:</strong> difficult-feeling study is not automatically better, and easy-feeling study is not automatically worse &mdash; the mechanisms behind each method decide, not the feeling alone.</p>
+</div>
+<div class="collapsible"><button class="collapsible-trigger">Need help?</button><div class="collapsible-body">
+<p>Use these prompts only if you are stuck &mdash; each one points to part of the answer without giving it away:</p>
+<ol>
+<li>Which learning strategies does each student use?</li>
+<li>Why might their strategies produce different learning outcomes?</li>
+<li>What is wrong with the teacher&rsquo;s conclusion, and what cannot be concluded?</li>
+</ol>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">2. Compare the Study Strategies</button><div class="collapsible-body">
-<p>Classify the important differences first: massed rereading and highlighting versus spaced sessions; visible-notes familiarity versus retrieval before checking; single-topic repetition versus mixed topics; unexplained reading versus self-explanation; no error-tracking versus feedback-driven adjustment; interrupted versus focused attention.</p>
-<p>After thinking, the concise mapping is: spacing vs massing, retrieval practice vs rereading, interleaving, self-explanation/elaboration, metacognitive monitoring, fluency illusion, and attention/technology use.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">3. Explain Why Priya&rsquo;s Approach May Be Stronger</button><div class="collapsible-body">
-<p>Integrate the mechanisms: spacing forces retrieval after delay; retrieval practice builds active access and exposes gaps; interleaving trains selection and discrimination; self-explanation organises connections; feedback enables monitoring and adjustment; Ethan&rsquo;s fluency may be an illusion of mastery.</p>
-<p>Technology: notifications can compete for attention while videos may still be useful &mdash; effect depends on use, not on technology being bad.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">4. Evaluate the Teacher&rsquo;s Conclusion</button><div class="collapsible-body">
-<p>Easier-feeling study &ne; better long-term learning; performance during practice &ne; durable learning. But Priya&rsquo;s stronger strategy does NOT guarantee a higher final score &mdash; prior knowledge, ability, sleep, stress and other factors also matter. Avoid the opposite absolute claim.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">5. Build Your Answer</button><div class="collapsible-body">
-<p>&#9744; selects the most relevant differences between the two approaches</p>
-<p>&#9744; explains the psychology rather than simply naming strategies</p>
-<p>&#9744; connects each explanation directly to scenario evidence</p>
-<p>&#9744; explains why fluency can be misleading</p>
-<p>&#9744; evaluates the teacher&rsquo;s conclusion without making the opposite absolute claim</p>
-<p>&#9744; reaches an appropriately qualified conclusion</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>
+<div class="lc-ma">
+<h4 class="lc-ma-h">Model Answer</h4>
+<div class="reveal"><div class="reveal-question">Write your full response in your notebook first &mdash; the model is for checking, not for starting.</div><div class="reveal-answer"><div>
 <p>Priya&rsquo;s study approach is more consistent with several evidence-based principles of learning. She distributes her studying across several days, which uses spaced practice rather than concentrating all of her revision into one long session. Although spaced retrieval can feel more difficult, having to retrieve information after a delay can strengthen later access to it.</p>
 <p>Priya also uses retrieval practice because she tries to answer tasks before checking her notes. This tests whether she can actually produce the information and gives her useful feedback about gaps in her knowledge. Mixing topics adds interleaving, which requires her to decide which ideas apply rather than simply repeating the same type of task. Explaining difficult material in her own words also promotes elaboration and self-explanation.</p>
 <p>Her record of mistakes supports metacognition because she bases later study decisions on evidence about what she can and cannot retrieve. Ethan, by contrast, mainly rereads material until it feels familiar. This can create a fluency illusion in which ease of processing is mistaken for mastery. His explanation videos could be useful, but repeated phone interruptions may also compete for attention, showing that technology is not automatically helpful or harmful.</p>
 <p>The teacher&rsquo;s conclusion is therefore poorly supported. Learning that feels easier is not necessarily more durable, and productive strategies often feel more difficult because they require active retrieval and decision-making. However, Priya&rsquo;s stronger strategy does not guarantee that she will receive the higher exam score, because performance can also be affected by prior knowledge, stress, ability and other factors.</p>
 </div></div></div>
+</div>
+<div class="lc-cl">
+<p class="lc-cl-tag">Self-assessment checklist</p>
+<ul>
+<li><strong>Accurate application:</strong> each strategy is matched to the right student &mdash; spacing, retrieval practice, interleaving, self-explanation, metacognition.</li>
+<li><strong>Mechanisms explained:</strong> I said <em>why</em> each strategy works, not just named it.</li>
+<li><strong>Scenario evidence:</strong> every claim is tied to something Ethan or Priya actually does.</li>
+<li><strong>Evaluation:</strong> I explained why fluency is weak evidence of learning.</li>
+<li><strong>Qualified conclusion:</strong> no claim that Priya is guaranteed to outperform Ethan.</li>
+</ul>
+</div>
 </div>
 <div class="slide" data-slide="47" id="slide-47">
 <h2>HL Extension: Culture, Bilingualism &amp; Cognition</h2>
