@@ -4382,40 +4382,244 @@
 </div>
 
 <div class="slide" data-slide="44" id="slide-44">
+<style>
+#slide-44 .lc-sec{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.6rem 0 .55rem;line-height:1.35}
+#slide-44 .lc-body p{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-44 .lc-body p:last-child{margin-bottom:0}
+#slide-44 .lc-body strong{color:var(--text)}
+#slide-44 .lc-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
+#slide-44 .lc-list li{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.4rem}
+#slide-44 .lc-cards{display:grid;gap:.65rem;margin:.3rem 0 .7rem}
+#slide-44 .lc-c2{grid-template-columns:1fr 1fr}
+#slide-44 .lc-c3{grid-template-columns:1fr 1fr 1fr}
+#slide-44 .lc-card{background:#FFFFFF;border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem}
+#slide-44 .lc-card h5{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .3rem;line-height:1.3}
+#slide-44 .lc-card p{font-size:.87rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-44 .lc-card p:last-child{margin-bottom:0}
+#slide-44 .lc-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 .25rem}
+#slide-44 .lc-tag-a{color:#15803D}
+#slide-44 .lc-tag-b{color:#B45309}
+#slide-44 .lc-ok{color:#15803D;font-weight:600}
+#slide-44 .lc-bad{color:#B91C1C;font-weight:600}
+#slide-44 .lc-why{color:#1D4ED8;font-weight:600}
+#slide-44 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-44 .lc-green p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-44 .lc-green p:last-child{margin-bottom:0}
+#slide-44 .lc-green ol{margin:.2rem 0 .2rem;padding-left:1.35rem}
+#slide-44 .lc-green li{font-size:.9rem;line-height:1.6;color:var(--text);margin-bottom:.35rem}
+#slide-44 .lc-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-44 .lc-amber p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-44 .lc-amber p:last-child{margin-bottom:0}
+#slide-44 .lc-res{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1rem;margin:.3rem 0 .4rem}
+#slide-44 .lc-res-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin:0 0 .35rem}
+#slide-44 .lc-res h4{font-size:.93rem;font-weight:700;margin:.8rem 0 .28rem;color:var(--text)}
+#slide-44 .lc-res h4:first-of-type{margin-top:.2rem}
+#slide-44 .lc-res p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-44 .lc-res p:last-child{margin-bottom:0}
+#slide-44 .lc-concept{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1.05rem;margin:0 0 .7rem}
+#slide-44 .lc-concept h4{font-size:.95rem;font-weight:700;margin:0 0 .4rem;color:var(--text)}
+#slide-44 .lc-concept p{font-size:.93rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem}
+#slide-44 .lc-concept p:last-child{margin-bottom:0}
+#slide-44 .lc-app{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.85rem 1rem;margin:.3rem 0 .3rem}
+#slide-44 .lc-app-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#3B82F6;margin:0 0 .3rem}
+#slide-44 .lc-app p{font-size:.93rem;line-height:1.6;color:var(--text);margin:0 0 .4rem}
+#slide-44 .lc-app p:last-child{margin-bottom:0}
+#slide-44 .reveal{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.75rem 1rem;margin:.35rem 0 .8rem}
+#slide-44 .reveal:hover{border-color:#B9D2F5}
+#slide-44 .reveal-question{display:block;font-size:.9rem;font-weight:400;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-44 .reveal-question::after{content:'Reveal Answer';display:block;width:max-content;margin-top:.7rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
+#slide-44 .reveal.open .reveal-question::after{content:'Hide'}
+#slide-44 .reveal-answer p{font-size:.9rem;margin:0 0 .5rem;line-height:1.6;color:var(--text)}
+#slide-44 .reveal-answer p:last-child{margin-bottom:0}
+@media (max-width:640px){
+#slide-44 .lc-c2,#slide-44 .lc-c3,#slide-44 .lc-res-cols{grid-template-columns:1fr}
+#slide-44 .lc-card,#slide-44 .lc-res,#slide-44 .lc-green,#slide-44 .lc-amber,#slide-44 .lc-concept,#slide-44 .lc-app,#slide-44 .reveal{padding:.7rem .8rem}
+}
+</style>
 <h2>Technology &amp; Learning</h2>
 <p class="slide-intro">How digital tools reshape attention, motivation and memory processes &mdash; with evidence on both benefits and costs.</p>
-<div class="collapsible"><button class="collapsible-trigger">The Dual Nature of Technology</button><div class="collapsible-body">
-<p>Technology in education is neither uniformly beneficial nor harmful. Its impact depends on how it interacts with the cognitive and motivational processes studied throughout this unit:</p>
-<ul>
-<li><strong>Attention:</strong> multitasking with devices fragments attention; from a working-memory perspective, notifications and task-switching demand limited attentional and central-executive resources.</li>
-<li><strong>Memory:</strong> spaced retrieval practice apps (Anki, Quizlet) exploit the spacing effect; passive scrolling does not.</li>
-<li><strong>Motivation:</strong> digital tools can support motivation when they provide meaningful choice, useful feedback and visible progress. However, highly distracting or reward-driven features can compete for attention and encourage engagement with the platform rather than engagement with the learning itself.</li>
+<div class="lc-body">
+<div class="lc-sec">Section 1 &mdash; The Dual Nature of Technology</div>
+<p>Start with two students who own the same laptop:</p>
+<div class="lc-cards lc-c2">
+<div class="lc-card"><p class="lc-tag lc-tag-a">Student A</p><h5>Technology in service of the task</h5><p><strong>What they do:</strong> uses the laptop to complete practice questions, check feedback, and review material they previously struggled to remember.</p><p><span class="lc-why">Why this can support learning:</span> every use is aimed at a learning process studied in this unit &mdash; retrieval practice, feedback, and spaced review of weak areas. The laptop is a tool that structures study; attention stays on the task.</p></div>
+<div class="lc-card"><p class="lc-tag lc-tag-b">Student B</p><h5>Technology competing with the task</h5><p><strong>What they do:</strong> also intends to study, but repeatedly switches between schoolwork, social media, and messages.</p><p><span class="lc-why">Why this can interfere with learning:</span> each switch pulls attention away from the material, and attention is exactly what encoding requires. Study time becomes fragmented, so processing of the material is shallower.</p></div>
+</div>
+<p>Same device, same student desk &mdash; opposite effects. This is why psychologists do not ask whether technology is <em>good</em> or <em>bad</em> for learning. The better question is: <strong>under what conditions does technology support the cognitive and motivational processes learning depends on, and under what conditions does it compete with them?</strong> The answer depends on at least five things:</p>
+<ul class="lc-list">
+<li><strong>How the technology is designed</strong> &mdash; an app built around retrieval and feedback works differently from one built around endless scrolling and notifications.</li>
+<li><strong>How it is used</strong> &mdash; the same flashcard app can be worked through deliberately or tapped through passively.</li>
+<li><strong>The learning task</strong> &mdash; distractions matter more for demanding tasks (writing an essay) than for shallow ones (tidying files).</li>
+<li><strong>The learner's characteristics</strong> &mdash; self-regulation, prior knowledge and motivation differ between students.</li>
+<li><strong>The surrounding environment</strong> &mdash; a silent room, a busy classroom, or a group chat that pings every minute.</li>
 </ul>
-<p>The same device produces learning gains or learning losses depending entirely on how the software is designed and how the student uses it.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Evidence: Multitasking and Cognitive Cost</button><div class="collapsible-body">
-<p><strong>The claim:</strong> students who use phones or social media during study tend to show weaker memory and comprehension than those who do not.</p>
-<p><strong>The evidence (association):</strong> multiple studies (e.g., Junco &amp; Cotten, 2012; Rosen et al., 2013) have found associations between frequent media multitasking during academic work and outcomes such as lower academic performance, poorer comprehension or increased errors. Correlational findings alone cannot establish that multitasking caused these differences, because other variables may contribute.</p>
-<p><strong>Experimental evidence:</strong> controlled experiments on attention and task-switching provide stronger evidence that dividing attention or repeatedly switching tasks can impair performance under many conditions. From a working-memory perspective, demanding tasks compete for limited attentional and central-executive resources: switching between academic material and phone content can interrupt ongoing processing and make effective encoding more difficult.</p>
-<p><strong>Nuance:</strong> the cost is not just distraction &mdash; task-switching itself incurs a cognitive penalty even when content is not salacious. Each switch takes time to reorient; frequent switching means most of the session is spent in partial attention.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Evidence: Technology as a Learning Aid</button><div class="collapsible-body">
-<ul>
-<li><strong>Spaced retrieval practice software:</strong> digital flashcard systems can support learning when they successfully combine retrieval practice with appropriately spaced review. Their advantage comes from the learning principles they implement &mdash; not from being digital. Poorly designed or passively used apps may provide little advantage over other study methods.</li>
-<li><strong>Immediate elaborated feedback:</strong> well-designed online quizzes give specific feedback on errors, supporting the feedback principles studied on Page 20.</li>
-<li><strong>Accessible diverse materials:</strong> video, simulation and interactive tools allow encoding through multiple modalities, supporting the working memory model's multi-component architecture.</li>
+<div class="lc-amber"><p><strong>Avoid absolute claims.</strong> &ldquo;Technology harms learning&rdquo; and &ldquo;technology enhances learning&rdquo; are both too broad. As this lesson shows, the evidence points to specific processes &mdash; attention, working memory, retrieval, feedback, motivation &mdash; and specific conditions under which technology helps or hurts each one.</p></div>
+<div class="lc-sec">Section 2 &mdash; Attention, Multitasking and Working Memory</div>
+<p>To understand <em>why</em> digital distraction interferes with learning, watch one ordinary moment slowly:</p>
+<div class="lc-green">
+<p><strong>Worked example &mdash; the notification.</strong> A student is writing a psychology essay. A notification appears. They read the message, reply, and return to the essay.</p>
+<p><strong>1.</strong> Attention shifts away from the essay. The message captures attention, so the essay is no longer being processed.</p>
+<p><strong>2.</strong> Information relevant to the essay may become less accessible. Working memory can hold only a small amount of information at once &mdash; the argument the student was building, the sentence being drafted, the evidence they meant to cite. While attention is on the message, this fragile content is not being rehearsed and can decay or be displaced.</p>
+<p><strong>3.</strong> The student must reconstruct what they were thinking. Returning to the essay, the plan is no longer fully in mind; some of it must be rebuilt from the notes and the half-written paragraph.</p>
+<p><strong>4.</strong> Resuming the original task can require additional time and mental effort. This reorientation is work done by the <strong>central executive</strong> &mdash; the component of working memory that controls attention &mdash; and it must be repeated after every single interruption.</p>
+</div>
+<p>This is why a session of constant micro-interruptions is worse than its total minutes of distraction suggest: the cost is not only the time <em>away</em> from the task but the reconstruction effort after each return. Three terms describe what is happening, and they are worth keeping distinct:</p>
+<ul class="lc-list">
+<li><strong>Task-switching:</strong> alternating attention between tasks &mdash; essay, then message, then essay. Each switch carries a reorientation cost.</li>
+<li><strong>Divided attention:</strong> attempting to distribute attention across activities at the same time. Attention is a limited resource, so attempting true simultaneity usually means both tasks receive degraded processing.</li>
+<li><strong>Cognitive load:</strong> the demands placed on limited cognitive processing resources. Notifications and replies add load that competes directly with the load of studying.</li>
 </ul>
-<p>The key principle: technology can support learning when it structures study according to evidence-based principles, but it tends to be less helpful when it substitutes engagement (clicks, screen time) for learning (retrieval, elaboration, depth). Whether it helps or hinders depends on how it is used.</p>
+<p><strong>Not all combinations interfere equally.</strong> Two demanding tasks that compete for the same resources (reading an essay while reading a chat conversation) interfere severely; combining a demanding task with a simple automatic one (listening to familiar instrumental music while highlighting) may interfere little. That is why the blanket claim &ldquo;all multitasking is equally harmful&rdquo; goes beyond the evidence &mdash; what matters is the demands of each task and the resources they share.</p>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; attention and working memory</p>
+<p>A student prepares for a psychology test with their phone beside them, checking messages every few minutes.</p>
+<p>Explain how task-switching could interfere with the student's learning, using the ideas of working memory and cognitive load.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Attempt your own explanation in your notebook before revealing the model.</div>
+<div class="reveal-answer"><div>
+<p>Studying depends on encoding, and encoding depends on attention. Each time the student checks a message, attention shifts away from the material. Working memory can hold only a small amount at once, so the definitions or arguments being studied are held there only while attention keeps them active &mdash; and a switch to a message leaves them unrehearsed, allowing them to decay or be displaced by the message's content.</p>
+<p>When the student returns to the notes, the central executive must reorient attention back to the task and rebuild what was being thought &mdash; additional time and mental effort that do not contribute to learning the material. This is the cognitive-load problem: the limited processing resources are being shared between studying and message-handling, so studying receives less processing than it would with full attention.</p>
+<p>With switching every few minutes, most of the session is spent in partial attention or reconstruction rather than in sustained encoding &mdash; which is why the student may finish the session feeling that they worked for two hours while having encoded far less than that. Note that not every interruption is equally costly: a message requiring a thoughtful reply competes for more of the same resources than, say, a glance to check a timer.</p>
 </div></div>
-<div class="reveal"><div class="reveal-question">A school bans all phones. Another school teaches students to use spaced-retrieval apps. Using SDT and research on attention and working memory, evaluate which approach is more likely to produce lasting learning benefits.</div><div class="reveal-answer"><div>A phone ban may reduce opportunities for distraction and task-switching during focused learning, while teaching students to use technology effectively may help them develop useful retrieval, spacing and self-regulation strategies. Neither approach is automatically superior. The outcome depends on implementation: unrestricted phone use may interfere with attention, but simply banning devices does not teach students how to use technology effectively. A strong approach could combine protected periods of focused attention with explicit teaching of evidence-based digital study strategies.</div></div></div>
-<div class="collapsible"><button class="collapsible-trigger">Practical Takeaways</button><div class="collapsible-body">
-<ol>
-<li><strong>Phones during study:</strong> evidence tends to favour removing them during focused work; the cost of task-switching is real, though its size depends on the task and how often switching occurs.</li>
-<li><strong>Technology for study:</strong> spaced-retrieval apps, elaborated feedback quizzes, and structured interleaving tools are beneficial when well-designed and used deliberately.</li>
-<li><strong>Passive screen time:</strong> scrolling, watching without engagement, or consuming without retrieving tends to produce little durable learning relative to the time invested.</li>
-<li><strong>Metacognition:</strong> students need explicit teaching about which uses of technology support learning and which undermine it &mdash; they often cannot tell from subjective experience alone.</li>
-</ol>
+</div>
+<div class="lc-sec">Section 3 &mdash; Evidence: Media Multitasking and Learning</div>
+<div class="lc-res">
+<p class="lc-res-tag">Correlational study &mdash; published findings</p>
+<h4>Junco &amp; Cotten (2012): Multitasking and college grades</h4>
+<p><strong>Aim.</strong> To examine how college students use information and communication technologies while doing schoolwork, and whether that use is related to their overall college grade point average (GPA).</p>
+<p><strong>Participants and context.</strong> An online survey of students at one four-year public university in the northeastern United States; 1,839 surveys were submitted (a 48% response rate), and 1,774 were usable after screening.</p>
+<p><strong>Procedure.</strong> Students reported how much time they spent on activities &mdash; Facebook, texting, instant messaging, email, phone calls, and non-academic online searching &mdash; both in total and <em>while doing schoolwork</em>, and how frequently they combined each with schoolwork. The researchers then predicted overall GPA statistically, controlling for demographic factors, high school GPA, time spent preparing for class, and self-rated Internet skills.</p>
+<p><strong>Behaviours and outcomes measured.</strong> Self-reported frequency and duration of each technology use during schoolwork (for example, 51% of students reported texting while doing schoolwork somewhat or very frequently) and overall college GPA.</p>
+<p><strong>Findings.</strong> Using Facebook and texting while doing schoolwork were <em>negatively associated</em> with overall GPA. Emailing, phone calls, instant messaging, and non-academic searching while doing schoolwork were not significantly related to GPA.</p>
+<p><strong>Psychological explanation.</strong> The authors argued that social technologies such as Facebook and texting are used for social purposes and demand the same kind of attentional processing as schoolwork, reducing the capacity available for making sense of study material. They also noted the pattern may reflect the <em>type and purpose</em> of use rather than technology use in general.</p>
+<p><strong>Conclusion.</strong> Frequent Facebook use and texting during schoolwork were associated with lower grades &mdash; an association, not a demonstrated cause.</p>
+<p><strong>Strengths and limitations.</strong> Strengths: a large sample; several competing variables were controlled statistically; and the analysis distinguished types of technology instead of lumping &ldquo;screen time&rdquo; together. Limitations: the design was cross-sectional and correlational &mdash; the authors themselves state the direction of the effect cannot be determined, because students with weaker grades or self-regulation might also multitask more; all multitasking data were self-reported; and the sample came from a single institution.</p>
+</div>
+<div class="lc-res">
+<p class="lc-res-tag">Observational study &mdash; published findings</p>
+<h4>Rosen, Carrier &amp; Cheever (2013): What students actually do while studying</h4>
+<p><strong>Aim.</strong> To observe directly how often students switch away from studying and what triggers the switches &mdash; rather than relying on self-report as earlier studies had.</p>
+<p><strong>Participants and context.</strong> 263 students &mdash; middle school, high school, and university &mdash; in southern California, each observed studying for 15 minutes in their own home (their natural study environment).</p>
+<p><strong>Procedure.</strong> Before studying began, observers recorded what technologies were present and what computer windows were open. During the 15 minutes, observers coded the student's behaviour minute by minute: on-task studying, off-task technology use, and windows opened. Afterwards, students completed a questionnaire covering study strategies, preference for task-switching, attitudes toward technology, media use, and GPA.</p>
+<p><strong>Behaviours and outcomes measured.</strong> Observed on-task and off-task behaviour each minute; number and timing of switches; technologies used; plus questionnaire measures of study strategies, task-switching preference and GPA.</p>
+<p><strong>Findings.</strong> Students averaged <em>less than six minutes on task before switching</em>, most often to technological distractions such as social media and texting. Liking technology did not predict staying on task, but students who preferred task-switching had more distracting technology available and were more often off-task. Students who accessed Facebook during the observation had lower GPAs than those who did not, and students who reported using more study strategies stayed on task longer.</p>
+<p><strong>Psychological explanation.</strong> The authors suggested that the urge to check is itself a recurring source of switching &mdash; and they drew a practical implication from their data: short planned &ldquo;technology breaks&rdquo; and explicit teaching of study strategies may fit students' tendencies better than expecting unbroken concentration.</p>
+<p><strong>Conclusion.</strong> Observed study sessions were fragmented by technology, and fragmentation was associated with lower grades &mdash; again, an association, though this time based on observation rather than self-report.</p>
+<p><strong>Strengths and limitations.</strong> Strengths: direct minute-by-minute observation is far more objective than self-report; the sample spanned three age groups in a natural setting. Limitations: 15 minutes of observed studying may not represent a full evening's revision; the GPA comparisons were correlational; and knowing they were watched may have changed behaviour.</p>
+</div>
+<div class="lc-res">
+<p class="lc-res-tag">Key experiment &mdash; published findings</p>
+<h4>Sana, Weston &amp; Cepeda (2013): A true experiment on laptop multitasking</h4>
+<p><strong>Aim.</strong> The two studies above cannot show that multitasking <em>causes</em> poorer learning. This experiment tested exactly that, under controlled conditions.</p>
+<p><strong>Participants and context.</strong> In the first experiment, 44 undergraduate students (40 analysed, 20 per condition) attended a simulated university lecture in a real classroom.</p>
+<p><strong>Procedure.</strong> All participants attended the same 45-minute live lecture on meteorology and took notes on their own laptops. <strong>Half were randomly assigned</strong> also to complete 12 online tasks unrelated to the lecture (for example, checking a TV listing) at convenient moments &mdash; tasks designed to mimic typical in-class browsing in both kind and amount. An experimenter monitored compliance throughout. Immediately afterwards, all participants took a 40-question comprehension test (20 factual, 20 application questions) under a 30-minute limit.</p>
+<p><strong>Variables and outcomes measured.</strong> The manipulated variable was multitasking (assigned or not); the measured outcome was comprehension test performance. Note quality was also scored by a rater unaware of each participant's condition.</p>
+<p><strong>Findings.</strong> Multitaskers scored significantly lower on the comprehension test than non-multitaskers &mdash; about 11% lower overall &mdash; and their notes were of poorer quality. The deficit appeared for both factual and application questions.</p>
+<p><strong>Psychological explanation.</strong> Splitting attention between the lecture and the online tasks reduced the processing devoted to encoding the lecture, leaving a weaker memory trace to retrieve at test. In a second experiment, students who merely <em>sat in view of</em> a multitasking confederate scored about 17% lower than students with a clear view &mdash; distraction harms even those not multitasking, plausibly because their attention is captured by the visible screen activity.</p>
+<p><strong>Conclusion.</strong> Random assignment plus a manipulated variable and a measured outcome support a causal claim <em>within this setting</em>: laptop multitasking during a lecture impaired comprehension for the multitaskers and for those seated nearby.</p>
+<p><strong>Strengths and limitations.</strong> Strengths: random assignment and manipulation of the key variable make causal inference possible; compliance was directly monitored; note quality was scored blind to condition. Limitations: a single simulated 45-minute lecture on one topic with undergraduate participants; the online tasks were assigned by researchers rather than self-chosen; and a comprehension test immediately afterwards measures short-term understanding, not weeks-later retention.</p>
+</div>
+<div class="lc-amber"><p><strong>Reading the three studies together.</strong> The GPA studies show <em>associations</em>; only the experiment supports a causal claim, and only for its own conditions. A careful conclusion separates the three: frequent social-technology use during study is associated with lower grades (Junco &amp; Cotten); observed study sessions are heavily fragmented (Rosen et al.); and experimentally imposed multitasking during a lecture causally impaired comprehension (Sana et al.). None of these shows that every use of every device harms every learner.</p></div>
+<div class="lc-sec">Section 4 &mdash; Technology as a Learning Aid</div>
+<p>The same device can support learning &mdash; when it structures study around evidence-based principles. Three examples:</p>
+<p><strong>Spaced retrieval.</strong> A revision app can schedule retrieval attempts across days &mdash; the two processes that this unit's evidence supports most strongly, combined:</p>
+<div class="lc-green">
+<p><strong>Worked example &mdash; one concept, four attempts.</strong> A student uses a revision app to learn the concept of <em>negative reinforcement</em>.</p>
+<p><strong>Monday:</strong> studies the concept from notes.</p>
+<p><strong>Tuesday:</strong> the app prompts: &ldquo;Without looking anything up, explain negative reinforcement in your own words.&rdquo; The student attempts to recall &mdash; retrieving rather than rereading.</p>
+<p><strong>Thursday:</strong> another retrieval attempt, now two days later. Some reconstructing is needed &mdash; which is exactly what makes retrieval effective: the effort to reconstruct strengthens later access.</p>
+<p><strong>Following week:</strong> a final attempt, now with the longest gap. The app spaces the attempts so each one comes after some forgetting &mdash; the condition under which retrieval practice works hardest.</p>
+<p>Each gap is the spacing; each from-memory attempt is the retrieval. The app's value is that it implements both principles reliably &mdash; the benefit comes from the learning principles, not from the screen.</p>
+</div>
+<div class="lc-amber"><p><strong>Opening an app is not automatically retrieval practice.</strong> Rereading digital flashcards, watching a summary video, or scrolling a notes app can feel like studying while demanding no retrieval at all. The app supports learning only when the student actually attempts answers from memory &mdash; and feedback on errors then shows what to fix.</p></div>
+<p><strong>Feedback.</strong> Well-designed apps do not just mark answers &mdash; they explain them:</p>
+<div class="lc-green">
+<p><strong>Worked example &mdash; the wrong answer that teaches.</strong> A quiz app asks: <em>&ldquo;A parent stops nagging as soon as the child starts homework, and the child starts homework sooner afterwards. Which process is this?&rdquo;</em> The student answers &ldquo;punishment.&rdquo;</p>
+<p>The app responds: &ldquo;Incorrect &mdash; but close. Punishment <em>decreases</em> a behaviour. Here the behaviour <em>increased</em>, so this is reinforcement. And because something unpleasant (the nagging) was <em>removed</em>, it is negative reinforcement.&rdquo;</p>
+<p>The student then attempts a similar question &mdash; and correctly identifies negative reinforcement this time, applying the two-step check: did the behaviour increase or decrease, and was something added or removed?</p>
+<p><strong>Why explanatory feedback helps:</strong> &ldquo;Incorrect&rdquo; alone tells the student nothing about <em>why</em> the answer was wrong, so the same error can be repeated. The explanation names the two features of the scenario the student missed, and the follow-up question lets the corrected understanding be practised &mdash; as the Improving Learning lesson showed, feedback improves understanding when students understand it and act on it.</p>
+</div>
+<p><strong>Multimedia learning.</strong> Diagrams, narration, text and animation can support learning when each channel is used well. A well-designed animation of the working memory model &mdash; the central executive directing attention while the phonological loop rehearses sounds and the visuospatial sketchpad holds images, with each part presented in turn and narrated simply &mdash; gives the student two coordinated streams of information (visual and spoken) instead of one overloaded stream. But media is not automatically better: unnecessary background music, decorative animations, and dense on-screen text spoken aloud all <em>add</em> demands to limited working-memory resources and can push out the essential content. Adding more media does not automatically improve learning &mdash; designing media that fits the task does.</p>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; two revision apps</p>
+<p>Two revision apps cover the same psychology topics. App A repeatedly displays definitions for students to reread. App B asks students to answer questions from memory and then explains why each answer was right or wrong.</p>
+<p>Explain which psychological processes could make App B more effective.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Analyse the two apps in your notebook before revealing the model.</div>
+<div class="reveal-answer"><div>
+<p>App A's rereading keeps the definitions on the screen, so it demands only <em>recognition</em> &mdash; judging that the words are familiar. Recognition feels like knowing, but it is supported by the page, and it rehearses nothing a later test requires.</p>
+<p>App B demands <em>retrieval</em>: producing an answer from memory, with nothing in front of the student. Retrieval forces the student to reconstruct the material, which is thought to strengthen later access to it &mdash; and it exposes exactly what is not yet retrievable, which rereading cannot reveal.</p>
+<p>App B's explanations turn each answer into feedback. Because the feedback explains <em>why</em> an answer was right or wrong, it corrects the underlying understanding rather than just marking the output &mdash; and the next question gives the corrected understanding another retrieval attempt. If the app also spaces questions over days, it combines retrieval with spacing, the two processes with the strongest evidence behind them in this unit.</p>
+<p>The comparison has a caveat: App B is only better <em>as used</em>. Tapping through App B without genuine retrieval attempts, or with questions that test trivial details, would forfeit the advantage. The processes &mdash; retrieval, explanatory feedback, spacing &mdash; are what matter, not the app.</p>
 </div></div>
+</div>
+<div class="lc-sec">Section 5 &mdash; Technology and Motivation: The SDT Connection</div>
+<p>Whether a student keeps using a learning tool &mdash; and <em>why</em> they use it &mdash; is a motivational question, and Self-Determination Theory (from the Motivation lesson) gives the vocabulary. Each of SDT's three basic psychological needs can be supported or undermined by how educational technology is designed and used:</p>
+<div class="lc-cards lc-c3">
+<div class="lc-card"><h5>Autonomy</h5><p><strong>Need:</strong> feeling that one's actions are self-endorsed rather than merely imposed.</p><p><span class="lc-ok">Example:</span> a student chooses which revision topic to practise, rather than following an inflexible sequence the app forces on everyone.</p><p><span class="lc-why">Why it fits:</span> the choice is genuinely theirs, so practising feels self-endorsed &mdash; the app supports their reason for studying instead of replacing it.</p></div>
+<div class="lc-card"><h5>Competence</h5><p><strong>Need:</strong> feeling capable of making progress and mastering challenges.</p><p><span class="lc-ok">Example:</span> an app gives appropriately challenging questions and feedback that helps the student see what improved since last week.</p><p><span class="lc-why">Why it fits:</span> progress becomes visible and specific, so the student experiences growing mastery &mdash; not just a score.</p></div>
+<div class="lc-card"><h5>Relatedness</h5><p><strong>Need:</strong> feeling connected to and supported by others.</p><p><span class="lc-ok">Example:</span> a supportive online study group where students compare approaches and explain concepts to each other.</p><p><span class="lc-why">Why it fits:</span> the student feels part of a group working toward the same goal &mdash; the connection itself makes engagement easier.</p></div>
+</div>
+<p>Technology can undermine the same needs. Public rankings, daily streaks, and constant comparisons turn studying into a contest scored by someone else's rules: a student may open the app to <em>keep the streak</em> or <em>avoid dropping down the leaderboard</em> rather than because they value the learning &mdash; in SDT's terms, the motivation shifts toward <strong>external or introjected regulation</strong>, the controlled end of the continuum. A student far down a public ranking may experience the leaderboard as a judgment rather than information, which can frustrate <strong>competence</strong> rather than support it.</p>
+<div class="lc-amber"><p><strong>The effects depend on the individual and the use.</strong> For some students, a visible streak genuinely supports competence by making progress concrete; for others it becomes a pressure. The feature alone does not decide the outcome &mdash; what it does to the student's sense of choice, progress and connection does.</p></div>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; motivation</p>
+<p>The makers of a revision app add public rankings and daily streaks. Some students now open the app more often; others stop opening it altogether.</p>
+<p>Using SDT, explain how these features might influence different students' motivation.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Analyse the features in your notebook before revealing the model.</div>
+<div class="reveal-answer"><div>
+<p>Rankings and streaks are external contingencies: they attach studying to outcomes the app controls. For students drawn in by them, the reason for opening the app may shift from valuing the learning toward keeping the streak or beating peers &mdash; external regulation, or introjected regulation if the driver is fear of losing rank or embarrassment in the public comparison. That is <em>controlled</em> motivation, which in SDT tends to depend on the pressure staying in place &mdash; and which explains why these students use the app more <em>while the contingencies feel salient</em>.</p>
+<p>Competence can be undermined rather than supported: a ranking is a comparison against others, not information about one's own progress. A student near the bottom receives a signal of failure every time they open the app, which frustrates the need for competence &mdash; consistent with those students stopping altogether. Autonomy can suffer too: if the streak dictates what must be done today, the app is choosing, not the student.</p>
+<p>Why some students still benefit: for a student performing well, a streak can make progress visible and concrete (competence), and rankings among friends can feel like connection (relatedness). This is why the same features produce opposite effects in different users &mdash; the outcome depends on what the feature does to each student's sense of choice, progress and connection, and increased app use should not be confused with increased learning.</p>
+</div></div>
+</div>
+<div class="lc-sec">Section 6 &mdash; Evaluating the Evidence</div>
+<div class="lc-concept">
+<h4>Causality &mdash; did multitasking cause the outcome?</h4>
+<p>An association between frequent multitasking and lower grades does not automatically mean multitasking <em>caused</em> those grades. Students who multitask heavily may also differ in motivation, self-regulation or study habits &mdash; and the direction could even run the other way. Causal claims require manipulation and control: that is what the Sana et al. experiment provides &mdash; participants were <em>randomly assigned</em> to multitask or not &mdash; but its causal conclusion applies to its own conditions: one lecture, one set of assigned online tasks, university students, an immediate test. It does not license the claim that any phone use causes any grade outcome.</p>
+</div>
+<div class="lc-concept">
+<h4>Measurement &mdash; what exactly was measured?</h4>
+<p>Self-reported screen time may differ from actual usage: students estimate, and &ldquo;being logged in&rdquo; is not the same as actively using &mdash; a limitation the Junco &amp; Cotten authors themselves discuss. Total screen time also hides <em>what</em> the student was doing: an hour of retrieval practice and an hour of scrolling are not equivalent activities. Rosen et al. improved measurement by observing minute by minute &mdash; but only for 15 minutes in one setting, and GPA is a broad outcome shaped by many factors beyond technology use.</p>
+</div>
+<div class="lc-concept">
+<h4>Generalizability &mdash; who and what do the findings cover?</h4>
+<p>Each study covers a particular sample, task and technology: students at one US university (Junco &amp; Cotten); three age groups observed studying at home in southern California for 15 minutes (Rosen et al.); and undergraduates in a simulated meteorology lecture (Sana et al.). Younger students, different subjects, different apps and future technologies may behave differently &mdash; and since digital environments change quickly, findings about yesterday's platforms do not automatically transfer to today's.</p>
+</div>
+<div class="lc-concept">
+<h4>Responsibility &mdash; who should do what?</h4>
+<p>The evidence creates responsibilities for more than students. Schools must balance protecting attention against students' autonomy and wellbeing &mdash; restrictions imposed without explanation or choice can create the very controlled motivation SDT warns about. Developers must recognise that default design choices (notifications on by default, streaks, public rankings) shape behaviour, and that engagement metrics are not learning metrics. Students themselves &mdash; as the Rosen et al. data suggest &mdash; benefit from learning <em>about their own attention</em>: which uses support their learning and which quietly fragment it.</p>
+</div>
+<div class="lc-sec">Section 7 &mdash; Practical Takeaways</div>
+<ul class="lc-list">
+<li><strong>Reduce unnecessary notifications during demanding study tasks.</strong> Every interruption costs reorientation; removing the trigger removes the switch &mdash; protecting the sustained attention that encoding requires.</li>
+<li><strong>Use retrieval-based revision rather than passive rereading.</strong> Reconstruction from memory strengthens later access; rereading builds familiarity without rehearsing what a test demands.</li>
+<li><strong>Space revision sessions.</strong> Returning to material after a gap makes retrieval harder and more productive than massing it into one session.</li>
+<li><strong>Check and act on feedback.</strong> Explanatory feedback corrects understanding &mdash; but only if it is read, understood, and followed by another attempt.</li>
+<li><strong>Select digital tools that support the actual learning objective.</strong> Ask what processes a tool triggers: retrieval and feedback support learning; clicks, streaks and screen time measure engagement, not learning.</li>
+</ul>
+<div class="lc-amber"><p><strong>Strategies, not guarantees.</strong> Each strategy above makes effective learning <em>more likely</em>; none guarantees improved results. Students also cannot rely on subjective experience: rereading feels fluent and productive, while retrieval feels harder &mdash; which is precisely why the evidence, not the feeling, should guide the choice.</p></div>
+<div class="lc-sec">Section 8 &mdash; Extended Application: The Phone-Ban Question</div>
+<div class="lc-app">
+<p class="lc-app-tag">Extended application</p>
+<p>A school bans all phones. Another school teaches students to use spaced-retrieval apps. Using SDT and research on attention and working memory, evaluate which approach is more likely to produce lasting learning benefits.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Write your evaluation in your notebook before revealing the model answer.</div>
+<div class="reveal-answer"><div>
+<p><strong>What the ban offers:</strong> restricting phones during school hours could protect attention. The research shows why that matters: imposed task-switching causally impaired lecture comprehension (Sana et al.), observed study sessions are fragmented by devices (Rosen et al.), and frequent social-technology use during schoolwork is associated with lower grades (Junco &amp; Cotten). If banning phones removes a major source of task-switching, encoding has a better chance to occur &mdash; the ban is, in effect, an attention-protection policy.</p>
+<p><strong>What the second school offers:</strong> teaching students to use spaced-retrieval apps could build exactly the processes that produce retention &mdash; retrieval from memory, explanatory feedback, and spaced scheduling &mdash; plus the metacognitive knowledge of <em>which</em> uses of technology help. An app that structures retrieval across days implements the most strongly supported principles in this unit.</p>
+<p><strong>Applying SDT:</strong> a ban is an external control. Imposed without explanation, it gives students no role in regulating their own attention &mdash; external regulation &mdash; and the controlled motivation disappears the moment the rule does (the homework-reward pattern from the Motivation lesson). The second school builds autonomy and competence instead: students learn <em>why</em> retrieval and spacing work, choose how to apply it, and see their progress &mdash; endorsed reasons and visible mastery that can outlast the lesson. Relatedness matters too: a study group using a shared tool can add it.</p>
+<p><strong>Not mutually exclusive:</strong> the two policies answer different problems. The ban addresses a distractor; the teaching addresses a tool. A school could protect focused periods (with the reasons explained to students, and some choice in how focus is achieved) while explicitly teaching evidence-based use of learning apps. Neither policy is automatically superior: a ban alone leaves students unskilled with the technology they will return to; app training alone leaves the dominant distractor untouched.</p>
+<p><strong>Limitations and alternatives:</strong> the grade associations are correlational and self-reported, so poorer grades might partly reflect other differences between students; the strongest causal evidence concerns assigned laptop multitasking in one lecture, not phone bans; and a ban may simply displace phone use to evenings, doing nothing for independent study. Implementation also matters: a poorly designed &ldquo;retrieval&rdquo; app that students tap through passively would deliver little, and bans enforced punitively could frustrate autonomy further.</p>
+<p><strong>Qualified conclusion:</strong> the evidence supports both protecting attention during demanding learning and teaching purposeful, retrieval-based use of technology. The approach most consistent with the research combines reasonable restrictions on distracting use &mdash; explained to students, with some choice about implementation &mdash; with explicit instruction in spaced retrieval and feedback. What should be avoided is claiming that either policy, by itself, guarantees lasting learning benefits: the outcome depends on design, use, task, learner and environment.</p>
+</div></div>
+</div>
+</div>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
   <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Technology</h4>
   <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Apply attention and working-memory research to technology use.</p>
