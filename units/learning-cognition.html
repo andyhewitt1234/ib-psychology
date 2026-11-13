@@ -3045,6 +3045,13 @@
 #slide-33 .btx-concept h4{font-size:.95rem;font-weight:700;margin:0 0 .4rem;color:var(--text)}
 #slide-33 .btx-concept p{margin:0 0 .5rem;line-height:1.6}
 #slide-33 .btx-concept p:last-child{margin-bottom:0}
+#slide-33 .btx-proc{border:1px solid #E2E8F0;border-radius:8px;padding:.65rem .9rem;margin:0 0 .6rem}
+#slide-33 .btx-proc h4{font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text)}
+#slide-33 .btx-proc p{margin:0 0 .45rem;line-height:1.6}
+#slide-33 .btx-proc p:last-child{margin-bottom:0}
+#slide-33 .btx-seq{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem .6rem;margin:.35rem 0 .3rem}
+#slide-33 .btx-seq-step{font-weight:600;font-size:.92rem;color:var(--text);background:#FFFFFF;border:1px solid #CBD5E1;border-radius:6px;padding:.35rem .6rem}
+#slide-33 .btx-seq-arrow{color:#64748B;font-size:.95rem}
 #slide-33 .btx-act-title{font-size:.95rem;font-weight:700;margin:1.05rem 0 .45rem;color:var(--text)}
 #slide-33 .reveal{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:var(--radius);padding:.7rem .95rem;margin:.55rem 0 1rem}
 #slide-33 .reveal:hover{border-color:#9DBBDF}
@@ -3071,7 +3078,7 @@
 #slide-33 .btx-table tr:nth-child(even) td{background:#F8FAFC}
 #slide-33 ul{margin:0 0 .85rem;padding-left:1.3rem}
 #slide-33 li{line-height:1.65;margin:0 0 .35rem;text-align:left}
-@media (max-width:640px){#slide-33 .btx-research,#slide-33 .btx-ex,#slide-33 .btx-note,#slide-33 .btx-concept,#slide-33 .reveal{padding:.7rem .8rem}}
+@media (max-width:640px){#slide-33 .btx-research,#slide-33 .btx-ex,#slide-33 .btx-note,#slide-33 .btx-concept,#slide-33 .btx-proc,#slide-33 .reveal{padding:.7rem .8rem}#slide-33 .btx-seq{flex-direction:column;align-items:flex-start;gap:.25rem}#slide-33 .btx-seq-arrow{transform:rotate(90deg);line-height:1}}
 </style>
 <h2>Cultural Influences on Memory</h2>
 <p class="slide-intro">How cultural experiences may influence what people notice, how information is organized, and what they later remember.</p>
@@ -3080,28 +3087,68 @@
 <p>Psychologists investigate these influences through cross-cultural research. However, differences between groups on a memory task do not necessarily mean that one group has a better memory than another.</p>
 
 <div class="btx-sec">1. How Culture May Influence Memory</div>
-<p>Psychologists often describe remembering as a sequence of processes. Before looking at the research, it helps to define these processes in everyday terms &mdash; using a single example that will follow us through all four.</p>
-<p>Imagine two students watching the same school performance. They are sitting in the same hall, for the same length of time, watching the same events. Yet afterwards, they remember different things.</p>
-<div class="btx-tablewrap">
-<table class="btx-table">
-<thead><tr><th>Process</th><th>What it means</th><th>In the performance example</th></tr></thead>
-<tbody>
-<tr><td><strong>Attention</strong></td><td>Which information receives the most focus.</td><td>One student concentrates on the actors' facial expressions. The other concentrates on the costumes and background music.</td></tr>
-<tr><td><strong>Encoding</strong></td><td>Processing attended information so it can be stored in memory.</td><td>Because the first student concentrated on facial expressions, those details may be more effectively processed into memory. The second student may encode more about the costumes and music.</td></tr>
-<tr><td><strong>Organization</strong></td><td>How information is mentally arranged.</td><td>One student remembers the performance by following the sequence of events in the story. The other groups what happened by characters, costumes, and music.</td></tr>
-<tr><td><strong>Retrieval</strong></td><td>Bringing stored information back to mind, often supported by cues.</td><td>A week later, a photograph of a costume helps the second student remember additional details. The photograph acts as a retrieval cue.</td></tr>
-</tbody>
-</table>
+<p>Psychologists often describe remembering as a sequence of processes:</p>
+<div class="btx-seq" role="list" aria-label="The four memory processes">
+<span class="btx-seq-step" role="listitem">Attention</span>
+<span class="btx-seq-arrow" aria-hidden="true">&rarr;</span>
+<span class="btx-seq-step" role="listitem">Encoding</span>
+<span class="btx-seq-arrow" aria-hidden="true">&rarr;</span>
+<span class="btx-seq-step" role="listitem">Organization</span>
+<span class="btx-seq-arrow" aria-hidden="true">&rarr;</span>
+<span class="btx-seq-step" role="listitem">Retrieval</span>
 </div>
-<p>Notice how the processes connect. What each student attended to shaped what was encoded; the way each student organized the experience shaped which cues helped at retrieval. Remembering is not a single step &mdash; it is a chain, and a difference at any link can change the final memory.</p>
+<p class="btx-note">Read this as a map, not a production line. The four processes interact &mdash; they do not always occur as four strictly separate stages, and later steps feed back into earlier ones.</p>
+<p>To see how each process works, imagine two students watching the same school performance. They sit in the same hall, for the same length of time, watching the same events. Yet afterwards, they remember different things. Each process below starts from this one example.</p>
+<div class="btx-proc">
+<h4>Attention</h4>
+<p><strong>What it means:</strong> attention is the process of focusing on particular features of a situation while other features receive less focus.</p>
+<p><strong>Example:</strong> one student concentrates on the actors' facial expressions; the other concentrates on the costumes and background music.</p>
+<p><strong>What the example shows:</strong> neither student is more attentive overall &mdash; each has <em>selected</em> different information. This matters because whatever receives the most focus is the only material the rest of the memory system has to work with.</p>
+<p><strong>Research connection:</strong> Masuda and Nisbett (2001) found group differences in exactly this kind of selection &mdash; see Section 3.</p>
+</div>
+<div class="btx-proc">
+<h4>Encoding</h4>
+<p><strong>What it means:</strong> encoding is processing attended information so that it can be stored in memory.</p>
+<p><strong>Example:</strong> because the first student concentrated on facial expressions, those details may be more effectively processed into memory. The second student may encode more about the costumes and music.</p>
+<p><strong>What the example shows:</strong> both students saw the same performance, but attention decided which parts were processed fully. Encoding therefore reflects what was selected &mdash; not everything that was available to be selected.</p>
+<p><strong>Research connection:</strong> in Masuda and Nisbett's study, what participants attended to appeared to shape what they later remembered, consistent with attention leaving a trace in encoding.</p>
+</div>
+<div class="btx-proc">
+<h4>Organization</h4>
+<p><strong>What it means:</strong> organization is how information is mentally arranged while it is being learned &mdash; grouped into categories, arranged chronologically, or connected through a meaningful story.</p>
+<p><strong>Example:</strong> given a list such as <em>banana, chair, mango, table, orange,</em> and <em>bed</em>, one person recalls all the fruits together and then all the furniture. Another connects the words into a small story: a mango falls off the table onto a chair, next to a banana, and so on.</p>
+<p><strong>What the example shows:</strong> both people received identical words. The difference lies in the mental arrangement. Grouping reduces the number of separate pieces to keep in mind, and a story links each word to the next &mdash; either arrangement can support recall.</p>
+<p><strong>Research connection:</strong> Cole and Scribner (1974) recorded exactly this kind of arrangement &mdash; clustering recalled words by category &mdash; and found it strongly linked to schooling. See Section 2.</p>
+</div>
+<div class="btx-proc">
+<h4>Retrieval and cueing</h4>
+<p><strong>What it means:</strong> retrieval is bringing previously learned information back into awareness. A retrieval cue is anything &mdash; a sight, a word, a place &mdash; that helps trigger that process.</p>
+</div>
+<div class="btx-ex">
+<p class="btx-ex-tag">Cue examples (illustrative &mdash; not research evidence of a cultural effect)</p>
+<p>A photograph of a costume helps a student remember additional details of the performance: the picture reconnects them to what they originally looked at.</p>
+<p>Saying the category label <em>fruits</em> helps someone recall words from a list they learned earlier: the label matches how the words were mentally grouped.</p>
+<p>A culturally familiar celebration provides meaningful associations that support remembering: its songs, foods, and rituals give new information familiar hooks to attach to.</p>
+</div>
+<div class="btx-proc">
+<p><strong>Why cues work:</strong> retrieval is often easier when a cue connects to how the information was originally encoded &mdash; this idea is known as <strong>encoding specificity</strong>. The photograph works because it matches what the student actually attended to; the category label works because it matches how the words were organized. The cue and the memory must fit.</p>
+<p><strong>Why the same cue does not fit everyone:</strong> a cue has to connect with a person's own experience. A culturally familiar celebration is a rich cue for someone who grew up with it; the same celebration may provide far fewer hooks for someone encountering it for the first time. This does not mean that everyone from a cultural group remembers in the same way &mdash; individuals differ widely, and no cue works for every person.</p>
+<p><strong>Research connection:</strong> Cole and Scribner's participants without schooling recalled far more when the same items appeared inside a story &mdash; a meaningful, familiar format acting as a powerful cue.</p>
+</div>
+<p class="btx-note">Notice the boundary: the cue examples above are illustrative. They show how cueing works in principle. Whether particular cues differ <em>between cultural groups</em> is a research question &mdash; these examples cannot demonstrate a cultural effect by themselves.</p>
+<p>Finally, notice how the four processes interact. What a person attends to shapes what is encoded; how information was organized during learning determines which cues will work at retrieval; a successful cue at retrieval reflects the organization used earlier. Remembering is a chain &mdash; and a difference at any link can change the final memory.</p>
 <p>Cultural experience can influence what people consider important, familiar, or meaningful, and this may affect each of these processes &mdash; for example, by shaping what a person finds worth attending to, or which kinds of organization they have practiced.</p>
-<p class="btx-note">Be careful with this example: it illustrates how memory <em>processes</em> work. It does not demonstrate that the differences between these two students were caused by culture. Two students from the same family could differ in exactly these ways. Cultural explanations require evidence from research that compares groups &mdash; and even then, other explanations must be ruled out.</p>
+<p class="btx-note">Be careful with the performance example: it illustrates how memory <em>processes</em> work. It does not demonstrate that the differences between these two students were caused by culture. Two students from the same family could differ in exactly these ways. Cultural explanations require evidence from research that compares groups &mdash; and even then, other explanations must be ruled out.</p>
 <p>Cultural experience also rarely acts alone. Schooling, language, and familiarity with particular tasks overlap with culture, and each can shape memory performance in its own right.</p>
 <p class="btx-note">A note on research design: culture can be the focus of a study, but it rarely acts alone. Schooling, language, task familiarity, and socioeconomic circumstances often differ between cultural groups and can also create alternative explanations for observed differences. Cultural influences and these other factors are not mutually exclusive &mdash; part of the researcher's task is to consider which explanation best fits the evidence.</p>
 <h4 class="btx-act-title">Apply Your Understanding</h4>
 <div class="reveal">
 <div class="reveal-question"><p>Two students attend the same festival. One remembers the performers, while the other remembers the conversations and social interactions.</p>Explain how attention and encoding could contribute to these differences. Why would it be incorrect to assume that culture caused them?</div>
 <div class="reveal-answer"><div><p>Each student attended to different features of the same event. The first focused on the performers, so information about the performances received more processing and was more fully encoded. The second focused on the conversations and social interactions, so <em>that</em> information was more fully encoded. What we attend to shapes what gets encoded, so different attention can produce different memories of the same event.</p><p>However, a difference between two individuals is not evidence of a cultural difference. The students may share the same cultural background and still differ because of individual interests, prior experiences, or simply where each of them was standing. Attributing the difference to culture would require evidence from research that compares groups &mdash; not one pair of individuals.</p></div></div>
+</div>
+<div class="reveal">
+<div class="reveal-question"><p>In a memory experiment, a participant cannot remember the word <em>banana</em> from a list they studied. Moments later, when the researcher says "name any fruits you saw," the participant recalls it immediately.</p>Explain what the category label is doing in this situation, and why the same label would not necessarily help every participant equally.</div>
+<div class="reveal-answer"><div><p>The category label is acting as a retrieval cue: it brings previously learned information back into awareness. It works because it connects to how the word was originally encoded &mdash; if the participant mentally grouped the list into categories (or could easily do so), the label <em>fruits</em> matches that organization. This illustrates encoding specificity: a cue is effective when it fits the way the memory was formed.</p><p>The same label would not help every participant equally. A participant who rehearsed the list in its original order, without grouping, may have no category structure for the cue to match. The cue fits the memory, not the person's ability &mdash; so this single success also tells us nothing about the participant's general memory ability, only that this cue matched this task.</p></div></div>
 </div>
 
 <div class="btx-sec">2. Cole and Scribner (1974) &mdash; Schooling, Culture, and Recall</div>
@@ -3128,10 +3175,14 @@
 <li>Schooled participants tended to use categorical organization: they recalled items of the same kind together, such as items of clothing first, then foods. Participants without schooling showed little of this clustering &mdash; but they did not simply repeat the list in its presented order either, so their recall was not rote repetition.</li>
 <li>When the same objects were presented as part of a story instead of a list, participants without schooling recalled substantially more, organizing the items by the roles the objects played in the story.</li>
 </ul>
+<h4>Psychological explanation</h4>
+<p>The findings make sense once three terms are kept apart. <strong>Memory ability</strong> is a person's general capacity to retain information. <strong>Memory performance</strong> is a score on one particular task, under particular conditions. <strong>Memory strategies</strong> are learned techniques, such as grouping items into categories or rehearsing in a set order.</p>
+<p>What the research showed was a difference in <em>performance</em> and in <em>strategies</em> on school-style tasks &mdash; not in underlying ability. People familiar with school-based memorization approach a conventional memory task with practiced tools: they recognize "memorize this list" as a school exercise and reach for category grouping. Participants without that experience had no reason to treat an arbitrary list as a school exercise, and used other techniques instead &mdash; such as naming and rehearsing items, or remembering them through meaningful content.</p>
 <h4>Conclusion</h4>
 <p>Differences in list recall were strongly related to schooling and task familiarity. Formal schooling trains school-style tasks &mdash; such as memorizing isolated lists of unrelated items &mdash; that have little role in everyday life outside school. When the same material was presented in a meaningful, familiar form, memory looked very different.</p>
-<h4>Evaluation</h4>
-<p>The findings do not show that participants without schooling have weaker memories. Poor performance on an unfamiliar laboratory task may reflect the task, not the person. The researchers themselves began the work expecting non-schooled participants to perform better, drew on the assumptions of their time, and revised their view when the evidence contradicted it. It is also a body of research with different tasks and different participant groups &mdash; not a single experiment with one cause &mdash; and schooling differs between the groups alongside culture, so the two cannot be fully separated.</p>
+<h4>Strengths and limitations</h4>
+<p><strong>Strengths:</strong> the materials were developed carefully to be fair to participants, and the researchers questioned their own initial assumptions when the evidence contradicted them. Because this was a series of studies with systematically varied tasks &mdash; not a single experiment with one independent variable &mdash; the researchers could test alternative explanations rather than rely on one result.</p>
+<p><strong>Limitations:</strong> schooling and culture are entangled in any real comparison, so the two cannot be fully separated. Performance on an unfamiliar laboratory task may not represent everyday remembering. And the findings do not show that participants without schooling have weaker memories, that all Kpelle participants remember in the same way, or that one cause explains every result.</p>
 </div>
 <div class="btx-ex">
 <p class="btx-ex-tag">Worked example &mdash; a free-recall task (illustrative, not the exact list used in the research)</p>
@@ -3158,8 +3209,10 @@
 <div class="btx-research">
 <h4>Aim</h4>
 <p>To investigate whether Japanese and American participants differed in their attention to complex visual scenes.</p>
+<h4>Participants</h4>
+<p>Japanese and American university students, each tested individually.</p>
 <h4>Procedure</h4>
-<p>Japanese and American university students individually viewed animated underwater scenes, each lasting about twenty seconds. Participants then described what they had seen, and the descriptions were recorded and analyzed for what they mentioned and how much they said about each part of the scene. In a later recognition test, participants were shown objects they had seen before and new objects, each shown either in its original setting or in a changed one, and judged whether they had seen it before.</p>
+<p>Each participant viewed animated underwater scenes, each lasting about twenty seconds. Participants then described what they had seen, and the descriptions were recorded and analyzed for what they mentioned and how much they said about each part of the scene. In a later recognition test, participants were shown objects they had seen before and new objects, each shown either in its original setting or in a changed one, and judged whether they had seen it before.</p>
 <h4>Findings</h4>
 <p>Japanese participants tended to mention the background and surroundings first, and made more statements about background details and the relationships between objects and their setting. American participants more often began with the most prominent objects in the scene &mdash; the largest, brightest, most quickly moving fish &mdash; and said more about those objects.</p>
 </div>
@@ -3168,9 +3221,15 @@
 <p>One participant might describe a large fish swimming across the screen &mdash; and little else. Another, looking at the same scene, might describe that fish together with the plants, the smaller animals, and the surrounding water and rocks.</p>
 <p>The two descriptions differ in what was mentioned first and most fully. That difference is what suggests the participants were attending to different parts of the scene &mdash; the focal object versus the object in its context.</p>
 </div>
-<p><strong>Link to memory.</strong> Attention can influence what information is encoded. Therefore, cultural differences in attention may have implications for what people later remember.</p>
-<p>The recognition test supports this link. Japanese participants recognized previously seen objects more accurately when the object appeared in its original background, while American participants' judgments were much less affected by the background. This is consistent with the Japanese participants having encoded objects together with their context &mdash; what was attended to shaped what was remembered.</p>
-<p class="btx-note">Two cautions. First, these findings describe average group tendencies, not fixed characteristics of every Japanese or American individual &mdash; people within each group differed widely. Second, the study involved descriptions and recognition of animated scenes, not eyewitnesses or real events, so it should not be presented as direct evidence that one cultural group has better memory or more accurate eyewitness recall.</p>
+<div class="btx-research">
+<h4>Explanation</h4>
+<p>The researchers interpreted the pattern as a difference in attentional tendency. Where experience emphasizes objects as separate and independent, attention tends to go to the focal object first; where experience emphasizes relationships and context, the scene tends to be perceived more as a whole. The recognition test fits this interpretation: Japanese participants recognized previously seen objects more accurately when the object appeared in its original background, while American participants' judgments were much less affected by the background &mdash; consistent with objects having been encoded together with their context.</p>
+<p>This is an interpretation of the pattern of results &mdash; a well-supported one, but not a direct measurement of "how holistically" any individual thinks.</p>
+</div>
+<p><strong>Connection to memory.</strong> Attention can influence what information is encoded. Therefore, cultural differences in attention may have implications for what people later remember &mdash; what was attended to shaped what was remembered.</p>
+<div class="btx-note">
+<p>Two cautions. First, these findings describe average group tendencies, not fixed characteristics of every Japanese or American individual &mdash; people within each group differed widely. Second, the study involved descriptions and recognition of animated scenes, not eyewitnesses or real events, so it should not be presented as direct evidence that one cultural group has better memory or more accurate eyewitness recall.</p>
+</div>
 <h4 class="btx-act-title">Apply to an Eyewitness Situation</h4>
 <div class="reveal">
 <div class="reveal-question">If cultural experiences influence attention to focal objects and background context, how might two witnesses describe the same traffic accident differently? Why would it be inappropriate to predict an individual witness's memory solely from nationality?</div>
@@ -3184,7 +3243,7 @@
 <p>Researchers need a task that measures the psychological process they intend to study, and measures it in the same way for every group tested.</p>
 <p><strong>Example:</strong> if a memory test asks participants to remember unrelated words and rewards organizing them into categories, people familiar with school-based memorization strategies may perform better. Does that mean they have better memory &mdash; or that the test favors a strategy only some participants have been taught?</p>
 <p><strong>In the research:</strong> Cole and Scribner's list tasks depended heavily on strategies learned in school. When the same objects were presented in a story instead of a list, recall changed dramatically &mdash; evidence that the task, and not only the participants' ability, shaped the results.</p>
-<p><strong>Why it matters:</strong> if a task does not measure memory equally well in every group, an observed difference may reflect the test rather than the participants. The technical term for whether a test actually measures the quality it claims to measure is <strong>construct validity</strong> &mdash; worth using in an evaluation answer, but only once you can explain the problem it names.</p>
+<p><strong>Why it matters:</strong> a low score on one memory task is a performance result, not a diagnosis of poor general memory ability. If a task does not measure memory equally well in every group, an observed difference may reflect the test rather than the participants. The technical term for whether a test actually measures the quality it claims to measure is <strong>construct validity</strong> &mdash; worth using in an evaluation answer, but only once you can explain the problem it names.</p>
 </div>
 <div class="btx-concept">
 <h4>Bias &mdash; Are researchers assuming their own methods are normal?</h4>
@@ -3196,16 +3255,16 @@
 <div class="btx-concept">
 <h4>Causality &mdash; Did culture actually cause the difference?</h4>
 <p>A difference between two groups does not show what caused it.</p>
-<p><strong>Example:</strong> imagine researchers find that students in Country A remember more words than students in Country B. Can they conclude that culture caused the difference? No. The students may differ in schooling, language, familiarity with memory tests, or other relevant experiences &mdash; any of which could produce the difference.</p>
+<p><strong>Example:</strong> imagine researchers find that students in Country A remember more words than students in Country B. Can they conclude that culture caused the difference? No. The students may differ in schooling, language, socioeconomic circumstances, familiarity with memory tests, or other relevant experiences &mdash; any of which could produce the difference.</p>
 <p><strong>In the research:</strong> Cole and Scribner took this problem seriously. Schooling and culture overlap in any real comparison, and their findings pointed specifically to school-taught strategies as the explanation for list-recall differences &mdash; a more precise claim than "culture causes memory differences."</p>
 <p><strong>Why it matters:</strong> comparing two groups is not a causal test. A causal claim needs evidence that rules out the alternative explanations &mdash; which is why careful cross-cultural studies manipulate the task rather than simply comparing national averages.</p>
 </div>
 <div class="btx-concept">
 <h4>Perspective &mdash; Does the task make sense to the participants?</h4>
 <p>Researchers should consider how participants understand the task they are given.</p>
-<p><strong>Example:</strong> someone may be highly skilled at remembering information relevant to everyday activities, such as the details of a story or where things are kept, yet unfamiliar with memorizing apparently unrelated words in a laboratory. Their low score may reflect the demands of the task rather than their general memory ability.</p>
+<p><strong>Example:</strong> someone may be highly skilled at remembering information organized around meaningful everyday activities, such as the details of a story or where things are kept, yet unfamiliar with memorizing apparently unrelated words in a laboratory. Their low score may reflect the demands of the task rather than their general memory ability.</p>
 <p><strong>In the research:</strong> when items were embedded in a story, non-schooled Kpelle participants recalled substantially more of the same material. The same people, with the same memory, performed differently when the task made sense in a familiar way.</p>
-<p><strong>Why it matters:</strong> interpreting a finding requires knowing what the task meant to the participants. Researchers who understand participants' cultural and educational experiences can distinguish "cannot remember" from "was never asked to remember in this way."</p>
+<p><strong>Why it matters:</strong> interpreting a finding requires knowing what the task meant to the participants. Considering participants' cultural and educational experiences improves interpretation &mdash; but it does not mean that every interpretation is equally supported by the evidence. Researchers who understand the participants can distinguish "cannot remember" from "was never asked to remember in this way," while still grounding conclusions in what was actually measured.</p>
 </div>
 <p class="btx-note">Cross-cultural research helps psychologists question whether findings generalize across populations. Its value depends on measuring psychological processes fairly and avoiding conclusions that go beyond the evidence.</p>
 <h4 class="btx-act-title">Apply Your Understanding</h4>
