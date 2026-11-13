@@ -3770,8 +3770,12 @@
 #slide-40 .lc-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
 #slide-40 .lc-list li{font-size:.94rem;line-height:1.65;color:var(--text-secondary);margin-bottom:.4rem}
 #slide-40 .lc-res{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.9rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-40 .lc-res h4{font-size:.95rem;font-weight:700;margin:.85rem 0 .3rem;color:var(--text)}
+#slide-40 .lc-res h4:first-child{margin-top:0}
 #slide-40 .lc-res p{font-size:.93rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
 #slide-40 .lc-res p:last-child{margin-bottom:0}
+#slide-40 .lc-res ol{margin:0 0 .55rem;padding-left:1.35rem}
+#slide-40 .lc-res li{font-size:.93rem;line-height:1.65;color:var(--text);margin-bottom:.35rem}
 #slide-40 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
 #slide-40 .lc-green p{font-size:.93rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
 #slide-40 .lc-green p:last-child{margin-bottom:0}
@@ -3785,9 +3789,18 @@
 #slide-40 .lc-app ol{margin:.2rem 0 .2rem;padding-left:1.3rem}
 #slide-40 .lc-app li{font-size:.94rem;line-height:1.65;color:var(--text);margin-bottom:.35rem}
 #slide-40 .lc-app li:last-child{margin-bottom:0}
+#slide-40 .lc-concept{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1.05rem;margin:0 0 .7rem}
+#slide-40 .lc-concept h4{font-size:.95rem;font-weight:700;margin:0 0 .4rem;color:var(--text)}
+#slide-40 .lc-concept p{font-size:.93rem;line-height:1.65;color:var(--text);margin:0 0 .5rem}
+#slide-40 .lc-concept p:last-child{margin-bottom:0}
+#slide-40 .lc-tablewrap{overflow-x:auto;margin:.35rem 0 .8rem}
+#slide-40 .lc-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:560px}
+#slide-40 .lc-table th{border:none;border-bottom:2px solid #CBD5E1;padding:.55rem .7rem;text-align:left;background:transparent;font-weight:700}
+#slide-40 .lc-table td{border:none;border-bottom:1px solid #E2E8F0;padding:.55rem .7rem;text-align:left;vertical-align:top;line-height:1.5}
+#slide-40 .lc-table tr:nth-child(even) td{background:#F8FAFC}
 #slide-40 .reveal{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.8rem 1.05rem;margin:.35rem 0 .95rem}
 #slide-40 .reveal:hover{border-color:#B9D2F5}
-#slide-40 .reveal-question{display:block;font-size:.94rem;font-weight:600;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word}
+#slide-40 .reveal-question{display:block;font-size:.94rem;font-weight:400;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
 #slide-40 .reveal-question::after{content:'Reveal Answer';display:block;width:max-content;margin-top:.7rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
 #slide-40 .r-model .reveal-question::after{content:'Reveal Model Answer'}
 #slide-40 .reveal.open .reveal-question::after{content:'Hide'}
@@ -3796,39 +3809,32 @@
 #slide-40 .reveal-answer ul{margin:0 0 .55rem;padding-left:1.3rem}
 #slide-40 .reveal-answer li{font-size:.93rem;line-height:1.6;color:var(--text);margin-bottom:.3rem}
 #slide-40 .reveal-answer li:last-child{margin-bottom:0}
-@media (max-width:640px){#slide-40 .lc-res,#slide-40 .lc-green,#slide-40 .lc-amber,#slide-40 .lc-app,#slide-40 .reveal{padding:.8rem .85rem}}
+@media (max-width:640px){#slide-40 .lc-res,#slide-40 .lc-green,#slide-40 .lc-amber,#slide-40 .lc-app,#slide-40 .lc-concept,#slide-40 .reveal{padding:.8rem .85rem}}
 </style>
 <h2>Improving Learning</h2>
 <p class="slide-intro">Evidence-based strategies that directly improve learning &mdash; from retrieval practice and elaborative interrogation to metacognition and feedback.</p>
 <div class="lc-body">
 <div class="lc-sec">Section 1 &mdash; How Can Psychologists Measure Improvements in Memory?</div>
-<p>The syllabus question is not simply &ldquo;What is a good study technique?&rdquo; The psychological question is: <strong>Can a strategy produce a measurable improvement in memory?</strong></p>
-<p>Suppose a student uses practice testing instead of rereading notes. Psychologists want to know whether practice testing improves later recall, why it might work, and what evidence would demonstrate that improvement.</p>
-<p>To answer that, psychologists trace a chain &mdash; and practice testing runs through each stage of it:</p>
+<p>Start with a situation every student recognizes. <strong>Sam</strong> prepares for the same psychology examination as <strong>Alex</strong>, with the same amount of time. Sam rereads the notes again and again; Alex spends the same time closing the notes and practising writing out what she remembers. On the night before the exam, both feel prepared. The psychological question is: <strong>which approach produces better memory performance &mdash; and how would we know?</strong></p>
+<p>Feeling prepared is not an answer, because feelings are not measurements. Psychologists investigate the question by designing a comparison: one group uses one revision strategy, another group uses the other, and both are given the same memory test. The comparison is built from a few design decisions, each of which needs to be understood:</p>
 <ul class="lc-list">
-<li><strong>Strategy</strong> &mdash; the intervention being tested: the student practises recalling definitions from memory rather than rereading the notes.</li>
-<li><strong>Psychological mechanism</strong> &mdash; why the strategy might work: attempting retrieval is thought to strengthen later access to stored material. This is a proposal to be evaluated, not a known fact.</li>
-<li><strong>Memory outcome</strong> &mdash; what aspect of memory should improve: here, how much material can be recalled a week later, not how familiar the notes feel tonight.</li>
-<li><strong>Evidence of improvement</strong> &mdash; a fair comparison showing better performance on that outcome &mdash; measured, not felt.</li>
-</ul>
-<p>Two distinctions do most of the work in this lesson:</p>
-<ul class="lc-list">
-<li><strong>Encoding</strong> is getting information into memory in the first place; <strong>retrieval</strong> is accessing it later. Strategies may emphasise one process or the other, but they interact: retrieval practice is a retrieval-focused strategy, yet it can itself strengthen subsequent retention.</li>
-<li><strong>Immediate performance</strong> is how well a student does straight after study; <strong>delayed retention</strong> is how much remains accessible days or weeks later. In many controlled comparisons, rereading produces strong immediate fluency while practice testing looks worse on the spot and holds up better after a delay &mdash; but outcomes depend on the material and the conditions, and neither strategy produces the same result in every situation.</li>
+<li><strong>The independent variable (IV)</strong> is what the researchers deliberately make different between the groups &mdash; here, the revision strategy: rereading versus retrieval practice. It is called <em>independent</em> because the researchers control it, rather than the participants.</li>
+<li><strong>The dependent variable (DV)</strong> is what the researchers measure to see whether the IV had an effect &mdash; here, performance on a defined memory test, such as how many items each student recalls. It is called <em>dependent</em> because its value is expected to depend on the strategy.</li>
+<li><strong>Controlled variables</strong> are everything else that must be kept the same, so the comparison isolates the strategy itself: the same material, the same difficulty, and the same total study time. If Alex had simply studied for longer, any advantage could reflect extra exposure rather than the strategy.</li>
+<li><strong>Random assignment</strong> is how participants are placed into conditions &mdash; by chance, like drawing lots, rather than by choice. Its purpose is to reduce <em>systematic</em> differences between the groups: without it, motivated students might all choose the same strategy, and motivation, not strategy, could explain the result. With it, ability and motivation are distributed across both groups by chance. Note carefully what this does and does not achieve: random assignment makes it <em>implausible</em> that pre-existing differences explain the outcome &mdash; it does not guarantee that the two groups are identical.</li>
+<li><strong>Delayed testing</strong> means giving the memory test days or weeks after study ends, not only straight afterwards. Why? Because a test taken immediately measures how accessible the material is right now, and both strategies can look good under those conditions. Only a delayed test shows what has endured &mdash; which is what "improving memory" is supposed to mean.</li>
 </ul>
 </div>
-<div class="lc-amber"><p>Performing well during revision is not evidence of durable learning. After massed study the material is highly accessible, so almost any check taken at that moment looks successful. Improvement must be demonstrated against retention measured after a delay &mdash; the standard this lesson applies to every strategy.</p></div>
-<div class="lc-sec">Section 2 &mdash; How Can a Claim Like This Be Tested?</div>
+<div class="lc-amber"><p>Performing well immediately after studying does not necessarily mean the information will be remembered a week later. After a study session the material is highly accessible, so almost any check taken at that moment looks successful. Improvement must be demonstrated against retention measured after a delay &mdash; the standard this lesson applies to every strategy.</p></div>
+<div class="lc-sec">Section 2 &mdash; From Claim to Test</div>
 <div class="lc-body">
-<p>Imagine researchers want to know whether practice testing improves memory. They could compare it directly with rereading:</p>
+<p>The syllabus question is not simply &ldquo;What is a good study technique?&rdquo; It is: <strong>can a strategy produce a measurable improvement in memory?</strong> To answer it, psychologists trace a chain &mdash; and each link has to be evidence, not impression:</p>
 <ul class="lc-list">
-<li><strong>The independent variable</strong> is the study strategy: one group practises retrieving the material, the other rereads it.</li>
-<li><strong>The dependent variable</strong> is memory performance on a defined test &mdash; for example, how many items each student recalls after a week.</li>
-<li><strong>Comparable material:</strong> both groups study the same content, for the same total time, so the comparison isolates how the time was used.</li>
-<li><strong>Delayed testing:</strong> measuring after a gap shows what has endured; measuring only immediately would flatter whichever strategy produces short-term fluency.</li>
-<li><strong>Confidence is not evidence:</strong> students' feelings of familiarity or certainty do not measure what is stored &mdash; only performance on the test does.</li>
+<li><strong>Strategy</strong> &mdash; the intervention being tested, such as practising recall instead of rereading.</li>
+<li><strong>Psychological mechanism</strong> &mdash; why the strategy might work: attempting retrieval is thought to strengthen later access to stored material. This is a proposal to be evaluated, not a known fact.</li>
+<li><strong>Memory outcome</strong> &mdash; what should improve: how much can be recalled a week later, not how familiar the notes feel tonight.</li>
+<li><strong>Evidence of improvement</strong> &mdash; a fair comparison showing better performance on that outcome &mdash; measured, not felt.</li>
 </ul>
-<p>A controlled comparison like this strengthens causal conclusions &mdash; but the strength of the conclusion must still match the design and the measures actually used, as the next question shows.</p>
 </div>
 <div class="lc-app">
 <p class="lc-app-tag">Application question</p>
@@ -3838,58 +3844,163 @@
 <div class="reveal-question">Attempt your own answer in your notebook before revealing the explanation.</div>
 <div class="reveal-answer"><div>
 <p>The two results answer two different questions. Group A's advantage was measured immediately, when the material was still highly accessible and rereading's fluency helps most; Group B's advantage was measured after a week, when only durably stored material remains. The rankings changed with the delay, which is the pattern this lesson keeps returning to: immediate performance and delayed retention are different measures, and neither can substitute for the other.</p>
-<p>The findings suggest an advantage for practice testing on the delayed measure &mdash; consistent with what controlled studies of the testing effect have found. To treat that suggestion as a stronger conclusion, researchers would need more information: how students were allocated to the groups (random assignment would make pre-existing ability and motivation differences implausible as explanations); whether study conditions were truly equivalent (same material, the same total study time &mdash; otherwise extra exposure could explain Group B's advantage); and how memory was measured (the same test for both groups, scored the same way, with the delay held constant).</p>
+<p>The findings suggest an advantage for practice testing on the delayed measure &mdash; consistent with what controlled studies of the testing effect have found. To treat that suggestion as a stronger conclusion, researchers would need more information: how students were allocated to the groups (random assignment would make pre-existing ability and motivation differences implausible as explanations &mdash; though it would not make the groups identical); whether study conditions were truly equivalent (same material, the same total study time &mdash; otherwise extra exposure could explain Group B's advantage); and how memory was measured (the same test for both groups, scored the same way, with the delay held constant).</p>
 <p>Even then, the conclusion should not be generalized to every learner, subject or situation: it is one comparison, with one material, one delay and one measure. What it supports is narrower and more useful &mdash; that on this delayed test, practice testing outperformed rereading &mdash; and further studies with different materials and measures would be needed before the claim could widen.</p>
 </div></div>
 </div>
 <div class="lc-sec">Section 3 &mdash; Retrieval Practice: Testing as Learning</div>
 <div class="lc-body">
-<p><strong>Retrieval practice</strong> is attempting to recall information from memory without looking at the notes. It is among the most strongly supported strategies for durable learning &mdash; particularly when retrieval succeeds and appropriate feedback follows &mdash; but it is not automatically effective in every situation.</p>
-<p>It differs from rereading in what it demands. Rereading asks the student to recognize material already in front of them, which feels fluent and effortless. Retrieval requires the student to reconstruct the material without support, which exposes what is actually accessible.</p>
-<p>Consider a student revising psychology definitions. Student A reads the definitions, then reads them again, then reads them a third time; by the end, every definition looks familiar. Student B reads the definitions once, closes the notes, writes out what she remembers, then checks her attempt against the notes and retries the ones she missed. Student A's revision feels easier; Student B's is harder &mdash; and the harder version is the one that gives feedback about what is genuinely retrievable. When Student B later sits a test without the notes, she has already practised exactly that task.</p>
-<p>Why might it work? One proposed mechanism is that successful retrieval rebuilds access to stored material and strengthens the route to it, while a failed attempt highlights gaps and directs later study toward weak areas. Retrieval practice&rsquo;s effectiveness is supported by evidence, but this proposed mechanism is not an established biological fact. The benefit also depends on the attempt: retrieval that is impossible, or failure that is never corrected, does not automatically strengthen memory.</p>
+<p><strong>Retrieval practice</strong> means actively bringing previously learned information to mind without immediately looking at the answer. It is among the most strongly supported strategies for durable learning &mdash; particularly when retrieval succeeds and useful feedback follows &mdash; but it is not automatically effective in every situation.</p>
+<p>It differs from rereading in what it demands of the learner. Rereading asks the student to <em>recognize</em> material that is already in front of them, which feels fluent and effortless. Retrieval requires the student to <em>reconstruct</em> the material without support, which exposes what is actually accessible &mdash; and it is precisely this act of reconstruction that is thought to strengthen later access to the information.</p>
 </div>
+<div class="lc-green">
+<p><strong>Worked example &mdash; one full retrieval-practice cycle.</strong> A student is revising the difference between classical and operant conditioning.</p>
+<p><strong>1.</strong> She studies the section explaining the two forms of conditioning.</p>
+<p><strong>2.</strong> She closes her notes.</p>
+<p><strong>3.</strong> She writes down everything she can remember &mdash; for example, that classical conditioning links an automatic response to a new stimulus, while operant conditioning changes behaviour through its consequences.</p>
+<p><strong>4.</strong> She reopens her notes and compares: her summary covers classical conditioning well but leaves out negative reinforcement. She corrects the mistake and adds the missing idea.</p>
+<p><strong>5.</strong> Later &mdash; the next day &mdash; she attempts retrieval again, starting from a blank page.</p>
+<p>Each step has a purpose. Steps 1&ndash;3 force reconstruction instead of recognition. Step 4 is where feedback does its work: the comparison against the notes reveals exactly which parts were missing or wrong. Step 5 gives the corrected material another retrieval attempt, so the improved version &mdash; not the earlier error &mdash; is what gets practised.</p>
+</div>
+<div class="lc-body">
+<p>This is why retrieval practice is not simply "testing yourself" as a vague habit. Compared with rereading the same notes a third time, the cycle above does three things rereading cannot: it shows the student what is genuinely retrievable, it locates specific gaps, and it rehearses the exact task a later test will demand &mdash; producing answers without support. Retrieval practice can therefore reveal gaps in understanding and support later retention, particularly when students receive useful feedback on what they missed.</p>
+</div>
+<div class="lc-amber"><p>Not every retrieval attempt automatically produces better learning. Retrieval that is impossible (the student has nothing to draw on), failure that is never corrected (gaps are never filled), or attempts made once and abandoned can all fail to help. The benefit depends on successful retrieval where possible, and on feedback and re-attempts where it is not.</p></div>
 <div class="lc-green"><p><strong>Key takeaway:</strong> a test can function as a learning event, not only as assessment &mdash; low-stakes quizzing between examinations is one practical way to build retrieval into a revision routine.</p></div>
 <div class="lc-body"><p><em>Related lesson:</em> spaced review complements retrieval practice &mdash; spacing schedules <em>when</em> material is revisited, while retrieval practice shapes <em>what the student does</em> at each revisit. The Spaced Practice &amp; Interleaving lesson teaches those two strategies in full; see the <a href="learning-cognition-index.html">unit index</a> to find it.</p></div>
+<div class="reveal">
+<div class="reveal-question">A student says: &ldquo;I don't need to test myself &mdash; I just reread my notes until I recognize everything.&rdquo; Using the difference between retrieval practice and rereading, explain why recognizing material on the page does not show what a later test will require.</div>
+<div class="reveal-answer"><div>
+<p>Rereading keeps the material in front of the student, so it only demands recognition &mdash; judging that something is familiar. Recognition feels like knowing, but it is supported by the notes themselves: the words on the page do much of the work. A later test, however, demands reconstruction &mdash; producing the material with nothing in front of the student.</p>
+<p>Retrieval practice rehearses exactly that task. When the student closes the notes and writes out what she remembers, the parts that do not come to mind are exposed immediately, and feedback (checking against the notes) shows precisely which gaps to fix. Recognition cannot reveal those gaps, because the page supplies the answer before the student has to. So &ldquo;I recognize everything&rdquo; may be true and still tell the student almost nothing about what she could produce in the examination &mdash; which is why the familiarity that rereading creates is a poor guide to later performance.</p>
+</div></div>
+</div>
 <div class="lc-sec">Section 4 &mdash; Elaborative Interrogation and Self-Explanation</div>
 <div class="lc-body">
-<p><strong>Elaborative interrogation</strong> means asking &ldquo;why?&rdquo; about the material and answering the question: why does this principle work the way it does? For example: why does retrieval after a gap strengthen memory more than immediate re-exposure? Answering forces the student to build connections to what they already know, rather than storing the fact as an isolated sentence.</p>
-<p><strong>Self-explanation</strong> means explaining to yourself how a concept or finding connects to existing knowledge while studying. A student reading about encoding specificity might explain how it applies to something they already understand &mdash; why a fact learned in one room can be harder to recall in another &mdash; generating a link between the new content and an existing structure.</p>
+<p>Both strategies make the student <em>generate</em> something during study rather than pass it through the eyes. They differ in what is generated, and the difference is examinable.</p>
+<p><strong>Elaborative interrogation</strong> means generating an explanation for <em>why</em> a fact, relationship, or finding is true. The learner reads a statement and asks: why would that be the case?</p>
 </div>
-<div class="lc-amber"><p>The quality and accuracy of the explanation matter. A student who asks &ldquo;why does retrieval practice work?&rdquo; and answers &ldquo;because testing is stressful, and stress improves memory&rdquo; has generated an incorrect mechanism &mdash; and rehearsing it may strengthen the misunderstanding. Explanations should be checked against the notes or the evidence, not simply generated and left unexamined.</p></div>
+<div class="lc-green">
+<p><strong>Worked example &mdash; elaborative interrogation.</strong></p>
+<p><strong>Question:</strong> Why might retrieval practice produce better long-term retention than rereading?</p>
+<p><strong>Example explanation:</strong> Retrieving information requires the learner to reconstruct it from memory rather than simply recognize it on the page. This act of reconstruction can strengthen later access to the information &mdash; which is exactly what a delayed test demands, but rereading never practises.</p>
+<p><strong>Why this is the strategy in action:</strong> the student has not just restated the finding; she has generated a reason for it. Asking and answering a meaningful &ldquo;why&rdquo; question pushes the learner to connect the new information to what she already knows &mdash; here, the distinction between recognition and reconstruction &mdash; instead of storing the finding as an isolated sentence.</p>
+</div>
+<div class="lc-body">
+<p><strong>Self-explanation</strong> means describing how new information, an example, or a step in a process connects to what the learner already understands. The learner is not asked &ldquo;why is this true?&rdquo; so much as &ldquo;how does this make sense to me?&rdquo;</p>
+</div>
+<div class="lc-green">
+<p><strong>Worked example &mdash; self-explanation.</strong> A student reads a worked example: a child refuses to do homework, and the parents stop the unpleasant nagging as soon as the child starts working; the child begins working sooner in future. The student explains to herself: <em>the nagging is an unpleasant stimulus, and removing it when the desired behaviour occurs makes that behaviour more likely &mdash; so this works like the negative reinforcement I already know, where removal of something aversive strengthens a behaviour.</em> The student has connected a new example to an existing structure in her knowledge &mdash; that is self-explanation.</p>
+</div>
+<div class="lc-body">
+<p><strong>Keeping the two apart:</strong></p>
+<ul class="lc-list">
+<li><strong>Elaborative interrogation:</strong> asking <em>why</em> a statement or finding is true &mdash; and generating the reason.</li>
+<li><strong>Self-explanation:</strong> explaining how information, examples, or steps make sense and connect to existing knowledge.</li>
+</ul>
+<p>The strategies can overlap in practice: a good self-explanation often contains a &ldquo;why&rdquo; answer, and answering an elaborative interrogation usually means connecting to existing knowledge. What matters for the examination is that you can name what each strategy targets &mdash; a reason for a claim, versus a connection to what is already understood.</p>
+</div>
+<div class="lc-amber"><p>The quality and accuracy of the explanation matter. A student who asks &ldquo;why does retrieval practice work?&rdquo; and answers &ldquo;because testing is stressful, and stress improves memory&rdquo; has generated an incorrect mechanism &mdash; and rehearsing it may strengthen the misunderstanding. An invented explanation is not automatically useful: explanations should be checked against the notes or the evidence before being trusted.</p></div>
+<div class="reveal">
+<div class="reveal-question">State one similarity and one difference between elaborative interrogation and self-explanation, illustrating each strategy with a short example of your own.</div>
+<div class="reveal-answer"><div>
+<p><strong>Difference:</strong> elaborative interrogation targets <em>why a claim is true</em>. Example: reading that memory improves when study is spread over days and asking, &ldquo;why would spacing help?&rdquo; &mdash; then generating an answer such as &ldquo;each revisit comes after some forgetting, so retrieving takes more effort and strengthens access more.&rdquo; Self-explanation targets <em>how new material connects to what I already understand</em>. Example: reading that same spacing finding and explaining, &ldquo;this is like practising penalties in football &mdash; leaving a gap between attempts forces me to rebuild the skill instead of coasting on the last one.&rdquo;</p>
+<p><strong>Similarity:</strong> both require the student to generate something rather than passively read, and both work by linking new information to existing knowledge &mdash; which is why they can overlap: a self-explanation often includes an answer to a &ldquo;why&rdquo; question. The distinction to state is the target: a reason for a statement (elaborative interrogation) versus a connection to one's own understanding (self-explanation).</p>
+</div></div>
+</div>
 <div class="lc-sec">Section 5 &mdash; Feedback: When and How</div>
 <div class="lc-body">
-<p>Feedback identifies errors and supports improvement, but different kinds of feedback do different jobs:</p>
+<p>Feedback identifies errors and supports improvement, but different kinds of feedback do different jobs. The clearest way to see the difference is to watch one student receive each kind.</p>
+</div>
+<div class="lc-green">
+<p><strong>Worked example &mdash; the same question, two kinds of feedback.</strong> The question: <em>A teacher stops nagging a student as soon as the student starts work, and the student starts work more quickly in future. Which process is this?</em></p>
+<p><strong>The student's first answer:</strong> &ldquo;Positive reinforcement &mdash; the student gets something good, so they work more.&rdquo;</p>
+<p><strong>Corrective feedback (identifies the answer, nothing more):</strong> &ldquo;Incorrect. The correct answer is negative reinforcement.&rdquo; The student now knows she was wrong &mdash; but has no idea <em>why</em>, so the same error is likely next time.</p>
+<p><strong>Explanatory feedback (explains why the answer was wrong):</strong> &ldquo;Two things identify a process: what the <em>outcome</em> is, and what was <em>added or removed</em>. The behaviour increased, so this is reinforcement, not punishment &mdash; that part of your answer was on the right track. But nothing was added: an unpleasant stimulus (the nagging) was <em>removed</em>. Removing an aversive stimulus to increase behaviour is negative reinforcement; positive reinforcement would require something pleasant to be added.&rdquo;</p>
+<p><strong>The student's second attempt:</strong> &ldquo;Starting work increased, so it is reinforcement. What followed was the removal of something unpleasant &mdash; the nagging stopped &mdash; so this is negative reinforcement, not positive.&rdquo; The student has corrected the misconception and can now apply the same two-step check to new scenarios.</p>
+</div>
+<div class="lc-body">
 <ul class="lc-list">
 <li><strong>Correct-answer feedback</strong> tells the student whether a response was right or wrong. It is useful information, but on its own it does not explain the error.</li>
-<li><strong>Explanatory feedback</strong> goes further: &ldquo;wrong, because&hellip;&rdquo; names the misconception and guides correction rather than merely marking the output.</li>
-<li><strong>The opportunity to retry</strong> after feedback lets the student act on the correction, which is when the improvement actually happens.</li>
+<li><strong>Explanatory feedback</strong> names the misconception and guides correction rather than merely marking the output &mdash; it is what allowed the second attempt above to improve.</li>
+<li><strong>The opportunity to retry</strong> after feedback lets the student act on the correction. This is when the improvement actually happens: feedback that is read but not acted on leaves the original error in place.</li>
 </ul>
-<p><strong>Immediate versus delayed feedback:</strong> neither timing is universally superior. Committing to an answer before receiving feedback can make the correction more meaningful, which is why a short delay before feedback sometimes helps; immediate feedback can prevent errors from being rehearsed. The effective combination is an attempt, explanatory feedback, and a re-attempt &mdash; with the timing chosen to fit the task and the learner.</p>
+<p><strong>Immediate versus delayed feedback:</strong> neither timing is universally superior. Committing to an answer before receiving feedback can make the correction more meaningful, which is why a short delay before feedback sometimes helps; immediate feedback can prevent errors from being rehearsed. The effective combination is an attempt, explanatory feedback, and a re-attempt &mdash; with the timing chosen to fit the task and the learner. Feedback is most useful when students understand it and act on it.</p>
 </div>
 <div class="lc-sec">Section 6 &mdash; Metacognition: Knowing What You Know</div>
 <div class="lc-body">
-<p><strong>Metacognition</strong> is thinking about your own thinking &mdash; monitoring what has actually been learned, judging how well a test will go, and directing study time accordingly. Three states need to be told apart:</p>
-<ul class="lc-list">
-<li><strong>Familiarity:</strong> the material looks and reads easily &mdash; a property of the current situation, not a measure of what is stored.</li>
-<li><strong>Confidence:</strong> a student's belief that they know something &mdash; which can be accurate or badly wrong.</li>
-<li><strong>Demonstrated recall:</strong> actually producing the material without support &mdash; the only one of the three that directly measures learning.</li>
-</ul>
-<p>Consider a student who rereads her notes the night before a test and recognizes every sentence: familiarity is high, confidence is high &mdash; and the next day she cannot retrieve the material. The recognition she experienced while reading required the notes to be present; the test demanded unaided recall, which she had never practised.</p>
-<p>Practice testing improves these judgments. Because a self-test demands demonstrated recall, its results give the student evidence about what is genuinely accessible rather than what merely feels familiar; checking errors afterwards shows where the gaps are. Good learners are better calibrated &mdash; they know what they know and what they do not &mdash; and practice testing is how that calibration is built.</p>
+<p><strong>Metacognition</strong> is monitoring and regulating one's own thinking and learning: noticing what has actually been learned, judging how well a test will go, and directing study time accordingly. It sounds straightforward, but the judgments involved can go badly wrong &mdash; and a single student shows how.</p>
+</div>
+<div class="lc-green">
+<p><strong>Worked example &mdash; confident, then stuck.</strong> A student preparing for a psychology examination rereads a chapter several times. By the third reading, every sentence feels smooth and familiar, so she concludes she knows the material &mdash; and moves on to another topic. The next day, asked to explain the concepts without her notes, she struggles: the explanation will not come.</p>
+<p>Three different states were in play, and she mistook one for another:</p>
+<p><strong>Familiarity</strong> &mdash; the material looked and read easily. This is a property of the current situation (the page was right there), not a measure of what is stored in memory.</p>
+<p><strong>Confidence</strong> &mdash; her belief that she knew it. Her confidence was sincere, but it was built on familiarity rather than on evidence.</p>
+<p><strong>Demonstrated recall</strong> &mdash; actually producing and explaining the material without support. This is the only one of the three that directly measures learning &mdash; and it is the one she never tested.</p>
+</div>
+<div class="lc-body">
+<p>The recognition she experienced while reading required the notes to be present; the test demanded unaided recall, which she had never practised. This is why metacognitive judgments can be misleading: reading smoothly creates a feeling of fluency, and the mind reads that fluency as knowledge. The judgment was honest &mdash; and wrong.</p>
+<p>Practice testing improves these judgments. Because a self-test demands demonstrated recall, its results give the student evidence about what is genuinely accessible rather than what merely feels familiar; checking errors afterwards shows where the gaps are. In the example above, one closed-notes attempt would have shown the student on Sunday evening exactly what the examination showed her on Monday. Good learners are better calibrated &mdash; they know what they know and what they do not &mdash; and practice testing is how that calibration is built.</p>
 </div>
 <div class="lc-sec">Key Study: Roediger &amp; Karpicke (2006) &mdash; The Testing Effect</div>
 <div class="lc-res">
-<p><strong>Aim:</strong> To investigate whether practising retrieval after studying improves long-term retention compared with spending the same time restudying the material.</p>
-<p><strong>Participants and design:</strong> Undergraduate students learned prose passages under different practice conditions &mdash; in some, the available time was spent repeatedly rereading; in others, part of the time was spent attempting to recall the passage from memory. Conditions were compared while keeping study arrangements comparable across groups.</p>
-<p><strong>What they studied:</strong> Short expository prose passages &mdash; the kind of continuous text a student might encounter in a course, not lists of isolated facts.</p>
-<p><strong>How the conditions differed:</strong> Repeated-study conditions invested the time in further readings of the same passage. Retrieval-practice conditions invested it in tests: after an initial reading, participants attempted to write down what they could recall, without the passage present.</p>
-<p><strong>How retention was assessed:</strong> Free recall of the passage's content, measured after both a short delay and a delay of one week &mdash; so the same students' performance could be compared across retention intervals.</p>
-<p><strong>Main findings:</strong> On the immediate test, the repeated-study conditions performed somewhat better &mdash; restudying is the most effective way to perform well right now. After one week, the balance reversed: the conditions that had included retrieval practice recalled considerably more of the passages. Practising retrieval had cost some short-term performance and bought substantially more durable retention &mdash; the testing effect.</p>
-<p><strong>Conclusions:</strong> Taking a memory test can strengthen long-term retention beyond what restudying achieves under the conditions investigated. Testing is not only assessment; it can be the treatment.</p>
+<h4>Aim</h4>
+<p>To investigate whether taking a memory test improves long-term retention beyond restudying the same material for the same amount of time &mdash; and, specifically, whether testing helps only because tests give another look at the material, or because the act of retrieval itself strengthens memory. The researchers used educationally relevant materials rather than artificial word lists.</p>
+<h4>Participants and materials</h4>
+<p>Undergraduate students at Washington University. The materials were short prose passages on single topics &mdash; about 250 to 275 words each &mdash; divided by the researchers into 30 <em>idea units</em> (complete, scoreable pieces of information) so recall could be scored precisely. These are the kind of continuous texts a student might meet in a course, not lists of isolated facts.</p>
+<h4>Procedure</h4>
+<p>Participants learned a passage across four short time periods, one after another, then took a final free-recall test either 5 minutes or 1 week later. In a <em>study</em> period, they read the passage. In a <em>test</em> period, they were given a sheet headed with the passage's title and wrote down as much of it as they could remember, without concern for exact wording or order. Before finishing, participants also rated how well they expected to remember the passage a week later &mdash; a metacognitive judgment, as in Section 6.</p>
+<h4>Experimental conditions</h4>
+<p>With S = study and T = test, the three conditions differed only in how the four periods were used:</p>
 </div>
-<div class="lc-amber">
-<p><strong>Limitations.</strong> The study used prose-passage recall with undergraduate participants under controlled laboratory conditions, so extending the finding to every subject, format and classroom is a further step. It provides evidence for retrieval practice under these conditions &mdash; not proof that every form of testing improves every kind of learning. The benefit also depends on the practice being genuinely retrievable: tests that are impossible, or errors that are never corrected, cannot be assumed to help.</p>
+<div class="lc-tablewrap">
+<table class="lc-table">
+<thead><tr><th>Condition (teaching illustration)</th><th>Period 1</th><th>Period 2</th><th>Period 3</th><th>Period 4</th></tr></thead>
+<tbody>
+<tr><td><strong>Repeated study</strong> (SSSS)</td><td>Study</td><td>Study</td><td>Study</td><td>Study</td></tr>
+<tr><td><strong>Single test</strong> (SSST)</td><td>Study</td><td>Study</td><td>Study</td><td>Test</td></tr>
+<tr><td><strong>Repeated test</strong> (STTT)</td><td>Study</td><td>Test</td><td>Test</td><td>Test</td></tr>
+</tbody>
+</table>
+</div>
+<div class="lc-res">
+<p>All conditions involved one initial reading; what differed was whether the remaining periods were spent on further readings or on recall attempts. A related first experiment in the same paper used a similar logic &mdash; an initial study period followed by either restudying or one recall test &mdash; with final tests after 5 minutes, 2 days, or 1 week, and gave no feedback on the tests.</p>
+<h4>Findings</h4>
+<p>The two measures told opposite stories. On the <strong>immediate</strong> final test, more studying meant better recall: the repeated-study condition outperformed the testing conditions (in the first experiment, restudying produced 81% versus 75% after 5 minutes). On the <strong>delayed</strong> final test, the pattern reversed: the more retrieval practice a condition had included, the better the recall &mdash; after one week, the tested condition recalled 56% while the restudy condition recalled only 42% (first experiment). In fact, participants who had taken one test recalled as much a week later as participants who had restudied recalled after only two days.</p>
+<p>The metacognitive ratings showed the same blind spot as Section 6: participants who had spent the time rereading predicted the best recall a week later, and those who had spent it testing predicted the worst &mdash; the opposite of the actual outcome.</p>
+<h4>Psychological explanation</h4>
+<p>Why would testing beat restudying after a delay? Restudying keeps the material in front of the learner, so it builds familiarity with little retrieval. Taking a test forces reconstruction of the material from memory, which is thought to strengthen later access to it. Two details support this interpretation. First, the tests gave <em>no feedback</em>, so the advantage cannot be explained as re-learning from seeing the answers. Second, one test appeared to slow forgetting itself: the tested group's week-later recall matched the restudy group's two-day recall. The benefit lies in the act of retrieval, not in extra exposure.</p>
+<h4>Conclusion</h4>
+<p>Taking a memory test can strengthen long-term retention beyond what restudying achieves under the conditions investigated. Testing is not only assessment; it is also a means of improving learning &mdash; the testing effect.</p>
+<h4>Strengths and limitations</h4>
+<p><strong>Strengths:</strong> a controlled experimental design with the strategy as the manipulated IV and time on task held constant; educationally relevant materials rather than artificial lists; and replication across experiments, including the crossover between immediate and delayed tests.</p>
+<p><strong>Limitations:</strong> the tasks were short prose passages recalled in a laboratory with undergraduate participants &mdash; so extending the finding to every subject, format and classroom is a further step. Recall of idea units is one measure of learning, not understanding or transfer. No feedback was given, and the benefit depends on the retrieval being possible: tests that are impossible, or errors that are never corrected, cannot be assumed to help.</p>
+</div>
+<div class="lc-sec">Evaluating the Evidence</div>
+<div class="lc-body"><p>Four evaluation questions, each grounded in the Roediger &amp; Karpicke study you have just read.</p></div>
+<div class="lc-concept">
+<h4>Causality &mdash; can we credit the strategy for the difference?</h4>
+<p>An experiment is strongest when researchers <em>manipulate</em> the factor of interest (the revision strategy) and allocate participants to conditions at random. Manipulation ensures the strategy comes <em>before</em> the measured outcome; random assignment distributes ability, motivation and prior knowledge across the groups by chance, so pre-existing differences cannot systematically explain the result.</p>
+<p><strong>In the research:</strong> participants were assigned to conditions, and all conditions spent the same total time with the material &mdash; so the difference lay in <em>how the time was used</em>, which is what allows the conclusion to concern retrieval practice at all.</p>
+<p><strong>Why it matters:</strong> a causal conclusion is only as strong as the design behind it &mdash; and even random assignment reduces systematic differences rather than guaranteeing identical groups. The conclusion should be no stronger than the design and measures actually used.</p>
+</div>
+<div class="lc-concept">
+<h4>Measurement &mdash; does the test measure what we call "learning"?</h4>
+<p>A memory test measures one specific performance: here, free recall of a studied passage, scored in idea units. That is a fair measure of <em>retention of that passage</em> &mdash; but it does not follow that it measures broader understanding, or the ability to use the knowledge on unfamiliar problems.</p>
+<p><strong>In the research:</strong> the tested group recalled more idea units a week later. The study therefore shows better <em>recall of studied passages</em> &mdash; it was not designed to test whether retrieval practice improves essay writing or problem solving.</p>
+<p><strong>Why it matters:</strong> a low-level result (more items recalled) should not be restated as a high-level one (better learning in general) unless the measure actually captured that broader outcome.</p>
+</div>
+<div class="lc-concept">
+<h4>Generalizability &mdash; who and what do the findings cover?</h4>
+<p>Findings come from a particular sample and a particular task. They generalize beyond it only insofar as other samples and tasks are relevantly similar &mdash; which is an empirical question, not an assumption.</p>
+<p><strong>In the research:</strong> undergraduates learned short prose passages under laboratory conditions. Younger students, other subjects, classroom quizzing, and complex material may all behave differently &mdash; and later classroom research has needed to test each extension separately.</p>
+<p><strong>Why it matters:</strong> "retrieval practice works" is shorthand for "retrieval practice worked in the conditions studied." Extending it is reasonable to try; assuming it is not.</p>
+</div>
+<div class="lc-concept">
+<h4>Application &mdash; what follows for real revision?</h4>
+<p>The findings can inform revision strategies: practising recall, with feedback, is a better-supported use of study time than rereading alone, and immediate fluency from rereading should not be mistaken for durable learning.</p>
+<p><strong>In the research:</strong> the crossover between immediate and delayed tests is the most practically important finding &mdash; the strategy that feels worse tonight produced better retention next week.</p>
+<p><strong>Why it matters:</strong> application still requires judgment. Retrieval practice is not guaranteed to be the best strategy for every student, subject or learning objective &mdash; the evidence supports trying it, with feedback, and judging the results on delayed measures.</p>
 </div>
 <div class="lc-sec">Application &mdash; Does Retrieval Practice Improve Learning?</div>
 <div class="lc-app">
@@ -3910,7 +4021,7 @@
 <div class="reveal-question">Attempt all five questions in your notebook before revealing the model answer.</div>
 <div class="reveal-answer"><div>
 <p><strong>1.</strong> The results are consistent with the testing effect: the group that practised retrieval recalled more terms one week later than the group that spent the same time rereading. One study can <em>suggest</em> that retrieval practice contributed to better retention &mdash; it cannot establish that it always will.</p>
-<p><strong>2.</strong> Random assignment means ability, prior knowledge and motivation are distributed across both groups rather than concentrated in one. Any pre-existing differences between students therefore cannot systematically explain the outcome, which makes a causal contribution from the strategy far more plausible than it would be if students had chosen their own methods.</p>
+<p><strong>2.</strong> Random assignment means ability, prior knowledge and motivation are distributed across both groups by chance rather than concentrated in one. Any pre-existing differences between students therefore cannot systematically explain the outcome &mdash; though random assignment does not guarantee identical groups &mdash; which makes a causal contribution from the strategy far more plausible than it would be if students had chosen their own methods.</p>
 <p><strong>3.</strong> Equal study time controls a critical confound. If Group B had simply studied for longer, better recall could reflect extra exposure rather than the strategy itself. Holding time constant isolates <em>how the time was used</em> as the difference between the groups &mdash; which is what allows the conclusion to concern retrieval practice at all.</p>
 <p><strong>4.</strong> Limitations include the single short retention interval (one week &mdash; we do not know what a month would show), the narrow outcome measure (recall counts of terms, not understanding, application or essay performance), the small hypothetical sample, and the fact that both groups knew they were in a study. Any one of these constrains how far the result generalizes.</p>
 <p><strong>5.</strong> Causality from one experiment extends only to its own conditions: this task, this material, this delay, this age group. Measurement matters too &mdash; &ldquo;recall of terms&rdquo; is one measure of learning, and strategies can rank differently on delayed, applied or transfer measures. An evidence-based conclusion claims no more than the evidence shows: retrieval practice <em>improved recall of terms in this study</em>, which is a good reason to try it &mdash; not a licence to declare it the best strategy for every learner and every kind of learning.</p>
