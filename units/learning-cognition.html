@@ -4082,10 +4082,12 @@
 
 <div class="slide" data-slide="42" id="slide-42">
 <style>
-#slide-42 .lc-sec{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.25rem 0 .5rem;line-height:1.35}
+#slide-42 .lc-sec{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.6rem 0 .55rem;line-height:1.35}
 #slide-42 .lc-body p{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
 #slide-42 .lc-body p:last-child{margin-bottom:0}
 #slide-42 .lc-body strong{color:var(--text)}
+#slide-42 .lc-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
+#slide-42 .lc-list li{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.4rem}
 #slide-42 .lc-cards{display:grid;gap:.65rem;margin:.3rem 0 .7rem}
 #slide-42 .lc-c2{grid-template-columns:1fr 1fr}
 #slide-42 .lc-c3{grid-template-columns:1fr 1fr 1fr}
@@ -4100,14 +4102,28 @@
 #slide-42 .lc-ok{color:#15803D;font-weight:600}
 #slide-42 .lc-bad{color:#B91C1C;font-weight:600}
 #slide-42 .lc-why{color:#1D4ED8;font-weight:600}
-#slide-42 .lc-note{border-left:3px solid #86EFAC;background:#F0FDF4;border-radius:0 8px 8px 0;padding:.55rem .85rem;margin:.3rem 0 .7rem}
-#slide-42 .lc-note p{font-size:.87rem;line-height:1.6;color:var(--text-secondary);margin:0}
-#slide-42 .lc-note strong{color:var(--text)}
-#slide-42 .lc-cont{display:flex;flex-wrap:wrap;gap:.25rem;align-items:stretch;margin:.3rem 0 .45rem}
-#slide-42 .lc-stage{flex:1 1 0;min-width:96px;border-radius:8px;padding:.5rem .5rem}
+#slide-42 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-42 .lc-green p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-42 .lc-green p:last-child{margin-bottom:0}
+#slide-42 .lc-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-42 .lc-amber p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-42 .lc-amber p:last-child{margin-bottom:0}
+#slide-42 .lc-cont{display:flex;gap:.3rem;align-items:stretch;margin:.35rem 0 .4rem}
+#slide-42 .lc-grp{display:flex;flex-direction:column;gap:.3rem;min-width:0}
+#slide-42 .lc-grp-ext{flex:4}
+#slide-42 .lc-grp-end{flex:1.15}
+#slide-42 .lc-grp-name{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;text-align:center;padding-bottom:.05rem;line-height:1.3}
+#slide-42 .lc-gn-ext{color:#B45309}
+#slide-42 .lc-gn-int{color:#15803D}
+#slide-42 .lc-garrow{align-self:center;color:#94A3B8;font-weight:700;font-size:.85rem;padding:0}
+#slide-42 .lc-ext-row{display:flex;gap:.3rem;flex:1}
+#slide-42 .lc-stage{flex:1;min-width:0;border-radius:8px;padding:.5rem .5rem}
 #slide-42 .lc-st-name{font-size:.78rem;font-weight:700;color:var(--text);margin:0 0 .2rem;line-height:1.25}
-#slide-42 .lc-st-ex{font-size:.74rem;line-height:1.4;color:var(--text-secondary)}
-#slide-42 .lc-arrow{align-self:center;color:#94A3B8;font-weight:700;font-size:.85rem;padding:0}
+#slide-42 .lc-st-ex{font-size:.73rem;line-height:1.4;color:var(--text-secondary)}
+#slide-42 .lc-ext-lab{display:flex}
+#slide-42 .lc-ext-lab span{flex:1;text-align:center;font-size:.72rem;font-weight:600;padding-top:.28rem;line-height:1.2}
+#slide-42 .lc-lab-ctl{color:#B45309;border-top:2px solid #F0E6CC}
+#slide-42 .lc-lab-aut{color:#1D4ED8;border-top:2px solid #CFE0F7}
 #slide-42 .lc-st-amo{background:#F1F5F9;border:1px solid #E2E8F0}
 #slide-42 .lc-st-ctl{background:#FFF9EC;border:1px solid #F0E6CC}
 #slide-42 .lc-st-aut{background:#E5F0FF;border:1px solid #CFE0F7}
@@ -4117,82 +4133,96 @@
 #slide-42 .lc-dot:first-child{margin-left:0}
 #slide-42 .lc-res{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1rem;margin:.3rem 0 .4rem}
 #slide-42 .lc-res-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin:0 0 .35rem}
+#slide-42 .lc-res h4{font-size:.93rem;font-weight:700;margin:.8rem 0 .28rem;color:var(--text)}
+#slide-42 .lc-res h4:first-of-type{margin-top:.2rem}
 #slide-42 .lc-res p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
 #slide-42 .lc-res p:last-child{margin-bottom:0}
 #slide-42 .lc-res-cols{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:.35rem 0 .5rem}
 #slide-42 .lc-res-col{background:#FFFFFF;border:1px solid #E2E8F0;border-radius:8px;padding:.55rem .7rem}
 #slide-42 .lc-res-col h5{font-size:.85rem;font-weight:700;margin:0 0 .2rem;color:var(--text)}
 #slide-42 .lc-res-col p{font-size:.85rem;line-height:1.5;color:var(--text-secondary);margin:0}
+#slide-42 .lc-tablewrap{overflow-x:auto;margin:.35rem 0 .8rem}
+#slide-42 .lc-table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:620px}
+#slide-42 .lc-table th{border:none;border-bottom:2px solid #CBD5E1;padding:.5rem .7rem;text-align:left;background:transparent;font-weight:700}
+#slide-42 .lc-table td{border:none;border-bottom:1px solid #E2E8F0;padding:.5rem .7rem;text-align:left;vertical-align:top;line-height:1.5}
+#slide-42 .lc-table tr:nth-child(even) td{background:#F8FAFC}
 #slide-42 .lc-app{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.85rem 1rem;margin:.3rem 0 .3rem}
 #slide-42 .lc-app-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#3B82F6;margin:0 0 .3rem}
 #slide-42 .lc-app p{font-size:.93rem;line-height:1.6;color:var(--text);margin:0 0 .4rem}
 #slide-42 .lc-app p:last-child{margin-bottom:0}
-#slide-42 .reveal{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.75rem 1rem;margin:.55rem 0 .8rem}
+#slide-42 .reveal{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.75rem 1rem;margin:.35rem 0 .8rem}
 #slide-42 .reveal:hover{border-color:#B9D2F5}
-#slide-42 .reveal-question{display:block;font-size:.9rem;font-weight:600;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word}
-#slide-42 .reveal-question::after{content:'Reveal Answer';display:block;width:max-content;margin-top:.6rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
+#slide-42 .reveal-question{display:block;font-size:.9rem;font-weight:400;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-42 .reveal-question::after{content:'Reveal Answer';display:block;width:max-content;margin-top:.7rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
 #slide-42 .reveal.open .reveal-question::after{content:'Hide'}
 #slide-42 .reveal-answer p{font-size:.9rem;margin:0 0 .5rem;line-height:1.6;color:var(--text)}
 #slide-42 .reveal-answer p:last-child{margin-bottom:0}
 @media (max-width:640px){
+#slide-42 .lc-cont{flex-direction:column;gap:.45rem}
+#slide-42 .lc-garrow{transform:rotate(90deg);padding:.05rem 0}
+#slide-42 .lc-ext-row{display:grid;grid-template-columns:1fr 1fr;gap:.3rem}
 #slide-42 .lc-c2,#slide-42 .lc-c3,#slide-42 .lc-res-cols{grid-template-columns:1fr}
-#slide-42 .lc-cont{flex-direction:column}
-#slide-42 .lc-arrow{transform:rotate(90deg);padding:.05rem 0}
-#slide-42 .lc-card,#slide-42 .lc-res,#slide-42 .lc-app,#slide-42 .reveal{padding:.7rem .8rem}
+#slide-42 .lc-card,#slide-42 .lc-res,#slide-42 .lc-green,#slide-42 .lc-amber,#slide-42 .lc-app,#slide-42 .reveal{padding:.7rem .8rem}
 }
 </style>
 <h2>Motivation: Why We Learn</h2>
-<p class="slide-intro">Self-determination theory: how autonomy, competence and relatedness fuel sustained engagement &mdash; and how classrooms can support or undermine all three.</p>
+<p class="slide-intro">Self-determination theory: why we learn &mdash; from intrinsic interest to internalized values, and how autonomy, competence and relatedness sustain engagement.</p>
 <div class="lc-body">
-<div class="lc-sec">Section 1 &mdash; Why Do Some Students Keep Learning Without Rewards?</div>
-<p>The central question: <strong>Why do some students continue learning even when nobody is rewarding them?</strong> Compare two students in the same class:</p>
-</div>
+<div class="lc-sec">Section 1 &mdash; What Is Motivation?</div>
+<p><strong>Motivation</strong> refers to the internal processes that give behaviour its <strong>energy</strong> and <strong>direction</strong>: what starts an action, what keeps it going, and what the person is acting for. In learning, motivation explains why a student opens the book at all, why they continue on a difficult evening, and what they are studying <em>for</em>.</p>
+<p>Two questions hide inside that word. <strong>How much</strong> motivation someone has &mdash; the intensity you can see in their effort. And <strong>why</strong> they are motivated &mdash; the reasons behind the effort. Two students can look identical tonight, working equally hard at the same desk, and differ completely in their reasons. Self-Determination Theory (SDT), developed by Edward Deci and Richard Ryan, argues that the second question matters most: the reasons behind effort predict what happens to the behaviour when rewards, deadlines and pressure are removed &mdash; which is exactly the situation of independent study.</p>
+<div class="lc-sec">Section 2 &mdash; Intrinsic and Extrinsic Motivation</div>
+<p>SDT begins with the most basic distinction in motivation research. <strong>Intrinsic motivation</strong> means doing an activity because the activity itself is inherently interesting, enjoyable, or satisfying &mdash; the reward is built into doing it. <strong>Extrinsic motivation</strong> means doing an activity to achieve an outcome separate from the activity itself &mdash; a grade, money, approval, or avoiding punishment.</p>
 <div class="lc-cards lc-c2">
-<div class="lc-card"><p class="lc-tag lc-tag-a">Student A</p><h5>Controlled motivation</h5><p>Studies mainly for rewards, praise, or to avoid punishment.</p></div>
-<div class="lc-card"><p class="lc-tag lc-tag-b">Student B</p><h5>Autonomous motivation</h5><p>Studies because they personally value learning or its purpose.</p></div>
+<div class="lc-card"><p class="lc-tag lc-tag-b">Intrinsic motivation</p><h5>Reading psychology for fascination</h5><p><strong>Example:</strong> a student reads about psychology in their free time because they are fascinated by human behaviour.</p><p><span class="lc-why">Why it fits:</span> nothing external is at stake &mdash; no grade, deadline or reward. Remove every external consequence and the behaviour continues: the reading is its own reward.</p></div>
+<div class="lc-card"><p class="lc-tag lc-tag-a">Extrinsic motivation</p><h5>Studying for a high grade</h5><p><strong>Example:</strong> a student studies psychology because they want a high examination grade.</p><p><span class="lc-why">Why it fits:</span> the studying is a means to an end distinct from the studying itself. If grades disappeared tomorrow, this reason for studying would disappear with them &mdash; unless other reasons had taken over.</p></div>
 </div>
-<div class="lc-body">
-<p>Both students may work equally hard tonight. What differs is <em>why</em> they act &mdash; and Self-Determination Theory (SDT), proposed by Deci and Ryan, is a theory about exactly that: the <strong>quality and regulation of motivation</strong>, not simply how motivated someone appears. SDT does not claim this difference determines their future achievement; it explains why one kind of motivation is more likely to outlast the conditions that produced it.</p>
+<p>Notice what the distinction is <em>not</em>. It is not a contrast between hard-working and lazy: <strong>both forms of motivation can produce considerable effort</strong>, and either student above might spend the same two hours at the desk tonight. The difference lies in <strong>why</strong> the effort is made &mdash; and that difference matters for what happens to the behaviour once the external outcome is no longer there.</p>
+<div class="lc-amber"><p><strong>Extrinsic motivation is not necessarily negative or entirely controlled.</strong> People can pursue external goals because they personally value them &mdash; studying for a career you have chosen is extrinsic motivation, but nobody is forcing you. Explaining this middle ground is SDT's most important contribution, and it is where the next section begins.</p></div>
+<div class="lc-sec">Section 3 &mdash; Self-Determination Theory: Why, Not Just How Much</div>
+<p>Self-Determination Theory examines not only <strong>how motivated</strong> people are, but <strong>why they are motivated</strong>. It sorts the reasons for acting into two broad kinds:</p>
+<div class="lc-cards lc-c2">
+<div class="lc-card"><p class="lc-quote">&ldquo;I feel I have to.&rdquo;</p><h5>Controlled motivation</h5><p>Acting because of external pressure &mdash; rewards, punishment, guilt, or internal pressure.</p></div>
+<div class="lc-card"><p class="lc-quote">&ldquo;I want to, or I personally believe this matters.&rdquo;</p><h5>Autonomous motivation</h5><p>Acting because the activity is enjoyable or because its purpose is personally meaningful.</p></div>
 </div>
-<div class="lc-sec">Section 2 &mdash; Self-Determination Theory: Three Basic Needs</div>
-<div class="lc-body">
-<p>SDT proposes that motivation depends on three basic psychological needs. Everyday classroom decisions can support or frustrate each of them:</p>
+<div class="lc-green">
+<p><strong>Connected example &mdash; two students, one examination.</strong> Tom studies because his parents will punish him for poor grades. Priya studies because she genuinely values the knowledge she needs for the career she has chosen.</p>
+<p>Both reasons are <em>extrinsic</em>: the studying is directed at an outcome, not at the enjoyment of studying itself. But the two motivations differ completely in <strong>autonomy</strong>. Tom's reason operates as pressure applied to him; Priya's reason is one she has taken up and endorsed as her own. Same behaviour, same evening of effort &mdash; different regulation.</p>
+<p><strong>Why the difference matters:</strong> controlled motivation tends to depend on the pressure staying in place &mdash; remove the punishment, the reward or the guilt, and the reason evaporates with it. Autonomous motivation travels with the person, because the reason lives inside them.</p>
 </div>
-<div class="lc-cards lc-c3">
-<div class="lc-card"><h5>Autonomy</h5><p>Feeling that one's actions reflect personal choice or endorsement.</p><p><span class="lc-ok">Supported:</span> meaningful choice within clear learning goals.</p><p><span class="lc-bad">Frustrated:</span> unnecessary pressure or dismissing students' perspectives.</p></div>
-<div class="lc-card"><h5>Competence</h5><p>Feeling capable of making progress and meeting challenges.</p><p><span class="lc-ok">Supported:</span> achievable challenges and specific feedback.</p><p><span class="lc-bad">Frustrated:</span> repeatedly overwhelming tasks without useful guidance.</p></div>
-<div class="lc-card"><h5>Relatedness</h5><p>Feeling connected to and valued by others.</p><p><span class="lc-ok">Supported:</span> respectful relationships and constructive collaboration.</p><p><span class="lc-bad">Frustrated:</span> exclusion or an unsupportive classroom environment.</p></div>
-</div>
-<div class="lc-note"><p><strong>Autonomy is not permissiveness.</strong> A student can experience autonomy while completing a compulsory task &mdash; when they understand its purpose and personally endorse it: &ldquo;I wouldn't have chosen this topic, but I can see why this skill matters, so I'm on board.&rdquo; Supporting the three needs makes autonomous motivation more likely; it does not guarantee academic success.</p></div>
-<div class="lc-sec">Section 3 &mdash; The Motivation Continuum</div>
-<div class="lc-body">
-<p>SDT describes motivation as a continuum of <strong>regulation</strong> &mdash; different reasons for acting, from no reason at all to full self-endorsement:</p>
-</div>
+<div class="lc-amber"><p><strong>Autonomous does not mean intrinsic.</strong> Intrinsic motivation is <em>one</em> source of autonomous motivation &mdash; interest in the activity itself. Priya shows the other source: a personally endorsed value. Autonomous motivation includes both, which is why the distinction between controlled and autonomous cuts across the intrinsic/extrinsic distinction rather than duplicating it.</p></div>
+<div class="lc-sec">Section 4 &mdash; The Six Types of Regulation</div>
+<p>SDT describes motivation as a continuum of <strong>regulation</strong> &mdash; six different types of reasons for acting, running from no reason at all to full self-endorsement. The diagram groups them into three families:</p>
 <div class="lc-cont">
-<div class="lc-stage lc-st-amo"><div class="lc-st-name">Amotivation</div><div class="lc-st-ex">&ldquo;I see no point in this.&rdquo;</div></div>
-<div class="lc-arrow">&rarr;</div>
-<div class="lc-stage lc-st-ctl"><div class="lc-st-name">External</div><div class="lc-st-ex">Completing homework for points</div></div>
-<div class="lc-arrow">&rarr;</div>
-<div class="lc-stage lc-st-ctl"><div class="lc-st-name">Introjected</div><div class="lc-st-ex">Studying to avoid feeling like a failure</div></div>
-<div class="lc-arrow">&rarr;</div>
-<div class="lc-stage lc-st-aut"><div class="lc-st-name">Identified</div><div class="lc-st-ex">Studying biology for a valued career goal</div></div>
-<div class="lc-arrow">&rarr;</div>
-<div class="lc-stage lc-st-aut"><div class="lc-st-name">Integrated</div><div class="lc-st-ex">Learning as part of who I want to be</div></div>
-<div class="lc-arrow">&rarr;</div>
-<div class="lc-stage lc-st-int"><div class="lc-st-name">Intrinsic</div><div class="lc-st-ex">Reading psychology out of fascination</div></div>
+<div class="lc-grp"><div class="lc-grp-name">Amotivation</div><div class="lc-stage lc-st-amo"><div class="lc-st-ex">&ldquo;I see no point in this.&rdquo;</div></div></div>
+<div class="lc-garrow">&rarr;</div>
+<div class="lc-grp lc-grp-ext"><div class="lc-grp-name lc-gn-ext">Extrinsic Motivation</div><div class="lc-ext-row">
+<div class="lc-stage lc-st-ctl"><div class="lc-st-name">External</div><div class="lc-st-ex">Doing it for the points</div></div>
+<div class="lc-stage lc-st-ctl"><div class="lc-st-name">Introjected</div><div class="lc-st-ex">Doing it to avoid guilt</div></div>
+<div class="lc-stage lc-st-aut"><div class="lc-st-name">Identified</div><div class="lc-st-ex">Doing it for my goal</div></div>
+<div class="lc-stage lc-st-aut"><div class="lc-st-name">Integrated</div><div class="lc-st-ex">Doing it &mdash; it's who I am</div></div>
+</div><div class="lc-ext-lab"><span class="lc-lab-ctl">Relatively controlled</span><span class="lc-lab-aut">Relatively autonomous</span></div></div>
+<div class="lc-garrow">&rarr;</div>
+<div class="lc-grp lc-grp-end"><div class="lc-grp-name lc-gn-int">Intrinsic Motivation</div><div class="lc-stage lc-st-int"><div class="lc-st-ex">Doing it because it's interesting</div></div></div>
 </div>
-<p class="lc-legend"><span class="lc-dot" style="background:#F1F5F9;border-color:#E2E8F0;"></span>Amotivation: no intention or reason to act <span class="lc-dot" style="background:#FFF9EC;border-color:#F0E6CC;"></span>Controlled extrinsic: acting under pressure <span class="lc-dot" style="background:#E5F0FF;border-color:#CFE0F7;"></span>Autonomous extrinsic: acting on endorsed goals <span class="lc-dot" style="background:#F0FDF4;border-color:#BBF7D0;"></span>Intrinsic: acting out of interest</p>
-<div class="lc-body">
-<p>Read the continuum carefully. <strong>Identified and integrated regulation are autonomous forms of extrinsic motivation</strong>: the activity is still done for an outcome, but the student has personally endorsed that outcome, so this motivation operates far more like intrinsic motivation than like pressure. <strong>Intrinsic motivation is not the only valuable form</strong> &mdash; much of school is not intrinsically interesting to anyone, and a student who has internalised why the work matters can sustain effort just as reliably. And the continuum is a way of distinguishing motivational regulation, not a developmental pathway: students do not necessarily progress through the categories in sequence.</p>
+<p class="lc-legend"><span class="lc-dot" style="background:#F1F5F9;border-color:#E2E8F0;"></span>Amotivation: no intention or reason to act <span class="lc-dot" style="background:#FFF9EC;border-color:#F0E6CC;"></span>Relatively controlled: acting under pressure <span class="lc-dot" style="background:#E5F0FF;border-color:#CFE0F7;"></span>Relatively autonomous: acting on endorsed goals <span class="lc-dot" style="background:#F0FDF4;border-color:#BBF7D0;"></span>Intrinsic: acting out of interest</p>
+<p>Each type is easiest to grasp through a consistent example &mdash; the same student, studying, with a different reason each time:</p>
+<div class="lc-tablewrap">
+<table class="lc-table">
+<thead><tr><th>Type of regulation</th><th>Example</th><th>Why the example fits</th></tr></thead>
+<tbody>
+<tr><td><strong>Amotivation</strong></td><td>&ldquo;I don't see any point in studying this.&rdquo;</td><td>There is no reason to act at all &mdash; no reward, no value, no interest. The student is not motivated.</td></tr>
+<tr><td><strong>External regulation</strong></td><td>&ldquo;I study because my parents reward good grades.&rdquo;</td><td>The reason sits entirely outside the person: the behaviour depends on a contingency someone else controls.</td></tr>
+<tr><td><strong>Introjected regulation</strong></td><td>&ldquo;I study because I'd feel guilty or ashamed if I didn't.&rdquo;</td><td>The pressure has moved inside, but it still pushes &mdash; guilt and shame are internal pressures, not endorsed values.</td></tr>
+<tr><td><strong>Identified regulation</strong></td><td>&ldquo;I study biology because it will help me achieve my career goal.&rdquo;</td><td>The student has recognized the personal importance of the outcome and endorsed it &mdash; the goal is theirs, so the motivation is relatively autonomous.</td></tr>
+<tr><td><strong>Integrated regulation</strong></td><td>&ldquo;Learning is part of the person I want to be.&rdquo;</td><td>The value has been incorporated into the student's identity and other values, making the endorsement most complete &mdash; yet studying is still for an outcome, not for enjoyment.</td></tr>
+<tr><td><strong>Intrinsic regulation</strong></td><td>&ldquo;I study psychology because I genuinely enjoy understanding human behaviour.&rdquo;</td><td>The activity is its own reward: the reason for acting is the inherent interest of the activity itself.</td></tr>
+</tbody>
+</table>
 </div>
-<div class="lc-sec">Section 4 &mdash; The Key Distinction: Controlled vs. Autonomous Motivation</div>
-<div class="lc-cards lc-c2">
-<div class="lc-card"><p class="lc-quote">&ldquo;I feel I have to.&rdquo;</p><h5>Controlled motivation</h5><p>Driven primarily by rewards, punishment, guilt, or pressure.</p></div>
-<div class="lc-card"><p class="lc-quote">&ldquo;I want to, or I personally believe this matters.&rdquo;</p><h5>Autonomous motivation</h5><p>Driven by interest or personally endorsed values.</p></div>
-</div>
-<div class="lc-body">
-<p>Both kinds of motivation can produce effort and achievement. They may differ in what follows: autonomous motivation is generally associated with more sustained engagement and well-being, particularly once external pressure is removed &mdash; while controlled motivation tends to depend on the pressure staying in place. SDT describes tendencies, not a verdict on any individual student.</p>
-</div>
+<p><strong>Identified versus integrated &mdash; the distinction worth particular care.</strong> Identified regulation means <em>recognizing the personal importance</em> of an activity: the student values the career and accepts that studying serves it, so the value attaches to the <em>outcome</em>. Integrated regulation goes one step further: the value has been <em>incorporated into a broader sense of identity</em>, fitting coherently with the student's other values &mdash; &ldquo;learning is part of the person I want to be.&rdquo; The test between them is not enjoyment but cohesion: both students study for a valued outcome, but for the integrated student that outcome coheres with who they understand themselves to be. <strong>Both remain forms of extrinsic motivation</strong>, because the activity is undertaken for a valued outcome rather than purely for its inherent enjoyment. Treating integrated regulation as intrinsic is a common error: intrinsic regulation is energized by the interest of the activity itself, not by any outcome however valued.</p>
+<p>Read the diagram's colour logic as well as its order: the two <strong>relatively controlled</strong> forms act under pressure (external pressure in one case, internalized pressure in the other), while the two <strong>relatively autonomous</strong> forms act on reasons the student has endorsed as their own.</p>
+<div class="lc-amber"><p><strong>The continuum represents different types of regulation, not six compulsory stages.</strong> People do not progress through the categories in sequence: a student may be externally regulated for homework and intrinsically motivated for the same subject's reading &mdash; on the same evening. Read the diagram as a map of reasons, not a timetable.</p></div>
 <div class="lc-app">
 <p class="lc-app-tag">Application &mdash; the homework reward</p>
 <p>A teacher rewards every completed homework assignment with points toward a class prize. A year later, when the prize system stops, homework completion drops to near zero.</p>
@@ -4203,17 +4233,26 @@
 <div class="reveal-answer"><div>
 <p><strong>External regulation is the most plausible SDT explanation.</strong> The students were completing homework to obtain the points &mdash; acting for a reward rather than because they endorsed the task. In the language of the continuum, their motivation was external regulation: the most controlled form.</p>
 <p>When the prize system stopped, the main reason for acting disappeared with it. The behaviour's incentive was the contingency itself, so removing the contingency removed the incentive &mdash; nothing else needed to change for completion to collapse.</p>
-<p>A more sustainable pattern would create conditions for internalisation. Autonomy support (choice between equivalent tasks, or about how and when to complete them), competence support (appropriately challenging work, with feedback that shows progress) and relatedness (working with others whose contribution matters) each make it more likely that students shift from &ldquo;I do it for points&rdquo; toward &ldquo;I do it because it matters.&rdquo;</p>
-<p>The scenario alone, however, does not prove the reward system caused the decline. Homework difficulty, workload, the teacher or the class's composition may also have changed over the year, so completion could have fallen for other reasons. The pattern is consistent with SDT's account &mdash; and it does not show that rewards always undermine motivation: reward effects depend on how they are experienced and what they are contingent on.</p>
+<p>A more sustainable pattern would create conditions for <strong>internalization</strong>. Autonomy support (choice between equivalent tasks, or about how and when to complete them), competence support (appropriately challenging work, with feedback that shows progress) and relatedness (working with others whose contribution matters) each make it more likely that students shift from &ldquo;I do it for points&rdquo; toward &ldquo;I do it because it matters&rdquo; &mdash; an endorsed, autonomous reason that survives the end of the prize system.</p>
+<p>The scenario alone, however, does not prove the reward system caused the decline. Homework difficulty, workload, the teacher or the class's composition may also have changed over the year, so completion could have fallen for other reasons. The pattern is consistent with SDT's account &mdash; and it does not show that rewards always undermine motivation: reward effects depend on how they are experienced and what they are contingent on, as the research in Section 7 shows.</p>
 </div></div>
 </div>
-<div class="lc-sec">Section 5 &mdash; Supporting Motivation in Practice</div>
+<div class="lc-sec">Section 5 &mdash; Three Basic Psychological Needs</div>
+<p>SDT proposes that autonomous motivation is nourished when three basic psychological needs are met. Each is a <em>perception the student has</em> about their own learning &mdash; not a condition imposed on them:</p>
 <div class="lc-cards lc-c3">
-<div class="lc-card"><h5>Autonomy support</h5><p><span class="lc-ok">Example:</span> offering meaningful choices between tasks that meet the same learning objectives &mdash; which essay question, which format, which order.</p><p><span class="lc-why">Why it may work:</span> genuine voice within fixed goals supports a sense of endorsement rather than compliance.</p></div>
-<div class="lc-card"><h5>Competence support</h5><p><span class="lc-ok">Example:</span> achievable challenges with specific feedback that shows how to improve (&ldquo;add a counterexample to this paragraph&rdquo;), not only a grade.</p><p><span class="lc-why">Why it may work:</span> visible progress builds the sense of capability that sustains effort.</p></div>
-<div class="lc-card"><h5>Relatedness support</h5><p><span class="lc-ok">Example:</span> knowing students' names, showing interest in their progress, and structuring collaboration where every contribution matters.</p><p><span class="lc-why">Why it may work:</span> students invest more in classrooms they feel part of.</p></div>
+<div class="lc-card"><h5>Autonomy</h5><p>Feeling that one's actions are <strong>self-endorsed</strong> rather than merely imposed.</p><p><span class="lc-ok">Example:</span> a student chooses which psychology topic to investigate because they find it personally meaningful.</p><p><span class="lc-why">Why it fits:</span> the experience of choosing makes the project feel like the student's own &mdash; they are acting on a decision they made, not one handed to them.</p></div>
+<div class="lc-card"><h5>Competence</h5><p>Feeling capable of <strong>making progress and mastering challenges</strong>.</p><p><span class="lc-ok">Example:</span> a student initially struggles with research methods but gains confidence after receiving useful feedback and successfully completing increasingly difficult questions.</p><p><span class="lc-why">Why it fits:</span> the feedback showed what to change, and the harder questions gave evidence of real progress &mdash; competence grows from visible improvement, not from easy success.</p></div>
+<div class="lc-card"><h5>Relatedness</h5><p>Feeling <strong>connected to and supported by</strong> other people.</p><p><span class="lc-ok">Example:</span> a student is more willing to participate when their teacher and classmates make them feel respected and included.</p><p><span class="lc-why">Why it fits:</span> the willingness to contribute grows out of feeling valued within the group &mdash; the connection itself changes engagement.</p></div>
 </div>
-<div class="lc-note"><p><strong>Supports, not guarantees.</strong> These strategies do not automatically improve learning &mdash; poorly designed choices can distract or overwhelm &mdash; and rewards are not always harmful: their effects depend on how they are experienced and what they are contingent on.</p></div>
+<p>Classrooms that support these three needs make <strong>autonomous motivation more likely</strong>: a student who feels their perspective is respected, sees themselves making progress, and feels part of the class has reasons of their own for engaging, rather than compliance with pressure. Section 8 examines how such effects would be tested &mdash; and what that evidence can and cannot show.</p>
+<div class="lc-amber"><p><strong>Autonomy does not mean working alone, and it does not mean having no rules.</strong> A student can experience autonomy while following a rule they understand and accept &mdash; &ldquo;I wouldn't have chosen this method, but I can see why it matters, so I'm on board&rdquo; &mdash; and a student can work entirely alone while feeling completely controlled. And supporting the three needs is not a formula for results: it makes autonomous motivation more likely; it does not guarantee improved performance in every situation.</p></div>
+<div class="lc-sec">Section 6 &mdash; Internalization: When External Reasons Become One's Own</div>
+<p><strong>Internalization</strong> is the process through which people come to accept the value of activities that were initially encouraged by external influences &mdash; the regulation moves from outside the person to inside.</p>
+<div class="lc-green">
+<p><strong>Worked example &mdash; a reason that changes owner.</strong> In Year 9, a student studies because their parents insist on it. By Year 12, the same student studies because they have come to recognize that education matters for a career they personally value.</p>
+<p>The behaviour &mdash; studying &mdash; has not changed. What changed is the <strong>reason</strong>: the goal has moved from an external demand to a value the student holds. They no longer need to be told, because the reason for acting is now theirs.</p>
+</div>
+<p><strong>What has and has not happened.</strong> The motivation is now autonomous &mdash; the student endorses the goal, probably as identified or integrated regulation. But it is still <em>extrinsic</em>, because studying is directed at an outcome (the career) rather than at the enjoyment of studying itself. <strong>Internalization is not the same as becoming intrinsically motivated:</strong> someone can fully value an activity without necessarily enjoying it. Our student may endorse education completely and still find revision tedious &mdash; what they no longer need is anyone to make them do it.</p>
 <div class="lc-app">
 <p class="lc-app-tag">Application</p>
 <p>A student says: &ldquo;I only study because I want to get into medical school.&rdquo; Is this autonomous or controlled motivation? Justify your answer.</p>
@@ -4222,11 +4261,34 @@
 <div class="reveal-question">Decide and justify your classification in your notebook before revealing the explanation.</div>
 <div class="reveal-answer"><div>
 <p>The goal alone is not enough to classify the motivation &mdash; the same sentence can describe either kind. What matters is <em>why the student values the goal</em>, not simply whether the goal involves an external outcome.</p>
-<p>If the student personally values becoming a doctor &mdash; if medicine connects to something they genuinely care about &mdash; the behaviour may reflect identified regulation, an autonomous form of extrinsic motivation: studying for an outcome, but one the student has endorsed. If becoming a doctor has become part of their broader identity and values, the motivation may even be integrated.</p>
-<p>If instead the student is studying mainly because of parental pressure, fear of disapproval, or guilt, the motivation is controlled &mdash; the same external goal, pursued under pressure rather than endorsement. To classify it properly, a psychologist would examine the student's own reasons &mdash; for example through an interview or a validated motivation questionnaire &mdash; not just the goal being pursued.</p>
+<p>If the student personally values becoming a doctor &mdash; if medicine connects to something they genuinely care about &mdash; the behaviour may reflect <strong>identified regulation</strong>, an autonomous form of extrinsic motivation: studying for an outcome, but one the student has endorsed. If becoming a doctor has become part of their broader identity and values, the motivation may even be <strong>integrated</strong>.</p>
+<p>If instead the student is studying mainly because of parental pressure, fear of disapproval, or guilt, the motivation is <strong>controlled</strong> &mdash; the same external goal, pursued under pressure rather than endorsement. To classify it properly, a psychologist would examine the student's own reasons &mdash; for example through an interview or a validated motivation questionnaire &mdash; not just the goal being pursued.</p>
 </div></div>
 </div>
-<div class="lc-sec">Section 6 &mdash; Evaluating Motivation Research</div>
+<div class="lc-sec">Section 7 &mdash; Research Evidence: Do Rewards Undermine Intrinsic Motivation?</div>
+<div class="lc-res">
+<p class="lc-res-tag">Key study &mdash; published findings</p>
+<h4>Deci (1971): Do external rewards change intrinsic motivation?</h4>
+<p><strong>Aim.</strong> To investigate whether introducing external rewards for an already interesting activity changes intrinsic motivation for that activity &mdash; and whether different kinds of rewards (money versus verbal feedback) have different effects. Two laboratory experiments and one field experiment were conducted.</p>
+<p><strong>Participants and task.</strong> In the first experiment, 24 undergraduate introductory psychology students each attended three short sessions on three separate days. The task was the Soma puzzle &mdash; seven plastic pieces that fit together into many different configurations &mdash; chosen because most students found it intrinsically interesting.</p>
+<p><strong>Procedure.</strong> Session 1: both groups worked on puzzle configurations, with no payment. Session 2: the experimental group was paid <strong>$1 for each configuration solved within a 13-minute limit</strong>; the control group worked the same puzzles without pay. Session 3: both groups again worked without payment. Crucially, at the start of each session participants had a <strong>free-choice period</strong> of about 8 minutes in which they could do whatever they wished &mdash; work on the puzzle, read the magazines provided, or do nothing. Intrinsic motivation was measured as the <strong>time spent on the puzzle during these free-choice periods</strong>, when no reward was possible.</p>
+<p><strong>Findings.</strong> While the reward was available, paid students spent more free-choice time on the puzzle. But from Session 1 to Session 3, the paid group's free-choice time on the puzzle <em>decreased</em> relative to the controls: once the money stopped, they were less drawn to the puzzle than students who had never been paid. In the field experiment, verbal reinforcement and positive feedback had the opposite effect: intrinsic motivation <em>tended to increase</em>.</p>
+<p><strong>Psychological explanation.</strong> A reward that must be earned changes how the person interprets their own behaviour: &ldquo;I do this because it's interesting&rdquo; can become &ldquo;I do this for the payment&rdquo; &mdash; the perceived reason shifts from inside the person to the external contingency. When the payment stops, the behaviour loses its energy. Feedback experienced as <em>information</em> works differently: it affirms competence without taking over the reason for acting.</p>
+<p><strong>SDT connection.</strong> Money operated as <strong>external regulation</strong> &mdash; the most controlled form, where the behaviour depends on a contingency someone else controls. Informational positive feedback instead supports <strong>competence</strong>, one of SDT's three basic needs &mdash; which is why it could enhance rather than undermine intrinsic motivation.</p>
+<p><strong>Strengths and limitations.</strong> Strengths: a true experiment &mdash; the reward was manipulated and a control group was used; the free-choice measure observed behaviour rather than asking for self-report; and the pattern was examined across laboratory and field settings. Limitations: a single puzzle task across three short sessions; a one-off payment is unlike the ongoing reward structures of classrooms; and participants were undergraduates in an artificial setting &mdash; extending the result to sustained schoolwork is a further step that later research had to test.</p>
+</div>
+<div class="lc-res">
+<p class="lc-res-tag">Meta-analysis &mdash; 128 experiments</p>
+<h4>Deci, Koestner &amp; Ryan (1999): Under what conditions do rewards undermine?</h4>
+<p><strong>Aim.</strong> A single experiment cannot say how general an effect is. This meta-analysis aimed to quantify, across every available controlled experiment, whether extrinsic rewards undermine intrinsic motivation &mdash; and under exactly which conditions.</p>
+<p><strong>Method.</strong> The researchers combined <strong>128 experiments</strong> (drawn from 94 published articles and 19 dissertations), each comparing rewarded participants with non-rewarded participants on an interesting task, and calculated the size of the effect for each type of reward.</p>
+<p><strong>Findings.</strong> Tangible rewards offered for doing an interesting task undermined free-choice intrinsic motivation, and the effect depended on the reward's <em>contingency</em>: rewards given simply for engaging in the task had the largest effect (engagement-contingent, d&nbsp;=&nbsp;&minus;0.40), followed by rewards for completing it (completion-contingent, d&nbsp;=&nbsp;&minus;0.36) and rewards for performing well (performance-contingent, d&nbsp;=&nbsp;&minus;0.28). <strong>Positive feedback</strong> showed the opposite pattern, enhancing both free-choice behaviour (d&nbsp;=&nbsp;0.33) and self-reported interest (d&nbsp;=&nbsp;0.31). Tangible rewards tended to be more detrimental for children than for college students. There was no undermining for rewards that were unexpected or unrelated to doing the task.</p>
+<p><strong>What the findings mean.</strong> The effect of a reward depends on how it is experienced. A reward experienced as a <strong>controller</strong> &mdash; &ldquo;do this in order to get that&rdquo; &mdash; displaces the person's own reasons for acting. A reward experienced as <strong>information about competence</strong> supports motivation. That is why contingency matters (contingent rewards are experienced as controlling) and why informative feedback differs from payment.</p>
+<p><strong>SDT connection.</strong> The undermining effect operates through <strong>external regulation</strong>: the reward supplies a reason for acting that is not the person's own. Positive feedback supports the need for <strong>competence</strong>, so it tends to strengthen intrinsic motivation rather than weaken it.</p>
+<p><strong>Strengths and limitations.</strong> Strengths: combining 128 experiments gives far more generalizable conclusions than any single study, and the analysis distinguished types of rewards instead of treating &ldquo;rewards&rdquo; as one thing. Limitations: the underlying experiments were mostly short laboratory tasks with free-choice measures taken immediately afterwards; classroom rewards such as grades operate over months and differ in kind; and an average effect size can conceal variation between individual studies.</p>
+</div>
+<div class="lc-amber"><p><strong>Read the two studies together &mdash; and read them carefully.</strong> Neither says that all external rewards reduce intrinsic motivation. The undermining effect appeared for <em>expected, tangible, task-contingent</em> rewards for already-interesting tasks; unexpected rewards and rewards unrelated to doing the task showed no undermining; and informational positive feedback tended to <em>enhance</em> intrinsic motivation. Rewards are one kind of extrinsic influence among many &mdash; and as Sections 3&ndash;6 showed, external goals such as grades and careers can be pursued autonomously when the person endorses them.</p></div>
+<div class="lc-sec">Section 8 &mdash; Evaluating Motivation Research</div>
 <div class="lc-res">
 <p class="lc-res-tag">Hypothetical investigation &mdash; not published findings</p>
 <p>Two classes complete the same six-week learning program:</p>
@@ -4238,16 +4300,64 @@
 </div>
 <div class="lc-app">
 <p class="lc-app-tag">Application &mdash; evaluate the conclusion</p>
-<p><strong>Evaluate the researcher's conclusion using Causality and Measurement.</strong></p>
+<p><strong>Evaluate the researcher's conclusion using Causality, Measurement and Generalizability.</strong></p>
 </div>
 <div class="reveal">
 <div class="reveal-question">Write your evaluation in your notebook before revealing the model answer.</div>
 <div class="reveal-answer"><div>
 <p><strong>Causality:</strong> the classes may have differed in motivation before the program began &mdash; without pre-intervention measures there is no way to know, so any difference at six weeks could predate the program. Teacher differences and other uncontrolled variables (rapport, workload, timetable, the students themselves) could also explain the results, and there was no random assignment.</p>
 <p><strong>Measurement:</strong> self-reported enjoyment does not necessarily establish intrinsic motivation, and completing more optional activities measures engagement but does not reveal <em>why</em> students participated &mdash; they may have chosen those activities for social reasons, convenience, or marks. Validated motivation scales that distinguish external, introjected, identified and intrinsic regulation would measure the construct the conclusion is actually about.</p>
+<p><strong>Generalizability:</strong> the finding concerns one six-week program with two intact classes in one school. The students, the teacher and the subject may not resemble any other setting, and effects measured over six weeks may not persist across a school year. The controlled experiments reviewed in Section 7 used random assignment and validated measures &mdash; this hypothetical study has neither, so its conclusion must be more cautious.</p>
 <p><strong>Improvement:</strong> baseline (pre-intervention) motivation measures in both classes, validated scales rather than a single enjoyment item, and stronger experimental controls &mdash; matched teachers, comparable timetables, random assignment where possible.</p>
 <p><strong>Conclusion:</strong> the findings are consistent with SDT's prediction that autonomy support fosters autonomous motivation &mdash; but consistency is not causation, and a strong evaluation concludes only as far as the design allows.</p>
 </div></div>
+</div>
+<div class="lc-sec">Section 9 &mdash; Applying SDT: Classifications and Classrooms</div>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; classify the regulation</p>
+<p>Four students each completed last night's homework, and each explains why:</p>
+<p><strong>Amara:</strong> &ldquo;If I don't do it, my parents take my phone away.&rdquo;</p>
+<p><strong>Ben:</strong> &ldquo;I'd feel ashamed handing in nothing when everyone else does.&rdquo;</p>
+<p><strong>Chen:</strong> &ldquo;It's practice for the exams I need for the career I've chosen.&rdquo;</p>
+<p><strong>Dami:</strong> &ldquo;Honestly, I find the topic interesting &mdash; I'd do this anyway.&rdquo;</p>
+<p>Classify each student's regulation and justify each classification.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Classify all four students in your notebook before revealing the explanation.</div>
+<div class="reveal-answer"><div>
+<p><strong>Amara &mdash; external regulation.</strong> Her reason is a contingency someone else controls: the phone is removed or kept by her parents. The behaviour depends entirely on that external consequence &mdash; remove it and the reason disappears. This is the most controlled form.</p>
+<p><strong>Ben &mdash; introjected regulation.</strong> The pressure has moved inside him &mdash; the shame is his, not his parents' &mdash; but it still operates as pressure: he would act to avoid a feeling, not because he endorses the task. Internalized pressure is not the same as an endorsed value.</p>
+<p><strong>Chen &mdash; identified regulation.</strong> He has recognized the personal importance of the exams and endorsed the goal: the career is his. The motivation is extrinsic (studying serves an outcome) but relatively autonomous.</p>
+<p><strong>Dami &mdash; intrinsic regulation.</strong> The activity itself is the reason: she would do the work regardless of consequences.</p>
+<p>Note that all four completed the homework: the categories describe <em>reasons</em>, not effort. And a short statement is evidence rather than proof &mdash; a psychologist would want to confirm the student's actual reasons, since the same words can conceal different regulations.</p>
+</div></div>
+</div>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; autonomous but extrinsic?</p>
+<p>Maya studies hard for her science courses because a medical career genuinely matters to her. A friend objects: &ldquo;But you're studying for grades and a career, not for fun &mdash; so your motivation must be controlled.&rdquo;</p>
+<p>Explain what the friend has misunderstood, using the distinction between controlled and autonomous motivation.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Diagnose the friend's error in your notebook before revealing the explanation.</div>
+<div class="reveal-answer"><div>
+<p>The friend has assumed that any extrinsic motivation is controlled &mdash; that studying for an external outcome necessarily means acting under pressure. SDT rejects that shortcut: the intrinsic/extrinsic distinction describes <em>what the activity is for</em>, while the controlled/autonomous distinction describes <em>where the reason stands</em> &mdash; imposed pressure, or personal endorsement.</p>
+<p>Maya's motivation is extrinsic: studying is directed at an outcome (a career) rather than at the inherent enjoyment of the work. But it is <strong>autonomous</strong>, because the outcome is one she has personally endorsed. In continuum terms this is identified regulation &mdash; she recognizes the personal importance of the goal &mdash; and if the career has become part of her identity, integrated regulation. Nobody needs to pressure Maya; the reason is hers.</p>
+<p>The friend has also quietly equated autonomous with intrinsic &mdash; as if the only acceptable motivation were enjoyment of the activity itself. SDT's answer is that autonomous motivation includes both intrinsic interest <em>and</em> endorsed extrinsic values, which is why students like Maya can sustain effort through long stretches of work nobody would call fun.</p>
+</div></div>
+</div>
+<div class="lc-app">
+<p class="lc-app-tag">Application &mdash; a classroom to redesign</p>
+<p>Mr. Okafor's Year 12 psychology class follows the same pattern every lesson: students copy notes from a slide set, complete assigned worksheets, and receive a letter grade with a one-line comment. Students work silently in rows; there is no choice of topic, task or format. Participation has fallen all year &mdash; several students now do the minimum, and one says, &ldquo;What's the point? We just do what we're told.&rdquo;</p>
+<p>Use SDT to explain what may be happening to the class's motivation, and propose three specific changes. For each change, name the need it supports and explain why it might shift students toward more autonomous regulation.</p>
+</div>
+<div class="reveal">
+<div class="reveal-question">Analyse the classroom in your notebook before revealing the model answer.</div>
+<div class="reveal-answer"><div>
+<p><strong>What may be happening:</strong> the classroom pattern frustrates all three needs at once. <strong>Autonomy:</strong> every task is assigned and every format is fixed &mdash; the student who says &ldquo;what's the point? We just do what we're told&rdquo; is describing the experience of imposed work, the natural breeding ground for external regulation or amotivation. <strong>Competence:</strong> a grade with a one-line comment is a judgment, not information &mdash; it does not show what to improve or that progress is possible, so struggling students have no visible route to mastery. <strong>Relatedness:</strong> silent rows and no collaboration make the class a place students sit near rather than belong to.</p>
+<p><strong>Three changes:</strong> (1) offer meaningful choice &mdash; between essay questions, task formats, or the order of work, all meeting the same learning objectives &mdash; so decisions become self-endorsed (<em>autonomy</em>); (2) replace grade-only feedback with specific, actionable feedback and achievable challenge steps (&ldquo;add a counterargument here; next, try a harder source&rdquo;) so progress becomes visible (<em>competence</em>); (3) build structured collaboration in which every member's contribution matters, and show interest in students' individual progress (<em>relatedness</em>).</p>
+<p><strong>Why the changes could shift regulation:</strong> each one supplies a reason that can live inside the student &mdash; endorsed choice, experienced progress, belonging &mdash; rather than a pressure that only works while someone is watching. Caution: these changes make autonomous motivation <em>more likely</em>; they do not guarantee engagement or achievement, and low participation may have additional causes &mdash; workload, difficulty, factors outside class &mdash; that SDT alone does not explain.</p>
+</div></div>
+</div>
 </div>
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
   <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Motivation</h4>
