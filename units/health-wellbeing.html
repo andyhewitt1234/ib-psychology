@@ -745,36 +745,140 @@
 <h2>Diathesis&ndash;Stress Model</h2>
 <p class="slide-intro">How vulnerability and environment interact to influence mental health.</p>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Why can two people experience the same stressful event, but only one develops depression?</h3>
-<p style="font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0;">Think about two students who both fail an exam. One brushes it off and retakes it. The other feels crushed and can't stop thinking about it. The event was the same &mdash; so why the different reactions? Think about this before we explore the model.</p>
+<style>
+#slide-8 .ds8-sec{font-size:1.15rem;font-weight:700;color:var(--text);margin:1.45rem 0 .55rem;line-height:1.3;padding-bottom:.3rem;border-bottom:2px solid #DBEAFE}
+#slide-8 .slide-intro{margin-bottom:.9rem}
+#slide-8 .ds8-qbox{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.15rem 1.4rem;margin-bottom:1.1rem}
+#slide-8 .ds8-qbox h3{font-size:1rem;font-weight:700;margin:0 0 .5rem;color:var(--text)}
+#slide-8 .ds8-qbox p{font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-8 .ds8-qbox p:last-child{margin-bottom:0}
+#slide-8 .ds8-p{font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .7rem}
+#slide-8 .ds8-p b,#slide-8 .ds8-p strong{color:var(--text)}
+#slide-8 .ds8-factor{background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;padding:.6rem .85rem;margin:.5rem 0}
+#slide-8 .ds8-factor h4{font-size:.92rem;font-weight:700;margin:0 0 .3rem;color:var(--text)}
+#slide-8 .ds8-factor p{font-size:.88rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .35rem}
+#slide-8 .ds8-factor p:last-child{margin-bottom:0}
+#slide-8 .ds8-factor .ds8-why{font-size:.82rem;color:#475569;margin:0}
+#slide-8 .ds8-why::before{content:'Why it fits: ';font-weight:700;color:#15803D}
+#slide-8 .ds8-ex{background:#F0FDF4;border-left:3px solid #86EFAC;border-radius:0 8px 8px 0;padding:.55rem .9rem;margin:.45rem 0 .75rem}
+#slide-8 .ds8-ex-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#15803D;margin:0 0 .25rem}
+#slide-8 .ds8-ex p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-8 .ds8-ex p:last-child{margin-bottom:0}
+#slide-8 .ds8-note{font-size:.88rem;color:var(--text-secondary);line-height:1.55;margin:.25rem 0 .9rem;background:#FFFBEB;border-left:3px solid #FCD34D;border-radius:0 8px 8px 0;padding:.5rem .85rem}
+#slide-8 .ds8-note p{margin:0 0 .4rem}
+#slide-8 .ds8-note p:last-child{margin-bottom:0}
+#slide-8 .ds8-note b,#slide-8 .ds8-note strong{color:var(--text)}
+#slide-8 .ds8-research{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin:.2rem 0 .4rem}
+#slide-8 .ds8-research h4{font-size:.95rem;font-weight:700;margin:.85rem 0 .3rem;color:var(--text)}
+#slide-8 .ds8-research h4:first-child{margin-top:0}
+#slide-8 .ds8-research p{margin:0 0 .55rem;line-height:1.6;font-size:.9rem;color:var(--text-secondary)}
+#slide-8 .ds8-research p:last-child{margin-bottom:0}
+#slide-8 .ds8-research ul{margin:0 0 .55rem;padding-left:1.3rem}
+#slide-8 .ds8-research li{line-height:1.65;margin:0 0 .35rem;font-size:.9rem;color:var(--text-secondary)}
+#slide-8 .ds8-research b,#slide-8 .ds8-research strong{color:var(--text)}
+#slide-8 .ds8-combos{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin:.55rem 0 .2rem}
+@media (max-width:640px){#slide-8 .ds8-combos{grid-template-columns:1fr}}
+#slide-8 .ds8-combo{border-radius:8px;padding:.6rem .8rem;border:1px solid}
+#slide-8 .ds8-c-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.15rem .6rem;font-size:.78rem;font-weight:700;color:var(--text)}
+#slide-8 .ds8-c-risk{font-size:.88rem;font-weight:700;margin-top:.3rem;color:var(--text)}
+#slide-8 .ds8-c-note{font-size:.8rem;line-height:1.5;margin-top:.2rem;color:var(--text-secondary)}
+#slide-8 .ds8-combo-lo{background:#F0FDF4;border-color:#BBF7D0}
+#slide-8 .ds8-combo-mid{background:#FFFBEB;border-color:#FDE68A}
+#slide-8 .ds8-combo-hi{background:#FEF2F2;border-color:#FECACA}
+#slide-8 .ds8-case{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:var(--radius);padding:1rem 1.2rem;margin:.3rem 0 .8rem}
+#slide-8 .ds8-case h4{font-size:.95rem;font-weight:700;margin:0 0 .4rem;color:var(--text)}
+#slide-8 .ds8-case p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-8 .ds8-case p:last-child{margin-bottom:0}
+#slide-8 .ds8-case .ds8-case-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#1D4ED8;margin:0 0 .3rem}
+#slide-8 .ds8-bullets{margin:.2rem 0 .6rem;padding-left:1.25rem}
+#slide-8 .ds8-bullets li{font-size:.9rem;line-height:1.6;margin:0 0 .3rem;color:var(--text)}
+#slide-8 .ds8-quote{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:.4rem 0 .6rem}
+@media (max-width:640px){#slide-8 .ds8-quote{grid-template-columns:1fr}}
+#slide-8 .ds8-quote>div{border-radius:8px;padding:.55rem .8rem;font-size:.88rem;line-height:1.55;color:var(--text)}
+#slide-8 .ds8-q-rum{background:#FEF2F2;border:1px solid #FECACA}
+#slide-8 .ds8-q-ref{background:#F0FDF4;border:1px solid #BBF7D0}
+#slide-8 .ds8-q-lab{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 .25rem}
+#slide-8 .ds8-q-rum .ds8-q-lab{color:#B91C1C}
+#slide-8 .ds8-q-ref .ds8-q-lab{color:#15803D}
+#slide-8 .ds8-appbox{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:var(--radius);padding:1rem 1.2rem;margin:.3rem 0 .8rem}
+#slide-8 .ds8-appbox h3{font-size:1rem;font-weight:700;margin:0 0 .6rem;color:var(--text)}
+#slide-8 .ds8-appbox p{font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-8 .ds8-appbox p:last-of-type{margin-bottom:.2rem}
+#slide-8 .ds8-appbox .ds8-parallel{font-size:.84rem;color:#475569;background:#FFFFFF;border:1px solid #D7E4F4;border-radius:6px;padding:.5rem .75rem;margin:0 0 .6rem}
+#slide-8 .reveal{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:var(--radius);padding:.7rem .95rem;margin:.55rem 0 1rem}
+#slide-8 .reveal:hover{border-color:#9DBBDF}
+#slide-8 .reveal.amb{background:#FFFBEB;border-color:#FCD34D}
+#slide-8 .reveal.amb:hover{border-color:#F59E0B}
+#slide-8 .reveal-question{display:block;justify-content:flex-start;font-size:.92rem;line-height:1.6;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-8 .reveal-question p{margin:0 0 .55rem}
+#slide-8 .reveal-question p:last-child{margin-bottom:0}
+#slide-8 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:11px;font-size:.78rem;font-weight:700;color:#FFFFFF;background:var(--primary);border:1px solid var(--primary);padding:.32rem .75rem;border-radius:6px}
+#slide-8 .reveal-question:hover::after{background:var(--primary-dark)}
+#slide-8 .reveal.amb .reveal-question::after{background:#D97706;border-color:#D97706}
+#slide-8 .reveal.amb .reveal-question:hover::after{background:#B45309}
+#slide-8 .reveal.open .reveal-question::after{content:'Hide Answer'}
+#slide-8 .reveal-answer{background:#FFFFFF;border:1px solid #D7E4F4;border-radius:6px}
+#slide-8 .reveal.amb .reveal-answer{border-color:#F1C97B}
+#slide-8 .reveal.open .reveal-answer{padding:.5rem .7rem .25rem}
+#slide-8 .reveal-answer p{margin:0 0 .55rem;line-height:1.6;font-size:.9rem;color:var(--text-secondary)}
+#slide-8 .reveal-answer p:last-child{margin-bottom:0}
+#slide-8 .reveal-answer ul{margin:0 0 .55rem;padding-left:1.3rem}
+#slide-8 .reveal-answer li{line-height:1.65;margin:0 0 .3rem;font-size:.9rem;color:var(--text-secondary)}
+#slide-8 .reveal-answer b,#slide-8 .reveal-answer strong{color:var(--text)}
+</style>
+
+<div class="ds8-qbox">
+<h3>Why can two people experience the same stressful event, but only one develops depression?</h3>
+<p>Imagine two students who both fail an important examination &mdash; the same stressful event. One is disappointed for a few days, talks it through with friends, and starts planning a resit. The other cannot stop thinking about the result, stops attending classes, and describes feeling worthless for weeks afterwards.</p>
+<p>Notice first what this example does <b>not</b> show: responding differently to an event is not the same as developing Major Depressive Disorder (MDD) or not developing it. A strong emotional reaction to failing an exam is an ordinary response, not a diagnosis. But people do differ in how low they become and for how long, and this slide introduces the Diathesis&ndash;Stress Model as one explanation of why the <b>probability</b> of developing MDD can differ between people: it combines pre-existing vulnerabilities, life circumstances, coping resources, and the support available to each person.</p>
 </div>
 
-<div class="collapsible"><button class="collapsible-trigger">The Core Model</button><div class="collapsible-body">
-<p>The <strong>Diathesis&ndash;Stress Model</strong> proposes that psychological outcomes become more likely when an underlying <strong>vulnerability</strong> (diathesis) interacts with environmental <strong>stress</strong>.</p>
+<div class="ds8-sec">The Core Model</div>
+<p class="ds8-p">The <b>Diathesis&ndash;Stress Model</b> proposes that a person's underlying vulnerability interacts with stressful experiences to influence their <b>probability</b> of developing a psychological disorder such as MDD. Neither ingredient alone tells the whole story &mdash; the model's central claim is about how they combine.</p>
+<p class="ds8-p"><b>Diathesis (vulnerability).</b> A pre-existing susceptibility that may increase the likelihood of developing depression. It is present before the stressful event arrives, and it can take several forms:</p>
+<div class="ds8-factor"><h4>Biological vulnerability</h4><p>Example: a student whose mother and grandmother have both experienced depression.</p><p class="ds8-why">Inherited susceptibility exists in the person before any current stressor occurs, so it is genuinely pre-existing &mdash; though a family history is a risk marker, not proof that this individual inherited a specific vulnerability.</p></div>
+<div class="ds8-factor"><h4>Cognitive vulnerability</h4><p>Example: a student who habitually interprets a friend's short reply as &ldquo;they must be annoyed with me&rdquo; and replays the thought for days.</p><p class="ds8-why">Negative thinking habits are stable patterns that exist before the stressful event and shape how it is interpreted &mdash; the same ambiguous event is processed differently by different people.</p></div>
+<div class="ds8-factor"><h4>Developmental vulnerability</h4><p>Example: someone whose early experiences included prolonged insecurity or loss.</p><p class="ds8-why">Earlier experiences can contribute to later vulnerability, for example by shaping how safe, capable, or supported a person expects the world to be when new stress arrives.</p></div>
+<p class="ds8-p"><b>Stress.</b> Difficult experiences or environmental demands that may increase psychological strain. Examples include bereavement, relationship breakdown, prolonged unemployment, financial insecurity, and social isolation. What counts as stressful depends partly on the person and their circumstances &mdash; the same demand is not experienced identically by everyone.</p>
+<p class="ds8-p"><b>Interaction.</b> The effect of stress may depend partly on a person's vulnerability, and the influence of vulnerability may depend partly on their experiences. For example, one demanding term of revision pressure may be manageable for a student with few vulnerabilities, while the same term overwhelms a classmate whose negative thinking turns every small setback into proof of failure. The stress is similar; its effect is not.</p>
+<p class="ds8-p"><b>Probability.</b> The model describes changes in <b>risk</b>, not certain outcomes. Vulnerability and stress shift the likelihood of developing MDD; they do not guarantee it or rule it out.</p>
+<div class="ds8-note"><p><b>Common confusion.</b> A family history of depression is one possible source of vulnerability &mdash; but having a family history does not guarantee a high diathesis, and having no family history does not mean having no vulnerability. Cognitive and developmental factors can create vulnerability in anyone.</p></div>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Key terms</h3>
-<ul>
-<li><strong>Diathesis:</strong> An underlying vulnerability, which may be genetic/biological, cognitive, or developmental.</li>
-<li><strong>Stress:</strong> Environmental demands or adverse experiences, such as bereavement, relationship breakdown, prolonged academic or work stress, financial difficulty, or social isolation.</li>
-<li><strong>Interaction:</strong> The effect of one factor depends partly on the level of the other. Greater vulnerability may mean that less stress is required for risk to become high, whereas lower vulnerability may mean substantially greater stress is required.</li>
-<li><strong>Probabilistic:</strong> Vulnerability and stress change the probability of MDD rather than guaranteeing it. No outcome is certain.</li>
-</ul>
+<div class="ds8-sec">Four Combinations of Vulnerability and Stress</div>
+<p class="ds8-p">The diagram below shows four conceptual combinations. It is a <b>simplified conceptual illustration</b> of how the model is usually interpreted &mdash; not a validated numerical prediction, and not evidence that vulnerability and stress add together in a mathematically established formula.</p>
+<div class="ds8-combos">
+<div class="ds8-combo ds8-combo-lo"><div class="ds8-c-head"><span>Vulnerability: Lower</span><span>Stress: Lower</span></div><div class="ds8-c-risk">Relatively lower</div><div class="ds8-c-note">Neither factor contributes much, so the model treats this as the lowest-risk profile of the four &mdash; not zero risk.</div></div>
+<div class="ds8-combo ds8-combo-mid"><div class="ds8-c-head"><span>Vulnerability: Higher</span><span>Stress: Lower</span></div><div class="ds8-c-risk">May be elevated</div><div class="ds8-c-note">Vulnerability alone does not produce a disorder, but risk may sit above the lowest level &mdash; and if stress later increases, this is the profile whose risk can rise sharply.</div></div>
+<div class="ds8-combo ds8-combo-mid"><div class="ds8-c-head"><span>Vulnerability: Lower</span><span>Stress: Higher</span></div><div class="ds8-c-risk">May be elevated</div><div class="ds8-c-note">Serious or prolonged stress can raise risk even for people with little identified vulnerability. Lower vulnerability reduces risk; it does not guarantee protection.</div></div>
+<div class="ds8-combo ds8-combo-hi"><div class="ds8-c-head"><span>Vulnerability: Higher</span><span>Stress: Higher</span></div><div class="ds8-c-risk">Potentially greater</div><div class="ds8-c-note">The combination the model treats as highest-risk &mdash; and still probabilistic: many people with this profile do not develop MDD.</div></div>
+</div>
+<p class="ds8-p" style="margin-top:.7rem;">What does <b>interaction</b> actually mean here? An interaction means the relationship between one factor and the outcome may differ depending on the level of the other factor. If vulnerability and stress simply <b>added</b> together, a given amount of stress would raise risk by roughly the same amount regardless of vulnerability. In an <b>interaction</b>, the same amount of stress is associated with a larger change in risk for someone with higher vulnerability than for someone with lower vulnerability &mdash; which is why two people can pass through the same event with different outcomes. The exact shape of that combination varies across studies and individuals; the diagram shows the general logic, not a universal rule.</p>
 
-<p><strong>Vulnerability + Stress &rarr; Increased probability of MDD</strong></p>
+<div class="ds8-sec">Two Worked Examples</div>
+<div class="ds8-ex">
+<p class="ds8-ex-tag">Example A &mdash; Same stress, different vulnerability</p>
+<p>Two students experience a similar relationship breakup in the same term. Student A has several pre-existing vulnerability factors: a family history of depression and a persistent tendency to interpret setbacks as evidence of personal failure. Student B has fewer identified vulnerabilities.</p>
+<p>According to the model, the same stressor can be associated with different levels of depression risk because the students' vulnerabilities differ. The interaction means the effect of the breakup depends on who is experiencing it: for Student A, the event may interact with negative thinking that turns the loss into a general verdict on themselves, so their probability of developing MDD is potentially greater. Student B may experience real distress that gradually fades, giving a relatively lower probability. The model does <b>not</b> claim that Student A will definitely develop depression or that Student B cannot &mdash; it predicts different probabilities, not different destinies.</p>
+<p><b>Vulnerability:</b> A &mdash; family history plus persistent negative interpretations; B &mdash; fewer identified vulnerabilities.<br><b>Stressor:</b> a similar relationship breakup for both students.<br><b>Proposed interaction:</b> the effect of the breakup on risk depends on each student's vulnerability.<br><b>Predicted difference:</b> A's probability potentially greater, B's relatively lower &mdash; neither outcome is certain.</p>
+</div>
+<div class="ds8-ex">
+<p class="ds8-ex-tag">Example B &mdash; Similar vulnerability, different stress</p>
+<p>Two people have similar underlying vulnerabilities: a moderate family history of depression and a tendency toward negative thinking. Person X experiences a busy but manageable period of academic pressure, with stable relationships and finances. Person Y experiences bereavement, financial insecurity, and a relationship breakdown within the same year.</p>
+<p>Here the vulnerabilities are held constant and the stress differs. The model predicts that Person Y's probability of developing MDD is potentially greater, because the same level of vulnerability is combined with more serious and more prolonged environmental demands &mdash; several difficulties at once, each still unresolved when the next arrives. Person X's risk is relatively lower, though not zero: even manageable pressure is not the absence of stress.</p>
+<p><b>Vulnerability:</b> similar for both people.<br><b>Stressor:</b> X &mdash; one manageable demand; Y &mdash; several serious, partly overlapping difficulties.<br><b>Proposed interaction:</b> with vulnerability constant, the amount and duration of stress change the risk.<br><b>Predicted difference:</b> Y's probability potentially greater &mdash; without any claim that X is safe or that Y will develop MDD.</p>
+</div>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">Real-life example</h3>
-<p>Consider two students who experience similar stressful events &mdash; a breakup, exam pressure, and loneliness at university. Their risk differs because their underlying vulnerability differs. Vulnerability (diathesis) can be <strong>genetic or biological</strong> (for example, inherited tendencies), <strong>cognitive</strong> (for example, negative thinking patterns or rumination), or <strong>developmental</strong> (for example, early experiences). A family history of depression is one possible source of vulnerability, but it is not the only one &mdash; having a family history does not guarantee a high diathesis, and <strong>having no family history does not mean having no vulnerability</strong>. According to the model, it is the combination of vulnerability and stress that increases the <strong>probability</strong> of MDD rather than guaranteeing it.</p>
+<div class="ds8-sec">Cognitive Vulnerability: Rumination</div>
+<p class="ds8-p"><b>Rumination</b> is repetitive thinking about distressing experiences, emotions, or problems, often without moving toward effective problem-solving.</p>
+<p class="ds8-p">A student receives a disappointing examination result. That evening they repeatedly think &mdash; and think again &mdash; about the result, what it says about them, and what might go wrong next. The examination is finished, but their attention keeps returning to it, and no plan for preparing differently ever forms. This is why rumination can act as a <b>cognitive vulnerability</b>: it keeps attention on negative information, makes it harder to disengage from distressing thoughts, and can maintain low mood &mdash; particularly when combined with stressful experiences.</p>
+<div class="ds8-quote">
+<div class="ds8-q-rum"><p class="ds8-q-lab">Rumination</p>&ldquo;Why am I always such a failure? What if everything goes wrong?&rdquo;</div>
+<div class="ds8-q-ref"><p class="ds8-q-lab">Constructive reflection</p>&ldquo;Which questions did I struggle with, and how can I prepare differently?&rdquo;</div>
+</div>
+<p class="ds8-p">Both involve thinking about a negative event, so they can look similar from the outside. They differ in focus and direction. The ruminating thought is repetitive, evaluative and self-focused &mdash; it returns to the same conclusion about the person rather than moving anywhere. The reflective thought is specific and future-oriented &mdash; it identifies something concrete to do next. Repeating the first kind of thought for an evening typically maintains distress; the second kind can reduce it by converting the setback into a plan.</p>
+<p class="ds8-p">Research has reported associations between rumination and activity in the <b>prefrontal cortex</b>, the <b>amygdala</b>, and the <b>default mode network (DMN)</b> &mdash; regions involved in attention control, emotional processing, and internally focused thought respectively. Some researchers propose that rumination persists because of interactions between these systems: difficulty disengaging attention from negative material, and repetitive self-focused thought. These are <b>proposed explanations</b> supported by observed associations, not settled proof of one mechanism. The details matter less for this model than the core idea: thinking patterns are one way vulnerability can be cognitive rather than genetic.</p>
 
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">What Is Rumination?</h3>
-<p><strong>Rumination</strong> is repeatedly thinking about negative experiences, feelings or problems without successfully moving on from them or solving them.</p>
-<p>Imagine a student receives a poor test result. Instead of thinking, “I need to prepare differently next time,” they spend the evening repeatedly thinking, “Why did I fail? Why am I so bad at this? What if I fail again?” The test is over, but their attention keeps returning to the negative experience.</p>
-
-<h3 style="font-size:.95rem;font-weight:700;margin:1rem 0 .5rem;">What Might Be Happening in the Brain?</h3>
-<p>When someone ruminates, negative information can remain emotionally important even after the original event has ended. The <strong>amygdala</strong>, which responds to emotionally significant information, may contribute to the negative experience continuing to capture attention. At the same time, the <strong>prefrontal cortex</strong> is involved in controlling attention and regulating emotional responses. Difficulty disengaging from negative information may therefore make it harder to redirect attention towards something else.</p>
-<p>The <strong>default mode network (DMN)</strong> is a network of brain regions particularly involved when our attention turns inward, such as when we think about ourselves, remember past experiences or imagine the future. During rumination, this internally focused thinking can become repetitive. The student may keep replaying the test result and thinking about what it means about them rather than shifting attention towards what they can do next.</p>
-<p>This helps us understand why rumination can act as a <strong>cognitive vulnerability</strong>. Repeatedly returning to negative information may help maintain negative mood, particularly when combined with stressful experiences.</p>
-</div></div>
+<div class="ds8-p" style="margin-top:1.2rem;">The simulator below lets you explore the model's logic yourself. Each slider changes one ingredient &mdash; <b>vulnerability</b> and <b>environmental stress</b> &mdash; and the bar shows an illustrative relative-risk estimate. Raising either slider raises the estimate; raising both raises it more, which is the interaction the model describes. The sliders do not measure anyone's real vulnerability or stress, and the bar does not measure anyone's real risk.</div>
 
 <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
 <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">Diathesis&ndash;Stress Simulator</h3>
@@ -801,78 +905,78 @@
 <p style="font-size:.85rem;font-weight:600;margin:.5rem 0 0;color:var(--text);"><span id="ds-risk-text">Lower</span></p>
 </div>
 </div>
+<div class="ds8-note"><p><b>Read the fine print.</b> This is a conceptual teaching tool, not a clinically validated risk calculator. It cannot predict an individual's probability of developing MDD, and there is no universal threshold of vulnerability or stress at which risk &ldquo;switches on&rdquo;.</p></div>
 
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question">Set vulnerability high but stress low &mdash; what happens to risk?</div><div class="reveal-answer"><div>Risk remains relatively low. Having a vulnerability alone is not enough to cause MDD. This is why MZ concordance for depression is about 46%, not 100% &mdash; genetic vulnerability needs environmental stress to increase risk substantially.</div></div></div>
+<div class="reveal"><div class="reveal-question"><p>Set vulnerability high but stress low &mdash; what happens to risk?</p></div><div class="reveal-answer"><div><p>The estimate stays relatively low. A vulnerability on its own is not treated as enough to produce a high probability of MDD.</p><p>Evidence often cited here is McGuffin et al. (1996): identical (MZ) twins share essentially all their genes, yet their probandwise concordance for depression was about 46%, not 100%. That pattern supports a genetic contribution to depression while showing it is not genetically determined. Be careful about what it does <b>not</b> show: it does not directly demonstrate a particular vulnerability&ndash;stress interaction, and it does not establish that environmental stress is a necessary condition for depression &mdash; only that genes alone do not determine the outcome.</p></div></div></div>
 
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question">Now keep vulnerability high and increase stress &mdash; what changes?</div><div class="reveal-answer"><div>Risk increases substantially. When a person with high vulnerability encounters significant stress, the interaction produces much greater risk than either factor alone. This is the core prediction of the model.</div></div></div>
+<div class="reveal"><div class="reveal-question"><p>Now keep vulnerability high and increase stress &mdash; what changes?</p></div><div class="reveal-answer"><div><p>The estimate rises substantially. When a person with high vulnerability encounters significant stress, the model predicts a greater risk than either factor alone would suggest. This is the core prediction of the interaction: the effect of the stress depends on the vulnerability it meets.</p></div></div></div>
 
-<div class="reveal" style="margin-bottom:1rem;"><div class="reveal-question">Set vulnerability low but stress high &mdash; is MDD guaranteed?</div><div class="reveal-answer"><div><strong>No.</strong> The model is probabilistic, not deterministic. Even with high stress, lower vulnerability means the probability of MDD is reduced. However, sufficiently extreme stress can affect anyone, and the model does not guarantee protection for any individual.</div></div></div>
+<div class="reveal"><div class="reveal-question"><p>Set vulnerability low but stress high &mdash; is MDD guaranteed?</p></div><div class="reveal-answer"><div><p>No. The model is probabilistic, not deterministic. With lower vulnerability, the probability of MDD is reduced &mdash; but sufficiently extreme or prolonged stress can affect anyone, there is no stress level that guarantees either outcome, and the model does not promise protection to any individual.</p></div></div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Same Stress, Different Vulnerability</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin:1rem 0 .5rem;">A Real-Life Example</h3>
-<p>Imagine two students, Leo and Marcus, both experience the breakup of a long-term relationship.</p>
-<p>Leo has a stronger underlying vulnerability to depression, while Marcus has lower vulnerability.</p>
-<p>The same stressful event could therefore affect them differently. Leo might develop a depressive episode while Marcus experiences temporary sadness and gradually recovers.</p>
-<p>The model does not claim that vulnerability automatically produces depression or that a stressful event automatically produces depression. It focuses on how vulnerability and experience can interact.</p>
-</div></div>
+<div class="ds8-sec">Case Study: Applying the Model</div>
+<div class="ds8-case">
+<p class="ds8-case-tag">Case</p>
+<p>Sarah is 19 years old. Her mother and aunt have both been diagnosed with depression. Sarah has always tended to worry excessively and interpret ambiguous events negatively. Last month, her close friendship group dissolved after a conflict, and she has been spending most of her time alone. She has also been sleeping poorly and finding it difficult to concentrate on her university work. Sarah plays football twice a week.</p>
+</div>
+<div class="reveal"><div class="reveal-question"><p>1. Identify Sarah's possible vulnerabilities.</p></div><div class="reveal-answer"><div><p>Two kinds. First, a family history of depression (her mother and aunt) &mdash; a biological risk marker. Note the distinction: family history is <b>not</b> direct evidence that Sarah personally inherited a specific genetic vulnerability; it shows elevated family risk, which can reflect shared genes or shared environment. Second, a cognitive vulnerability: a long-standing tendency to worry excessively and interpret ambiguous events negatively. Both were present before the recent events, which is what makes them vulnerabilities rather than reactions.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>2. Identify her environmental stressors.</p></div><div class="reveal-answer"><div><p>The main stressor is the dissolution of her close friendship group after a conflict &mdash; a significant relationship loss. Its consequence, spending most of her time alone, is social isolation, which can itself act as an ongoing stressor. Her poor sleep and difficulty concentrating are better described as signs of strain than as separate stressors, though they can make coping with the original stressor harder.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>3. Explain how these factors might interact.</p></div><div class="reveal-answer"><div><p>Her cognitive vulnerability shapes how the stressor is processed: a tendency to interpret ambiguous events negatively can turn a friendship conflict into evidence that she is unlikeable, deepening the loss. The isolation then removes social contact that might otherwise buffer the stress &mdash; leaving her alone with repetitive negative interpretations. The interaction prediction is that this combination carries a higher probability of a depressive episode than the same stressor would for someone without these vulnerabilities &mdash; a prediction about probability, not a conclusion that Sarah has, or will develop, MDD.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>4. Identify an existing protective factor.</p></div><div class="reveal-answer"><div><p>Sarah plays football twice a week. That routine provides social contact, physical activity, and structure &mdash; all of which can lessen the impact of the friendship loss by keeping other relationships and a regular schedule in place. It is a real protective factor even though her vulnerability and the stressor remain.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>5. Explain why the case does not establish that Sarah has MDD.</p></div><div class="reveal-answer"><div><p>A scenario describes risk factors, not a diagnosis. The Diathesis&ndash;Stress Model predicts probabilities &mdash; it cannot tell you that a particular person has a disorder. Some details in the case (poor sleep, poor concentration) overlap with depression symptoms, but a diagnosis requires a clinical assessment against criteria such as symptom number, duration, and impairment &mdash; none of which a paragraph can establish. The case is useful for identifying vulnerabilities, stressors, interactions, and protective factors; it is not evidence about Sarah's diagnostic status.</p></div></div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Same Vulnerability, Different Stress</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Two people, different experiences</h3>
-<p>Both people have similar vulnerability: moderate family history of depression and a tendency toward negative thinking.</p>
-<ul>
-<li><strong>Person X:</strong> Experiences a period of minor academic pressure but maintains stable relationships, employment, and social activities.</li>
-<li><strong>Person Y:</strong> Experiences bereavement, relationship breakdown, and financial difficulty within the same year.</li>
-</ul>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.75rem;"><strong>Think about it:</strong> Two colleagues with similar personalities and family backgrounds. One goes through a busy but manageable term at work. The other loses a parent, separates from their partner, and faces redundancy in the same year. The vulnerability is similar &mdash; the difference is the level of stress they face.</p>
+<div class="ds8-sec">Protective Factors</div>
+<p class="ds8-p"><b>Protective factors</b> are influences that may reduce vulnerability, lessen the impact of stress, or support recovery and coping. The model is not only about two risk factors stacking up &mdash; what a person has around and inside them also shapes the outcome:</p>
+<div class="ds8-factor"><h4>Social support</h4><p>Example: a student experiencing bereavement has trusted friends and family members who provide emotional and practical assistance.</p><p class="ds8-why">Support can lessen the impact of the stressor itself &mdash; grief is shared rather than carried alone, practical burdens are reduced, and someone is present to notice if the person is struggling.</p></div>
+<div class="ds8-factor"><h4>Coping strategies</h4><p>Example: a student facing examination pressure uses realistic planning, problem-solving, and support rather than repeatedly avoiding the problem.</p><p class="ds8-why">Coping changes the person's response to the same demand: a problem broken into planned steps usually strains a person less than the same problem avoided, which lets stress accumulate.</p></div>
+<div class="ds8-factor"><h4>Access to support</h4><p>Example: someone experiencing prolonged difficulties can obtain appropriate professional or community support.</p><p class="ds8-why">Access turns potential help into actual help. Without it, even strong support networks and effective services cannot act &mdash; knowing help exists and being able to reach it are different things.</p></div>
+<div class="ds8-note"><p><b>No guarantee.</b> Protective factors reduce risk rather than guaranteeing protection against depression &mdash; someone can have strong support and still develop MDD, just as low vulnerability does not guarantee safety.</p></div>
+<div class="reveal"><div class="reveal-question"><p>In the case of Sarah, what protective factor does she already have, and how might adding another change her risk?</p></div><div class="reveal-answer"><div><p>Sarah plays football twice a week, which provides social contact, physical activity, and routine &mdash; these are protective. If she also had a close friend she could confide in, or accessed university counselling, additional protective factors could reduce her risk by providing social support and coping resources, even though her vulnerability and the friendship stressor remain.</p></div></div></div>
 
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">How does the model explain the different likely outcomes for Person X and Person Y?</div><div class="reveal-answer"><div>Both have similar vulnerability, but Person Y experiences substantially greater stress. The model predicts that Person Y's risk of MDD is higher because the same level of vulnerability is combined with more severe environmental demands. Person X's lower stress means their vulnerability is less likely to develop into a disorder. This demonstrates the <strong>interaction</strong> between vulnerability and stress.</div></div></div>
-</div></div>
+<div class="ds8-sec">Research Evidence</div>
+<p class="ds8-p">What would evidence for this model look like? Ideally: a measure of vulnerability, a measure of stress, and a measure of depression outcomes, showing that their <b>combination</b> predicts outcomes better than either alone. Two studies are often discussed &mdash; for different reasons.</p>
+<div class="ds8-research">
+<h4>McGuffin et al. (1996) &mdash; twin evidence on vulnerability</h4>
+<p><b>Aim and sample:</b> to estimate the contribution of genes to liability to DSM-IV major depression. The researchers studied 177 people with major depressive disorder (probands) from the Maudsley Hospital Twin Register in London, together with their same-sex co-twins. Assessments of the co-twins were carried out by researchers blind to zygosity and to the proband's history.</p>
+<p><b>Findings:</b> probandwise concordance for major depression was 46% in monozygotic (MZ) twins and 20% in dizygotic (DZ) twins &mdash; a large difference, since MZ twins share essentially all their genes and DZ twins about half. But concordance was far from 100% even in MZ pairs.</p>
+<p><b>Interpretation:</b> the pattern supports a genetic contribution to depression without genetic determinism &mdash; identical genes produced the disorder in both twins less than half the time. This is consistent with a probabilistic, multifactorial account.</p>
+<p><b>Limitations:</b> the study was <b>not a direct test of the Diathesis&ndash;Stress Model</b> &mdash; it measured genetic similarity and depression, not how vulnerability and stress combine, so it cannot show that a particular vulnerability&ndash;stress interaction occurred or that stress is necessary. The hospital-based sample may not represent depression in the wider population, and zygosity was established before routine DNA testing.</p>
+</div>
+<div class="ds8-research">
+<h4>Caspi et al. (2003) &mdash; a direct test of a gene&times;stress interaction</h4>
+<p><b>Aim:</b> to test <i>why</i> stressful experiences lead to depression in some people but not others &mdash; specifically, whether a variant of the serotonin transporter gene (5-HTTLPR) moderates the effect of stressful life events on depression.</p>
+<p><b>Participants and design:</b> the Dunedin Multidisciplinary Health and Development Study &mdash; a representative birth cohort of 1,037 children born in Dunedin, New Zealand, in 1972&ndash;73, assessed repeatedly from age 3, with 96% of the cohort still participating at age 26. This prospective design means stress was measured before the outcomes, not recalled afterwards.</p>
+<p><b>Genetic measure:</b> 847 cohort members (all of European ancestry, to avoid confounds from population stratification) were genotyped for the 5-HTTLPR polymorphism: 17% carried two short alleles, 51% one short and one long, 31% two long alleles.</p>
+<p><b>Stress measure:</b> stressful life events between the 21st and 26th birthdays were recorded with a life-history calendar covering 14 kinds of event (employment, financial, housing, health, and relationship stressors). 30% reported no such events, 25% one, 20% two, 11% three, and 15% four or more &mdash; with no significant difference between genotype groups, so carriers were not simply attracting more stress. Childhood maltreatment was also measured.</p>
+<p><b>Outcome measure:</b> past-year depression at age 26 assessed with the Diagnostic Interview Schedule, yielding both symptom scores and DSM-IV major depressive episode diagnoses (17% of the sample met criteria), plus measures of suicidal ideation and informant reports from people who knew each study member well.</p>
+<p><b>Reported findings:</b> among carriers of a short allele, depression symptoms and diagnoses increased with the number of life events; among those with two long alleles, they did not. For example, among cohort members experiencing four or more stressful life events, about 33% of short-allele carriers were diagnosed with a major depressive episode compared with about 17% of those with two long alleles. The authors concluded this was evidence of a gene-by-environment interaction &mdash; and they themselves noted that the finding awaited replication.</p>
+<p><b>Limitations:</b> the study is observational, so it cannot prove causation; it tested a single <i>candidate gene</i> chosen in advance; and the genotyped sample was one ancestry group within one national cohort, limiting generalizability. There was no main effect of the gene alone &mdash; risk appeared only in combination with stress, which is exactly why the finding attracted so much attention.</p>
+</div>
+<div class="ds8-note">
+<p><b>Replication status &mdash; read this before citing Caspi et al.</b> The specific 5-HTTLPR&times;stress finding has <b>not</b> been consistently replicated, and it must not be treated as an established fact. Risch et al. (2009) re-analysed data from 14 studies (over 14,000 participants) and found no interaction, while confirming that stressful life events themselves are strongly associated with depression risk. Culverhouse et al. (2018) combined 31 datasets (over 38,000 participants of European ancestry) and found no support for the interaction in any subgroup examined. Other meta-analyses have reported support for the interaction, but they have been criticized for combining studies with very different measures and statistical models. The overall picture: the original result remains contested, and the consistent finding across all sides is that stress matters and the gene alone does not.</p>
+<p>The broader Diathesis&ndash;Stress framework does <b>not</b> depend on this one genetic candidate. Independent lines of evidence &mdash; twin studies showing genetic contributions without determinism, the strong association between stressful life events and depression, and research linking cognitive styles such as rumination to depression risk &mdash; all support the general idea that vulnerability and stress jointly shape risk, whatever the specific biological markers turn out to be.</p>
+</div>
 
-<div class="collapsible"><button class="collapsible-trigger">Case Study: Applying the Model</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Identify the diathesis, stressor, and interaction</h3>
-<p><strong>Case:</strong> Sarah is 19 years old. Her mother and aunt have both been diagnosed with depression. Sarah has always tended to worry excessively and interpret ambiguous events negatively. Last month, her close friendship group dissolved after a conflict, and she has been spending most of her time alone. She has also been sleeping poorly and finding it difficult to concentrate on her university work. Sarah plays football twice a week.</p>
+<div class="ds8-sec">Evaluation</div>
+<p class="ds8-p"><b>Strength 1 &mdash; Integrative explanation.</b> The model combines biological, cognitive, developmental, and environmental influences rather than reducing depression to a single cause. Each restricted account leaves evidence out: a purely genetic account struggles with the ~46% MZ concordance (genes alone do not decide), while a purely environmental account struggles with why people exposed to the same events differ. The Diathesis&ndash;Stress framework can accommodate both at once &mdash; which is exactly what McGuffin et al.'s non-deterministic concordance and the strong life-events effect both require.</p>
+<p class="ds8-p"><b>Strength 2 &mdash; Individual differences.</b> The model explains why people exposed to similar stressors can have different outcomes. In Example A, the same breakup carried different probabilities for two students; in Caspi et al., carriers of the same allele were not uniformly depressed &mdash; risk depended on the stress they experienced. Single-factor models have no natural way to express this.</p>
+<p class="ds8-p"><b>Strength 3 &mdash; Practical applications.</b> If vulnerability, stress, and protective factors can be identified, prevention and early intervention can be targeted: monitoring students with family histories during high-stress periods, teaching coping strategies, and strengthening access to support. Identifying risk factors does not guarantee that interventions will work &mdash; but it gives them a place to start.</p>
+<p class="ds8-p"><b>Limitation 1 &mdash; Measurement.</b> Vulnerability and stress are difficult to operationalize. Consider two people who are both &ldquo;unemployed&rdquo;: one has savings, a supportive family, and expects to find work soon; the other faces financial insecurity, has no one to turn to, and has been searching for a year. Which is experiencing &ldquo;the same stress&rdquo;? Depending on how researchers measure it &mdash; events counted, severity rated, or impact self-reported &mdash; studies can reach different conclusions about the same lives.</p>
+<p class="ds8-p"><b>Limitation 2 &mdash; Causality.</b> Finding that vulnerable people under stress experience more depression does not prove the interaction caused the depression. Stress exposure may itself relate to vulnerability (for example, some genes may influence the situations people enter, a possibility Caspi et al. themselves acknowledged), and depression can generate stressors as well as result from them. Prospective designs such as Dunedin's &mdash; measuring stress before outcomes &mdash; strengthen the inference, and yet the key specific finding still failed to replicate, a reminder that even strong designs do not settle questions on their own.</p>
+<p class="ds8-p"><b>Limitation 3 &mdash; Prediction.</b> The model cannot precisely predict which individual will develop MDD. In Caspi et al., among short-allele carriers with four or more stressful life events &mdash; the highest-risk profile reported &mdash; about two-thirds were <b>not</b> diagnosed. Elevated risk is a statement about probabilities in groups, not about a named person's future, which is also why the simulator's bar must not be read as a personal risk calculator.</p>
+<p class="ds8-p"><b>Limitation 4 &mdash; Oversimplification.</b> A two-variable diagram hides real complexity: people carry multiple vulnerabilities at once, stress comes in different forms and durations, and resilience and protective factors interact with both. Some people with high vulnerability and high stress never develop MDD &mdash; the four-box illustration cannot capture why without adding more factors than a simple diagram can hold.</p>
+<div class="reveal amb"><div class="reveal-question"><p>Can the model predict exactly who will develop MDD?</p></div><div class="reveal-answer"><div><p>No. The model is probabilistic: individual vulnerabilities and stressors are difficult to measure precisely, people exposed to apparently similar combinations can still have different outcomes, and even the highest-risk profiles in research (such as Caspi et al.'s short-allele carriers with four or more life events) included many people who were not diagnosed.</p></div></div></div>
 
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">What is the diathesis in this case?</div><div class="reveal-answer"><div>Sarah has multiple vulnerabilities: a <strong>genetic/family history</strong> of depression (mother and aunt), and a <strong>cognitive vulnerability</strong> (tendency to worry excessively and interpret events negatively). These represent pre-existing risk factors.</div></div></div>
+<div class="ds8-sec">Applying the Model</div>
+<div class="reveal"><div class="reveal-question"><p>1. State what a diathesis is, and give one biological and one cognitive example of vulnerability to depression.</p></div><div class="reveal-answer"><div><p>A diathesis is a pre-existing vulnerability that may increase the likelihood of developing a disorder such as MDD &mdash; present before the stressful event, and affecting probability rather than certainty. A biological example: an inherited susceptibility, suggested by a family history of depression. A cognitive example: a persistent negative thinking style, such as habitual rumination or interpreting ambiguous events as personal failures.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>2. Amir's father was diagnosed with depression when Amir was a child, and Amir tends to blame himself when things go wrong. His hours at his part-time job were recently cut, and his income has become unpredictable. Using the Diathesis&ndash;Stress Model, explain why Amir's probability of developing MDD may be higher than a colleague's who experienced the same cut in hours.</p></div><div class="reveal-answer"><div><p>Amir's vulnerabilities: a developmental/biological risk marker (a parent with depression &mdash; a family history marker, not proof of inherited vulnerability) and a cognitive vulnerability (self-blaming interpretations). The stressor: reduced hours and unpredictable income &mdash; financial insecurity. The interaction: because of his self-blaming style, the same event may be processed as further personal failure, and because of the family history his baseline risk may already be elevated &mdash; so the identical cut in hours meets more vulnerability in Amir than in his colleague, producing a potentially higher probability of MDD. The colleague with the same stressor but fewer vulnerabilities has a relatively lower probability &mdash; though neither outcome is guaranteed, and the model predicts risk, not diagnosis.</p></div></div></div>
+<div class="reveal"><div class="reveal-question"><p>3. A student claims that Caspi et al. (2003) proved that a genetic vulnerability always requires environmental stress for depression to develop. Identify two problems with this claim.</p></div><div class="reveal-answer"><div><p>Problem 1 &mdash; it overstates what the study found: even in Caspi et al.'s own data the pattern was probabilistic (among short-allele carriers with four or more life events, only about a third were diagnosed), so the study showed changed <i>probability</i>, not a requirement that stress always be present. Problem 2 &mdash; the finding has not held up as established: Risch et al. (2009) and Culverhouse et al. (2018) found no support for the 5-HTTLPR&times;stress interaction in large combined datasets, so a claim of &ldquo;proof&rdquo; treats a contested, non-replicated finding as fact. The claim also misreads the model itself: the Diathesis&ndash;Stress framework describes changed probabilities, not a universal rule that stress is necessary.</p></div></div></div>
 
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">What is the stressor?</div><div class="reveal-answer"><div>The <strong>dissolution of her close friendship group</strong> and resulting <strong>social isolation</strong> represent the environmental stress. Spending most of her time alone is a consequence of this stressor.</div></div></div>
-
-<div class="reveal" style="margin-top:.75rem;"><div class="reveal-question">How does the model explain the interaction?</div><div class="reveal-answer"><div>Sarah's pre-existing vulnerability (genetic risk + cognitive style) means she is more susceptible to the effects of social stress. The loss of her friendship group provides the environmental trigger. The model predicts that the combination of her vulnerability and this stressor increases the probability of developing MDD, though it does not guarantee it.</div></div></div>
-</div></div>
-
-
-<div class="collapsible"><button class="collapsible-trigger">Protective Factors</button><div class="collapsible-body">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.5rem;">Reducing risk</h3>
-<p><strong>Protective factors</strong> are influences that may reduce the impact of vulnerability and stress, lowering the probability of MDD. Examples include:</p>
-<ul>
-<li>Supportive relationships and social connection</li>
-<li>Effective coping strategies</li>
-<li>Access to support (friends, family, services)</li>
-<li>Sense of purpose or meaning</li>
-</ul>
-<p>Protective factors reduce risk rather than guaranteeing protection.</p>
-<p style="font-size:.88rem;color:var(--text-muted);margin-top:.75rem;"><strong>Real-life example:</strong> A teenager with a family history of depression loses a grandparent. Their risk might be lowered by close friendships, a trusted teacher they can talk to, involvement in a sports team, and a sense that things will eventually feel normal again. These protective factors do not remove the vulnerability or the loss, but they provide a buffer.</p>
-
-<div class="reveal" style="margin-top:1rem;"><div class="reveal-question">In the case of Sarah, what protective factor does she already have, and how might adding another change her risk?</div><div class="reveal-answer"><div>Sarah plays football twice a week, which provides <strong>social contact, physical activity, and routine</strong> &mdash; these are protective. If she also had a close friend she could confide in, or accessed university counselling, additional protective factors could reduce her risk by providing social support and coping resources, even though her vulnerability and the friendship stressor remain.</div></div></div>
-</div></div>
-
-<div class="collapsible"><button class="collapsible-trigger">Evaluation</button><div class="collapsible-body">
-<p>A strength is that the model offers a probabilistic rather than deterministic account &mdash; an underlying vulnerability does not guarantee MDD, and whether it does depends on interacting influences rather than any single requirement. This is consistent with the ~46% MZ concordance found by McGuffin et al. (1996), a multifactorial, non-deterministic pattern; however, the twin study does not directly demonstrate the Diathesis&ndash;Stress Model itself.</p>
-<p>A strength is that it integrates biological, psychological, and environmental factors rather than relying on a single explanation, making it a more comprehensive account of MDD than purely biological or purely psychological models.</p>
-<p>A strength is that it has practical applications &mdash; if we can identify vulnerability factors and stress triggers, we can target prevention and early intervention at high-risk individuals.</p>
-<p>One limitation is that it can be difficult to measure and operationalise &ldquo;vulnerability&rdquo; and &ldquo;stress&rdquo; precisely, making the model hard to test empirically. How do you quantify &ldquo;vulnerability&rdquo; on a continuous scale?</p>
-<p>One limitation is that the model does not specify exactly how much stress, or what kind of vulnerability, is needed &mdash; it is more of a conceptual framework than a precise predictive tool.</p>
-<p>One limitation is that it may underestimate the role of protective factors and resilience &mdash; some people with high vulnerability and high stress do not develop MDD, suggesting additional factors are at play.</p>
-</div></div>
-
-<div class="reveal"><div class="reveal-question">Can the model predict exactly who will develop MDD?</div><div class="reveal-answer"><div><strong>No.</strong> The model is probabilistic, individual vulnerabilities and stressors can be difficult to measure precisely, and people exposed to apparently similar combinations can still have different outcomes.</div></div></div>
-
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
-<h3 style="font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:var(--text);">Exam Application Challenge</h3>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.75rem;"><strong>Case:</strong> Tom has a family history of depression and has always been a perfectionist who sets unrealistically high standards. After losing his job, he has been unable to find new employment for three months. He has withdrawn from friends and feels hopeless about the future.</p>
-<p style="font-size:.88rem;color:var(--text-muted);margin-bottom:.75rem;"><strong>Real-life parallel:</strong> Many people experience job loss without developing MDD, but Tom's pre-existing vulnerability (family history + perfectionism) makes him more susceptible. The sustained unemployment and social withdrawal represent ongoing stress, not a single event.</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.75rem;">Using the Diathesis&ndash;Stress Model, explain Tom's situation. Use the terms <strong>diathesis, stress, interaction, vulnerability</strong>, and <strong>probability</strong>.</p>
-
-<div class="reveal"><div class="reveal-question">Show model answer</div><div class="reveal-answer"><div>Tom has a <strong>diathesis</strong> (underlying vulnerability) that is both genetic (family history of depression) and cognitive (perfectionist tendencies, unrealistic standards). He has experienced significant <strong>stress</strong> (job loss and prolonged unemployment). The model proposes an <strong>interaction</strong>: his pre-existing <strong>vulnerability</strong> means he is more susceptible to the effects of this stress. According to the model, the combination increases the <strong>probability</strong> of developing MDD, though it does not guarantee it &mdash; protective factors such as social support could influence the outcome.</div></div></div>
+<div class="ds8-appbox">
+<h3>Exam Application Challenge</h3>
+<p>Tom has a family history of depression and has always been a perfectionist who sets unrealistically high standards. After losing his job, he has been unable to find new employment for three months. He has withdrawn from friends and feels hopeless about the future.</p>
+<p class="ds8-parallel">Real-life parallel: many people experience job loss without developing MDD. Tom's pre-existing vulnerabilities (family history plus perfectionism) make him more susceptible to its effects, and the sustained unemployment and social withdrawal represent ongoing stress rather than a single event.</p>
+<p>Using the Diathesis&ndash;Stress Model, explain Tom's situation. Use the terms diathesis, stress, interaction, vulnerability, and probability.</p>
+<div class="reveal"><div class="reveal-question"><p>Show model answer</p></div><div class="reveal-answer"><div><p>Tom has a diathesis (underlying vulnerability) that is both genetic (family history of depression) and cognitive (perfectionist tendencies and unrealistically high standards). He has experienced significant stress: job loss followed by three months of unemployment, with social withdrawal extending the strain. The model proposes an interaction &mdash; his pre-existing vulnerability means the effects of this sustained stress are greater for him than they would be for someone without it, and the isolation itself removes protective support. The combination increases the probability of developing MDD, though it does not guarantee it: the outcome remains probabilistic, and protective factors such as renewed social contact or access to support could influence it.</p></div></div></div>
 </div>
 
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
