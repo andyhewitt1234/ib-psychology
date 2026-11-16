@@ -5320,85 +5320,356 @@
 <div class="act-container" id="lc-p24-motiv-drive"></div>
 </div>
 <div class="slide" data-slide="51" id="slide-51">
+<style>
+#slide-51 .lc-part{font-size:1.12rem;font-weight:700;color:var(--text);margin:2rem 0 .55rem;line-height:1.35;padding-bottom:.3rem;border-bottom:2px solid #E2E8F0}
+#slide-51 .lc-body > .lc-part:first-child{margin-top:1.1rem}
+#slide-51 .lc-sub{font-size:1.02rem;font-weight:700;color:var(--text);margin:1.5rem 0 .5rem;line-height:1.35}
+#slide-51 .lc-body p{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-51 .lc-body p:last-child{margin-bottom:0}
+#slide-51 .lc-body strong{color:var(--text)}
+#slide-51 .lc-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
+#slide-51 .lc-list li{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.4rem}
+#slide-51 .lc-why{color:#1D4ED8;font-weight:600}
+#slide-51 .lc-ex-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#15803D;margin:0 0 .35rem}
+#slide-51 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-51 .lc-green p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-51 .lc-green p:last-child{margin-bottom:0}
+#slide-51 .lc-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-51 .lc-amber p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-51 .lc-amber p:last-child{margin-bottom:0}
+#slide-51 .lc-res{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1rem;margin:.35rem 0 .6rem}
+#slide-51 .lc-res h5{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .4rem;line-height:1.3}
+#slide-51 .lc-res p{font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .35rem}
+#slide-51 .lc-res p:last-child{margin-bottom:0}
+#slide-51 .lc-note{font-size:.8rem;font-style:italic;color:var(--text-secondary);margin:.3rem 0 0}
+#slide-51 .lc-mlab{font-weight:600;color:var(--text)}
+#slide-51 .lc-apply{font-size:.95rem;font-weight:700;color:var(--text);margin:1.25rem 0 .15rem}
+#slide-51 .lc-cards{display:grid;gap:.65rem;margin:.3rem 0 .7rem}
+#slide-51 .lc-c3{grid-template-columns:1fr 1fr 1fr}
+#slide-51 .lc-c2{grid-template-columns:1fr 1fr}
+#slide-51 .lc-card{background:#FFFFFF;border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem}
+#slide-51 .lc-card h5{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .3rem;line-height:1.3}
+#slide-51 .lc-card p{font-size:.87rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-51 .lc-card p:last-child{margin-bottom:0}
+#slide-51 .lc-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 .25rem;color:#1D4ED8}
+#slide-51 .lc-others{display:flex;flex-wrap:wrap;gap:.35rem;margin:.3rem 0 .55rem}
+#slide-51 .lc-onode{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:6px;padding:.25rem .55rem;font-size:.75rem;color:var(--text-secondary)}
+#slide-51 .lc-dlabel{font-size:.85rem;font-weight:600;color:var(--text);margin:.5rem 0 .1rem}
+#slide-51 .lc-table{width:100%;border-collapse:collapse;margin:.4rem 0 .3rem}
+#slide-51 .lc-table th,#slide-51 .lc-table td{border:1px solid var(--border);padding:.4rem .6rem;font-size:.86rem;line-height:1.5;color:var(--text)}
+#slide-51 .lc-table th{background:#F1F5F9;font-weight:700;text-align:left}
+#slide-51 .lc-table td.num{text-align:right}
+#slide-51 .hl-box{background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.95rem 1.15rem;margin:1.4rem 0 .4rem}
+#slide-51 .hl-box h3{font-size:1rem;font-weight:700;margin:0 0 .55rem;color:var(--text)}
+#slide-51 .hl-box > p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .5rem}
+#slide-51 .hl-box > p:last-of-type{margin-bottom:.2rem}
+#slide-51 .reveal{background:#FFFFFF;border:1px solid #CFE0F7;border-radius:8px;padding:.7rem .9rem;margin:.5rem 0 .2rem;cursor:pointer}
+#slide-51 .reveal:hover{border-color:#B9D2F5}
+#slide-51 .reveal-question{display:block;font-size:.9rem;font-weight:600;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-51 .reveal-question p{margin:0 0 .5rem}
+#slide-51 .reveal-question p:last-child{margin-bottom:0}
+#slide-51 .reveal-question ol{margin:0 0 .5rem;padding-left:1.3rem}
+#slide-51 .reveal-question li{font-size:.9rem;line-height:1.55;color:var(--text);margin:0 0 .25rem;text-align:left}
+#slide-51 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.7rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#E5F0FF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
+#slide-51 .reveal.open .reveal-question::after{content:'Hide'}
+#slide-51 .reveal-answer p{font-size:.9rem;margin:.4rem 0 0;line-height:1.6;color:var(--text)}
+#slide-51 .reveal-answer p:first-child{margin-top:0}
+#slide-51 .reveal-answer p:last-child{margin-bottom:0}
+@media (max-width:640px){
+#slide-51 .lc-c3,#slide-51 .lc-c2{grid-template-columns:1fr}
+#slide-51 .lc-card,#slide-51 .lc-res,#slide-51 .lc-green,#slide-51 .lc-amber{padding:.7rem .8rem}
+#slide-51 .lc-table th,#slide-51 .lc-table td{font-size:.8rem;padding:.3rem .45rem}
+#slide-51 .hl-box{padding:.8rem .9rem}
+}
+</style>
 <h2>HL Extension: Technology &amp; Cognition</h2>
-<p class="slide-intro">HL extension: how technology may affect learning and cognition more broadly, and how research on technology should be interpreted &mdash; building on Technology &amp; Learning.</p>
-<div class="collapsible"><button class="collapsible-trigger">Technology Is Not One Thing</button><div class="collapsible-body">
-<p>&ldquo;Technology&rdquo; could mean an AI tutor, digital flashcards, an online lecture, social media, smartphone notifications, virtual reality, search engines, note-taking software or educational games. A claim such as &ldquo;technology improves learning&rdquo; or &ldquo;technology harms cognition&rdquo; is therefore too broad to test.</p>
-<p>A stronger psychological question asks: <strong>Which technology? Used how? By whom? For what cognitive task? Compared with what? Measured how?</strong></p>
+<p class="slide-intro">Technology can influence how we pay attention, remember information and learn. However, its effects depend on the tool, how it is used, the learner and the task. In this HL extension, we will examine these relationships and consider how psychologists can investigate them.</p>
+<div class="lc-body">
+
+<div class="lc-part">Part 1 &mdash; How Technology Influences Cognition</div>
+
+<div class="lc-sub">Technology Is Not One Thing</div>
+<p>&ldquo;Technology&rdquo; could mean digital flashcards, social media, AI tutors, search engines, smartphone notifications, online lectures, virtual reality or educational games. These are not psychologically equivalent: they place very different demands on attention, memory and learning, so a claim such as &ldquo;technology improves learning&rdquo; or &ldquo;technology harms cognition&rdquo; is too broad to test.</p>
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; two students, two technologies</p>
+<p>One student uses a flashcard app that requires them to recall an answer before seeing feedback. Another watches short social media videos while attempting to revise. Both students are using technology, but their activities involve different demands on attention, retrieval and working memory.</p>
+<p><span class="lc-why">What this demonstrates:</span> researchers cannot treat all technology use as one psychological variable. A useful research question must identify the particular tool, the activity and the outcome &mdash; the psychological difference lies in what the student does, not in the word &ldquo;technology&rdquo;.</p>
+</div>
+<p>A useful question therefore asks:</p>
+<div class="lc-others">
+<div class="lc-onode">What technology?</div>
+<div class="lc-onode">Used how?</div>
+<div class="lc-onode">By whom?</div>
+<div class="lc-onode">For which cognitive task?</div>
+<div class="lc-onode">Compared with what?</div>
+<div class="lc-onode">Measured how?</div>
+</div>
+<p>These questions also explain why well-designed technology can offer immediate feedback, adaptive practice, retrieval scheduling and individualised pacing, while other uses introduce distraction, shallow processing, cognitive overload, dependence on external prompts and reduced deliberate retrieval. The same tool can support or interfere with learning depending on how it is designed and used &mdash; it is not inherently positive or negative.</p>
+
+<div class="lc-sub">Technology and Attention</div>
+<p>Notifications illustrate how technology can affect attention. A student is reading a difficult psychology explanation when a message notification appears. The student looks at the message, replies and then returns to the explanation.</p>
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; one notification, several cognitive consequences</p>
+<ul class="lc-list">
+<li>Attention shifts away from the original task.</li>
+<li>The student must reorient to the reading task.</li>
+<li>Information that was being actively processed may need to be reconstructed.</li>
+<li>The interruption may reduce efficiency or accuracy, depending on the task.</li>
+</ul>
+<p><span class="lc-why">What this demonstrates:</span> the cost of an interruption is not just the seconds spent on the message &mdash; it is the reorientation and reconstruction afterwards. This is mainly <strong>task switching</strong>: moving attention between activities. It differs from <strong>divided attention</strong>, which means attempting to distribute attention across competing activities at the same time.</p>
+</div>
+<div class="lc-amber">
+<p><strong>Keep this in mind:</strong> not every notification causes measurable impairment, and tasks differ in how easily they can be resumed. Also, merely having a phone nearby is not the same experimental condition as receiving notifications or actively using the phone &mdash; a study of one condition does not automatically tell us about the others.</p>
+</div>
+<p class="lc-apply">Apply Your Understanding &mdash; Attention</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>Researchers ask two groups of students to complete a reading-comprehension task. Group A receives smartphone notifications throughout the task. Group B completes the same task without notifications. Group A answers fewer comprehension questions correctly.</p>
+<p>Explain one cognitive process that might account for the difference. Identify one reason the findings cannot automatically be generalized to all classroom learning.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>Notifications may interrupt sustained attention and cause students to switch between the reading task and their phones. Returning to the text may require students to reorient their attention and reconstruct information they were processing.</p>
+<p>This could contribute to lower comprehension accuracy.</p>
+<p>However, the study investigates a particular task under particular conditions. The findings do not establish that all smartphone use reduces attention or that the same effect would occur in every classroom.</p>
+<p>The results support a conclusion about performance in the tested conditions, not a universal claim about technology.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Learning: Possible Benefits and Limits</button><div class="collapsible-body">
-<p><strong>Possible benefits</strong> of well-designed technology include immediate feedback, adaptive practice, retrieval scheduling, access to information, multimedia explanation and individualised pacing.</p>
-<p><strong>Possible limitations</strong> include distraction, shallow processing, cognitive overload, dependence on external prompts, reduced deliberate retrieval and multitasking.</p>
-<p>Technology is <strong>not inherently positive or negative</strong>: the same tool can support or interfere with learning depending on how it is designed and used.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Attention</button><div class="collapsible-body">
-<p>Smartphone notifications are a concrete example: each notification may compete for limited attentional resources and interrupt an ongoing task.</p>
-<p>But do <strong>not</strong> simply claim &ldquo;phones destroy attention.&rdquo; Psychologists must ask whether the phone was actively used or merely present, whether notifications were even enabled, whether attention was measured directly or inferred from self-report, whether the task was artificial, and whether participants were accustomed to the environment. Each answer changes how the finding should be interpreted.</p>
-<div class="reveal"><div class="reveal-question">A laboratory study finds that receiving notifications during a task lowers accuracy on that task. Why should this finding not be stated as &ldquo;smartphones reduce attention in everyday life&rdquo;?</div><div class="reveal-answer"><div>The finding was produced under specific conditions: one laboratory task, one type of notification, participants not necessarily habituated, and attention measured on that task. Real-world contexts differ in the tasks, the users, their habits and the salience of notifications, so generalising the effect to all everyday attention requires caution.</div></div></div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Technology &amp; Memory: Cognitive Offloading</button><div class="collapsible-body">
-<p>People increasingly store information externally using phones, calendars, search engines and cloud notes.</p>
+</div>
+
+<div class="lc-sub">Technology and Memory: Cognitive Offloading</div>
 <p><strong>Cognitive offloading</strong> means using an external tool to reduce the amount of information that must be internally maintained or remembered.</p>
-<p><strong>Possible advantages:</strong> it reduces cognitive load, frees resources for other tasks and supports planning. <strong>Possible cost:</strong> people may remember less information internally when they expect it to remain externally available.</p>
-<p>Do <strong>not</strong> imply offloading is necessarily harmful. It can be adaptive &mdash; the same memory system that stores facts internally can instead be freed for reasoning, and external storage is often the point of the tool.</p>
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; six tasks, one calendar app</p>
+<p>A student needs to remember six tasks for tomorrow. Instead of trying to remember all six, they enter them into a calendar app and set reminders. The reminders reduce the need to maintain and retrieve those tasks from internal memory.</p>
+<p><span class="lc-why">What this demonstrates:</span> the student uses an external resource to support remembering. This may be beneficial, because cognitive resources that would have been spent holding the six tasks can be devoted to other activities. But remembering to complete a task <em>with</em> external support and remembering information independently <em>without</em> that support are not the same outcome.</p>
+</div>
+<p>The same distinction appears in learning. A student saves a definition in an app but never tries to retrieve it. The student may know where to find the definition without being able to recall it independently.</p>
+<div class="lc-amber">
+<p><strong>Keep this in mind:</strong> external storage is not inherently harmful. Whether it reduces later unaided recall depends on the circumstances &mdash; including whether the student also practises retrieving the information.</p>
+</div>
+<p class="lc-apply">Apply Your Understanding &mdash; Cognitive Offloading</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>Two students must remember information about ten historical events. Amira stores the information in a searchable digital notebook. Ben studies the information using retrieval practice without looking at his notes. One week later, both students can find the correct information when allowed to use their resources. However, Ben recalls more of the information when neither student can access their notes.</p>
+<p>Explain how cognitive offloading might account for the difference. Does the scenario show that digital notes are ineffective?</p>
+</div>
+<div class="reveal-answer"><div>
+<p>Amira uses an external resource to store information, reducing the need to remember every detail internally. This is cognitive offloading.</p>
+<p>Ben practises retrieving information without external assistance, which may strengthen his ability to recall it independently.</p>
+<p>The difference illustrates why researchers must distinguish between access to information and unaided memory.</p>
+<p>However, the scenario does not show that digital notes are ineffective. Amira&rsquo;s notes may be valuable when external resources are available, and the students&rsquo; different study strategies make it difficult to attribute the outcome to the technology alone.</p>
 </div></div>
-<div class="collapsible"><button class="collapsible-trigger">AI &amp; Learning</button><div class="collapsible-body">
-<p>AI tools are discussed by psychologists with caution.</p>
-<p><strong>Possible benefits:</strong> feedback, explanations, personalised practice, questioning and scaffolding. <strong>Possible risks:</strong> passive acceptance of answers, reduced productive struggle, inaccurate information, overreliance and weakened monitoring of one&rsquo;s own understanding.</p>
-<p>Using AI does <strong>not</strong> automatically reduce learning &mdash; the effect may depend on <strong>how</strong> the learner uses it. Compare:</p>
-<ul>
-<li><strong>Student A:</strong> asks the AI to generate an answer and copies it.</li>
-<li><strong>Student B:</strong> attempts the problem first, asks the AI for feedback, corrects errors and retrieves the solution later.</li>
+</div>
+
+<div class="lc-sub">AI and Learning</div>
+<p>The same principle applies to AI tools. Compare two students given the same question:</p>
+<div class="lc-cards lc-c2">
+<div class="lc-card"><p class="lc-tag">Student A</p><p>Asks an AI tool to produce an answer, copies it and submits the work without checking their understanding.</p></div>
+<div class="lc-card"><p class="lc-tag">Student B</p><p>Attempts the question independently, uses AI feedback to identify errors, revises their explanation and later tests whether they can reproduce the answer without assistance.</p></div>
+</div>
+<p><span class="lc-why">What this demonstrates:</span> Student A may complete the task successfully without engaging deeply with the material. Student B uses the technology to support feedback, error correction and retrieval practice. The distinction is not simply whether AI was used, but <strong>what cognitive activity occurred during its use</strong>.</p>
+<div class="lc-amber">
+<p><strong>Keep this in mind:</strong> AI feedback can be inaccurate, so learners need to evaluate the information they receive. And one hypothetical comparison illustrates possibilities &mdash; it does not prove that AI improves or damages learning.</p>
+</div>
+<p class="lc-apply">Apply Your Understanding &mdash; AI and Learning</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>A school introduces an AI tutor. Students using the tutor achieve higher scores on practice activities. However, when they complete a delayed examination without AI assistance, their scores are similar to those of students who did not use the tutor.</p>
+<p>Explain why the results might differ between the practice activities and the delayed examination. What additional evidence would help determine whether the AI tutor improved learning?</p>
+</div>
+<div class="reveal-answer"><div>
+<p>The AI tutor may have supported performance during practice by providing explanations, prompts or answers. This does not necessarily mean that students developed stronger independent understanding or long-term retention.</p>
+<p>The delayed examination measures performance without that assistance and after time has passed.</p>
+<p>Researchers should examine how students used the tutor, whether they attempted retrieval independently, the comparability of the groups, and how learning was measured.</p>
+<p>The findings suggest that AI-supported practice performance improved, but they do not establish an improvement in delayed unaided learning.</p>
+</div></div>
+</div>
+
+<div class="lc-part">Part 2 &mdash; Investigating Technology Scientifically</div>
+
+<div class="lc-sub">Correlation and Causality</div>
+<p>Consider one common finding: <strong>&ldquo;Students who report greater smartphone use also report poorer concentration.&rdquo;</strong> This is a correlation, and the same correlation is consistent with several competing explanations:</p>
+<div class="lc-cards lc-c2">
+<div class="lc-card"><p class="lc-tag">A &mdash; Direct effect</p><p>Greater smartphone use contributes to poorer concentration.</p></div>
+<div class="lc-card"><p class="lc-tag">B &mdash; Reverse direction</p><p>Students who struggle with concentration use smartphones more frequently.</p></div>
+<div class="lc-card"><p class="lc-tag">C &mdash; Third variable</p><p>Another factor, such as stress or sleep, contributes to both.</p></div>
+<div class="lc-card"><p class="lc-tag">D &mdash; Bidirectional</p><p>The relationship may operate in both directions.</p></div>
+</div>
+<p><span class="lc-why">What this demonstrates:</span> these are not four findings established by the correlation. They are competing possibilities, and each remains consistent with the same data until further evidence separates them.</p>
+<p>Longitudinal research (following the same students over time), experiments (manipulating conditions and comparing outcomes) and careful measurement can all help investigate these explanations &mdash; although each approach has limitations.</p>
+
+<div class="lc-sub">Measuring Technology&rsquo;s Effects</div>
+<div class="lc-res">
+<h5>The research question</h5>
+<p><strong>&ldquo;Does a digital flashcard app improve students&rsquo; memory?&rdquo;</strong> The answer depends on how improvement is operationalised. Three possible outcomes show why:</p>
+</div>
+<div class="lc-cards lc-c3">
+<div class="lc-card"><p class="lc-tag">Immediate recall</p><p>Students complete a memory test immediately after using the app.</p></div>
+<div class="lc-card"><p class="lc-tag">Delayed recall</p><p>Students complete a comparable test one week later.</p></div>
+<div class="lc-card"><p class="lc-tag">Unaided recall</p><p>Students must remember the material without accessing the app.</p></div>
+</div>
+<p>A tool might improve one outcome without improving all three: the app could raise immediate quiz scores, leave delayed recall unchanged and be unavailable in an unaided test. &ldquo;Improved memory&rdquo; is not one result &mdash; it is three different possible results.</p>
+<p>The measurement decision can be made precise with four terms:</p>
+<ul class="lc-list">
+<li><strong>Independent variable:</strong> the revision condition or technology intervention.</li>
+<li><strong>Dependent variable:</strong> the specific memory outcome measured.</li>
+<li><strong>Operationalization:</strong> how that outcome is defined and recorded.</li>
+<li><strong>Construct validity:</strong> whether the measure adequately represents the intended aspect of learning or memory.</li>
 </ul>
-<p>Same technology. Very different cognitive engagement. The tool is not the whole story; the learner&rsquo;s activity is part of it.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Correlation &amp; Bidirectional Ambiguity</button><div class="collapsible-body">
-<p>Example: students who use smartphones more report poorer concentration. The same correlation is consistent with several explanations:</p>
-<ul>
-<li><strong>A.</strong> smartphone use contributes to poorer concentration;</li>
-<li><strong>B.</strong> students with poorer concentration use smartphones more;</li>
-<li><strong>C.</strong> another variable (sleep, stress, deadlines) influences both; or</li>
-<li><strong>D.</strong> the relationship is bidirectional &mdash; each influences the other.</li>
-</ul>
-<p><strong>Correlation alone cannot establish causality.</strong> Distinguishing these possibilities is an HL critical-thinking skill: the observed association is consistent with each until further evidence separates them.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Technology Research Changes Quickly</button><div class="collapsible-body">
-<p>Technology evolves faster than many research programmes. A study of one platform or device may become less relevant when software changes, usage patterns change, new technologies appear or populations adapt.</p>
-<p>Interpreting this evidence also requires awareness of <strong>sampling bias</strong>, <strong>publication bias</strong> (successful findings are more likely to be published), <strong>confirmation bias</strong>, <strong>funding influences</strong> and <strong>replication problems</strong>. Keep each point concise and applied: a single study of one app at one point in time is a snapshot, not a law.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">How Should Technology Effects Be Measured?</button><div class="collapsible-body">
-<p>Possible outcome measures include test performance, reaction time, recall, attention-task scores, long-term retention, self-reported concentration and classroom achievement.</p>
-<p><strong>Different measures may produce different conclusions.</strong> For example, a tool may improve immediate quiz scores without improving long-term retention. &ldquo;Learning improved&rdquo; therefore has to be <strong>operationally defined</strong>: the answer depends on what was measured, when it was measured and in comparison with what.</p>
-</div></div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Technology Is Not a Single Cause</h3>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY</strong> &times; <strong>HOW IT IS USED</strong> &times; <strong>COGNITIVE PROCESS</strong> &times; <strong>LEARNER</strong> &times; <strong>CONTEXT</strong> = <strong>POSSIBLE OUTCOME</strong></p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">&ldquo;Does technology improve cognition?&rdquo; is too broad to answer. A stronger conclusion identifies the specific technology, the cognitive process, the population, the comparison and the evidence used &mdash; and states what could and could not be concluded.</p>
+<p>A quiz score does not capture every aspect of cognition. Self-reported concentration is also different from objectively recorded task performance: one is a description of a person&rsquo;s experience, the other is a measurement of behaviour.</p>
+
+<div class="lc-sub">Why Technology Research Is Difficult to Interpret</div>
+<div class="lc-res">
+<h5>1. Technology changes</h5>
+<p>A study of an earlier version of an app may not fully represent its current features. Evidence about technology is a snapshot, not a law.</p>
 </div>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">HL Paper 3 Thinking &mdash; Applying This to Source Analysis</h4>
-<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .5rem;">A Paper 3 source set could focus on something such as motivation in learning. You may need to analyse quantitative findings, analyse qualitative findings, identify limitations, discuss credibility, bias and transferability, synthesise evidence, and draw a conclusion about culture, motivation or technology.</p>
-<p style="font-size:.9rem;line-height:1.65;color:var(--text-secondary);margin:0;">Do not memorise a generic essay. Instead ask: <strong>What does each source actually show? How strong is the evidence? What can and cannot be concluded? How do the sources fit together?</strong></p>
+<div class="lc-res">
+<h5>2. Research participants and settings matter</h5>
+<p>Results from a small sample of university students completing an artificial task may not generalize to younger learners in ordinary classrooms.</p>
 </div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Synthesis &mdash; Culture, Motivation and Technology Interact</h3>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;">Take one learning situation: <strong>a bilingual student uses an AI-supported retrieval-practice app.</strong></p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>CULTURE asks:</strong> what prior knowledge, language and learning expectations shape the student&rsquo;s cognition?</p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION asks:</strong> why does the student engage, persist and regulate their own learning?</p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>TECHNOLOGY asks:</strong> how does the tool alter practice, feedback and cognitive demands?</p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0;">Learning outcomes emerge from <strong>interacting influences</strong> rather than one isolated factor. No single extension explains the outcome on its own.</p>
+<div class="lc-res">
+<h5>3. Research design and reporting matter</h5>
+<p>Measurement choices, selective publication, researcher expectations, funding interests and unsuccessful replications can all affect how confidently evidence is interpreted.</p>
 </div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
+<p>A funding relationship is a reason to examine research independence and transparency &mdash; not automatic proof that findings are false. And these cautions are reasons to judge each study carefully, not reasons to assume that every study of technology suffers from all of these problems.</p>
+<p class="lc-apply">Apply Your Understanding &mdash; Research Evaluation</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>A company reports that students using its learning app achieved scores 20% higher than students who did not use the app. The report does not explain how students were assigned to groups, whether they had similar prior knowledge or when the test took place.</p>
+<p>Identify two specific pieces of information needed before concluding that the app caused better learning. Explain why each matters.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>First, researchers need to know how students were assigned to the groups and whether the groups were comparable before using the app. If students who already performed better were more likely to use the app, this could explain some or all of the difference.</p>
+<p>Second, researchers need to know what the test measured and when it was administered. Higher scores on an immediate test do not necessarily establish better long-term retention.</p>
+<p>The reported difference may be meaningful, but the information provided is insufficient to establish that the app caused an improvement in learning.</p>
+</div></div>
+</div>
+
+<div class="lc-part">Part 3 &mdash; HL Application and Synthesis</div>
+
+<div class="lc-sub">Applying Technology Research to a Scenario</div>
+<p>Part 1 described possible influences on cognition; Part 2 described how they can be investigated. Synthesis means holding both together:</p>
+<p class="lc-dlabel">Technology&rsquo;s possible effects on cognition depend on:</p>
+<div class="lc-others">
+<div class="lc-onode">The tool and its features</div>
+<div class="lc-onode">How the learner uses it</div>
+<div class="lc-onode">The cognitive task</div>
+<div class="lc-onode">Learner characteristics</div>
+<div class="lc-onode">The surrounding context</div>
+</div>
+<p>These factors may interact. This is a conceptual overview, not a fixed mathematical formula and not a guaranteed causal sequence. &ldquo;Does technology improve cognition?&rdquo; is too broad to answer: a strong conclusion always identifies the technology, the task, the learner, the comparison and the evidence &mdash; and states what can and cannot be concluded.</p>
+
+<div class="hl-box">
+<h3>HL Paper 3 Thinking &mdash; Source Analysis Practice</h3>
+<p>Paper 3 asks you to analyse source material: what each source shows, how strong the evidence is, what can and cannot be concluded, and how the sources fit together. The exercise below uses teacher-created hypothetical material so you can practise these skills on concrete evidence.</p>
+<div class="lc-res">
+<h5>Illustrative research scenario</h5>
+<p>Researchers investigate whether receiving smartphone notifications during revision affects immediate memory performance. Forty students are assigned to two conditions. Group A revises with notifications enabled. Group B revises with notifications disabled. Both groups revise the same material for the same amount of time and complete a 20-item memory test immediately afterward.</p>
+</div>
+<div class="lc-res">
+<h5>Source A &mdash; Quantitative Results</h5>
+<table class="lc-table">
+<tr><th>Condition</th><th>Students</th><th>Mean score out of 20</th></tr>
+<tr><td>Notifications enabled</td><td class="num">20</td><td class="num">12</td></tr>
+<tr><td>Notifications disabled</td><td class="num">20</td><td class="num">15</td></tr>
+</table>
+<p class="lc-note">Teacher-created hypothetical data for source-analysis practice. Not findings from a published study.</p>
+</div>
+<div class="lc-res">
+<h5>Source B &mdash; Qualitative Responses</h5>
+<p><span class="lc-mlab">Participant 1:</span> &ldquo;Every time my phone lit up, I wanted to check it. I kept losing my place in the notes.&rdquo;</p>
+<p><span class="lc-mlab">Participant 2:</span> &ldquo;I noticed the notifications, but I ignored most of them. I don&rsquo;t think they affected my revision much.&rdquo;</p>
+<p class="lc-note">Fictional responses created for teaching. Not actual participant quotations.</p>
+</div>
+<p class="lc-apply">Paper 3 Practice 1 &mdash; Interpreting the Quantitative Results</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>Identify one issue that limits the interpretation of the quantitative findings in Source A. Explain why it matters.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>One issue is that Source A reports only the group means and sample sizes. It does not show how widely individual scores varied within each group.</p>
+<p>Although the group without notifications achieved a higher mean score, the absence of variability information limits how fully the difference can be interpreted.</p>
+<p>The findings suggest a difference in immediate test performance under the illustrated conditions, but the table alone does not establish how consistent the effect was across participants.</p>
+</div></div>
+</div>
+<p class="lc-apply">Paper 3 Practice 2 &mdash; Analysing the Numerical Evidence</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>Analyze the findings in Source A using specific numerical evidence, and state a justified conclusion.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>The notifications-enabled group achieved a mean score of 12 out of 20, while the notifications-disabled group achieved 15 out of 20.</p>
+<p>The difference was three points, equivalent to 15 percentage points of the maximum possible test score.</p>
+<p>The data suggest that the group without notifications performed better on the immediate memory test.</p>
+<p>However, the table alone does not establish whether the difference is statistically reliable or whether the same pattern would occur on delayed tests or in other settings.</p>
+</div></div>
+</div>
+<p class="lc-apply">Paper 3 Practice 3 &mdash; Combining Quantitative and Qualitative Evidence</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>How do the qualitative responses in Source B help interpret Source A? Identify one limitation of drawing conclusions from the two responses.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>Participant 1 describes notifications interrupting attention and disrupting revision. This suggests a possible psychological mechanism for the lower mean performance in the notifications-enabled condition.</p>
+<p>Participant 2 reports noticing notifications without feeling substantially affected. This illustrates that students may experience the same condition differently.</p>
+<p>However, the responses are subjective accounts, and two illustrative quotations cannot establish how all participants experienced the task.</p>
+<p>They provide possible explanations rather than proving the mechanism responsible for the group difference.</p>
+</div></div>
+</div>
+<p class="lc-apply">Paper 3 Practice 4 &mdash; Drawing a Justified Conclusion</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>Using both sources, explain what the researchers could reasonably conclude and what remains uncertain.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>Source A shows that students in the notifications-disabled group achieved a higher mean immediate memory score than those in the notifications-enabled group.</p>
+<p>Source B suggests that interruptions to attention could be one explanation, although participants may respond differently.</p>
+<p>Together, the sources support a cautious interpretation that notifications may interfere with immediate memory-task performance under the illustrated conditions.</p>
+<p>However, the available information does not establish the reliability of the difference, the precise mechanism or its generalizability to other learning situations.</p>
+<p>Because the sources are hypothetical teaching materials, they do not provide empirical evidence about actual smartphone effects.</p>
+</div></div>
+</div>
+</div>
+
+<div class="lc-sub">How Culture, Motivation and Technology Interact</div>
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; one student, three interacting influences</p>
+<p>A bilingual student is revising psychology using an AI-supported flashcard app. The app presents questions in English and provides feedback after each response. The student understands some concepts more easily when they connect the English terminology to explanations learned in another language. They are motivated to improve their examination performance and begin testing themselves regularly. The AI app provides feedback and schedules difficult questions for further practice.</p>
+</div>
+<div class="lc-cards lc-c3">
+<div class="lc-card"><p class="lc-tag">Culture and language</p><p>The student&rsquo;s language experience and prior knowledge may influence how they interpret the questions and organize their understanding. Bilingualism does not automatically produce a cognitive advantage or disadvantage.</p></div>
+<div class="lc-card"><p class="lc-tag">Motivation</p><p>The student&rsquo;s goals and willingness to persist may influence how regularly they engage in retrieval practice. Motivation does not replace the cognitive processes involved.</p></div>
+<div class="lc-card"><p class="lc-tag">Technology</p><p>The app provides retrieval opportunities, feedback and scheduled practice. Its effects depend on the quality of its feedback and how the student uses it.</p></div>
+</div>
+<p><span class="lc-why">Synthesis:</span> these influences may interact. Language-related difficulties could affect how easily the student understands a question, while motivation influences whether they persist and technology influences the practice opportunities available. No single factor fully explains the student&rsquo;s learning.</p>
+<p class="lc-apply">Apply Your Understanding &mdash; Integrating HL Perspectives</p>
+<div class="reveal">
+<div class="reveal-question">
+<p>The student performs better on practice questions after using the app for four weeks.</p>
+<p>Explain why the improvement cannot automatically be attributed to the technology alone.</p>
+</div>
+<div class="reveal-answer"><div>
+<p>The improvement may partly reflect the app&rsquo;s retrieval practice and feedback, but other influences could contribute.</p>
+<p>The student&rsquo;s motivation may have increased the frequency and quality of revision. Their prior knowledge and language experience may have influenced how they understood the questions. Additional practice over four weeks may also have improved performance.</p>
+<p>Without an appropriate comparison and careful measurement, the improvement cannot be attributed exclusively to the app.</p>
+<p>The example illustrates why technology, motivation and cultural or linguistic experience should be considered together.</p>
+</div></div>
+</div>
+
+<div class="lc-sub">Final Summary</div>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:.4rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Technology is not one variable: ask which technology, used how, by whom, for what task.</li>
-<li>Technology can support or interfere with learning depending on use &mdash; it is not inherently good or bad.</li>
-<li>Attention and memory may be affected differently; notifications and offloading are separate issues.</li>
-<li>Cognitive offloading can be adaptive: external storage frees cognitive resources, though internal memory may be weaker.</li>
-<li>AI effects depend heavily on how the learner uses the tool &mdash; attempt, feedback, correct, retrieve.</li>
-<li>Correlation does not establish causation, and direction is often ambiguous.</li>
-<li>Technology research faces rapid-change and measurement problems: operationalise the outcome and the technology.</li>
+<li>Technology is not a single psychological variable.</li>
+<li>Attention may be affected by interruptions and task switching.</li>
+<li>Cognitive offloading can be useful, but external access and unaided recall are different outcomes.</li>
+<li>AI can support or bypass productive cognitive activity depending on its use.</li>
+<li>Correlation does not establish causality.</li>
+<li>Researchers must operationalize the outcomes they investigate.</li>
+<li>Research conclusions depend on design, measurement, participants and context.</li>
+<li>Culture, motivation and technology may interact in influencing learning.</li>
 </ol>
+</div>
+
 </div>
 
 </div>
