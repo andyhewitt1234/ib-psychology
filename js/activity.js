@@ -565,6 +565,18 @@ function checkClassification(actId, cfg) {
       ? 'Good effort! ' + correct + ' of ' + total + ' correct. Items highlighted in red are in the wrong bin.'
       : 'You got ' + correct + ' of ' + total + '. Items highlighted in red are misplaced. Click Try Again to redo.';
   showFeedback(actId, correct === total, msg);
+  if (cfg.items.some(function(it) { return it.explain; })) {
+    var fbEl = document.getElementById(actId + '-feedback');
+    if (fbEl) {
+      cfg.items.forEach(function(it) {
+        if (!it.explain) return;
+        var d = document.createElement('div');
+        d.className = 'act-scenario-q-explain';
+        d.innerHTML = '<strong>' + it.id.toUpperCase() + '.</strong> ' + it.explain;
+        fbEl.appendChild(d);
+      });
+    }
+  }
   var checkBtn = document.getElementById(actId + '-check');
   if (checkBtn) checkBtn.disabled = true;
 }

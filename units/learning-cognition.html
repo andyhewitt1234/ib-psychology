@@ -4833,26 +4833,115 @@
 <div class="act-container" id="lc-p23-culture-conclude"></div>
 </div>
 <div class="slide" data-slide="49" id="slide-49">
+<style>
+#slide-49 .lc-part{font-size:1.12rem;font-weight:700;color:var(--text);margin:2rem 0 .55rem;line-height:1.35;padding-bottom:.3rem;border-bottom:2px solid #E2E8F0}
+#slide-49 .lc-body > .lc-part:first-child{margin-top:1.1rem}
+#slide-49 .lc-sub{font-size:1.02rem;font-weight:700;color:var(--text);margin:1.5rem 0 .5rem;line-height:1.35}
+#slide-49 .lc-body p{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-49 .lc-body p:last-child{margin-bottom:0}
+#slide-49 .lc-body strong{color:var(--text)}
+#slide-49 .lc-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
+#slide-49 .lc-list li{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.4rem}
+#slide-49 .lc-why{color:#1D4ED8;font-weight:600}
+#slide-49 .lc-ex-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#15803D;margin:0 0 .35rem}
+#slide-49 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-49 .lc-green p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-49 .lc-green p:last-child{margin-bottom:0}
+#slide-49 .lc-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
+#slide-49 .lc-amber p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
+#slide-49 .lc-amber p:last-child{margin-bottom:0}
+#slide-49 .lc-res{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1rem;margin:.35rem 0 .6rem}
+#slide-49 .lc-res h5{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .4rem;line-height:1.3}
+#slide-49 .lc-res p{font-size:.88rem;line-height:1.6;color:var(--text);margin:0 0 .35rem}
+#slide-49 .lc-res p:last-child{margin-bottom:0}
+#slide-49 .lc-mlab{font-weight:600;color:var(--text)}
+#slide-49 .lc-cards{display:grid;gap:.65rem;margin:.3rem 0 .7rem}
+#slide-49 .lc-c3{grid-template-columns:1fr 1fr 1fr}
+#slide-49 .lc-card{background:#FFFFFF;border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem}
+#slide-49 .lc-card h5{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .3rem;line-height:1.3}
+#slide-49 .lc-card p{font-size:.87rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .3rem}
+#slide-49 .lc-card p:last-child{margin-bottom:0}
+#slide-49 .lc-tag{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 .25rem;color:#1D4ED8}
+#slide-49 .lc-cont{display:flex;gap:.3rem;align-items:stretch;margin:.4rem 0 .5rem}
+#slide-49 .lc-srl{flex:1;min-width:0;background:#F1F5F9;border:1px solid #E2E8F0;border-radius:8px;padding:.55rem .6rem}
+#slide-49 .lc-srl-name{font-size:.78rem;font-weight:700;color:var(--text);margin:0 0 .25rem;letter-spacing:.02em}
+#slide-49 .lc-srl-ex{font-size:.75rem;line-height:1.45;color:var(--text-secondary)}
+#slide-49 .lc-garrow{align-self:center;color:#94A3B8;font-weight:700;font-size:.85rem;padding:0}
+#slide-49 .lc-dlabel{font-size:.85rem;font-weight:600;color:var(--text);margin:.5rem 0 .1rem}
+#slide-49 .lc-path{display:flex;gap:.25rem;align-items:stretch;margin:.35rem 0 .55rem}
+#slide-49 .lc-pnode{flex:1;min-width:0;background:#FFFFFF;border:1px solid #CFE0F7;border-radius:8px;padding:.45rem .35rem;font-size:.75rem;font-weight:600;color:var(--text);text-align:center;display:flex;align-items:center;justify-content:center;line-height:1.3}
+#slide-49 .lc-parrow{align-self:center;color:#94A3B8;font-weight:700;font-size:.8rem;padding:0}
+#slide-49 .hl-box{background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.95rem 1.15rem;margin:1.4rem 0 .4rem}
+#slide-49 .hl-box h3{font-size:1rem;font-weight:700;margin:0 0 .55rem;color:var(--text)}
+#slide-49 .hl-box > p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .5rem}
+#slide-49 .hl-box > p:last-of-type{margin-bottom:.2rem}
+#slide-49 .reveal{background:#FFFFFF;border:1px solid #CFE0F7;border-radius:8px;padding:.7rem .9rem;margin:.5rem 0 .2rem;cursor:pointer}
+#slide-49 .reveal:hover{border-color:#B9D2F5}
+#slide-49 .reveal-question{display:block;font-size:.9rem;font-weight:600;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word;cursor:pointer}
+#slide-49 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.6rem;font-size:.75rem;font-weight:600;color:#1E40AF;background:#E5F0FF;border:1px solid #CFE0F7;padding:.2rem .6rem;border-radius:4px}
+#slide-49 .reveal.open .reveal-question::after{content:'Hide'}
+#slide-49 .reveal-answer p{font-size:.9rem;margin:.4rem 0 0;line-height:1.6;color:var(--text)}
+#slide-49 .reveal-answer p:last-child{margin-bottom:0}
+@media (max-width:640px){
+#slide-49 .lc-cont,#slide-49 .lc-path{flex-direction:column;gap:.4rem}
+#slide-49 .lc-garrow,#slide-49 .lc-parrow{transform:rotate(90deg);padding:.05rem 0}
+#slide-49 .lc-c3{grid-template-columns:1fr}
+#slide-49 .lc-card,#slide-49 .lc-res,#slide-49 .lc-green,#slide-49 .lc-amber,#slide-49 .lc-srl{padding:.7rem .8rem}
+#slide-49 .hl-box{padding:.8rem .9rem}
+}
+</style>
 <h2>HL Extension: Motivation &amp; Independent Learning</h2>
 <p class="slide-intro">HL extension: how motivation can influence engagement with cognitive processes, how learners increasingly regulate their own learning, and how psychologists measure and interpret motivation.</p>
-<div class="collapsible"><button class="collapsible-trigger">Motivation Can Change Cognitive Engagement</button><div class="collapsible-body">
+<div class="lc-body">
+
+<div class="lc-part">Part 1 &mdash; Motivation and Cognitive Engagement</div>
+
+<div class="lc-sub">Motivation Can Change Cognitive Engagement</div>
 <p>Motivation does not simply affect whether someone starts a task. It may also affect <strong>attention</strong>, <strong>persistence</strong>, <strong>effort</strong>, <strong>strategy choice</strong>, <strong>depth of processing</strong>, <strong>willingness to retrieve and practise</strong>, and <strong>response to difficulty</strong>.</p>
-<p><strong>One cognitive process &mdash; memory.</strong> Two students use the same retrieval-practice activity. One is motivated to understand and improve: they attempt recall before checking the answer, notice their errors and retry. The other clicks through only because completion is required: they reveal the answer immediately and never test themselves. The learning opportunity is identical, but their effort, concentration, strategy use and persistence may differ. Motivation therefore may influence cognitive performance <strong>indirectly through engagement</strong> with the cognitive process, rather than being a separate memory mechanism.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Motivation Does Not Replace Cognitive Theory</button><div class="collapsible-body">
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; one cognitive process: memory</p>
+<p>Two students use the same retrieval-practice activity. One is motivated to understand and improve: they attempt recall before checking the answer, notice their errors and retry. The other clicks through only because completion is required: they reveal the answer immediately and never test themselves.</p>
+<p><span class="lc-why">What this demonstrates:</span> the learning opportunity is identical, but their effort, concentration, strategy use and persistence may differ. Motivation therefore may influence cognitive performance <strong>indirectly through engagement</strong> with the cognitive process, rather than being a separate memory mechanism.</p>
+</div>
+
+<div class="lc-sub">Motivation Does Not Replace Cognitive Theory</div>
 <p>Do <strong>not</strong> say &ldquo;motivation causes better memory.&rdquo; Memory still depends on cognitive processes such as <strong>encoding</strong>, <strong>storage</strong>, <strong>retrieval</strong>, <strong>attention</strong> and <strong>cueing</strong>.</p>
 <p>Motivation may influence how fully a learner engages those processes &mdash; how much attention they pay, whether they retrieve or just reread, how long they persist after difficulty. Motivation is therefore an <strong>additional explanation</strong>, not a replacement for cognitive mechanisms. A complete account keeps both levels: the motivation that drives engagement and the cognitive processes that do the work.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">From Dependent to Independent Learning</button><div class="collapsible-body">
+<div class="lc-amber">
+<p><strong>Caution:</strong> motivation can influence how a student engages with a learning strategy, but it does not replace the cognitive mechanisms responsible for learning and memory. Greater motivation is not a guarantee of better outcomes: a motivated student can still use an ineffective strategy, and a less motivated student may perform well because of strong prior knowledge or ability.</p>
+</div>
+
+<div class="lc-sub">Motivation vs Performance</div>
+<p>A motivated student does <strong>not</strong> necessarily perform well, and a high-performing student is <strong>not</strong> necessarily highly motivated.</p>
+<p>Performance is influenced by <strong>ability</strong>, <strong>prior knowledge</strong>, <strong>fatigue</strong>, <strong>stress</strong>, <strong>task difficulty</strong>, <strong>strategy use</strong> and <strong>environmental conditions</strong>. A student may work extremely hard and still underperform on a difficult test; another may score well through strong prior knowledge and little immediate effort.</p>
+<p>Because both directions are possible, motivation and performance are <strong>not interchangeable</strong>: a test score is not a direct measure of motivation, and researchers cannot simply read motivation off a performance outcome.</p>
+
+<div class="lc-part">Part 2 &mdash; Independent Learning and Self-Regulation</div>
+
+<div class="lc-sub">From Dependent to Independent Learning</div>
 <p>An independent learner does not simply &ldquo;study alone.&rdquo; Independent learning involves students increasingly <strong>setting goals</strong>, <strong>selecting strategies</strong>, <strong>monitoring their own understanding</strong>, <strong>evaluating progress</strong>, <strong>adjusting their behaviour</strong> and <strong>persisting without constant external control</strong>.</p>
-<p>This connects to the research concept of <strong>self-regulated learning</strong>: students actively managing their own learning rather than relying on the teacher to direct every step. An accessible cycle:</p>
-<p style="text-align:center;margin:.75rem 0;"><strong>PLAN &rarr; ACT &rarr; MONITOR &rarr; ADJUST</strong></p>
-<p><strong>Realistic example:</strong> a student notices they forget past topics while revising current ones. They plan (Wednesday: review last week&rsquo;s flashcards), act (test themselves, no notes), monitor (mark which cards they still missed) and adjust (schedule those cards again tomorrow instead of moving on). That is self-regulation in action.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Why Self-Regulation Matters for Cognition</button><div class="collapsible-body">
-<p>Independent learning requires students to make decisions about their own cognitive activity.</p>
-<p>A self-regulated learner must decide:</p>
-<ul>
+<p>This connects to the research concept of <strong>self-regulated learning</strong>: students actively managing their own learning rather than relying on the teacher to direct every step. One accessible cycle is:</p>
+<p class="lc-dlabel">One cycle, one example &mdash; revision with flashcards:</p>
+<div class="lc-cont">
+<div class="lc-srl"><div class="lc-srl-name">PLAN</div><div class="lc-srl-ex">Schedule time to review previously learned material.</div></div>
+<div class="lc-garrow">&rarr;</div>
+<div class="lc-srl"><div class="lc-srl-name">ACT</div><div class="lc-srl-ex">Attempt to retrieve the information without looking at notes.</div></div>
+<div class="lc-garrow">&rarr;</div>
+<div class="lc-srl"><div class="lc-srl-name">MONITOR</div><div class="lc-srl-ex">Identify which answers were remembered and which were missed.</div></div>
+<div class="lc-garrow">&rarr;</div>
+<div class="lc-srl"><div class="lc-srl-name">ADJUST</div><div class="lc-srl-ex">Schedule additional practice for the material that was forgotten.</div></div>
+</div>
+<div class="lc-green">
+<p class="lc-ex-tag">Worked example &mdash; self-regulation in action</p>
+<p>A student notices they forget past topics while revising current ones. They <strong>plan</strong> (Wednesday: review last week&rsquo;s flashcards), <strong>act</strong> (test themselves, no notes), <strong>monitor</strong> (mark which cards they still missed) and <strong>adjust</strong> (schedule those cards again tomorrow instead of moving on). Each stage is a decision the student makes about their own learning.</p>
+</div>
+<div class="lc-amber">
+<p><strong>Caution:</strong> independent learning does not mean studying without help or never receiving teacher guidance. Teachers still design tasks, give feedback and model strategies; what changes is who makes the day-to-day decisions about goals, strategies and next steps.</p>
+</div>
+
+<div class="lc-sub">Why Self-Regulation Matters for Cognition</div>
+<p>Independent learning requires students to make decisions about their own cognitive activity. A self-regulated learner must decide:</p>
+<ul class="lc-list">
 <li>what needs to be learned;</li>
 <li>which strategy is appropriate;</li>
 <li>whether information can actually be retrieved;</li>
@@ -4860,44 +4949,85 @@
 <li>when a strategy should be changed; and</li>
 <li>when previously learned material needs to be revisited.</li>
 </ul>
-<p>This means motivation and cognition can interact.</p>
-<p><strong>Motivation may influence whether a learner persists and engages with an effective strategy, while cognitive processes determine what is encoded, retained and retrieved.</strong></p>
-<p>For example, a student may know that retrieval practice is effective but avoid it because it feels difficult. Another student may persist with retrieval, monitor errors and return to weak material. The difference is not a different memory system — it is a difference in how the learner regulates engagement with that system.</p>
+<p>This means motivation and cognition can interact: <strong>motivation may influence whether a learner persists and engages with an effective strategy, while cognitive processes determine what is encoded, retained and retrieved.</strong></p>
+<p>For example, a student may know that retrieval practice is effective but avoid it because it feels difficult. Another student may persist with retrieval, monitor errors and return to weak material. The difference is not a different memory system &mdash; it is a difference in how the learner regulates engagement with that system.</p>
 <p><strong>HL distinction:</strong> knowing an effective learning strategy does not guarantee that a learner will use it, and being highly motivated does not guarantee that the strategy being used is effective.</p>
-</div></div>
 
-<div class="collapsible"><button class="collapsible-trigger">Motivation vs Performance</button><div class="collapsible-body">
-<p>A motivated student does <strong>not</strong> necessarily perform well, and a high-performing student is <strong>not</strong> necessarily highly motivated.</p>
-<p>Performance is influenced by <strong>ability</strong>, <strong>prior knowledge</strong>, <strong>fatigue</strong>, <strong>stress</strong>, <strong>task difficulty</strong>, <strong>strategy use</strong> and <strong>environmental conditions</strong>. A student may work extremely hard and still underperform on a difficult test; another may score well through strong prior knowledge and little immediate effort.</p>
-<p>This is why <strong>a test score is not a direct measure of motivation.</strong> Researchers cannot simply read motivation off a performance outcome.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">How Do Psychologists Measure Motivation?</button><div class="collapsible-body">
-<p>Several methods are used, each with limitations:</p>
-<ul>
-<li><strong>Self-report:</strong> students report their interest, goals or reasons for behaviour. <em>Limitations:</em> demand characteristics (answering what is expected), social desirability, and limited introspective accuracy &mdash; people do not always know why they acted.</li>
-<li><strong>Behavioural indicators:</strong> persistence, task choice, time-on-task and voluntary engagement are observed. <em>Limitation:</em> the same behaviour can have different causes &mdash; time on a task might reflect interest, anxiety about falling behind, or habit.</li>
-<li><strong>Experimental manipulation:</strong> researchers alter rewards, feedback or choice and observe how behaviour changes. <em>Limitation:</em> artificial conditions may reduce ecological validity &mdash; the laboratory is not the classroom.</li>
-<li><strong>Physiological methods:</strong> these are sometimes used for specific primary motives (e.g., hunger or arousal) but are much less direct in capturing complex academic motivation.</li>
-</ul>
-<p>The key idea: <strong>motivation is a construct.</strong> It cannot usually be observed directly; it must be inferred from responses, behaviours or manipulations &mdash; each of which is an indirect indicator.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Operationalisation</button><div class="collapsible-body">
+<div class="lc-sub">How Self-Determination Theory Connects to Independent Learning</div>
+<p>The Motivation: Why We Learn page introduced <strong>Self-Determination Theory (SDT)</strong>: motivation is sustained when three basic psychological needs are supported. Each need has a direct connection to independent learning:</p>
+<div class="lc-cards lc-c3">
+<div class="lc-card"><p class="lc-tag">Autonomy</p><h5>Feeling that one&rsquo;s actions involve meaningful choice or personal ownership</h5><p>A student chooses which revision strategy to use and takes responsibility for following it.</p><p><span class="lc-why">Connection:</span> the choice makes the plan feel self-directed, so the student is more likely to keep going without external pressure.</p></div>
+<div class="lc-card"><p class="lc-tag">Competence</p><h5>Feeling capable of making progress and developing skills</h5><p>A student receives useful feedback and notices improvement after repeated retrieval practice.</p><p><span class="lc-why">Connection:</span> visible progress makes the effort feel worthwhile, which supports persistence through difficulty.</p></div>
+<div class="lc-card"><p class="lc-tag">Relatedness</p><h5>Feeling connected to and supported by other people</h5><p>A student receives encouragement and constructive support from a teacher or classmates.</p><p><span class="lc-why">Connection:</span> feeling supported makes it easier to face errors and difficult material rather than avoiding them.</p></div>
+</div>
+<p>These needs may support the <strong>quality of motivation and engagement</strong> &mdash; but they do not automatically produce effective learning. An autonomy-supported student who freely chooses rereading has chosen an ineffective strategy: the need support feeds motivation, while the strategy determines the cognition.</p>
+
+<div class="lc-part">Part 3 &mdash; Measuring Motivation</div>
+
+<div class="lc-sub">How Do Psychologists Measure Motivation?</div>
+<p>The key idea: <strong>motivation is a construct</strong>. It cannot usually be observed directly; it must be inferred from responses, behaviours or manipulations &mdash; each of which is an indirect indicator. Several methods are used:</p>
+<div class="lc-res">
+<h5>Self-report</h5>
+<p><span class="lc-mlab">What researchers measure:</span> students report their interest, goals or reasons for behaviour &mdash; for example, rating their interest in studying psychology from 1 to 7.</p>
+<p><span class="lc-mlab">What it might indicate:</span> the student&rsquo;s <em>reported</em> interest or the reasons they believe they have.</p>
+<p><span class="lc-mlab">One limitation:</span> demand characteristics (answering what is expected), social desirability, and limited introspective accuracy &mdash; people do not always know why they acted.</p>
+</div>
+<div class="lc-res">
+<h5>Behavioural indicators</h5>
+<p><span class="lc-mlab">What researchers measure:</span> persistence, task choice, time-on-task and voluntary engagement &mdash; for example, how long students voluntarily spend on optional revision questions.</p>
+<p><span class="lc-mlab">What it might indicate:</span> persistence or engagement with the task.</p>
+<p><span class="lc-mlab">One limitation:</span> longer participation does not necessarily mean greater intrinsic motivation &mdash; the same behaviour can have different causes (interest, anxiety about falling behind, or habit).</p>
+</div>
+<div class="lc-res">
+<h5>Experimental manipulation</h5>
+<p><span class="lc-mlab">What researchers do:</span> alter rewards, feedback or choice and observe how behaviour changes.</p>
+<p><span class="lc-mlab">What it might indicate:</span> how behaviour responds when one factor changes.</p>
+<p><span class="lc-mlab">One limitation:</span> a manipulation is a <strong>research procedure, not itself a direct measure</strong> of motivation &mdash; researchers still need an outcome measure after manipulating choice or rewards. Artificial conditions may also reduce ecological validity: the laboratory is not the classroom.</p>
+</div>
+<div class="lc-res">
+<h5>Physiological methods</h5>
+<p><span class="lc-mlab">What researchers measure:</span> bodily responses such as arousal.</p>
+<p><span class="lc-mlab">What it might indicate:</span> useful for specific primary motives (e.g., hunger or arousal).</p>
+<p><span class="lc-mlab">One limitation:</span> physiological activity does not provide a straightforward measure of complex academic motivation.</p>
+</div>
+
+<div class="lc-sub">Operationalisation</div>
 <p>Research question: &ldquo;Does giving students more choice increase motivation?&rdquo;</p>
-<p>Before running the study, psychologists must decide how <strong>motivation</strong> will be measured. Possible operationalisations:</p>
-<ul>
+<p>Before running the study, psychologists must decide how <strong>motivation</strong> will be measured. Three terms keep this decision clear:</p>
+<div class="lc-res">
+<p><span class="lc-mlab">Construct:</span> the psychological characteristic researchers want to investigate &mdash; here, motivation.</p>
+<p><span class="lc-mlab">Operationalisation:</span> the specific way researchers define or measure that characteristic in a study.</p>
+<p><span class="lc-mlab">Measure:</span> the actual recorded response, score or behaviour.</p>
+</div>
+<p>Possible operationalisations of motivation in the choice study:</p>
+<ul class="lc-list">
 <li>a self-report motivation score from a questionnaire;</li>
 <li>voluntary time spent on optional practice;</li>
 <li>number of tasks attempted; or</li>
 <li>persistence after difficulty.</li>
 </ul>
-<p>Each captures only part of the construct. Choosing a measure is an <strong>operationalisation decision</strong>, and different measures may lead to different conclusions about the same manipulation &mdash; a strong Measurement link.</p>
-</div></div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">HL Thinking &mdash; From Motivation to Outcome</h3>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;"><strong>MOTIVATION</strong> &rarr; engagement &rarr; strategy use &rarr; persistence &rarr; cognitive processing &rarr; learning outcome</p>
-<p style="font-size:.92rem;line-height:1.7;color:var(--text);margin:0 0 .75rem;">But motivation must be <strong>inferred from evidence</strong>. Psychologists must therefore distinguish the <strong>construct</strong> (what they are trying to explain) from the <strong>measure</strong> (the specific response or behaviour they recorded).</p>
-<div class="reveal"><div class="reveal-question">Why can a researcher never claim that a questionnaire score IS motivation, rather than a measure of it?</div><div class="reveal-answer"><div>A questionnaire score is a set of responses to particular items, shaped by comprehension, interpretation, social desirability and the wording chosen. It stands in for motivation; it is not the thing itself. The score could be influenced by many features of the measure that have nothing to do with motivation, so the construct and the measure must be kept distinct.</div></div></div>
+<p>Each captures only part of the construct, and the different measures may lead to <strong>different conclusions about the same manipulation</strong> &mdash; choice might raise questionnaire scores while leaving voluntary practice time unchanged. Choosing a measure is an <strong>operationalisation decision</strong>, and judging how well a measure captures its construct (<strong>construct validity</strong>) is a central part of the IB concept of <strong>Measurement</strong>.</p>
+
+<div class="hl-box">
+<h3>HL Thinking &mdash; From Motivation to Outcome</h3>
+<div class="lc-path">
+<div class="lc-pnode">Motivation</div>
+<div class="lc-parrow">&rarr;</div>
+<div class="lc-pnode">Engagement</div>
+<div class="lc-parrow">&rarr;</div>
+<div class="lc-pnode">Strategy use</div>
+<div class="lc-parrow">&rarr;</div>
+<div class="lc-pnode">Persistence</div>
+<div class="lc-parrow">&rarr;</div>
+<div class="lc-pnode">Cognitive processing</div>
+<div class="lc-parrow">&rarr;</div>
+<div class="lc-pnode">Learning outcome</div>
 </div>
+<p>This is <strong>one possible explanatory pathway</strong>, not an inevitable sequence: motivation, engagement, strategy use and persistence may influence one another rather than operating in a fixed linear order.</p>
+<p>Motivation must also be <strong>inferred from evidence</strong>. Psychologists therefore distinguish the <strong>construct</strong> (what they are trying to explain) from the <strong>measure</strong> (the specific response or behaviour they recorded).</p>
+<div class="reveal"><div class="reveal-question">Why is a questionnaire score a measure of motivation rather than motivation itself?</div><div class="reveal-answer"><div><p>Motivation is an <strong>unobservable psychological construct</strong>: no one can see it directly, only its indicators. A questionnaire score is an <strong>observable indicator</strong> &mdash; a set of responses to particular items, shaped by comprehension, interpretation, social desirability and the wording chosen. It stands in for motivation; it is not the thing itself. The score could be influenced by many features of the measure that have nothing to do with motivation, so the construct and the measure must be kept distinct.</p></div></div></div>
+</div>
+
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
@@ -4908,6 +5038,8 @@
 <li>Motivation is a construct: it cannot usually be observed directly, so it is inferred from self-report, behaviour, or experimental manipulation.</li>
 <li>No single measure perfectly captures motivation, and performance is not identical to motivation.</li>
 </ol>
+</div>
+
 </div>
 
 </div>
