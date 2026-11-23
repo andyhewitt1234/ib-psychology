@@ -2013,70 +2013,188 @@
 <div class="act-container" id="hd-culture-apply"></div>
 </div>
 <div class="slide" data-slide="75" id="slide-75">
+<style>
+#slide-75 .hd75-body p{font-size:.9rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-75 .hd75-body p:last-child{margin-bottom:0}
+#slide-75 .hd75-body strong{color:var(--text)}
+#slide-75 .hd75-part{font-size:1.1rem;font-weight:700;color:var(--text);margin:1.55rem 0 .6rem;padding-bottom:.3rem;border-bottom:2px solid #E2E8F0;line-height:1.35}
+#slide-75 .hd75-body > .hd75-part:first-child{margin-top:.8rem}
+#slide-75 .hd75-sub{font-size:1rem;font-weight:700;color:var(--text);margin:1.15rem 0 .45rem;line-height:1.35}
+#slide-75 .hd75-duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:.5rem 0 .75rem}
+#slide-75 .hd75-trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:.5rem 0 .75rem}
+#slide-75 .hd75-card{background:#FFFFFF;border:1px solid var(--border);border-radius:8px;padding:.7rem .85rem}
+#slide-75 .hd75-card h4{font-size:.89rem;font-weight:700;color:var(--text);margin:0 0 .35rem;line-height:1.35}
+#slide-75 .hd75-card p{font-size:.86rem;line-height:1.52;color:var(--text-secondary);margin:0}
+#slide-75 .hd75-quote{font-style:italic;color:var(--text)}
+#slide-75 .hd75-body ul.hd75-tight{margin:.35rem 0 .7rem;padding-left:1.2rem}
+#slide-75 .hd75-body ul.hd75-tight li{font-size:.88rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .28rem}
+#slide-75 .hd75-body ul.hd75-tight li strong{color:var(--text)}
+#slide-75 .hd75-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:9px;padding:.75rem .95rem;margin:.5rem 0 .8rem}
+#slide-75 .hd75-green h4{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .4rem}
+#slide-75 .hd75-green p{font-size:.88rem;line-height:1.55;color:var(--text);margin:0 0 .45rem}
+#slide-75 .hd75-green p:last-child{margin-bottom:0}
+#slide-75 ol.hd75-seq{margin:0 0 .5rem;padding-left:1.25rem}
+#slide-75 ol.hd75-seq li{font-size:.88rem;line-height:1.55;color:var(--text);margin:0 0 .3rem}
+#slide-75 .hd75-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:9px;padding:.65rem .9rem;margin:.5rem 0 .8rem}
+#slide-75 .hd75-amber p{font-size:.86rem;line-height:1.55;color:var(--text);margin:0}
+#slide-75 .hd75-research{background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin:.45rem 0 .6rem}
+#slide-75 .hd75-research h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .45rem}
+#slide-75 .hd75-research p{font-size:.88rem;line-height:1.58;color:var(--text);margin:0 0 .5rem}
+#slide-75 .hd75-research p:last-child{margin-bottom:0}
+#slide-75 .hd75-app{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:10px;padding:.85rem 1rem;margin:.55rem 0 .9rem}
+#slide-75 .hd75-app h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .45rem}
+#slide-75 .hd75-app p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .5rem}
+#slide-75 .reveal{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:8px;padding:.7rem .9rem;margin:.5rem 0 .9rem}
+#slide-75 .hd75-app .reveal{background:#FFFFFF;margin:0}
+#slide-75 .reveal-question{display:block;text-align:left;font-size:.9rem;line-height:1.6;color:var(--text);white-space:normal;overflow-wrap:break-word}
+#slide-75 .reveal-question::after{content:'Answer';display:table;width:max-content;margin-top:.6rem;font-size:.76rem;font-weight:700;color:#1D4ED8;background:#FFFFFF;border:1px solid #B7CFF2;padding:.18rem .65rem;border-radius:4px}
+#slide-75 .reveal-answer{background:#FFFFFF;border-radius:6px}
+#slide-75 .reveal.open .reveal-answer{padding:.45rem .6rem .25rem}
+#slide-75 .reveal-answer div{font-size:.88rem;line-height:1.6;color:var(--text)}
+#slide-75 .reveal-answer p{margin:0 0 .55rem}
+#slide-75 .hd75-summary{background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:.85rem 1rem;margin-top:1.1rem}
+#slide-75 .hd75-summary h3{font-size:1rem;font-weight:700;margin:0 0 .5rem;color:var(--text)}
+#slide-75 .hd75-summary ol{margin:0;padding-left:1.25rem}
+#slide-75 .hd75-summary li{font-size:.88rem;line-height:1.55;color:var(--text-secondary);margin:0 0 .3rem}
+@media (max-width:760px){#slide-75 .hd75-trio,#slide-75 .hd75-duo{grid-template-columns:1fr}}
+</style>
 <h2>HL Extension: Motivation &amp; Human Development</h2>
-<p class="slide-intro">HL extension: motivation as an influence on children&rsquo;s learning, behaviour and development &mdash; before, during and after rewards.</p>
-<div class="collapsible"><button class="collapsible-trigger">The Active Child</button><div class="collapsible-body">
-<p>Children are not passive receivers of development. They <strong>explore</strong>, <strong>practise</strong>, <strong>persist</strong>, <strong>imitate</strong> and <strong>seek approval</strong>. Motivation is what gives this activity direction and energy.</p>
-<ul>
-<li>Exploring a new object is intrinsically driven curiosity.</li>
-<li>Repeating a skill until it is mastered is practice with a purpose.</li>
-<li>Approval-seeking reflects the child&rsquo;s sensitivity to social feedback.</li>
-</ul>
-<p>Motivation therefore helps explain why children engage with the world at all &mdash; the engine behind much of what developmental psychologists study.</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">A toddler builds and rebuilds the same block tower many times. Is this wasted effort?</div><div class="reveal-answer"><div>No. From a developmental view, repeated practice is intrinsically motivated activity through which skills and expectations are consolidated. The behaviour is explained less by the outcome (a tower) than by the drive to master and understand &mdash; that drive is motivation.
+<p class="slide-intro">Motivation helps explain why children choose some activities, keep practising them and persist when they become difficult. It contributes to development through what children do and repeat, but it works alongside biological, cognitive and social influences.</p>
+<div class="hd75-body">
+
+<div class="hd75-part">Part 1 &mdash; Motivation and the Developing Child</div>
+
+<div class="hd75-sub">The Active Child</div>
+<p>Children are not passive receivers of development. They <strong>explore</strong>, <strong>practise</strong>, <strong>persist</strong>, <strong>imitate</strong> and <strong>seek approval</strong>. Exploring a new object can reflect curiosity; repeating a skill is purposeful practice; approval-seeking reflects sensitivity to social feedback.</p>
+<p>Children influence their own development through the activities they choose and repeat. A child who enjoys solving puzzles may practice more often, encounter increasingly difficult problems and develop new strategies. Motivation helps explain why the child engages in these experiences, while learning and development depend on what happens during them.</p>
+<div class="reveal"><div class="reveal-question">A toddler builds and rebuilds the same block tower many times. Is this wasted effort?</div><div class="reveal-answer"><div>No. Repeatedly rebuilding may be practice through which the toddler tests what works and consolidates skills and expectations. The behaviour may reflect interest and a drive to master, but observation alone cannot prove the exact motive. Motivation helps explain engagement; development depends on what the child learns during the activity.
 </div></div>
 </div>
-<div class="collapsible"><button class="collapsible-trigger">Intrinsic and Extrinsic Motivation</button><div class="collapsible-body">
-<ul>
-<li><strong>Intrinsic motivation:</strong> behaviour is driven primarily by internal reasons &mdash; enjoyment, curiosity, personal value. <strong>Example:</strong> a child reads at bedtime because they genuinely enjoy the story.</li>
-<li><strong>Extrinsic motivation:</strong> behaviour is influenced by external rewards, consequences, pressure or approval. <strong>Example:</strong> a child completes reading pages because each completed page earns game time.</li>
+
+<div class="hd75-sub">Intrinsic and Extrinsic Motivation</div>
+<p><strong>Intrinsic motivation:</strong> doing an activity because the activity itself is interesting or enjoyable. <strong>Example:</strong> a child reads because they enjoy discovering what happens in the story.</p>
+<p><strong>Extrinsic motivation:</strong> doing an activity for a separate outcome, including rewards, avoiding consequences or achieving personally valued goals. <strong>Example:</strong> a child reads because they want to earn game time.</p>
+<p>Studying because education matters for a future career is a relatively autonomous form of <strong>extrinsic</strong> motivation, not intrinsic motivation. You have already met the fuller regulation continuum in Learning &amp; Cognition; the key distinctions here are:</p>
+<ul class="hd75-tight">
+<li><strong>External regulation</strong> &mdash; external reward or pressure.</li>
+<li><strong>Introjected regulation</strong> &mdash; internal pressure such as guilt.</li>
+<li><strong>Identified regulation</strong> &mdash; personally valued outcome.</li>
+<li><strong>Integrated regulation</strong> &mdash; behavior aligned with wider identity and values.</li>
+<li><strong>Intrinsic motivation</strong> &mdash; enjoyment or interest in the activity itself.</li>
 </ul>
-<p><strong>Do not assume one type is always good and the other always bad.</strong> External structure can start a behaviour that later becomes personally valued, and an intrinsic drive alone does not guarantee persistence or success.</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">A child who first did chores only for pocket money later does them unprompted. Which process has changed?</div><div class="reveal-answer"><div>The behaviour has shifted from being maintained primarily by an external reward toward more internal reasons over time. This is a gradual process, not a switch &mdash; and it does not mean the reward was &ldquo;good&rdquo; or &ldquo;bad.&rdquo; It shows motivation is dynamic, not fixed.
-</div></div>
+<p>Neither broad category is always better. External structure can begin a behaviour that later becomes personally valued, while intrinsic interest alone does not guarantee persistence or success.</p>
+
+<div class="hd75-sub">How Motivation Contributes to Development</div>
+<div class="hd75-green">
+<h4>Worked example &mdash; learning to read over several months</h4>
+<ol class="hd75-seq">
+<li>The child becomes interested in stories.</li>
+<li>Interest encourages the child to spend time reading.</li>
+<li>Repeated reading provides opportunities to practise recognizing words and understanding sentences.</li>
+<li>Feedback and successful experiences may increase confidence.</li>
+<li>Growing competence may encourage further reading.</li>
+</ol>
+<p>Motivation and competence can influence one another. This is one possible sequence, not a guaranteed or strictly linear pathway. A child may move back and forth between these steps, or stop if support, interest or opportunities change.</p>
 </div>
-<div class="collapsible"><button class="collapsible-trigger">Self-Determination Theory</button><div class="collapsible-body">
-<p><strong>Self-Determination Theory</strong> proposes that three psychological needs support sustained, self-directed engagement:</p>
-<ul>
-<li><strong>Autonomy</strong> &mdash; feeling the activity is genuinely chosen, not imposed.</li>
-<li><strong>Competence</strong> &mdash; feeling capable of making achievable progress.</li>
-<li><strong>Relatedness</strong> &mdash; feeling connected to and supported by others.</li>
-</ul>
-<p><strong>One continuous example:</strong> a child learning to read is more likely to keep reading when they help choose their own books (<strong>autonomy</strong>), experience success with texts that stretch them slightly (<strong>competence</strong>), and can talk about stories with family who listen and respond (<strong>relatedness</strong>).</p>
-<p>SDT predicts that when these needs are supported, engagement is more likely to be maintained &mdash; even when external rewards are removed.</p>
-</div></div>
+
+<div class="hd75-part">Part 2 &mdash; Self-Determination Theory and Internalization</div>
+
+<div class="hd75-sub">Autonomy, Competence and Relatedness</div>
+<p><strong>Self-Determination Theory</strong> proposes three psychological needs that can support sustained, self-directed engagement. The same reading example shows what each need means in practice.</p>
+<div class="hd75-trio">
+<div class="hd75-card"><h4>Autonomy</h4><p>The child can choose between several suitable books. Choice may support a sense of ownership over the activity rather than feeling that reading is simply imposed.</p></div>
+<div class="hd75-card"><h4>Competence</h4><p>The child reads books that are challenging but manageable and receives useful feedback. Experiencing progress may encourage continued engagement.</p></div>
+<div class="hd75-card"><h4>Relatedness</h4><p>A parent or teacher listens to the child read and discusses the story. Feeling supported and connected may make the activity more meaningful.</p></div>
+</div>
+<p>When autonomy, competence and relatedness are supported, children may be more willing to engage and persist. Continued engagement can provide additional opportunities to practice skills, but the quality of instruction, prior knowledge and other developmental factors also matter. Support for these needs does <strong>not</strong> guarantee better academic performance.</p>
 <div class="reveal"><div class="reveal-question">An app rewards reading with points. After the points stop, the child reads less. How should an SDT-trained psychologist interpret this?</div><div class="reveal-answer"><div>The reward supported engagement while it was present. When it stops, reading may decline if the activity has not become internally valued or if the child&rsquo;s needs for autonomy, competence and relatedness were not otherwise supported. This is not a claim that rewards &ldquo;destroyed&rdquo; motivation &mdash; the effect depends on the type of reward, the task, the context and how controlling the child experiences it.
 </div></div>
 </div>
-<div class="collapsible"><button class="collapsible-trigger">Extrinsic Motivators in Child Social Development</button><div class="collapsible-body">
-<p>Praise, stickers, points and consequences are common in families, classrooms and apps. Over time, externally supported behaviour can become <strong>internalised</strong> &mdash; the child comes to value the activity itself.</p>
-<ul>
-<li>This internalisation is <strong>not automatic</strong> and does not happen at the same rate for every child.</li>
-<li>It depends on the <strong>type</strong> of motivator (informative feedback versus controlling threats), the <strong>context</strong>, the <strong>task</strong> and how the individual <strong>interprets</strong> the situation.</li>
-<li>Evidence of reduced interest after rewards in some conditions does <strong>not</strong> warrant the sweeping claim that &ldquo;rewards destroy motivation.&rdquo;</li>
+
+<div class="hd75-sub">How Extrinsic Motivation Becomes Internalized</div>
+<div class="hd75-duo">
+<div class="hd75-card"><h4>Initially</h4><p>A child helps clean the kitchen to receive pocket money. The reason for acting is the external reward.</p></div>
+<div class="hd75-card"><h4>Later</h4><p>The child helps because they understand that contributing to the household is important. The reason for acting has changed.</p></div>
+</div>
+<p>The child may now personally value helping, even if cleaning is not enjoyable. This illustrates <strong>internalization</strong>, in which an externally encouraged behavior becomes more personally accepted or valued.</p>
+<ul class="hd75-tight">
+<li>Internalization does <strong>not</strong> automatically produce intrinsic motivation.</li>
+<li>A personally valued activity can remain extrinsically motivated.</li>
+<li>Internalization is not inevitable or identical across children.</li>
+<li>Changes in motivation do not have to follow a fixed sequence.</li>
 </ul>
-</div></div>
-<div class="reveal"><div class="reveal-question">&ldquo;Praise always undermines intrinsic motivation.&rdquo; Evaluate this claim.</div><div class="reveal-answer"><div>Too absolute. Effects depend on the type of praise (informative versus controlling), the task, the child&rsquo;s age and individual differences. Some forms of feedback support perceived competence and motivation; other forms may feel controlling. The strong answer rejects universal rules and asks about the specific condition.
+<div class="reveal"><div class="reveal-question">A child who first did chores only for pocket money later does them unprompted. Which process has changed?</div><div class="reveal-answer"><div>This describes internalization: the reason for helping has become more personally accepted or valued. It does not prove that cleaning has become intrinsically enjoyable; the child may act because contributing is important. Internalization is gradual and not inevitable, and motivation can change in different ways rather than following a fixed sequence. The reward was neither automatically helpful nor harmful.
 </div></div>
 </div>
-<div class="collapsible"><button class="collapsible-trigger">Motivation Is One Part of the System</button><div class="collapsible-body">
-<p>Motivation helps explain why children engage, practise and persist &mdash; <strong>but</strong> motivation is not the only influence on development. Biological (maturation, attention, health), cognitive (beliefs about ability, prior knowledge) and sociocultural (norms, models, expectations, teaching quality) factors all play a role.</p>
-<p><strong>Conclusion:</strong> motivation helps explain why children engage, but it is <strong>not a single cause</strong> of developmental outcomes. Strong explanations combine motivational processes with what else is operating in a child&rsquo;s situation.</p>
+
+<div class="hd75-sub">Rewards, Praise and Motivation</div>
+<p>Praise, stickers, points and consequences are common in families, classrooms and apps. The important distinction is between <strong>supportive, informational feedback</strong> and <strong>controlling feedback</strong>.</p>
+<div class="hd75-duo">
+<div class="hd75-card"><h4>Teacher A &mdash; informational feedback</h4><p><span class="hd75-quote">&ldquo;You tried several ways of shading the picture. Your practice is really showing.&rdquo;</span></p><p>This is specific and focused on effort and progress. It may support perceived competence by helping the child see what they have improved.</p></div>
+<div class="hd75-card"><h4>Teacher B &mdash; controlling reward</h4><p><span class="hd75-quote">&ldquo;You only get a reward if your drawing is better than everyone else&rsquo;s.&rdquo;</span></p><p>This makes approval depend on comparison. A controlling reward or competitive pressure may shift attention toward external evaluation rather than the activity itself.</p></div>
+</div>
+<div class="hd75-amber"><p><strong>Caution:</strong> do not conclude that every reward undermines intrinsic motivation. Effects can depend on reward expectations, the child&rsquo;s initial interest, the nature of the activity and how the reward is experienced.</p></div>
+<div class="reveal"><div class="reveal-question">&ldquo;Praise always undermines intrinsic motivation.&rdquo; Evaluate this claim.</div><div class="reveal-answer"><div>Too absolute. Specific, informational feedback can support perceived competence and motivation, while controlling or comparison-based praise may feel pressuring and shift attention toward external evaluation. Effects depend on the task, the child&rsquo;s age, initial interest and individual differences. A strong answer rejects universal rules and asks what kind of praise was used in this particular context.
 </div></div>
+</div>
+
+<div class="hd75-sub">Research Evidence &mdash; Lepper, Greene and Nisbett (1973): Rewards and Children&rsquo;s Motivation</div>
+<div class="hd75-research">
+<h4>Research Evidence &mdash; Lepper, Greene and Nisbett (1973): Rewards and Children&rsquo;s Motivation</h4>
+<p><strong>Aim:</strong> to investigate whether expecting a reward for an enjoyable activity could affect children&rsquo;s subsequent intrinsic interest.</p>
+<p><strong>Method:</strong> preschool children who already showed interest in drawing were selected. They were assigned to three conditions. In the <strong>expected-reward</strong> condition, children agreed to draw in order to receive a &ldquo;Good Player Award&rdquo; certificate. In the <strong>unexpected-reward</strong> condition, children received the same award after drawing but had not been told about it beforehand. In the <strong>no-reward</strong> condition, children neither expected nor received an award. About one to two weeks later, researchers observed how much time children voluntarily spent with the drawing materials when rewards were no longer being offered.</p>
+<p><strong>Findings:</strong> children in the expected-reward condition spent less subsequent free-choice time drawing than children in the other two conditions. In the original study, average time with the drawing materials was 8.59% in the expected-reward condition, 16.73% in the no-reward condition and 18.09% in the unexpected-reward condition. This is a group pattern, not evidence that every child lost interest.</p>
+<p><strong>Why the findings matter:</strong> the study suggests that expected external rewards can sometimes reduce subsequent voluntary engagement in an activity children initially enjoyed. If rewards influence whether children continue an activity, they may also influence opportunities for practice and learning over time. However, the study did not demonstrate permanent developmental harm.</p>
+<p><strong>Strength:</strong> the experimental comparison of reward conditions strengthens causal conclusions about the effect of those conditions on the measured behavior.</p>
+<p><strong>Limitations:</strong> the study investigated one activity, a particular preschool population, a specific reward arrangement and a relatively short-term outcome. The findings should not be generalized to all rewards, all ages or all learning activities.</p>
+</div>
+
+<div class="hd75-part">Part 3 &mdash; Evaluating Motivation in Development</div>
+
+<div class="hd75-sub">Motivation Is One Part of the System</div>
+<p>Motivation helps explain why children engage, practise and persist, but it is not the only influence on development. Two children may be equally interested in learning mathematics. One receives appropriate instruction, sufficient practice opportunities and helpful feedback. The other has limited access to instruction and frequently misses lessons. Similar motivation does not necessarily produce similar developmental outcomes.</p>
+<p>Motivation may interact with:</p>
+<ul class="hd75-tight">
+<li>Biological maturation and health.</li>
+<li>Prior knowledge and cognitive abilities.</li>
+<li>Teaching quality and opportunities.</li>
+<li>Family and cultural expectations.</li>
+<li>Social support and feedback.</li>
+</ul>
+<p><strong>Conclusion:</strong> motivation helps explain engagement, but it is not a single cause of developmental outcomes. Strong explanations combine motivational processes with what else is operating in the child&rsquo;s situation.</p>
 <div class="reveal"><div class="reveal-question">A teacher says: &ldquo;Motivation alone determines how much a child learns.&rdquo; Evaluate the claim.</div><div class="reveal-answer"><div>Motivation is one important influence, but learning also depends on prior knowledge, task demands, cognitive capacity, teaching quality, attention, health and environment. Claiming a single cause ignores the interacting system of developmental influences.
 </div></div>
 </div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Motivation gives children&rsquo;s behaviour direction: intrinsic reasons come from within, extrinsic reasons from outside &mdash; neither is always better.</li>
-<li>Self-Determination Theory: autonomy, competence and relatedness support sustained engagement.</li>
-<li>Extrinsically motivated behaviour can become internalised, but the process is gradual, not automatic and not identical across children.</li>
-<li>Be cautious with &ldquo;rewards backfire&rdquo; claims &mdash; effects depend on type, context and individual interpretation.</li>
-<li>Motivation is one part of a wider developmental system, not a single cause.</li>
+
+<div class="hd75-sub">Does Motivation Cause Developmental Improvement?</div>
+<p>Links between motivation and achievement can work in more than one direction:</p>
+<ul class="hd75-tight">
+<li><strong>Motivation influences learning:</strong> a motivated child may practice more frequently.</li>
+<li><strong>Competence influences motivation:</strong> a child who improves may become more confident and interested.</li>
+<li><strong>Other factors influence both:</strong> supportive teaching may improve competence while also encouraging motivation.</li>
+</ul>
+<p>A correlation between motivation and achievement cannot establish which process caused the other. An association shows that variables occur together. An experiment such as Lepper, Greene and Nisbett&rsquo;s can support a causal effect of a particular reward condition on measured behavior, but only over the period studied. Long-term developmental conclusions require evidence about persistence, practice and changing contexts over time.</p>
+
+<div class="hd75-sub">HL Application and Evaluation</div>
+<div class="hd75-app">
+<h4>HL Application &mdash; Motivation and Development</h4>
+<p><strong>Scenario:</strong> an eight-year-old child, Maya, enjoys drawing and regularly practices at home. Her teacher introduces a system in which students receive prizes for completing drawings. Maya initially produces more drawings, but several weeks later she spends less time drawing voluntarily when prizes are unavailable. Her teacher concludes that rewards have permanently damaged Maya&rsquo;s creativity.</p>
+<div class="reveal"><div class="reveal-question"><strong>Using Self-Determination Theory and research evidence, explain Maya&rsquo;s behavior and evaluate the teacher&rsquo;s conclusion.</strong></div><div class="reveal-answer"><div><p>Maya&rsquo;s initial increase shows that the prize raised <strong>rewarded performance</strong>; by itself it does not show stronger voluntary interest. SDT suggests that an expected, externally controlled reward can shift attention toward the external outcome. If the prize becomes the perceived reason for drawing, autonomy may be reduced; if it makes evaluation depend on comparison with others, competence may become tied to external standards rather than felt progress.</p><p>Lepper, Greene and Nisbett (1973) found that preschool children who expected a reward for drawing later spent less free-choice time drawing than children who received an unexpected reward or no reward. This supports the view that expected rewards can sometimes reduce later voluntary engagement, but it does not show that every child loses interest or that creativity is permanently damaged. Maya&rsquo;s later reduction could also reflect novelty wearing off, changes in the drawings she chooses to make, the end of a routine, fatigue, other interests or how she interpreted the prize system; individual differences matter.</p><p>The teacher&rsquo;s conclusion is therefore too strong. A balanced conclusion is that the reward system may have changed Maya&rsquo;s immediate performance and possibly her voluntary interest, but more evidence is needed before claiming permanent harm to her creativity.</p></div></div>
+</div>
+</div>
+
+<div class="hd75-summary">
+<h3>What Should I Remember?</h3>
+<ol>
+<li>Motivation influences the activities children choose, practice and persist with.</li>
+<li>Intrinsic motivation involves enjoyment of an activity; extrinsic motivation involves a separate outcome or reason.</li>
+<li>Autonomy, competence and relatedness can support engagement.</li>
+<li>Extrinsic motivation can become internalized without becoming intrinsic.</li>
+<li>Expected rewards may reduce intrinsic interest under some conditions, but rewards do not always undermine motivation.</li>
+<li>Motivation interacts with biological, cognitive and sociocultural influences; it does not determine development by itself.</li>
 </ol>
+</div>
+
 </div>
 </div>
 <div class="slide activity-slide" data-slide="76" id="slide-76"><h2>Motivation &amp; Development &mdash; What Is Driving the Behaviour?</h2>
