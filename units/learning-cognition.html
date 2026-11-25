@@ -3918,7 +3918,38 @@
 #slide-40 .reveal-answer ol,#slide-40 .reveal-answer ul{margin:0 0 .55rem;padding-left:1.3rem}
 #slide-40 .reveal-answer li{font-size:.93rem;line-height:1.6;color:var(--text);margin-bottom:.3rem}
 #slide-40 .reveal-answer li:last-child{margin-bottom:0}
+#slide-40 .t40-intro{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.75rem .9rem;margin:.35rem 0 .8rem}
+#slide-40 .t40-block{background:#F8FAFC;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1rem;margin:.4rem 0 .85rem}
+#slide-40 .t40-block h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .4rem;line-height:1.35}
+#slide-40 .t40-block h4:not(:first-child){margin-top:.8rem}
+#slide-40 .t40-block p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .5rem}
+#slide-40 .t40-block p:last-child{margin-bottom:0}
+#slide-40 .t40-legend{display:flex;flex-wrap:wrap;gap:.3rem 1rem;font-size:.8rem;color:var(--text-secondary);margin:.35rem 0 .45rem}
+#slide-40 .t40-swatch{display:inline-block;width:.75rem;height:.75rem;border-radius:3px;vertical-align:-1px;margin-right:.3rem}
+#slide-40 .t40-swatch-study{background:#DBEAFE}
+#slide-40 .t40-swatch-retrieve{background:#D1FAE5}
+#slide-40 .t40-study-cell{background:#DBEAFE!important;color:#1E3A8A!important;font-weight:700;text-align:center!important}
+#slide-40 .t40-retrieve-cell{background:#D1FAE5!important;color:#065F46!important;font-weight:700;text-align:center!important}
+#slide-40 .t40-summary{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin:.55rem 0 .7rem}
+#slide-40 .t40-summary-card{background:#FFFFFF;border:1px solid var(--border);border-left:4px solid #2563EB;border-radius:9px;padding:.7rem .8rem}
+#slide-40 .t40-summary-card.t40-retrieval-card{border-left-color:#059669}
+#slide-40 .t40-summary-label{display:block;font-size:.76rem;font-weight:700;color:var(--text-secondary);margin-bottom:.25rem}
+#slide-40 .t40-summary-card strong{display:block;font-size:.92rem;color:var(--text);line-height:1.4}
+#slide-40 .t40-summary-card p{font-size:.82rem;line-height:1.5;color:var(--text-secondary);margin:.3rem 0 0}
+#slide-40 .t40-eval-grid{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin:.45rem 0 .85rem}
+#slide-40 .t40-eval-card{background:#FFFFFF;border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem}
+#slide-40 .t40-eval-card h5{font-size:.92rem;font-weight:700;color:var(--text);margin:0 0 .4rem}
+#slide-40 .t40-eval-card ul{margin:0;padding-left:1.15rem}
+#slide-40 .t40-eval-card li{font-size:.87rem;line-height:1.6;color:var(--text-secondary);margin-bottom:.35rem}
+#slide-40 .t40-eval-card li:last-child{margin-bottom:0}
+#slide-40 .t40-p3{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.8rem 1rem;margin:.5rem 0 .4rem}
+#slide-40 .t40-p3-label{font-size:.76rem;font-style:italic;color:var(--text-secondary);margin:0 0 .35rem}
+#slide-40 .t40-p3-question{font-size:1.08rem;font-weight:700;line-height:1.45;color:var(--text);margin:0 0 .55rem}
+#slide-40 .t40-guidance{font-size:.88rem;line-height:1.6;color:var(--text);margin:0}
+#slide-40 .t40-guidance strong{font-weight:700}
 @media (max-width:700px){
+#slide-40 .t40-summary,#slide-40 .t40-eval-grid{grid-template-columns:1fr}
+#slide-40 .t40-p3-question{font-size:1rem}
 #slide-40 .lc-c2{grid-template-columns:1fr}
 #slide-40 .lc-flow{flex-direction:column;gap:.35rem}
 #slide-40 .lc-flow-arrow{align-self:center;transform:rotate(90deg)}
@@ -4049,38 +4080,45 @@
 <div class="lc-sub">How Does Metacognition Improve Learning?</div>
 <p>Metacognition helps students identify gaps in their knowledge and make better decisions about how to study. Rather than spending time revising information they already understand, students can focus on areas that need improvement. Retrieval practice can support metacognition because attempting to recall information without notes helps students identify what they actually remember and what they still need to learn.</p>
 <div class="lc-sec">Part 3 &mdash; Research, Evaluation and Application</div>
-<div class="lc-sub">Roediger and Karpicke (2006)</div>
-<div class="lc-res">
+<div class="t40-intro"><p>Roediger and Karpicke (2006) conducted two experiments. This lesson focuses on their second experiment only. You do not need to learn the first experiment.</p></div>
+<div class="t40-block">
 <h4>Aim</h4>
-<p>To investigate whether retrieving information from memory produces better long-term retention than repeatedly studying the same material.</p>
-<h4>Participants and research design</h4>
-<p><strong>Experiment 1:</strong> 120 undergraduate students. <strong>Experiment 2:</strong> 180 undergraduate students. Both experiments used short prose passages from a test-preparation book, &ldquo;The Sun&rdquo; and &ldquo;Sea Otters&rdquo;. Each passage was divided into 30 <em>idea units</em>, meaning complete, scoreable pieces of information, so recall could be measured consistently.</p>
-<p>Experiment 1 compared restudying and testing within the same students, while the final-test delay (5 minutes, 2 days or 1 week) was compared between groups. Experiment 2 used three learning conditions and two final-test intervals (5 minutes and 1 week), with 30 participants in each of the six groups. The passages were counterbalanced across conditions.</p>
-<h4>Procedure &mdash; Experiment 2</h4>
-<p>In a <em>study</em> period (S), participants read the passage for five minutes and recorded how many complete readings they achieved. In a <em>test</em> period (T), they had ten minutes to write down as much as they could remember, without concern for exact wording or order and with no feedback. All participants completed four periods, but study and test periods lasted different amounts of time. Across the three conditions this produced 20, 25 and 35 minutes of active learning. The comparison therefore concerns what students did during each period, not identical total learning time.</p>
+<p>To test whether retrieving information from memory produces better long-term retention than repeatedly studying the same material.</p>
 </div>
+<div class="t40-block">
+<h4>Participants</h4>
+<p>180 Washington University undergraduates aged 18&ndash;24 took part. The researchers used two short prose passages, &ldquo;The Sun&rdquo; and &ldquo;Sea Otters&rdquo;. Each passage was divided into 30 <strong>idea units</strong>. An idea unit is one self-contained piece of information in the passage, such as a single fact or claim. Participants received one point for each idea correctly recalled, so memory could be measured in the same way for everyone.</p>
+</div>
+<div class="t40-block">
+<h4>Procedure</h4>
+<p>Everyone completed four learning periods. In a <strong>study period</strong>, participants read the passage for five minutes and recorded how many complete readings they made. In a <strong>retrieval period</strong>, they closed the passage and had ten minutes to write down as much as they could remember. Exact wording and order did not matter, and no feedback was given.</p>
+<div class="t40-legend"><span><i class="t40-swatch t40-swatch-study"></i>Five-minute study period</span><span><i class="t40-swatch t40-swatch-retrieve"></i>Ten-minute retrieval period</span></div>
 <div class="lc-tablewrap">
 <table class="lc-table">
 <thead><tr><th>Condition</th><th>Period 1</th><th>Period 2</th><th>Period 3</th><th>Period 4</th></tr></thead>
 <tbody>
-<tr><td><strong>SSSS &mdash; Repeated study</strong></td><td>Study</td><td>Study</td><td>Study</td><td>Study</td></tr>
-<tr><td><strong>SSST &mdash; Study followed by one retrieval test</strong></td><td>Study</td><td>Study</td><td>Study</td><td>Test</td></tr>
-<tr><td><strong>STTT &mdash; Study followed by repeated retrieval tests</strong></td><td>Study</td><td>Test</td><td>Test</td><td>Test</td></tr>
+<tr><td><strong>Repeated studying</strong></td><td class="t40-study-cell">Study</td><td class="t40-study-cell">Study</td><td class="t40-study-cell">Study</td><td class="t40-study-cell">Study</td></tr>
+<tr><td><strong>Single retrieval</strong></td><td class="t40-study-cell">Study</td><td class="t40-study-cell">Study</td><td class="t40-study-cell">Study</td><td class="t40-retrieve-cell">Recall</td></tr>
+<tr><td><strong>Repeated retrieval</strong></td><td class="t40-study-cell">Study</td><td class="t40-retrieve-cell">Recall</td><td class="t40-retrieve-cell">Recall</td><td class="t40-retrieve-cell">Recall</td></tr>
 </tbody>
 </table>
 </div>
-<div class="lc-res">
-<p>After the four periods, participants predicted how well they would remember the passage after one week. They then completed a final free-recall test either five minutes or one week later.</p>
-<h4>Findings &mdash; Experiment 2</h4>
-<p>After five minutes, repeated studying produced the highest recall: SSSS 83%, SSST 78% and STTT 71% of idea units. After one week, the order reversed: STTT 61%, SSST 56% and SSSS 40%. In the repeated-test condition, participants had one five-minute study period and recorded an average of 3.4 complete readings of the passage, compared with 14.2 readings across four study periods in the repeated-study condition.</p>
-<h4>Students&rsquo; predictions</h4>
-<p>Participants who repeatedly studied expected to remember more after one week than participants in the test conditions. On a seven-point scale, their average prediction was 4.8, compared with 4.2 for one test and 4.0 for repeated tests. In reality, the repeated-study group had the lowest delayed recall (40%, compared with 56% and 61%). This connects to metacognition: confidence created by rereading was not a reliable guide to later recall.</p>
-<h4>Findings &mdash; Experiment 1</h4>
-<p>The first experiment showed the same pattern. Restudying produced higher immediate recall than testing (81% versus 75% after five minutes). After two days, testing produced higher recall than restudying (68% versus 54%), as it did after one week (56% versus 42%).</p>
+<p>After the four periods, participants rated how well they expected to remember the passage after one week. They then completed a final free-recall test. Half of the participants in each learning condition completed this test after five minutes and the other half completed it after one week.</p>
 </div>
-<div class="rk-chart" role="img" aria-label="Grouped bar chart of Experiment 2 final recall. After five minutes: repeated study 83 percent, single retrieval test 78 percent, repeated retrieval tests 71 percent. After one week: repeated study 40 percent, single retrieval test 56 percent, repeated retrieval tests 61 percent.">
+<div class="t40-block">
+<h4>Research design and variables</h4>
+<p>This was a 3 &times; 2 between-subjects design: three learning conditions and two final-test delays. Each participant experienced only one combination. The independent variables were learning condition and final-test delay. The dependent variable was the percentage of the passage&rsquo;s 30 idea units correctly recalled on the final test.</p>
+<p>The passages were counterbalanced across conditions, and every final test used the same free-recall format. Total time spent learning was not the same across conditions, so this is considered in the evaluation below.</p>
+</div>
+<div class="t40-block">
+<h4>Findings</h4>
+<div class="t40-summary">
+<div class="t40-summary-card"><span class="t40-summary-label">After five minutes</span><strong>Repeated studying was highest: 83%</strong><p>Single retrieval: 78%. Repeated retrieval: 71%.</p></div>
+<div class="t40-summary-card t40-retrieval-card"><span class="t40-summary-label">After one week</span><strong>Repeated retrieval was highest: 61%</strong><p>Single retrieval: 56%. Repeated study: 40%.</p></div>
+</div>
+<div class="rk-chart" role="img" aria-label="Grouped bar chart of Experiment 2 final recall. After five minutes: repeated studying 83 percent, single retrieval 78 percent, repeated retrieval 71 percent. After one week: repeated studying 40 percent, single retrieval 56 percent, repeated retrieval 61 percent.">
 <h4>Experiment 2: Recall after five minutes and one week</h4>
-<p class="rk-axis-label">Vertical axis: percentage of idea units correctly recalled</p>
+<p class="rk-axis-label">Vertical axis: percentage of idea units correctly recalled (0&ndash;100%)</p>
 <div class="rk-legend"><span><i class="rk-swatch rk-swatch-imm"></i>Recall after 5 minutes</span><span><i class="rk-swatch rk-swatch-del"></i>Recall after one week</span></div>
 <div class="rk-plot">
 <div class="rk-axis"><span>100%</span><span>80%</span><span>60%</span><span>40%</span><span>20%</span><span>0%</span></div>
@@ -4102,51 +4140,74 @@
 </div>
 </div>
 </div>
-<div class="rk-x-labels"><span>Repeated study</span><span>Single retrieval test</span><span>Repeated retrieval tests</span></div>
-<p class="rk-x-title">Condition</p>
+<div class="rk-x-labels"><span>Repeated studying</span><span>Single retrieval</span><span>Repeated retrieval</span></div>
+<p class="rk-x-title">Learning condition</p>
 </div>
 </div>
-<p class="rk-caption">Source: Roediger and Karpicke (2006), Experiment 2. Values show the percentage of idea units correctly recalled.</p>
+<p class="rk-caption">Source: Roediger and Karpicke (2006), Experiment 2. Values show the percentage of idea units correctly recalled by separate groups of participants.</p>
 </div>
-<p>Repeated studying produced the highest recall after five minutes. After one week, students who had repeatedly retrieved the information remembered more than those who had repeatedly studied it. This suggests that a strategy producing better immediate performance does not necessarily produce better long-term retention.</p>
-<div class="lc-app">
-<p class="lc-app-tag">Teacher-created Paper 3 practice &mdash; not an official IB examination question</p>
-<p><strong>Paper 3 Practice &mdash; Question 2 [6 marks]</strong></p>
-<p>&ldquo;Analyze the findings shown in the graph and state a conclusion about the effectiveness of retrieval practice.&rdquo;</p>
-<p>Use the structure: <strong>Pattern &rarr; Numerical evidence &rarr; Interpretation &rarr; Conclusion</strong>.</p>
+<h4>Students&rsquo; predictions</h4>
+<p>Participants who repeatedly studied were more confident that they would remember the passage after one week. Their average rating was 4.8 on a seven-point scale, compared with 4.2 after single retrieval and 4.0 after repeated retrieval. Yet the repeated-study group had the lowest one-week recall at 40%.</p>
+<p>Repeated studying also gave students more exposure to the passage. They completed an average of 14.2 full readings across four study periods, compared with 3.4 in the repeated-retrieval condition. These figures average number of complete readings, not number of retrieval attempts.</p>
 </div>
-<div class="reveal r-model">
-<div class="reveal-question">Write a six-mark response before revealing the model answer.</div>
-<div class="reveal-answer"><div>
-<p>On the immediate test, recall was highest after repeated study (83%), followed by one retrieval test (78%) and repeated retrieval tests (71%). After one week, the order reversed: repeated retrieval produced the highest recall (61%), followed by one retrieval test (56%) and repeated study (40%). The gap between the extremes is especially clear: repeated study fell from 83% to 40%, whereas repeated retrieval fell only from 71% to 61%. This pattern suggests that repeated studying can look more effective shortly after learning, but repeated retrieval supported better retention over the week in these conditions. The conclusion should be limited to the short prose passages, undergraduate participants and recall measure used in this study; it does not establish permanent learning.</p>
-</div></div>
+<div class="t40-block">
+<h4>Conclusion</h4>
+<p>The <strong>testing effect</strong> is the finding that retrieving previously learned information can improve later retention compared with additional studying. In this experiment, retrieval was both a way of checking memory and a learning activity: students had to reconstruct the passage from memory rather than simply read it again.</p>
+<p>Repeated retrieval produced the highest recall after one week, while repeated studying produced the highest immediate recall. The conclusion is limited to these undergraduates, short prose passages, one-week delay and free-recall test. It does not establish permanent learning or show that retrieval is best for every kind of task.</p>
 </div>
-<div class="lc-res">
-<h4>Conclusion and psychological explanation</h4>
-<p>The <strong>testing effect</strong> is the finding that retrieving previously learned information can improve later retention compared with additional studying. Retrieval requires the learner to reconstruct material from memory, which may strengthen later access to it. In this research, testing was not only a way of assessing learning; it also functioned as a learning strategy. The conclusion applies to the conditions investigated, not to permanent learning or every kind of task.</p>
+<div class="t40-eval-grid">
+<div class="t40-eval-card">
+<h5>Strengths</h5>
+<ul>
+<li>Each of the six conditions had 30 participants, passages were counterbalanced, and the same free-recall test was used at each delay.</li>
+<li>The retrieval periods gave no feedback, so the delayed advantage cannot be explained by participants seeing correct answers during practice.</li>
+<li>Students in the repeated-retrieval condition recalled a substantial amount on the early tests, so the later benefit was not simply caused by failed first attempts.</li>
+<li>Testing after five minutes and after one week shows that the ranking of the strategies changed with the delay.</li>
+</ul>
+</div>
+<div class="t40-eval-card">
+<h5>Limitations</h5>
+<ul>
+<li>Study periods lasted five minutes and retrieval periods lasted ten. Repeated studying involved 20 minutes of active learning, single retrieval 25 minutes and repeated retrieval 35 minutes. This is a real limitation because the extra time and effort may have contributed to the findings. Total learning time was not controlled.</li>
+<li>The final test measured free recall of ideas from short passages. It did not measure understanding, application or transfer to a new problem.</li>
+<li>The sample was undergraduates, the longest delay was one week, and practice tests gave no feedback. The study therefore does not show permanent learning or tell us whether feedback-enhanced quizzing would work differently.</li>
+</ul>
+</div>
 </div>
 <div class="lc-sub">Evaluating the evidence using IB psychological concepts</div>
 <div class="lc-cards lc-c2">
 <div class="lc-card">
 <h5>Causality</h5>
-<p>The researchers manipulated the learning strategy, allowing them to investigate whether retrieval practice influenced later recall. Experiment 1 compared restudy and testing within the same students, and the tests gave no feedback, so later recall cannot be explained by seeing answers during testing.</p>
-<p>The number of learning periods was controlled, but study and testing periods differed in duration. This should be considered when interpreting the findings.</p>
+<p>The researchers manipulated learning condition and compared separate groups, so the design can investigate whether retrieval practice influenced later recall. No feedback was given during the practice tests.</p>
+<p>Because active learning time differed across conditions, retrieval practice cannot be identified as the only cause of the one-week advantage.</p>
 </div>
 <div class="lc-card">
 <h5>Measurement</h5>
-<p>Memory was measured by counting how many ideas participants recalled from a passage. Although this provides a measurable outcome, it does not necessarily show how well participants understood or could apply the information.</p>
-<p>The result is about recall of idea units in a free-recall test, not transfer to unfamiliar problems.</p>
+<p>Recall was measured by counting correctly recalled idea units out of 30. This gives a clear, comparable score.</p>
+<p>It measures how much of the passage was reproduced, not whether students understood or could apply the information.</p>
 </div>
 <div class="lc-card">
 <h5>Change</h5>
-<p>The effectiveness of the strategies differed depending on when memory was tested. Repeated studying produced better immediate recall, while repeated retrieval produced better recall after one week.</p>
-<p>This demonstrates the importance of considering how learning performance changes over time. The advantage of three tests over one at one week was small (61% versus 56%) and reported as marginal, so the clearest contrast is with repeated study.</p>
+<p>The ranking of the conditions depended on when memory was tested. Repeated studying was highest after five minutes, while repeated retrieval was highest after one week.</p>
+<p>The advantage of repeated over single retrieval at one week was small and reported as marginal, so the clearest contrast is with repeated studying.</p>
 </div>
 <div class="lc-card">
 <h5>Perspective</h5>
-<p>The study investigated undergraduate students learning short passages. Retrieval practice may work differently when students are learning practical skills or solving complex problems.</p>
-<p>The findings therefore provide evidence about a particular type of learning rather than every possible learning situation, and the longest delay was only one week.</p>
+<p>The participants were undergraduates learning two short passages, and the longest retention interval was one week.</p>
+<p>Other learners, materials and tasks may respond differently, so the result should not be extended to every learning situation.</p>
 </div>
+</div>
+<div class="t40-p3">
+<p class="t40-p3-label">HL only &middot; Teacher-created practice question</p>
+<p class="t40-p3-question">Paper 3 Practice &mdash; Question 2 [6 marks]</p>
+<p class="t40-p3-question">Analyze the findings shown in the graph and state a conclusion about the effectiveness of retrieval practice.</p>
+<p class="t40-guidance"><strong>Answer guidance</strong> Identify the main pattern, support it with numerical evidence, explain what the findings mean and reach a conclusion.</p>
+</div>
+<div class="reveal r-model">
+<div class="reveal-question">Write a six-mark response before revealing the model answer.</div>
+<div class="reveal-answer"><div>
+<p>On the five-minute test, repeated studying was highest at 83%, followed by single retrieval at 78% and repeated retrieval at 71%. After one week, the order was reversed: repeated retrieval was highest at 61%, followed by single retrieval at 56% and repeated studying at 40%. The clearest contrast is between repeated retrieval and repeated studying at one week, a difference of 21 percentage points. This means that the strategy which looked best immediately did not produce the best delayed recall in this experiment. Because the groups were tested at different delays, these are comparisons between groups rather than changes within the same students. Overall, the results support retrieval practice as more effective for retaining these passages after one week, but only under the conditions studied. They do not show permanent learning or superiority for every task.</p>
+</div></div>
 </div>
 <div class="lc-sec">Application &mdash; Does Retrieval Practice Improve Learning?</div>
 <div class="lc-app">
