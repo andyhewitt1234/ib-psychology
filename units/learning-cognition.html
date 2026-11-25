@@ -4931,245 +4931,320 @@
 </div>
 <div class="slide" data-slide="47" id="slide-47">
 <style>
-#slide-47 .lc-body p{font-size:.93rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .55rem}
+#slide-47 .lc-body p{font-size:.9rem;line-height:1.58;color:var(--text-secondary);margin:0 0 .55rem}
 #slide-47 .lc-body p:last-child{margin-bottom:0}
 #slide-47 .lc-body strong{color:var(--text)}
-#slide-47 .lc-part{font-size:1.12rem;font-weight:700;color:var(--text);margin:2rem 0 .55rem;line-height:1.35;padding-bottom:.3rem;border-bottom:2px solid #E2E8F0}
+#slide-47 .lc-part{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.7rem 0 .5rem;line-height:1.35;padding-bottom:.3rem;border-bottom:2px solid #E2E8F0}
 #slide-47 .lc-body > .lc-part:first-child{margin-top:1.1rem}
-#slide-47 .lc-sub{font-size:1.02rem;font-weight:700;color:var(--text);margin:1.5rem 0 .5rem;line-height:1.35}
-#slide-47 .lc-dlabel{font-size:.85rem;font-weight:600;color:var(--text);margin:.5rem 0 .1rem}
-#slide-47 .lc-cont{display:flex;gap:.3rem;align-items:stretch;margin:.4rem 0 .5rem}
-#slide-47 .lc-srl{flex:1;min-width:0;background:#F1F5F9;border:1px solid #E2E8F0;border-radius:8px;padding:.55rem .6rem}
-#slide-47 .lc-srl-name{font-size:.78rem;font-weight:700;color:var(--text);margin:0 0 .25rem;letter-spacing:.02em}
-#slide-47 .lc-srl-ex{font-size:.75rem;line-height:1.45;color:var(--text-secondary)}
-#slide-47 .lc-garrow{align-self:center;color:#94A3B8;font-weight:700;font-size:.85rem;padding:0}
-#slide-47 .lc-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
-#slide-47 .lc-green p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
-#slide-47 .lc-green p:last-child{margin-bottom:0}
-#slide-47 .lc-amber{background:#FFF9EC;border:1px solid #F0E6CC;border-radius:10px;padding:.85rem 1.05rem;margin:.4rem 0 .9rem}
-#slide-47 .lc-amber p{font-size:.9rem;line-height:1.6;color:var(--text);margin:0 0 .45rem}
-#slide-47 .lc-amber p:last-child{margin-bottom:0}
-#slide-47 .lc-ex-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#15803D;margin:0 0 .35rem}
-#slide-47 .lc-why{color:#1D4ED8;font-weight:600}
-#slide-47 .btx-research{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin:.2rem 0 .6rem}
-#slide-47 .btx-research p{font-size:.9rem;margin:0 0 .55rem;line-height:1.6}
-#slide-47 .btx-research p:last-child{margin-bottom:0}
-#slide-47 .btx-note{font-size:.88rem;color:var(--text-secondary);line-height:1.55;margin:.2rem 0 .9rem}
-#slide-47 .btx-table{width:100%;border-collapse:collapse;margin:.35rem 0 .75rem;font-size:.88rem}
-#slide-47 .btx-table th{border:1px solid var(--border);padding:.5rem .7rem;text-align:left;background:#FFFFFF;font-weight:700}
-#slide-47 .btx-table td{border:1px solid var(--border);padding:.5rem .7rem;text-align:left;vertical-align:top;line-height:1.5}
-@media (max-width:640px){#slide-47 .btx-table th,#slide-47 .btx-table td{padding:.4rem .45rem;font-size:.78rem}#slide-47 .lc-cont{flex-direction:column}#slide-47 .lc-garrow{transform:rotate(90deg);padding:.05rem 0}}
-#slide-47 .reveal{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:var(--radius);padding:.7rem .95rem;margin:0 0 1rem}
-#slide-47 .reveal:hover{border-color:#9DBBDF}
-#slide-47 .reveal-question{display:block;justify-content:flex-start;font-size:.95rem;line-height:1.65;color:var(--text);text-align:left;white-space:normal;overflow-wrap:break-word}
-#slide-47 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.7rem;font-size:.78rem;font-weight:700;color:#1D4ED8;background:#FFFFFF;border:1px solid #B7CFF2;padding:.18rem .65rem;border-radius:4px}
-#slide-47 .reveal-answer{background:#FFFFFF;border-radius:6px}
-#slide-47 .reveal.open .reveal-answer{padding:.45rem .6rem .25rem}
-#slide-47 .reveal-answer p{margin:0 0 .55rem;line-height:1.6}
+#slide-47 .lc-pair,#slide-47 .lc-trio,#slide-47 .lc-four{display:grid;gap:.6rem;margin:.4rem 0 .7rem}
+#slide-47 .lc-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+#slide-47 .lc-trio{grid-template-columns:repeat(3,minmax(0,1fr))}
+#slide-47 .lc-four{grid-template-columns:repeat(2,minmax(0,1fr))}
+#slide-47 .lc-card,#slide-47 .lc-study,#slide-47 .lc-app,#slide-47 .lc-concept,#slide-47 .lc-demo{background:#fff;border:1px solid var(--border);border-radius:10px;padding:.75rem .85rem;min-width:0;overflow-wrap:normal;word-break:normal;hyphens:none}
+#slide-47 .lc-card h4,#slide-47 .lc-concept h4{font-size:.86rem;font-weight:700;color:var(--text);margin:0 0 .3rem;line-height:1.3}
+#slide-47 .lc-card p,#slide-47 .lc-study p,#slide-47 .lc-app p,#slide-47 .lc-concept p,#slide-47 .lc-demo p{font-size:.82rem;line-height:1.5;color:var(--text-secondary);margin:0 0 .35rem}
+#slide-47 .lc-card p:last-child,#slide-47 .lc-study p:last-child,#slide-47 .lc-app p:last-child,#slide-47 .lc-concept p:last-child,#slide-47 .lc-demo p:last-child{margin-bottom:0}
+#slide-47 .lc-scene{display:block;width:100%;height:auto;border:1px solid var(--border);border-radius:6px;margin:.35rem 0 .25rem}
+#slide-47 .lc-note{font-size:.78rem;line-height:1.5;color:#64748B;margin:.4rem 0 .6rem}
+#slide-47 .lc-study{background:var(--bg-secondary);margin:.35rem 0 .5rem}
+#slide-47 .lc-seq{display:flex;gap:.35rem;align-items:center;margin:.45rem 0 .6rem}
+#slide-47 .lc-step{flex:1;background:#EFF6FF;border:1px solid #DBEAFE;border-radius:6px;padding:.4rem .5rem;font-size:.74rem;line-height:1.4;color:var(--text);text-align:center}
+#slide-47 .lc-arrow{color:#94A3B8;font-weight:700;font-size:.8rem}
+#slide-47 .lc-table-wrap{overflow-x:auto;margin:.35rem 0 .6rem}
+#slide-47 .lc-table{width:100%;min-width:32rem;border-collapse:collapse}
+#slide-47 .lc-table th,#slide-47 .lc-table td{font-size:.78rem;line-height:1.45;padding:.45rem .55rem;border:1px solid var(--border);text-align:left;vertical-align:top;color:var(--text-secondary)}
+#slide-47 .lc-table th{background:#F1F5F9;color:var(--text);font-weight:700}
+#slide-47 .lc-apply{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.75rem .9rem;margin:.35rem 0 .3rem}
+#slide-47 .lc-apply h3{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .3rem}
+#slide-47 .lc-apply p{font-size:.84rem;line-height:1.55;color:var(--text);margin:0 0 .25rem}
+#slide-47 .reveal{background:#E5F0FF;border:1px solid #CFE0F7;border-radius:10px;padding:.7rem .9rem;margin:.3rem 0 .8rem}
+#slide-47 .reveal:hover{border-color:#B9D2F5}
+#slide-47 .reveal-question{display:block;font-size:.84rem;font-weight:600;color:var(--text);text-align:left;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:none;cursor:pointer}
+#slide-47 .reveal-question::after{content:'Reveal Answer';display:block;width:max-content;margin-top:.55rem;font-size:.72rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.18rem .6rem;border-radius:4px}
+#slide-47 .reveal.open .reveal-question::after{content:'Hide'}
+#slide-47 .reveal-answer p{font-size:.83rem;line-height:1.55;color:var(--text);margin:0 0 .45rem}
 #slide-47 .reveal-answer p:last-child{margin-bottom:0}
-#slide-47 .hlbox{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin-top:1.4rem}
-#slide-47 .hlbox h3{font-size:1rem;font-weight:700;margin:0 0 .5rem;color:var(--text)}
-#slide-47 .lc-app{background:#E5F0FF;border:1px solid #D0E2F5;border-radius:var(--radius);padding:1rem 1.15rem;margin-top:1.4rem}
-#slide-47 .lc-app h3{font-size:1rem;font-weight:700;margin:0 0 .5rem;color:var(--text)}
-#slide-47 .lc-app p{font-size:.93rem;line-height:1.6;color:var(--text);margin:0 0 .5rem}
-#slide-47 .lc-app p:last-child{margin-bottom:0}
-#slide-47 ul{margin:0 0 .85rem;padding-left:1.3rem}
-#slide-47 ol.s47-ol{margin:0 0 .85rem;padding-left:1.3rem}
-#slide-47 li{line-height:1.65;margin:0 0 .35rem;text-align:left;font-size:.92rem;color:var(--text-secondary)}
-#slide-47 li strong{color:var(--text)}
+#slide-47 .sim-row{display:flex;align-items:center;justify-content:center;gap:.35rem;margin:.4rem 0}
+#slide-47 .sim-screen{position:relative;width:7rem;height:3.2rem;background:#F8FAFC;border:1px solid #CBD5E1;border-radius:6px}
+#slide-47 .sim-square{position:absolute;top:50%;width:1.3rem;height:1.3rem;border-radius:3px;transform:translateY(-50%)}
+#slide-47 .sim-blue{background:#3B82F6}
+#slide-47 .sim-orange{background:#F97316}
+#slide-47 .sim-left{left:.45rem}
+#slide-47 .sim-right{right:.45rem}
+#slide-47 .sim-key{font-size:.68rem;font-weight:700;color:#475569;background:#F1F5F9;border:1px solid #CBD5E1;border-radius:4px;padding:.25rem .4rem}
+#slide-47 .lc-demo{background:#F8FAFC;margin:.35rem 0 .7rem}
+#slide-47 .demo-stage{position:relative;height:3.6rem;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:6px;margin:.3rem 0}
+#slide-47 .demo-square{position:absolute;top:50%;width:1.6rem;height:1.6rem;border-radius:4px;transform:translateY(-50%);transition:left .15s,right .15s,background .15s}
+#slide-47 .demo-blue{background:#3B82F6}
+#slide-47 .demo-orange{background:#F97316}
+#slide-47 .demo-left{left:1rem;right:auto}
+#slide-47 .demo-right{right:1rem;left:auto}
+#slide-47 .demo-buttons{display:flex;gap:.4rem;justify-content:center;margin:.3rem 0}
+#slide-47 .demo-buttons button{font-size:.76rem;font-weight:700;color:#1E40AF;background:#FFFFFF;border:1px solid #B9D2F5;border-radius:5px;padding:.3rem .7rem;cursor:pointer}
+#slide-47 .demo-buttons button:hover{background:#E5F0FF}
+#slide-47 .demo-feedback{min-height:2.4rem;font-weight:600;color:#1E3A8A}
+@media(max-width:800px){
+#slide-47 .lc-trio{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+#slide-47 .lc-pair,#slide-47 .lc-four{grid-template-columns:1fr}
+#slide-47 .lc-seq{flex-direction:column;align-items:stretch}
+#slide-47 .lc-arrow{transform:rotate(90deg);text-align:center}
+#slide-47 .lc-card,#slide-47 .lc-study,#slide-47 .lc-app,#slide-47 .lc-concept,#slide-47 .lc-demo{padding:.7rem .75rem}
+}
 </style>
 <h2>HL Extension: Culture, Bilingualism &amp; Cognition</h2>
-<p class="slide-intro">People everywhere use the same basic cognitive processes &mdash; attention, memory, language. But cultural experience may influence what people notice, how they interpret information, what they remember and how they use language.</p>
-<p><strong>Does culture change how we think, what we think about, or both?</strong> This is not a strict either/or question. Cultural experience may influence how cognitive processing itself operates &mdash; for example, what people attend to &mdash; as well as the knowledge and expectations people use. In this lesson you will examine psychological research and evaluate what it actually demonstrates.</p>
-<p>Using two languages raises a further question about cognitive functioning: does regularly managing two languages influence other cognitive abilities? As with culture, a difference between groups does not automatically reveal what caused it.</p>
+<p class="slide-intro">Cultural experiences can influence what we pay attention to, how we interpret information and what we remember. Psychologists also investigate whether speaking more than one language influences cognitive abilities such as attention and problem-solving.</p>
+<p>In this lesson, we will examine how culture influences cognition and whether bilingualism offers cognitive benefits.</p>
 <div class="lc-body">
 
-<div class="lc-part">Part 1 &mdash; Culture and Cognitive Processes</div>
+<div class="lc-part">Culture and Cognition</div>
+<p>Cultural experiences may encourage different ways of processing information through repeated practice and attention. These are general tendencies, not fixed characteristics of everyone in a cultural group. Neither way of thinking is superior.</p>
 
-<div class="lc-sub">How Culture May Influence Cognition</div>
-<p>Cultural experiences can influence <strong>attention</strong>, <strong>interpretation</strong>, <strong>schemas</strong> and <strong>memory</strong>. These influences work through experience: what a person has repeatedly noticed, practised and been shown to value shapes what stands out later.</p>
-<div class="lc-green">
-<p class="lc-ex-tag">Example &mdash; Two Students Remember the Same Event</p>
-<p>Two students watch a disagreement between two classmates. Later, the teacher asks each of them what happened.</p>
-<p>Student A remembers exactly what the two classmates said and the expressions on their faces. Student B remembers where everyone was sitting, how other students reacted and what happened immediately before the disagreement.</p>
-<p><span class="lc-why">Why this example matters:</span> both students experienced the same event, but they attended to and remembered different details. Their previous experiences and expectations may have influenced which information they noticed and encoded. Culture could be one influence on these expectations &mdash; but this example alone does not establish that culture caused the difference.</p>
+<div class="lc-part">Analytic and Holistic Thinking</div>
+<div class="lc-pair">
+<div class="lc-card">
+<h4>Analytic Thinking</h4>
+<p>A tendency to focus on individual objects and their characteristics.</p>
+<p>For example, when looking at an underwater scene, someone might pay particular attention to the largest fish, noticing its colour, size and movement.</p>
+<svg class="lc-scene" viewBox="0 0 160 92" role="img" aria-label="Underwater scene with the largest fish highlighted">
+<rect width="160" height="92" fill="#DFF3FB"/>
+<path d="M0 72 Q40 61 80 70 T160 68 V92 H0Z" fill="#CBD5E1"/>
+<g fill="#86EFAC" opacity=".5"><path d="M18 72 Q14 55 20 43 Q26 56 22 72Z"/><path d="M32 72 Q28 60 33 50 Q38 60 35 72Z"/><path d="M132 70 Q128 52 134 41 Q139 54 136 70Z"/></g>
+<g fill="#93C5FD" opacity=".6"><ellipse cx="42" cy="34" rx="8" ry="4"/><polygon points="34,34 29,31 29,37"/><ellipse cx="121" cy="52" rx="7" ry="3.5"/><polygon points="114,52 109,49 109,55"/></g>
+<g fill="#FFFFFF" opacity=".75"><circle cx="56" cy="22" r="2"/><circle cx="61" cy="16" r="1.5"/><circle cx="106" cy="26" r="2"/></g>
+<g><ellipse cx="88" cy="38" rx="27" ry="12" fill="#F97316" stroke="#9A3412" stroke-width="2.5"/><polygon points="61,38 50,31 50,45" fill="#F97316" stroke="#9A3412" stroke-width="2"/><circle cx="98" cy="35" r="2.2" fill="#7C2D12"/></g>
+</svg>
 </div>
-<div class="lc-amber">
-<p><strong>Caution:</strong> do not read this example as &ldquo;Student A comes from an individualistic culture and Student B from a collectivistic culture.&rdquo; The scenario says nothing about where the students come from, and cultural averages do not describe particular individuals. Differences discussed in cultural research are group-level tendencies, not established characteristics of individual people.</p>
+<div class="lc-card">
+<h4>Holistic Thinking</h4>
+<p>A tendency to pay attention to the wider context and relationships between different elements of a situation.</p>
+<p>Someone looking at the same underwater scene might notice the fish, surrounding plants, other fish and how they interact.</p>
+<svg class="lc-scene" viewBox="0 0 160 92" role="img" aria-label="Same underwater scene with the wider context and relationships highlighted">
+<rect width="160" height="92" fill="#DFF3FB"/>
+<path d="M0 72 Q40 61 80 70 T160 68 V92 H0Z" fill="#CBD5E1"/>
+<g fill="#86EFAC" opacity=".95"><path d="M18 72 Q14 55 20 43 Q26 56 22 72Z"/><path d="M32 72 Q28 60 33 50 Q38 60 35 72Z"/><path d="M132 70 Q128 52 134 41 Q139 54 136 70Z"/></g>
+<g fill="#60A5FA" opacity=".95"><ellipse cx="42" cy="34" rx="8" ry="4"/><polygon points="34,34 29,31 29,37"/><ellipse cx="121" cy="52" rx="7" ry="3.5"/><polygon points="114,52 109,49 109,55"/></g>
+<g fill="#FFFFFF" opacity=".95"><circle cx="56" cy="22" r="2"/><circle cx="61" cy="16" r="1.5"/><circle cx="106" cy="26" r="2"/></g>
+<g><ellipse cx="88" cy="38" rx="27" ry="12" fill="#F97316" stroke="#9A3412" stroke-width="1.5"/><polygon points="61,38 50,31 50,45" fill="#F97316"/><circle cx="98" cy="35" r="2.2" fill="#7C2D12"/></g>
+<ellipse cx="80" cy="46" rx="72" ry="37" fill="none" stroke="#0F766E" stroke-width="2" stroke-dasharray="5 4"/>
+<g stroke="#0F766E" stroke-width="1.2" fill="none" opacity=".85"><path d="M42 34 L88 38 L121 52"/><path d="M20 43 L42 34"/><path d="M134 41 L121 52"/></g>
+</svg>
 </div>
-<div class="btx-research">
-<p><strong>Research Evidence &mdash; Masuda and Nisbett (2001): Culture and Attention</strong></p>
-<p><strong>Aim.</strong> To investigate whether Japanese and American participants differed in how they attended to objects and their surrounding contexts.</p>
-<p><strong>Method.</strong> Participants in Japan and the United States watched short animated underwater scenes &mdash; each containing focal fish along with background features such as plants, rocks and bubbles &mdash; and then described what they had seen. In a subsequent recognition test, they saw previously seen objects again, either in their original settings or against novel backgrounds, and judged whether they had seen each object.</p>
-<p><strong>Findings.</strong> Japanese participants made more statements about contextual information and the relationships between elements, whereas American participants tended to describe the focal objects themselves. Japanese participants also recognized previously seen objects more accurately when the objects appeared in their original settings; changing the background had relatively little effect on American participants&rsquo; recognition.</p>
-<p><strong>Significance.</strong> The study is relevant to attention and interpretation, not simply to memory scores: it suggests a group-level difference in where attention is directed &mdash; toward the focal object or toward the whole scene including its context &mdash; and such differences in attention could influence what people describe and what they later remember.</p>
-<p><strong>Limitations.</strong> The samples were particular groups in two countries, not entire cultures; the laboratory animation task may differ from attention in everyday settings; individuals within each group varied considerably; and the study cannot establish that culture itself caused the differences, because the samples may also have differed in language, schooling, environment and other experiences.</p>
 </div>
-<p class="btx-note"><strong>Why this study matters:</strong> cultural experience may influence which parts of a scene people attend to, which can subsequently influence what they describe or remember. Like all findings in this part of the lesson, it is evidence of group-level patterns under particular experimental conditions &mdash; not proof that every Japanese or American person thinks in a particular way.</p>
+<p class="lc-note">Both cards show the same scene. The first isolates the main fish; the second keeps the plants, smaller fish and bubbles in view and marks links between them.</p>
 
-<div class="lc-sub">Same Cognitive Process, Different Cultural Experiences</div>
-<p>Culture may change the <em>content</em> people work with without changing the cognitive process itself. People in different cultural settings may both use schemas when remembering; their schemas simply contain different expectations &mdash; different information about what an ordinary event looks like, who does what and what matters.</p>
-<div class="lc-green">
-<p class="lc-ex-tag">Example &mdash; Remembering a Restaurant Visit</p>
-<p>Two people from different cultural backgrounds visit the same unfamiliar restaurant. One expects customers to order at a counter and collect their food. The other expects a server to come to the table. Later, they remember the visit somewhat differently, because their expectations influenced how they interpreted what happened.</p>
-<p><span class="lc-why">Why this example matters:</span> both people may be using the same cognitive process &mdash; schema-based interpretation feeding reconstructive memory. What differs is the content of their schemas, built from different previous experiences.</p>
+<div class="lc-part">Core Study: Masuda and Nisbett (2001) &mdash; Cultural Differences in Attention and Memory</div>
+<div class="lc-study">
+<p><strong>Aim:</strong> To investigate whether cultural differences influence what people attend to and remember when viewing visual scenes.</p>
+<p><strong>Participants:</strong> 36 American students at the University of Michigan and 41 Japanese students at Kyoto University.</p>
+<p><strong>Procedure:</strong> Participants watched ten animated underwater scenes, two for practice and eight for the study. Each scene showed a large focal fish among plants, rocks, bubbles and smaller animals. Participants described what they had seen. Later, they took an unexpected recognition test with 90 pictures, 45 previously seen and 45 new. Each object appeared with its original background, a plain white background or a novel background.</p>
+<div class="lc-seq">
+<div class="lc-step">1. View an underwater scene</div><div class="lc-arrow">&rarr;</div>
+<div class="lc-step">2. Describe what was seen</div><div class="lc-arrow">&rarr;</div>
+<div class="lc-step">3. Recognise objects with changed backgrounds</div>
 </div>
-<p class="btx-note"><strong>The important distinction:</strong> different remembered details do not necessarily mean people have different memory mechanisms. The underlying cognitive process may be similar even when the information influencing that process differs. A careful interpretation separates the outcome observed from the process it may reflect.</p>
-<div class="reveal">
-<div class="reveal-question">Two communities recall the same story with different details added in. What can and cannot be concluded from the difference between their recall?</div>
-<div class="reveal-answer"><div><p>It can be concluded that the observed recall differed, and that each account reflects familiar, culturally available expectations. It cannot be concluded that the communities use different memory mechanisms, or that one community&rsquo;s memory is better: the difference is consistent with the same reconstructive process operating on different culturally learned schema content. Deciding whether the processes themselves differ would require evidence about the process &mdash; not just the products of recall.</p></div></div>
-</div>
-
-<div class="lc-part">Part 2 &mdash; Comparing Cognition Across Cultures</div>
-
-<div class="lc-sub">Cross-Cultural Research</div>
-<p>Cross-cultural research compares people from different cultural settings to investigate whether psychological findings apply across contexts and whether experiences may influence cognition. Its value depends on how carefully the comparison is constructed.</p>
-<div class="btx-research">
-<p><strong>Hypothetical teaching example &mdash; the same test in two countries</strong> (not a published research finding). Researchers give students in two countries the same list of 20 words to remember. Students in Country A recall an average of 14 words; students in Country B recall an average of 11. The researcher concludes: &ldquo;Students in Country A have better memories.&rdquo;</p>
-<p><span class="lc-why">Four questions show what this difference does &mdash; and does not &mdash; establish.</span></p>
-</div>
-<div class="lc-sub">1. What did the researchers observe?</div>
-<p>A difference in average test scores: Country A students recalled about three more words on average. That is all the study shows &mdash; a performance difference under particular testing conditions.</p>
-<div class="lc-sub">2. What else could explain the difference?</div>
-<p>The same result is consistent with at least five alternatives:</p>
-<ol class="s47-ol">
-<li><strong>Word familiarity</strong> &mdash; the words may be more familiar to one group;</li>
-<li><strong>Language proficiency</strong> &mdash; the groups may differ in proficiency in the test language;</li>
-<li><strong>Test experience</strong> &mdash; different experience with word-list memory tests;</li>
-<li><strong>Schooling and strategies</strong> &mdash; different schooling and previous learning strategies; and</li>
-<li><strong>Testing conditions</strong> &mdash; conditions that are not equivalent, such as time limits, instructions, motivation or distraction.</li>
-</ol>
-<p>Until these are ruled out or controlled, the scores show that performance differed &mdash; not what caused the difference.</p>
-<div class="lc-sub">3. Was the test equivalent across groups?</div>
-<p>A test has <strong>measurement validity</strong> when it measures the intended ability &mdash; here, memory &mdash; rather than accidentally favoring one group through language, familiarity or cultural assumptions. It has <strong>measurement equivalence</strong> when it measures the same construct, in the same way, in each group. In the 20-word example, if one group recognizes every word while the other meets several unfamiliar words, the test may be measuring vocabulary as well as memory.</p>
-<p>Using the same instructions, or translating the same words, does not automatically solve this: a translated item can be easier or harder than its original, and word familiarity differs across communities. Without equivalence, a score difference may reflect the measure rather than the memory.</p>
-<div class="lc-sub">4. What cannot be concluded about individuals?</div>
-<p>A researcher commits the <strong>ecological fallacy</strong> by applying a finding about a group average to a particular individual. In the 20-word example, meeting a student from Country A and assuming that this student must remember more words than any student from Country B is exactly that error. Individuals within each group vary considerably, the two groups&rsquo; scores may overlap substantially, and a group-level finding cannot predict what a particular individual will do.</p>
-<p class="btx-note">The ecological fallacy is this specific error &mdash; inferring individual characteristics from group-level findings &mdash; rather than every possible cultural stereotype, although some stereotypes involve a similar leap.</p>
-<div class="reveal">
-<div class="reveal-question">Two cultural groups perform differently on a memory test. Identify two explanations other than a difference in memory ability, and explain why researchers must investigate them.</div>
-<div class="reveal-answer"><div><p>Any two of: word familiarity in each group&rsquo;s language; proficiency in the test language; experience with word-list tests; schooling and previous learning strategies; testing conditions; or measurement that is not equivalent across groups.</p><p>Researchers must investigate them because each could produce the observed difference without any difference in the underlying ability. Until these are ruled out or controlled, the finding shows only that performance differed under those tested conditions &mdash; not what caused the difference, or what it says about memory capacity.</p></div></div>
-</div>
-
-<div class="lc-part">Part 3 &mdash; Bilingualism and Cognition</div>
-
-<div class="lc-sub">How Bilingual People Manage Languages</div>
-<div class="lc-green">
-<p class="lc-ex-tag">Example &mdash; Switching Languages</p>
-<p>A student speaks Mandarin with their grandmother and English with their teacher. At home, the student answers a question in Mandarin. A few minutes later, at school, the student answers a similar question in English. The student must select vocabulary and grammatical patterns appropriate to the language being used.</p>
-<p><span class="lc-why">Why this example matters:</span> using two languages can involve selecting the language appropriate to the situation and managing competition between possible words or responses. However, this does not mean bilingual speakers always consciously suppress an entire language &mdash; language selection can become highly practiced and largely automatic.</p>
-</div>
-
-<div class="lc-sub">The Relevant Cognitive Processes</div>
-<p><strong>Inhibition</strong> is the ability to resist an irrelevant or competing response. <em>Example:</em> a bilingual speaker intends to answer in English even though a Mandarin word also comes to mind. This illustrates possible competition during language production; it does not prove that the speaker has superior general inhibitory control.</p>
-<p><strong>Task switching</strong> means changing between tasks or sets of rules. <em>Example:</em> a student changes from answering a question in Mandarin to answering the next question in English. Switching languages is one kind of flexible language use; it does not automatically establish an advantage in unrelated switching tasks.</p>
-<p><strong>Metalinguistic awareness</strong> is the ability to think about and reflect on language itself. <em>Example:</em> a student notices that English and Mandarin express a similar idea using different sentence structures. Recognizing and discussing differences in how languages work illustrates metalinguistic awareness.</p>
-
-<div class="lc-sub">Does Bilingualism Improve Cognition?</div>
-<p>A useful distinction separates <strong>(1) being skilled at managing two languages</strong> from <strong>(2) performing better on unrelated tests of executive function</strong>. The first does not automatically establish the second. Working through five questions clarifies what the research has &mdash; and has not &mdash; shown.</p>
-<div class="lc-dlabel">A. What was the proposed bilingual advantage?</div>
-<p>Some researchers proposed that regularly managing two languages provides daily practice in cognitive control &mdash; selecting a language, resisting interference from the other language, and switching between systems &mdash; which might benefit performance on tasks involving inhibition, attention or switching. This was a research <em>hypothesis</em>, not an established universal benefit.</p>
-<div class="lc-dlabel">B. How was the idea investigated?</div>
-<p>Researchers compared bilingual and monolingual participants on <strong>executive-function tasks</strong>: carefully timed computer tasks that measure how people handle interference or change between rules. Such tasks are not direct measures of general intelligence.</p>
-<div class="lc-green">
-<p class="lc-ex-tag">Example &mdash; the Simon task</p>
-<p>Participants see a colored square appear on the left or right of a screen and press the left or right key <em>matching its color</em>. When the square appears on the side of the correct key (congruent), responses are quick. When it appears on the opposite side (incongruent), its location pulls toward the wrong key and responses slow down. The difference between these two conditions is the <strong>Simon effect</strong> &mdash; a measure of how well the participant resists irrelevant information. Bilingual&ndash;monolingual differences in this effect are what studies compare; a smaller Simon effect on one task is not the same as higher intelligence.</p>
-</div>
-<div class="lc-dlabel">C. What did the evidence show?</div>
-<p>Some studies reported advantages; others found small, inconsistent or absent differences. Two examples of the kinds of evidence, verified from the published sources:</p>
-<div class="btx-research">
-<p><strong>Bialystok, Craik, Klein &amp; Viswanathan (2004) &mdash; original experiment (Simon task).</strong> Younger and older adults classified colored squares appearing on a computer screen by pressing the key matching each color. Incongruent trials, in which the square appeared on the side opposite the correct key, are harder than congruent trials. The researchers reported smaller Simon effects for bilingual participants in both age groups, which was interpreted as consistent with the hypothesis that managing two languages trains cognitive control. Limitations: particular samples; later research questioned whether the groups were comparable on background variables such as socioeconomic status and immigration experience.</p>
-<p><strong>Lehtonen, Soveri, Laine, J&auml;rvenp&auml;&auml;, de Bruin &amp; Antfolk (2018) &mdash; meta-analytic review.</strong> This review combined evidence from 152 studies (891 bilingual&ndash;monolingual comparisons) of adults across six executive-function domains, including unpublished studies. Before correcting for publication bias, a very small overall advantage appeared for inhibition, shifting and working memory. After correcting for publication bias, no systematic evidence of a bilingual advantage remained in any domain. This does not prove that bilingualism can never influence cognition &mdash; it shows that the evidence for a general executive-function advantage in these adult tasks is not secure.</p>
-</div>
-<div class="lc-dlabel">D. Why is the debate unresolved?</div>
-<ul>
-<li><strong>Bilingual experience varies.</strong> &ldquo;Bilingual&rdquo; covers very different proficiencies, ages of acquisition and patterns of use (see the next section).</li>
-<li><strong>Tasks differ.</strong> Different executive-function tasks may measure partly different abilities, so a finding on one task need not transfer to another.</li>
-<li><strong>Background variables matter.</strong> Schooling, socioeconomic background, immigration experience and cultural context can influence results.</li>
-<li><strong>Small studies and publication bias.</strong> Studies reporting interesting or statistically significant findings may be more likely to be published than studies finding no difference, which can make an effect appear stronger than the full evidence supports.</li>
-<li><strong>One task is not overall ability.</strong> Findings on a specific task do not necessarily generalize to overall cognitive ability.</li>
-</ul>
-<div class="lc-dlabel">E. What is the most defensible conclusion?</div>
-<p>Managing two languages clearly involves cognitive processes &mdash; selection, interference management and switching. But the research to date does not establish that bilingualism produces a general executive-function advantage for everyone. Both extremes go beyond the evidence: bilingualism does not automatically improve cognition, and it does not follow that bilingual experience can never influence it.</p>
-<div class="lc-sub">Measuring Bilingualism</div>
-<p>Bilingualism is not a single uniform category. Compare two students: <strong>Student A</strong> has studied French for three years but rarely uses it outside class. <strong>Student B</strong> uses English at school and Mandarin at home every day. Both have experience with two languages, but the frequency, proficiency and context of their language use differ.</p>
-<table class="btx-table">
-<tr><th>Factor</th><th>Why it matters in research</th></tr>
-<tr><td>Age of language acquisition</td><td>Earlier and later acquisition may be associated with different language experiences and outcomes.</td></tr>
-<tr><td>Proficiency</td><td>How well each language is spoken changes the bilingual experience being studied.</td></tr>
-<tr><td>Frequency of use</td><td>Daily use and occasional classroom use are different experiences.</td></tr>
-<tr><td>Context of language use</td><td>Home, school and community use can involve different demands.</td></tr>
-<tr><td>Socioeconomic background</td><td>A possible confound that may relate to both language experience and task performance.</td></tr>
-<tr><td>The cognitive task measured</td><td>Findings may differ across tasks, so the task defines what was actually tested.</td></tr>
+<p><strong>Findings:</strong> Japanese participants described more contextual information and more relationships between objects and their background. They also recognised previously seen objects better when the original background was restored; a novel background disrupted their recognition. Americans were less affected by background changes and mentioned focal objects more often in their first sentence.</p>
+<div class="lc-table-wrap">
+<table class="lc-table">
+<thead><tr><th>Description measure</th><th>American mean</th><th>Japanese mean</th></tr></thead>
+<tbody>
+<tr><td>Background statements</td><td>20.11</td><td>30.88</td></tr>
+<tr><td>Details about inert objects such as plants and rocks</td><td>38.22</td><td>65.39</td></tr>
+<tr><td>Statements linking objects to the background</td><td>7.22</td><td>13.51</td></tr>
+<tr><td>Focal objects mentioned in the first sentence</td><td>5.77</td><td>3.78</td></tr>
+</tbody>
 </table>
-<p class="btx-note"><strong>If researchers do not measure bilingual experience carefully, they may be comparing groups whose language experiences differ in ways the study does not capture.</strong> Simply labeling participants as bilingual or monolingual can conceal these differences &mdash; and unmeasured differences become a problem for interpretation, as the next section shows.</p>
-
-<div class="lc-sub">The Causality Problem</div>
-<div class="lc-green">
-<p class="lc-ex-tag">Example &mdash; A Conclusion That Goes Too Far</p>
-<p>Researchers find that bilingual students perform better than monolingual students on a task requiring them to ignore distracting information. A researcher concludes: &ldquo;Learning two languages improves attention.&rdquo;</p>
-<p><span class="lc-why">Why this conclusion is too strong:</span> three levels of claim need separating &mdash; an <strong>observed group difference</strong> (the bilingual students scored higher on this task), an <strong>association</strong> (bilingual experience and better performance occurred together), and <strong>evidence that bilingual experience caused the difference</strong>, which requires ruling out alternative explanations. The groups may also differ in schooling, socioeconomic background, immigration experience, cultural context, prior ability or other relevant variables, any of which could influence the results. The study may show an association, but association alone does not establish that bilingualism caused the difference.</p>
 </div>
-<p>How could researchers investigate this more effectively? Stronger designs might include carefully matched comparison groups, clear measurement of bilingual experience, longitudinal research tracking changes over time, and &mdash; where feasible &mdash; intervention studies with appropriate comparison conditions. Even these approaches have limitations, and causal conclusions depend on the actual research design.</p>
-<div class="reveal">
-<div class="reveal-question">A study finds that bilingual adolescents outperform monolingual adolescents on one task-switching test. A newspaper reports that bilingualism makes teenagers more intelligent. Evaluate this claim.</div>
-<div class="reveal-answer"><div><p>The newspaper&rsquo;s claim goes far beyond the finding. The study observed better performance on one task-switching measure &mdash; a task-specific result under particular conditions. It did not measure general intelligence, and task switching should not be treated as equivalent to intelligence. Executive-function tasks measure specific processes &mdash; for example, handling interference or switching between rules &mdash; under laboratory conditions, whereas general intelligence is a broader construct assessed with different kinds of tests. A difference on one switching task, in one sample, cannot establish that one group is more intelligent than another.</p><p>Before interpreting the difference, researchers would need to check how bilingualism was measured, whether the groups were comparable on background variables such as schooling and socioeconomic status, and whether the task measured what it claimed to measure. Even if the difference held up, an association between bilingualism and one task&rsquo;s performance would not establish that bilingualism caused better switching &mdash; let alone higher intelligence.</p></div></div>
+<p><strong>Conclusion:</strong> Cultural experience may influence what people attend to and how context contributes to memory. The pattern fits the distinction between analytic attention to prominent objects and holistic attention to the wider scene.</p>
+<p><strong>Strengths:</strong> Standardised animated scenes and the same procedure in both countries allow a meaningful comparison. Descriptions and recognition judgments provide measurable behavioural evidence.</p>
+<p><strong>Limitations:</strong> The samples were university students in two countries rather than whole cultures. Cultural experience cannot be separated from language, schooling or other group differences, and an animation task may not reflect everyday attention.</p>
+</div>
+<div class="lc-apply">
+<h3>Apply Your Understanding</h3>
+<p><strong>Question:</strong> How could holistic thinking explain why Japanese participants were more affected by changes to the background during the recognition task?</p>
+<p>Attempt the question before revealing the model answer.</p>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Participants who paid greater attention to the surrounding context may have encoded the fish together with its background. Changing the background could therefore remove contextual information that helped them recognise the fish.</p></div></div></div>
 </div>
 
+<div class="lc-part">Challenges in Cross-Cultural Research</div>
+<p>Imagine students in two countries complete the same 20-word memory test. Country A recalls an average of 14 words and Country B an average of 11. A headline claims that students in Country A have better memories. Three cautions matter before accepting that claim.</p>
+<div class="lc-table-wrap">
+<table class="lc-table">
+<thead><tr><th>Concept</th><th>Explanation</th><th>Concrete example</th></tr></thead>
+<tbody>
+<tr><td>Confounding variables</td><td>Other differences between groups could influence performance independently of culture.</td><td>Education, language proficiency or previous experience with word lists might explain the score difference.</td></tr>
+<tr><td>Measurement equivalence</td><td>A test must measure the same psychological ability fairly in each group.</td><td>A translated list may contain words that are more familiar or easier to remember in one language than another.</td></tr>
+<tr><td>Ecological fallacy</td><td>A group average does not describe every individual in that group.</td><td>Even if Country A has the higher average, individual students from Country B may outperform many students from Country A.</td></tr>
+</tbody>
+</table>
+</div>
+<p>These issues do not make cross-cultural research worthless. They show why researchers must design comparisons carefully and keep conclusions within what the evidence supports.</p>
+
+<div class="lc-part">Bilingualism and Executive Functions</div>
+<p><strong>Executive functions</strong> are cognitive processes that help us control our attention, manage information and adjust our behaviour to achieve a goal.</p>
+<div class="lc-trio">
+<div class="lc-card"><h4>Inhibition</h4><p>The ability to resist an automatic or competing response.</p><p>Example: a student continues writing an answer instead of checking their phone. The urge to check the phone is automatic, so inhibition helps the student stay on the task.</p></div>
+<div class="lc-card"><h4>Cognitive Flexibility and Task Switching</h4><p>The ability to adjust thinking or behaviour when circumstances, tasks or rules change.</p><p>Example: a bilingual student switches between Mandarin with family and English with classmates. This illustrates flexible language use, but it does not establish better performance on general cognitive tasks.</p></div>
+<div class="lc-card"><h4>Metalinguistic Awareness</h4><p>The ability to think about language itself, including its structure, rules and meaning.</p><p>Example: a bilingual student notices that English and Mandarin use different grammatical structures to express similar ideas. This is awareness of language, not an executive function.</p></div>
 </div>
 
-<div class="hlbox">
-<h3>HL Thinking &mdash; Two Levels: Influence and Investigation</h3>
-<p class="lc-dlabel">Level 1 &mdash; Possible influences on cognitive performance (a possible explanatory pathway, not an inevitable sequence):</p>
-<div class="lc-cont">
-<div class="lc-srl"><div class="lc-srl-name">Cultural experience &amp; language use</div><div class="lc-srl-ex">may shape what people practise and value</div></div>
-<div class="lc-garrow">&rarr;</div>
-<div class="lc-srl"><div class="lc-srl-name">Attention / schemas / strategies / language processing</div><div class="lc-srl-ex">processes that may be influenced</div></div>
-<div class="lc-garrow">&rarr;</div>
-<div class="lc-srl"><div class="lc-srl-name">Performance on a cognitive task</div><div class="lc-srl-ex">what a study actually observes</div></div>
+<div class="lc-part">The Bilingual Advantage Hypothesis</div>
+<p>When bilingual individuals use one language, information from their other language may also become active. Managing competing linguistic information may provide practice in selecting relevant information and controlling competing responses. Some psychologists proposed that this could improve performance on non-language tasks requiring cognitive control. This is the <strong>bilingual advantage hypothesis</strong>: a hypothesis under investigation, not an established universal benefit.</p>
+
+<div class="lc-part">Understanding the Simon Task</div>
+<p>Participants respond to the colour of a stimulus while ignoring its location on the screen. For this teaching demonstration, use two simple rules: a blue square means press the left key, and an orange square means press the right key.</p>
+<div class="lc-pair">
+<div class="lc-card">
+<h4>Congruent Trial</h4>
+<div class="sim-row"><span class="sim-key">Left key</span><div class="sim-screen"><span class="sim-square sim-blue sim-left"></span></div><span class="sim-key">Right key</span></div>
+<p>A blue square appears on the left. The location matches the required response, so the correct response is the left key.</p>
 </div>
-<p class="lc-dlabel">Level 2 &mdash; How psychologists investigate the findings:</p>
-<div class="lc-cont">
-<div class="lc-srl"><div class="lc-srl-name">Measure performance</div><div class="lc-srl-ex">with checks on validity and comparability</div></div>
-<div class="lc-garrow">&rarr;</div>
-<div class="lc-srl"><div class="lc-srl-name">Compare results</div><div class="lc-srl-ex">across groups and conditions</div></div>
-<div class="lc-garrow">&rarr;</div>
-<div class="lc-srl"><div class="lc-srl-name">Examine alternative explanations</div><div class="lc-srl-ex">familiarity, schooling, measurement, confounds</div></div>
-<div class="lc-garrow">&rarr;</div>
-<div class="lc-srl"><div class="lc-srl-name">Interpret the evidence</div><div class="lc-srl-ex">within the limits of the design</div></div>
+<div class="lc-card">
+<h4>Incongruent Trial</h4>
+<div class="sim-row"><span class="sim-key">Left key</span><div class="sim-screen"><span class="sim-square sim-blue sim-right"></span></div><span class="sim-key">Right key</span></div>
+<p>A blue square appears on the right. The location conflicts with the required response, so the correct response is still the left key.</p>
 </div>
-<p class="btx-note" style="margin-bottom:.75rem;">At every step, researchers must also evaluate the validity and comparability of their measures.</p>
+</div>
+<p>Participants usually respond more slowly on incongruent trials because the irrelevant location creates response conflict. The <strong>Simon effect</strong> is the difference in reaction time between incongruent and congruent trials.</p>
+<div class="lc-demo" id="s47-simon-demo">
+<p><strong>Simplified classroom demonstration.</strong> Press the left arrow key or click Left for a blue square. Press the right arrow key or click Right for an orange square. Ignore where the square appears.</p>
+<div class="demo-stage"><div class="demo-square demo-blue demo-left" id="s47-demo-square"></div></div>
+<div class="demo-buttons"><button type="button" data-key="left">Left key</button><button type="button" data-key="right">Right key</button></div>
+<p id="s47-demo-prompt">Colour decides the key. Ignore the position.</p>
+<p class="demo-feedback" id="s47-demo-feedback"></p>
+<p class="lc-note">This demonstration uses simplified rules. It is not the exact published procedure, and your responses are not a valid assessment of cognitive ability or evidence of a bilingual advantage.</p>
+</div>
+
+<div class="lc-part">Core Study: Bialystok et al. (2004) &mdash; Bilingualism and Cognitive Control</div>
+<div class="lc-study">
+<p><strong>Aim:</strong> To investigate whether bilingual and monolingual adults differ in their performance on a task requiring cognitive control.</p>
+<p><strong>Participants:</strong> Study 2 included 94 adults. There were 64 younger adults aged 30 to 58 (mean 42.6), with 32 monolingual English speakers in Canada and 32 bilinguals using English with Tamil in India or English with Cantonese in Hong Kong. There were 30 older adults aged 60 to 80 (mean 70.3), with 15 monolingual English speakers and 15 bilinguals using English with Tamil in India or English with French in Canada.</p>
+<p><strong>Procedure:</strong> Participants completed four computer conditions of 48 trials each. In the two-colour Simon condition used here, a blue square required the left key and a brown square required the right key. Congruent and incongruent trials occurred equally often. Reaction time and accuracy were measured. The Simon effect was calculated as incongruent reaction time minus congruent reaction time.</p>
+<p><strong>Research method and variables:</strong> This was a quasi-experiment. Language background and age were pre-existing participant characteristics, not randomly assigned conditions. Congruency was manipulated by the researchers. Reaction time and accuracy were the measured outcomes.</p>
+<div class="lc-table-wrap">
+<table class="lc-table">
+<thead><tr><th>Group</th><th>Simon effect, two-colour condition</th><th>Reaction time in the central control condition</th></tr></thead>
+<tbody>
+<tr><td>Younger monolingual</td><td>123 ms</td><td>337 ms</td></tr>
+<tr><td>Younger bilingual</td><td>8 ms</td><td>343 ms</td></tr>
+<tr><td>Older monolingual</td><td>583 ms</td><td>1,012 ms</td></tr>
+<tr><td>Older bilingual</td><td>212 ms</td><td>1,046 ms</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Findings:</strong> Bilingual participants showed smaller Simon effects than monolingual participants in both age groups. The central control condition shows that the groups were not simply different in general response speed. Accuracy was high in all conditions, around 97 to 99 percent.</p>
+<p><strong>Conclusion:</strong> The findings are consistent with the bilingual advantage hypothesis because bilingual participants were less disrupted by irrelevant location. They do not prove that bilingualism caused better executive functioning or increased intelligence.</p>
+<p><strong>Strengths:</strong> The study used a standardised computer task with objective reaction-time measures. The central control condition helps separate conflict control from general speed.</p>
+<p><strong>Limitations:</strong> Language groups were pre-existing and came from different countries and language backgrounds. Other experiences were not fully controlled, and one Simon task may not represent executive functioning in general.</p>
+</div>
+<div class="lc-apply">
+<h3>Apply Your Understanding</h3>
+<p><strong>Question:</strong> Why might regularly managing two languages help someone perform better on a task involving competing information?</p>
+<p>Attempt the question before revealing the model answer.</p>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Regularly selecting between languages may provide practice in managing competing information and responses. Researchers hypothesise that this experience could transfer to other tasks requiring cognitive control, such as the Simon task. However, the findings alone do not establish that bilingualism caused the difference.</p></div></div></div>
+</div>
+
+<div class="lc-part">Contrasting Evidence: Lehtonen et al. (2018) &mdash; Is There a Bilingual Advantage?</div>
+<div class="lc-study">
+<p><strong>What is a meta-analysis?</strong> A meta-analysis statistically combines findings from many studies to estimate the overall size and consistency of an effect. This can be more informative than relying on one investigation, because a single study may reflect a particular sample or task.</p>
+<p><strong>Aim and method:</strong> The researchers examined whether bilingual adults show advantages in executive functioning. They combined 891 effect sizes from 152 studies covering inhibition, monitoring, shifting, attention, working memory and verbal fluency.</p>
+<p><strong>Findings:</strong> Before accounting for publication bias, very small apparent advantages appeared in inhibition, shifting and working memory. After accounting for publication bias, these advantages were no longer convincing, and the evidence did not support a general bilingual advantage.</p>
+<p><strong>What is publication bias?</strong> Publication bias occurs when studies reporting positive or significant results are more likely to be published than studies finding no meaningful difference. If only studies reporting a bilingual advantage on an attention task are published, the advantage may look more consistent than it is. This is a teaching example, not a finding from Lehtonen et al.</p>
+<p><strong>Conclusion:</strong> The wider evidence does not consistently support a general executive-function advantage in bilingual adults. This does not mean bilingualism has no benefits. It means the specific claim of a general cognitive-control advantage requires stronger evidence.</p>
+<p><strong>Evaluation:</strong> The meta-analysis drew on a large body of research, including unpublished studies. Its conclusions apply to the adult samples and tasks examined, and it does not prove that bilingualism can never influence cognition.</p>
+</div>
+<div class="lc-apply">
+<h3>Apply Your Understanding</h3>
+<p><strong>Question:</strong> How could publication bias make the bilingual advantage appear stronger than it actually is?</p>
+<p>Attempt the question before revealing the model answer.</p>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Studies finding a bilingual advantage may be more likely to be published than studies finding no difference. Consequently, the published evidence may exaggerate the strength or consistency of the advantage.</p></div></div></div>
+</div>
+
+<div class="lc-part">Comparing the Evidence: Does Bilingualism Improve Executive Functioning?</div>
+<div class="lc-table-wrap">
+<table class="lc-table">
+<thead><tr><th>Research</th><th>Contribution</th></tr></thead>
+<tbody>
+<tr><td>Bialystok et al. (2004)</td><td>Provides evidence consistent with a bilingual advantage on particular cognitive tasks.</td></tr>
+<tr><td>Lehtonen et al. (2018)</td><td>Examines the wider research evidence and challenges the claim of a consistent, general executive-function advantage.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Individual studies can support a hypothesis, but psychologists must also ask whether findings replicate across samples, tasks and settings. The bilingual advantage debate shows why conclusions should rest on the wider body of evidence rather than one study. The two publications did not investigate identical populations or tasks, and they did not directly replicate one another.</p>
+
+<div class="lc-part">Evaluating the Research Using IB Psychological Concepts</div>
+<div class="lc-four">
+<div class="lc-concept"><h4>Causality</h4><p>Can differences between bilingual and monolingual participants establish that bilingualism caused differences in cognitive performance? Use Bialystok et al. (2004) in your answer.</p></div>
+<div class="lc-concept"><h4>Measurement</h4><p>Does performance on the Simon task measure overall executive functioning, or a more specific aspect of cognitive control?</p></div>
+<div class="lc-concept"><h4>Bias</h4><p>How might publication bias influence psychologists' understanding of the bilingual advantage?</p></div>
+<div class="lc-concept"><h4>Perspective</h4><p>How might cultural experience influence the way psychologists understand and investigate cognitive processes?</p></div>
 </div>
 
 <div class="lc-app">
 <h3>HL Application &mdash; Can We Trust This Conclusion?</h3>
-<p><strong>Hypothetical scenario:</strong> Researchers compare 80 bilingual students and 80 monolingual students using a computer-based task-switching test. The bilingual group performs slightly better on average. However, the groups differ in educational background, and the researchers do not measure how frequently the bilingual students use each language. A newspaper reports: <strong>&ldquo;Scientists prove that speaking two languages makes students more intelligent.&rdquo;</strong></p>
-<p><strong>Evaluate the newspaper&rsquo;s conclusion using your knowledge of bilingualism, measurement and causality.</strong></p>
-<p>Brief guidance: 1. Identify what was actually measured. 2. Explain two limitations of the comparison. 3. Distinguish association from causation. 4. Reach a justified conclusion.</p>
-<div class="reveal">
-<div class="reveal-question">Evaluate the newspaper&rsquo;s conclusion in your notebook, then check the model answer.</div>
-<div class="reveal-answer"><div>
-<p><strong>What was actually measured.</strong> The study measured average performance on one computer-based task-switching test in two groups of 80 students. Nothing in the study measured intelligence. &ldquo;Slightly better on average&rdquo; also does not tell us how large the difference was or whether it was statistically significant &mdash; it could reflect a small, possibly chance variation.</p>
-<p><strong>Limitations of the comparison.</strong> First, the groups differ in educational background &mdash; a confounding variable that could produce or contribute to the performance difference. Second, the researchers did not measure how frequently the bilingual students used each language, so the label &ldquo;bilingual&rdquo; may conceal very different language experiences. The comparison also relies on a single task, and task switching is not equivalent to general intelligence: executive-function tasks measure specific processes such as handling interference or changing rules, whereas intelligence is a broader construct assessed with different kinds of instruments.</p>
-<p><strong>Association is not causation.</strong> The students were not randomly assigned to their language backgrounds, so the study cannot establish that bilingual experience caused the difference. Educational background, socioeconomic variables, patterns of language use and other unmeasured factors could equally explain it &mdash; the finding is, at most, an association between bilingualism and task performance.</p>
-<p><strong>Justified conclusion.</strong> The study provides evidence of a group difference on one task under particular conditions. It does not prove that bilingual students are more intelligent, and it does not show that speaking two languages caused better performance. A defensible conclusion would require better-controlled comparisons: matched groups, carefully measured bilingual experience, multiple tasks &mdash; and, for claims about intelligence, actual intelligence measures. The newspaper&rsquo;s headline goes far beyond what the research can support.</p>
-</div></div>
-</div>
+<p><strong>Scenario:</strong> Researchers compare 80 bilingual students and 80 monolingual students using a computer-based task-switching test. The bilingual group performs slightly better on average. However, the groups differ in educational background, and the researchers do not measure how frequently the bilingual students use each language. A newspaper reports: <strong>&ldquo;Scientists prove that speaking two languages makes students more intelligent.&rdquo;</strong></p>
+<p>Evaluate the newspaper's conclusion using your knowledge of bilingualism, measurement and causality.</p>
+<div class="reveal"><div class="reveal-question">Write your evaluation before revealing the model answer.</div><div class="reveal-answer"><div>
+<p>The study measured average performance on one computer-based task-switching test. It did not measure intelligence. Task switching is a specific executive process, whereas intelligence is a broader construct assessed with different kinds of tests. A small average difference on one task cannot establish that one group is more intelligent.</p>
+<p>The comparison also has important limitations. Educational background is a confounding variable that could contribute to the difference. Because language use was not measured, the label bilingual may cover very different experiences. The researchers also relied on one task, so the finding may not generalise to other aspects of cognitive control.</p>
+<p>The students were not randomly assigned to their language backgrounds. The study can therefore show an association between bilingualism and task performance, but it cannot show that bilingualism caused the difference. Other differences between the groups remain possible explanations.</p>
+<p>A defensible conclusion would be narrower than the headline. The study provides evidence of a group difference on one task under particular conditions. Stronger evidence would require matched groups, careful measurement of bilingual experience, several cognitive tasks and, for claims about intelligence, actual intelligence measures. The newspaper's conclusion goes well beyond what the research supports.</p>
+</div></div></div>
 </div>
 
 <div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
 <h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Cultural experience can influence attention, interpretation, schemas and memory.</li>
-<li>Research can reveal group-level differences without establishing that every individual follows the same pattern.</li>
-<li>Cross-cultural comparisons require valid and equivalent measurements.</li>
-<li>Bilingual language management does not automatically imply a general cognitive advantage.</li>
-<li>Research on bilingual advantages has produced mixed findings.</li>
-<li>Measurement, confounding variables and research design affect what psychologists can conclude.</li>
+<li>Cultural experiences may influence attention, interpretation and memory.</li>
+<li>Analytic thinking focuses more on individual objects, while holistic thinking pays greater attention to context and relationships.</li>
+<li>Masuda and Nisbett (2001) provide evidence of cultural differences in attention and contextual memory.</li>
+<li>The bilingual advantage hypothesis proposes that managing multiple languages may benefit cognitive control.</li>
+<li>Bialystok et al. (2004) provide supporting evidence, while Lehtonen et al. (2018) challenge a consistent, general executive-function advantage.</li>
+<li>Psychologists must consider causality, measurement, confounding variables and publication bias when evaluating these findings.</li>
 </ol>
 </div>
 
 </div>
+<script>
+(function(){
+var demo=document.getElementById('s47-simon-demo');
+if(!demo){return;}
+var square=document.getElementById('s47-demo-square');
+var feedback=document.getElementById('s47-demo-feedback');
+var prompt=document.getElementById('s47-demo-prompt');
+var colors=['blue','orange'];
+var sides=['left','right'];
+var current=null;
+function next(){
+var color=colors[Math.floor(Math.random()*colors.length)];
+var side=sides[Math.floor(Math.random()*sides.length)];
+current={color:color,side:side};
+square.className='demo-square demo-'+color+' demo-'+side;
+prompt.textContent='Colour decides the key. Ignore the position.';
+feedback.textContent='';
+}
+function respond(key){
+if(!current){return;}
+var correct=(current.color==='blue'&&key==='left')||(current.color==='orange'&&key==='right');
+var congruent=(current.color==='blue'&&current.side==='left')||(current.color==='orange'&&current.side==='right');
+feedback.textContent=(correct?'Correct. ':'Not this time. ')+(congruent?'This was a congruent trial.':'This was an incongruent trial; the position pulled toward the other key.');
+setTimeout(next,1000);
+}
+var buttons=demo.querySelectorAll('button[data-key]');
+for(var i=0;i<buttons.length;i++){
+buttons[i].addEventListener('click',function(){respond(this.getAttribute('data-key'));});
+}
+document.addEventListener('keydown',function(e){
+if(!demo.offsetParent){return;}
+if(e.key==='ArrowLeft'){e.preventDefault();respond('left');}
+if(e.key==='ArrowRight'){e.preventDefault();respond('right');}
+});
+next();
+})();
+</script>
+</div>
+
 <div class="slide activity-slide" data-slide="48" id="slide-48"><h2>Culture &amp; Cognition &mdash; What Can We Conclude?</h2>
 <p class="slide-intro">Each scenario ends with a claim about cognition. Choose the strongest, most defensible conclusion &mdash; the cautious one &mdash; and use the feedback to check your reasoning.</p>
 <div class="act-container" id="lc-p23-culture-conclude"></div>
