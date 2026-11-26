@@ -18,7 +18,6 @@
   
     /* ===== BLUEPRINT PROPAGATION: approved system, LC unit-wide ===== */
     /* Presentation only. Scoped to this file's slides; shared CSS/JS untouched.
-       Quiz (slide-60) keeps its dedicated .quiz-* styling. Tables keep existing inline styling.
        analysis / classification / sequencing / synthesis / short-response keep the
        neutral container (badge + structure carry identity), per blueprint rule.
        The custom Working Memory widget (#lc-p14-wm-widget, slide-26) is EXCLUDED
@@ -109,7 +108,7 @@
     #slide-13 .reveal-question, #slide-18 .reveal-question, #slide-22 .reveal-question,
     #slide-27 .reveal-question, #slide-29 .reveal-question, #slide-35 .reveal-question,
     #slide-42 .reveal-question, #slide-44 .reveal-question, #slide-47 .reveal-question, #slide-49 .reveal-question, #slide-51 .reveal-question,
-    #slide-56 .reveal-question, #slide-60 .reveal-question {
+    #slide-56 .reveal-question {
       display: block;
     }
     #slide-1 .reveal-question::after, #slide-3 .reveal-question::after,
@@ -118,7 +117,7 @@
     #slide-27 .reveal-question::after, #slide-29 .reveal-question::after,
     #slide-35 .reveal-question::after, #slide-42 .reveal-question::after,
     #slide-44 .reveal-question::after, #slide-47 .reveal-question::after, #slide-49 .reveal-question::after, #slide-51 .reveal-question::after,
-    #slide-56 .reveal-question::after, #slide-60 .reveal-question::after {
+    #slide-56 .reveal-question::after {
       display: table;
       margin-top: .5rem;
     }
@@ -356,8 +355,7 @@
         <div class="rail-dot activity-dot" data-slide="57"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">57. Transfer Scenario Analysis</span></div>
         <div class="rail-dot" data-slide="58"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">58. Synthesis & Evaluation</span></div>
         <div class="rail-dot activity-dot" data-slide="59"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">59. Synthesis Challenge</span></div>
-        <div class="rail-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">60. Exam Practice</span></div>
-        <div class="rail-dot activity-dot" data-slide="61"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">61. Exam Response Planning</span></div>
+        <div class="rail-dot activity-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">60. Exam Response Planning</span></div>
         </div>
 
 <div class="slide" data-slide="1" id="slide-1">
@@ -6165,212 +6163,328 @@ next();
 </div>
 <div class="slide" data-slide="54" id="slide-54">
 <style>
-#slide-54 .ad-sec{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.6rem 0 .55rem;line-height:1.35}
-#slide-54 .ad-body p{font-size:.94rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .6rem}
-#slide-54 .ad-body p:last-child{margin-bottom:0}
-#slide-54 .ad-body strong{color:var(--text)}
-#slide-54 .ad-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.9rem 1.05rem;margin:.5rem 0 .9rem}
-#slide-54 .ad-green p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
-#slide-54 .ad-green p:last-child{margin-bottom:0}
-#slide-54 .ad-note{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.9rem 1.05rem;margin:.5rem 0 .9rem}
-#slide-54 .ad-note p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
-#slide-54 .ad-note p:last-child{margin-bottom:0}
-#slide-54 .ad-amber{background:#FFF9EC;border:1px solid #E8DFC7;border-radius:10px;padding:.85rem 1.05rem;margin:.5rem 0 .9rem}
-#slide-54 .ad-amber p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0}
-#slide-54 .ad-list{margin:.2rem 0 .7rem;padding-left:1.3rem}
-#slide-54 .ad-list li{font-size:.94rem;line-height:1.65;color:var(--text-secondary);margin-bottom:.4rem}
-#slide-54 .ad-nums{display:flex;flex-wrap:wrap;gap:.45rem;margin:.1rem 0 .9rem}
-#slide-54 .ad-num{min-width:3.1rem;text-align:center;font-weight:700;font-size:1rem;color:var(--text);background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;padding:.4rem .5rem}
-#slide-54 .ad-scatters{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:.3rem 0 .4rem}
-#slide-54 .ad-fig{margin:0;background:#fff;border:1px solid var(--border);border-radius:10px;padding:.6rem .6rem .55rem}
-#slide-54 .ad-fig svg{display:block;width:100%;height:auto}
-#slide-54 .ad-fig figcaption{font-size:.8rem;line-height:1.5;color:var(--text-secondary);margin-top:.35rem}
-#slide-54 .ad-fig figcaption strong{color:var(--text)}
-#slide-54 .ad-caption{font-size:.8rem;line-height:1.5;color:var(--text-secondary);margin:.1rem 0 .9rem}
-#slide-54 .reveal{background:#E5F0FF;border-color:#CFE0F7}
-#slide-54 .reveal-question{display:block;white-space:normal}
-#slide-54 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.7rem;font-size:.78rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.22rem .7rem;border-radius:4px}
-#slide-54 .reveal.open .reveal-question::after{content:'Hide Answer'}
-#slide-54 .reveal-answer p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .55rem}
-#slide-54 .reveal-answer p:last-child{margin-bottom:0}
-@media (max-width:760px){#slide-54 .ad-scatters{grid-template-columns:1fr}#slide-54 .ad-fig svg{max-width:320px;margin:0 auto}}
+#slide-54 .da-sec{font-size:1.05rem;font-weight:700;color:var(--text);margin:1.5rem 0 .55rem;line-height:1.35}
+#slide-54 .da-sub{font-size:.95rem;font-weight:700;color:var(--text);margin:1.05rem 0 .45rem;line-height:1.4}
+#slide-54 .da-body p,#slide-54 .da-body li{font-size:.94rem;line-height:1.65;color:var(--text-secondary)}
+#slide-54 .da-body p{margin:0 0 .6rem}
+#slide-54 .da-body p:last-child{margin-bottom:0}
+#slide-54 .da-body ul,#slide-54 .da-body ol{margin:.2rem 0 .7rem;padding-left:1.3rem}
+#slide-54 .da-body li{margin-bottom:.35rem}
+#slide-54 .da-tag{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#1D4ED8;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:999px;padding:.18rem .6rem;margin:0 0 .55rem}
+#slide-54 .da-flow{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;margin:.7rem 0 1rem}
+#slide-54 .da-step{font-size:.86rem;font-weight:700;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:7px;padding:.4rem .65rem}
+#slide-54 .da-arrow{font-size:.95rem;color:var(--primary);font-weight:700}
+#slide-54 .da-scores{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.45rem;margin:.7rem 0}
+#slide-54 .da-score{text-align:center;font-size:1rem;font-weight:700;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:8px;padding:.55rem .2rem}
+#slide-54 .da-score.outlier{background:#FFF7ED;border:2px solid #F59E0B;color:#9A3412}
+#slide-54 .da-controls{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;background:#F8FAFC;border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem;margin:.6rem 0 .9rem}
+#slide-54 .da-controls label{font-size:.85rem;font-weight:700;color:var(--text)}
+#slide-54 .da-controls input[type="range"]{flex:1 1 190px;accent-color:#2563EB}
+#slide-54 .da-controls input[type="number"]{width:4.2rem;font-size:.9rem;padding:.3rem .4rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text)}
+#slide-54 .da-btn{font-size:.82rem;font-weight:700;color:#1D4ED8;background:#EFF6FF;border:1px solid #BFDBFE;border-radius:7px;padding:.35rem .7rem;cursor:pointer}
+#slide-54 .da-btn:hover{background:#DBEAFE}
+#slide-54 .da-grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem;margin:.6rem 0 1rem}
+#slide-54 .da-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:.85rem .9rem}
+#slide-54 .da-card h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .45rem}
+#slide-54 .da-card p{font-size:.88rem;line-height:1.6;color:var(--text-secondary);margin:0 0 .45rem}
+#slide-54 .da-card p:last-child{margin-bottom:0}
+#slide-54 .da-result{font-size:.95rem;font-weight:700;color:#1E3A8A;background:#EFF6FF;border-radius:6px;padding:.35rem .5rem;margin-top:.5rem}
+#slide-54 .da-note{background:#F1F5F9;border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;margin:.6rem 0 .9rem;font-size:.9rem;line-height:1.6;color:var(--text-secondary)}
+#slide-54 .da-amber{background:#FFFBEB;border:1px solid #FDE68A;border-radius:10px;padding:.8rem 1rem;margin:.6rem 0 .9rem;font-size:.9rem;line-height:1.6;color:var(--text-secondary)}
+#slide-54 .da-figure{margin:.75rem 0 1rem;background:#fff;border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem}
+#slide-54 .da-figure svg{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+#slide-54 .da-fig-title{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .6rem}
+#slide-54 .da-fig-note{font-size:.78rem;line-height:1.5;color:var(--text-secondary);margin:.5rem 0 0;text-align:left}
+#slide-54 .da-scale{max-width:640px;margin:.45rem auto 0;display:flex;justify-content:space-between;font-size:.75rem;color:var(--text-secondary)}
+#slide-54 .da-table-wrap{overflow-x:auto;margin:.65rem 0 .9rem}
+#slide-54 table.da-table{border-collapse:collapse;width:100%;min-width:480px;font-size:.88rem}
+#slide-54 .da-table th,#slide-54 .da-table td{border:1px solid var(--border);padding:.5rem .65rem;text-align:left;vertical-align:top;color:var(--text-secondary)}
+#slide-54 .da-table th{background:var(--bg-secondary);color:var(--text);font-weight:700}
+#slide-54 .da-presets{display:flex;flex-wrap:wrap;gap:.4rem;margin:.55rem 0}
+#slide-54 .da-statline{display:flex;flex-wrap:wrap;gap:.8rem;font-size:.9rem;color:var(--text);margin:.55rem 0}
+#slide-54 .da-statline strong{color:#1E40AF}
+#slide-54 .da-cause{display:grid;grid-template-columns:1fr;gap:.5rem;margin:.7rem 0 1rem}
+#slide-54 .da-cause-row{display:grid;grid-template-columns:minmax(0,1fr) 1.4fr minmax(0,1fr);align-items:center;gap:.5rem;background:#fff;border:1px solid var(--border);border-radius:8px;padding:.55rem .7rem;font-size:.86rem;color:var(--text-secondary)}
+#slide-54 .da-cause-row strong{color:var(--text)}
+#slide-54 .da-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:.7rem 0 1rem}
+#slide-54 .da-compare-card{border:1px solid var(--border);border-radius:10px;background:#fff;padding:.85rem .95rem}
+#slide-54 .da-compare-card h4{font-size:.95rem;font-weight:700;color:var(--text);margin:0 0 .5rem}
+#slide-54 .da-compare-card ul{margin:0;padding-left:1.1rem;font-size:.88rem;line-height:1.6;color:var(--text-secondary)}
+#slide-54 .da-compare-card li{margin-bottom:.25rem}
+#slide-54 .da-answer{border-left:3px solid #2563EB;background:#EFF6FF;border-radius:0 8px 8px 0;padding:.65rem .85rem;margin:.55rem 0 .9rem;font-size:.9rem;line-height:1.6;color:var(--text)}
+#slide-54 .da-disclaimer{font-size:.76rem;line-height:1.5;color:var(--text-secondary);margin:.25rem 0 .7rem}
+#slide-54 .reveal{background:#EFF6FF;border-color:#BFDBFE}
+#slide-54 .reveal-question{display:block;white-space:normal;font-size:.92rem}
+#slide-54 .reveal-question::after{content:'Reveal answer';display:block;width:max-content;margin-top:.6rem;font-size:.76rem;font-weight:700;color:#1D4ED8;background:#fff;border:1px solid #BFDBFE;padding:.25rem .7rem;border-radius:5px}
+#slide-54 .reveal.open .reveal-question::after{content:'Hide answer'}
+#slide-54 .reveal-answer p,#slide-54 .reveal-answer li{font-size:.9rem;line-height:1.65;color:var(--text)}
+#slide-54 .reveal-answer ul{margin:.3rem 0 .6rem;padding-left:1.2rem}
+#slide-54 #lc-inline-data-check .act-conc-q-feedback.show{font-size:.85rem}
+@media (max-width:760px){#slide-54 .da-grid4,#slide-54 .da-compare{grid-template-columns:1fr}#slide-54 .da-scores{grid-template-columns:repeat(3,minmax(0,1fr))}#slide-54 .da-cause-row{grid-template-columns:1fr;text-align:left}#slide-54 .da-arrow{display:block;margin:.1rem auto}}
 </style>
+
 <h2>Analysing Data</h2>
-<p class="slide-intro">Psychologists collect numerical data because numbers can summarize a large amount of information. But a number only becomes evidence when you know how it was produced and what it can support. This page explains the statistics used across this unit and how to interpret them.</p>
 
-<div class="ad-body">
-<div class="ad-sec">Measures of Central Tendency &amp; Spread</div>
-<p>Psychologists often collect numerical data, such as memory-test scores. They need ways to describe what the scores are generally like and how much they differ between participants.</p>
-<p>Consider these five memory-test scores, marked out of 100:</p>
-</div>
-<div class="ad-nums"><span class="ad-num">40</span><span class="ad-num">50</span><span class="ad-num">60</span><span class="ad-num">70</span><span class="ad-num">100</span></div>
-<div class="ad-green">
-<p><strong>Worked example — describing the five scores</strong></p>
-<p><strong>Mean:</strong> add all five scores and divide by five. 40 + 50 + 60 + 70 + 100 = 320, and 320 &divide; 5 = 64.</p>
-<p><strong>Median:</strong> put the scores in order and find the middle value. They are already in order, so the middle score is 60.</p>
-<p><strong>Mode:</strong> the most common score. Every score occurs once, so this set has no mode.</p>
-<p><strong>Range:</strong> subtract the lowest score from the highest. 100 &minus; 40 = 60.</p>
-</div>
-<div class="ad-body">
-<p>The mean is 64, but the median is only 60. The unusually high score of 100 pulls the mean upward. Because the mean uses the size of every score, one extreme value can make it unrepresentative of the group. The median is less affected, because it depends on position rather than on how far the highest score sits from the rest.</p>
-</div>
-<div class="ad-amber"><p><strong>Why this matters.</strong> When a set of scores is skewed by an outlier, the median often describes a typical score better than the mean. Always check which measure represents the data more fairly.</p></div>
-<div class="ad-body">
-<p><strong>Standard deviation</strong> shows how spread out scores are around the mean. A smaller standard deviation means the scores are more closely grouped; a larger one means they are more spread out.</p>
-<p>Compare two groups whose scores have the same mean:</p>
-</div>
-<figure class="ad-fig">
-<svg viewBox="0 0 360 150" role="img" aria-label="Dot plot comparing two groups. Group A scores 58, 59, 60, 61 and 62 cluster around the mean of 60. Group B scores 40, 50, 60, 70 and 80 are spread much more widely around the same mean.">
-<line x1="180" y1="18" x2="180" y2="112" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
-<text x="180" y="13" text-anchor="middle" font-size="9" fill="#64748B">mean = 60</text>
-<text x="8" y="47" font-size="9.5" fill="#475569">Group A</text>
-<g fill="#3B82F6">
-<circle cx="166" cy="60" r="3.6"/><circle cx="173" cy="60" r="3.6"/><circle cx="180" cy="60" r="3.6"/><circle cx="187" cy="60" r="3.6"/><circle cx="194" cy="60" r="3.6"/>
-</g>
-<text x="8" y="87" font-size="9.5" fill="#475569">Group B</text>
-<g fill="#3B82F6">
-<circle cx="40" cy="100" r="3.6"/><circle cx="110" cy="100" r="3.6"/><circle cx="180" cy="100" r="3.6"/><circle cx="250" cy="100" r="3.6"/><circle cx="320" cy="100" r="3.6"/>
-</g>
-<line x1="40" y1="118" x2="320" y2="118" stroke="#CBD5E1" stroke-width="1.5"/>
-<g font-size="9" fill="#64748B" text-anchor="middle">
-<text x="40" y="132">40</text><text x="110" y="132">50</text><text x="180" y="132">60</text><text x="250" y="132">70</text><text x="320" y="132">80</text>
-</g>
-<text x="180" y="147" text-anchor="middle" font-size="9" fill="#64748B">Memory-test score</text>
-</svg>
-<figcaption><strong>Group A:</strong> 58, 59, 60, 61, 62. <strong>Group B:</strong> 40, 50, 60, 70, 80. Both groups have a mean of 60, but Group B&rsquo;s scores are much more spread out.</figcaption>
-</figure>
-<div class="ad-body">
-<p>Because both groups have a mean of 60, the mean alone cannot tell them apart. The standard deviation can: Group B&rsquo;s larger spread produces a larger standard deviation.</p>
-<p>Standard deviation provides a more informative measure of spread than the range because it uses all the scores. The range uses only the highest and lowest values, so a single unusual score can make the range look large even when most scores are close together.</p>
-</div>
-<div class="ad-note">
-<p><strong>When is each measure useful?</strong></p>
-<p><strong>Mean</strong> — the arithmetic average. Best for interval or ratio data when there are no extreme outliers; for example, the mean speed estimate in Loftus (40.5 mph for &ldquo;smashed&rdquo;).</p>
-<p><strong>Median</strong> — the middle score when the data are ranked. Best for skewed data or ordinal data, such as the median age of participants.</p>
-<p><strong>Mode</strong> — the most frequent score or category. Useful when the most common value is the most meaningful summary.</p>
-<p><strong>Range</strong> — the highest score minus the lowest. A quick overview of variability, such as the range of digit spans in working-memory studies.</p>
-<p><strong>Standard deviation</strong> — how far scores typically sit from the mean. Best for interval or ratio data when consistency matters, because it uses every score.</p>
+<div class="da-body">
+<h3 class="da-sec">Why Do Psychologists Analyse Data?</h3>
+<p>Psychologists collect data to investigate questions about behaviour and mental processes. However, collecting data is only the first step.</p>
+<p>Researchers must identify patterns, compare results, examine relationships and decide what conclusions the evidence supports.</p>
+<p>In this lesson, you will learn how to interpret psychological data and distinguish between what the findings show and what researchers can reasonably conclude.</p>
+<div class="da-flow" aria-label="Collect data, identify patterns, interpret findings, reach a justified conclusion">
+<span class="da-step">Collect data</span><span class="da-arrow" aria-hidden="true">&#8594;</span><span class="da-step">Identify patterns</span><span class="da-arrow" aria-hidden="true">&#8594;</span><span class="da-step">Interpret findings</span><span class="da-arrow" aria-hidden="true">&#8594;</span><span class="da-step">Reach a justified conclusion</span>
 </div>
 
-<div class="ad-body">
-<div class="ad-sec">Correlation &amp; Causation</div>
-<p>A correlation describes a relationship between two variables. It tells us whether they tend to change together, but it does not automatically tell us why.</p>
+<h3 class="da-sec">Measures of Central Tendency</h3>
+<h4 class="da-sub">Example: Memory-Test Scores</h4>
+<p>Six students complete a memory test scored out of 100.</p>
+<div class="da-scores" id="da-score-boxes" aria-live="polite">
+<span class="da-score">40</span><span class="da-score">50</span><span class="da-score">50</span><span class="da-score">60</span><span class="da-score">60</span><span class="da-score outlier" id="da-high-box">100</span>
 </div>
-<div class="ad-scatters">
-<figure class="ad-fig">
-<svg viewBox="0 0 240 180" role="img" aria-label="Illustrative scatterplot whose points rise from lower left to upper right, showing a positive correlation">
-<line x1="34" y1="15" x2="34" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<line x1="34" y1="142" x2="226" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<line x1="44" y1="132" x2="214" y2="34" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 4"/>
-<g fill="#3B82F6">
-<circle cx="55" cy="120" r="4.5"/><circle cx="70" cy="122" r="4.5"/><circle cx="85" cy="104" r="4.5"/><circle cx="100" cy="106" r="4.5"/><circle cx="115" cy="88" r="4.5"/><circle cx="130" cy="88" r="4.5"/><circle cx="145" cy="70" r="4.5"/><circle cx="160" cy="72" r="4.5"/><circle cx="175" cy="52" r="4.5"/><circle cx="190" cy="54" r="4.5"/><circle cx="205" cy="36" r="4.5"/>
-</g>
-<text x="130" y="168" text-anchor="middle" font-size="9.5" fill="#475569">Variable X</text>
-<text x="14" y="80" text-anchor="middle" font-size="9.5" fill="#475569" transform="rotate(-90 14 80)">Variable Y</text>
-</svg>
-<figcaption><strong>Positive correlation.</strong> As one variable increases, the other tends to increase.</figcaption>
-</figure>
-<figure class="ad-fig">
-<svg viewBox="0 0 240 180" role="img" aria-label="Illustrative scatterplot whose points fall from upper left to lower right, showing a negative correlation">
-<line x1="34" y1="15" x2="34" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<line x1="34" y1="142" x2="226" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<line x1="44" y1="38" x2="214" y2="134" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4 4"/>
-<g fill="#3B82F6">
-<circle cx="55" cy="38" r="4.5"/><circle cx="70" cy="56" r="4.5"/><circle cx="85" cy="52" r="4.5"/><circle cx="100" cy="74" r="4.5"/><circle cx="115" cy="70" r="4.5"/><circle cx="130" cy="92" r="4.5"/><circle cx="145" cy="88" r="4.5"/><circle cx="160" cy="108" r="4.5"/><circle cx="175" cy="104" r="4.5"/><circle cx="190" cy="126" r="4.5"/><circle cx="205" cy="124" r="4.5"/>
-</g>
-<text x="130" y="168" text-anchor="middle" font-size="9.5" fill="#475569">Variable X</text>
-<text x="14" y="80" text-anchor="middle" font-size="9.5" fill="#475569" transform="rotate(-90 14 80)">Variable Y</text>
-</svg>
-<figcaption><strong>Negative correlation.</strong> As one variable increases, the other tends to decrease.</figcaption>
-</figure>
-<figure class="ad-fig">
-<svg viewBox="0 0 240 180" role="img" aria-label="Illustrative scatterplot with points scattered with no consistent upward or downward pattern, showing no clear linear correlation">
-<line x1="34" y1="15" x2="34" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<line x1="34" y1="142" x2="226" y2="142" stroke="#CBD5E1" stroke-width="1.5"/>
-<g fill="#3B82F6">
-<circle cx="50" cy="55" r="4.5"/><circle cx="62" cy="120" r="4.5"/><circle cx="74" cy="40" r="4.5"/><circle cx="86" cy="95" r="4.5"/><circle cx="98" cy="130" r="4.5"/><circle cx="110" cy="62" r="4.5"/><circle cx="122" cy="108" r="4.5"/><circle cx="134" cy="45" r="4.5"/><circle cx="146" cy="118" r="4.5"/><circle cx="158" cy="72" r="4.5"/><circle cx="170" cy="100" r="4.5"/><circle cx="182" cy="50" r="4.5"/><circle cx="194" cy="112" r="4.5"/><circle cx="206" cy="80" r="4.5"/>
-</g>
-<text x="130" y="168" text-anchor="middle" font-size="9.5" fill="#475569">Variable X</text>
-<text x="14" y="80" text-anchor="middle" font-size="9.5" fill="#475569" transform="rotate(-90 14 80)">Variable Y</text>
-</svg>
-<figcaption><strong>No clear linear correlation.</strong> There is no consistent straight-line relationship.</figcaption>
-</figure>
+<p>The score of 100 is much higher than the others. Change it to see what happens to each summary measure.</p>
+<div class="da-controls">
+<label for="da-high-range">Highest score</label>
+<input id="da-high-range" type="range" min="40" max="100" step="1" value="100" aria-label="Highest score slider">
+<input id="da-high-number" type="number" min="40" max="100" step="1" value="100" aria-label="Highest score numerical input">
+<button class="da-btn" id="da-high-reset" type="button">Reset to 100</button>
 </div>
-<p class="ad-caption">These three diagrams are illustrative. They show the shape of each pattern, not data from a published study.</p>
-<div class="ad-body">
-<p><strong>The correlation coefficient, r,</strong> is a number between &minus;1 and +1. It summarizes both the direction and the strength of a linear relationship.</p>
-<ul class="ad-list">
-<li><strong>r = +1:</strong> a perfect positive linear correlation.</li>
-<li><strong>r = &minus;1:</strong> a perfect negative linear correlation.</li>
-<li><strong>r = 0:</strong> no linear correlation. A non-linear relationship could still exist.</li>
-<li>Values closer to +1 or &minus;1 indicate stronger linear relationships.</li>
-</ul>
-<p>The positive or negative sign shows <strong>direction</strong>, not strength. An r of &minus;.70 describes a stronger relationship than an r of +.30, because &minus;.70 is further from zero.</p>
+<div class="da-grid4">
+<div class="da-card"><h4>Mean</h4><p>The mean is calculated by adding all the scores and dividing by the number of scores.</p><p id="da-mean-formula">(40 + 50 + 50 + 60 + 60 + 100) &divide; 6 = 60</p><p class="da-result" id="da-mean-result">Mean = 60</p><p>The mean uses every score, but unusually high or low values can influence it.</p></div>
+<div class="da-card"><h4>Median</h4><p>The median is the middle value when scores are arranged in order. When there is an even number of scores, calculate the mean of the two middle values.</p><p id="da-median-formula">(50 + 60) &divide; 2 = 55</p><p class="da-result" id="da-median-result">Median = 55</p><p>The median is less affected by extreme values.</p></div>
+<div class="da-card"><h4>Mode</h4><p>The mode is the value that occurs most frequently.</p><p id="da-mode-formula">Both 50 and 60 occur twice.</p><p class="da-result" id="da-mode-result">Modes = 50 and 60</p><p>A dataset can have more than one mode or no mode.</p></div>
+<div class="da-card"><h4>Range</h4><p>The range is the difference between the highest and lowest scores.</p><p id="da-range-formula">100 &minus; 40 = 60</p><p class="da-result" id="da-range-result">Range = 60</p><p>The range is a measure of spread, not central tendency. It does not describe a typical score.</p></div>
 </div>
-<div class="ad-note"><p><strong>Rough conventions.</strong> Values around .10 are sometimes described as small, .30 as moderate and .50 as large. These labels are only guidelines: the importance of a correlation depends on the research context.</p></div>
-<div class="ad-note">
-<p><strong>Example — sleep and exam scores.</strong> Researchers find that students who report sleeping more hours tend to achieve slightly higher exam scores. This is a positive correlation, but it does not prove that extra sleep caused the higher scores.</p>
-<p>Several other influences could explain part of the relationship. Stress could reduce both sleep and performance. Poor health could do the same. Students with effective study habits might also keep more regular sleep schedules. Reverse causation is possible too: students who are already doing well may feel less anxious and therefore sleep more.</p>
-<p>The same problem appears with technology use and exam scores. A third variable, such as motivation or socioeconomic status, could influence both.</p>
-</div>
-<div class="ad-body">
-<p><strong>Correlation does not prove causation.</strong> A randomized experiment generally provides the strongest basis for a causal claim, because manipulation, control and random assignment help rule out alternative explanations. Correlational evidence alone cannot establish that one variable caused the other.</p>
-</div>
+<h4 class="da-sub">Apply Your Understanding</h4>
+<p>If the highest score changed from 100 to 70, which would change more: the mean or the median? Try the slider first, then compare your answer.</p>
+<div class="reveal"><div class="reveal-question">Model answer: changing the highest score from 100 to 70</div><div class="reveal-answer"><div><p>The mean would decrease from 60 to 55, while the median would remain 55. This demonstrates why the median is less affected by extreme scores.</p></div></div></div>
 
-<div class="ad-body">
-<div class="ad-sec">Effect Size &amp; Significance</div>
-<p>Two questions are often confused. Statistical significance asks whether a result would be unusual under a particular statistical model. Effect size asks how large the difference or relationship actually is.</p>
+<h3 class="da-sec">Understanding Measures of Spread</h3>
+<h4 class="da-sub">Same Mean, Different Spread</h4>
+<p>Standard deviation describes how spread out scores are around their mean. A smaller standard deviation indicates that scores tend to be closer to the mean. A larger standard deviation indicates greater variability.</p>
+<p>Compare two groups of participants with the same mean. The sample standard deviation, calculated with the n &minus; 1 formula, is displayed so that the value comes directly from the scores shown.</p>
+<div class="da-controls">
+<label for="da-spread-range">Spread of Group B</label>
+<input id="da-spread-range" type="range" min="1" max="10" step="1" value="10" aria-label="Group B spread slider">
+<button class="da-btn" id="da-spread-reset" type="button">Reset spread</button>
 </div>
-<div class="ad-note">
-<p><strong>Statistical significance.</strong> Statistical significance helps researchers judge whether their results would be unusual if there were actually no effect or relationship in the population.</p>
-<p><strong>Effect size.</strong> Effect size tells researchers how large a difference is or how strong a relationship is.</p>
+<div class="da-figure">
+<h4 class="da-fig-title">Memory-test scores for two groups, shown on the same scale</h4>
+<div id="da-dotplot"></div>
+<p class="da-scale"><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span></p>
+<p class="da-fig-note">Teacher-created illustrative data, not findings from a published study. The dashed line marks the mean of each group.</p>
 </div>
-<div class="ad-body">
-<p>A result can be statistically significant even when the relationship is weak. With a large enough sample, even a small effect can produce a small p-value. Significance is therefore not the same as importance.</p>
-<p><strong>What p &lt; .05 means.</strong> A p-value is calculated from the assumption that the null hypothesis is true &mdash; here, that there is no relationship in the population. It is the probability of obtaining a result at least as extreme as the one observed, if that null model and its assumptions are correct. A threshold of p &lt; .05 means that such a result would occur less than 5% of the time under those assumptions.</p>
-<p>It does not mean there is a 95% probability that the research hypothesis is true. It is not the probability that the result &ldquo;happened by chance.&rdquo; And it says nothing about how large or practically important the effect is.</p>
+<div class="da-statline" aria-live="polite">
+<span id="da-group-a-values"><strong>Group A:</strong> 58, 59, 60, 61, 62</span>
+<span id="da-group-a-sd"><strong>Sample SD:</strong> 1.58</span>
 </div>
-<div class="ad-green">
-<p><strong>Worked example — reading r = .18</strong></p>
-<p><strong>Direction:</strong> r is positive, so more sleep tends to be associated with higher exam scores.</p>
-<p><strong>Strength:</strong> .18 is close to zero, so the linear relationship is weak.</p>
-<p><strong>Significance:</strong> p &lt; .05 indicates that, under the statistical test&rsquo;s assumptions, a result at least this extreme would have a probability below 5% if the null hypothesis were true.</p>
-<p><strong>What it does not mean:</strong> it does not mean there is a 95% probability that the research hypothesis is true, and it does not establish that the relationship is large or practically important.</p>
-<p><strong>r&sup2;:</strong> squaring .18 gives approximately .032, or 3.2%. The two variables share approximately 3% of their variation in a simple linear relationship. Most of the variation is not accounted for by that relationship. This is not proof that sleep directly causes 3% of exam performance.</p>
-<p><strong>Causation:</strong> a correlation alone cannot show that sleep caused the higher scores.</p>
+<div class="da-statline" aria-live="polite">
+<span id="da-group-b-values"><strong>Group B:</strong> 40, 50, 60, 70, 80</span>
+<span id="da-group-b-sd"><strong>Sample SD:</strong> 15.81</span>
 </div>
-<div class="ad-body">
-<p><strong>Effect-size measures beyond r.</strong> When a study compares two groups, researchers often report <strong>Cohen&rsquo;s d</strong>. It expresses the difference between two means in standard-deviation units, so results from studies using different scales can be compared. As a rough guide, 0.2 is sometimes called small, 0.5 moderate and 0.8 large, but those labels depend on the research context.</p>
-</div>
+<p class="da-note" id="da-spread-note" aria-live="polite">Both groups have a mean of 60. At the initial setting, Group B has much greater variability than Group A.</p>
+<h4 class="da-sub">Apply Your Understanding</h4>
+<p>Two groups achieve the same mean score, but Group B has a considerably larger standard deviation. What does this tell us about their performance?</p>
+<div class="reveal"><div class="reveal-question">Model answer: interpreting a larger standard deviation</div><div class="reveal-answer"><div><p>Although both groups achieved the same average score, the individual scores in Group B were more variable. Participants in Group A performed more consistently, with scores generally closer to their group mean.</p></div></div></div>
 
-<div class="reveal">
-<div class="reveal-question">A study finds a significant correlation (r = .18) between hours of sleep and exam scores at p &lt; .05. Interpret this result fully for a student who thinks &ldquo;significant means important.&rdquo;</div>
-<div class="reveal-answer"><div>
-<p><strong>1. Direction.</strong> The correlation is positive: students who reported more sleep tended to have somewhat higher exam scores.</p>
-<p><strong>2. Strength.</strong> The relationship is weak. r = .18 is close to zero, so the linear association is small.</p>
-<p><strong>3. Statistical significance.</strong> The result meets the stated threshold of p &lt; .05, so a result at least this extreme would be unusual under the null model. This does not mean the relationship is large, strong or practically important.</p>
-<p><strong>4. Causation.</strong> We cannot conclude that sleep caused the higher scores. Other variables &mdash; such as stress, health, study habits or prior achievement &mdash; could influence both sleep and exam performance.</p>
-<p><strong>Putting it together.</strong> The study reports a weak positive correlation between sleep and exam scores that meets the conventional significance threshold. Students who slept more tended to score slightly higher, but the relationship is small: r&sup2; is about .03, so the two variables share only about 3% of their variation. The result is statistically significant, yet that does not make it strong or important, and the design cannot show that sleep caused the difference. A strong answer would describe the relationship as small, positive and statistically significant, while noting that other variables may explain it.</p>
+<h3 class="da-sec">Reading and Interpreting Psychological Data</h3>
+<p>Different graphs help researchers identify different patterns. Each example below uses teacher-created data so that you can focus on how to read the graph rather than on remembering published findings.</p>
+
+<h4 class="da-sub">Bar Charts</h4>
+<p>Bar charts compare numerical values across separate groups or categories. The vertical axis begins at zero so that the bar heights represent the scores fairly.</p>
+<figure class="da-figure"><h4 class="da-fig-title">Mean memory-test score by revision strategy</h4><div id="da-bar-strategy"></div><figcaption class="da-fig-note">Teacher-created example data, not published research findings. A bar chart of group means does not show how individual participants performed.</figcaption></figure>
+<div class="da-amber"><p><strong>Limitation:</strong> a bar chart displaying group means does not necessarily show how individual participants performed. Two groups can have the same mean but very different variability.</p></div>
+<div class="reveal"><div class="reveal-question">Which revision strategy produced the highest mean recall score, and how much higher was it than rereading?</div><div class="reveal-answer"><div><p>Retrieval practice produced the highest mean recall score of 16, compared with 12 for rereading. This represents a difference of four marks out of 20.</p></div></div></div>
+
+<h4 class="da-sub">Line Graphs</h4>
+<p>Line graphs show changes across an ordered sequence, often time. They are useful for seeing the direction and size of change between measurements.</p>
+<figure class="da-figure"><h4 class="da-fig-title">Mean recall performance after a learning session</h4><div id="da-line-recall"></div><figcaption class="da-fig-note">Teacher-created example data, not published research findings. The horizontal axis uses equal one-day intervals after the immediate test.</figcaption></figure>
+<div class="da-amber"><p><strong>Limitation:</strong> a line connecting observations does not establish exactly what happened between measurements. It joins the data points; it does not report unmeasured times.</p></div>
+<div class="reveal"><div class="reveal-question">During which interval did recall decline most, and what overall pattern does the graph demonstrate?</div><div class="reveal-answer"><div><p>The largest decline occurred between the immediate test and the test one day later, when mean recall decreased from 18 to 14. Overall, recall declined over time, with progressively smaller decreases during the later intervals.</p></div></div></div>
+
+<h4 class="da-sub">Scatterplots</h4>
+<p>Scatterplots show relationships between two numerical variables. Each point represents one participant or one observation.</p>
+<figure class="da-figure"><h4 class="da-fig-title">Hours of sleep and memory-test performance</h4><div id="da-scatter-sleep"></div><figcaption class="da-fig-note">Teacher-created illustrative data, not published research findings. Each point represents one participant.</figcaption></figure>
+<div class="da-amber"><p><strong>Limitation:</strong> the pattern shows an association. It does not establish that sleeping longer caused the higher scores.</p></div>
+<div class="reveal"><div class="reveal-question">What relationship is shown in the scatterplot, and does it establish that sleeping longer causes better memory performance?</div><div class="reveal-answer"><div><p>The scatterplot shows a positive relationship: participants who slept longer generally achieved higher memory-test scores. However, the relationship does not establish causation because other factors, such as stress, health or study habits, may influence both variables.</p></div></div></div>
+
+<h4 class="da-sub">Box-and-Whisker Plots</h4>
+<p>Box-and-whisker plots summarise the distribution of scores and allow researchers to compare typical performance and variability. The box marks Q1, the median and Q3. The interquartile range is Q3 minus Q1. In this diagram, the whiskers extend to the minimum and maximum scores, so no separate outliers are plotted.</p>
+<figure class="da-figure"><h4 class="da-fig-title">Memory-test scores for two experimental groups, out of 20</h4><div id="da-boxplot"></div><figcaption class="da-fig-note">Teacher-created five-number summaries, not published research findings. Whiskers show the minimum and maximum under the convention used here.</figcaption></figure>
+<div class="da-table-wrap"><table class="da-table"><thead><tr><th>Group</th><th>Minimum</th><th>Q1</th><th>Median</th><th>Q3</th><th>Maximum</th><th>IQR</th></tr></thead><tbody><tr><td>Group A</td><td>8</td><td>10</td><td>12</td><td>14</td><td>17</td><td>4</td></tr><tr><td>Group B</td><td>6</td><td>9</td><td>15</td><td>17</td><td>19</td><td>8</td></tr></tbody></table></div>
+<div class="da-amber"><p><strong>Limitation:</strong> these summaries do not show every individual score or the exact shape of the distribution inside each quartile.</p></div>
+<div class="reveal"><div class="reveal-question">Which group achieved the higher median score, and which group showed greater variability within the middle 50% of scores?</div><div class="reveal-answer"><div><p>Group B achieved the higher median score, 15 compared with 12 in Group A. Group B also showed greater variability within the middle 50% of scores because its interquartile range was 8, compared with 4 for Group A. A larger interquartile range indicates greater variability in the middle half of the observations.</p></div></div></div>
+
+<h3 class="da-sec">Exploring Correlation</h3>
+<p>The correlation coefficient, <em>r</em>, describes the strength and direction of a linear relationship between two numerical variables. Its value ranges from &minus;1 to +1.</p>
+<p>The sign indicates direction. The absolute value indicates strength. A correlation close to zero indicates little or no linear relationship, although a nonlinear relationship may still exist. Strength labels are approximate guidelines rather than universal thresholds.</p>
+<div class="da-controls">
+<label for="da-corr-range">Target relationship</label>
+<input id="da-corr-range" type="range" min="-1" max="1" step="0.01" value="0.85" aria-label="Correlation slider">
+<button class="da-btn" id="da-corr-reset" type="button">Reset</button>
+</div>
+<div class="da-presets" aria-label="Correlation presets">
+<button class="da-btn" type="button" data-corr="-0.85">Strong negative</button>
+<button class="da-btn" type="button" data-corr="-0.35">Weak negative</button>
+<button class="da-btn" type="button" data-corr="0">No linear correlation</button>
+<button class="da-btn" type="button" data-corr="0.35">Weak positive</button>
+<button class="da-btn" type="button" data-corr="0.85">Strong positive</button>
+</div>
+<div class="da-figure">
+<h4 class="da-fig-title">Sleep and memory score: an interactive correlation demonstration</h4>
+<div id="da-corr-plot"></div>
+<p class="da-fig-note">Teacher-created illustrative data. The displayed coefficient is calculated from the plotted points, not assigned to the picture.</p>
+</div>
+<div class="da-statline" aria-live="polite"><span id="da-corr-value"><strong>Calculated r = 0.85</strong></span><span id="da-corr-direction"><strong>Direction:</strong> positive</span><span id="da-corr-strength"><strong>Approximate strength:</strong> strong</span></div>
+<div class="da-note"><p>Each slider setting generates a new illustrative dataset whose Pearson correlation is calculated from the displayed points. The axes and scales stay the same so that you are comparing the pattern, not a rescaled graph.</p></div>
+<h4 class="da-sub">Apply Your Understanding</h4>
+<p>Study A reports a correlation of <em>r</em> = &minus;.75. Study B reports a correlation of <em>r</em> = +.35. Which study found the stronger linear relationship?</p>
+<div class="reveal"><div class="reveal-question">Model answer: comparing correlation coefficients</div><div class="reveal-answer"><div><p>Study A found the stronger relationship because the absolute value of &minus;.75 is greater than .35. The negative sign indicates the direction of the relationship, not that the relationship is weaker.</p></div></div></div>
+
+<h4 class="da-sub">Correlation Does Not Establish Causation</h4>
+<p>Researchers find that students who report higher levels of stress tend to achieve lower examination scores. The association allows several explanations.</p>
+<div class="da-cause">
+<div class="da-cause-row"><strong>Stress &rarr; lower scores</strong><span>Stress may interfere with preparation or examination performance.</span><span>Stress could contribute to lower scores.</span></div>
+<div class="da-cause-row"><strong>Lower scores &rarr; stress</strong><span>Poor academic performance may increase later stress.</span><span>The direction could be reversed.</span></div>
+<div class="da-cause-row"><strong>Another factor &rarr; both</strong><span>Insufficient sleep may increase stress and reduce performance.</span><span>A third variable may influence both.</span></div>
+</div>
+<p>A correlation on its own cannot choose between these explanations.</p>
+
+<h3 class="da-sec">Statistical Significance and Effect Size</h3>
+<div class="da-table-wrap"><table class="da-table"><thead><tr><th>Statistical measure</th><th>What does it tell us?</th></tr></thead><tbody><tr><td>Correlation coefficient (<em>r</em>)</td><td>How strong is the linear relationship, and in which direction?</td></tr><tr><td>p-value</td><td>How unusual would the observed result, or a more extreme result, be if the null hypothesis and statistical assumptions were true?</td></tr><tr><td>Effect size</td><td>How large is the observed difference or relationship?</td></tr></tbody></table></div>
+<p>The correlation coefficient is itself a measure of effect size when investigating a linear relationship.</p>
+
+<h4 class="da-sub">Understanding Statistical Significance</h4>
+<p>A conventional threshold is .05. When p is below the predetermined significance threshold, researchers describe the result as statistically significant. This means that a result at least as extreme as the one observed would be unusual if the null model and its assumptions were correct.</p>
+<p>A p-value is not the probability that the null hypothesis is true, and it is not the probability that the findings occurred by chance. Statistical significance does not prove that a hypothesis is correct. A non-significant finding does not prove that no effect exists.</p>
+
+<h4 class="da-sub">Statistical Significance Is Not the Same as Effect Size</h4>
+<p>Both hypothetical studies below investigate the relationship between hours of sleep and examination performance.</p>
+<div class="da-compare">
+<div class="da-compare-card"><h4>Study A</h4><ul><li>Sample size: 2,000 participants</li><li>Correlation: <em>r</em> = .12</li><li>p &lt; .001</li><li>Weak positive relationship</li><li>Statistically significant</li></ul></div>
+<div class="da-compare-card"><h4>Study B</h4><ul><li>Sample size: 20 participants</li><li>Correlation: <em>r</em> = .40</li><li>p &asymp; .08</li><li>Moderate positive relationship</li><li>Not statistically significant at the .05 threshold</li></ul></div>
+</div>
+<p>Study A found a weaker observed relationship but reached statistical significance. Study B found a stronger observed relationship but did not reach the conventional significance threshold. Sample size influences statistical significance, so researchers need to consider the size of an observed effect as well as its statistical significance.</p>
+<div class="reveal"><div class="reveal-question">Which study found the stronger observed relationship, and why should researchers not rely exclusively on p-values?</div><div class="reveal-answer"><div><p>Study B found the stronger observed relationship because its correlation coefficient was larger. Researchers should not rely exclusively on p-values because statistical significance does not indicate how large or practically important an effect is.</p></div></div></div>
+
+<div class="collapsible"><button class="collapsible-trigger" type="button">Additional statistical knowledge: Cohen&rsquo;s d and r&sup2;</button><div class="collapsible-body">
+<p><strong>Cohen&rsquo;s d</strong> expresses the difference between two means in standard-deviation units. For example, if a retrieval-practice group averages 16 out of 20, a rereading group averages 12, and the pooled standard deviation is 5, then d = (16 &minus; 12) &divide; 5 = 0.8. Rough labels such as small, moderate and large depend on the research context.</p>
+<p><strong>r&sup2;</strong> has a specific meaning in a simple linear regression with an intercept: it is the proportion of variability in the outcome accounted for by the fitted linear relationship with the predictor. For example, <em>r</em> = .50 gives r&sup2; = .25. This means that 25% of the variability in the outcome is accounted for by the fitted linear relationship. It does not establish that one variable causes 25% of the changes in another variable.</p>
 </div></div>
+
+<h3 class="da-sec">From Description to Analysis</h3>
+<span class="da-tag">HL Paper 3 practice &middot; Teacher-created</span>
+<p>Identifying numerical values is only the beginning of data analysis. A researcher compares two revision strategies and measures memory performance using a test scored out of 20.</p>
+<figure class="da-figure"><h4 class="da-fig-title">Mean recall score by revision strategy</h4><div id="da-bar-description"></div><figcaption class="da-fig-note">Teacher-created example data, not published research findings.</figcaption></figure>
+<div class="da-answer"><p><strong>Descriptive response:</strong> The rereading group scored 12, and the retrieval practice group scored 16.</p></div>
+<div class="da-answer"><p><strong>Analytical response:</strong> The retrieval practice group achieved a mean score of 16 compared with 12 in the rereading group, a difference of four marks out of 20. This suggests that retrieval practice was associated with better memory performance under the conditions investigated. However, the graph provides no information about variability or statistical significance, limiting what can be concluded about the consistency and statistical evidence for the difference.</p></div>
+<p>The analytical response is stronger because it identifies the pattern, supports it with specific numerical evidence, interprets the findings and reaches a conclusion that does not exceed the available evidence.</p>
+<p><strong>Paper 3 Question 2 framework:</strong> Pattern &rarr; Numerical Evidence &rarr; Interpretation &rarr; Conclusion.</p>
+<p>Methodological evaluation should not replace analysis of the actual findings. Students must first answer the question being asked.</p>
+
+<h3 class="da-sec">What Information Is Missing?</h3>
+<span class="da-tag">HL Paper 3 practice &middot; Teacher-created</span>
+<p>A graph or statistical summary may not provide enough information to support a particular conclusion. Whether something is a meaningful limitation depends on the research question, source and conclusion being considered.</p>
+<div class="da-table-wrap"><table class="da-table"><thead><tr><th>Potential issue</th><th>Why it matters</th></tr></thead><tbody><tr><td>Missing sample size</td><td>We do not know how many participants contributed to the findings.</td></tr><tr><td>Missing measures of spread</td><td>We cannot determine how consistent or variable participants&rsquo; scores were.</td></tr><tr><td>Undefined categories</td><td>We do not know how participants were classified.</td></tr><tr><td>Misleading axis scale</td><td>Differences may appear larger or smaller than they actually are.</td></tr><tr><td>Missing statistical significance information</td><td>We cannot determine whether the result meets a statistical significance threshold.</td></tr><tr><td>Unclear measurement units</td><td>We cannot confidently interpret what the numerical values represent.</td></tr></tbody></table></div>
+<h4 class="da-sub">Interactive Activity: Identify the Issue</h4>
+<p><strong>Paper 3 Question 1 framework:</strong> Issue &rarr; Source Detail &rarr; Consequence for Interpretation. Attempt each question before revealing the answer.</p>
+
+<h4 class="da-sub">Example 1: Missing Variability</h4>
+<div class="da-figure"><h4 class="da-fig-title">Mean score by learning condition</h4><div id="da-bar-novar"></div><figcaption class="da-fig-note">Teacher-created example data. No measure of variability is provided.</figcaption></div>
+<div class="reveal"><div class="reveal-question">Identify and explain one issue that limits the interpretation of the data.</div><div class="reveal-answer"><div><p>One issue is that the graph provides no measure of variability. Although the two groups have different mean scores, we cannot determine whether individual scores were closely grouped around those means or varied considerably. This limits our understanding of how consistently participants performed.</p></div></div></div>
+
+<h4 class="da-sub">Example 2: Misleading Axis</h4>
+<div class="da-figure"><h4 class="da-fig-title">Mean score by study method</h4><div id="da-bar-axis"></div><figcaption class="da-fig-note">Teacher-created example data. The vertical axis starts at 70.</figcaption></div>
+<div class="reveal"><div class="reveal-question">Identify and explain one issue that limits the interpretation of the data.</div><div class="reveal-answer"><div><p>One issue is that the vertical axis starts at 70 rather than zero. The means are 72 and 76, a difference of four points, but the truncated axis makes the second bar appear many times taller than the first. This visually exaggerates the size of the difference and could mislead a reader about the strength of the effect.</p></div></div></div>
+
+<h4 class="da-sub">Example 3: Missing Sample Size</h4>
+<div class="da-figure"><h4 class="da-fig-title">Percentage of participants who improved after each intervention</h4><div id="da-bar-nosize"></div><figcaption class="da-fig-note">Teacher-created example data. Group sizes are not reported.</figcaption></div>
+<div class="reveal"><div class="reveal-question">Identify and explain one issue that limits the interpretation of the data.</div><div class="reveal-answer"><div><p>One issue is that the graph does not report how many participants were in each intervention group. A percentage of 70% could come from 7 of 10 participants or 700 of 1,000 participants. Without the sample sizes, we cannot judge how precise the percentages are or how much confidence to place in the comparison.</p></div></div></div>
+
+<h4 class="da-sub">Example 4: Undefined Categories</h4>
+<div class="da-figure"><h4 class="da-fig-title">Mean memory score by technology-use category</h4><div id="da-bar-categories"></div><figcaption class="da-fig-note">Teacher-created example data. The categories are not defined.</figcaption></div>
+<div class="reveal"><div class="reveal-question">Identify and explain one issue that limits the interpretation of the data.</div><div class="reveal-answer"><div><p>One issue is that the categories low, moderate and high technology use are not defined. We do not know what amount of use places a participant in each group, so we cannot tell whether the groups differ meaningfully or whether the labels were based on arbitrary cut-offs. This limits the conclusion that technology-use level is related to memory performance.</p></div></div></div>
+<p class="da-note">Notice how each answer names one issue, refers to a specific feature of the source and explains the consequence. That is more useful than listing several unexplained limitations.</p>
+
+<h3 class="da-sec">Applying Data Analysis to Our Class Practical</h3>
+<span class="da-tag">HL Paper 3 practice &middot; Teacher-created</span>
+<p class="da-disclaimer">Teacher-created practice using illustrative classroom example data. This is not an official IB examination question and the values are not the actual results collected by the class.</p>
+<p>You have already conducted the Serial Position Effect practical. Use that experience when interpreting these illustrative mean recall scores.</p>
+<div class="da-table-wrap"><table class="da-table"><thead><tr><th>Word position</th><th>Mean number of words recalled</th></tr></thead><tbody><tr><td>Beginning</td><td>3.0</td></tr><tr><td>Middle</td><td>1.4</td></tr><tr><td>End</td><td>3.6</td></tr></tbody></table></div>
+<figure class="da-figure"><h4 class="da-fig-title">Mean Recall by Word Position</h4><div id="da-bar-serial"></div><figcaption class="da-fig-note">Teacher-created illustrative classroom example data. Horizontal axis: Word Position. Vertical axis: Mean Number of Words Correctly Recalled.</figcaption></figure>
+
+<h4 class="da-sub">Question 1 &mdash; Identifying an Issue [3 marks]</h4>
+<p>Explain one issue that limits the interpretation of the data presented in the graph.</p>
+<p class="da-disclaimer">Teacher-created Paper 3-style practice. Guidance: 1 mark for a relevant issue, 2 marks for a clear source detail, and 3 marks for explaining the consequence for interpretation.</p>
+<div class="reveal"><div class="reveal-question">Model answer: Question 1</div><div class="reveal-answer"><div><p>One issue is that the graph provides only the mean recall scores and no measure of variability. Although recall was higher for words at the beginning and end of the list, we cannot determine whether most participants demonstrated this pattern or whether individual recall scores varied considerably. This limits our understanding of how consistently the serial position pattern occurred across participants.</p></div></div></div>
+
+<h4 class="da-sub">Question 2 &mdash; Analysing Findings [6 marks]</h4>
+<p>Analyse the findings presented in the graph and state a conclusion about the relationship between word position and recall.</p>
+<p class="da-disclaimer">Teacher-created Paper 3-style practice. Guidance: 1&ndash;2 marks for limited analysis, 3&ndash;4 marks for accurate but underdeveloped analysis, and 5&ndash;6 marks for detailed analysis with a conclusion linked to the findings.</p>
+<div class="reveal"><div class="reveal-question">Model answer: Question 2</div><div class="reveal-answer"><div><p>Participants recalled more words from the end of the list, with a mean of 3.6, and the beginning of the list, with a mean of 3.0, than from the middle, which had a mean of 1.4.</p><p>Recall at the end exceeded recall in the middle by 2.2 words, while recall at the beginning exceeded recall in the middle by 1.6 words.</p><p>This pattern is consistent with the primacy and recency effects, suggesting that word position influenced recall performance under the conditions investigated.</p><p>The findings therefore support the expected serial position pattern, with better recall for words presented at the beginning and end of the list than for words presented in the middle.</p></div></div></div>
+
+<h3 class="da-sec">Evidence Check</h3>
+<p>Select the strongest interpretation for each item. The feedback appears when you check your answers. Use Try Again to reset the activity.</p>
+<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:.8rem;">
+<h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check &mdash; Data Analysis</h4>
+<p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Each scenario uses unfamiliar numerical data. Choose the interpretation that is justified by the information given.</p>
+<div class="act-container" id="lc-inline-data-check"></div>
 </div>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-  <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Data Analysis</h4>
-  <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Check your understanding of correlation and statistical interpretation.</p>
-  <div class="act-container" id="lc-inline-data-check"></div>
-</div>
-
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
+<h3 class="da-sec">What Should I Remember?</h3>
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.15rem 1.4rem;margin-top:.8rem;">
 <ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Mean = the arithmetic average and is sensitive to extreme scores. Median = the middle ranked score and is more useful when the data are skewed. Mode = the most frequent score.</li>
-<li>Range = highest minus lowest and uses only two scores. Standard deviation describes how far scores typically sit from the mean and uses every score.</li>
-<li>Correlation (r) summarizes the direction and strength of a linear relationship. The sign shows direction, not strength. Correlation alone does not establish causation.</li>
-<li>A p-value is the probability of results at least this extreme under the null model, not the probability that the hypothesis is true. Effect size = the magnitude of the observed difference or relationship.</li>
-<li>Statistical significance does not automatically mean practical importance; report and interpret effect size alongside significance.</li>
+<li>The mean, median and mode describe typical values in different ways.</li>
+<li>The range, interquartile range and standard deviation describe variability.</li>
+<li>Different graphs help researchers identify different patterns in data.</li>
+<li>Correlation describes the strength and direction of a linear relationship but does not establish causation.</li>
+<li>Statistical significance and effect size provide different information about research findings.</li>
+<li>Strong data analysis identifies patterns, uses numerical evidence, interprets findings and reaches justified conclusions.</li>
 </ol></div>
 </div>
 
+<script>
+(function(){
+function fmt(v){return Math.abs(v - Math.round(v)) < 0.005 ? String(Math.round(v)) : v.toFixed(1);}
+function sampleSD(values){var m=values.reduce(function(a,b){return a+b;},0)/values.length;var s=values.reduce(function(a,b){return a+(b-m)*(b-m);},0);return Math.sqrt(s/(values.length-1));}
+function pearson(x,y){var mx=x.reduce(function(a,b){return a+b;},0)/x.length,my=y.reduce(function(a,b){return a+b;},0)/y.length;var num=0,dx=0,dy=0;for(var i=0;i<x.length;i++){num+=(x[i]-mx)*(y[i]-my);dx+=(x[i]-mx)*(x[i]-mx);dy+=(y[i]-my)*(y[i]-my);}return num/Math.sqrt(dx*dy);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function svgOpen(label){return '<svg viewBox="0 0 640 300" role="img" aria-label="'+esc(label)+'">';}
+function axisFrame(x0,y0,x1,y1){var s='<line x1="'+x0+'" y1="'+y1+'" x2="'+x1+'" y2="'+y1+'" stroke="#94A3B8" stroke-width="1.5"/>';s+='<line x1="'+x0+'" y1="'+y0+'" x2="'+x0+'" y2="'+y1+'" stroke="#94A3B8" stroke-width="1.5"/>';return s;}
+function yTicks(max,ticks,x0,y0,y1){var s='';ticks.forEach(function(t){var y=y1-(t/max)*(y1-y0);s+='<line x1="'+(x0-5)+'" y1="'+y+'" x2="'+x0+'" y2="'+y+'" stroke="#94A3B8"/>';s+='<text x="'+(x0-9)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="#64748B">'+t+'</text>';});return s;}
+function yAxisLabel(text){return '<text x="16" y="160" text-anchor="middle" font-size="12" fill="#475569" transform="rotate(-90 16 160)">'+esc(text)+'</text>';}
+function xAxisLabel(text){return '<text x="350" y="285" text-anchor="middle" font-size="12" fill="#475569">'+esc(text)+'</text>';}
+function drawBar(id,data,max,ticks,xTitle,yTitle,base){var out=svgOpen(xTitle+' by '+yTitle),x0=86,x1=612,y0=28,y1=238,plot=x1-x0,slot=plot/data.length;out+=axisFrame(x0,y0,x1,y1)+yTicks(max,ticks,x0,y0,y1)+yAxisLabel(yTitle);data.forEach(function(d,i){var cx=x0+slot*(i+0.5),bottom=y1,val=Math.min(d.value,max),top=base===undefined?y1-(val/max)*(y1-y0):y1-((val-base)/(max-base))*(y1-y0),h=bottom-top,w=Math.min(76,slot*0.58),display=d.text===undefined?d.value:d.text;out+='<rect x="'+(cx-w/2)+'" y="'+top+'" width="'+w+'" height="'+h+'" fill="#3B82F6" rx="3"/>';out+='<text x="'+cx+'" y="'+(top-7)+'" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">'+display+'</text>';var words=String(d.label).split(' '),lines=[];for(var k=0;k<words.length;k+=2){lines.push(words.slice(k,k+2).join(' '));}lines.forEach(function(line,j){out+='<text x="'+cx+'" y="'+(255+j*13)+'" text-anchor="middle" font-size="11" fill="#475569">'+esc(line)+'</text>';});});out+=xAxisLabel(xTitle)+'</svg>';document.getElementById(id).innerHTML=out;}
+function drawLine(id){var pts=[{x:0,y:18,l:'Immediate'},{x:1,y:14,l:'1'},{x:2,y:11,l:'2'},{x:3,y:9,l:'3'},{x:4,y:8,l:'4'}],out=svgOpen('Line graph of mean recall after learning'),x0=86,x1=612,y0=28,y1=238;out+=axisFrame(x0,y0,x1,y1)+yTicks(20,[0,5,10,15,20],x0,y0,y1)+yAxisLabel('Mean recall score out of 20');var X=function(v){return x0+(v/4)*(x1-x0);},Y=function(v){return y1-(v/20)*(y1-y0);};out+='<polyline fill="none" stroke="#2563EB" stroke-width="3" points="'+pts.map(function(p){return X(p.x)+','+Y(p.y);}).join(' ')+'"/>';pts.forEach(function(p){out+='<circle cx="'+X(p.x)+'" cy="'+Y(p.y)+'" r="5" fill="#1D4ED8"/>';out+='<text x="'+X(p.x)+'" y="'+(Y(p.y)-12)+'" text-anchor="middle" font-size="12" font-weight="700" fill="#1E3A8A">'+p.y+'</text>';out+='<text x="'+X(p.x)+'" y="255" text-anchor="middle" font-size="11" fill="#475569">'+p.l+'</text>';});out+=xAxisLabel('Days after learning (immediate = 0)')+'</svg>';document.getElementById(id).innerHTML=out;}
+function scatterMarkup(data,xmin,xmax,ymin,ymax,xTicks,yTicks,xTitle,yTitle,line){var out=svgOpen(xTitle+' and '+yTitle),x0=86,x1=612,y0=28,y1=238,X=function(v){return x0+((v-xmin)/(xmax-xmin))*(x1-x0);},Y=function(v){return y1-((v-ymin)/(ymax-ymin))*(y1-y0);};out+=axisFrame(x0,y0,x1,y1);yTicks.forEach(function(t){var y=Y(t);out+='<line x1="'+(x0-5)+'" y1="'+y+'" x2="'+x0+'" y2="'+y+'" stroke="#94A3B8"/>';out+='<text x="'+(x0-9)+'" y="'+(y+4)+'" text-anchor="end" font-size="11" fill="#64748B">'+t+'</text>';});xTicks.forEach(function(t){var x=X(t);out+='<line x1="'+x+'" y1="'+(y1+5)+'" x2="'+x+'" y2="'+y1+'" stroke="#94A3B8"/>';out+='<text x="'+x+'" y="255" text-anchor="middle" font-size="11" fill="#475569">'+t+'</text>';});if(line){var mx=data.x.reduce(function(a,b){return a+b;},0)/data.x.length,my=data.y.reduce(function(a,b){return a+b;},0)/data.y.length,num=0,den=0;for(var i=0;i<data.x.length;i++){num+=(data.x[i]-mx)*(data.y[i]-my);den+=(data.x[i]-mx)*(data.x[i]-mx);}var slope=num/den,intercept=my-slope*mx,ya=Math.max(ymin,Math.min(ymax,slope*xmin+intercept)),yb=Math.max(ymin,Math.min(ymax,slope*xmax+intercept));out+='<line x1="'+X(xmin)+'" y1="'+Y(ya)+'" x2="'+X(xmax)+'" y2="'+Y(yb)+'" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="7 5"/>';}data.x.forEach(function(v,i){out+='<circle cx="'+X(v)+'" cy="'+Y(data.y[i])+'" r="4.5" fill="#3B82F6" stroke="#1E40AF" stroke-width="0.7"/>';});return out+yAxisLabel(yTitle)+xAxisLabel(xTitle)+'</svg>';}
+function drawBox(id){var rows=[{label:'Group A',min:8,q1:10,med:12,q3:14,max:17},{label:'Group B',min:6,q1:9,med:15,q3:17,max:19}],out=svgOpen('Box-and-whisker plot comparing two groups'),x0=86,x1=612,y0=28,y1=238,X=function(v){return x0+(v/20)*(x1-x0);};out+=axisFrame(x0,y0,x1,y1);[0,5,10,15,20].forEach(function(t){var x=X(t);out+='<line x1="'+x+'" y1="'+(y1+5)+'" x2="'+x+'" y2="'+y1+'" stroke="#94A3B8"/>';out+='<text x="'+x+'" y="255" text-anchor="middle" font-size="11" fill="#64748B">'+t+'</text>';});rows.forEach(function(r,i){var cy=85+i*90,bx=X(r.q1),bw=X(r.q3)-bx;out+='<text x="8" y="'+(cy+4)+'" font-size="12" font-weight="700" fill="#475569">'+r.label+'</text>';out+='<line x1="'+X(r.min)+'" y1="'+cy+'" x2="'+X(r.max)+'" y2="'+cy+'" stroke="#1E40AF" stroke-width="2"/>';out+='<line x1="'+X(r.min)+'" y1="'+(cy-9)+'" x2="'+X(r.min)+'" y2="'+(cy+9)+'" stroke="#1E40AF" stroke-width="2"/>';out+='<line x1="'+X(r.max)+'" y1="'+(cy-9)+'" x2="'+X(r.max)+'" y2="'+(cy+9)+'" stroke="#1E40AF" stroke-width="2"/>';out+='<rect x="'+bx+'" y="'+(cy-19)+'" width="'+bw+'" height="38" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="3"/>';out+='<line x1="'+X(r.med)+'" y1="'+(cy-19)+'" x2="'+X(r.med)+'" y2="'+(cy+19)+'" stroke="#DC2626" stroke-width="3"/>';});out+=xAxisLabel('Memory-test score out of 20')+'</svg>';document.getElementById(id).innerHTML=out;}
+function drawDots(high){var groups=[{name:'Group A',values:[58,59,60,61,62],y:82,color:'#2563EB'},{name:'Group B',values:[60-2*high,60-high,60,60+high,60+2*high],y:176,color:'#7C3AED'}],out=svgOpen('Dot plots of two groups on a shared scale from 40 to 80'),x0=76,x1=612,X=function(v){return x0+((v-40)/40)*(x1-x0);};out+='<line x1="'+X(60)+'" y1="24" x2="'+X(60)+'" y2="206" stroke="#94A3B8" stroke-width="1.6" stroke-dasharray="5 4"/>';out+='<text x="'+X(60)+'" y="18" text-anchor="middle" font-size="11" fill="#64748B">mean = 60</text>';groups.forEach(function(g){out+='<text x="8" y="'+(g.y+4)+'" font-size="12" font-weight="700" fill="#475569">'+g.name+'</text>';out+='<line x1="'+x0+'" y1="'+g.y+'" x2="'+x1+'" y2="'+g.y+'" stroke="#E2E8F0" stroke-width="2"/>';g.values.forEach(function(v){out+='<circle cx="'+X(v)+'" cy="'+g.y+'" r="5.5" fill="'+g.color+'"/>';});});out+='<line x1="'+x0+'" y1="215" x2="'+x1+'" y2="215" stroke="#94A3B8"/>';[40,50,60,70,80].forEach(function(t){out+='<text x="'+X(t)+'" y="232" text-anchor="middle" font-size="11" fill="#64748B">'+t+'</text>';});out+='<text x="344" y="272" text-anchor="middle" font-size="12" fill="#475569">Memory-test score</text></svg>';document.getElementById('da-dotplot').innerHTML=out;return groups[1].values;}
+function corrData(target){var n=24,xs=[],xc=[],raw=[],e=[],xz=[],yz=[],hours=[],scores=[],i,mean=function(a){return a.reduce(function(p,q){return p+q;},0)/a.length;};for(i=0;i<n;i++){xs.push(-1+2*i/(n-1));}var mx=mean(xs);xs.forEach(function(v){xc.push(v-mx);});for(i=0;i<n;i++){raw.push(Math.sin((i+1)*1.7)+0.4*Math.cos((i+1)*0.9));}var mr=mean(raw);raw.forEach(function(v){e.push(v-mr);});var dot=0,den=0;for(i=0;i<n;i++){dot+=e[i]*xc[i];den+=xc[i]*xc[i];}for(i=0;i<n;i++){e[i]=e[i]-(dot/den)*xc[i];}var me=mean(e),se=sampleSD(e),sx=sampleSD(xc);for(i=0;i<n;i++){xz.push(xc[i]/sx);e[i]=(e[i]-me)/se;yz.push(target*xz[i]+Math.sqrt(1-target*target)*e[i]);hours.push(7+1.5*xz[i]);scores.push(70+11*yz[i]);}return {x:hours,y:scores,r:pearson(hours,scores)};}
+function strength(r){var a=Math.abs(r);if(a>=0.9)return'very strong';if(a>=0.7)return'strong';if(a>=0.4)return'moderate';if(a>=0.2)return'weak';if(a>0.05)return'very weak';return'little or no linear';}
+function updateHigh(){var range=document.getElementById('da-high-range'),num=document.getElementById('da-high-number'),high=Math.max(40,Math.min(100,parseInt(range.value,10))),values=[40,50,50,60,60,high],sorted=values.slice().sort(function(a,b){return a-b;}),mean=(values.reduce(function(a,b){return a+b;},0)/6),median=(sorted[2]+sorted[3])/2,rangeValue=high-40,counts={},modes=[],modeText='';values.forEach(function(v){counts[v]=(counts[v]||0)+1;});var maxCount=Math.max.apply(null,Object.keys(counts).map(function(k){return counts[k];}));Object.keys(counts).forEach(function(k){if(counts[k]===maxCount)modes.push(parseInt(k,10));});modes.sort(function(a,b){return a-b;});modeText=maxCount===1?'No mode':modes.length===1?'Mode = '+modes[0]:'Modes = '+modes.join(' and ');num.value=high;document.getElementById('da-high-box').textContent=high;document.getElementById('da-mean-formula').innerHTML='(40 + 50 + 50 + 60 + 60 + '+high+') &divide; 6 = '+fmt(mean);document.getElementById('da-mean-result').textContent='Mean = '+fmt(mean);document.getElementById('da-median-formula').innerHTML='('+sorted[2]+' + '+sorted[3]+') &divide; 2 = '+fmt(median);document.getElementById('da-median-result').textContent='Median = '+fmt(median);document.getElementById('da-mode-formula').textContent=maxCount===1?'Every score occurs once.':modes.length===1?modes[0]+' occurs '+maxCount+' times.':modes.join(' and ')+' each occur '+maxCount+' times.';document.getElementById('da-mode-result').textContent=modeText;document.getElementById('da-range-formula').innerHTML=high+' &minus; 40 = '+rangeValue;document.getElementById('da-range-result').textContent='Range = '+rangeValue;}
+function updateSpread(){var spread=parseInt(document.getElementById('da-spread-range').value,10),b=drawDots(spread),sdA=sampleSD([58,59,60,61,62]),sdB=sampleSD(b),relation=Math.abs(sdB-sdA)<0.005?"the same as":sdB>sdA?"larger than":"smaller than";document.getElementById('da-group-a-values').innerHTML='<strong>Group A:</strong> 58, 59, 60, 61, 62 &middot; Mean = 60';document.getElementById('da-group-b-values').innerHTML='<strong>Group B:</strong> '+b.join(', ')+' &middot; Mean = 60';document.getElementById('da-group-b-sd').innerHTML='<strong>Sample SD:</strong> '+sdB.toFixed(2);document.getElementById('da-group-a-sd').innerHTML='<strong>Sample SD:</strong> '+sdA.toFixed(2);document.getElementById('da-spread-note').textContent="Both groups have a mean of 60. Group B has a sample standard deviation of "+sdB.toFixed(2)+", which is "+relation+" Group A's "+sdA.toFixed(2)+".";}
+function updateCorr(){var target=parseFloat(document.getElementById('da-corr-range').value,10),d=corrData(target),r=d.r;document.getElementById('da-corr-plot').innerHTML=scatterMarkup(d,4,10,40,100,[4,5,6,7,8,9,10],[40,60,80,100],'Hours of sleep','Memory-test score out of 100',true);document.getElementById('da-corr-value').innerHTML='<strong>Calculated r = '+r.toFixed(2)+'</strong>';document.getElementById('da-corr-direction').innerHTML='<strong>Direction:</strong> '+(r>0.05?'positive':r< -0.05?'negative':'no clear direction');document.getElementById('da-corr-strength').innerHTML='<strong>Approximate strength:</strong> '+strength(r);}
+
+drawBar('da-bar-strategy',[{label:'Rereading',value:12},{label:'Highlighting',value:13},{label:'Retrieval practice',value:16}],20,[0,5,10,15,20],'Revision strategy','Mean recall score out of 20');
+drawBar('da-bar-description',[{label:'Rereading',value:12},{label:'Retrieval practice',value:16}],20,[0,5,10,15,20],'Revision strategy','Mean recall score out of 20');
+drawBar('da-bar-novar',[{label:'Condition A',value:12},{label:'Condition B',value:16}],20,[0,5,10,15,20],'Learning condition','Mean score out of 20');
+drawBar('da-bar-axis',[{label:'Method A',value:72},{label:'Method B',value:76}],80,[70,72,74,76,78,80],'Study method','Mean score out of 100',70);
+drawBar('da-bar-nosize',[{label:'Intervention A',value:62},{label:'Intervention B',value:70}],100,[0,25,50,75,100],'Learning intervention','Percentage improved');
+drawBar('da-bar-categories',[{label:'Low',value:11},{label:'Moderate',value:14},{label:'High',value:16}],20,[0,5,10,15,20],'Technology-use category','Mean memory score out of 20');
+drawBar('da-bar-serial',[{label:'Beginning',value:3.0,text:'3.0'},{label:'Middle',value:1.4,text:'1.4'},{label:'End',value:3.6,text:'3.6'}],5,[0,1,2,3,4,5],'Word Position','Mean Number of Words Correctly Recalled');
+drawLine('da-line-recall');
+document.getElementById('da-scatter-sleep').innerHTML=scatterMarkup({x:[4,4.5,5,5.5,6,6.5,7,7.5,8,8.5,9,9.5],y:[48,52,50,58,60,57,68,70,72,78,82,86]},4,10,40,100,[4,5,6,7,8,9,10],[40,60,80,100],'Hours of sleep','Memory-test score out of 100',false);
+drawBox('da-boxplot');
+updateHigh();updateSpread();updateCorr();
+document.getElementById('da-high-range').addEventListener('input',updateHigh);
+document.getElementById('da-high-number').addEventListener('input',function(){var n=document.getElementById('da-high-number');if(n.value==='')return;document.getElementById('da-high-range').value=n.value;updateHigh();});
+document.getElementById('da-high-reset').addEventListener('click',function(){document.getElementById('da-high-range').value=100;updateHigh();});
+document.getElementById('da-spread-range').addEventListener('input',updateSpread);
+document.getElementById('da-spread-reset').addEventListener('click',function(){document.getElementById('da-spread-range').value=10;updateSpread();});
+document.getElementById('da-corr-range').addEventListener('input',updateCorr);
+document.getElementById('da-corr-reset').addEventListener('click',function(){document.getElementById('da-corr-range').value=0.85;updateCorr();});
+document.querySelectorAll('#slide-54 [data-corr]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('da-corr-range').value=b.getAttribute('data-corr');updateCorr();});});
+})();
+</script>
+</div>
 <div class="slide activity-slide" data-slide="55" id="slide-55"><h2>Interpret the Data</h2>
 <p class="slide-intro">Each scenario presents a data pattern. Identify the correct statistical interpretation &mdash; and avoid the common mistake of confusing significance with importance, or correlation with causation.</p>
 <div class="act-container" id="lc-p24-data"></div>
@@ -6896,130 +7010,7 @@ next();
 <div class="act-container" id="lc-p26-synthesis"></div>
 </div>
 
-<div class="slide" data-slide="60" id="slide-60">
-<h2>Exam Practice</h2>
-<p class="slide-intro">How to turn psychological knowledge into strong IB Psychology responses: answer the command, apply psychology to unfamiliar situations, use evidence purposefully, and build justified arguments.</p>
-<div class="collapsible"><button class="collapsible-trigger">Know What the 2027 Exam Is Testing</button><div class="collapsible-body">
-<p>The 2027 IB Psychology assessment is designed to test more than memorisation. Students must demonstrate knowledge and understanding, apply psychology to situations, use concepts and contexts, interpret evidence and construct justified responses.</p>
-<p><strong>Paper 1 (HL)</strong> &mdash; 1 hour 30 minutes &mdash; 35 marks:</p>
-<ul>
-<li><strong>Section A:</strong> two compulsory short-answer questions drawn from two of the three content areas.</li>
-<li><strong>Section B:</strong> two compulsory questions requiring students to apply psychological content to unseen situations. Each question comes from one of the four contexts.</li>
-<li><strong>Section C:</strong> two concept-based extended-response questions, each from a different context.</li>
-</ul>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem 1rem;">
-<p style="margin:0;font-size:.92rem;color:var(--text);"><strong>Section A</strong> &rarr; know &amp; explain &nbsp;&bull;&nbsp; <strong>Section B</strong> &rarr; apply to unseen situations &nbsp;&bull;&nbsp; <strong>Section C</strong> &rarr; develop a concept-based argument</p>
-</div>
-<p style="margin:.75rem 0 0;">These sections do not require the same response structure. Know what each one asks for before you begin writing.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Skill 1: Answer the Question Actually Asked</button><div class="collapsible-body">
-<p>Before writing, identify exactly what the question requires. Do not reproduce everything you remember about the topic.</p>
-<ol>
-<li>Identify the psychological <strong>content</strong> being tested.</li>
-<li>Identify the <strong>command</strong> or task.</li>
-<li>Identify whether a <strong>context</strong> or unseen scenario is provided.</li>
-<li>Identify which psychological <strong>concepts</strong> are relevant.</li>
-<li>Select only the <strong>evidence</strong> needed to answer that question.</li>
-</ol>
-<p><strong>Example:</strong> &ldquo;Explain how operant conditioning could account for the student&rsquo;s behaviour in this situation.&rdquo;</p>
-<p><em>Weak:</em> write everything you know about Skinner and operant conditioning.</p>
-<p><em>Strong:</em> identify the behaviour &rarr; identify the consequence &rarr; determine whether the consequence increases or decreases the behaviour &rarr; apply the correct reinforcement/punishment process directly to the scenario.</p>
-<p><strong>Application &ne; repeating a definition.</strong> Application means using psychological knowledge to explain the specific details of the unfamiliar situation.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Skill 2: Apply Psychology to Unseen Situations</button><div class="collapsible-body">
-<p>This is extremely important for the 2027 assessment. Follow this simple process:</p>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem 1rem;text-align:center;font-size:.95rem;color:var(--text);"><strong>Scenario detail</strong> &rarr; <strong>psychological concept / mechanism</strong> &rarr; <strong>explanation</strong> &rarr; <strong>link back to the scenario</strong></div>
-<p style="margin:.75rem 0 0;"><strong>Example scenario:</strong> a student receives enthusiastic praise every time she contributes to class discussion. Over several weeks, she begins contributing more frequently.</p>
-<p><strong>Application:</strong> &ldquo;The teacher&rsquo;s praise is a consequence following the student&rsquo;s contribution. Because the behaviour subsequently increases, the praise is functioning as positive reinforcement. Operant conditioning therefore provides one explanation for why her classroom participation became more frequent.&rdquo;</p>
-<p>This is stronger than &ldquo;This is positive reinforcement because positive reinforcement increases behaviour.&rdquo; The stronger answer <strong>uses the details of the scenario</strong>.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Skill 3: Use Research as Evidence, Not as a Memory Dump</button><div class="collapsible-body">
-<p>Research should serve the argument. A study may be used to:</p>
-<ul>
-<li>provide empirical evidence for a psychological claim</li>
-<li>illustrate a mechanism</li>
-<li>support or challenge an explanation</li>
-<li>evaluate how confidently a conclusion can be made</li>
-<li>examine issues such as culture, measurement, bias or causality</li>
-</ul>
-<p>You do not automatically need to write Aim &rarr; Participants &rarr; Procedure &rarr; Results in full every time you mention a study. Instead: <strong>include the methodological details and findings that are relevant to the point you are making.</strong></p>
-<p><em>Weak:</em> a long memorised description of Loftus &amp; Palmer with every procedural detail.</p>
-<p><em>Stronger:</em> &ldquo;Loftus and Palmer manipulated the verb used to describe a car accident and found different speed estimates across wording conditions. Because wording was experimentally manipulated, the study provides evidence that post-event questioning can causally influence later reports, although the study cannot by itself establish exactly how the underlying memory representation changed.&rdquo;</p>
-<p>This demonstrates <strong>evidence &rarr; interpretation &rarr; limitation</strong>.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Skill 4: Evaluate with a Purpose</button><div class="collapsible-body">
-<p>Evaluation is not simply adding generic strengths and limitations. <strong>Evaluation should change how confidently we accept, interpret or apply a psychological claim.</strong></p>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem 1rem;">
-<p style="margin:0;font-size:.92rem;"><strong>Claim:</strong> what conclusion is being made?<br><strong>Evidence:</strong> what evidence supports it?<br><strong>Limitation / alternative:</strong> what reduces our confidence or changes the interpretation?<br><strong>Judgement:</strong> what can we reasonably conclude?</p>
-</div>
-<p style="margin:.75rem 0 0;"><strong>Example:</strong> &ldquo;Loftus and Palmer&rsquo;s experimental manipulation supports a causal effect of question wording on participants&rsquo; reports. However, viewing filmed accidents differs from experiencing a real accident, so generalising the magnitude of the effect to real eyewitness situations requires caution. The study therefore provides strong evidence that wording can influence reports, but not a complete model of eyewitness memory in every real-world situation.&rdquo;</p>
-<p>Do not write &ldquo;This study lacks ecological validity&rdquo; and stop. <strong>Explain why that limitation matters for the conclusion.</strong></p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Skill 5: Think in IB Concepts</button><div class="collapsible-body">
-<p>The 2027 course places substantial emphasis on concepts. There are six:</p>
-<p style="text-align:center;font-size:.95rem;color:var(--text);"><strong>bias &bull; causality &bull; change &bull; measurement &bull; perspective &bull; responsibility</strong></p>
-<ul>
-<li><strong>Bias:</strong> how might cognitive biases systematically influence judgement?</li>
-<li><strong>Causality:</strong> can the research demonstrate that one variable caused another?</li>
-<li><strong>Change:</strong> how can learning or memory change through experience?</li>
-<li><strong>Measurement:</strong> how did researchers operationalise and measure memory, learning or decision-making?</li>
-<li><strong>Perspective:</strong> could cognitive, biological, sociocultural or individual perspectives lead to different explanations?</li>
-<li><strong>Responsibility:</strong> how should psychological knowledge about learning, persuasion or memory be used ethically?</li>
-</ul>
-<p>Do not force every concept into every answer. <strong>Use the concept that genuinely helps answer the question.</strong></p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">What High-Quality Responses Do</button><div class="collapsible-body">
-<p><strong>A strong response:</strong></p>
-<ul>
-<li>&#10003; answers the exact question</li>
-<li>&#10003; uses accurate psychological terminology</li>
-<li>&#10003; explains mechanisms rather than merely naming them</li>
-<li>&#10003; applies psychology directly to scenario details when required</li>
-<li>&#10003; selects relevant evidence</li>
-<li>&#10003; explains what the evidence actually demonstrates</li>
-<li>&#10003; distinguishes correlation from causation where relevant</li>
-<li>&#10003; avoids claims stronger than the evidence permits</li>
-<li>&#10003; evaluates evidence in relation to the conclusion</li>
-<li>&#10003; reaches a justified judgement when the question requires one</li>
-</ul>
-<p><strong>A weak response:</strong></p>
-<ul>
-<li>&#10007; dumps everything memorised about the topic</li>
-<li>&#10007; describes studies without explaining why they matter</li>
-<li>&#10007; gives definitions without application</li>
-<li>&#10007; lists generic strengths and limitations</li>
-<li>&#10007; claims a study &ldquo;proves&rdquo; a theory</li>
-<li>&#10007; ignores details of an unseen scenario</li>
-<li>&#10007; forces memorised essay structures onto every question</li>
-</ul>
-</div></div>
-<div class="reveal"><div class="reveal-question">An unfamiliar exam scenario describes a teenager who begins copying a popular friend&rsquo;s study habits after seeing the friend receive praise and high grades. What would a strong Learning &amp; Cognition response do first?</div><div class="reveal-answer"><div>Identify the specific psychological mechanism in the scenario. Social learning theory is relevant because the teenager observes a model and later reproduces the behaviour. The friend&rsquo;s praise and high grades may act as observed consequences that increase the model&rsquo;s attractiveness or the learner&rsquo;s motivation to imitate. A strong response would connect these details directly to observational learning rather than simply writing a memorised definition of SLT.</div></div></div>
-<div class="reveal"><div class="reveal-question">A student remembers every detail of a psychological study but cannot explain why the study matters to the exam question. What is missing?</div><div class="reveal-answer"><div>Interpretation. Research earns its place in an answer by supporting, challenging or qualifying a psychological claim. Knowing participants, procedures and results is useful only when those details help answer the question. Ask: what does this evidence allow me to conclude, and what does it NOT allow me to conclude?</div></div></div>
-<div class="reveal"><div class="reveal-question">Which is stronger evaluation?<br><br>A: &ldquo;The study used a laboratory, so it lacks ecological validity.&rdquo;<br><br>B: &ldquo;Because participants watched a filmed accident rather than experiencing a real collision, their attention and emotional arousal may differ from real eyewitnesses. This means we should be cautious about assuming the size of the effect would be identical in real accidents.&rdquo;<br><br>Why?</div><div class="reveal-answer"><div>B. It explains why the methodological issue matters for the conclusion. Strong evaluation is not a label such as &ldquo;ecological validity&rdquo;; it explains how the issue changes the interpretation, generalisability or strength of the evidence.</div></div></div>
-<div class="collapsible"><button class="collapsible-trigger">Exam Strategy</button><div class="collapsible-body">
-<p>Allocate time in proportion to the marks available. If a question is difficult, write the strongest answer you can and move on rather than sacrificing later questions. Leave a small amount of time to check whether every response actually answered the question asked.</p>
-</div></div>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-  <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Exam Practice</h4>
-  <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Practise applying the skills: answer the command, apply to the scenario, and use evidence purposefully.</p>
-  <div class="act-container" id="lc-inline-exam-check"></div>
-</div>
-
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>The 2027 exam tests knowledge AND application, concepts, evidence and reasoning.</li>
-<li>Different question types require different kinds of responses &mdash; there is no universal &ldquo;two studies + evaluation&rdquo; formula.</li>
-<li>Application means connecting psychological mechanisms directly to details of an unfamiliar situation.</li>
-<li>Research should support an argument, not become a memorised description.</li>
-<li>Evaluation should explain how evidence affects the strength of a conclusion.</li>
-<li>Use IB concepts when they genuinely illuminate the question.</li>
-<li>Make claims that are proportional to the evidence.</li>
-<li>Always answer the exact question asked.</li>
-</ol></div>
-</div>
-
-<div class="slide activity-slide" data-slide="61" id="slide-61"><h2>Exam Response Planning</h2>
+<div class="slide activity-slide" data-slide="60" id="slide-61"><h2>Exam Response Planning</h2>
 <p class="slide-intro">For each practice question, build a plan: identify what the question requires, choose relevant psychological content, apply it to scenario details where appropriate, select useful evidence, explain what that evidence demonstrates, identify a meaningful evaluation issue, and form a justified conclusion where required.</p>
 <div class="act-container" id="lc-p27-response"></div>
 </div>
@@ -7032,7 +7023,7 @@ next();
 
       <div class="lesson-nav-bottom">
         <button class="btn-prev-slide" id="prev-btn">&larr; Previous</button>
-        <span class="slide-counter" id="slide-counter">1 / 61</span>
+        <span class="slide-counter" id="slide-counter">1 / 60</span>
         <button class="btn-next-slide" id="next-btn">Next &rarr;</button>
       </div>
     </div><!-- /lesson-content -->
@@ -7652,11 +7643,15 @@ initActivity('lc-inline-tech-check', {
 
 initActivity('lc-inline-data-check', {
     type: 'conclude',
-    title: 'Data Analysis Check',
-    subtitle: 'Select the correct statistical interpretation for each scenario.',
+    title: 'Evidence Check — Data Analysis',
+    subtitle: 'Select the strongest interpretation for each item. Each explanation appears after you check your answers.',
     questions: [
-      { label: "r = .18, p < .05 between sleep and exam scores means:", options: ['Sleep causes scores to increase 18%', 'Small but significant positive relationship — sleep probably contributes but explains only ~3% variance', 'Result is not meaningful', 'Sleep is the most important factor'], correct: 1, feedback: 'r = .18 is a small effect (r-squared = .03, so about 3% of variance explained). A p-value below .05 means a result this extreme would be relatively unlikely if the null hypothesis were true; it does not show that the relationship is large or important. The result is modest: sleep may be associated with exam scores, but most of the variance is explained by other factors.' },
-      { label: "A study finds r = .45 between education and income. The newspaper reports 'Education makes you richer.' What's wrong?", options: ['Nothing', 'Correlation does not prove causation — a third variable could drive both', 'Correlation is too weak', 'Income can\'t be measured'], correct: 1, feedback: 'A correlation of .45 is moderate and meaningful, but it does NOT prove education causes higher income. A third variable (e.g., family wealth providing both education access and career connections) could drive both. Only an experiment with random assignment could support a causal claim.' }
+      { label: "Two conditions have means of 14 and 18 out of 20, but the source gives no standard deviations or sample sizes. What is justified?", options: ["The second condition is definitely more effective", "The sample means differ by four marks, but without spread or sample size we cannot judge consistency or statistical evidence", "The difference proves a causal effect", "The first condition has no variability"], correct: 1, feedback: "The means differ by four marks, so there is a descriptive difference in the sample. Without measures of spread or sample size, we cannot say how consistent the scores were or whether the difference would meet a statistical significance threshold. A causal conclusion would also require information about design and control." },
+      { label: "A study reports r = −.62 between screen time and sleep quality. Which interpretation is accurate?", options: ["A weak positive relationship", "A moderately strong negative relationship; the sign gives direction and the absolute value gives strength", "Screen time causes poorer sleep", "There is no linear relationship"], correct: 1, feedback: "The minus sign shows that higher screen time tended to be associated with lower sleep quality. The absolute value, .62, indicates a moderately strong linear relationship. The correlation alone does not establish that screen time caused the difference." },
+      { label: "With 5,000 participants, a study finds r = .09 and p < .001. Which conclusion is best?", options: ["The relationship is strong because it is statistically significant", "The relationship is weak, although the large sample can make a small effect statistically significant", "p < .001 means there is a 99.9% chance the hypothesis is true", "The result must be practically important"], correct: 1, feedback: "The correlation is weak because .09 is close to zero. A very large sample can produce a small p-value for a small effect. Statistical significance does not show that the relationship is strong, practically important or caused by one variable." },
+      { label: "Box plots show Group A with median 12 and IQR 5, and Group B with median 15 and IQR 3. Which statement is accurate?", options: ["Group A has the higher median and more variable middle 50%", "Group B has the higher median and less variable middle 50%", "Both groups have the same median", "The IQR tells us nothing about variability"], correct: 1, feedback: "Group B's median of 15 is higher than Group A's 12. Its IQR of 3 is smaller than Group A's 5, so the middle 50% of Group B's scores is less variable. The IQR is a measure of variability around the middle of the distribution." },
+      { label: "A scatterplot forms a clear U shape, but the reported Pearson correlation is close to zero. What does this tell us?", options: ["There is no relationship of any kind", "There is little or no linear relationship, but a nonlinear relationship may still exist", "The correlation must have been calculated incorrectly", "The variables are unrelated at every point"], correct: 1, feedback: "Pearson's r describes linear relationships. A value close to zero says little or no linear relationship was detected. A curved pattern can still be a strong relationship, so the scatterplot must be inspected as well as the coefficient." },
+      { label: "A bar chart compares mean scores of 72 and 76, but its vertical axis starts at 70. What is the main interpretive issue?", options: ["The data must be incorrect", "The truncated axis visually exaggerates the difference between the means", "Bar charts cannot compare two groups", "The means should be reported as percentages"], correct: 1, feedback: "Starting the axis at 70 makes a four-point difference look much larger than it is relative to the scale. The means themselves are not necessarily wrong, but the visual comparison is misleading unless the axis break and the absolute difference are made clear." }
     ]
   });
 
@@ -7780,13 +7775,6 @@ setupSynthesisClaimActivity();
 document.getElementById('lc-inline-synth-check').addEventListener('click', handleSynthesisClaimClick);
 setupSynthesisTopicLinks();
 
-initActivity('lc-inline-exam-check', {
-    type: 'short-response',
-    title: 'Exam Practice & Evidence Check',
-    scaffolding: "The 2027 IB Psychology assessment tests application, concepts and reasoning as well as knowledge. For the practice question 'Evaluate the use of experiments in studying memory', plan a response that: (1) answers the command, (2) selects evidence relevant to the point, (3) explains what that evidence demonstrates, and (4) evaluates in a way that affects the strength of the conclusion.",
-    placeholder: 'Write your exam plan here...',
-    modelAnswer: "(1) Command: evaluate. (2) Relevance: choose experiments that bear on whether an experimental design can support causal claims about memory. (3) Evidence: Loftus & Palmer (1974) manipulated verb wording and found different speed estimates across conditions; because wording was experimentally manipulated, the study provides evidence that post-event questioning can causally influence later reports. Godden & Baddeley (1975) studied memory recall in matched underwater and on-land settings. (4) Interpretation: explain what each study allows and does not allow you to conclude. (5) Evaluation with purpose: lab films differ from real accidents, so generalising the size of the effect to real eyewitness situations requires caution; this changes how confidently the causal claim can be applied. Field experiments combine some causal control with more natural settings. (6) Judgement: experiments provide strong evidence about mechanisms, but conclusions about real-world application should be drawn cautiously."
-  });
 
 
 
