@@ -4259,70 +4259,340 @@
 </div>
 
 <div class="slide" data-slide="44" id="slide-44">
-<h2>Scenario Application &mdash; Prevention &amp; Treatment</h2>
-<div class="slide-intro">Bring together SSRIs, CBT and social-media prevention. Judge interventions using evidence rather than assuming that one treatment is universally best.</div>
-<div style="background:var(--primary-light);border-left:3px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.85rem 1rem;margin:.75rem 0;">
-<p style="font-size:.88rem;font-weight:600;color:var(--primary);margin-bottom:.25rem;">SCENARIO</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:0;">Mia, 17, has been diagnosed with Major Depressive Disorder.</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">She has been offered either an SSRI or Cognitive Behavioral Therapy.</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">Mia says:</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;font-style:italic;">&ldquo;Medication must be the better treatment because it directly fixes the chemical imbalance causing my depression.&rdquo;</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">Her parents disagree:</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;font-style:italic;">&ldquo;CBT must be better because it deals with the real problem, while medication only covers it up.&rdquo;</p>
-<p style="font-size:.9rem;line-height:1.6;color:var(--text);margin:.4rem 0 0;">A school counsellor explains that both treatments may help some people, but that treatment response differs between individuals.</p>
+<style>
+#slide-44 .hw44-body{text-align:left;word-break:normal;overflow-wrap:normal;hyphens:none}
+#slide-44 .hw44-part{font-size:1.15rem;font-weight:800;color:var(--text);margin:1.9rem 0 .6rem;padding-bottom:.25rem;border-bottom:2px solid var(--primary)}
+#slide-44 .hw44-part-first{margin-top:1.2rem}
+#slide-44 .hw44-sub{font-size:1rem;font-weight:800;color:var(--text);margin:1.25rem 0 .45rem}
+#slide-44 .hw44-note{font-size:.86rem;color:var(--text-secondary);line-height:1.55;margin:.35rem 0 .75rem}
+#slide-44 .hw44-scenario{background:var(--bg-secondary);border:1px solid var(--border);border-left:3px solid var(--primary);border-radius:var(--radius);padding:.9rem 1.05rem;margin:.75rem 0 1rem}
+#slide-44 .hw44-scenario h4{font-size:1rem;font-weight:800;color:var(--text);margin:0 0 .45rem}
+#slide-44 .hw44-scenario p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .55rem}
+#slide-44 .hw44-scenario p:last-child{margin-bottom:0}
+#slide-44 .hw44-quote{font-style:italic;padding-left:.7rem;border-left:2px solid var(--primary)}
+#slide-44 .hw44-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;align-items:stretch;margin:.6rem 0 1rem}
+#slide-44 .hw44-card{background:var(--bg-secondary);border:1px solid var(--border);border-top:3px solid var(--primary);border-radius:var(--radius);padding:.75rem .85rem}
+#slide-44 .hw44-card h4{font-size:.92rem;font-weight:800;color:var(--text);margin:0 0 .35rem}
+#slide-44 .hw44-card p{font-size:.88rem;line-height:1.55;color:var(--text);margin:0}
+#slide-44 .hw44-reveal-list{display:grid;gap:.55rem;margin:.7rem 0}
+#slide-44 .reveal{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem .85rem;margin:0;cursor:pointer}
+#slide-44 .reveal:hover{border-color:var(--primary)}
+#slide-44 .reveal-question{display:block;white-space:normal;overflow-wrap:normal;font-size:.93rem;font-weight:700;line-height:1.6;color:var(--text);text-align:left}
+#slide-44 .reveal-question::after{content:'Reveal answer';display:table;width:max-content;margin-top:.55rem;font-size:.74rem;font-weight:800;color:var(--primary);background:var(--primary-light);border:1px solid var(--border);padding:.2rem .6rem;border-radius:5px}
+#slide-44 .reveal.open .reveal-question::after{content:'Hide answer'}
+#slide-44 .reveal-answer p,#slide-44 .reveal-answer li{font-size:.9rem;line-height:1.65;color:var(--text)}
+#slide-44 .reveal-answer p{margin:0 0 .6rem}
+#slide-44 .reveal-answer p:last-child{margin-bottom:0}
+#slide-44 .reveal-answer ul,#slide-44 .reveal-answer ol{margin:.3rem 0 .6rem;padding-left:1.2rem}
+#slide-44 .hw44-model-label{display:block;font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin:0 0 .35rem}
+#slide-44 .hw44-guidance{background:var(--primary-light);border-left:3px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:.55rem .8rem;margin:.8rem 0 0}
+#slide-44 .hw44-guidance p,#slide-44 .hw44-guidance li{font-size:.85rem;line-height:1.55;color:var(--text)}
+#slide-44 .hw44-guidance p{margin:0 0 .35rem}
+#slide-44 .hw44-guidance p:last-child{margin-bottom:0}
+#slide-44 .hw44-guidance ul{margin:.25rem 0 .3rem;padding-left:1.1rem}
+#slide-44 .hw44-scenario-label{display:block;font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--text-secondary);margin:1.1rem 0 .25rem}
+#slide-44 .hw44-data-label{font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin:1rem 0 .25rem}
+#slide-44 .hw44-qtag{display:block;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--primary);margin:.95rem 0 .3rem}
+#slide-44 .hw44-figure{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1rem .7rem;margin:.6rem 0 1rem}
+#slide-44 .hw44-figure figcaption{font-size:.98rem;font-weight:800;color:var(--text);margin:0 0 .7rem}
+#slide-44 .hw44-axis-title{font-size:.82rem;font-weight:700;color:var(--text-secondary);margin:0 0 .5rem}
+#slide-44 .hw44-chart{display:grid;grid-template-columns:52px 1fr;gap:.45rem;height:250px}
+#slide-44 .hw44-y-axis{height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;font-size:.78rem;color:var(--text-secondary);font-variant-numeric:tabular-nums;padding-bottom:24px}
+#slide-44 .hw44-plot{position:relative;height:100%;border-left:1px solid var(--border);border-bottom:1px solid var(--border)}
+#slide-44 .hw44-grid{position:absolute;inset:0 0 24px 0;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+#slide-44 .hw44-grid span{display:block;border-top:1px dashed var(--border)}
+#slide-44 .hw44-bars{position:absolute;inset:0 0 24px 0;display:flex;justify-content:space-around;align-items:stretch;padding:0 .35rem}
+#slide-44 .hw44-bar-item{width:23%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:.25rem}
+#slide-44 .hw44-bar-value{font-size:.82rem;font-weight:800;color:var(--text);font-variant-numeric:tabular-nums}
+#slide-44 .hw44-bar{width:100%;max-width:78px;background:var(--primary);border-radius:5px 5px 0 0;min-height:2px}
+#slide-44 .hw44-bar.combined{background:var(--accent)}
+#slide-44 .hw44-bar.placebo{background:var(--text-muted)}
+#slide-44 .hw44-bar-labels{position:absolute;left:0;right:0;bottom:0;height:24px;display:flex;justify-content:space-around;padding:0 .35rem}
+#slide-44 .hw44-bar-label{width:23%;height:24px;font-size:.78rem;font-weight:700;color:var(--text);text-align:center;line-height:1.2;display:flex;align-items:center;justify-content:center}
+#slide-44 .hw44-x-title{text-align:center;font-size:.84rem;font-weight:700;color:var(--text-secondary);margin:.5rem 0 0}
+#slide-44 .hw44-caption{font-size:.82rem;color:var(--text-secondary);line-height:1.5;margin:.6rem 0 0}
+#slide-44 .hw44-table-wrap{overflow-x:auto;margin:.4rem 0 .7rem;-webkit-overflow-scrolling:touch}
+#slide-44 table.hw44-table{width:100%;min-width:440px;border-collapse:collapse;font-size:.88rem}
+#slide-44 .hw44-table th{background:var(--primary-light);color:var(--text);font-weight:800;text-align:left;padding:.45rem .6rem;border:1px solid var(--border)}
+#slide-44 .hw44-table td{padding:.45rem .6rem;border:1px solid var(--border);line-height:1.45;vertical-align:top}
+#slide-44 .hw44-table td.num,#slide-44 .hw44-table th.num{text-align:right;font-variant-numeric:tabular-nums}
+#slide-44 .hw44-concept-table{min-width:560px}
+#slide-44 .hw44-concept-table th:first-child{width:26%}
+#slide-44 .hw44-alt{font-size:.85rem;color:var(--text-secondary);line-height:1.55;margin:.45rem 0 0}
+@media (max-width:700px){
+  #slide-44 .hw44-cards{grid-template-columns:1fr}
+  #slide-44 .hw44-chart{grid-template-columns:42px 1fr;height:230px}
+  #slide-44 .hw44-y-axis{font-size:.72rem}
+  #slide-44 .hw44-bar-labels{height:28px;padding:0 .1rem}
+  #slide-44 .hw44-bar-label{font-size:.7rem;height:28px;width:24%}
+  #slide-44 .hw44-grid{inset:0 0 28px 0}
+  #slide-44 .hw44-bars{inset:0 0 28px 0;padding:0 .1rem}
+  #slide-44 .hw44-bar-item{width:24%}
+  #slide-44 .hw44-bar-value{font-size:.74rem}
+}
+</style>
+<h2>Scenario Application — Prevention &amp; Treatment</h2>
+<p class="slide-intro">Apply your knowledge of biological treatment, psychological treatment and prevention to realistic situations. Use psychological research to evaluate interventions, interpret findings and investigate how psychologists determine whether an intervention is effective.</p>
+<div class="hw44-body">
+
+<h3 class="hw44-part hw44-part-first">Part 1 — Evaluating Treatment Options</h3>
+
+<div class="hw44-scenario">
+<h4>Scenario — Finding the Right Treatment for Mia</h4>
+<p>Mia is a 17-year-old student who has been diagnosed with Major Depressive Disorder.</p>
+<p>Over the past three months, she has experienced persistent low mood, difficulty concentrating, disrupted sleep and a loss of interest in activities she previously enjoyed.</p>
+<p>Her academic performance has declined, and she frequently interprets disappointing examination results as evidence that she is a failure. She has also started withdrawing from friends and avoiding activities she previously enjoyed.</p>
+<p>Following a clinical assessment, her treatment team discusses several possible approaches, including an SSRI, Cognitive Behavioral Therapy (CBT), and combined treatment where clinically appropriate.</p>
+<p>Mia believes medication would be the most effective treatment:</p>
+<p class="hw44-quote">“Medication must be better because it directly fixes the chemical imbalance causing my depression.”</p>
+<p>Her parents disagree:</p>
+<p class="hw44-quote">“CBT must be better because it deals with the real problem, while medication only covers it up.”</p>
+<p>Mia is concerned about potential medication side effects but also worries that she may struggle to attend and engage with regular therapy sessions.</p>
+<p>Her treatment team explains that treatment suitability depends on several factors, including symptom severity, age, safety, individual circumstances, preferences and response to treatment.</p>
 </div>
-<p style="font-size:.95rem;font-weight:600;margin:1rem 0 .5rem;color:var(--text);">Using your knowledge of prevention and treatment, explain how a psychologist should evaluate the treatment options for Mia and assess the claims that one treatment is automatically &ldquo;better&rdquo; than the other.</p>
-<div class="collapsible"><button class="collapsible-trigger">1. What Is the Prompt Asking?</button><div class="collapsible-body">
-<p>Students must:</p>
-<p><strong>Explain what SSRIs and CBT target.</strong></p>
-<p><strong>Compare the competing claims</strong> made by Mia and her parents.</p>
-<p><strong>Evaluate whether either treatment can be declared universally superior.</strong></p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">2. What Does Each Treatment Target?</button><div class="collapsible-body">
-<p>SSRIs<br>&rarr; serotonin signaling / biological processes</p>
-<p>CBT<br>&rarr; cognitive and behavioral processes, such as distorted thinking and withdrawal</p>
-<p>Different mechanisms do not automatically tell us which intervention is &ldquo;best&rdquo;. The mechanism of a treatment alone cannot predict which outcome it will produce for a particular person.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">3. Treatment Effectiveness Is Not the Same as Cause</button><div class="collapsible-body">
-<p>This is a key reasoning step.</p>
-<p>If an SSRI reduces Mia&rsquo;s symptoms, this supports:<br>&ldquo;The SSRI may be an effective treatment for Mia.&rdquo;</p>
-<p>It does NOT prove:<br>&ldquo;Low serotonin caused Mia&rsquo;s depression.&rdquo;</p>
-<p>Likewise, if CBT reduces her symptoms, this supports:<br>&ldquo;CBT may effectively modify psychological processes associated with her symptoms.&rdquo;</p>
-<p>It does NOT prove:<br>&ldquo;Cognitive processes were the only original cause.&rdquo;</p>
-<p>A treatment can change an outcome without identifying the complete original cause of the problem:</p>
-<p>TREATMENT MECHANISM<br>&ne;<br>COMPLETE DISORDER CAUSE</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">4. &ldquo;Best&rdquo; Depends on What?</button><div class="collapsible-body">
-<p>A psychologist should ask:</p>
-<p>best for whom?<br>best for what outcome?<br>compared with what?<br>over what time period?<br>with what side effects?<br>with what barriers to access?<br>for what severity?<br>according to what evidence?</p>
-<p>Remember:</p>
-<p>effective on average<br>&ne;<br>best for every individual</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">5. Use Evidence Carefully</button><div class="collapsible-body">
-<p>Research may be mentioned, but no named study is required. Use evidence for a purpose:</p>
-<p>EVIDENCE<br>&rarr;<br>WHAT IT SUPPORTS<br>&rarr;<br>WHAT IT DOES NOT PROVE</p>
-<p>For example, comparative research has found substantial improvement with both CBT and antidepressant medication, without clear overall superiority &mdash; which supports effectiveness but does not establish that either treatment is automatically better for Mia. Do not turn this into research recall.</p>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">6. Build Your Answer</button><div class="collapsible-body">
-<p>Before writing, check that your answer:</p>
-<p>&square; explains what SSRIs target</p>
-<p>&square; explains what CBT targets</p>
-<p>&square; distinguishes treatment mechanism from cause</p>
-<p>&square; avoids claiming that either treatment is automatically superior</p>
-<p>&square; explains why treatment response may vary between individuals</p>
-<p>&square; uses evidence to support rather than replace reasoning</p>
-<p>&square; considers relevant practical factors such as side effects, severity or access</p>
-<p>&square; directly evaluates the competing claims</p>
-<p>&square; reaches a qualified conclusion</p>
-</div></div>
-<div class="reveal"><div class="reveal-question">Model Answer</div><div class="reveal-answer"><div>A psychologist should not declare either treatment automatically better, because SSRIs and CBT target different mechanisms and individual responses vary. SSRIs alter serotonin signaling, and research shows antidepressants can reduce depressive symptoms on average compared with placebo &mdash; but effectiveness does not prove Mia&rsquo;s depression was caused by a chemical imbalance, since treatment mechanism and disorder cause are not the same thing. CBT targets cognitive and behavioral processes such as distorted thinking and withdrawal, and comparative research has found substantial improvement with both CBT and medication without clear overall superiority &mdash; so her parents&rsquo; certainty goes too far as well. As the counsellor notes, both treatments may help some people while response differs between individuals. The better conclusion depends on the outcome sought, severity, side effects, access and how well the evidence generalizes to Mia: a qualified judgment, not a universal rule.</div></div></div>
-<div class="collapsible"><button class="collapsible-trigger">8. Optional Extension &mdash; Prevention and Social-Media Reduction</button><div class="collapsible-body">
-<p>Jay, 16, has developed a pattern of problematic social-media use. His school is considering requiring him to reduce his use sharply for three weeks because research suggests that limiting social-media use may improve some well-being outcomes.</p>
-<p>Ask: what can the research justify the school concluding &mdash; and what would still be too strong?</p>
-<p>Use this to reinforce:</p>
-<p>one study / one intervention result<br>&ne;<br>guaranteed outcome for every individual</p>
-<p>Consider the sample, the duration and what was actually measured. Do not turn this extension into another full scenario answer.</p>
-</div></div>
+
+<h4 class="hw44-sub">Treatment Options</h4>
+<div class="hw44-cards">
+<div class="hw44-card"><h4>SSRIs</h4><p>A biological treatment that alters serotonin signalling.</p></div>
+<div class="hw44-card"><h4>Cognitive Behavioral Therapy</h4><p>A psychological treatment that targets unhelpful patterns of thinking and behaviour.</p></div>
+<div class="hw44-card"><h4>Combined Treatment</h4><p>Medication alongside psychological therapy where clinically appropriate.</p></div>
+</div>
+
+<div class="hw44-reveal-list">
+
+<div class="reveal"><div class="reveal-question">Explain how SSRIs and Cognitive Behavioral Therapy could address different aspects of Mia's difficulties.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>SSRIs inhibit the reuptake of serotonin, leaving more serotonin available in the synapse and altering communication between neurons. Over time, changes in serotonin signalling and related neural processes may contribute to improvements in depressive symptoms. For Mia, successful treatment could potentially reduce difficulties such as persistent low mood, disrupted sleep and problems concentrating.</p>
+<p>CBT takes a different approach by targeting cognitive and behavioural processes that may contribute to maintaining her depression. For example, Mia interprets disappointing examination results as evidence that she is a failure. This may reflect negative automatic thoughts associated with Beck's cognitive model of depression. Through cognitive restructuring, Mia could learn to examine the evidence supporting these thoughts and develop more balanced interpretations of her academic difficulties.</p>
+<p>CBT could also address her behavioural withdrawal through behavioural activation. Gradually reintroducing meaningful activities and social interactions could increase opportunities for positive experiences. Although the treatments target different processes, both may contribute to reducing depressive symptoms. Their effectiveness does not require depression to have a single biological or cognitive cause.</p>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Using relevant psychological research, evaluate Mia's and her parents' claims that one treatment is necessarily better than the other.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Mia assumes that depression is caused by a chemical imbalance and that SSRIs directly correct this underlying cause. However, evidence that antidepressants reduce depressive symptoms does not establish that depression was originally caused by a serotonin deficiency.</p>
+<p>Cipriani et al. (2018) found that the antidepressants investigated were more effective than placebo in the acute treatment of adults with Major Depressive Disorder. This supports the potential effectiveness of antidepressant medication but does not establish that medication is universally superior to psychological therapy.</p>
+<p>Kirsch et al. (2008) also found that antidepressants produced greater average improvement than placebo, although the average additional improvement was approximately 1.8 points on the Hamilton Depression Rating Scale. The larger difference at very high initial severity was mainly due to a lower placebo response rather than a larger drug response. This raises questions about the clinical importance of average treatment differences and illustrates why statistical significance alone is insufficient when evaluating effectiveness.</p>
+<p>Mia's parents make a similarly reductionist assumption by suggesting that negative thinking is the real cause of depression and that medication merely covers up the problem. In a meta-analysis of 115 CBT studies, Cuijpers et al. (2013) found that CBT exceeded control conditions, although the estimated effect was reduced after adjustment for publication bias. This supports the effectiveness of CBT in reducing depressive symptoms, but it does not establish that negative thinking was necessarily the original cause of depression.</p>
+<p>Research comparing psychological and pharmacological treatments also demonstrates the importance of considering participant characteristics and treatment outcomes rather than assuming that one approach is universally superior. Both Mia and her parents therefore overstate what treatment research can establish. Depression may involve interacting biological, cognitive and environmental influences, and treatment suitability depends on more than average effectiveness.</p>
+<p>Mia's age, concerns about medication side effects and ability to engage with therapy are particularly relevant. Findings from adult treatment studies cannot automatically determine the most appropriate treatment for a 17-year-old.</p>
+<div class="hw44-guidance"><p><strong>Answer guidance.</strong> You do not need to use every study in this answer. Other relevant research should be accepted when the finding is explained accurately and used to support a clear argument.</p></div>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Explain why a reduction in depressive symptom scores alone may be insufficient when evaluating whether treatment has been effective for Mia.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>A reduction in depressive symptom scores provides evidence that some symptoms have improved. For example, psychologists could use the PHQ-9 to measure changes in the frequency of depressive symptoms before and after treatment. However, a lower score does not necessarily establish that Mia has recovered or that her everyday functioning has improved sufficiently.</p>
+<p>Mia might report fewer depressive symptoms but continue to struggle academically, withdraw from friends or experience difficulties sleeping. Psychologists should therefore distinguish between treatment response and remission. Treatment response refers to a meaningful reduction in symptom severity, often operationalised in research as at least a 50% reduction from baseline, whereas remission generally means that symptoms fall below an established threshold.</p>
+<p>Neither necessarily shows that improvements will be maintained over time. Researchers should also consider treatment acceptability, potential adverse effects, treatment discontinuation and whether improvements persist after treatment ends. Using several relevant measures would give a more complete understanding of whether treatment has improved Mia's health and well-being.</p>
+<div class="hw44-guidance"><p>A PHQ-9 score is useful for monitoring symptoms, but it does not establish clinical recovery on its own.</p></div>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Explain how psychologists could investigate which treatment approaches are most effective for adolescents experiencing depression.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Researchers could conduct a randomised controlled trial involving adolescents diagnosed with Major Depressive Disorder. Where clinically and ethically appropriate, participants could be randomly assigned to different treatment conditions, such as CBT, an appropriate antidepressant treatment or combined treatment.</p>
+<p>Random assignment would help reduce systematic differences between groups before treatment, strengthening the researchers' ability to investigate whether differences in outcomes are attributable to the treatment conditions. Depressive symptoms could be measured before treatment, immediately after treatment and at a later follow-up using suitable standardised measures.</p>
+<p>Researchers could also measure everyday functioning, treatment adherence, adverse effects and quality of life. Using several outcomes would help establish whether improvements extend beyond reductions in depressive symptom scores, and a follow-up assessment would help determine whether improvements were maintained over time.</p>
+<p>Because the participants would be adolescents experiencing depression, researchers would need to consider appropriate consent and assent procedures, confidentiality, clinical monitoring, participant safety and access to necessary treatment. The study should be designed to investigate treatment effectiveness without unnecessarily exposing participants to harm or withholding clinically necessary care.</p>
+<div class="hw44-guidance"><p>This is an educational application of research methodology and ethics, not an actual clinical trial protocol.</p></div>
+</div></div></div>
+
+</div>
+
+<h3 class="hw44-part">Part 2 — HL Paper 3 Practice: Comparing Treatment Outcomes</h3>
+
+<p class="hw44-alt">Teacher-created HL practice. These questions are not official IB examination questions.</p>
+
+<h4 class="hw44-sub">Research Scenario</h4>
+<div class="hw44-scenario">
+<p>Researchers randomly assign 160 adults diagnosed with Major Depressive Disorder to four treatment conditions.</p>
+<p>Each condition initially contains 40 participants.</p>
+<p>Depressive symptoms are measured using the Patient Health Questionnaire-9 (PHQ-9) before treatment and again after 12 weeks.</p>
+<p>For this study, treatment response is operationalised as a reduction of at least 50% in the participant's baseline PHQ-9 score.</p>
+<p>The following hypothetical results are reported.</p>
+</div>
+
+<p class="hw44-data-label">Graph 1</p>
+<figure class="hw44-figure">
+<figcaption>Treatment Response After 12 Weeks</figcaption>
+<p class="hw44-axis-title">Participants Achieving Treatment Response (%)</p>
+<div class="hw44-chart" role="img" aria-label="Bar chart showing treatment response after 12 weeks: SSRI 60 percent, CBT 65 percent, combined treatment 75 percent, placebo 35 percent">
+<div class="hw44-y-axis"><span>100</span><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+<div class="hw44-plot">
+<div class="hw44-grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="hw44-bars">
+<div class="hw44-bar-item"><span class="hw44-bar-value">60%</span><div class="hw44-bar" style="height:60%"></div></div>
+<div class="hw44-bar-item"><span class="hw44-bar-value">65%</span><div class="hw44-bar" style="height:65%"></div></div>
+<div class="hw44-bar-item"><span class="hw44-bar-value">75%</span><div class="hw44-bar combined" style="height:75%"></div></div>
+<div class="hw44-bar-item"><span class="hw44-bar-value">35%</span><div class="hw44-bar placebo" style="height:35%"></div></div>
+</div>
+<div class="hw44-bar-labels">
+<div class="hw44-bar-label">SSRI</div>
+<div class="hw44-bar-label">CBT</div>
+<div class="hw44-bar-label">Combined treatment</div>
+<div class="hw44-bar-label">Placebo</div>
+</div>
+</div>
+</div>
+<p class="hw44-x-title">Treatment Condition</p>
+<p class="hw44-caption"><em>Teacher-created hypothetical data for classroom practice. These are not findings from a published study.</em></p>
+</figure>
+
+<p class="hw44-data-label">Table 1 — Treatment Discontinuation</p>
+<div class="hw44-table-wrap">
+<table class="hw44-table">
+<thead><tr><th>Treatment condition</th><th class="num">Initial participants</th><th class="num">Participants who discontinued treatment</th></tr></thead>
+<tbody>
+<tr><td>SSRI</td><td class="num">40</td><td class="num">15%</td></tr>
+<tr><td>CBT</td><td class="num">40</td><td class="num">10%</td></tr>
+<tr><td>Combined treatment</td><td class="num">40</td><td class="num">20%</td></tr>
+<tr><td>Placebo</td><td class="num">40</td><td class="num">5%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="hw44-note">For this hypothetical example, treatment response percentages are calculated using the original group sizes. Participants who discontinued treatment are classified as non-responders.</p>
+
+<span class="hw44-qtag">Paper 3 Question 1 [3 marks]</span>
+<div class="hw44-reveal-list">
+<div class="reveal"><div class="reveal-question">Explain one issue that limits the interpretation of the treatment response data.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>One issue is that treatment response is operationalised as a reduction of at least 50% in depressive symptom scores. Although 75% of participants in the combined treatment condition achieved this threshold compared with 65% in the CBT condition, the graph does not show the actual amount of symptom improvement experienced by individual participants.</p>
+<p>For example, a participant whose symptoms decreased by 49% would be classified as a non-responder, whereas a participant whose symptoms decreased by 50% would be classified as a responder. This limits our understanding of the magnitude and variability of symptom improvement within each treatment condition.</p>
+<div class="hw44-guidance"><p><strong>Answer guidance.</strong> Issue &rarr; Source Detail &rarr; Consequence for Interpretation.</p><p>Other appropriately developed issues may include:</p><ul><li>The absence of longer-term follow-up data.</li><li>Missing information about the distribution of symptom changes.</li><li>Missing information about statistical significance when drawing inferential conclusions.</li><li>Differences in treatment discontinuation and the limited information available about why participants discontinued.</li></ul><p>If discussing discontinuation, students must recognise that discontinued participants were already classified as non-responders. They should not claim that these participants were excluded from the displayed response percentages.</p><p>The adult sample is relevant when applying the findings to adolescents, but it is not automatically a methodological flaw in research intended to investigate adult depression.</p></div>
+</div></div></div>
+</div>
+
+<span class="hw44-qtag">Paper 3 Question 2 [6 marks]</span>
+<div class="hw44-reveal-list">
+<div class="reveal"><div class="reveal-question">Analyse the findings presented in Graph 1 and Table 1 and state a conclusion about the relative effectiveness of the treatment conditions.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Combined treatment produced the highest observed treatment response rate at 75%, compared with 65% for CBT, 60% for SSRIs and 35% for placebo. The response rate for combined treatment was 15 percentage points higher than for SSRIs alone and 10 percentage points higher than for CBT alone. All three active treatment conditions achieved higher observed response rates than placebo.</p>
+<p>However, Table 1 shows that combined treatment also had the highest discontinuation rate at 20%, compared with 15% for SSRIs and 10% for CBT. Although combined treatment produced the highest observed response rate, a greater proportion of participants also discontinued treatment. This illustrates why treatment response and treatment acceptability should be considered separately.</p>
+<p>The reasons for discontinuation are not provided, so the findings cannot establish whether participants stopped treatment because of adverse effects, practical difficulties or other factors. Overall, combined treatment produced the highest observed response rate under the conditions investigated, even when participants who discontinued treatment were classified as non-responders.</p>
+<p>However, the data do not establish whether the differences between treatments were statistically significant, whether improvements were maintained or whether combined treatment would be preferable for every patient.</p>
+<div class="hw44-guidance"><p><strong>Answer guidance.</strong> Pattern &rarr; Numerical Evidence &rarr; Interpretation &rarr; Conclusion.</p><p>This response identifies the overall pattern, uses accurate numerical comparisons, distinguishes percentage points from percentage changes, integrates evidence from both sources, avoids unsupported explanations for discontinuation and reaches a conclusion consistent with the available evidence.</p></div>
+</div></div></div>
+</div>
+
+<h4 class="hw44-sub">Applying the Findings</h4>
+<div class="hw44-reveal-list">
+<div class="reveal"><div class="reveal-question">Do these findings establish that combined treatment would be the most appropriate option for Mia?</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>No. The participants were adults, whereas Mia is 17 years old. Differences in age, development, treatment response and safety considerations may limit the generalisability of the findings to her circumstances.</p>
+<p>Furthermore, average treatment outcomes cannot determine how an individual will respond. Mia's treatment preferences, symptom severity, potential adverse effects and ability to engage with therapy would also need to be considered.</p>
+<p>The findings could inform clinical discussion but cannot independently establish the most appropriate treatment for Mia.</p>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Explain how researchers could investigate whether the improvements were maintained six months later.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Researchers could conduct a follow-up assessment six months after the initial treatment period. Participants could complete the same PHQ-9 assessment used before and after treatment, allowing researchers to compare depressive symptom scores across the three measurement points.</p>
+<p>Researchers could also assess everyday functioning, subsequent treatment use and whether participants experienced a return of depressive symptoms. This would help establish whether improvements were maintained rather than only occurring during the initial treatment period.</p>
+<p>However, researchers would need to consider participant attrition and any additional treatment or significant life experiences occurring during the follow-up period, as these could influence the findings.</p>
+</div></div></div>
+</div>
+
+<h3 class="hw44-part">Part 3 — Prevention Challenge: Problematic Social-Media Use</h3>
+
+<div class="hw44-scenario">
+<h4>Scenario — Preventing Problematic Social-Media Use</h4>
+<p>A secondary school has noticed that many students regularly check social media during lessons, stay awake late responding to messages and struggle to concentrate the following morning.</p>
+<p>Some students report feeling anxious when they cannot check their phones because they worry about missing conversations or being excluded by their friends.</p>
+<p>Others describe checking social media whenever they feel stressed about schoolwork. Although scrolling temporarily helps them feel better, they often find themselves spending much longer online than intended.</p>
+<p>Teachers have also noticed that students frequently imitate the online behaviour of popular classmates.</p>
+<p>Some students report feeling dissatisfied with their own lives after repeatedly viewing carefully selected images of other people's achievements, appearance and experiences.</p>
+<p>Several students have attempted to reduce their social-media use but find themselves returning to their previous habits.</p>
+<p>However, other students report that social media helps them maintain friendships, communicate with family members and participate in supportive online communities.</p>
+<p>The principal proposes banning social media entirely and argues that this will prevent psychological problems from developing.</p>
+<p>A school psychologist believes that a more targeted prevention programme may be appropriate.</p>
+</div>
+
+<p class="hw44-note"><strong>Your challenge.</strong> Design and justify a school-based prevention programme that addresses problematic social-media use while recognising that social media can also provide benefits. Select the psychological theories and research evidence that are most useful for your proposal.</p>
+
+<div class="hw44-reveal-list">
+
+<div class="reveal"><div class="reveal-question">Identify and explain three psychological processes that may contribute to the students' problematic social-media use. Use specific examples from the scenario.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>One possible explanation is negative reinforcement. Some students check social media when they feel stressed about schoolwork. If checking temporarily reduces their stress and this consequence increases the likelihood of future checking, the behaviour is being negatively reinforced.</p>
+<p>Fear of missing out may also contribute to repeated checking. Students who worry about missing conversations or being excluded may feel compelled to monitor social media even when doing so interferes with sleep or concentration.</p>
+<p>Social Learning Theory provides another explanation. Students observe popular classmates frequently using social media and may imitate their behaviour, particularly when those classmates appear to receive social attention or approval.</p>
+<p>Upward social comparison could also contribute to psychological difficulties. Students who repeatedly compare their own lives with carefully selected images of other people's achievements or experiences may develop more negative evaluations of themselves.</p>
+<p>These processes may interact. For example, social comparison could contribute to distress, while checking social media temporarily reduces anxiety about exclusion, reinforcing continued use.</p>
+<div class="hw44-guidance"><p>Students only need to explain three appropriate processes. Other explanations supported by the existing teaching content may also be accepted. Negative reinforcement should not be confused with punishment, and a temporary reduction in anxiety demonstrates negative reinforcement only if the behaviour becomes more likely.</p></div>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Propose three prevention strategies. For each strategy, identify the behaviour or psychological process being targeted, explain how the strategy would work and explain why it could help reduce problematic social-media use.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>A connected programme could target several processes rather than simply reducing access to social media.</p>
+<div class="hw44-table-wrap"><table class="hw44-table"><thead><tr><th>Psychological process</th><th>Proposed prevention strategy</th><th>Psychological justification</th></tr></thead><tbody>
+<tr><td>Negative reinforcement and stress-related checking</td><td>Teach alternative coping strategies, including problem-solving, structured study breaks and seeking social support.</td><td>Students may become less reliant on checking social media as a way of temporarily reducing unpleasant feelings.</td></tr>
+<tr><td>Social Learning Theory</td><td>Encourage influential students to model healthy social-media habits and recognise positive examples of balanced technology use.</td><td>Observing socially valued peers demonstrating healthier behaviour may encourage imitation and change perceived social norms.</td></tr>
+<tr><td>Fear of missing out</td><td>Establish shared expectations that students do not need to respond immediately to messages, particularly during lessons and overnight.</td><td>Reducing perceived pressure to remain constantly available may reduce anxiety about missing conversations or being excluded.</td></tr>
+<tr><td>Upward social comparison</td><td>Teach students to critically evaluate carefully selected and edited online content.</td><td>Recognising that online content may not accurately represent other people's everyday experiences could reduce unrealistic comparisons.</td></tr>
+</tbody></table></div>
+<p>Students only need to propose and justify three strategies. These are examples rather than prescriptive answers. They should be treated as proposed interventions unless their effectiveness has been established by relevant research.</p>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Using relevant psychological research, explain why the proposed prevention programme may be worth investigating.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Hunt et al. (2018) investigated whether limiting social-media use could influence psychological well-being. The researchers randomly assigned 143 university students to either limit their use of selected social-media platforms or continue their usual use over a three-week period.</p>
+<p>Participants in the restricted-use condition were instructed to limit their use of Facebook, Instagram and Snapchat to approximately 10 minutes per platform each day. Compared with the control condition, the restricted-use group experienced greater reductions in loneliness and depressive symptoms.</p>
+<p>These findings provide evidence that changing patterns of social-media use can influence aspects of psychological well-being under the conditions investigated. However, the participants were university students rather than secondary school students, and the intervention lasted only three weeks.</p>
+<p>The findings therefore do not establish that equivalent improvements would occur among younger students or that improvements would be maintained over a longer period. Furthermore, the study did not directly establish that restricting social-media use prevents the development of a clinical psychological disorder.</p>
+<p>The research provides a useful basis for investigating the proposed programme, but the effectiveness of its individual components would still need to be established.</p>
+<div class="hw44-guidance"><p>Hunt et al. did not directly investigate every proposed psychological mechanism or prevention strategy.</p></div>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Design a psychological investigation that could determine whether the prevention programme is effective. In your answer, explain the independent variable, the dependent variable and how it would be operationalised, the comparison condition, when measurements would be taken and one ethical consideration.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Researchers could conduct a controlled investigation comparing students who participate in the prevention programme with students who continue their usual school activities.</p>
+<p>The independent variable would be participation in the prevention programme, with an intervention condition and an appropriate comparison condition.</p>
+<p>The primary dependent variable could be problematic social-media use, operationalised using an appropriate validated questionnaire designed for this age group that assesses difficulties controlling social-media behaviour and its interference with everyday functioning. Researchers could also collect additional information about device-recorded social-media use, sleep quality, concentration and psychological well-being. However, screen time alone would not necessarily establish whether social-media use had become less problematic.</p>
+<p>Measurements could be taken before the programme, immediately after it and again three months later. This would allow researchers to investigate whether changes occurred and whether they were maintained.</p>
+<p>Random assignment, where feasible and appropriate, could help reduce systematic differences between conditions. If whole classes were assigned to conditions, researchers would need to account for the possibility that students within the same class are more similar to one another.</p>
+<p>Because the participants would be secondary school students, researchers would need to obtain appropriate consent and assent, protect confidentiality and ensure that participation is voluntary. Collecting information about students' online behaviour would also raise privacy considerations. Researchers should avoid accessing private messages or collecting unnecessary personal information.</p>
+<p>The investigation would provide evidence about whether the programme reduces problematic social-media use rather than merely whether students spend less time online.</p>
+</div></div></div>
+
+<div class="reveal"><div class="reveal-question">Evaluate the principal's claim that banning social media entirely will prevent psychological problems from developing.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>A complete ban could reduce opportunities for problematic social-media use during the periods in which the ban is enforced. For example, restricting access during lessons might reduce distractions and improve opportunities for students to concentrate.</p>
+<p>However, a ban would not necessarily address the psychological processes contributing to problematic use, such as fear of missing out, stress-related checking, social comparison or learned patterns of behaviour. Students might return to their previous habits when restrictions are removed.</p>
+<p>Social media can also provide benefits, including maintaining friendships, communicating with family members and accessing supportive communities. A complete ban could reduce some of these benefits.</p>
+<p>Furthermore, psychological problems may develop through multiple interacting influences. Reducing exposure to one potential risk factor does not establish that a psychological disorder will be prevented.</p>
+<p>A more targeted programme could combine appropriate restrictions with strategies that help students develop healthier patterns of behaviour. Nevertheless, its effectiveness would still need to be established through psychological research.</p>
+<p>The principal's claim is therefore too certain. Restrictions may be useful in particular circumstances, but their effectiveness depends on what is being targeted, how improvement is measured and whether changes are maintained.</p>
+</div></div></div>
+
+</div>
+
+<h3 class="hw44-part">Part 4 — Final Synthesis Challenge</h3>
+
+<p class="hw44-note"><strong>Final synthesis question.</strong> Attempt the question before revealing the model answer.</p>
+<div class="hw44-reveal-list">
+<div class="reveal"><div class="reveal-question">How should psychologists determine whether an intervention for a psychological health problem is effective? Discuss with reference to the biological and psychological treatment of depression and the prevention of problematic social-media use.</div><div class="reveal-answer"><div>
+<span class="hw44-model-label">Model answer</span>
+<p>Determining whether a psychological intervention is effective requires more than establishing that some participants improved after receiving it. Psychologists must investigate whether the intervention contributed to the improvement, how improvement was measured, how meaningful the changes were and whether the benefits were maintained over time.</p>
+<p>Research investigating biological treatment illustrates the importance of comparison conditions. Cipriani et al. (2018) found that the antidepressants investigated were more effective than placebo in the acute treatment of adults with Major Depressive Disorder. Comparing medication with placebo helps researchers investigate whether improvement exceeds that observed in the comparison condition. Effectiveness and acceptability are separate outcomes, however, so side effects and discontinuation must also be considered.</p>
+<p>Kirsch et al. (2008) reported an average additional improvement of approximately 1.8 points on the Hamilton Depression Rating Scale for antidepressants compared with placebo. The larger difference at very high initial severity mainly reflected a lower placebo response rather than a larger drug response. This shows why statistical significance alone is not enough: psychologists must also consider the size and practical importance of the change and whether an average group difference applies to an individual patient.</p>
+<p>Similar considerations apply to psychological treatment. Elkin et al. (1989) compared CBT, interpersonal psychotherapy, imipramine plus clinical management and placebo plus clinical management over 16 weeks. Imipramine is a tricyclic antidepressant, not an SSRI. Outcomes varied with baseline severity and the measure used, so the study does not support a simple universal ranking of treatments. In a meta-analysis of 115 CBT studies, Cuijpers et al. (2013) found that CBT exceeded control conditions, while estimates were reduced after adjustment for publication bias.</p>
+<p>Improvements in depressive symptom scores do not necessarily establish that an individual has recovered or that everyday functioning has improved. Psychologists should therefore consider several outcomes, including symptom severity, functioning, treatment acceptability and longer-term improvement.</p>
+<p>These issues also apply to prevention. Hunt et al. (2018) found that limiting social-media use could reduce loneliness and depressive symptoms under the conditions investigated. However, the study involved university students and lasted only three weeks. The findings provide evidence of short-term changes in psychological well-being rather than establishing that problematic social-media use or clinical psychological disorders can be prevented across different populations.</p>
+<p>Researchers must also ensure that their measures reflect the intended outcome. A reduction in screen time does not necessarily demonstrate a reduction in problematic social-media use, just as a reduction in depressive symptom scores does not necessarily establish complete recovery.</p>
+<p>Ultimately, evaluating an intervention requires researchers to consider causality, measurement, the magnitude of change, generalisability, possible bias and the ethical consequences of applying their findings. An intervention may be effective under particular conditions without being universally effective or establishing the original cause of the psychological problem.</p>
+<p class="hw44-alt">Other well-supported selections of research and concepts may produce a strong answer. The studies are used here to illustrate how evidence contributes to an argument, not as a list that every student must reproduce.</p>
+
+<p class="hw44-data-label">Conceptual Connections</p>
+<div class="hw44-table-wrap"><table class="hw44-table hw44-concept-table"><thead><tr><th>IB Psychology concept</th><th>Application to intervention effectiveness</th></tr></thead><tbody>
+<tr><td>Bias</td><td>Publication bias, participant expectations and other systematic influences may affect conclusions about effectiveness.</td></tr>
+<tr><td>Causality</td><td>Researchers must establish whether the intervention contributed to the observed improvement.</td></tr>
+<tr><td>Change</td><td>Improvements may differ in magnitude, duration and consistency between individuals.</td></tr>
+<tr><td>Measurement</td><td>Conclusions depend on how symptoms, problematic behaviour, functioning and improvement are operationalised.</td></tr>
+<tr><td>Perspective</td><td>Biological and psychological approaches may target different processes contributing to health problems.</td></tr>
+<tr><td>Responsibility</td><td>Researchers and practitioners must consider safety, ethics, generalisability and the consequences of applying findings.</td></tr>
+</tbody></table></div>
+<p class="hw44-alt">These concepts help connect ideas across the unit. A strong response does not need to name all six explicitly.</p>
+</div></div></div>
+
+</div>
+</div>
 </div>
 <div class="slide" data-slide="45" id="slide-45">
 <style>
