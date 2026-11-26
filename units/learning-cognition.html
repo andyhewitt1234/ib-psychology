@@ -6567,189 +6567,330 @@ next();
 
 <div class="slide" data-slide="58" id="slide-58">
 <style>
-#slide-58 .se-sec{font-size:1.08rem;font-weight:700;color:var(--text);margin:1.6rem 0 .55rem;line-height:1.35}
-#slide-58 .se-sub{font-size:.98rem;font-weight:700;color:var(--text);margin:1.1rem 0 .45rem;line-height:1.4}
-#slide-58 .se-body p{font-size:.94rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .6rem}
+#slide-58 .se-sec{font-size:1.08rem;font-weight:700;color:var(--text);margin:1.5rem 0 .5rem;line-height:1.35}
+#slide-58 .se-sub{font-size:.98rem;font-weight:700;color:var(--text);margin:1rem 0 .4rem;line-height:1.4}
+#slide-58 .se-lead{font-size:.94rem;line-height:1.6;color:var(--text-secondary);margin:.35rem 0 .7rem}
+#slide-58 .se-body p{font-size:.93rem;line-height:1.65;color:var(--text-secondary);margin:0 0 .6rem}
 #slide-58 .se-body p:last-child{margin-bottom:0}
-#slide-58 .se-body strong{color:var(--text)}
-#slide-58 .se-group{padding-top:.8rem;margin-top:.9rem;border-top:1px solid var(--border)}
-#slide-58 .se-gh{font-size:.96rem;font-weight:700;color:var(--text);margin:0 0 .4rem}
-#slide-58 .se-ex{background:var(--bg-secondary);border-left:3px solid var(--border);border-radius:0 8px 8px 0;padding:.65rem .9rem;margin:.45rem 0 .7rem;font-size:.92rem;line-height:1.6;color:var(--text);}
-#slide-58 .se-green{background:#F0FDF4;border:1px solid #BBF7D0;border-radius:10px;padding:.9rem 1.05rem;margin:.5rem 0 .9rem}
-#slide-58 .se-green p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
-#slide-58 .se-green p:last-child{margin-bottom:0}
-#slide-58 .se-note{background:#F1F5F9;border:1px solid #E2E8F0;border-radius:10px;padding:.85rem 1.05rem;margin:.5rem 0 .9rem}
-#slide-58 .se-note p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .45rem}
-#slide-58 .se-note p:last-child{margin-bottom:0}
-#slide-58 .se-point{padding-top:.8rem;margin-top:.85rem;border-top:1px solid var(--border)}
-#slide-58 .se-point:first-of-type{padding-top:0;margin-top:.6rem;border-top:none}
-#slide-58 .se-ph{font-size:.96rem;font-weight:700;color:var(--text);margin:0 0 .35rem}
-#slide-58 .se-reveal{background:#E5F0FF;border-color:#CFE0F7}
+#slide-58 .se-note{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1rem;margin:.7rem 0}
+#slide-58 .se-note p{font-size:.92rem;line-height:1.65;color:var(--text-secondary);margin:0}
+#slide-58 .se-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:.7rem;margin:.7rem 0}
+#slide-58 .se-card{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem .95rem;display:flex;flex-direction:column;gap:.55rem}
+#slide-58 .se-card-title{font-size:.98rem;font-weight:700;color:var(--text);margin:0}
+#slide-58 .se-topics{display:flex;flex-wrap:wrap;gap:.35rem}
+#slide-58 .se-topic{background:var(--primary-light);border:1px solid var(--border);border-radius:999px;padding:.25rem .6rem;font-size:.82rem;line-height:1.4;color:var(--text);cursor:pointer;text-align:left}
+#slide-58 .se-topic:hover{border-color:var(--primary)}
+#slide-58 .se-question{font-size:.87rem;line-height:1.55;color:var(--text-secondary);margin:auto 0 0}
+#slide-58 .se-hl{font-size:.84rem;line-height:1.6;color:var(--text-secondary);margin:.45rem 0 .7rem}
+#slide-58 .se-hl .se-topic{font-size:.8rem;padding:.2rem .55rem}
+#slide-58 .se-hl-label{font-size:.72rem;font-weight:700;color:var(--primary);border:1px solid var(--border);border-radius:999px;padding:.1rem .45rem;margin-left:.25rem}
+#slide-58 .se-scenario{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin:.6rem 0 .8rem}
+#slide-58 .se-scenario p{font-size:.93rem;line-height:1.65;color:var(--text);margin:0 0 .55rem}
+#slide-58 .se-scenario p:last-child{margin-bottom:0}
 #slide-58 .reveal{background:#E5F0FF;border-color:#CFE0F7}
-#slide-58 .reveal-question{display:block;white-space:normal}
-#slide-58 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.7rem;font-size:.78rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.22rem .7rem;border-radius:4px}
+#slide-58 .reveal-question{display:block;white-space:normal;line-height:1.55}
+#slide-58 .reveal-question::after{content:'Answer';display:block;width:max-content;margin-top:.55rem;font-size:.76rem;font-weight:600;color:#1E40AF;background:#FFFFFF;border:1px solid #CFE0F7;padding:.2rem .65rem;border-radius:4px}
 #slide-58 .reveal.open .reveal-question::after{content:'Hide Answer'}
-#slide-58 .reveal-answer p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0 0 .55rem}
+#slide-58 .reveal-answer p{font-size:.91rem;line-height:1.65;color:var(--text);margin:0 0 .5rem}
 #slide-58 .reveal-answer p:last-child{margin-bottom:0}
+#slide-58 .se-connections{margin-top:.6rem}
+#slide-58 .se-example{border-left:3px solid var(--border);padding:.15rem 0 .15rem .85rem;margin:.5rem 0}
+#slide-58 .se-example p{font-size:.92rem;line-height:1.65;color:var(--text);margin:0}
+#slide-58 .se-example-label{font-size:.82rem;font-weight:700;color:var(--text);display:block;margin-bottom:.2rem}
+#slide-58 .se-sequence{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:.75rem 0}
+#slide-58 .se-step{background:var(--bg-secondary);border:1px solid var(--border);border-radius:6px;padding:.35rem .6rem;font-size:.84rem;color:var(--text)}
+#slide-58 .se-arrow{color:var(--primary);font-weight:700}
+#slide-58 .se-table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);margin:.7rem 0}
+#slide-58 .se-table{width:100%;min-width:760px;border-collapse:collapse;font-size:.88rem;text-align:left}
+#slide-58 .se-table th,#slide-58 .se-table td{border-bottom:1px solid var(--border);padding:.6rem .7rem;vertical-align:top;text-align:left}
+#slide-58 .se-table th{background:var(--bg-secondary);color:var(--text);font-weight:700;font-size:.84rem}
+#slide-58 .se-table tr:last-child td{border-bottom:none}
+#slide-58 .se-table .se-study{font-weight:600;color:var(--text);min-width:150px}
+#slide-58 .se-table .reveal{margin:0;padding:.35rem .55rem;font-size:.84rem}
+#slide-58 .se-table .reveal-question{font-size:.82rem;font-weight:600}
+#slide-58 .se-table .reveal-answer p,#slide-58 .se-table .reveal-question::after{font-size:.78rem}
+#slide-58 .se-concept-card .reveal{height:100%}
+#slide-58 .se-practice-note{font-size:.82rem;color:var(--text-secondary);margin:.5rem 0 .7rem}
+#slide-58 .se-reasons{margin:.5rem 0 0;padding-left:1.1rem;color:var(--text);font-size:.9rem;line-height:1.65}
+#slide-58 .se-reasons li{margin-bottom:.25rem}
+#slide-58 #lc-inline-synth-check .act-conc-q-feedback.show{background:var(--primary-light);border:1px solid var(--border);color:var(--text)}
+#slide-58 #lc-inline-synth-check .act-conc-q-option.disabled{opacity:1;pointer-events:none}
+#slide-58 #lc-inline-synth-check .act-conc-q-option.selected{border-color:var(--primary);background:var(--primary-light)}
+#slide-58 .lc-claim-progress{border:1px solid var(--border);border-radius:8px;background:var(--bg-secondary);padding:.55rem .75rem;margin-bottom:.75rem;font-size:.86rem;color:var(--text-secondary)}
+#slide-58 .lc-claim-progress strong{color:var(--text)}
+#slide-58 .lc-claim-complete{display:block;margin-top:.2rem;font-weight:600;color:var(--primary)}
+@media (max-width: 600px){
+#slide-58 .se-grid{grid-template-columns:1fr}
+#slide-58 .se-sequence{align-items:flex-start;flex-direction:column}
+}
 </style>
 <h2>Synthesis &amp; Evaluation</h2>
-<p class="slide-intro">Learning and cognition are connected, but different psychological theories explain different aspects of behavior. Some explain how we learn, others explain how we think and remember, and others help us understand how learning can be improved.</p>
-<div class="se-body"><p>This lesson brings these ideas together. You will practice choosing relevant explanations, connecting them to real situations and evaluating what psychological evidence can actually tell us.</p></div>
 
-<h3 class="se-sec">How the Unit's Ideas Connect</h3>
-<div class="se-body">
-<div class="se-group">
-<h4 class="se-gh">1. How We Learn</h4>
-<p><strong>Classical conditioning, operant conditioning and social learning theory.</strong> Learning can happen through associations, consequences and observation. These approaches explain different ways that experiences can influence behavior.</p>
-<p class="se-ex"><strong>Example.</strong> A student begins feeling nervous when entering an examination room because they associate it with previous stressful tests. Another student studies more regularly after receiving encouraging feedback. A third student copies an effective revision strategy after watching a classmate use it.</p>
-<p><strong>Why this illustrates the psychology.</strong> These examples illustrate different learning processes. The first involves a possible learned association, the second may involve reinforcement, and the third involves observational learning. They are not three stages of one process.</p>
+<h3 class="se-sec">Learning &amp; Cognition: The Big Picture</h3>
+<p class="se-lead">Use this overview to retrieve the main areas of the unit before applying them. Select a topic to revisit its teaching page through the progress rail.</p>
+<div class="se-grid">
+  <div class="se-card">
+    <h4 class="se-card-title">How We Learn</h4>
+    <div class="se-topics">
+      <button type="button" class="se-topic" data-jump-slide="3">Classical conditioning</button>
+      <button type="button" class="se-topic" data-jump-slide="5">Operant conditioning</button>
+      <button type="button" class="se-topic" data-jump-slide="9">Social learning theory</button>
+    </div>
+    <p class="se-question"><strong>Central question:</strong> How does experience influence behaviour?</p>
+  </div>
+  <div class="se-card">
+    <h4 class="se-card-title">How We Think</h4>
+    <div class="se-topics">
+      <button type="button" class="se-topic" data-jump-slide="13">Schema theory</button>
+      <button type="button" class="se-topic" data-jump-slide="18">Dual processing theory</button>
+      <button type="button" class="se-topic" data-jump-slide="20">Cognitive biases</button>
+    </div>
+    <p class="se-question"><strong>Central question:</strong> How do mental processes influence interpretation and decision-making?</p>
+  </div>
+  <div class="se-card">
+    <h4 class="se-card-title">How We Remember</h4>
+    <div class="se-topics">
+      <button type="button" class="se-topic" data-jump-slide="25">Cognitive models of memory</button>
+      <button type="button" class="se-topic" data-jump-slide="29">Biological influences</button>
+      <button type="button" class="se-topic" data-jump-slide="33">Cultural influences</button>
+      <button type="button" class="se-topic" data-jump-slide="35">Environmental influences</button>
+    </div>
+    <p class="se-question"><strong>Central question:</strong> What influences how information is encoded, stored and retrieved?</p>
+  </div>
+  <div class="se-card">
+    <h4 class="se-card-title">How We Improve Learning</h4>
+    <div class="se-topics">
+      <button type="button" class="se-topic" data-jump-slide="38">Memory and learning strategies</button>
+      <button type="button" class="se-topic" data-jump-slide="42">Motivation and metacognition</button>
+      <button type="button" class="se-topic" data-jump-slide="44">Technology and learning</button>
+    </div>
+    <p class="se-question"><strong>Central question:</strong> How can psychological knowledge help us learn more effectively?</p>
+  </div>
 </div>
-<div class="se-group">
-<h4 class="se-gh">2. How We Think and Make Decisions</h4>
-<p><strong>Schemas, heuristics, cognitive biases and dual-process accounts.</strong> Schemas help us organize and interpret information. Heuristics are mental shortcuts that can make decisions quicker. Cognitive biases are systematic patterns of judgment that can sometimes produce errors.</p>
-<p>Some theories distinguish between relatively automatic processing and more deliberate processing. However, this is a useful theoretical distinction, not proof that every decision belongs neatly to one of two separate systems. Biases are not simply the products of fast processing.</p>
-<p class="se-ex"><strong>Example.</strong> A shopper sees a bicycle advertised for $400 and then reduced to $300. The original price may act as an anchor, making the reduced price appear attractive even if similar bicycles usually cost $250.</p>
-<p><strong>Why this illustrates the psychology.</strong> An initial value can influence a later judgment, so recognizing a possible anchor may help the shopper check the decision against independent information. This does not mean that every heuristic produces a bias, or that the shopper's thinking must belong to one particular system.</p>
-</div>
-<div class="se-group">
-<h4 class="se-gh">3. How We Remember and Forget</h4>
-<p><strong>Encoding, storage, retrieval, memory systems, schemas, retrieval cues and forgetting.</strong> Remembering depends on how information is processed during learning, how it is represented in memory and whether it can be retrieved later.</p>
-<p class="se-ex"><strong>Example.</strong> A student recognizes an explanation when reading their notes but cannot produce it independently during a test.</p>
-<p><strong>Why this illustrates the psychology.</strong> Recognition during rereading does not necessarily mean the student can retrieve the information without help. Their difficulty could reflect weak learning, insufficient retrieval practice, missing cues or other factors. It should not automatically be diagnosed as cue-dependent forgetting.</p>
-</div>
-<div class="se-group">
-<h4 class="se-gh">4. How We Can Improve Learning</h4>
-<p><strong>Retrieval practice, spaced practice, interleaving, feedback, metacognition and motivation.</strong> Psychological research also investigates how learning can be improved. Different strategies influence how students practice, monitor and retrieve information.</p>
-<p class="se-ex"><strong>Example.</strong> A student tests themselves from memory, checks their mistakes and revisits difficult material over several days instead of simply rereading everything the night before.</p>
-<p><strong>Why this illustrates the psychology.</strong> Self-testing requires retrieval, checking mistakes provides feedback, and returning to material after delays creates further chances to retrieve and consolidate learning. These features may support longer-term retention. Motivation may influence how consistently the student uses the strategies, but it does not replace the cognitive processes involved.</p>
-</div>
-</div>
-<div class="se-note"><p><strong>These approaches are connected, but they do not all explain the same thing. A strong psychological explanation selects the concepts that are most relevant to the behavior being investigated.</strong></p></div>
+<p class="se-hl"><strong>HL extension connection:</strong>
+  <button type="button" class="se-topic" data-jump-slide="47">Culture, bilingualism &amp; cognition</button>
+  <button type="button" class="se-topic" data-jump-slide="49">Motivation &amp; independent learning</button>
+  <button type="button" class="se-topic" data-jump-slide="51">Technology &amp; cognition</button>
+  <span class="se-hl-label">HL only</span>
+</p>
+<div class="se-note"><p>These areas of psychology are connected. Learning influences what we know and do, cognitive processes influence how we interpret information, and memory allows us to retain and use what we have learned. Understanding these processes can help psychologists develop strategies to improve learning and change behaviour.</p></div>
 
-<h3 class="se-sec">A Connected Example: Why a Student Forgets</h3>
-<div class="se-green">
-<p><strong>Scenario — Why Did Ethan Forget?</strong></p>
-<p>Ethan has a psychology examination on Friday.</p>
-<p>On Thursday evening, he spends four hours rereading his notes and highlighting important sentences. The explanations feel familiar, and he becomes increasingly confident that he knows the material.</p>
-<p>He occasionally checks messages on his phone while studying.</p>
-<p>During Friday's examination, Ethan recognizes several topics but struggles to explain them without looking at his notes.</p>
-<p>He concludes that he must simply have a bad memory.</p>
+<h3 class="se-sec">Case Study: Why Is Ethan Struggling to Learn?</h3>
+<div class="se-scenario">
+<p>Ethan is preparing for his psychology examination.</p>
+<p>After several stressful examinations, he has started feeling anxious whenever he enters the examination room.</p>
+<p>He admires a successful classmate and begins copying their revision technique. To encourage himself to study regularly, Ethan allows himself to play video games after completing his revision sessions.</p>
+<p>However, most of his revision involves rereading and highlighting his notes. Because the information feels familiar, he believes he understands it well.</p>
+<p>He frequently interrupts his revision to check social media and completes most of his studying shortly before the examination.</p>
+<p>Despite spending several hours revising, Ethan struggles to recall information during the examination.</p>
+<p>He concludes that he simply has a bad memory.</p>
 </div>
-<div class="se-body">
-<h4 class="se-sub">Explain the scenario using relevant concepts</h4>
-<p>The scenario supports several possible explanations, but they are not all equally well supported by the information given.</p>
-<div class="se-point">
-<p class="se-ph">1. Rereading and familiarity</p>
-<p>Repeated exposure can make material feel familiar without necessarily producing strong independent recall. Rereading can help learning, especially when it is combined with active retrieval, but familiarity alone is not a reliable measure of what Ethan can reproduce in an examination.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">2. Retrieval practice</p>
-<p>Ethan spent little time trying to retrieve explanations without looking at his notes. Testing himself could have helped him identify what he could and could not remember, and gave him practice at producing answers independently.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">3. Spacing</p>
-<p>Studying across several days would have provided opportunities to revisit and retrieve material after delays. A single long session is not necessarily useless, but it may be less effective for longer-term retention than appropriately spaced practice.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">4. Attention and distraction</p>
-<p>Repeatedly checking messages could interrupt attention and interfere with effective processing. The scenario does not establish that distraction caused his poor performance, only that it is a possible influence.</p>
-</div>
-<h4 class="se-sub">What Else Might Matter?</h4>
-</div>
-<div class="se-note">
-<p>Motivation, stress, sleep, prior knowledge, task difficulty and retrieval cues could also influence performance. However, the scenario does not provide enough information to determine their individual contributions.</p>
-<p>Studying in bed does not prove a conditioned learning response. Rereading is not necessarily “System 1” processing, and retrieval practice is not necessarily “System 2” processing. Ethan's difficulty does not prove that he has weak schemas or low motivation, and it does not prove that the information has disappeared from memory.</p>
-</div>
-<div class="se-note"><p><strong>Several psychological ideas can help explain Ethan's difficulty, but they do not all have equal support from the information provided. Good psychological reasoning distinguishes what the scenario shows from what remains a possibility.</strong></p></div>
+<h4 class="se-sub">Your Challenge</h4>
+<p class="se-lead">Using your knowledge from across the Learning &amp; Cognition unit, identify psychological processes that could help explain Ethan's experiences and behaviour. Work through the details below before revealing any model answers.</p>
 
-<h3 class="se-sec">How to Build a Synthesis Explanation</h3>
-<div class="se-body">
-<p>A strong answer combines relevant ideas rather than listing every theory. Use three steps.</p>
-<div class="se-point">
-<p class="se-ph">Step 1 — Identify the behavior</p>
-<p>What exactly happened? <strong>Example.</strong> Ethan could recognize explanations in his notes but struggled to recall them during the examination.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">Step 2 — Select relevant concepts</p>
-<p>Which psychological concepts help explain this particular behavior? <strong>Example.</strong> Retrieval practice, familiarity, spacing and attention.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">Step 3 — Explain the connections</p>
-<p>Show how each concept relates to the specific evidence. <strong>Example.</strong> Ethan's repeated rereading may have increased familiarity with the material, but he rarely practiced recalling explanations independently. His concentrated revision session also provided fewer opportunities for retrieval after delays. These factors may help explain why the material seemed familiar while he was studying but was difficult to reproduce during the examination.</p>
-</div>
-<p>Select the explanations that are relevant to the behavior rather than including every theory you remember.</p>
-</div>
-
-<div class="reveal">
-<div class="reveal-question">A fellow student says: &ldquo;Psychology is just common sense with fancy names.&rdquo; Construct a one-paragraph rebuttal using at least four different concepts from this unit.</div>
-<div class="reveal-answer"><div>
-<p>Psychology is more than common sense because it tests explanations of behavior using systematic research. For example, Bandura's research on observational learning investigated how children could imitate behavior they had watched in an adult model.</p>
-<p>Research on reconstructive memory, such as Loftus and Palmer's work, showed how the wording of questions could influence participants' reports of an event. Roediger and Karpicke investigated retrieval practice and found that testing could improve later retention under the conditions they studied.</p>
-<p>Research on cognitive biases, including anchoring, also investigates systematic influences on judgment. These findings demonstrate that psychology does not simply give familiar behavior scientific names; it develops explanations, tests predictions and evaluates the evidence. They describe the conditions studied rather than universal rules about all people and situations.</p>
-</div></div>
+<h3 class="se-sec">Connecting Psychological Explanations</h3>
+<p class="se-lead">Several psychological processes may contribute to Ethan's difficulties. A strong psychological explanation focuses on the available evidence and selects theories that genuinely help explain the behaviour, rather than attempting to apply every theory to the situation.</p>
+<div class="se-connections">
+  <div class="reveal">
+    <div class="reveal-question"><strong>Examination anxiety.</strong> Why might Ethan begin feeling anxious as soon as he enters the examination room?</div>
+    <div class="reveal-answer"><div><p>Classical conditioning may help explain Ethan's anxiety. After repeatedly experiencing stress during examinations, the examination room may have become associated with those unpleasant experiences. Entering the room could therefore trigger a conditioned anxiety response.</p></div></div>
+  </div>
+  <div class="reveal">
+    <div class="reveal-question"><strong>Copying a classmate.</strong> Why might Ethan adopt the revision technique of a successful classmate?</div>
+    <div class="reveal-answer"><div><p>Social Learning Theory suggests that Ethan may imitate a classmate he admires. Identification with the model and the expectation of similar academic success may increase his motivation to reproduce the observed behaviour.</p></div></div>
+  </div>
+  <div class="reveal">
+    <div class="reveal-question"><strong>Gaming after revision.</strong> How might allowing himself to play video games after studying influence Ethan's revision habits?</div>
+    <div class="reveal-answer"><div><p>Gaming is an intended positive reinforcer because a desirable activity follows the completion of revision. If Ethan subsequently studies more frequently, gaming has functioned as positive reinforcement.</p></div></div>
+  </div>
+  <div class="reveal">
+    <div class="reveal-question"><strong>Familiarity and understanding.</strong> Why might Ethan believe that he understands the material even though he struggles to recall it during the examination?</div>
+    <div class="reveal-answer"><div><p>Ethan may be making an inaccurate metacognitive judgment. Rereading makes information feel familiar, but recognising information is not the same as being able to retrieve it independently. Testing himself could provide a more accurate indication of what he knows.</p></div></div>
+  </div>
+  <div class="reveal">
+    <div class="reveal-question"><strong>Technology and distraction.</strong> How might frequently checking social media interfere with Ethan's learning?</div>
+    <div class="reveal-answer"><div><p>Switching between revision and social media places competing demands on attention and working memory. This may make it harder for Ethan to process information effectively and encode it into long-term memory.</p></div></div>
+  </div>
+  <div class="reveal">
+    <div class="reveal-question"><strong>Last-minute revision.</strong> Why might completing most of his revision shortly before the examination be less effective than studying across several days?</div>
+    <div class="reveal-answer"><div><p>Massed revision provides fewer opportunities to retrieve information after delays. Spaced practice allows Ethan to revisit information over time, which can support longer-term retention.</p></div></div>
+  </div>
 </div>
 
-<h3 class="se-sec">Evaluation: Strengths and Limitations of the Unit's Approach</h3>
-<div class="se-body">
-<p>Evaluation means judging what evidence shows, how strong it is and how far it can be applied. Each point below states the issue, gives a study or example, explains why it matters and draws a reasonable conclusion.</p>
-<div class="se-point">
-<p class="se-ph">1. Controlled experiments can investigate causality</p>
-<p><strong>Issue.</strong> Causality means that a change in one variable produces a change in another. Controlled experiments can help investigate this because researchers manipulate one variable and measure the effect.</p>
-<p><strong>Study.</strong> In Bandura's Bobo doll research, children were exposed to an adult model behaving aggressively toward a doll, and their subsequent imitation was measured. Manipulating exposure allowed researchers to investigate whether observing behavior influenced children's imitation.</p>
-<p><strong>Strength.</strong> Experimental control can provide stronger evidence about causal relationships under the tested conditions.</p>
-<p><strong>Limitation.</strong> Imitating an adult's behavior toward a doll in an experimental setting does not establish how children will behave toward real people in everyday life. This does not mean laboratory findings have no real-world relevance; it means the finding should be applied carefully.</p>
+<h3 class="se-sec">From Identifying a Theory to Explaining Behaviour</h3>
+<p class="se-lead">Students frequently identify a relevant theory without explaining how it accounts for the behaviour described. Compare these two answers.</p>
+<div class="se-example">
+  <span class="se-example-label">Limited explanation</span>
+  <p>Ethan struggles to learn because of working memory.</p>
 </div>
-<div class="se-point">
-<p class="se-ph">2. Memory research can reveal weaknesses in recall</p>
-<p><strong>Issue.</strong> A memory report is not the same thing as a perfect recording of an event, so researchers investigate influences on what people report.</p>
-<p><strong>Study.</strong> Loftus and Palmer (1974) changed the wording of questions about filmed traffic accidents and measured participants' reports, including estimates of speed.</p>
-<p><strong>Strength.</strong> Controlled comparisons help researchers identify influences on memory reports.</p>
-<p><strong>Limitation.</strong> Watching filmed accidents and answering questions differs from personally experiencing a serious event, so the ecological validity of the situation is limited. A change in a report also does not prove exactly how the original memory representation changed.</p>
+<div class="se-example">
+  <span class="se-example-label">Developed explanation</span>
+  <p>Ethan frequently switches between reading his psychology notes and checking social media. According to the Working Memory Model, these competing activities place demands on the central executive, which helps coordinate attention and processing. This may make it more difficult for Ethan to process the information he is studying and encode it into long-term memory.</p>
 </div>
-<div class="se-point">
-<p class="se-ph">3. Learning strategies need meaningful outcome measures</p>
-<p><strong>Issue.</strong> Immediate performance and later retention are not necessarily the same. A strategy can feel effective now yet produce weaker recall later.</p>
-<p><strong>Study.</strong> Roediger and Karpicke (2006) compared different study conditions and measured recall both soon after learning and after a delay.</p>
-<p><strong>Strength.</strong> Delayed tests can reveal whether learning lasts beyond the original study session.</p>
-<p><strong>Limitation.</strong> Performance on particular reading and recall tasks does not automatically establish the effectiveness of a strategy for every subject, age group or learning outcome. Generalizability must be judged against the methods and participants used.</p>
-</div>
-<div class="se-point">
-<p class="se-ph">4. Human behavior rarely has one complete explanation</p>
-<p><strong>Issue.</strong> Complex behavior can be influenced by several factors at once, so a single explanation may be incomplete.</p>
-<p><strong>Example.</strong> Ethan's revision difficulty could involve cognitive processes such as retrieval and attention, alongside motivation, prior knowledge and environmental conditions.</p>
-<p><strong>Strength.</strong> Combining appropriate explanations can provide a more complete understanding of what happened.</p>
-<p><strong>Limitation.</strong> Adding more theories does not automatically make an explanation stronger. Each proposed influence must be supported by relevant evidence.</p>
-</div>
-<p><strong>Good evaluation asks what a study demonstrates, how strong the evidence is, what its limitations are and how far its conclusions can reasonably be applied.</strong></p>
+<p class="se-lead">The second response is stronger because it identifies a relevant psychological concept, uses a specific detail from the scenario and explains the psychological mechanism connecting the two. This is the same approach used in the unit's examination guidance: select relevant psychology, apply it to the evidence and justify the conclusion.</p>
+<div class="se-sequence">
+  <span class="se-step">Scenario detail</span><span class="se-arrow">&rarr;</span>
+  <span class="se-step">Psychological concept</span><span class="se-arrow">&rarr;</span>
+  <span class="se-step">Explanation of the mechanism</span><span class="se-arrow">&rarr;</span>
+  <span class="se-step">Behaviour or outcome</span>
 </div>
 
-<div class="reveal">
-<div class="reveal-question">Two students receive the same revision materials. One regularly tests themselves, reviews mistakes and spreads revision across several days. The other rereads the materials repeatedly the night before the examination. The first student performs better on a test one week later. Use at least three psychological concepts to explain the difference. Then explain why we cannot conclude that study strategy was the only cause.</div>
-<div class="reveal-answer"><div>
-<p><strong>Retrieval practice.</strong> The first student tests themselves, which requires recalling material from memory rather than merely recognizing it. This gives practice at retrieving information and can reveal gaps in understanding.</p>
-<p><strong>Spacing.</strong> Spreading revision across several days creates delays between study and retrieval. Revisiting material after a delay may support longer-term retention better than one session the night before.</p>
-<p><strong>Feedback and metacognition.</strong> Reviewing mistakes gives feedback about what is understood and what needs more work, helping the student judge their own learning more accurately.</p>
-<p><strong>Why causality is not established.</strong> The students may also differ in prior knowledge, motivation, sleep, attention or other experiences. Without a controlled comparison, the scenario is consistent with these explanations but does not show that study strategy was the only cause of the difference.</p>
-</div></div>
+<h3 class="se-sec">Connecting Research Evidence</h3>
+<p class="se-lead">Psychologists use research to support explanations, but different studies allow different conclusions. Recall what each study demonstrates and identify a limit before revealing the columns.</p>
+<div class="se-table-wrap">
+<table class="se-table">
+<thead>
+<tr><th>Study</th><th>What does the research demonstrate?</th><th>What does the research not establish?</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="se-study">Watson and Rayner (1920)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>A conditioned fear response can be acquired through stimulus association.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That all phobias develop through classical conditioning.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Bandura et al. (1961)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Children can reproduce aggressive behaviour they have observed.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That observing aggression produces lasting aggression in everyday life.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Bartlett (1932)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Previous knowledge and expectations can influence reconstructed memories.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That all memory errors result from schemas.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Loftus and Palmer (1974)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>The wording of questions can influence subsequent memory reports.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>Precisely how the original memory representation was affected.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Godden and Baddeley (1975)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Environmental context can influence recall.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That environmental context has the same influence on every memory task.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Roediger and Karpicke (2006)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>In Experiment 2, retrieval practice can improve delayed recall.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That retrieval practice produces identical benefits across all learning tasks.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Sana et al. (2013)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Laptop multitasking can reduce immediate lecture comprehension.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That the effects necessarily persist over longer periods.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Scoville and Milner (1957)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Bilateral medial temporal lobe damage was associated with severe difficulty forming new conscious memories.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That memory depends on a single brain area or that all memory difficulties have the same cause.</p></div></div></div></td>
+</tr>
+<tr>
+  <td class="se-study">Masuda and Nisbett (2001)</td>
+  <td><div class="reveal"><div class="reveal-question">Recall the finding</div><div class="reveal-answer"><div><p>Participants from different cultural backgrounds attended to different features of animated scenes, which was reflected in what they later described.</p></div></div></div></td>
+  <td><div class="reveal"><div class="reveal-question">Identify a limit</div><div class="reveal-answer"><div><p>That all members of a culture remember in the same way or that culture alone caused the difference.</p></div></div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;">
-  <h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Evidence Check — Synthesis</h4>
-  <p style="font-size:.85rem;color:var(--text-secondary);margin:0 0 .75rem;">Connect multiple unit concepts to explain a single phenomenon.</p>
+<h3 class="se-sec">Learning &amp; Cognition Through the Six Psychological Concepts</h3>
+<p class="se-lead">Choose the concept that helps you analyse each question. Reveal the model answer when you have formed your own response.</p>
+<div class="se-grid">
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Bias</h4>
+    <div class="reveal">
+      <div class="reveal-question">How might previous knowledge or expectations influence what a person remembers about an event?</div>
+      <div class="reveal-answer"><div><p>Schemas can influence how information is interpreted and reconstructed. A person may remember details that fit their expectations or unintentionally alter information to make it more consistent with their existing knowledge. Research into reconstructive memory demonstrates why memory is not always an accurate record of experience.</p></div></div>
+    </div>
+  </div>
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Causality</h4>
+    <div class="reveal">
+      <div class="reveal-question">A student's examination results improve after they begin using retrieval practice. Does this establish that retrieval practice caused the improvement?</div>
+      <div class="reveal-answer"><div><p>The improvement is consistent with the possibility that retrieval practice helped, but other factors may also have contributed, such as increased study time, better teaching or greater motivation. A controlled experiment comparing different revision strategies would provide stronger evidence of causality.</p></div></div>
+    </div>
+  </div>
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Change</h4>
+    <div class="reveal">
+      <div class="reveal-question">How can psychological knowledge help a student improve their learning over time?</div>
+      <div class="reveal-answer"><div><p>Students can deliberately change their revision behaviour by using strategies such as retrieval practice and spaced practice. Measuring recall before and after introducing these strategies could help determine whether learning has improved.</p></div></div>
+    </div>
+  </div>
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Measurement</h4>
+    <div class="reveal">
+      <div class="reveal-question">Why might an immediate memory test give a misleading impression of how effectively someone has learned?</div>
+      <div class="reveal-answer"><div><p>Information may still be accessible immediately after studying, even if it is not retained over longer periods. A delayed test can provide additional evidence about long-term retention. The choice of measurement therefore influences what researchers can conclude about learning.</p></div></div>
+    </div>
+  </div>
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Perspective</h4>
+    <div class="reveal">
+      <div class="reveal-question">How might biological, cognitive and cultural perspectives contribute different explanations of memory?</div>
+      <div class="reveal-answer"><div><p>A biological perspective may investigate brain structures involved in memory. A cognitive perspective may examine how information is processed and reconstructed. A cultural perspective may investigate how shared experiences and expectations influence what people remember. These explanations can complement one another because they investigate different influences on the same cognitive process.</p></div></div>
+    </div>
+  </div>
+  <div class="se-card se-concept-card">
+    <h4 class="se-card-title">Responsibility</h4>
+    <div class="reveal">
+      <div class="reveal-question">What responsibilities do psychologists have when attempting to change people's behaviour through conditioning or observational learning?</div>
+      <div class="reveal-answer"><div><p>Psychologists should consider whether their interventions respect individuals' autonomy, minimise harm and produce meaningful benefits. A strategy that successfully changes behaviour is not necessarily ethically acceptable. Researchers must also consider possible unintended consequences.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<h3 class="se-sec">How Strong Is the Claim?</h3>
+<p class="se-lead">Read each claim and decide whether it is supported by the available evidence or goes beyond what the research establishes. Feedback appears as soon as you choose an answer. Claim 7 is HL extension only; SL students should answer Claims 1 to 6.</p>
+<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin-top:.7rem;">
   <div class="act-container" id="lc-inline-synth-check"></div>
 </div>
 
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;margin-top:1rem;">
-<h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3>
-<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
-<li>Different psychological theories explain different aspects of learning, memory, thinking and behavior.</li>
-<li>A strong explanation selects relevant concepts and connects them to specific evidence.</li>
-<li>Learning strategies such as retrieval practice and spacing can improve retention under appropriate conditions.</li>
-<li>Research methods help psychologists test explanations, but every study has limitations.</li>
-<li>Synthesis and evaluation mean explaining how ideas fit together while recognizing what the evidence does and does not support.</li>
-</ol></div>
+<h3 class="se-sec">Independent Synthesis Challenge: A School's New Learning Programme</h3>
+<div class="se-scenario">
+<p>A school introduces a new programme designed to improve students' examination results.</p>
+<p>Teachers encourage students to use online quizzes, provide rewards for completing revision activities and ask successful older students to demonstrate effective study techniques.</p>
+<p>Students are also encouraged to revise in short sessions spread across several weeks rather than completing all their revision immediately before examinations.</p>
+<p>At the end of the semester, the school's average examination results have improved.</p>
+<p>The principal concludes: &ldquo;Our programme has proven that rewards, technology and peer role models improve students' learning.&rdquo;</p>
+</div>
+<h4 class="se-sub">Your Task</h4>
+<p class="se-lead">Using your knowledge of Learning &amp; Cognition:</p>
+<ol class="se-reasons">
+  <li>Explain how relevant psychological processes could account for the improvement in examination results.</li>
+  <li>Evaluate whether the principal's conclusion is justified.</li>
+  <li>Explain how psychologists could investigate which aspects of the programme were most effective.</li>
+</ol>
+<p class="se-lead">Select the psychological concepts yourself. Develop connected explanations rather than simply naming as many theories as possible.</p>
+<p class="se-practice-note">Teacher-created classroom practice, not an officially graded IB examination response.</p>
+<div class="reveal">
+  <div class="reveal-question">Reveal the model answer and the reasons this is a strong response</div>
+  <div class="reveal-answer"><div>
+    <p>The school's programme incorporates several strategies that may support learning. Online quizzes can encourage retrieval practice by requiring students to recall information rather than simply reread it. Revising across several weeks also creates opportunities for spaced practice, which may improve long-term retention.</p>
+    <p>The rewards may function as positive reinforcement if they increase the frequency of revision behaviour. Social Learning Theory may also help explain why students adopt effective study techniques demonstrated by older students, particularly if they identify with those models and expect similar academic success.</p>
+    <p>However, the improvement in examination results does not establish that each component of the programme caused the improvement. Several strategies were introduced together, making it difficult to determine which were effective. Other influences, such as changes in teaching, examination difficulty or students' motivation, may also have contributed.</p>
+    <p>Psychologists could investigate the programme by comparing groups using different revision strategies under controlled conditions. They could measure students' existing performance, introduce specific strategies and assess both immediate performance and delayed retention. This would provide stronger evidence about which aspects of the programme contribute to learning.</p>
+    <p>The programme's results are therefore encouraging, but the principal's conclusion is stronger than the available evidence supports.</p>
+    <p><strong>Why this is a strong response</strong></p>
+    <ul class="se-reasons">
+      <li>It selects relevant psychological concepts rather than attempting to use every theory.</li>
+      <li>It connects psychological mechanisms to specific scenario details.</li>
+      <li>It distinguishes plausible explanations from established causes.</li>
+      <li>It considers how research could test the proposed explanations.</li>
+      <li>It reaches a balanced conclusion.</li>
+    </ul>
+  </div></div>
 </div>
 
+<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.15rem 1.35rem;margin-top:1rem;">
+<h3 style="font-size:1rem;font-weight:700;margin-bottom:.7rem;color:var(--text);">What Should I Remember?</h3>
+<ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;">
+<li>Different psychological theories can explain different aspects of the same behaviour.</li>
+<li>A strong psychological explanation connects a relevant concept to specific evidence and explains how the psychological process operates.</li>
+<li>Research evidence supports particular conclusions, but every study has limits.</li>
+<li>The six IB psychological concepts help us analyse, apply and evaluate psychological knowledge.</li>
+<li>Effective psychological arguments select relevant theories and evidence, consider alternative explanations and reach justified conclusions.</li>
+</ol></div>
+</div>
 <div class="slide activity-slide" data-slide="59" id="slide-59"><h2>Synthesis Challenge</h2>
 <p class="slide-intro">Each question requires connecting multiple concepts from across the unit. The best answers weave together two or more mechanisms to explain a single phenomenon &mdash; the model answer demonstrates how.</p>
 <div class="act-container" id="lc-p26-synthesis"></div>
@@ -7529,13 +7670,115 @@ initActivity('lc-inline-transfer-check', {
   });
 
 initActivity('lc-inline-synth-check', {
-    type: 'synthesis',
-    title: 'Synthesis & Evidence Check',
-    prompt: 'A student rereads notes in bed, then fails the exam. Using at least 3 unit concepts, explain every mechanism that contributed to this failure.',
-    scaffolding: 'Identify relevant concepts from learning, memory, attention and metacognition. Explain which influences the scenario supports most directly and which remain possible.',
-    placeholder: 'Write your synthesis here...',
-    modelAnswer: 'Several influences may contribute, but the scenario does not establish all of them: (1) rereading increases familiarity, which can make material feel well known without guaranteeing independent recall; rereading can still help, especially when combined with retrieval; (2) the student spent little time retrieving explanations without notes, so retrieval practice could have revealed gaps and strengthened later recall; (3) a single long session provided fewer opportunities to retrieve after delays than spaced study would have; (4) checking messages may have interrupted attention, although the scenario does not show that distraction was the cause; (5) motivation, stress, sleep, prior knowledge and cue differences are possible additional influences. The bed does not prove a conditioned response, rereading is not automatically System 1, retrieval is not automatically System 2, and failing to recall does not prove the information has disappeared. A strong answer selects the best-supported concepts and distinguishes evidence from possibility.'
+  hideBadge: true,
+  type: 'conclude',
+  title: 'Evidence judgement',
+  subtitle: 'Select one response for each claim. The explanation appears immediately.',
+  questions: [
+    { label: 'Claim 1: Children who observe aggressive behaviour will become aggressive adults.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 1, feedback: "Bandura et al. (1961) measured children's immediate imitation of aggressive behaviour. The study did not investigate whether those children became aggressive adults." },
+    { label: 'Claim 2: Retrieval practice can improve delayed recall compared with repeated studying under certain conditions.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 0, feedback: "Roediger and Karpicke (2006) provide experimental evidence that retrieval practice can improve longer-term retention under the conditions investigated." },
+    { label: 'Claim 3: Human memory can be influenced by the wording of a question.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 0, feedback: "Loftus and Palmer (1974) demonstrated that changing the wording of questions could influence participants' subsequent responses." },
+    { label: 'Claim 4: If a student receives a reward after studying, the reward must be functioning as positive reinforcement.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 1, feedback: "A consequence is classified as reinforcement only if it increases the likelihood of the target behaviour. Receiving a reward does not automatically establish that reinforcement occurred." },
+    { label: 'Claim 5: Environmental context can influence a person\'s ability to recall previously learned information.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 0, feedback: "Context-dependent memory research demonstrates that environmental cues can influence recall under certain conditions." },
+    { label: 'Claim 6: Students who achieve higher scores immediately after studying have necessarily learned more in the long term.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 1, feedback: "Immediate performance and long-term retention are not identical. A delayed assessment would provide additional evidence about whether learning persisted." },
+    { label: 'Claim 7 (HL extension): Bilingualism makes people more intelligent.', options: ['Supported by the evidence.', 'Goes beyond the evidence.'], correct: 1, feedback: "Research investigating particular executive-function tasks does not establish greater overall intelligence. Wider research evidence also challenges the claim of a consistent, general bilingual executive-function advantage." }
+  ]
+});
+
+var claimStats = { answered: {}, choice: {} };
+
+function setupSynthesisClaimActivity() {
+  var actId = 'lc-inline-synth-check';
+  var el = document.getElementById(actId);
+  if (!el || !ACT_DATA[actId]) return;
+  var body = el.querySelector('.act-body');
+  var actions = el.querySelector('.act-actions');
+  if (actions) {
+    var checkBtn = actions.querySelector('button[onclick*="checkActivity"]');
+    var resetBtn = actions.querySelector('button[onclick*="resetActivity"]');
+    if (checkBtn) checkBtn.style.display = 'none';
+    if (resetBtn) resetBtn.textContent = 'Reset Claims';
+  }
+  if (body && !body.querySelector('.lc-claim-progress')) {
+    var progress = document.createElement('div');
+    progress.className = 'lc-claim-progress';
+    progress.setAttribute('aria-live', 'polite');
+    body.insertBefore(progress, body.firstChild);
+  }
+  updateSynthesisClaimProgress();
+}
+
+function updateSynthesisClaimProgress() {
+  var el = document.getElementById('lc-inline-synth-check');
+  if (!el) return;
+  var progress = el.querySelector('.lc-claim-progress');
+  if (!progress) return;
+  var slDone = 0;
+  for (var i = 0; i < 6; i++) {
+    if (claimStats.answered[i]) slDone++;
+  }
+  var hlDone = claimStats.answered[6] ? 1 : 0;
+  var text = slDone + ' / 6 SL claims evaluated';
+  if (hlDone) text += ' | HL extension evaluated';
+  var complete = slDone === 6
+    ? '<span class="lc-claim-complete">Core activity complete. Use Reset Claims to try again.</span>'
+    : '';
+  progress.innerHTML = '<span>Progress: </span><strong>' + text + '</strong>' + complete;
+}
+
+function handleSynthesisClaimClick(e) {
+  var el = document.getElementById('lc-inline-synth-check');
+  if (!el || !el.contains(e.target)) return;
+  var reset = e.target.closest('button[onclick*="resetActivity"]');
+  if (reset) {
+    claimStats = { answered: {}, choice: {} };
+    setupSynthesisClaimActivity();
+    return;
+  }
+  var option = e.target.closest('.act-conc-q-option');
+  if (!option) return;
+  var qEl = option.closest('.act-conc-q');
+  if (!qEl) return;
+  var idx = parseInt(qEl.getAttribute('data-q'), 10);
+  var cfg = ACT_DATA['lc-inline-synth-check'];
+  if (!cfg || !cfg.questions[idx]) return;
+  if (claimStats.answered[idx]) {
+    qEl.querySelectorAll('.act-conc-q-option').forEach(function(o) { o.classList.remove('selected'); });
+    var chosen = qEl.querySelector('[data-opt="' + claimStats.choice[idx] + '"]');
+    if (chosen) chosen.classList.add('selected');
+    return;
+  }
+  claimStats.answered[idx] = true;
+  claimStats.choice[idx] = option.getAttribute('data-opt');
+  qEl.setAttribute('data-answered', '1');
+  qEl.querySelectorAll('.act-conc-q-option').forEach(function(o) {
+    o.classList.add('disabled');
+    if (o !== option) o.classList.remove('selected');
   });
+  option.classList.add('selected');
+  var fb = document.getElementById('lc-inline-synth-check-conc-fb-' + idx);
+  if (fb) {
+    fb.className = 'act-conc-q-feedback show';
+    fb.innerHTML = '<strong>Evidence note:</strong> ' + cfg.questions[idx].feedback;
+  }
+  updateSynthesisClaimProgress();
+  playRevealSound();
+}
+
+function setupSynthesisTopicLinks() {
+  var dots = document.querySelectorAll('.rail-dot');
+  document.querySelectorAll('#slide-58 [data-jump-slide]').forEach(function(button) {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = parseInt(button.getAttribute('data-jump-slide'), 10) - 1;
+      if (dots[target]) dots[target].click();
+    });
+  });
+}
+
+setupSynthesisClaimActivity();
+document.getElementById('lc-inline-synth-check').addEventListener('click', handleSynthesisClaimClick);
+setupSynthesisTopicLinks();
 
 initActivity('lc-inline-exam-check', {
     type: 'short-response',
