@@ -355,7 +355,6 @@
         <div class="rail-dot activity-dot" data-slide="57"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">57. Transfer Scenario Analysis</span></div>
         <div class="rail-dot" data-slide="58"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">58. Synthesis & Evaluation</span></div>
         <div class="rail-dot activity-dot" data-slide="59"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">59. Synthesis Challenge</span></div>
-        <div class="rail-dot activity-dot" data-slide="60"><span class="rail-marker">&#128154;</span><span class="rail-dot-empty">&#9675;</span><span class="rail-label">60. Exam Response Planning</span></div>
         </div>
 
 <div class="slide" data-slide="1" id="slide-1">
@@ -7005,14 +7004,49 @@ document.querySelectorAll('#slide-54 [data-corr]').forEach(function(b){b.addEven
 <li>Effective psychological arguments select relevant theories and evidence, consider alternative explanations and reach justified conclusions.</li>
 </ol></div>
 </div>
+<style>
+#slide-59 .lc-synth-intro{max-width:880px;margin:0 0 .45rem;font-size:.97rem;line-height:1.65;color:var(--text-secondary)}
+#slide-59 .lc-synth-instruction{max-width:880px;margin:0 0 1.2rem;font-size:.94rem;font-weight:600;line-height:1.6;color:var(--text)}
+#slide-59 #lc-p26-synthesis.act-container{max-width:900px;margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+#slide-59 #lc-p26-synthesis .act-header{display:none}
+#slide-59 #lc-p26-synthesis .act-body{display:block;padding:0;background:transparent;border:0;box-shadow:none}
+#slide-59 .lc-synth-step{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:0 0 .9rem}
+#slide-59 .lc-synth-count{font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#1D4ED8}
+#slide-59 .lc-synth-hl{font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#6D28D9;background:#F5F3FF;border:1px solid #DDD6FE;border-radius:999px;padding:.22rem .65rem}
+#slide-59 .lc-synth-title{font-size:1.18rem;font-weight:700;line-height:1.35;color:var(--text);margin:0 0 1rem}
+#slide-59 .lc-synth-scenario{font-size:1.02rem;line-height:1.72;color:var(--text);background:var(--bg-secondary);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.15rem;margin:0 0 1rem}
+#slide-59 .lc-synth-question{font-size:1.06rem;font-weight:700;line-height:1.6;color:var(--text);margin:0 0 1.1rem}
+#slide-59 .lc-synth-label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 .45rem}
+#slide-59 .lc-synth-response{width:100%;min-height:230px;box-sizing:border-box;font-family:inherit;font-size:.96rem;line-height:1.65;color:var(--text);background:#FFFFFF;border:1px solid var(--border);border-radius:8px;padding:.9rem 1rem;resize:vertical}
+#slide-59 .lc-synth-response:focus{outline:2px solid #93C5FD;outline-offset:1px;border-color:#3B82F6}
+#slide-59 .lc-synth-wc{margin:.4rem 0 1rem;font-size:.82rem;font-weight:600;color:var(--text-secondary);text-align:right}
+#slide-59 .lc-synth-review{background:#F8FAFC;border:1px solid var(--border);border-radius:8px;padding:.9rem 1.05rem;margin:0 0 1rem}
+#slide-59 .lc-synth-review h4{font-size:.9rem;font-weight:700;color:var(--text);margin:0 0 .5rem}
+#slide-59 .lc-synth-review ul{margin:0;padding-left:1.15rem;font-size:.88rem;line-height:1.7;color:var(--text-secondary)}
+#slide-59 .lc-synth-note{font-size:.8rem;line-height:1.55;color:var(--text-secondary);margin:.6rem 0 0}
+#slide-59 .lc-synth-model{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:8px;padding:1rem 1.15rem;margin:0 0 1rem}
+#slide-59 .lc-synth-model h4{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1E40AF;margin:0 0 .6rem}
+#slide-59 .lc-synth-model p{font-size:.94rem;line-height:1.7;color:var(--text);margin:0 0 .75rem}
+#slide-59 .lc-synth-model p:last-child{margin-bottom:0}
+#slide-59 .lc-synth-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.2rem}
+#slide-59 .lc-synth-actions button{font-family:inherit;font-size:.86rem;font-weight:700;line-height:1.2;padding:.62rem .95rem;border-radius:6px;cursor:pointer}
+#slide-59 .lc-synth-nav{margin-top:.85rem;padding-top:.9rem;border-top:1px solid var(--border)}
+#slide-59 .lc-synth-actions .lc-synth-primary{color:#FFFFFF;background:var(--primary);border:1px solid var(--primary)}
+#slide-59 .lc-synth-actions .lc-synth-secondary{color:var(--text);background:#FFFFFF;border:1px solid var(--border)}
+#slide-59 .lc-synth-actions button:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:760px){
+#slide-59 .lc-synth-step{align-items:flex-start;flex-direction:column;gap:.4rem}
+#slide-59 .lc-synth-title{font-size:1.06rem}
+#slide-59 .lc-synth-scenario{font-size:.96rem;padding:.85rem .9rem}
+#slide-59 .lc-synth-question{font-size:1rem}
+#slide-59 .lc-synth-response{min-height:210px;font-size:.94rem}
+#slide-59 .lc-synth-actions button{flex:1 1 46%;padding:.6rem .55rem;font-size:.8rem}
+}
+</style>
 <div class="slide activity-slide" data-slide="59" id="slide-59"><h2>Synthesis Challenge</h2>
-<p class="slide-intro">Each question requires connecting multiple concepts from across the unit. The best answers weave together two or more mechanisms to explain a single phenomenon &mdash; the model answer demonstrates how.</p>
+<p class="slide-intro lc-synth-intro">Apply your knowledge from across the Learning &amp; Cognition unit to unfamiliar situations. Select relevant psychological concepts, explain how they connect and support your explanations with research evidence where appropriate.</p>
+<p class="lc-synth-instruction">Explain how psychological processes work together to account for the behaviour described, rather than simply listing relevant theories.</p>
 <div class="act-container" id="lc-p26-synthesis"></div>
-</div>
-
-<div class="slide activity-slide" data-slide="60" id="slide-61"><h2>Exam Response Planning</h2>
-<p class="slide-intro">For each practice question, build a plan: identify what the question requires, choose relevant psychological content, apply it to scenario details where appropriate, select useful evidence, explain what that evidence demonstrates, identify a meaningful evaluation issue, and form a justified conclusion where required.</p>
-<div class="act-container" id="lc-p27-response"></div>
 </div>
 
 
@@ -7023,7 +7057,7 @@ document.querySelectorAll('#slide-54 [data-corr]').forEach(function(b){b.addEven
 
       <div class="lesson-nav-bottom">
         <button class="btn-prev-slide" id="prev-btn">&larr; Previous</button>
-        <span class="slide-counter" id="slide-counter">1 / 60</span>
+        <span class="slide-counter" id="slide-counter">1 / 59</span>
         <button class="btn-next-slide" id="next-btn">Next &rarr;</button>
       </div>
     </div><!-- /lesson-content -->
@@ -7422,26 +7456,170 @@ document.querySelectorAll('#slide-54 [data-corr]').forEach(function(b){b.addEven
   initActivity('lc-p26-synthesis', {
     type: 'synthesis',
     title: 'Synthesis Challenge',
-    prompt: 'Each question requires connecting multiple concepts from across the unit. The best answers weave together two or more mechanisms to explain a single phenomenon.',
-    scaffolding: 'Start by identifying which concepts are relevant, then explain how they interact. Strong answers show how one concept leads to or connects with another, rather than listing them separately.',
-    placeholder: 'Write your synthesis response here, connecting at least two mechanisms to explain the phenomenon...',
-    modelAnswer: 'Strong synthesis answers identify the relevant concepts (e.g., dual processing, schemas, biases, memory systems), explain the mechanism of each, and then show how they interact to produce the observed outcome. For example: "A driver overestimates their skill because schemas from past experience create confident expectations (schema theory); these expectations run automatically through fast processing without deliberate checking (dual processing); and the ease of recalling past successful driving makes current risk feel low (availability bias). The result: systematic overconfidence that is predictable from the interaction of multiple mechanisms, not any single one."'
-  });
-
-  initActivity('lc-p27-response', {
-    type: 'short-response',
-    title: 'Exam Response Planning',
-    scaffolding: 'For each practice question, respond to the question type: identify what it requires, choose relevant psychological content, apply it to scenario details where appropriate, select useful evidence, explain what that evidence demonstrates, identify a meaningful evaluation issue, and form a justified conclusion where the question requires one. Do not force every question into the same structure.',
-    placeholder: 'Write your exam plan here: the command, the content, the evidence you would use and what it demonstrates, and the evaluation issue...',
-    modelAnswer: 'A strong plan: (1) identifies the command and exactly what the question requires; (2) selects psychological content relevant to that question rather than everything on the topic; (3) where a scenario is given, applies the relevant mechanism directly to its details; (4) chooses evidence that supports, challenges or qualifies the point being made; (5) explains what that evidence demonstrates and what it does not; (6) raises a meaningful evaluation issue that changes how confidently the conclusion can be drawn; and (7) reaches a justified judgement where the question requires one.',
-    rubric: [
-      'Identifies the command and exactly what the question requires',
-      'Selects psychological content and concepts relevant to the question',
-      'Applies psychology to scenario details where appropriate',
-      'Chooses and explains evidence that supports the point being made',
-      'Raises an evaluation issue that affects the strength of the conclusion'
+    hideBadge: true,
+    challenges: [
+      {
+        title: "Learning From a Skilled Colleague",
+        scenario: "A new catering assistant watches an experienced colleague check each order against the ticket before sending it out. She copies the routine. After her mistakes fall and a supervisor praises her careful checks, she continues to use the routine every shift.",
+        question: "Explain how different psychological processes could account for the development and maintenance of this routine.",
+        answer: [
+          "Social learning theory can explain how the assistant first acquired the routine. She observed a colleague she regarded as competent, saw the checks produce an accurate order and then reproduced the behaviour. Identification with the model and the visible success of the checks make imitation more likely. Bandura et al. (1961) showed that children can imitate observed behaviour, although that study involved aggression and cannot by itself account for this workplace example.",
+          "Operant conditioning can explain why the routine continued. Fewer mistakes and praise from the supervisor are likely to act as positive reinforcement, increasing how often she checks each order. A consequence can therefore maintain a behaviour that observation helped establish.",
+          "The two processes complement one another: observation accounts for the initial acquisition of the routine, while reinforcement accounts for its maintenance. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      },
+      {
+        title: "A Junction That Now Feels Unsafe",
+        scenario: "A cyclist has had two near collisions at the same junction. Now, as soon as she approaches it, her heart races and she expects another crash. Although she knows the road rules, she focuses on the possibility of a collision, notices a warning sign too late and hesitates in the lane.",
+        question: "Explain how psychological processes could account for both her anxiety and her difficulty responding at the junction.",
+        answer: [
+          "Classical conditioning can explain the anxiety. The near collisions were unpleasant experiences that produced fear. After they occurred at the same junction, the junction itself may have become a conditioned stimulus that triggers a similar fear response, even before anything dangerous happens.",
+          "The Working Memory Model helps explain the effect on performance. Thoughts about crashing and attempts to monitor for danger compete with road information for limited attentional resources. With less capacity available for processing the sign and deciding what to do, the cyclist may respond slowly or miss relevant information altogether.",
+          "These processes can interact: a learned emotional response captures attention, and the resulting worry reduces the cognitive resources needed for an effective response. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      },
+      {
+        title: "Conflicting Accounts of a Match",
+        scenario: "Two spectators watch the same football match. One believes that players from the visiting team often exaggerate falls. After the match, she hears other supporters say that a visiting player threw himself down. A week later, she confidently reports that the player deliberately exaggerated the fall. A television replay shows that an opponent pulled him back.",
+        question: "Explain how different cognitive processes could account for the inaccurate recollection.",
+        answer: [
+          "Schema theory suggests that an existing belief can guide attention and interpretation. If the spectator expects players from that team to exaggerate falls, she may notice details that fit the expectation and interpret an ambiguous challenge in line with it. The belief then becomes part of how the event is understood and remembered.",
+          "Reconstructive memory helps explain the influence of the later conversation. Hearing other people describe the fall as deliberate may provide post-event information that becomes incorporated into her own account. Loftus and Palmer (1974) showed that the wording of questions can influence later memory reports, but this does not prove that memories are permanently altered or that confidence guarantees accuracy.",
+          "Together, an existing expectation and information encountered after the event could produce a confident but inaccurate recollection. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      },
+      {
+        title: "The Diagram That Felt Easy",
+        scenario: "A biology student repeatedly reads a labelled diagram and highlights the key parts. When she looks at the page, every label seems obvious. A week later, in a practical test with an unlabelled diagram, she cannot recall several labels without referring to her notes.",
+        question: "Explain why her confidence may not reflect her learning and how psychological knowledge could improve her revision.",
+        answer: [
+          "The student's confidence may be based on processing fluency rather than secure learning. While the labelled page is in front of her, the labels act as recognition cues and the material feels easy to understand. That feeling does not show that she can retrieve the same information independently when the cues are removed.",
+          "Retrieval practice would give her a more accurate test of what she knows. Closing the diagram and recalling the labels from memory reveals gaps and strengthens later access to the information. Roediger and Karpicke (2006) found that retrieval practice improved delayed recall compared with repeated studying under the conditions they investigated; the result should not be treated as universal for every learner or task.",
+          "Spacing the retrieval attempts across several days could also support longer-term retention and make her judgement of her own learning more realistic. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      },
+      {
+        title: "Points for Scanning Exhibits",
+        scenario: "At a museum, a student uses an app that awards points for every exhibit scanned. He enjoys building a streak and rushes around scanning as many exhibits as possible. While reading each caption, he keeps checking the app and replying to friends. He finishes the trail with a high score but remembers few details.",
+        question: "Explain why the reward system could increase his activity without improving what he learns.",
+        answer: [
+          "Operant conditioning can explain the increase in scanning. Points and the streak act as positive reinforcement when they follow an activity, so the behaviour that earns them becomes more frequent. The app can therefore motivate him to complete many exhibits without encouraging careful study of any of them.",
+          "Learning also depends on the quality of attention and processing. Checking the app and replying to friends divide attention while he reads, leaving fewer resources for understanding the captions and connecting them with what he sees. Sana et al. (2013) provides evidence that laptop multitasking can interfere with immediate learning performance under the conditions investigated; it does not show that every form of multitasking has the same effect.",
+          "The reward system changes how much he does, while divided attention limits how deeply he processes the material. Quantity of activity is therefore a poor measure of learning. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      },
+      {
+        title: "Two Accounts of a Market Scene",
+        scenario: "Two exchange students watch the same short video of a busy market. One later describes individual stallholders, their clothes and the items on each table. The other describes queues, bargaining and the layout of the market. In a later task, they see photographs of stalls moved to unfamiliar locations and have to identify the original arrangements.",
+        question: "Explain how cultural experiences and cognitive processes could contribute to differences in their descriptions and recognition.",
+        answer: [
+          "Cultural experiences may shape the information people habitually attend to in a scene. A more analytic pattern gives greater attention to individual objects and their features, while a more holistic pattern gives greater attention to relationships and the surrounding context. These are group-level tendencies rather than fixed properties of every individual.",
+          "Differences in attention can influence encoding and later recognition. Someone who attends to relationships may encode each stall together with its surroundings, so moving a stall to an unfamiliar setting disrupts useful contextual cues. Masuda and Nisbett (2001) found evidence consistent with cultural differences in attention and contextual memory, but their findings cannot predict how a particular individual will perform.",
+          "Cultural background is only one possible influence. Familiarity with markets, education, language and personal experience may also contribute, so the difference should not be treated as proof of a single cause. Other relevant explanations may also be valid when they are supported by clear reasoning and evidence."
+        ]
+      }
     ]
   });
+
+  (function() {
+    var actId = "lc-p26-synthesis";
+    var cfg = window.ACT_DATA && window.ACT_DATA[actId];
+    var el = document.getElementById(actId);
+    if (!cfg || !el || !cfg.challenges) return;
+    var challenges = cfg.challenges;
+    var state = {
+      index: 0,
+      responses: challenges.map(function() { return ""; }),
+      revealed: challenges.map(function() { return false; })
+    };
+    var otherAnswers = "Other relevant explanations may also be valid when they are supported by clear reasoning and evidence.";
+
+    function wordCount(text) {
+      var words = text.trim().match(/\S+/g);
+      return words ? words.length : 0;
+    }
+
+    function render() {
+      var challenge = challenges[state.index];
+      var response = state.responses[state.index];
+      var revealed = state.revealed[state.index];
+      var hasResponse = response.trim().length > 0;
+      var answerParagraphs = challenge.answer.slice();
+      answerParagraphs[answerParagraphs.length - 1] += " " + otherAnswers;
+      var answerText = answerParagraphs.map(function(paragraph) {
+        return "<p>" + paragraph + "</p>";
+      }).join("");
+      var html = "";
+      html += '<div class="lc-synth-step">';
+      html += '<span class="lc-synth-count">Challenge ' + (state.index + 1) + " of " + challenges.length + "</span>";
+      if (state.index === challenges.length - 1) {
+        html += '<span class="lc-synth-hl">HL extension &middot; optional for SL students</span>';
+      }
+      html += "</div>";
+      html += '<h3 class="lc-synth-title">' + challenge.title + "</h3>";
+      html += '<p class="lc-synth-scenario">' + challenge.scenario + "</p>";
+      html += '<p class="lc-synth-question">' + challenge.question + "</p>";
+      html += '<label class="lc-synth-label" for="lc-synth-response">Your response</label>';
+      html += '<textarea class="lc-synth-response" id="lc-synth-response" placeholder="Write your explanation here..."></textarea>';
+      html += '<div class="lc-synth-wc" id="lc-synth-wc" aria-live="polite">' + wordCount(response) + (wordCount(response) === 1 ? " word" : " words") + "</div>";
+      html += '<div class="lc-synth-review" id="lc-synth-review"' + (hasResponse ? "" : " hidden") + ">";
+      html += "<h4>Review Your Answer</h4>";
+      html += "<ul>";
+      html += "<li>Have I selected relevant psychological concepts?</li>";
+      html += "<li>Have I explained how each psychological process operates?</li>";
+      html += "<li>Have I connected my explanation to specific details from the scenario?</li>";
+      html += "<li>Have I explained how the psychological processes relate to one another?</li>";
+      html += "<li>Have I used relevant research evidence where appropriate?</li>";
+      html += "<li>Have I avoided conclusions that go beyond the available evidence?</li>";
+      html += "</ul>";
+      html += '<p class="lc-synth-note">This checklist is for self-review. It is not an IB mark or a teacher assessment.</p>';
+      html += "</div>";
+      html += '<div class="lc-synth-model" id="lc-synth-model"' + (revealed ? "" : " hidden") + ">";
+      html += "<h4>Model Answer</h4>" + answerText;
+      html += "</div>";
+      html += '<div class="lc-synth-actions">';
+      html += '<button type="button" class="lc-synth-primary" data-lc-action="show">' + (revealed ? "Hide Model Answer" : "Show Model Answer") + "</button>";
+      html += '<button type="button" class="lc-synth-secondary" data-lc-action="reset">Try Again</button>';
+      html += "</div>";
+      html += '<div class="lc-synth-actions lc-synth-nav">';
+      html += '<button type="button" class="lc-synth-secondary" data-lc-action="prev"' + (state.index === 0 ? " disabled" : "") + ">&larr; Previous Challenge</button>";
+      html += '<button type="button" class="lc-synth-secondary" data-lc-action="next"' + (state.index === challenges.length - 1 ? " disabled" : "") + ">Next Challenge &rarr;</button>";
+      html += "</div>";
+      el.innerHTML = html;
+      var textarea = document.getElementById("lc-synth-response");
+      if (textarea) {
+        textarea.value = response;
+        textarea.focus();
+      }
+    }
+
+    el.addEventListener("input", function(event) {
+      if (!event.target || event.target.id !== "lc-synth-response") return;
+      var text = event.target.value;
+      state.responses[state.index] = text;
+      var count = wordCount(text);
+      var wc = document.getElementById("lc-synth-wc");
+      if (wc) wc.textContent = count + (count === 1 ? " word" : " words");
+      var review = document.getElementById("lc-synth-review");
+      if (review) review.hidden = text.trim().length === 0;
+    });
+
+    el.addEventListener("click", function(event) {
+      var button = event.target.closest ? event.target.closest("button[data-lc-action]") : null;
+      if (!button || button.disabled) return;
+      var action = button.getAttribute("data-lc-action");
+      if (action === "prev" && state.index > 0) state.index -= 1;
+      if (action === "next" && state.index < challenges.length - 1) state.index += 1;
+      if (action === "show") state.revealed[state.index] = !state.revealed[state.index];
+      if (action === "reset") {
+        state.responses[state.index] = "";
+        state.revealed[state.index] = false;
+      }
+      render();
+    });
+
+    render();
+  })();
 
   
 initActivity('lc-inline-cc-check', {
