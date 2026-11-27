@@ -2609,101 +2609,160 @@
 </div>
 <div class="slide" data-slide="83" id="slide-83">
 <h2>Unseen Scenarios &mdash; Exam Application</h2>
-<p class="slide-intro">Applying HD knowledge to novel exam-style situations.</p>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-bottom:1.5rem;"><p style="font-size:.9rem;color:var(--text);margin:0 0 .5rem;"><strong>Exam method:</strong> start with the scenario, not the researcher. Explain the psychology that genuinely explains what is happening.</p>
-<ol style="font-size:.9rem;line-height:1.7;color:var(--text);margin:0 0 .5rem;padding-left:1.25rem;"><li><strong>IDENTIFY</strong> &mdash; which psychological idea is genuinely relevant?</li>
-<li><strong>APPLY</strong> &mdash; connect the idea directly to specific information in the scenario.</li>
-<li><strong>EXPLAIN</strong> &mdash; explain the psychological mechanism.</li>
-<li><strong>SUPPORT</strong> &mdash; use relevant research/theory where it strengthens the explanation.</li>
-<li><strong>QUALIFY</strong> &mdash; state what the evidence/scenario does NOT allow you to conclude.</li>
-</ol>
-<div style="text-align:left;margin:.5rem 0 0;padding:.75rem 1rem;border:2px solid var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">SCENARIO EVIDENCE</p>
-<p style="margin:.15rem 0;color:var(--text-muted);">&plus;</p>
-<p style="margin:.15rem 0;font-weight:700;color:var(--text);">RELEVANT PSYCHOLOGY</p>
-<p style="margin:.15rem 0;color:var(--text-muted);">&plus;</p>
-<p style="margin:.15rem 0;font-weight:700;color:var(--text);">MECHANISM</p>
-<p style="margin:.15rem 0;color:var(--text-muted);">&plus;</p>
-<p style="margin:.15rem 0;font-weight:700;color:var(--text);">CAUTIOUS CONCLUSION</p>
-<p style="margin:.15rem 0;color:var(--text-muted);">&equals;</p>
-<p style="margin:.15rem 0;font-weight:700;color:var(--primary);">STRONG APPLICATION</p>
+<style>
+#slide-83 .hd83-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: .95rem 1.1rem; margin: .8rem 0; }
+#slide-83 .hd83-section > h3 { font-size: 1.08rem; margin: 0 0 .6rem; color: var(--primary); }
+#slide-83 .hd83-section > p { font-size: .92rem; line-height: 1.65; color: var(--text); margin: 0 0 .65rem; }
+#slide-83 .hd83-section > p:last-child { margin-bottom: 0; }
+#slide-83 .hd83-label { font-weight: 700; font-size: .82rem; color: var(--text-muted); margin-bottom: .2rem; }
+#slide-83 .hd83-scenario { background: var(--primary-light); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: .65rem .8rem; }
+#slide-83 .hd83-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .55rem; }
+#slide-83 .hd83-step { display: flex; flex-direction: column; align-items: flex-start; min-height: 100%; padding: .7rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); }
+#slide-83 .hd83-step-num { display: inline-flex; align-items: center; justify-content: center; width: 1.45rem; height: 1.45rem; margin-bottom: .4rem; border-radius: 50%; background: var(--primary); color: var(--bg); font-weight: 700; font-size: .82rem; }
+#slide-83 .hd83-step strong { color: var(--text); font-size: .92rem; margin-bottom: .3rem; }
+#slide-83 .hd83-step p { font-size: .82rem; line-height: 1.5; color: var(--text-secondary); margin: 0; }
+#slide-83 .hd83-note { font-size: .82rem; color: var(--text-muted); }
+#slide-83 .hd83-responses { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
+#slide-83 .hd83-response { display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .7rem .8rem; }
+#slide-83 .hd83-response-label { font-size: .8rem; font-weight: 700; color: var(--primary); margin: 0 0 .35rem; }
+#slide-83 .hd83-response > p:not(.hd83-response-label) { font-size: .84rem; line-height: 1.55; color: var(--text); margin: 0 0 .45rem; }
+#slide-83 .hd83-response .hd83-why { font-size: .8rem; color: var(--text-secondary); margin: auto 0 0; }
+#slide-83 .hd83-question-list { font-size: .9rem; line-height: 1.6; color: var(--text); margin: .55rem 0 .45rem 0; padding-left: 1.25rem; }
+#slide-83 .hd83-question-list li { margin-bottom: .25rem; }
+#slide-83 .hd83-two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; margin: .55rem 0; }
+#slide-83 .hd83-fact { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .55rem .7rem; font-size: .84rem; line-height: 1.5; color: var(--text); }
+#slide-83 .hd83-fact strong { color: var(--primary); }
+#slide-83 .hd83-lang-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+#slide-83 .hd83-lang-col { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: .65rem .8rem; }
+#slide-83 .hd83-lang-col h4 { font-size: .86rem; margin: 0 0 .35rem; color: var(--text); }
+#slide-83 .hd83-lang-col ul { margin: 0; padding-left: 1.1rem; font-size: .84rem; line-height: 1.6; color: var(--text-secondary); }
+#slide-83 .hd83-checklist { margin: 0; padding-left: 1.2rem; font-size: .9rem; line-height: 1.65; color: var(--text); }
+#slide-83 .hd83-checklist li { margin-bottom: .25rem; }
+#slide-83 .reveal { margin-top: .55rem; }
+#slide-83 .reveal-answer p { font-size: .86rem; line-height: 1.6; color: var(--text-secondary); margin: 0 0 .5rem; }
+#slide-83 .reveal-answer p:last-child { margin-bottom: 0; }
+@media (max-width: 768px) {
+#slide-83 .hd83-steps { grid-template-columns: 1fr; }
+#slide-83 .hd83-responses, #slide-83 .hd83-two-col, #slide-83 .hd83-lang-cols { grid-template-columns: 1fr; }
+#slide-83 .hd83-section { padding: .8rem .85rem; }
+}
+</style>
+<section class="hd83-section">
+<p>When answering an application question, your task is not simply to demonstrate that you remember a psychological theory or study. You must use your psychological knowledge to explain the specific behaviour or developmental outcome described in the scenario.</p>
+<p>For example, if a child appears withdrawn when starting a new school, simply mentioning Bowlby’s attachment theory is not sufficient. You need to explain how previous attachment experiences may have shaped the child’s expectations of unfamiliar people and relationships. You should also recognise that other factors, such as temperament or previous school experiences, could explain the behaviour.</p>
+<p>A strong application answer therefore connects psychological knowledge to specific scenario details, explains how or why the relevant psychological process may influence behaviour, and avoids reaching conclusions that go beyond the available evidence.</p>
+</section>
+<section class="hd83-section">
+<h3>Application Framework</h3>
+<div class="hd83-steps">
+<div class="hd83-step"><span class="hd83-step-num">1</span><strong>Identify</strong><p>Select the psychological theory, process or concept that is relevant to the scenario.</p></div>
+<div class="hd83-step"><span class="hd83-step-num">2</span><strong>Apply</strong><p>Connect that psychological knowledge to a specific detail in the scenario.</p></div>
+<div class="hd83-step"><span class="hd83-step-num">3</span><strong>Explain</strong><p>Explain how or why the psychological process may produce the behaviour or developmental outcome.</p></div>
+<div class="hd83-step"><span class="hd83-step-num">4</span><strong>Support</strong><p>Use relevant psychological research or theory to strengthen your explanation where appropriate.</p></div>
+<div class="hd83-step"><span class="hd83-step-num">5</span><strong>Qualify</strong><p>Consider alternative explanations and recognise what the available evidence does not allow you to conclude, where relevant to the question.</p></div>
 </div>
+<p class="hd83-note">This is a useful framework for developing application answers, not a compulsory structure for every IB examination question. Students must respond to the command term and the specific demands of the question.</p>
+</section>
+<section class="hd83-section">
+<h3>What Makes an Application Answer Strong?</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">A child remains withdrawn and avoids interacting with classmates when starting a new school.</p>
+<div class="hd83-responses">
+<article class="hd83-response"><p class="hd83-response-label">Weak response</p><p>The child may have an insecure attachment.</p><p class="hd83-why"><strong>Why this is weak:</strong> The response identifies potentially relevant psychology but does not explain how attachment experiences could contribute to the child’s behaviour.</p></article>
+<article class="hd83-response"><p class="hd83-response-label">Developing response</p><p>Bowlby’s attachment theory suggests that early relationships influence how children form later relationships.</p><p class="hd83-why"><strong>Why this needs further development:</strong> The response demonstrates theoretical knowledge but does not explain how the theory applies to this particular child’s behaviour.</p></article>
+<article class="hd83-response"><p class="hd83-response-label">Developed response</p><p>According to Bowlby, early attachment experiences may contribute to the formation of internal working models. If the child has developed expectations that other people are unreliable or unresponsive, they may be more hesitant to approach unfamiliar classmates. However, the child’s withdrawal could also reflect temperament or previous school experiences, so we cannot determine their attachment classification from this behaviour alone.</p><p class="hd83-why"><strong>Why this is stronger:</strong> The response connects the theory to the scenario, explains the psychological mechanism and recognises the limitations of the explanation.</p></article>
 </div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 1: Culture and the Self-Concept</button><div class="collapsible-body"><p><strong>Scenario:</strong> Two adolescents describe themselves differently. One emphasises personal achievements and individual goals. The other emphasises family relationships and responsibilities.</p>
-<div class="reveal"><div class="reveal-question">How could cultural psychology help explain this difference?</div><div class="reveal-answer"><div>Markus &amp; Kitayama&rsquo;s framework suggests that culturally learned self-construals may influence how people understand and describe themselves. Greater emphasis on personal traits and goals is consistent with an independent self-construal, while greater emphasis on relationships and social roles is consistent with an interdependent self-construal. However, the descriptions alone do not tell us that culture caused the difference, and nationality should not be used to assume an individual&rsquo;s self-construal.
-</div></div>
-</div>
-<div style="text-align:left;margin:.75rem 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">WHAT MAKES THIS STRONG?</p>
-<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; applies the framework to actual details</p>
-<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; explains the psychological mechanism</p>
-<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">&bull; avoids cultural stereotyping</p>
-<p style="margin:.15rem 0 0 1rem;color:var(--text);">&bull; does not claim causation from a brief scenario</p>
-</div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 2: Attachment and a New School</button><div class="collapsible-body"><p><strong>Scenario:</strong> Two children begin at a new school. One quickly explores the classroom and approaches classmates. The other initially remains withdrawn and cautious.</p>
-<div class="reveal"><div class="reveal-question">Could attachment theory help explain the difference?</div><div class="reveal-answer"><div>Bowlby proposed that repeated attachment experiences may contribute to internal working models &mdash; expectations about the self and relationships. Different expectations could therefore be one possible influence on how children approach unfamiliar social situations. However, the behaviour in this scenario cannot establish the children&rsquo;s attachment classifications or show that attachment caused the difference. Temperament, previous school experiences, language, peers and other factors could also contribute.
-</div></div>
-</div>
-<div style="text-align:left;margin:.75rem 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">IMPORTANT:</p>
-<p style="margin:.15rem 0;color:var(--text);">Do NOT write: &ldquo;secure attachment causes confidence&rdquo; or &ldquo;insecure attachment causes withdrawal.&rdquo;</p>
-<p style="margin:.15rem 0;color:var(--text);">Instead: &ldquo;attachment may contribute to&hellip;&rdquo;</p>
-</div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 3: Theory of Mind (False Belief)</button><div class="collapsible-body"><p><strong>Scenario:</strong> Lena watches Amir place a toy in the blue box. Amir leaves the room. While he is away, another child moves the toy into the red box. Lena is asked where Amir will look for the toy and answers, &ldquo;the red box.&rdquo;</p>
-<div class="reveal"><div class="reveal-question">How could Theory of Mind research help explain Lena&rsquo;s answer?</div><div class="reveal-answer"><div>A false-belief task tests whether a child can represent another person&rsquo;s belief when that belief differs from reality and from the child&rsquo;s own knowledge. Amir believes the toy is still in the blue box, while Lena knows it is now in the red box. Predicting that Amir will search the red box may therefore indicate difficulty representing his false belief. However, performance on one task should not be treated as proof that Lena completely lacks Theory of Mind because language, memory, executive demands and task understanding can also affect performance.
-</div></div>
-</div>
-<div style="text-align:left;margin:.75rem 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--text);">WHAT WAS ACTUALLY OBSERVED?</p>
-<p style="margin:.15rem 0 .2rem 1rem;color:var(--text);">Lena predicted the red box.</p>
-<p style="margin:.15rem 0 .2rem 0;font-weight:700;color:var(--text);">WHAT IS INFERRED?</p>
-<p style="margin:.15rem 0 .5rem 1rem;color:var(--text);">Possible difficulty representing Amir&rsquo;s false belief.</p>
-<p style="margin:.15rem 0;color:var(--text);">This distinction is extremely important.</p>
-</div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 4: Causality</button><div class="collapsible-body"><p><strong>Scenario:</strong> A longitudinal study finds that children who experienced more responsive caregiving in early childhood later report higher average self-esteem.</p>
-<div class="reveal"><div class="reveal-question">A student concludes: &ldquo;Responsive caregiving causes high self-esteem.&rdquo; Evaluate the conclusion.</div><div class="reveal-answer"><div>The association is consistent with caregiving being one developmental influence, but the finding alone does not establish causation. Child temperament, family environment, socioeconomic conditions and later experiences could influence both caregiving and self-esteem. The direction may also be bidirectional because children&rsquo;s characteristics can influence caregiver behaviour.
-</div></div>
-</div>
-<div style="text-align:left;margin:.75rem 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;color:var(--text);"><strong>OBSERVED:</strong> responsive caregiving is associated with later self-esteem.</p>
-<p style="margin:.15rem 0;color:var(--text);"><strong>NOT ESTABLISHED:</strong> responsive caregiving alone caused the difference.</p>
-</div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 5: Measurement</button><div class="collapsible-body"><p><strong>Scenario:</strong> Researchers use the Strange Situation in two cultural groups. One group shows substantially more resistant classifications.</p>
-<div class="reveal"><div class="reveal-question">Can the researchers conclude that this cultural group has poorer attachment?</div><div class="reveal-answer"><div>Not automatically. The Strange Situation operationalises attachment through behaviour during separation and reunion. If separation has different meanings or familiarity across cultural contexts, the same procedure may not measure attachment equivalently in both groups. Researchers should consider cultural validity before interpreting the classification difference as poorer attachment.
-</div></div>
-</div>
-<div style="text-align:left;margin:.75rem 0;padding:.75rem 1rem;border:1px dashed var(--primary);border-radius:8px;"><p style="margin:.15rem 0;font-weight:700;color:var(--primary);">MEASUREMENT &#43; BIAS &#43; PERSPECTIVE</p>
-<p style="margin:.15rem 0 .2rem 0;color:var(--text);">Measurement asks whether the instrument works equivalently, Bias asks whether one behavioural pattern is being treated as a universal standard, and Perspective asks how caregiving practices may differ between cultures.</p>
-</div>
-</div></div>
-<div class="collapsible"><button class="collapsible-trigger">Scenario 6: Change</button><div class="collapsible-body"><p><strong>Scenario:</strong> A child experiences substantial adversity early in life but later develops supportive friendships, succeeds in school and reports increasingly positive self-beliefs.</p>
-<div class="reveal"><div class="reveal-question">How does this scenario illustrate development rather than contradict early-experience research?</div><div class="reveal-answer"><div>Early adversity can increase developmental risk without permanently determining an outcome. Supportive relationships, mastery experiences and changing environments may act as protective factors and alter developmental trajectories. This illustrates resilience and the IB concept of Change.
-</div></div>
-</div>
-</div></div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin-top:1.5rem;"><p style="font-size:.9rem;color:var(--text);margin:0 0 .5rem;"><strong>When applying psychology to an unseen situation:</strong></p>
-<ol style="font-size:.9rem;line-height:1.7;color:var(--text);margin:0;padding-left:1.25rem;"><li>Start with the scenario, not the researcher.</li>
-<li>Select psychology that genuinely explains something in it.</li>
-<li>Name the mechanism.</li>
-<li>Connect the mechanism to specific scenario details.</li>
-<li>Use evidence/theory where useful.</li>
-<li>Separate observation from inference.</li>
-<li>Calibrate causal language.</li>
-</ol>
-</div>
-<div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-top:1rem;"><h4 style="font-size:.95rem;font-weight:700;margin:0 0 .35rem;color:var(--text);">Language guide</h4><p style="font-size:.88rem;color:var(--text-secondary);margin:.25rem 0 .35rem;"><strong>STRONG:</strong> &ldquo;may contribute to&rdquo; &middot; &ldquo;is consistent with&rdquo; &middot; &ldquo;is associated with&rdquo; &middot; &ldquo;could help explain&rdquo; &middot; &ldquo;the evidence suggests&rdquo;</p>
-<p style="font-size:.88rem;color:var(--text-secondary);margin:.25rem 0 0;"><strong>USE ONLY WHEN JUSTIFIED:</strong> &ldquo;caused&rdquo; &middot; &ldquo;proved&rdquo; &middot; &ldquo;determines&rdquo; &middot; &ldquo;will lead to&rdquo;</p>
-</div>
-<div style="background:var(--primary-light);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1.25rem 1.5rem;"><h3 style="font-size:1rem;font-weight:700;margin-bottom:.75rem;color:var(--text);">What Should I Remember?</h3><ol style="font-size:.92rem;line-height:1.7;color:var(--text-secondary);margin:0;padding-left:1.25rem;"><li>Application means USING psychology to explain specific scenario details.</li>
-<li>Naming a theory or researcher alone is not enough.</li>
-<li>Explain the mechanism.</li>
-<li>Separate what was observed from what psychology allows you to infer.</li>
-<li>Consider alternative explanations.</li>
-<li>Correlation does not automatically establish causation.</li>
-<li>Psychological explanations are often probabilistic.</li>
-<li>Use evidence to support reasoning rather than simply dropping study names.</li>
-<li>Strong HL answers integrate knowledge with concepts such as causality, measurement, change, bias, perspective and responsibility.</li>
-</ol>
-</div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 1 — Culture and the Self-Concept</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Two adolescents describe themselves differently. One emphasises personal achievements and individual goals. The other emphasises family relationships and responsibilities.</p>
+<ol class="hd83-question-list"><li>Explain how enculturation and culturally learned self-construals could account for the differences between the two adolescents.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Markus and Kitayama (1991) distinguished an independent self-construal, which emphasises personal traits, goals and uniqueness, from an interdependent self-construal, which emphasises relationships, social roles and fitting with others. The adolescent who describes personal achievements and individual goals fits the independent pattern, while the adolescent who emphasises family relationships and responsibilities fits the interdependent pattern.</p><p>Enculturation may influence these descriptions through repeated exposure to cultural expectations, social roles and values. Young people learn which qualities are valued in their social context and may gradually organise their self-concept around them. These are theoretical patterns rather than fixed categories. The descriptions alone cannot establish that culture caused the difference, and nationality should not be used to assume either adolescent’s self-construal.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 2 — Attachment and a New School</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Two children begin at a new school. One quickly explores the classroom and approaches classmates. The other initially remains withdrawn and cautious.</p>
+<p class="hd83-note">The worked example used a similar situation. Work through both children independently rather than copying it.</p>
+<ol class="hd83-question-list"><li>Explain how attachment theory could account for the children’s different responses to starting a new school. Explain one alternative psychological explanation.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Bowlby proposed that repeated caregiving experiences may contribute to internal working models, which are expectations about the self, other people and relationships. A child who has repeatedly experienced responsive care may approach unfamiliar classmates with some confidence because they expect others to be available and supportive. A child whose early relationships have been less consistent may be more cautious because unfamiliar people are associated with uncertainty or rejection. These expectations could influence each child’s willingness to explore the classroom and approach peers.</p><p>An alternative explanation is temperament. A child who is naturally slower to warm up or more cautious in novel situations may withdraw initially even without a history of insecure attachment. Previous social experiences could also matter: a child who has had negative interactions with peers may be reluctant to approach them again. The behaviour in this scenario cannot establish either child’s attachment classification or show that attachment caused the difference.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 3 — Theory of Mind</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Lena watches Amir place a toy in the blue box. Amir leaves the room. While he is away, another child moves the toy into the red box. Lena is asked where Amir will look for the toy and answers, “the red box.”</p>
+<div class="hd83-two-col"><div class="hd83-fact"><strong>Observed behaviour:</strong> Lena predicted that Amir would search the red box.</div><div class="hd83-fact"><strong>Psychological inference:</strong> Lena may have experienced difficulty representing Amir’s false belief.</div></div>
+<ol class="hd83-question-list"><li>Explain how Theory of Mind research could account for Lena’s response.</li><li>Explain why Lena’s response does not necessarily establish that she lacks Theory of Mind.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>A false-belief task asks a child to represent another person’s belief when that belief differs from reality and from the child’s own knowledge. Lena knows that the toy is now in the red box, but Amir incorrectly believes it is still in the blue box. If Lena predicts that Amir will search the red box, she may be using her own knowledge rather than representing his false belief. This response is therefore consistent with difficulty in attributing a false belief to Amir.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>The answer does not necessarily show that Lena lacks Theory of Mind. She may have misunderstood the question, had difficulty holding both locations in working memory, or found it hard to inhibit her own knowledge of where the toy really is. Language comprehension and the exact wording of the task can also affect performance. The observed behaviour is that Lena predicted the red box; the psychological inference is that she may have had difficulty representing Amir’s false belief. One task cannot establish a global absence of Theory of Mind.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 4 — Causality</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">A longitudinal study finds that children who experienced more responsive caregiving in early childhood later report higher average self-esteem.</p>
+<ol class="hd83-question-list"><li>Explain why the findings do not necessarily establish that responsive caregiving causes higher self-esteem.</li><li>Identify one potential confounding variable and explain how it could influence both responsive caregiving and later self-esteem.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>Longitudinal research can establish that responsive caregiving was measured before later self-esteem, but temporal ordering alone does not establish causation. The association is consistent with caregiving being one influence, yet other characteristics of the child and family could affect both variables. Children and caregivers may also influence one another over time: a child who is more confident or easier to engage may evoke more responsive care, which may then support further confidence.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>Family stress is one possible confounding variable. Families experiencing lower levels of chronic stress may have greater emotional resources available for responsive caregiving. Children growing up in these environments may also experience greater stability and more opportunities to develop positive self-beliefs. Family stress could therefore contribute to differences in both caregiving and later self-esteem. This makes family stress a plausible confounding variable and weakens the causal conclusion.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 5 — Measurement</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Researchers use the Strange Situation in two cultural groups. One group shows substantially more resistant attachment classifications.</p>
+<ol class="hd83-question-list"><li>Using relevant psychological research, evaluate the conclusion that the cultural group with more resistant attachment classifications has poorer attachment relationships.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>The Strange Situation operationalises attachment through behaviour during separation and reunion. It treats particular patterns of contact, avoidance and resistance as evidence about the child’s attachment relationship. This assumes that separation and reunion have broadly similar meanings in the cultural groups being compared.</p><p>Takahashi’s (1990) research involving Japanese infants raises questions about that assumption. Japanese infants were rarely separated from their mothers, so the separation episodes may have been unusually stressful. Many infants became extremely distressed and showed resistant behaviour, while avoidant classifications were rare. These behaviours may partly reflect limited previous experience of separation rather than poorer attachment relationships.</p><p>The comparison therefore raises a Measurement issue because the procedure may not measure attachment equivalently across cultures. It also raises a Bias issue if one pattern of behaviour is treated as the universal standard, and a Perspective issue because caregiving practices and the meaning of separation differ between cultural contexts. Cultural differences in observed behaviour do not by themselves establish differences in attachment quality.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 6 — Change</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">A child experiences substantial adversity early in life but later develops supportive friendships, succeeds in school and reports increasingly positive self-beliefs.</p>
+<ol class="hd83-question-list"><li>Using relevant psychological research, explain how the child’s development illustrates resilience and the IB concept of Change.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer</div><div class="reveal-answer"><div><p>Early adversity can increase developmental risk without predetermined later outcomes. Supportive friendships and success at school may act as protective factors. Belonging, positive feedback from others and mastery experiences can gradually change how the child sees themselves, so more positive self-beliefs may develop through later experience rather than appearing despite it.</p><p>Rutter and colleagues’ English and Romanian Adoptees research supports this possibility. Many children who had experienced severe early deprivation made substantial developmental progress after being adopted into supportive families, although some continued to experience difficulties and outcomes varied. The research shows that recovery is possible and that later environments can alter developmental trajectories. It does not show that early adversity has no lasting effects for anyone.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 7 — Brain Development and Adolescent Behaviour</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Daniel, aged 15, usually makes careful decisions when completing classroom activities. However, when spending time with friends, he sometimes makes impulsive decisions that he later regrets.<br><br>His father concludes that Daniel behaves this way because his prefrontal cortex has not fully developed.</p>
+<ol class="hd83-question-list"><li>Explain how brain maturation could contribute to Daniel’s behaviour.</li><li>Evaluate his father’s explanation.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>Neural systems involved in executive functions, including planning, inhibition and decision-making, continue to develop through adolescence and into young adulthood. At the same time, systems involved in reward and emotional responding can be highly responsive in socially engaging situations. In a peer context, these interacting systems may make an impulsive choice more likely, even when Daniel can plan carefully in a structured classroom.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>Daniel’s ability to regulate his behaviour in the classroom shows that social context matters. His father’s explanation is too simple because the prefrontal cortex is developing rather than completely undeveloped, and one brain region does not independently determine behaviour. Peer presence, reward sensitivity, emotional arousal and individual differences may all interact with developing neural systems.</p><p>Giedd et al. (1999) used longitudinal structural MRI to show that brain structure continues changing across childhood and adolescence. This research is relevant to brain maturation, but structural MRI does not by itself prove that a particular brain change caused Daniel’s behaviour. A contextual explanation is better supported because it connects developing systems to the difference between the classroom and peer settings.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 8 — Cognitive Development and Social Support</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Eight-year-old Emma struggles to solve an unfamiliar mathematical problem independently. Her teacher demonstrates a strategy and provides several guiding questions. After practising with support, Emma eventually solves similar problems independently.<br><br>Another teacher argues that Emma’s initial difficulty proves that she has not reached the developmental stage required to understand the problem.</p>
+<ol class="hd83-question-list"><li>Explain Emma’s improvement using Vygotsky’s sociocultural theory.</li><li>Compare how Piaget and Vygotsky might explain Emma’s cognitive development.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>Vygotsky’s zone of proximal development is the gap between what a learner can do independently and what they can achieve with appropriate support. Emma could not solve the unfamiliar problem alone, but the teacher’s demonstration and guiding questions targeted the part of the task she could not yet manage by herself. As she practised, this socially supported guidance could be internalised, allowing her to solve similar problems independently. Her improvement shows how appropriately matched support can change what a child can do.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>Piaget emphasised the child’s active construction and reorganisation of knowledge through processes such as assimilation, accommodation and equilibration. Vygotsky placed greater emphasis on social interaction, language and culturally transmitted tools that support thinking. Both perspectives could contribute to understanding Emma: she may need to reorganise her understanding of the strategy, and the teacher’s guidance may help her do so.</p><p>Piaget did not claim that experience and social interaction have no influence on cognitive development. Initial failure on one unfamiliar task therefore does not establish Emma’s developmental stage. Familiarity with the problem, the wording of the task and the support available can all affect what she achieves.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Scenario 9 — Peer Influence and the Developing Self</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">After joining a new friendship group, fourteen-year-old Lucas begins spending more time exercising, becomes increasingly concerned about his physical appearance and starts comparing himself with other members of the group.<br><br>A researcher concludes that the friendship group caused these changes in Lucas’s self-concept.</p>
+<ol class="hd83-question-list"><li>Explain how social comparison and peer influence could contribute to changes in Lucas’s self-concept.</li><li>Explain why the researcher should also consider peer selection before reaching a causal conclusion.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>Festinger (1954) proposed that people evaluate their abilities and opinions partly by comparing themselves with others. Lucas may be using other group members as a standard for judging his appearance and abilities, which could make him more critical of himself. Group norms about exercise and appearance, feedback from friends and the desire to belong may also reinforce particular behaviours and gradually influence his self-beliefs. These processes could help explain why his interests and concerns change after joining the group.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>Peer influence means that Lucas changes partly in response to the friendship group’s norms and behaviour. Peer selection means that Lucas may have chosen the friendship group because he already shared some of its interests or concerns. Both processes can operate together. He may have been drawn to friends who already valued exercise and appearance, and then become more like them through group feedback and comparison.</p><p>The scenario shows a change after joining the group, but it does not establish the direction of influence or the relative contributions of peer influence and peer selection. A causal conclusion would require evidence about Lucas’s attitudes before he joined and about how the group changed over time.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Final Application Challenge</h3>
+<p class="hd83-label">Scenario</p>
+<p class="hd83-scenario">Emily, aged 14, experienced unstable caregiving during early childhood. When she joined a new school, she initially avoided social interaction and expressed little confidence in her abilities.<br><br>Over the following two years, she developed close friendships, received encouragement from teachers and became increasingly confident.<br><br>A psychologist concludes:<br><br>“Emily’s early attachment experiences had no lasting influence on her development because she eventually became socially confident.”</p>
+<p class="hd83-label">Application questions</p>
+<ol class="hd83-question-list"><li>Explain how attachment theory could help account for Emily’s initial behaviour.</li><li>Explain how her later social experiences may have contributed to changes in her self-concept.</li><li>Using relevant psychological research, evaluate the psychologist’s conclusion.</li></ol>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 1</div><div class="reveal-answer"><div><p>Bowlby proposed that repeated caregiving experiences may contribute to internal working models, or expectations about the self, other people and relationships. If Emily’s early caregiving was unstable, she may have learned to expect that others are unreliable or unresponsive. When she entered a new school, those expectations could help explain why she avoided social interaction and showed little confidence. This is a possible explanation rather than a diagnosis: her behaviour alone cannot establish her attachment classification or prove that early experiences caused her withdrawal.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 2</div><div class="reveal-answer"><div><p>Close friendships may have given Emily belonging, social feedback and repeated evidence that other people can be supportive. Teacher encouragement and success at school may have provided mastery experiences, allowing her to see herself as more capable. These later relationships and achievements could act as protective factors and alter her developing self-concept. The change illustrates resilience: early risk can influence a developmental trajectory without determining every later outcome.</p></div></div></div>
+<div class="reveal"><div class="reveal-question">Reveal model answer — Question 3</div><div class="reveal-answer"><div><p>The psychologist’s conclusion is too strong. Emily’s later confidence does not establish that early experiences had no influence. Bowlby’s internal working models are “working” expectations that can be revised, and later supportive relationships may have changed how Emily approaches others. The scenario therefore illustrates Change: her developmental trajectory changed over time.</p><p>Rutter and colleagues’ English and Romanian Adoptees research also shows why developmental risk is not determinism. Many children who experienced severe early deprivation made substantial progress in supportive families, while some continued to have difficulties. Later experience can support recovery without erasing every effect of earlier adversity. In Emily’s case, the Causality question cannot be settled from the scenario because attachment history, peer relationships, teacher support and school success may all have contributed, and their relative influences cannot be separated.</p></div></div></div>
+</section>
+<section class="hd83-section">
+<h3>Language Guide</h3>
+<div class="hd83-lang-cols"><div class="hd83-lang-col"><h4>When the evidence supports a possible explanation:</h4><ul><li>May contribute to</li><li>Is consistent with</li><li>Is associated with</li><li>Could help explain</li><li>The evidence suggests</li></ul></div><div class="hd83-lang-col"><h4>When stronger evidence is available:</h4><ul><li>Caused</li><li>Produced</li><li>Led to</li></ul></div></div>
+<p>Causal language is not inherently incorrect. It should be used when the research design and findings justify a causal interpretation. Students should not automatically weaken every psychological conclusion; instead, they should match the strength of their conclusions to the strength of the evidence.</p>
+<p>Words such as “proved” and “determines” should not be treated as routine scientific conclusions. Use them only when the evidence genuinely supports such a claim, which is rare in developmental psychology.</p>
+</section>
+<section class="hd83-section">
+<h3>Before Submitting Your Answer</h3>
+<ul class="hd83-checklist"><li>Have I answered the specific question and command term?</li><li>Have I selected relevant psychological knowledge?</li><li>Have I connected that knowledge to specific details from the scenario?</li><li>Have I explained how or why the psychological process could influence the outcome?</li><li>Have I used relevant research where appropriate?</li><li>Have I distinguished observed behaviour from psychological inference?</li><li>Are my conclusions justified by the available evidence?</li></ul>
+</section>
 </div>
 <div class="slide activity-slide" data-slide="84" id="slide-84"><h2>Predict: Exam Application</h2>
 <p class="slide-intro">Predict the strongest application of HD knowledge to exam scenarios.</p>
